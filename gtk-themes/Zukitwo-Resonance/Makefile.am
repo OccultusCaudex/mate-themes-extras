@@ -1,0 +1,24 @@
+THEME_NAME=Zukitwo-Resonance
+
+themedir = $(datadir)/themes/$(THEME_NAME)
+
+theme_DATA = \
+	panelbg.png \
+	index.theme
+
+EXTRA_DIST = $(theme_DATA)
+
+SUBDIRS =		\
+	gtk-2.0		\
+	gtk-3.0
+
+DIST_SUBDIRS =		\
+	gtk-2.0		\
+	gtk-3.0
+
+CLEANFILES = index.theme
+
+index.theme: index.theme.in
+	$(AM_V_GEN)sed \
+		-e s!\@BACKGROUND_DIR\@!$(datadir)/backgrounds/mate/abstract! \
+		< $< > $@
