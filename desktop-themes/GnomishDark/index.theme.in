@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=GnomishDark
+Comment=A clean dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=GnomishDark
+Type=X-GNOME-Metatheme
+Comment=A clean dark theme
+Encoding=UTF-8
+GtkTheme=GnomishDark
+MetacityTheme=GnomishDark
+IconTheme=mate
+CursorTheme=Adwaita
+CursorSize=24
+

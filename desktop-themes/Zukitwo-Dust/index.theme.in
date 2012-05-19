@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Zukitwo-Dust
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Zukitwo-Dust
+MetacityTheme=Zukitwo-Dust
+IconTheme=gnome-colors-dust
+ButtonLayout=:minimize,maximize,close
+

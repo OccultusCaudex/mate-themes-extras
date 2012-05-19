@@ -1,0 +1,344 @@
+AC_PREREQ(2.53)
+
+AC_INIT([mate-themes], [1.3.0], [http://www.mate-desktop.org])
+AC_CONFIG_SRCDIR([icon-themes])
+
+AM_INIT_AUTOMAKE([1.9 tar-ustar])
+
+# Enable silent build rules by default, requires at least
+# Automake-1.11. Disable by either passing --disable-silent-rules to
+# configure or passing V=1 to make
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+
+PKG_PROG_PKG_CONFIG([0.19])
+
+# Workaround to make aclocal get the right flags
+AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
+
+# Check GTK+ theme engines
+PKG_CHECK_MODULES(THEME_ENGINE,
+ [gtk+-2.0 >= 2.0.0 dnl
+  gdk-pixbuf-2.0 >= 2.0.0 dnl
+  gtk-engines-2 >= 2.15.3 ])
+
+GTK_VERSION=`$PKG_CONFIG --variable=gtk_binary_version gtk+-2.0`
+AC_SUBST(GTK_VERSION)
+
+# Check if it's a development (odd minor) version (obsolete with date versions)
+#AC_MSG_CHECKING([development series build])
+#MINOR_VERSION="`echo $PACKAGE_VERSION|cut -d. -f2`"
+#if expr $MINOR_VERSION % 2 > /dev/null != "0"; then
+   # Development version, disable mapping
+   # and enable placeholder by default
+#   icon_mapping_policy=no
+#   placeholders_policy=yes
+#   enable_test_themes=yes
+#   AC_MSG_RESULT([yes])
+#else
+  # Stable version, enable mapping
+  # and disable placeholders by default
+  icon_mapping_policy=yes
+  placeholders_policy=no
+#  AC_MSG_RESULT([no])
+#fi
+
+# Configure option to force placeholders
+AC_ARG_ENABLE([placeholders],
+	AC_HELP_STRING([--enable-placeholders],
+			[Enable placeholder icons [default=auto]]),
+	enable_placeholders=$enableval,
+	enable_placeholders=$placeholders_policy)
+
+AM_CONDITIONAL(PLACEHOLDERS, test "x$enable_placeholders" != "xno")
+
+# Configure option to force icon mapping
+AC_ARG_ENABLE([icon-mapping],
+        AC_HELP_STRING([--enable-icon-mapping],
+                        [Enable compatibility symlinks [default=auto]]),
+        enable_mapping=$enableval,
+        enable_mapping=$icon_mapping_policy)
+
+# Check for icon-naming-utils
+ICONMAP="true"
+if test "x$enable_mapping" != "xno"; then
+   UTILS_REQUIRED=0.8.7
+
+   AC_MSG_CHECKING([icon-naming-utils >= $UTILS_REQUIRED])
+   PKG_CHECK_EXISTS(icon-naming-utils >= $UTILS_REQUIRED, have_utils=yes, have_utils=no)
+   if test "x$have_utils" = "xyes"; then
+      UTILS_PATH="`$PKG_CONFIG --variable=program_path icon-naming-utils`"
+      ICONMAP="$UTILS_PATH/icon-name-mapping"
+      AC_MSG_RESULT([yes])
+   else
+	AC_MSG_RESULT([no])
+   	AC_MSG_ERROR([icon-naming-utils >= $UTILS_REQUIRED is required to build and install mate-themes])
+   fi
+fi
+AC_SUBST(ICONMAP)
+AM_CONDITIONAL(LEGACY_ICON_MAPPING, test "x$enable_mapping" != "xno")
+
+
+AC_CONFIG_FILES([
+Makefile
+desktop-themes/Makefile
+desktop-themes/AmbianceBlue/Makefile
+desktop-themes/AmbianceBlue/gtk-2.0/Makefile
+desktop-themes/AmbianceBlue/gtk-2.0/apps/Makefile
+desktop-themes/AmbianceBlue/gtk-2.0/apps/img/Makefile
+desktop-themes/AmbianceBlue/gtk-3.0/Makefile
+desktop-themes/AmbianceBlue/gtk-3.0/assets/Makefile
+desktop-themes/AmbianceBlue/gtk-3.0/apps/Makefile
+desktop-themes/AmbianceBlue/metacity-1/Makefile
+desktop-themes/Ambiance-Xfce-LXDE-MATE/Makefile
+desktop-themes/Ambiance-Xfce-LXDE-MATE/gtk-2.0/Makefile
+desktop-themes/Ambiance-Xfce-LXDE-MATE/gtk-2.0/apps/Makefile
+desktop-themes/Ambiance-Xfce-LXDE-MATE/gtk-2.0/apps/img/Makefile
+desktop-themes/Ambiance-Xfce-LXDE-MATE/gtk-3.0/Makefile
+desktop-themes/Ambiance-Xfce-LXDE-MATE/gtk-3.0/assets/Makefile
+desktop-themes/Ambiance-Xfce-LXDE-MATE/gtk-3.0/apps/Makefile
+desktop-themes/Ambiance-Xfce-LXDE-MATE/metacity-1/Makefile
+desktop-themes/RadianceBlue/Makefile
+desktop-themes/RadianceBlue/gtk-2.0/Makefile
+desktop-themes/RadianceBlue/gtk-2.0/apps/Makefile
+desktop-themes/RadianceBlue/gtk-2.0/apps/img/Makefile
+desktop-themes/RadianceBlue/gtk-3.0/Makefile
+desktop-themes/RadianceBlue/gtk-3.0/assets/Makefile
+desktop-themes/RadianceBlue/gtk-3.0/apps/Makefile
+desktop-themes/RadianceBlue/metacity-1/Makefile
+desktop-themes/Radiance-Xfce-LXDE-MATE/Makefile
+desktop-themes/Radiance-Xfce-LXDE-MATE/gtk-2.0/Makefile
+desktop-themes/Radiance-Xfce-LXDE-MATE/gtk-2.0/apps/Makefile
+desktop-themes/Radiance-Xfce-LXDE-MATE/gtk-2.0/apps/img/Makefile
+desktop-themes/Radiance-Xfce-LXDE-MATE/gtk-3.0/Makefile
+desktop-themes/Radiance-Xfce-LXDE-MATE/gtk-3.0/assets/Makefile
+desktop-themes/Radiance-Xfce-LXDE-MATE/gtk-3.0/apps/Makefile
+desktop-themes/Radiance-Xfce-LXDE-MATE/metacity-1/Makefile
+desktop-themes/Sonar/Makefile
+desktop-themes/Sonar/gtk-2.0/Makefile
+desktop-themes/Sonar/gtk-3.0/Makefile
+desktop-themes/Sonar/gtk-3.0/assets/Makefile
+desktop-themes/Sonar/metacity-1/Makefile
+desktop-themes/Sonar/mozilla/Makefile
+desktop-themes/SonarBlue/Makefile
+desktop-themes/SonarBlue/gtk-2.0/Makefile
+desktop-themes/SonarBlue/gtk-3.0/Makefile
+desktop-themes/SonarBlue/gtk-3.0/assets/Makefile
+desktop-themes/SonarBlue/metacity-1/Makefile
+desktop-themes/SonarBlue/mozilla/Makefile
+desktop-themes/Zukitwo/Makefile
+desktop-themes/Zukitwo/gtk-2.0/Makefile
+desktop-themes/Zukitwo/gtk-2.0/apps/Makefile
+desktop-themes/Zukitwo/gtk-2.0/apps/Handles/Makefile
+desktop-themes/Zukitwo/gtk-2.0/apps/Nautilus/Makefile
+desktop-themes/Zukitwo/gtk-2.0/apps/Null/Makefile
+desktop-themes/Zukitwo/gtk-2.0/apps/Others/Makefile
+desktop-themes/Zukitwo/gtk-2.0/widgets/Makefile
+desktop-themes/Zukitwo/gtk-2.0/widgets/Null/Makefile
+desktop-themes/Zukitwo/gtk-2.0/widgets/Others/Makefile
+desktop-themes/Zukitwo/gtk-2.0/widgets/Panel/Makefile
+desktop-themes/Zukitwo/gtk-3.0/Makefile
+desktop-themes/Zukitwo/gtk-3.0/apps/Makefile
+desktop-themes/Zukitwo/metacity-1/Makefile
+desktop-themes/Zukitwo-Dark/Makefile
+desktop-themes/Zukitwo-Dark/gtk-2.0/Makefile
+desktop-themes/Zukitwo-Dark/gtk-2.0/apps/Makefile
+desktop-themes/Zukitwo-Dark/gtk-2.0/apps/Handles/Makefile
+desktop-themes/Zukitwo-Dark/gtk-2.0/apps/Nautilus/Makefile
+desktop-themes/Zukitwo-Dark/gtk-2.0/apps/Null/Makefile
+desktop-themes/Zukitwo-Dark/gtk-2.0/apps/Others/Makefile
+desktop-themes/Zukitwo-Dark/gtk-2.0/widgets/Makefile
+desktop-themes/Zukitwo-Dark/gtk-2.0/widgets/Null/Makefile
+desktop-themes/Zukitwo-Dark/gtk-2.0/widgets/Others/Makefile
+desktop-themes/Zukitwo-Dark/gtk-2.0/widgets/Panel/Makefile
+desktop-themes/Zukitwo-Dark/gtk-3.0/Makefile
+desktop-themes/Zukitwo-Dark/gtk-3.0/apps/Makefile
+desktop-themes/Zukitwo-Dark/metacity-1/Makefile
+desktop-themes/Zukitwo-Dust/Makefile
+desktop-themes/Zukitwo-Dust/gtk-2.0/Makefile
+desktop-themes/Zukitwo-Dust/gtk-2.0/apps/Makefile
+desktop-themes/Zukitwo-Dust/gtk-2.0/apps/Handles/Makefile
+desktop-themes/Zukitwo-Dust/gtk-2.0/apps/Nautilus/Makefile
+desktop-themes/Zukitwo-Dust/gtk-2.0/apps/Null/Makefile
+desktop-themes/Zukitwo-Dust/gtk-2.0/apps/Others/Makefile
+desktop-themes/Zukitwo-Dust/gtk-2.0/widgets/Makefile
+desktop-themes/Zukitwo-Dust/gtk-2.0/widgets/Null/Makefile
+desktop-themes/Zukitwo-Dust/gtk-2.0/widgets/Others/Makefile
+desktop-themes/Zukitwo-Dust/gtk-2.0/widgets/Panel/Makefile
+desktop-themes/Zukitwo-Dust/gtk-3.0/Makefile
+desktop-themes/Zukitwo-Dust/gtk-3.0/apps/Makefile
+desktop-themes/Zukitwo-Dust/metacity-1/Makefile
+desktop-themes/Cologne/Makefile
+desktop-themes/Cologne/gtk-2.0/Makefile
+desktop-themes/Cologne/gtk-3.0/Makefile
+desktop-themes/Cologne/metacity-1/Makefile
+gtk-themes/Makefile
+gtk-themes/Zukitwo-Resonance/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-2.0/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-2.0/apps/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-2.0/apps/Handles/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-2.0/apps/Nautilus/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-2.0/apps/Null/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-2.0/apps/Others/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-2.0/widgets/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-2.0/widgets/Null/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-2.0/widgets/Others/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-2.0/widgets/Panel/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-3.0/Makefile
+gtk-themes/Zukitwo-Resonance/gtk-3.0/apps/Makefile
+gtk-themes/Zukitwo-Brave/Makefile
+gtk-themes/Zukitwo-Brave/gtk-2.0/Makefile
+gtk-themes/Zukitwo-Brave/gtk-2.0/apps/Makefile
+gtk-themes/Zukitwo-Brave/gtk-2.0/apps/Handles/Makefile
+gtk-themes/Zukitwo-Brave/gtk-2.0/apps/Nautilus/Makefile
+gtk-themes/Zukitwo-Brave/gtk-2.0/apps/Null/Makefile
+gtk-themes/Zukitwo-Brave/gtk-2.0/apps/Others/Makefile
+gtk-themes/Zukitwo-Brave/gtk-2.0/widgets/Makefile
+gtk-themes/Zukitwo-Brave/gtk-2.0/widgets/Null/Makefile
+gtk-themes/Zukitwo-Brave/gtk-2.0/widgets/Others/Makefile
+gtk-themes/Zukitwo-Brave/gtk-2.0/widgets/Panel/Makefile
+gtk-themes/Zukitwo-Brave/gtk-3.0/Makefile
+gtk-themes/Zukitwo-Brave/gtk-3.0/apps/Makefile
+gtk-themes/Zukitwo-Human/Makefile
+gtk-themes/Zukitwo-Human/gtk-2.0/Makefile
+gtk-themes/Zukitwo-Human/gtk-2.0/apps/Makefile
+gtk-themes/Zukitwo-Human/gtk-2.0/apps/Handles/Makefile
+gtk-themes/Zukitwo-Human/gtk-2.0/apps/Nautilus/Makefile
+gtk-themes/Zukitwo-Human/gtk-2.0/apps/Null/Makefile
+gtk-themes/Zukitwo-Human/gtk-2.0/apps/Others/Makefile
+gtk-themes/Zukitwo-Human/gtk-2.0/widgets/Makefile
+gtk-themes/Zukitwo-Human/gtk-2.0/widgets/Null/Makefile
+gtk-themes/Zukitwo-Human/gtk-2.0/widgets/Others/Makefile
+gtk-themes/Zukitwo-Human/gtk-2.0/widgets/Panel/Makefile
+gtk-themes/Zukitwo-Human/gtk-3.0/Makefile
+gtk-themes/Zukitwo-Human/gtk-3.0/apps/Makefile
+gtk-themes/Zukitwo-Illustrious/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-2.0/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-2.0/apps/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-2.0/apps/Handles/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-2.0/apps/Nautilus/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-2.0/apps/Null/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-2.0/apps/Others/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-2.0/widgets/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-2.0/widgets/Null/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-2.0/widgets/Others/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-2.0/widgets/Panel/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-3.0/Makefile
+gtk-themes/Zukitwo-Illustrious/gtk-3.0/apps/Makefile
+gtk-themes/Zukitwo-Noble/Makefile
+gtk-themes/Zukitwo-Noble/gtk-2.0/Makefile
+gtk-themes/Zukitwo-Noble/gtk-2.0/apps/Makefile
+gtk-themes/Zukitwo-Noble/gtk-2.0/apps/Handles/Makefile
+gtk-themes/Zukitwo-Noble/gtk-2.0/apps/Nautilus/Makefile
+gtk-themes/Zukitwo-Noble/gtk-2.0/apps/Null/Makefile
+gtk-themes/Zukitwo-Noble/gtk-2.0/apps/Others/Makefile
+gtk-themes/Zukitwo-Noble/gtk-2.0/widgets/Makefile
+gtk-themes/Zukitwo-Noble/gtk-2.0/widgets/Null/Makefile
+gtk-themes/Zukitwo-Noble/gtk-2.0/widgets/Others/Makefile
+gtk-themes/Zukitwo-Noble/gtk-2.0/widgets/Panel/Makefile
+gtk-themes/Zukitwo-Noble/gtk-3.0/Makefile
+gtk-themes/Zukitwo-Noble/gtk-3.0/apps/Makefile
+gtk-themes/Zukitwo-Wine/Makefile
+gtk-themes/Zukitwo-Wine/gtk-2.0/Makefile
+gtk-themes/Zukitwo-Wine/gtk-2.0/apps/Makefile
+gtk-themes/Zukitwo-Wine/gtk-2.0/apps/Handles/Makefile
+gtk-themes/Zukitwo-Wine/gtk-2.0/apps/Nautilus/Makefile
+gtk-themes/Zukitwo-Wine/gtk-2.0/apps/Null/Makefile
+gtk-themes/Zukitwo-Wine/gtk-2.0/apps/Others/Makefile
+gtk-themes/Zukitwo-Wine/gtk-2.0/widgets/Makefile
+gtk-themes/Zukitwo-Wine/gtk-2.0/widgets/Null/Makefile
+gtk-themes/Zukitwo-Wine/gtk-2.0/widgets/Others/Makefile
+gtk-themes/Zukitwo-Wine/gtk-2.0/widgets/Panel/Makefile
+gtk-themes/Zukitwo-Wine/gtk-3.0/Makefile
+gtk-themes/Zukitwo-Wine/gtk-3.0/apps/Makefile
+gtk-themes/Zukitwo-Wise/Makefile
+gtk-themes/Zukitwo-Wise/gtk-2.0/Makefile
+gtk-themes/Zukitwo-Wise/gtk-2.0/apps/Makefile
+gtk-themes/Zukitwo-Wise/gtk-2.0/apps/Handles/Makefile
+gtk-themes/Zukitwo-Wise/gtk-2.0/apps/Nautilus/Makefile
+gtk-themes/Zukitwo-Wise/gtk-2.0/apps/Null/Makefile
+gtk-themes/Zukitwo-Wise/gtk-2.0/apps/Others/Makefile
+gtk-themes/Zukitwo-Wise/gtk-2.0/widgets/Makefile
+gtk-themes/Zukitwo-Wise/gtk-2.0/widgets/Null/Makefile
+gtk-themes/Zukitwo-Wise/gtk-2.0/widgets/Others/Makefile
+gtk-themes/Zukitwo-Wise/gtk-2.0/widgets/Panel/Makefile
+gtk-themes/Zukitwo-Wise/gtk-3.0/Makefile
+gtk-themes/Zukitwo-Wise/gtk-3.0/apps/Makefile
+desktop-themes/GnomishDark/Makefile
+desktop-themes/GnomishDark/gtk-2.0/Makefile
+desktop-themes/GnomishDark/gtk-2.0/assets/Makefile
+desktop-themes/GnomishDark/gtk-2.0/Styles/Makefile
+desktop-themes/GnomishDark/gtk-3.0/Makefile
+desktop-themes/GnomishDark/gtk-3.0/assets/Makefile
+desktop-themes/GnomishDark/metacity-1/Makefile
+desktop-themes/ANewStartBlood/Makefile
+desktop-themes/ANewStartBlood/gtk-2.0/Makefile
+desktop-themes/ANewStartBlood/gtk-2.0/caja/Makefile
+desktop-themes/ANewStartBlood/gtk-2.0/Handles/Makefile
+desktop-themes/ANewStartBlood/gtk-2.0/Icons/Makefile
+desktop-themes/ANewStartBlood/gtk-2.0/Menu/Makefile
+desktop-themes/ANewStartBlood/gtk-2.0/nautilus/Makefile
+desktop-themes/ANewStartBlood/gtk-2.0/Others/Makefile
+desktop-themes/ANewStartBlood/gtk-2.0/Panel/Makefile
+desktop-themes/ANewStartBlood/gtk-2.0/Tabs/Makefile
+desktop-themes/ANewStartBlood/gtk-3.0/Makefile
+desktop-themes/ANewStartBlood/gtk-3.0/apps/Makefile
+desktop-themes/ANewStartBlood/metacity-1/Makefile
+marco-themes/Makefile
+marco-themes/Zukitwo-Colors/Makefile
+marco-themes/Zukitwo-Colors/metacity-1/Makefile
+icon-themes/Makefile
+icon-themes/Sonar/Makefile
+icon-themes/Sonar/16x16/Makefile
+icon-themes/Sonar/16x16/actions/Makefile
+icon-themes/Sonar/16x16/apps/Makefile
+icon-themes/Sonar/16x16/categories/Makefile
+icon-themes/Sonar/16x16/devices/Makefile
+icon-themes/Sonar/16x16/places/Makefile
+icon-themes/Sonar/16x16/status/Makefile
+icon-themes/Sonar/22x22/Makefile
+icon-themes/Sonar/22x22/actions/Makefile
+icon-themes/Sonar/22x22/apps/Makefile
+icon-themes/Sonar/22x22/categories/Makefile
+icon-themes/Sonar/22x22/devices/Makefile
+icon-themes/Sonar/22x22/places/Makefile
+icon-themes/Sonar/22x22/status/Makefile
+icon-themes/Sonar/24x24/Makefile
+icon-themes/Sonar/24x24/actions/Makefile
+icon-themes/Sonar/24x24/apps/Makefile
+icon-themes/Sonar/24x24/categories/Makefile
+icon-themes/Sonar/24x24/devices/Makefile
+icon-themes/Sonar/24x24/places/Makefile
+icon-themes/Sonar/24x24/status/Makefile
+icon-themes/Sonar/32x32/Makefile
+icon-themes/Sonar/32x32/actions/Makefile
+icon-themes/Sonar/32x32/apps/Makefile
+icon-themes/Sonar/32x32/categories/Makefile
+icon-themes/Sonar/32x32/devices/Makefile
+icon-themes/Sonar/32x32/places/Makefile
+icon-themes/Sonar/32x32/status/Makefile
+icon-themes/Sonar/48x48/Makefile
+icon-themes/Sonar/48x48/actions/Makefile
+icon-themes/Sonar/48x48/apps/Makefile
+icon-themes/Sonar/48x48/categories/Makefile
+icon-themes/Sonar/48x48/devices/Makefile
+icon-themes/Sonar/48x48/places/Makefile
+icon-themes/Sonar/48x48/status/Makefile
+icon-themes/Sonar/256x256/Makefile
+icon-themes/Sonar/256x256/actions/Makefile
+icon-themes/Sonar/256x256/apps/Makefile
+icon-themes/Sonar/256x256/categories/Makefile
+icon-themes/Sonar/256x256/devices/Makefile
+icon-themes/Sonar/256x256/places/Makefile
+icon-themes/Sonar/256x256/status/Makefile
+
+
+])
+
+AC_OUTPUT
+
+dnl ==========================================================================
+echo "
+mate-themes-extras-$VERSION:
+
+	Installation prefix:	${prefix}
+"

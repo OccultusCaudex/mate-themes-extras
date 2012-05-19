@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=AmbianceBlue
+Comment=Blue Variant of Ambiance theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=AmbianceBlue
+MetacityTheme=AmbianceBlue
+IconTheme=elementary-mono-dark
+CursorTheme=mate
+ButtonLayout=:minimize,maximize,close
+
