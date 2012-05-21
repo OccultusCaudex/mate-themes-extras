@@ -1,4 +1,4 @@
-themedir = $(datadir)/themes/Zukitwo-Brave/gtk-2.0/widgets/Others
+themedir = $(datadir)/themes/Zukitwo-Wine/gtk-2.0/widgets/Others
 
 theme_DATA = \
 	close.png \

@@ -2,6 +2,7 @@
 themedir = $(datadir)/themes/Zukitwo-Dust//gtk-2.0/apps
 
 theme_DATA = \
+	chromium.rc \
 	combo_down.png \
 	pcmanfm.rc \
 	stock_refresh.png \

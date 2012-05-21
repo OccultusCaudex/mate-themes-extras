@@ -1,7 +1,5 @@
-# This is the: Ambiance & Radiance Xfce-LXDE Theme. Bringing The Ambiance & Radiance themes to your Xfce,LXDE and OpenBox Desktop  
-# Based on Ambiance & Radiance 12.04 (C) 2010-2012 Canonical Ltd, Ported by RAVEfinity. (C) 2011-2012 RAVEfinity (www.ravefinity.blogspot.com)
-# Licenced Under The GPL Version 2.
-
+# Radiance-Xfce-LXDE, Built for, and built to work with XFCE and LXDE. Use originol Radiance theme for Gnome/Unity.
+# Ported By RAVEfinity Project.
 gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#ffffff\nselected_bg_color:#f07746\nselected_fg_color:#FFFFFF\ntext_color:#3C3C3C\nbg_color:#f6f4f2\ntooltip_bg_color:#000000\nlink_color:#DD4814"
 
 gtk-icon-sizes = "panel-menu=22,22:gtk-button=16,16"
@@ -15,6 +13,7 @@ style "default" {
 	#######################
 	# Style Properties
 	#######################
+	GtkWidget::new-tooltip-style = 1
 	GtkButton::child-displacement-x = 1
 	GtkButton::child-displacement-y = 1
 	GtkButton::default-border = { 0, 0, 0, 0 }
@@ -104,7 +103,7 @@ style "default" {
 		glazestyle = 0
 		default_button_color = shade (1.1, @selected_bg_color)
 		gradient_shades = {1.1, 1.0, 1.0, 0.9}
-		roundness = 3
+		roundness = 4
 		lightborder_shade = 1.26
 		lightborderstyle = 1
 		listviewstyle = 2
@@ -112,7 +111,7 @@ style "default" {
 		colorize_scrollbar = FALSE
 		menubaritemstyle = 1
 		menubarstyle = 1
-		menustyle = 0
+		menustyle = 3
 		focusstyle = 3
 		handlestyle = 1
 		sliderstyle = 3
@@ -167,12 +166,10 @@ style "button" {
 
 	engine "murrine" {
 		#contrast = 1.0
-		border_shades = {1.04, 0.82}
-		reliefstyle = 5
-		shadow_shades = {1.02, 1.1}
+		border_shades = {1.02, 0.92}
 		textstyle = 1
 		glowstyle = 5
-		glow_shade = 1.1
+		glow_shade = 1.08
 		#text_shade = 1.04
 	}
 }
@@ -190,9 +187,7 @@ style "notebook_button" {
 	engine "murrine" {
 		#contrast = 1.0
 		textstyle = 1
-		border_shades = {1.01, 0.8}
-		reliefstyle = 5
-		shadow_shades = {1.0, 1.1}
+		border_shades = {0.95, 0.88}
 		glowstyle = 5
 		glow_shade = 1.02
 		lightborder_shade = 1.32
@@ -326,9 +321,12 @@ style "toolbar-button" = "notebook_button" {
 	}
 }
 
-style "menu" {
+style "menu" = "dark" {
 	xthickness = 0
 	ythickness = 0
+
+	bg[NORMAL] = "#ece7e2"
+#	fg[INSENSITIVE]   = shade (0.8, "#4D4C48")
 
 	engine "murrine"
 	{
@@ -685,10 +683,14 @@ widget "*IdoEntryMenuItem*" style "wide"
 widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "evo_new_button_workaround"
 
 # Includes
-#include "apps/banshee.rc"
+include "apps/banshee.rc"
 include "apps/chromium.rc"
 include "apps/ff.rc"
-#include "apps/gedit.rc"
+include "apps/gedit.rc"
 include "apps/gnome-panel.rc"
 include "apps/gnome-terminal.rc"
 include "apps/nautilus.rc"
+include "apps/caja.rc"
+include "apps/mate-panel.rc"
+include "apps/mate-terminal.rc"
+include "apps/pluma.rc"

@@ -6,8 +6,7 @@ theme_DATA = \
 	gnome-panel.css \
 	gnome-terminal.css \
 	nautilus.css \
-	unity.css \
-	gedit.css
+	unity.css
 
 EXTRA_DIST = $(theme_DATA)
 

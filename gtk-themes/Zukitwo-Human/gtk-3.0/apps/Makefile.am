@@ -1,12 +1,9 @@
 themedir = $(datadir)/themes/Zukitwo-Human/gtk-3.0/apps
 
 theme_DATA = \
-	epiphany.css \
-	gedit.css \
 	gnome-panel.css \
-	gnome-terminal.css \
+	gnome-applications.css \
 	nautilus.css \
-	popover.css \
 	unity.css
 
 EXTRA_DIST = $(theme_DATA)

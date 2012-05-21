@@ -13,7 +13,8 @@ theme_DATA = \
 	mate-panel.rc \
 	mate-terminal.rc \
 	caja.rc \
-	pluma.rc
+	pluma.rc \
+	ubuntuone.rc
 
 EXTRA_DIST = $(theme_DATA)
 

@@ -1,6 +1,7 @@
 themedir = $(datadir)/themes/Zukitwo-Noble/gtk-2.0/apps
 
 theme_DATA = combo_down.png \
+	chromium.rc \
 	dummy.png \
 	gedit.rc \
 	nautilus.rc \

@@ -1,4 +1,8 @@
-gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#ffffff\nselected_bg_color:#4677f0\nselected_fg_color:#ffffff\ntext_color:#3c3c3c\nbg_color:#f0f1f2\ntooltip_bg_color:#000000\nlink_color:#1448dd"
+# This is the: Ambiance & Radiance Colors Theme. The Ambiance & Radiance themes in all the colors of the rainbow and then some! 
+# Based on Ambiance & Radiance 11.10 (C) 2010-2011 Canonical Ltd, New colors and some redesign by RAVEfinity. (C) 2011 RAVEfinity (www.ravefinity.blogspot.com)
+# GPL V.2
+
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#ffffff\nselected_bg_color:#707ABF\nselected_fg_color:#FFFFFF\ntext_color:#3C3C3C\nbg_color:#F2F1F0\ntooltip_bg_color:#000000\nlink_color:#7681C2"
 
 gtk-icon-sizes = "panel-menu=22,22:gtk-button=16,16"
 
@@ -36,16 +40,17 @@ style "default" {
 	GtkScrollbar::min-slider-length = 31
 
 	GtkMenuBar::internal-padding = 0
+	GtkMenuBar::shadow-type = GTK_SHADOW_NONE
 	GtkExpander::expander-size = 11
 	GtkToolbar::internal-padding = 1
 	GtkToolbar::shadow-type = GTK_SHADOW_NONE
 	GtkTreeView::expander-size = 7
 	GtkTreeView::vertical-separator = 0
-	GtkTreeView::odd-row-color = shade (0.96, @base_color)
+#	GtkTreeView::odd-row-color = shade (0.96, @base_color)
 	GtkNotebook::tab-overlap = -1
 
 	GtkMenu::horizontal-padding = 0
-	GtkMenu::vertical-padding = 0
+	GtkMenu::vertical-padding = 3
 
 	WnckTasklist::fade-overlay-rect = 0
 	# The following line hints to gecko (and possibly other appliations)
@@ -98,7 +103,7 @@ style "default" {
 		reliefstyle = 3
 		highlight_shade = 1.0
 		glazestyle = 0
-		default_button_color = shade (1.1, @selected_bg_color)
+		default_button_color = shade (1.04, "#cdcdcd")
 		gradient_shades = {1.1, 1.0, 1.0, 0.9}
 		roundness = 4
 		lightborder_shade = 1.26
@@ -112,7 +117,6 @@ style "default" {
 		focusstyle = 3
 		handlestyle = 1
 		sliderstyle = 3
-		handlestyle = 1
 		scrollbarstyle = 2
 		stepperstyle = 3
 #		rgba = TRUE
@@ -121,29 +125,27 @@ style "default" {
 
 style "dark"
 {
-	fg[NORMAL]        = "#d2dbdf"
-	fg[PRELIGHT]      = "#fff"
-	fg[ACTIVE]        = "#fff"
-	fg[SELECTED]      = "#fff"
-	fg[INSENSITIVE]   = shade (0.8, "#373c3b")
+	color["bg_color_dark"] 	= "#3c3b37"
+  	color["fg_color_dark"] 	= "#dfdbd2"
+  	color["selected_fg_color_dark"] = "#ffffff"
 
-	bg[NORMAL]        = "#373c3b"
-	bg[PRELIGHT]      = shade (1.0, "#484C4D")
-	bg[ACTIVE]        = shade(0.94, "#373c3b")
-	bg[SELECTED]      = shade(1.0, @selected_bg_color)
-	bg[INSENSITIVE]   = "#373b3c"
-
-	base[NORMAL]      = "#303233"
-	base[PRELIGHT]    = shade (0.95, @bg_color)
-	base[ACTIVE]      = shade (0.55, @bg_color)
-	base[SELECTED]    = shade (1.0, @selected_bg_color)
-	base[INSENSITIVE] = @bg_color
-
-	text[NORMAL]      = "#d2dbdf"
-	text[PRELIGHT]    = @base_color
-	text[ACTIVE]      = @base_color
-	text[SELECTED]    = @base_color
-	text[INSENSITIVE] = mix (0.5, @bg_color, "#373b3c")
+  	fg[NORMAL]        = @fg_color_dark
+	fg[PRELIGHT]	  = shade (1.15, @fg_color_dark)
+	fg[ACTIVE]	  = @fg_color_dark
+	fg[SELECTED]	  = @selected_fg_color_dark
+	fg[INSENSITIVE]	  = shade (0.5, @fg_color_dark)
+  
+	bg[NORMAL]        = @bg_color_dark
+ 	bg[ACTIVE]	  = shade (0.8, @bg_color_dark)
+  	bg[SELECTED]      = @selected_bg_color
+ 	bg[PRELIGHT]      = shade (1.0, "#4D4C48")
+  	bg[INSENSITIVE]   = shade (0.85, @bg_color_dark)
+  	
+	text[NORMAL]      = @fg_color_dark
+	text[PRELIGHT]	  = shade (1.15, @fg_color_dark)
+	text[SELECTED]	  = @selected_fg_color_dark
+  	text[ACTIVE]      = @fg_color_dark
+  	text[INSENSITIVE] = mix (0.5, @bg_color, @bg_color_dark)
 }
 
 style "wide" {
@@ -177,7 +179,7 @@ style "button" {
 	bg[NORMAL] = "#cdcdcd"
 	bg[PRELIGHT] = shade (1.04, "#cdcdcd")
 	bg[ACTIVE] = shade (0.96, "#cdcdcd")
-	bg[INSENSITIVE] = mix (0.25, @bg_color, "#e1e1e2")
+	bg[INSENSITIVE] = mix (0.25, @bg_color, "#e2e1e1")
 	fg[INSENSITIVE] = "#9c9c9c"
 
 	engine "murrine" {
@@ -248,6 +250,13 @@ style "hscrollbar" {
 style "vscrollbar" {
 }
 
+style "overlay_scrollbar"
+{
+	bg[SELECTED] = shade (1.0, @selected_bg_color)
+	bg[INSENSITIVE] = shade (0.85, @bg_color)
+	bg[ACTIVE] = shade (0.6, @bg_color)
+}
+
 style "scale" = "button" {
 	bg[NORMAL] = @bg_color
 	bg[PRELIGHT] = shade (1.06, @bg_color)
@@ -310,7 +319,7 @@ style "menubar" = "dark" {
 		textstyle = 2
 		text_shade = 0.33
 		gradient_shades = {1.0, 1.0, 1.0, 1.0}
-		lightborder_shade = 1.23
+		lightborder_shade = 1.0
 	}
 }
 
@@ -318,6 +327,7 @@ style "toolbar" {
 	engine "murrine" {
 		textstyle = 1
 		text_shade = 1.32
+		lightborder_shade = 1.0
 	}
 }
 
@@ -330,16 +340,15 @@ style "menu" = "dark" {
 	xthickness = 0
 	ythickness = 0
 
-	bg[NORMAL] = "#3f4243"
-	bg[INSENSITIVE] = "#3f4243"
-	fg[INSENSITIVE]   = shade (0.7, "#3f4243")
+	bg[NORMAL] = "#43423f"
+	bg[INSENSITIVE] = "#43423f"
+	fg[INSENSITIVE]   = shade (0.54, "#43423f")
 
 	engine "murrine"
 	{
 		roundness = 0
 	}
 }
-
 
 style "menu_item" = "menu" {
 	xthickness = 2
@@ -373,7 +382,7 @@ style "scale_menu_item" = "scale" {
 	GtkScale::slider-width = 21
 	GtkScale::slider-length = 13
 
-	bg[ACTIVE] = shade(0.98, "#484C4D")
+	bg[ACTIVE] = shade(0.98, "#4D4C48")
 	bg[INSENSITIVE] = shade (0.9, @bg_color)
 
 	engine "murrine" {
@@ -450,7 +459,7 @@ style "progressbar" {
 }
 
 style "progressbar_menu_item" = "progressbar" {
-	bg[ACTIVE] = shade(0.98, "#484C4D")
+	bg[ACTIVE] = shade(0.98, "#4D4C48")
 
 	engine "murrine" {
 		roundness = 0
@@ -529,8 +538,8 @@ style "calendar" {
 }
 
 style "calendar_menu_item" = "calendar" {
-	base[NORMAL] = "#585E60"
-	base[ACTIVE] = "#44494b"
+	base[NORMAL] = "#605E58"
+	base[ACTIVE] = "#4b4944"
 }
 
 style "iconview" {
@@ -557,11 +566,11 @@ style "text_is_fg_color_workaround" {
 
 # Workaround style for menus where the text color is used instead of the fg color.
 style "menuitem_text_is_fg_color_workaround" {
-	text[NORMAL]        = "#c8d8df"
+	text[NORMAL]        = "#dfd8c8"
 	text[PRELIGHT]      = @selected_fg_color
 	text[SELECTED]      = @selected_fg_color
 	text[ACTIVE]        = @fg_color
-	text[INSENSITIVE]   = "#8b9599"
+	text[INSENSITIVE]   = "#99958b"
 }
 
 # Workaround style for places where the fg color is used instead of the text color.
@@ -657,6 +666,10 @@ widget_class "*.<GtkCTree>.<GtkButton>.*<GtkLabel>" style "treeview_header"
 widget_class "*.<GtkList>.<GtkButton>.*<GtkLabel>" style "treeview_header"
 widget_class "*.<GtkCList>.<GtkButton>.*<GtkLabel>" style "treeview_header"
 
+# Overlay scrollbar
+widget_class "*<OsScrollbar>" style "overlay_scrollbar"
+widget_class "*<OsThumb>" style "overlay_scrollbar"
+
 # The window of the tooltip is called "gtk-tooltip"
 ##################################################################
 # FIXME:
@@ -705,6 +718,12 @@ widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" st
 include "apps/banshee.rc"
 include "apps/chromium.rc"
 include "apps/ff.rc"
+include "apps/gedit.rc"
 include "apps/gnome-panel.rc"
 include "apps/gnome-terminal.rc"
 include "apps/nautilus.rc"
+include "apps/ubuntuone.rc"
+include "apps/caja.rc"
+include "apps/mate-panel.rc"
+include "apps/mate-terminal.rc"
+include "apps/pluma.rc"

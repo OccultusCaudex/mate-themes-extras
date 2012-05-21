@@ -1,3 +1,32 @@
+/* desktop mode */
+.nautilus-desktop.nautilus-canvas-item {
+    color: @bg_color;
+    text-shadow: 1 1 alpha (#000000, 0.8);
+}
+
+.nautilus-desktop.nautilus-canvas-item:active {
+    background-image: none;
+    background-color: alpha (@bg_color, 0.84);
+    border-radius: 4;
+
+    color: @fg_color;
+}
+
+.nautilus-desktop.nautilus-canvas-item:selected {
+    background-image: none;
+    background-color: alpha (@selected_bg_color, 0.84);
+    border-radius: 4;
+
+    color: @selected_fg_color;
+}
+
+.nautilus-desktop.nautilus-canvas-item:active,
+.nautilus-desktop.nautilus-canvas-item:prelight,
+.nautilus-desktop.nautilus-canvas-item:selected {
+    text-shadow: none;
+}
+
+/* browser window */
 NautilusTrashBar.info,
 NautilusXContentBar.info,
 NautilusSearchBar.info,
@@ -37,15 +66,20 @@ NautilusFloatingBar .button {
     -GtkButton-inner-border: 0;
 }
 
+/* sidebar */
 NautilusWindow .sidebar,
 NautilusWindow .sidebar .view {
-    background-color: @base_color;
+    background-color: #DFD7CF;
 }
 
 NautilusWindow .sidebar .frame {
     border-radius: 0;
-    border-width: 1;
+    border-width: 0;
 }
 
 NautilusWindow > GtkTable > .pane-separator {
+	background-color: @dark_bg_color;
+    border-color: @dark_bg_color;
+    border-width: 0 0 0 0;
+    border-style: solid;
 }

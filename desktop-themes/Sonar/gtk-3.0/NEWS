@@ -1,4 +1,4 @@
-GTK3 version ported by Sean Wilson
+GTK3 version ported by Sean Wilson {suseux@gmail.com} http://half-left.deviantart.com/
 
 1.1
 
@@ -22,4 +22,11 @@ GTK3 version ported by Sean Wilson
 - Added gradient to menu prelight.
 - Don't buttonise search in Nautlius.
 - fixed black toolbar.
+
+1.4
+
+- Improved tabs.
+- added settings.ini back.
+- added dark border on menus.
+- lighter selection.
 

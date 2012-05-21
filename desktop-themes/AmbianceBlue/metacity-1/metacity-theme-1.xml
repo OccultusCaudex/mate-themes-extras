@@ -2,21 +2,21 @@
 
 <metacity_theme>
 <info>
-  	<name>AmbianceBlue</name>
-  	<author>Satyajt Sahoo</author>
-  	<copyright>GPL</copyright>
-  	<date>Jan, 2011</date>
-  	<description>Blue Variant of Ambiance theme</description>
+  	<name>Ambiance-Blue</name>
+  	<author>Kenneth Wimer, James Schriver, Andrea Cimitan, Victor Eduardo (simplygreat), Jared Sot (RAVEfinity Project),</author>
+  	<copyright>Canonical Ltd, RAVEfinity, SimplyGreat.</copyright>
+  	<date>Jan, 2012</date>
+  	<description>Metacity theme</description>
 </info>
 
 <!-- General window layout -->
 <frame_geometry name="frame_geometry_normal" title_scale="medium" rounded_top_left="true" rounded_top_right="true"  rounded_bottom_left="false" rounded_bottom_right="false">
- 	<distance name="left_width" value="1"/>
-	<distance name="right_width" value="1"/>
-	<distance name="bottom_height" value="1"/>
+ 	<distance name="left_width" value="0"/>
+	<distance name="right_width" value="0"/>
+	<distance name="bottom_height" value="0"/>
 	<distance name="left_titlebar_edge" value="10"/>
 	<distance name="right_titlebar_edge" value="10"/>
-	<distance name="button_width" value="18"/>
+	<distance name="button_width" value="19"/>
 	<distance name="button_height" value="20"/>
 	<distance name="title_vertical_pad" value="12"/>
 	<border name="title_border" left="2" right="2" top="0" bottom="0"/>
@@ -36,18 +36,20 @@
 	<border name="button_border" left="0" right="0" top="1" bottom="1"/>
 </frame_geometry>
 
+
 <frame_geometry name="geometry_maximized" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
-	<distance name="left_width" value="0"/>
-	<distance name="right_width" value="0"/>
-	<distance name="bottom_height" value="0"/>
-	<distance name="left_titlebar_edge" value="10"/>
-  	<distance name="right_titlebar_edge" value="10"/>
-  	<distance name="button_width" value="18"/>
-  	<distance name="button_height" value="20"/>
-  	<distance name="title_vertical_pad" value="12"/>
-  	<border name="title_border" left="2" right="2" top="0" bottom="0"/>
- 	<border name="button_border" left="0" right="0" top="1" bottom="1"/>
+  <distance name="left_width" value="0"/>
+  <distance name="right_width" value="0"/>
+  <distance name="bottom_height" value="0"/>
+  <distance name="left_titlebar_edge" value="10"/>
+  <distance name="right_titlebar_edge" value="10"/>
+  <distance name="button_width" value="18"/>
+  <distance name="button_height" value="20"/>
+  <distance name="title_vertical_pad" value="12"/>
+  <border name="title_border" left="2" right="2" top="0" bottom="0"/>
+  <border name="button_border" left="0" right="0" top="1" bottom="1"/>
 </frame_geometry>
+
 
 <frame_geometry name="border" has_title="false">
   	<distance name="left_width" value="3"/>
@@ -65,98 +67,107 @@
 <!-- Window Title -->
 
 <draw_ops name="draw_title_text_normal">
-  <title color="#333"
-         x="10"
+
+  <title color="#222"
+         x="(((width-title_width-30) `max` 10) / 2)"
          y="(((height - title_height) / 2) `max` 0)+1"/>
   <title color="#333"
-         x="10"
+         x="(((width-title_width-30) `max` 10) / 2)"
          y="(((height - title_height) / 2) `max` 0)-1"/>
   <title color="#333"
-         x="9"
+         x="(((width-title_width-30) `max` 10) / 2)-1"
          y="(((height - title_height) / 2) `max` 0)"/>
-  <title color="#333"
-         x="11"
+  <title color="#222"
+         x="(((width-title_width-30) `max` 10) / 2)+1"
          y="(((height - title_height) / 2) `max` 0)"/>
-  <title color="#d2dbdf"
-         x="10"
+  <title color="#dfdbd2"
+         x="(((width-title_width-30) `max` 10) / 2)"
          y="(((height - title_height) / 2) `max` 0)"/>
 
 </draw_ops>
 
 <draw_ops name="draw_title_text_inactive">
   <title color="#333333"
-         x="10"
+         x="(((width-title_width-30) `max` 10) / 2)"
          y="(((height - title_height) / 2) `max` 0)+1"/>
   <title color="#333333"
-         x="10"
+         x="(((width-title_width-30) `max` 10) / 2)"
          y="(((height - title_height) / 2) `max` 0)-1"/>
   <title color="#333333"
-         x="9"
+         x="(((width-title_width-30) `max` 10) / 2)-1"
          y="(((height - title_height) / 2) `max` 0)"/>
   <title color="#333333"
-         x="11"
+         x="(((width-title_width-30) `max` 10) / 2)+1"
          y="(((height - title_height) / 2) `max` 0)"/>
-  <title color="#787d80"
-         x="10"
+  <title color="#807d78"
+         x="(((width-title_width-30) `max` 10) / 2)"
          y="(((height - title_height) / 2) `max` 0)"/>
 </draw_ops>
 
 <draw_ops name="draw_title">
     <!-- Background gradient -->
     <gradient type="vertical" x="0" y="0" width="width" height="top_height">
-        <color value="#565b5c" />
-        <color value="#373c3b" />
-	<color value="#373c3b" />
+        <color value="shade/#3c3b37/1.53" />
+        <color value="shade/#3c3b37/1.40" />
+        <color value="shade/#3c3b37/1.27" />
+        <color value="shade/#3c3b37/1.13" />
+        <color value="shade/#3c3b37/1.07" />
+        <color value="shade/#3c3b37/1.03" />
+        <color value="shade/#3c3b37/1.01" />
     </gradient>
-    
+
     <!-- Titlebar outline -->
-    <rectangle color="shade/#373c3b/1.2" filled="false" x="0" y="0" width="width - 1" height="top_height - 1"/>
+    <rectangle color="shade/#3c3b37/1.0" filled="false" x="0" y="0" width="width - 1" height="top_height - 1"/>
 
     <!-- Topmost lines -->
-    <line color="shade/#373c3b/1.2" x1="0" x2="width" y1="0" y2="0"/>
-    <line color="shade/#565b5c/1.1" x1="0" x2="width" y1="1" y2="1"/>
+    <line color="shade/#3c3b37/1.20" x1="0" x2="width" y1="0" y2="0"/>
+    <line color="shade/#3c3b37/1.63" x1="0" x2="width" y1="1" y2="1"/>
     
     <!-- Darkening of the left arch -->
-    <line color="shade/#373c3b/1.2" x1="0" x2="4" y1="1" y2="1"/>
-    <line color="shade/#373c3b/1.2" x1="0" x2="2" y1="2" y2="2"/>
-    <line color="shade/#373c3b/1.2" x1="0" x2="1" y1="3" y2="3"/>
-    <line color="shade/#373c3b/1.2" x1="0" x2="1" y1="4" y2="4"/>
+    <line color="shade/#3c3b37/1.2" x1="0" x2="4" y1="1" y2="1"/>
+    <line color="shade/#3c3b37/1.2" x1="0" x2="2" y1="2" y2="2"/>
+    <line color="shade/#3c3b37/1.2" x1="0" x2="1" y1="3" y2="3"/>
+    <line color="shade/#3c3b37/1.2" x1="0" x2="1" y1="4" y2="4"/>
     
-    <line color="shade/#373c3b/1.2" x1="width-5" x2="width" y1="1" y2="1"/>
-    <line color="shade/#373c3b/1.2" x1="width-3" x2="width" y1="2" y2="2"/>
-    <line color="shade/#373c3b/1.2" x1="width-2" x2="width" y1="3" y2="3"/>
-    <line color="shade/#373c3b/1.2" x1="width-2" x2="width" y1="4" y2="4"/>
+    <line color="shade/#3c3b37/1.2" x1="width-5" x2="width" y1="1" y2="1"/>
+    <line color="shade/#3c3b37/1.2" x1="width-3" x2="width" y1="2" y2="2"/>
+    <line color="shade/#3c3b37/1.2" x1="width-2" x2="width" y1="3" y2="3"/>
+    <line color="shade/#3c3b37/1.2" x1="width-2" x2="width" y1="4" y2="4"/>
 
-    <line color="shade/#373c3b/0.9" x1="1" y1="top_height - 1" x2="width - 2" y2="top_height - 1"/>
+    <line color="shade/#3c3b37/1.0" x1="1" y1="top_height - 1" x2="width - 2" y2="top_height - 1"/>
 </draw_ops>
 
 <draw_ops name="draw_title_unfocused">
     <!-- Background gradient -->
     <gradient type="vertical" x="0" y="0" width="width+9" height="height">
-        <color value="#464a4B" />
-        <color value="#373c3b" />
-	<color value="#373c3b" />
+        <color value="shade/#3c3b37/1.30" />
+        <color value="shade/#3c3b37/1.25" />
+        <color value="shade/#3c3b37/1.20" />
+        <color value="shade/#3c3b37/1.13" />
+        <color value="shade/#3c3b37/1.07" />
+        <color value="shade/#3c3b37/1.03" />
+        <color value="shade/#3c3b37/1.01" />
     </gradient>
 
     <!-- Titlebar outline -->
-    <rectangle color="shade/#373c3b/1.2" filled="false" x="0" y="0" width="width - 1" height="top_height - 1"/>
+    <rectangle color="shade/#3c3b37/1.1" filled="false" x="0" y="0" width="width - 1" height="top_height - 1"/>
 
     <!-- Topmost lines -->
-    <line color="shade/#373c3b/1.16" x1="0" x2="width" y1="0" y2="0"/>
-    <line color="shade/#444849/1.14" x1="0" x2="width" y1="1" y2="1"/>
+    <line color="shade/#3c3b37/1.10" x1="0" x2="width" y1="0" y2="0"/>
+    <line color="shade/#3c3b37/1.24" x1="0" x2="width" y1="1" y2="1"/>
     
     <!-- Darkening of the left arch -->
-    <line color="shade/#373c3b/1.2" x1="0" x2="4" y1="1" y2="1"/>
-    <line color="shade/#373c3b/1.2" x1="0" x2="2" y1="2" y2="2"/>
-    <line color="shade/#373c3b/1.2" x1="0" x2="1" y1="3" y2="3"/>
-    <line color="shade/#373c3b/1.2" x1="0" x2="1" y1="4" y2="4"/>
+    <line color="shade/#3c3b37/1.2" x1="0" x2="4" y1="1" y2="1"/>
+    <line color="shade/#3c3b37/1.2" x1="0" x2="2" y1="2" y2="2"/>
+    <line color="shade/#3c3b37/1.2" x1="0" x2="1" y1="3" y2="3"/>
+    <line color="shade/#3c3b37/1.2" x1="0" x2="1" y1="4" y2="4"/>
     
-    <line color="shade/#373c3b/1.2" x1="width-5" x2="width" y1="1" y2="1"/>
-    <line color="shade/#373c3b/1.2" x1="width-3" x2="width" y1="2" y2="2"/>
-    <line color="shade/#373c3b/1.2" x1="width-2" x2="width" y1="3" y2="3"/>
-    <line color="shade/#373c3b/1.2" x1="width-2" x2="width" y1="4" y2="4"/>
+    <line color="shade/#3c3b37/1.2" x1="width-5" x2="width" y1="1" y2="1"/>
+    <line color="shade/#3c3b37/1.2" x1="width-3" x2="width" y1="2" y2="2"/>
+    <line color="shade/#3c3b37/1.2" x1="width-2" x2="width" y1="3" y2="3"/>
+    <line color="shade/#3c3b37/1.2" x1="width-2" x2="width" y1="4" y2="4"/>
   
-    <line color="shade/#373c3b/0.9" x1="1" y1="top_height - 1" x2="width - 2" y2="top_height - 1"/>
+    <line color="shade/#3c3b37/1.0" x1="1" y1="top_height - 1" x2="width - 2" y2="top_height - 1"/>
 </draw_ops>
 
 <draw_ops name="draw_title_inactive">
@@ -166,29 +177,37 @@
 <draw_ops name="draw_title_maximized">
     <!-- Background gradient -->
     <gradient type="vertical" x="0" y="0" width="width" height="top_height">
-        <color value="#565b5c" />
-        <color value="#373c3b" />
-	<color value="#373c3b" />
+        <color value="shade/#3c3b37/1.53" />
+        <color value="shade/#3c3b37/1.40" />
+        <color value="shade/#3c3b37/1.27" />
+        <color value="shade/#3c3b37/1.13" />
+        <color value="shade/#3c3b37/1.07" />
+        <color value="shade/#3c3b37/1.03" />
+        <color value="shade/#3c3b37/1.01" />
     </gradient>
-    
+
     <!-- Topmost dark line -->
-    <line color="shade/#565b5c/1.1" x1="0" x2="width" y1="0" y2="0"/>
+    <line color="shade/#3c3b37/1.63" x1="0" x2="width" y1="0" y2="0"/>
     
-    <line color="shade/#373c3b/0.94" x1="1" y1="top_height - 1" x2="width - 2" y2="top_height - 1"/>
+    <line color="shade/#3c3b37/1.0" x1="1" y1="top_height - 1" x2="width - 2" y2="top_height - 1"/>
 </draw_ops>
 
 <draw_ops name="draw_title_maximized_unfocused">
     <!-- Background gradient -->
     <gradient type="vertical" x="0" y="0" width="width" height="top_height">
-        <color value="#444849" />
-        <color value="#373c3b" />
-	<color value="#373c3b" />
+        <color value="shade/#3c3b37/1.30" />
+        <color value="shade/#3c3b37/1.25" />
+        <color value="shade/#3c3b37/1.20" />
+        <color value="shade/#3c3b37/1.13" />
+        <color value="shade/#3c3b37/1.07" />
+        <color value="shade/#3c3b37/1.03" />
+        <color value="shade/#3c3b37/1.01" />
     </gradient>
     
     <!-- Topmost dark line -->
-    <line color="shade/#444849/1.1" x1="0" x2="width" y1="0" y2="0"/>
+    <line color="shade/#3c3b37/1.24" x1="0" x2="width" y1="0" y2="0"/>
     
-    <line color="shade/#373c3b/0.94" x1="1" y1="top_height - 1" x2="width - 2" y2="top_height - 1"/>
+    <line color="shade/#3c3b37/1.0" x1="1" y1="top_height - 1" x2="width - 2" y2="top_height - 1"/>
 </draw_ops>
 
 <draw_ops name="draw_title_maximized_inactive">
@@ -198,16 +217,16 @@
 <!-- Window Frames -->
 
 <draw_ops name="draw_frame">
-    <rectangle color="shade/gtk:bg[NORMAL]/0.7" x="0" y="0" width="width" height="height" filled="true"/>
+    <rectangle color="shade/#3c3b37/0.7" x="0" y="0" width="width" height="height" filled="true"/>
     <gradient type="vertical" x="0" y="0" width="width" height="60">
-        <color value="shade/#373c3b/1.2" />
-        <color value="shade/gtk:bg[NORMAL]/0.7" />
+        <color value="shade/#3c3b37/1.2" />
+        <color value="shade/#3c3b37/0.7" />
     </gradient>
 </draw_ops>
 
 <!-- bottom border -->
 <draw_ops name="bottom_edge">
-	<line color="shade/gtk:bg[NORMAL]/0.7" x1="0" x2="width" y1="height-1" y2="height-1"/>
+	<line color="shade/#3c3b37/0.7" x1="0" x2="width" y1="height-1" y2="height-1"/>
 </draw_ops>
 
 <draw_ops name="border">
@@ -224,82 +243,6 @@
 
 <!-- BUTTONS -->
 
-<!-- Button Trough Left -->
-	<draw_ops name="left_left_background_focused_normal">
-		<image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="left_left_background_focused_pressed">
-		<image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="left_middle_background_focused_normal">
-		<image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="left_middle_background_focused_pressed">
-		<image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="left_right_background_focused_normal">
-		<image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="left_right_background_focused_pressed">
-		<image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="left_left_background_unfocused_normal">
-		<image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="left_left_background_unfocused_pressed">
-		<image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="left_middle_background_unfocused_normal">
-		<image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="left_middle_background_unfocused_pressed">
-		<image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="left_right_background_unfocused_normal">
-		<image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="left_right_background_unfocused_pressed">
-		<image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	
-<!-- Button Trough Right -->
-	<draw_ops name="right_left_background_focused_normal">
-		<image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="right_left_background_focused_pressed">
-		<image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="right_middle_background_focused_normal">
-		<image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="right_middle_background_focused_pressed">
-		<image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="right_right_background_focused_normal">
-		<image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="right_right_background_focused_pressed">
-		<image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="right_left_background_unfocused_normal">
-		<image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="right_left_background_unfocused_pressed">
-		<image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="right_middle_background_unfocused_normal">
-		<image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="right_middle_background_unfocused_pressed">
-		<image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="right_right_background_unfocused_normal">
-		<image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	<draw_ops name="right_right_background_unfocused_pressed">
-		<image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
-	</draw_ops>
-	
 <!-- Button prelightlays -->
 	<draw_ops name="menu_focused_normal">
    	<image filename="menu.png" x="0" y="1" width="object_width" height="object_height"/>
@@ -393,24 +336,6 @@
    	<piece position="left_edge" draw_ops="draw_frame"/>
    	<piece position="right_edge" draw_ops="draw_frame"/>
    	<piece position="bottom_edge" draw_ops="bottom_edge"/>
-	<button function="left_left_background" state="normal" draw_ops="left_left_background_focused_normal"/>
-	<button function="left_middle_background" state="normal" draw_ops="left_middle_background_focused_normal"/>
-	<button function="left_right_background" state="normal" draw_ops="left_right_background_focused_normal"/>
-	<button function="left_left_background" state="prelight" draw_ops="left_left_background_focused_normal"/>
-	<button function="left_middle_background" state="prelight" draw_ops="left_middle_background_focused_normal"/>
-	<button function="left_right_background" state="prelight" draw_ops="left_right_background_focused_normal"/>
-	<button function="left_left_background" state="pressed" draw_ops="left_left_background_focused_pressed"/>
-	<button function="left_middle_background" state="pressed" draw_ops="left_middle_background_focused_pressed"/>
-	<button function="left_right_background" state="pressed" draw_ops="left_right_background_focused_pressed"/>
-	<button function="right_left_background" state="normal" draw_ops="right_left_background_focused_normal"/>
-	<button function="right_middle_background" state="normal" draw_ops="right_middle_background_focused_normal"/>
-	<button function="right_right_background" state="normal" draw_ops="right_right_background_focused_normal"/>
-	<button function="right_left_background" state="prelight" draw_ops="right_left_background_focused_normal"/>
-	<button function="right_middle_background" state="prelight" draw_ops="right_middle_background_focused_normal"/>
-	<button function="right_right_background" state="prelight" draw_ops="right_right_background_focused_normal"/>
-	<button function="right_left_background" state="pressed" draw_ops="right_left_background_focused_pressed"/>
-	<button function="right_middle_background" state="pressed" draw_ops="right_middle_background_focused_pressed"/>
-	<button function="right_right_background" state="pressed" draw_ops="right_right_background_focused_pressed"/>
 	<button function="menu" state="normal" draw_ops="menu_focused_normal"/>
 	<button function="menu" state="prelight" draw_ops="menu_focused_prelight"/>
 	<button function="menu" state="pressed" draw_ops="menu_focused_normal"/> 
@@ -423,6 +348,8 @@
 	<button function="close" state="normal" draw_ops="close_focused_normal"/>
 	<button function="close" state="prelight" draw_ops="close_focused_prelight"/>
 	<button function="close" state="pressed" draw_ops="close_focused_pressed"/>
+	<shadow radius="40.0" opacity="0.8" color="#abde4f" x_offset="1" y_offset="4"/>
+	<padding left="7" right="7" bottom="7"/>
 </frame_style>
 
 <frame_style name="normal_unfocused" geometry="frame_geometry_normal">
@@ -431,24 +358,6 @@
    	<piece position="left_edge" draw_ops="draw_frame"/>
    	<piece position="right_edge" draw_ops="draw_frame"/>
    	<piece position="bottom_edge" draw_ops="bottom_edge"/>
-	<button function="left_left_background" state="normal" draw_ops="left_left_background_unfocused_normal"/>
-	<button function="left_middle_background" state="normal" draw_ops="left_middle_background_unfocused_normal"/>
-	<button function="left_right_background" state="normal" draw_ops="left_right_background_unfocused_normal"/>
-	<button function="left_left_background" state="prelight" draw_ops="left_left_background_unfocused_normal"/>
-	<button function="left_middle_background" state="prelight" draw_ops="left_middle_background_unfocused_normal"/>
-	<button function="left_right_background" state="prelight" draw_ops="left_right_background_unfocused_normal"/>
-	<button function="left_left_background" state="pressed" draw_ops="left_left_background_unfocused_pressed"/>
-	<button function="left_middle_background" state="pressed" draw_ops="left_middle_background_unfocused_pressed"/>
-	<button function="left_right_background" state="pressed" draw_ops="left_right_background_unfocused_pressed"/>
-	<button function="right_left_background" state="normal" draw_ops="right_left_background_unfocused_normal"/>
-	<button function="right_middle_background" state="normal" draw_ops="right_middle_background_unfocused_normal"/>
-	<button function="right_right_background" state="normal" draw_ops="right_right_background_unfocused_normal"/>
-	<button function="right_left_background" state="prelight" draw_ops="right_left_background_unfocused_normal"/>
-	<button function="right_middle_background" state="prelight" draw_ops="right_middle_background_unfocused_normal"/>
-	<button function="right_right_background" state="prelight" draw_ops="right_right_background_unfocused_normal"/>
-	<button function="right_left_background" state="pressed" draw_ops="right_left_background_unfocused_pressed"/>
-	<button function="right_middle_background" state="pressed" draw_ops="right_middle_background_unfocused_pressed"/>
-	<button function="right_right_background" state="pressed" draw_ops="right_right_background_unfocused_pressed"/>
 	<button function="menu" state="normal" draw_ops="menu_unfocused_normal"/>
 	<button function="menu" state="prelight" draw_ops="menu_unfocused_prelight"/>
 	<button function="menu" state="pressed" draw_ops="menu_focused_normal"/>
@@ -461,6 +370,8 @@
 	<button function="close" state="normal" draw_ops="close_unfocused_normal"/>
 	<button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
 	<button function="close" state="pressed" draw_ops="close_unfocused_pressed"/>
+	<shadow radius="15.0" opacity="0.6" color="#abde4f" x_offset="1" y_offset="4"/>
+	<padding left="7" right="7" bottom="7"/>
 </frame_style>
 
 <frame_style name="maximized_focused" geometry="geometry_maximized" parent="normal_focused">
@@ -469,6 +380,8 @@
 	<button function="maximize" state="normal" draw_ops="unmaximize_focused_normal"/>
 	<button function="maximize" state="prelight" draw_ops="unmaximize_focused_prelight"/>
 	<button function="maximize" state="pressed" draw_ops="unmaximize_focused_pressed"/>
+	<shadow radius="8.0" opacity="0.3" color="#abde4f" x_offset="1" y_offset="1"/>
+	<padding left="2" right="2" bottom="2"/>
 </frame_style>
 
 <frame_style name="maximized_unfocused" geometry="geometry_maximized" parent="normal_unfocused">
@@ -477,6 +390,8 @@
 	<button function="maximize" state="normal" draw_ops="unmaximize_unfocused_normal"/>
 	<button function="maximize" state="prelight" draw_ops="unmaximize_unfocused_prelight"/>
 	<button function="maximize" state="pressed" draw_ops="unmaximize_unfocused_pressed"/>
+	<!--shadow radius="8.0" opacity="0.3" color="#abde4f" x_offset="1" y_offset="1"/-->
+	<!--padding left="2" right="2" bottom="2"/-->
 </frame_style>
 
 <frame_style name="utility_focused" parent="normal_focused">
@@ -488,6 +403,8 @@
 	<button function="close" state="normal" draw_ops="close_focused_normal"/>
 	<button function="close" state="prelight" draw_ops="close_focused_prelight"/>
 	<button function="close" state="pressed" draw_ops="close_focused_pressed"/>
+	<shadow radius="8.0" opacity="0.3" color="#abde4f" x_offset="1" y_offset="1"/>
+	<padding left="2" right="2" bottom="2"/>
 </frame_style>
 
 <frame_style name="utility_unfocused" parent="normal_unfocused">
@@ -499,6 +416,8 @@
 	<button function="close" state="normal" draw_ops="close_unfocused_normal"/>
 	<button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
 	<button function="close" state="pressed" draw_ops="close_unfocused_pressed"/>
+	<shadow radius="8.0" opacity="0.3" color="#abde4f" x_offset="1" y_offset="1"/>
+	<padding left="2" right="2" bottom="2"/>
 </frame_style>
 
 <frame_style name="border" geometry="border" parent="normal_focused">

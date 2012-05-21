@@ -8,7 +8,7 @@ theme_DATA = \
 	ff.rc \
 	gnome-panel.rc \
 	gnome-terminal.rc \
-	gedit.rc
+	gedit.rc \
 	nautilus.rc \
 	mate-panel.rc \
 	mate-terminal.rc \

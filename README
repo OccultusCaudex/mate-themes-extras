@@ -6,38 +6,14 @@ The mate-themes-extras package contains a collection of GTK2/3 desktop themes fo
 Themes:
 
 --AmbianceBlue
-
---Ambiance-Xfce-LXDE-MATE
-
---ANewStartBlood
-
 --Cologne
-
---GnomishDark
-
---RadianceBlue
-
---Radiance-Xfce-LXDE-MATE
-
 --Sonar
-
 --SonarBlue
-
 --Zukitwo
-
 --Zukitwo-Dark
-
---Zukitwo colors
-
-
-icon-themes
-
---Sonar
 
 Installation:
 
 ./autogen.sh
-
 make
-
 make install

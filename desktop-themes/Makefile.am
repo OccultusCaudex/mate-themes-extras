@@ -10,7 +10,9 @@ SUBDIRS = \
 	RadianceBlue \
 	Radiance-Xfce-LXDE-MATE \
 	GnomishDark \
-	ANewStartBlood
+	ANewStartBlood \
+	Adwaita-Cupertino-SL \
+	drakfire-dream-black
 
 DIST_SUBDIRS = \
 	AmbianceBlue \
@@ -24,5 +26,7 @@ DIST_SUBDIRS = \
 	RadianceBlue \
 	Radiance-Xfce-LXDE-MATE \
 	GnomishDark \
-	ANewStartBlood
+	ANewStartBlood \
+	Adwaita-Cupertino-SL \
+	drakfire-dream-black
 

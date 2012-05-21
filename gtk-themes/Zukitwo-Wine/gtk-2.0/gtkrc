@@ -13,7 +13,7 @@
 # These are the defined colors for the theme, you can change them in GNOME's appearance preferences.
 gtk_color_scheme = "bg_color:#dcdcdc\nselected_bg_color:#de4e4e\nbase_color:#FFF" # Background, base.
 gtk_color_scheme = "fg_color:#101010\nselected_fg_color:#FFF\ntext_color:#1A1A1A" # Foreground, text.
-gtk_color_scheme = "tooltip_bg_color:#F5F5B5\ntooltip_fg_color:#000000" # Tooltips.
+gtk_color_scheme = "tooltip_bg_color:#F5F5B5\ntooltip_fg_color:#000" # Tooltips.
 gtk_color_scheme = "link_color:#08c" # Hyperlinks
 gtk_color_scheme = "text_color_dark:#E6E6E6" # Dark colors
 gtk_color_scheme = "menu_color:#212121" # Color for menus.
@@ -353,6 +353,7 @@ style "murrine-progressbar" = "murrine-thin" {
 
 style "murrine-statusbar" {
 	xthickness = 2
+	font_name = "7"
 }
 
 style "murrine-comboboxentry" { engine "murrine" { contrast = .4 }}
@@ -612,4 +613,6 @@ widget_class "*MozContainer*"		style "performance-fix" # Firefox (Not sure if th
 include "apps/chromium.rc"	# Chromium styling
 include "apps/gedit.rc"		# Gedit styling
 include "apps/pcmanfm.rc"	# PCManFM styling
-include "apps/nautilus-e.rc"	# Nautilus styling. Replace with nautilus-e.rc if you're using Nautilus-elementary or nautilus.rc if you're using normal Nautilus.
+include "apps/nautilus.rc"	# Nautilus styling. Replace with nautilus-e.rc if you're using Nautilus-elementary or nautilus.rc if you're using normal Nautilus.
+include "apps/caja.rc"
+include "apps/pluma.rc"

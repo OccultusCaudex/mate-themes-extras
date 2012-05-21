@@ -5,10 +5,13 @@ themedir = $(datadir)/themes/$(THEME_NAME)/gtk-3.0/assets
 theme_DATA = \
 	button-active-border-dark1.svg \
 	button-active-border-dark.svg \
+	button-active-border.svg \
 	button-border-dark1.svg \
 	button-border-dark.svg \
-	button-default-active-border-dark.svg \
+	button-border.svg \
+	button-default-active-border.svg \
 	button-default-border-dark.svg \
+	button-default-border.svg \
 	checkbox-checked-dark.svg \
 	checkbox-checked-insensitive-dark.svg \
 	checkbox-checked-lessdark.svg \
@@ -23,11 +26,14 @@ theme_DATA = \
 	checkbox-mixed-lessdark.svg \
 	checkbox-unchecked-dark.svg \
 	checkbox-unchecked-insensitive-dark.svg \
+	checkbox-unchecked-insensitive.svg \
 	checkbox-unchecked-lessdark.svg \
 	entry-border-focused-dark.svg \
 	entry-border-normal-dark1.svg \
 	entry-border-normal-dark.svg \
+	entry-border-normal.svg \
 	menu-border-dark.svg \
+	nautilus-info-border.svg \
 	prgrss.svg \
 	prgrssv.svg \
 	primary-toolbar-button-active-border-dark.svg \
@@ -65,6 +71,8 @@ theme_DATA = \
 	sidebar-radio-prelight.svg \
 	sidebar-radio-selected-dark.svg \
 	sidebar-radio-selected-prelight.svg \
+	switch-slider-border.svg \
+	toolbar-button-border.svg \
 	treeview-border-dark.svg \
 	treeview-focus-border-dark.svg \
 	trough-border-horizontal-dark1.svg \

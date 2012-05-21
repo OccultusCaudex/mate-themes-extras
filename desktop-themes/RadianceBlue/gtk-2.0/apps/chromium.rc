@@ -11,14 +11,14 @@ style "chromium_toolbar_button" {
 
 style "chrome-gtk-frame"
 {
-  ChromeGtkFrame::frame-color = "#f2f1f0"
-  ChromeGtkFrame::inactive-frame-color = "#f2f1f0"
+  ChromeGtkFrame::frame-color = "#dfd7cf"
+  ChromeGtkFrame::inactive-frame-color = "#dfd7cf"
 
   ChromeGtkFrame::frame-gradient-size = 16
   ChromeGtkFrame::frame-gradient-color = shade (0.97, @bg_color)
 
-  ChromeGtkFrame::incognito-frame-color = "#f2f1f0"
-  ChromeGtkFrame::incognito-inactive-frame-color = "#f2f1f0"
+  ChromeGtkFrame::incognito-frame-color = "#dfd7cf"
+  ChromeGtkFrame::incognito-inactive-frame-color = "#dfd7cf"
 
   ChromeGtkFrame::incognito-frame-gradient-size = 16
   ChromeGtkFrame::incognito-frame-gradient-color = shade (0.97, @bg_color)

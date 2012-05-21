@@ -2,12 +2,11 @@ THEME_NAME=GnomishDark
 
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-2.0
 
-theme_DATA = gtkrc
+theme_DATA = gtkrc \
+	bg.png
 
 EXTRA_DIST = $(theme_DATA)
 
-SUBDIRS = assets \
-			Styles
+SUBDIRS = Styles
 
-DIST_SUBDIRS = assets \
-			Styles
+DIST_SUBDIRS = Styles

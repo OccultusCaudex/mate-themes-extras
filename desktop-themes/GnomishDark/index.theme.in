@@ -11,7 +11,7 @@ Comment=A clean dark theme
 Encoding=UTF-8
 GtkTheme=GnomishDark
 MetacityTheme=GnomishDark
-IconTheme=mate
+IconTheme=Monochrome-Light
 CursorTheme=Adwaita
 CursorSize=24
 

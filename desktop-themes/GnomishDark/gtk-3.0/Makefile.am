@@ -6,8 +6,6 @@ theme_DATA = \
 	settings.ini \
 	gtk.css \
 	gtk-dark.css \
-	gtk-main.css \
-	gtk-main-dark.css \
 	gtk-widgets.css \
 	gtk-widgets-assets-dark.css \
 	gtk-widgets-dark-overrides.css

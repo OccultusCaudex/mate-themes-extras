@@ -1,0 +1,99 @@
+/*****************
+ * Notebooks and *
+ * tabs          *
+ *****************/
+.notebook {
+    padding: 0;
+
+    border-color: @notebook_border;
+    border-style: solid;
+	border-radius: 3;
+    border-width: 1px;
+    -unico-border-gradient: -gtk-gradient (linear,
+                                             left top, left bottom,
+                                             from (shade(@notebook_border, 0.90)),
+                                             to (shade(@notebook_border, 1.18)));
+
+    background-color: shade(@theme_bg_color, 0.97);
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@theme_bg_color, 0.89)),
+                                     color-stop (0.015, shade(@theme_bg_color, 0.97)),
+                                     to (shade(@theme_bg_color, 0.97)));
+
+    -GtkNotebook-tab-overlap: 5;
+    -GtkNotebook-tab-curvature: 6;
+
+    -unico-focus-border-color: alpha (@selected_bg_color, 0.0);
+    -unico-focus-border-radius: 3;
+    -unico-focus-fill-color: alpha (@selected_bg_color, 0.0);
+    -unico-focus-outer-stroke-color: @transparent;
+}
+
+.notebook GtkDrawingArea {
+	/* ubuntu 12 */
+	background-color: shade (@theme_bg_color, 0.97);
+}
+
+.notebook tab {
+    padding: 1 4 0;
+	border-radius: 3;
+	border-width: 1px;
+
+	-unico-border-gradient: -gtk-gradient (linear,
+                                             left top, left bottom,
+                                             from (shade(@notebook_border, 0.80)),
+                                             to (shade(@notebook_border, 0.90)));
+
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (@theme_bg_color, 0.85)),
+									 color-stop (0.04, shade(@theme_bg_color, 0.77)),
+									 color-stop (0.15, shade(@theme_bg_color, 0.85)),
+                                     to (shade(@theme_bg_color, 0.90)));
+}
+
+.notebook tab:active,
+.notebook tab *:active  {
+ 
+	/* border-width: 1; */
+	border-radius: 3;
+
+	-unico-border-gradient: -gtk-gradient (linear,
+                                             left top, left bottom,
+                                             from (shade(@notebook_border, 1.00)),
+                                             to (shade(@notebook_border, 0.90)));
+
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (@theme_base_color, 1.00)),
+                                     color-stop (0.25, shade(@theme_base_color, 0.99)),
+                                     color-stop (0.50, shade(@theme_bg_color, 0.96)),
+									 color-stop (0.98, shade(@theme_base_color, 0.99)),
+									 color-stop (0.98, shade(@notebook_border, 0.95)),
+                                     to (shade(@notebook_border, 0.95)));
+
+}
+
+.notebook tab *:active,
+.notebook tab GtkLabel:active {
+	color: @theme_text_color;
+	text-shadow: 0 1 alpha(@theme_base_color, 0.30);
+}
+
+.notebook tab GtkLabel {
+	/* ubuntu 12 */
+	color: @theme_text_color; 
+	text-shadow: 0 1 alpha(@theme_base_color, 0.30);
+}
+
+.notebook tab *:active:insensitive {
+	text-shadow: none;
+}
+
+.notebook .button:active,
+.notebook .button:active:hover {
+	
+}
+
+

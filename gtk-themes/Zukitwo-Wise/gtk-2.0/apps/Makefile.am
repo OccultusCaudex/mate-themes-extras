@@ -1,6 +1,7 @@
 themedir = $(datadir)/themes/Zukitwo-Wise/gtk-2.0/apps
 
 theme_DATA = combo_down.png \
+	chromium.rc \
 	dummy.png \
 	gedit.rc \
 	nautilus.rc \
@@ -14,6 +15,7 @@ theme_DATA = combo_down.png \
 	stock_stop.png \
 	caja.rc \
 	pluma.rc
+
 
 EXTRA_DIST = $(theme_DATA)
 

@@ -9,6 +9,8 @@ theme_DATA = \
 
 EXTRA_DIST = $(theme_DATA)
 
-SUBDIRS = assets
+SUBDIRS = assets \
+	apps
 
-DIST_SUBDIRS = assets
+DIST_SUBDIRS = assets \
+	apps

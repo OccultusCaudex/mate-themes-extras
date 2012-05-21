@@ -4,10 +4,10 @@ PanelApplet,
 PanelToplevel {
     padding: 0;
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@bg_color, 1.0)),
-                                     to (shade (@bg_color, 1.0)));
+                                     from (shade (@dark_bg_color, 1.15)),
+                                     to (shade (@dark_bg_color, 0.95)));
 
-    color: @bg_color;
+    color: @dark_fg_color;
 }
 
 .gnome-panel-menu-bar,
@@ -16,22 +16,22 @@ PanelApplet > GtkMenuBar.menubar.menuitem,
 PanelMenuBar.menubar,
 PanelMenuBar.menubar.menuitem {
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@bg_color, 1.0)),
-                                     to (shade (@bg_color, 1.0)));
+                                     from (shade (@dark_bg_color, 1.15)),
+                                     to (shade (@dark_bg_color, 0.95)));
 }
 
 PanelAppletFrame { 
-    background-color: @bg_color;
+    background-color: @dark_bg_color;
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@bg_color, 0.9)),
-                                     to (shade (@bg_color, 1.0)));
+                                     from (shade (@dark_bg_color, 1.15)),
+                                     to (shade (@dark_bg_color, 0.95)));
 }
 
 PanelApplet .button {
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@bg_color, 0.9)),
-                                     to (shade (@bg_color, 1.0)));    
-    border-color: shade (@bg_color, 1.0);
+                                     from (shade (@dark_bg_color, 1.15)),
+                                     to (shade (@dark_bg_color, 0.95)));    
+    border-color: shade (@dark_bg_color, 0.9);
     border-radius: 0;
     border-width: 0 1 0 1;
 
@@ -77,5 +77,5 @@ ClockBox {
 }
 
 WnckPager, WnckTasklist {
-    background-color: @bg_color;
+    background-color: @dark_bg_color;
 }

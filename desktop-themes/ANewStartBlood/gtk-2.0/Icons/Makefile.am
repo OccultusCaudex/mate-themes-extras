@@ -1,6 +1,6 @@
 THEME_NAME=ANewStartBlood
 
-themedir = $(datadir)/themes/$(THEME_NAME)/gtk-2.0/icons
+themedir = $(datadir)/themes/$(THEME_NAME)/gtk-2.0/Icons
 
 theme_DATA = close.png \
 	media-playback-pause.svg \

@@ -1,0 +1,95 @@
+Autor: Rafa Cobreros rafacobreros@gmail.com
+Licencia: GPL
+Original theme en: http://gnome-look.org/content/show.php/Adwaita+Cupertino?content=147061
+
+Personalización del tema:
+NOTA:
+	- Es conveniente cerrar y abrir sesión despues de hacer los cambios
+
+----------------------------------
+* 1.- Seleccionar estilo de TABS *
+----------------------------------
+Editar (gedit) el archivo ../Adwaita Cupertino SL/gtk-3.0/gtk.css
+
+Ve a la linea donde pone 
+@import url("tabs.css");
+
+y modificala segun la opcion que desees
+
+	1.- "tabs.css"  		(tabs por defecto del theme)
+
+	2.- "tabs-classics.css" (tabs de estilo mas tradicional)
+
+La linea debe quedar como una de las dos siguientes
+(ten cuidado de dejar solo UNA de las dos)
+
+@import url("tabs.css");
+o
+@import url("tabs-classic.css");
+
+----------------------------------------
+* 2.- Seleccionar estilo para nautilus *
+----------------------------------------
+Editar (gedit) el archivo ../Adwaita Cupertino SL/gtk-3.0/gtk.css 
+
+Ve a la ultima linea y encontraras 3 opciones para nautilus:
+
+	1.- "gnome-applications-gray.css"  		(nautilus sidebar y toolbar gris)
+	2.- "gnome-applications-light.css" 		(nautilus sidebar azul claro estilo leopard)
+	2.- "gnome-applications-gray-light.css" (nautilus sidebar gris y toolbar claro)
+	
+modifica la linea "@import" para que se corresponda con el estilo que buscas,
+de forma que quede como una de las tres lineas de abajo.
+(ten cuidado de dejar solo UNA de las tres)
+
+@import url("gnome-applications-gray.css");
+
+O
+
+@import url("gnome-applications-light.css");
+
+o
+
+@import url("gnome-applications-gray-light.css");
+
+
+------------------------------------------------------------------------------
+* 3.- Seleccionar estilo de los botones de la barra de titulos de la ventana *
+------------------------------------------------------------------------------
+Si prefieres tener los botones brillantes en la barra de titulos, al estilo de apple:
+
+Copia el contenido del archivo "buttons_glassy_SL.tar.gz" en la carpeta "../Adwaita Cupertino SL/metacity-1/"
+
+Para restaurar los iniciales:
+
+Copia el contenido del archivo "buttons_normal.tar.gz" en la carpeta "../Adwaita Cupertino SL/metacity-1/"
+
+------------------------------------
+* 4.- Arreglar botones de synaptic *
+------------------------------------
+Nota: No he puesto el arreglo por defecto porque sacrifica la calidad de los radio-button de gtk2.
+
+Editar (gedit) el archivo:
+/Adwaita Cupertino SL/gtk-2.0/gtkrc
+
+Buscar la linea (por el final del archivo, cerca de la linea 710):
+widget_class "*<GtkRadioButton>*"				style:  "radiobutton"
+
+y sustituirla por:
+widget_class "*<GtkRadioButton>*"				style:  "checkradio"
+
+----------------------------------------------
+* 5.- Arreglar botones de la toolbar en GIMP *
+----------------------------------------------
+Nota: No he puesto el arreglo por defecto porque sacrifica la calidad de los check-button de gtk2.
+
+Editar (gedit) el archivo:
+/Adwaita Cupertino SL/gtk-2.0/gtkrc
+
+Buscar la linea (por el final del archivo, cerca de la linea 710):
+widget_class "*<GtkCheckButton>*"				style:  "checkbutton"
+
+y sustituirla por:
+widget_class "*<GtkCheckButton>*"				style:  "checkradio"
+
+

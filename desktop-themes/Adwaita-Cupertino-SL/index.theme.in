@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Adwaita-Cupertino-SL
+Comment=Variant of Adwaita theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Adwaita-Cupertino-SL
+MetacityTheme=Adwaita-Cupertino-SL
+IconTheme=Faenza-Dark
+CursorTheme=adwaita
+ButtonLayout=:minimize,maximize,close
+

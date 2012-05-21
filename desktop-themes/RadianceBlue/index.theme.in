@@ -8,6 +8,6 @@ Encoding=UTF-8
 GtkTheme=RadianceBlue
 MetacityTheme=RadianceBlue
 IconTheme=elementary-mono-dark
-CursorTheme=mate
+CursorTheme=dmz
 ButtonLayout=:minimize,maximize,close
 

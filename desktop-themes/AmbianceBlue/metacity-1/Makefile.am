@@ -30,9 +30,6 @@ theme_DATA = \
 	minimize_unfocused_over.png \
 	minimize_unfocused_prelight.png \
 	minimize_unfocused_pressed.png \
-	trough_left.png \
-	trough_middle.png \
-	trough_right.png \
 	unmaximize.png \
 	unmaximize_focused_normal.png \
 	unmaximize_focused_prelight.png \
