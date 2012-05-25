@@ -31,8 +31,6 @@ Themes:
 
 --Zukitwo-Dark
 
---Zukitwo-Resonance
-
 --Zukitwo-Brave
 
 --Zukitwo-Dust
