@@ -1,6 +1,11 @@
+if BUILD_ZUKITWO_COLORS
+zukitwo_colors_SUBDIR = Zukitwo-Colors
+endif
+
 SUBDIRS = \
-	Zukitwo-Colors
+	$(zukitwo_colors_SUBDIR)
 
 DIST_SUBDIRS = \
 	Zukitwo-Colors
+
 

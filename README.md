@@ -1,6 +1,8 @@
 mate-themes-extras
 ==================
 
+GTK2/3 themes optimized for GTK3-3.2.x
+
 The mate-themes-extras package contains a collection of GTK2/3 desktop themes for MATE. These themes can change the appearance of application widgets, window borders, etc.
 
 Themes:
@@ -13,7 +15,7 @@ Themes:
 
 --ANewStartBlood
 
---Cologne (own theme based on xfce-kolors and Shiki-Colors-Striped-Metacity)
+--Cologne
 
 --drakfire-dream-black
 
@@ -31,9 +33,11 @@ Themes:
 
 --Zukitwo-Dark
 
+--Zukitwo-Dust
+
 --Zukitwo-Brave
 
---Zukitwo-Dust
+--Zukitwo-Colors
 
 --Zukitwo-Human
 
@@ -45,44 +49,63 @@ Themes:
 
 --Zukitwo-Wise
 
-Icon themes:
-
---Sonar
+--Sonar-Icons
 
 
 Installation:
 
-./autogen.sh
+You have to use autogen.sh with configure flags to enable a theme.
+
+Without a flag nothing will compile!
+
+This will install all themes.
+
+./autogen.sh \
+
+--enable-Adwaita-Cupertino-SL \
+
+--enable-AmbianceBlue \
+
+--enable-Ambiance-Xfce-LXDE-MATE \
+
+--enable-ANewStartBlood \
+
+--enable-Cologne=yes \
+
+--enable-drakfire-dream-black \
+
+--enable-GnomishDark \
+
+--enable-RadianceBlue \
+
+--enable-Radiance-Xfce-LXDE-MATE \
+
+--enable-Sonar \
+
+--enable-SonarBlue \
+
+--enable-Zukitwo \
+
+--enable-Zukitwo-Dark \
+
+--enable-Zukitwo-Dust \
+
+--enable-Zukitwo-Brave \
+
+--enable-Zukitwo-Colors \
+
+--enable-Zukitwo-Human \
+
+--enable-Zukitwo-Illustrious \
+
+--enable-Zukitwo-Noble \
+
+--enable-Zukitwo-Wine \
+
+--enable-Zukitwo-Wise \
+
+--enable-Sonar-Icons
 
 make
 
-make install
-
-
-Dependencies:
-
---gtk-xfce-engine
-
---gtk-murrine-engine
-
---gtk3-engines-unico
-
---gnome-colors-icon-theme
-
---elementary-icon-theme
-
---mate-icon-theme
-
---mate-themes
-
---elegant-awoken-icon-theme
-
---faenza-icon-theme
-
---humanity-icon-theme
-
---monochrome-icon-theme
-
---dmz-cursor-themes
-
---adwaita-cursor-theme
+make install (as root)
