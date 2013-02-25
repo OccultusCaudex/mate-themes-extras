@@ -56,55 +56,13 @@ Installation:
 
 You have to use autogen.sh with configure flags to enable a theme.
 
-Without a flag nothing will compile!
+Without a flag nothing will compile!!!!!
 
-This will install all themes.
+This example for one theme, use ./configure --help after autogen.sh to find the right configure flags.
 
 ./autogen.sh \
 
---enable-Adwaita-Cupertino-SL \
-
---enable-AmbianceBlue \
-
---enable-Ambiance-Xfce-LXDE-MATE \
-
---enable-ANewStartBlood \
-
---enable-Cologne=yes \
-
---enable-drakfire-dream-black \
-
---enable-GnomishDark \
-
---enable-RadianceBlue \
-
---enable-Radiance-Xfce-LXDE-MATE \
-
---enable-Sonar \
-
---enable-SonarBlue \
-
---enable-Zukitwo \
-
---enable-Zukitwo-Dark \
-
---enable-Zukitwo-Dust \
-
---enable-Zukitwo-Brave \
-
---enable-Zukitwo-Colors \
-
---enable-Zukitwo-Human \
-
---enable-Zukitwo-Illustrious \
-
---enable-Zukitwo-Noble \
-
---enable-Zukitwo-Wine \
-
---enable-Zukitwo-Wise \
-
---enable-Sonar-Icons
+--enable-Adwaita-Cupertino-SL
 
 make
 
