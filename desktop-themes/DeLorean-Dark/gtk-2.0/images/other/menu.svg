@@ -14,7 +14,7 @@
    height="10"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="menu.svg">
   <defs
      id="defs4">
@@ -92,16 +92,6 @@
        y2="1052.5427"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.9993741,0,0,1.0351551,0.00923939,-36.986527)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3763"
-       id="linearGradient3770"
-       x1="5.2920027"
-       y1="1042.3267"
-       x2="5.2920027"
-       y2="1052.3641"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0986513,0,0,1.0986513,-0.49325659,-103.32364)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -111,13 +101,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.837729"
-     inkscape:cx="-2.5993203"
+     inkscape:cx="5.9604311"
      inkscape:cy="3.791044"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="722"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1" />
@@ -129,7 +119,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -139,39 +129,77 @@
      id="layer1"
      transform="translate(0,-1042.3622)">
     <rect
-       style="fill:url(#linearGradient3770);fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3765"
        width="10"
        height="10"
        x="0"
        y="1042.3622" />
     <rect
-       style="fill:#ffffff;fill-opacity:0.08627451;fill-rule:nonzero;stroke:none"
+       style="fill:#181819;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3772"
        width="10"
        height="1"
        x="0"
        y="1042.3622" />
     <rect
-       style="fill:#000000;fill-opacity:0.39607844;fill-rule:nonzero;stroke:none"
+       style="fill:#121213;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3774"
        width="10"
        height="1"
        x="0"
        y="1051.3619" />
     <rect
-       style="fill:#000000;fill-opacity:0.06403941;fill-rule:nonzero;stroke:none"
+       style="fill:#121213;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3784"
        width="1"
        height="8"
        x="4.4168792e-07"
        y="1043.3622" />
     <rect
-       style="fill:#000000;fill-opacity:0.07843138;fill-rule:nonzero;stroke:none"
+       style="fill:#121213;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3784-8"
        width="1"
        height="8"
        x="9"
        y="1043.3622" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;opacity:0.015"
+       id="rect3772-2"
+       width="8"
+       height="1"
+       x="1"
+       y="1043.3622" />
+    <rect
+       style="opacity:0.06;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3772-2-8"
+       width="8"
+       height="1"
+       x="1"
+       y="1050.3622" />
+    <rect
+       style="opacity:0.005;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3772-2-3"
+       width="6"
+       height="1"
+       x="-1050.3622"
+       y="1"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <rect
+       style="opacity:0.02;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3772-2-3-7"
+       width="6"
+       height="1"
+       x="-1050.3622"
+       y="8"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <rect
+       style="opacity:0.008;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3772-2-3-2"
+       width="6"
+       height="1"
+       x="-8"
+       y="-1045.3622"
+       transform="scale(-1,-1)" />
   </g>
 </svg>

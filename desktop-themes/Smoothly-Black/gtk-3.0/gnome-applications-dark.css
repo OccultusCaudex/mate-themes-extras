@@ -203,6 +203,127 @@ NautilusWindow > GtkTable > .pane-separator {
     border-radius: 0;
 }
 
+NautilusView {
+	background-color: shade (@view_bg_color, 1.0);
+}
+
+
+/* nemo */
+.nemo-canvas-item {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+    background-color: alpha (shade (@gradient_color_a-b, 1.8), 0.0);
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@base_color-b, 1.40)),
+                                     color-stop (0.55, shade (@glow_color-b, 0.95)),
+                                     to (shade (@base_color-b, 1.40)));
+    box-shadow: inset 0px 0px shade (@gbase_color-b, 1.25),
+                inset -0px -0px shade (@base_color-b, 1.25),
+                inset 1px 1px shade (@base_color-b, 1.45),
+                inset -1px -1px shade (@base_color-b, 1.45);
+}
+
+.nemo-desktop.nemo-canvas-item {
+    border-width: 0px;
+    color: @nemo_desktop_text_color-b;
+    background-color: @transparent-b;
+    text-shadow: 1px 1px @nemo_desktop_text_shadow_color-b;
+}
+
+.nemo-canvas-item:selected {
+    text-shadow: 1px 1px @nemo_desktop_text_color-b;
+}
+
+
+.nemo-canvas-item:selected:focused {
+    text-shadow: 1px 1px @nemo_desktop_text_shadow_color-b;
+}
+
+.nemo-desktop.nemo-canvas-item:active {
+    color: @nemo_desktop_text_shadow_color-b;
+    text-shadow: 1px 1px @nemo_desktop_text_color-b;
+    background-color: alpha (shade (@gradient_color_a-b, 1.5), 0.0);
+}
+
+.nemo-desktop.nemo-canvas-item:selected {
+    text-shadow: 1px 1px @nemo_desktop_text_color-b;
+    color: @nemo_desktop_text_shadow_color-b;
+    background-color: alpha (shade (@gradient_color_a-b, 1.5), 0.0);
+}
+
+
+.nemo-desktop.nemo-canvas-item:selected:focused {
+    color: @nemo_desktop_text_shadow_color-b;
+    text-shadow: 1px 1px @nemo_desktop_text_color-b;
+}
+
+NemoTrashBar.info,
+NemoXContentBar.info,
+NemoSearchBar.info,
+NemoQueryEditor.info {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    -GtkToolbar-button-relief: normal;
+    padding: 4px;    
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@bg_color-b, 0.85)),
+                                     color-stop (0.50, shade (@bg_color-b, 0.95)),
+                                     color-stop (1.00, @bg_color-b),
+                                     to (shade (@bg_color-b, 0.95)));
+    background-color: shade (@border_gradient_color_b-b, 1.25);
+    box-shadow: inset 2px 2px shade (@inner_gradient_color_a-b, 1.00),
+                inset -2px -2px shade (@inner_gradient_color_a-b, 1.00),
+                inset 1px 1px shade (@border_gradient_color_b-b, 0.85),
+                inset -1px -1px shade (@border_gradient_color_b-b, 0.85);
+}
+
+
+NemoSearchBar .entry {
+}
+
+.nautilus-cluebar-label {
+    font: bold;
+}
+
+NemoFloatingBar {
+    border-radius: 3px 3px 0px 0px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+NemoWindow .sidebar .frame {
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: shade (@border_gradient_color_b-b, 2.05);
+    box-shadow: inset 2px 2px shade (@inner_gradient_color_a-b, 0.95),
+                inset -2px -2px shade (@inner_gradient_color_a-b, 0.95),
+                inset 1px 1px shade (@border_gradient_color_b-b, 1.45),
+                inset -1px -1px shade (@border_gradient_color_b-b, 1.45);
+}
+
+NemoWindow > GtkTable > .pane-separator {
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    border-color: shade (@bg_color-b, 0.66);
+    border-radius: 6px;
+}
+
+.rubberband {
+    background-color: alpha (@base_color-b, 0.25);
+    border-style: solid;
+    border-color: shade (@base_color-b, 1.30);
+    border-radius: 0;
+}
+
+NemoView {
+	background-color: shade (@view_bg_color, 1.0);
+}
+
+
 /***********************
  * Fallback Mode Panel *
  ***********************/

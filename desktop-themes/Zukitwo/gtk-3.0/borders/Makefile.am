@@ -4,8 +4,10 @@ themedir = $(datadir)/themes/Zukitwo/gtk-3.0/borders
 theme_DATA = \
 	button-active-focus.png \
 	button-active.png \
+	button-active-ins.png \
 	button-focus.png \
 	button-ins.png \
-	button.png
+	button.png \
+	nohl-generic-border.png
 
 EXTRA_DIST = $(theme_DATA)

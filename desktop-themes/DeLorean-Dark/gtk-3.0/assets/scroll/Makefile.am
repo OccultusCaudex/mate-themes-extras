@@ -17,7 +17,6 @@ theme_DATA = \
 	slider-h-backdrop.svg \
 	slider-sidebar-hover.svg \
 	slider-sidebar.svg \
-	slider-sidebar-backdrop.svg \
 	slider-v-active.svg
 
 EXTRA_DIST = $(theme_DATA)

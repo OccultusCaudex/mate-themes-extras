@@ -2,27 +2,34 @@ THEME_NAME=DeLorean-Dark
  
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-3.0/borders
 
+theme_DATA = \
+menu-border.svg
+
+EXTRA_DIST = $(theme_DATA)
+
 SUBDIRS =	\
 	button	\
-	inline	\
-	raised \
-	tooltip \
-	column \
-	scale \
-	trough \
+    column \
 	entry \
+	inline	\
 	primary \
-	separator
+	raised \
+	scale \
+	separator \
+	switch \
+	tooltip \
+	trough
 
 DIST_SUBDIRS =	\
 	button	\
-	inline	\
-	raised \
-	tooltip \
-	column \
-	scale \
-	trough \
+    column \
 	entry \
+	inline	\
 	primary \
-	separator
+	raised \
+	scale \
+	separator \
+	switch \
+	tooltip \
+	trough
 

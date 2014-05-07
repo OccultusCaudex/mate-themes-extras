@@ -14,8 +14,8 @@
    height="9"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="down-background-insensitive.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="notebook-down-background-insensitive.svg">
   <defs
      id="defs33224">
     <linearGradient
@@ -370,14 +370,14 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="22.62"
-     inkscape:cx="2.7865397"
+     inkscape:cx="-12.288615"
      inkscape:cy="8.4559697"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="722"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -401,7 +401,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -411,13 +411,13 @@
      inkscape:groupmode="layer"
      transform="translate(0,-7)">
     <rect
-       style="fill:#161616;fill-opacity:1;stroke:none"
-       id="rect3084"
+       style="opacity:1;fill:#1e1e1e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3993"
        width="14"
        height="9"
        x="0"
        y="7"
-       rx="0.48151845"
+       rx="0"
        ry="0" />
     <path
        style="opacity:0.06;color:#000000;fill:none;stroke:#faf6f0;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"

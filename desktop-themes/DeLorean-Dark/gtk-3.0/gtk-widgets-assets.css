@@ -1,25 +1,3 @@
-/**************
- * background *
- **************/
- /*** Ubuntu Fixes: they may all no longer be necessary***/
-GtkPaned,
-GtkEventBox,
-GtkEmpty,
-.toolbar,
-GtkPaned:backdrop,
-GtkEventBox:backdrop,
-GtkEmpty:backdrop,
-.toolbar:backdrop {
-	background-color: transparent;
-	background-image: 
-                      linear-gradient(to bottom,
-                                      transparent,
-                                      rgba(0,0,0,0.0)), 
-                                      url("assets/WindowBg-dark.png");
-    background-repeat: repeat;
-    background-position: top left;
-} 
-
 /***************
  * Resize grip *
  ***************/
@@ -29,87 +7,80 @@ GtkEmpty:backdrop,
     background-image: url("assets/resize-grip.svg");
 }
 
+/*******************
+ * Pane separators *
+ *******************/
+.pane-separator {
+    background-image: url("assets/pane-separator-grip.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pane-separator:hover {
+    background-image: url("assets/pane-separator-grip-prelight.svg");
+}
+
+.pane-separator.vertical {
+    background-image: url("assets/pane-separator-grip-vertical.svg");
+}
+
+.pane-separator.vertical:hover {
+    background-image: url("assets/pane-separator-grip-vertical-prelight.svg");
+}
+
 /*************************
  * Check and Radio items *
  *************************/
 
 /* draw regular check and radio items using our SVG assets */
 .check {
-	background-image: url("assets/notebook-check-radio/check-unchecked.svg");
-	background-color: transparent;
+    background-image: url("assets/check-radio/check-unchecked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.notebook .check {
-    background-image: url("assets/notebook-check-radio/check-unchecked.svg");
-	background-color: transparent;
-}
+.view.cell.check,
+.cell.check,
 
-.notebook .check.cell,
-.check.cell {
-    background-image: url("assets/notebook-check-radio/check-unchecked-alt.svg");
-	background-color: transparent;
-}
-
-.notebook .check row:selected,
-.notebook .check row:selected:focus,
-.check row:selected,
-.check row:selected:focus {
-    background-image: url("assets/notebook-check-radio/check-unchecked-selected-alt.svg");
-	background-color: transparent;
-}
-
-.check:hover {
-    background-image: url("assets/notebook-check-radio/check-unchecked-hover.svg");
-}
-
-.notebook .check:hover {
-    background-image: url("assets/notebook-check-radio/check-unchecked-hover.svg");
-}
-
-.notebook .check row:hover,
+.check.cell:hover,
 .check row:hover,
-.check row:nth-child(even):hover,
-.check row:nth-child(odd):hover {
-    background-image: url("assets/notebook-check-radio/check-unchecked-alt-hover.svg");
-    background-color: transparent;
+.notebook .check.cell:hover,
+.notebook .check row:hover,
+
+.view.cell.check:backdrop,
+.cell.check:backdrop,
+
+.check.cell:hover:hover:backdrop,
+.check row:hover:hover:backdrop,
+.notebook .check.cell:hover:hover:backdrop,
+.notebook .check row:hover:hover:backdrop {
+    background-image: url("assets/check-radio/check-unchecked-alt.svg");
 }
 
-.check.cell:selected:hover,
-.check.cell:selected:hover:focus,
-.notebook .check row:selected:hover,
-.notebook .check row:selected:focus:hover,
-.check row:selected:hover,
-.check row:selected:hover:focus {
-    background-image: url("assets/notebook-check-radio/check-unchecked-selected-alt-hover.svg");
-    background-color: transparent;
-}
+.check.cell:selected:selected,
+.check.cell:selected:selected:focus,
+.check row:selected:selected,
+.check row:selected:selected:focus,
 
-.check:backdrop,
-.check:hover:backdrop,
-.notebook .check:hover:backdrop,
-.check.cell:backdrop,
-.notebook .check.cell:hover:backdrop,
-.check row:hover:backdrop,
-.notebook .check row:hover:backdrop,
-.check row:nth-child(even):hover:backdrop,
-.check row:nth-child(odd):hover:backdrop,
-.check row:selected:backdrop,
-.check row:selected:focus:backdrop,
-.notebook .check row:selected:backdrop,
-.notebook .check row:selected:focus:backdrop,
-.check row:selected:hover:backdrop,
-.check row:selected:hover:focus:backdrop,
-.notebook .check row:selected:hover:backdrop,
-.notebook .check row:selected:focus:hover:backdrop {
-    background-image: url("assets/check-unchecked-backdrop.svg");
+.notebook .check.cell:selected:selected,
+.notebook .check.cell:selected:selected:focus,
+.notebook .check row:selected:selected,
+.notebook .check row:selected:selected:focus,
+
+.check.cell:hover:hover:selected:selected:backdrop,
+.check row:hover:hover:selected:selected:backdrop,
+.notebook .check.cell:hover:hover:selected:selected:backdrop,
+.notebook .check row:hover:hover:selected:selected:backdrop {
+    background-image: url("assets/check-radio/check-unchecked-alt.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    box-shadow: none;
+    background-size: 16px;/*without this the selected treeviews will not draw a visible image, I dont know why*/
 }
 
 .check:insensitive {
-    background-image: url("assets/notebook-check-radio/check-unchecked-insensitive.svg");
-}
-
-.notebook .check:insensitive {
-    
+    background-image: url("assets/check-radio/check-unchecked-insensitive.svg");
 }
 
 .check row:insensitive,
@@ -120,323 +91,218 @@ GtkEmpty:backdrop,
 .check row:selected:focus:insensitive,
 .check row:selected:insensitive:hover,
 .check row:selected:focus:insensitive:hover,
-.notebook .check row:insensitive,
-.notebook .check row:nth-child(even):insensitive,
-.notebook .check row:nth-child(odd):insensitive,
-.notebook .check row:insensitive:hover,
-.notebook .check row:selected:insensitive,
-.notebook .check row:selected:focus:insensitive,
-.notebook .check row:selected:insensitive:hover,
-.notebook .check row:selected:focus:insensitive:hover {
-    background-image: url("assets/check-unchecked-insensitive-alt.svg");
-    background-color: transparent;
-}
 
-.check:insensitive:backdrop,
 .check row:insensitive:backdrop,
 .check row:nth-child(even):insensitive:backdrop,
 .check row:nth-child(odd):insensitive:backdrop,
-.check row:insensitive:hover:backdrop,
-.check row:selected:insensitive:backdrop,
-.check row:selected:focus:insensitive:backdrop,
-.notebook .check:insensitive:backdrop,
-.notebook .check row:insensitive:backdrop,
-.notebook .check row:nth-child(even):insensitive:backdrop,
-.notebook .check row:nth-child(odd):insensitive:backdrop,
-.notebook .check row:insensitive:hover:backdrop,
-.notebook .check row:selected:insensitive:backdrop,
-.notebook .check row:selected:focus:insensitive:backdrop {
-    background-image: url("assets/check-insensitive-backdrop.svg");
+.check row:insensitive:hover:hover:backdrop,
+.check row:selected:selected:insensitive:backdrop,
+.check row:selected:selected:insensitive:hover:hover:backdrop {
+    background-image: url("assets/check-radio/check-unchecked-insensitive-alt.svg");
+    background-color: transparent;
 }
+/*
+.check:backdrop,
+.view.cell.check:backdrop,
+.check row:selected:backdrop {
+    background-image: url("assets/checkbox-unchecked-backdrop.png");
+}
+
+.check:insensitive:backdrop,
+.check row:selected:insensitive:backdrop {
+    background-image: url("assets/checkbox-unchecked-backdrop-insensitive.png");
+}*/
 
 .check:active {
-    background-image: url("assets/notebook-check-radio/check-active-inset.svg");
+    background-image: url("assets/check-radio/check-active.svg");
 }
 
-.notebook .check:active {
-    background-image: url("assets/notebook-check-radio/check-active-inset.svg");
-}
+.cell.check:active,
+.view.cell.check:active,
 
-.notebook .cell.check:active,
-.cell.check:active  {
-    background-image: url("assets/notebook-check-radio/check-active-alt-inset.svg");
+.cell.check:active:backdrop,
+.view.cell.check:active:backdrop,
+
+.check.cell:active:hover:hover:backdrop,
+.check row:active:hover:hover:backdrop,
+.notebook .check.cell:active:hover:hover:backdrop,
+.notebook .check row:active:hover:hover:backdrop  {
+    background-image: url("assets/check-radio/check-active-alt.svg");
 	background-color: transparent;
 }
 
-.check row:selected:active,
-.check row:selected:focus:active,
-.notebook .check row:selected:active,
-.notebook .check row:selected:focus:active  {
-    background-image: url("assets/notebook-check-radio/check-active-selected-alt.svg");
-	background-color: transparent;
+.check.cell:selected:selected:active,
+.check.cell:selected:selected:active:focus,
+.check row:selected:selected:active,
+.check row:selected:selected:active:focus,
+
+.notebook .check.cell:selected:selected:active,
+.notebook .check.cell:selected:selected:active:focus,
+.notebook .check row:selected:selected:active,
+.notebook .check row:selected:selected:active:focus,
+
+.check row:selected:selected:active:backdrop,
+.check row:selected:selected:active:hover:hover:backdrop,
+.notebook .check row:selected:selected:active:backdrop,
+.notebook .check row:selected:selected:active:hover:hover:backdrop  {
+    background-image: url("assets/check-radio/check-active-alt.svg");
 }
 
-.check:active:hover {
-    background-image: url("assets/notebook-check-radio/check-active.svg");
-}
-
-.notebook .check:active:hover {
-    background-image: url("assets/notebook-check-radio/check-active.svg");
-	background-color: transparent;
-}
-
-.notebook .cell.check:active:hover,
-.cell.check:active:hover {
-    background-image: url("assets/notebook-check-radio/check-active-alt.svg");
-    background-color: transparent;
-}
-
-.check row:selected:active:hover,
-.check row:selected:focus:active:hover,
-.notebook .check row:selected:active:hover,
-.notebook .check row:selected:focus:active:hover {
-    background-image: url("assets/notebook-check-radio/check-active-selected-hover-alt.svg");
-    background-color: transparent;
-}
-
-.check:active:backdrop,
-.check:active:hover:backdrop,
-.notebook .check:active:backdrop,
-.notebook .check:active:hover:backdrop,
-.check row:active:hover:backdrop,
-.check row:selected:active:hover:backdrop,
-.check row:selected:focus:active:hover:backdrop,
-.notebook .check row:active:hover:backdrop,
-.notebook .check row:selected:active:hover:backdrop,
-.notebook .check row:selected:focus:active:hover:backdrop,
-.notebook .check row:selected:active:backdrop,
-.notebook .check row:selected:focus:active:backdrop,
-.check row:selected:active:backdrop,
-.check row:selected:focus:active:backdrop {
-	background-image: url("assets/check-active-backdrop.svg");
-}
-
-.check:active:insensitive,
-.check:active:insensitive:hover {
-    background-image: url("assets/notebook-check-radio/check-active-insensitive-inset.svg");
-}
-
-.notebook .check:active:insensitive,
-.notebook .check:active:insensitive:hover {
-    background-image: url("assets/notebook-check-radio/check-active-insensitive-inset.svg");
+.check:active:insensitive {
+    background-image: url("assets/check-radio/check-active-insensitive-inset.svg");
 }
 
 .check row:active:insensitive,
-.notebook .check row:active:insensitive,
 .check row:active:insensitive:hover,
-.notebook .check row:active:insensitive:hover,
 .check row:selected:active:insensitive,
 .check row:selected:focus:active:insensitive,
-.notebook .check row:selected:active:insensitive,
-.notebook .check row:selected:focus:active:insensitive,
 .check row:selected:active:insensitive:hover,
 .check row:selected:focus:active:insensitive:hover,
-.notebook .check row:selected:active:insensitive:hover,
-.notebook .check row:selected:focus:active:insensitive:hover {
-    background-image: url("assets/check-active-insensitive-alt-inset.svg");
+
+.check row:active:insensitive:backdrop,
+.check row:active:insensitive:hover:hover:backdrop,
+.check row:selected:active:insensitive:backdrop,
+.check row:selected:active:insensitive:hover:hover:backdrop {
+    background-image: url("assets/check-radio/check-active-insensitive-alt.svg");
     background-color: transparent;
+}
+/*
+.check:active:backdrop,
+.view.cell:active:backdrop,
+.check row:selected:active:backdrop {
+    background-image: url("assets/checkbox-checked-backdrop.png");
 }
 
 .check:active:insensitive:backdrop,
-.check row:active:insensitive:backdrop,
-.check row:active:insensitive:hover:backdrop,
-.check row:selected:active:insensitive:backdrop,
-.check row:selected:focus:active:insensitive:backdrop,
-.check row:selected:active:insensitive:hover:backdrop,
-.check row:selected:focus:active:insensitive:hover:backdrop,
-.notebook .check:active:insensitive:backdrop,
-.notebook .check row:active:insensitive:backdrop,
-.notebook .check row:active:insensitive:hover:backdrop,
-.notebook .check row:selected:active:insensitive:backdrop,
-.notebook .check row:selected:focus:active:insensitive:backdrop,
-.notebook .check row:selected:active:insensitive:hover:backdrop,
-.notebook .check row:selected:focus:active:insensitive:hover:backdrop {
-    background-image: url("assets/check-active-insensitive-backdrop.svg");
-}
+.check row:selected:active:insensitive:backdrop {
+    background-image: url("assets/checkbox-checked-backdrop-insensitive.png");
+}*/
+
 
 .check:inconsistent {
-    background-image: url("assets/notebook-check-radio/check-mixed-inset.svg");
+    background-image: url("assets/check-radio/check-mixed-inset.svg");
 }
 
-.notebook .check:inconsistent {
-    background-image: url("assets/notebook-check-radio/check-mixed-inset.svg");
+.cell.check:inconsistent,
+.check row:inconsistent,
+
+.view.cell.check:inconsistent:backdrop,
+.cell.check:inconsistent:backdrop,
+
+.check.cell:inconsistent:hover:hover:backdrop,
+.check row:inconsistent:hover:hover:backdrop,
+.notebook .check.cell:inconsistent:hover:hover:backdrop,
+.notebook .check row:inconsistent:hover:hover:backdrop {
+    background-image: url("assets/check-radio/check-mixed-alt-inset.svg");
 	background-color: transparent;
 }
 
-.notebook .cell.check:inconsistent,
-.cell.check:inconsistent {
-    background-image: url("assets/notebook-check-radio/check-mixed-alt-inset.svg");
-	background-color: transparent;
+.check.cell:selected:selected:inconsistent,
+.check.cell:selected:selected:inconsistent:focus,
+.check row:selected:selected:inconsistent,
+.check row:selected:selected:inconsistent:focus,
+
+.notebook .check.cell:selected:selected:inconsistent,
+.notebook .check.cell:selected:selected:inconsistent:focus,
+.notebook .check row:selected:selected:inconsistent,
+.notebook .check row:selected:selected:inconsistent:focus,
+
+.check row:selected:selected:inconsistent:backdrop,
+.check row:selected:selected:hover:hover:inconsistent:backdrop,
+.notebook .check row:selected:selected:inconsistent:backdrop,
+.notebook .check row:selected:selected:hover:hover:inconsistent:backdrop {
+    background-image: url("assets/check-radio/check-mixed-alt-inset.svg");
 }
 
-.notebook .check row:selected:inconsistent,
-.notebook .check row:selected:focus:inconsistent,
-.check row:selected:inconsistent,
-.check row:selected:focus:inconsistent {
-    background-image: url("assets/notebook-check-radio/check-mixed-selected.svg");
+.check:inconsistent:insensitive {
+    background-image: url("assets/check-radio/check-mixed-insensitive-inset.svg");
 }
-
-
-
-.check:inconsistent:hover {
-    background-image: url("assets/notebook-check-radio/check-mixed.svg");
-}
-
-.notebook .check:inconsistent:hover {
-    background-image: url("assets/notebook-check-radio/check-mixed.svg");
-	background-color: transparent;
-}
-
-.notebook .cell.check:inconsistent:hover,
-.cell.check:inconsistent:hover {
-    background-image: url("assets/notebook-check-radio/check-mixed-alt.svg");
-	background-color: transparent;
-}
-
-.notebook .check row:selected:inconsistent:hover,
-.notebook .check row:selected:focus:inconsistent:hover,
-.check row:selected:inconsistent:hover,
-.check row:selected:focus:inconsistent:hover {
-    background-image: url("assets/notebook-check-radio/check-mixed-selected-alt.svg");
-    background-color: transparent;
-}
-
-.check:inconsistent:backdrop,
-.check:inconsistent:hover:backdrop,
-.notebook .check:inconsistent:backdrop,
-.notebook .check:inconsistent:hover:backdrop,
-.check row:inconsistent:hover:backdrop,
-.notebook .check row:inconsistent:hover:backdrop,
-.check row:selected:inconsistent:backdrop,
-.check row:selected:focus:inconsistent:backdrop,
-.notebook .check row:selected:inconsistent:backdrop,
-.notebook .check row:selected:focus:inconsistent:backdrop,
-.check row:selected:inconsistent:hover:backdrop,
-.check row:selected:focus:inconsistent:hover:backdrop,
-.notebook .check row:selected:inconsistent:hover:backdrop,
-.notebook .check row:selected:focus:inconsistent:hover:backdrop {
-    background-image: url("assets/check-inconsistant-backdrop.svg");
-}
-
-.check:inconsistent:insensitive,
-.check:inconsistent:insensitive:hover {
-    background-image: url("assets/notebook-check-radio/check-mixed-insensitive-inset.svg");
-}
-
-.notebook .check:inconsistent:insensitive,
-.notebook .check:inconsistent:insensitive:hover {
-    background-image: url("assets/notebook-check-radio/check-mixed-insensitive-inset.svg");
-}
-
 
 .check row:inconsistent:insensitive,
 .check row:inconsistent:insensitive:hover,
-.notebook .check row:inconsistent:insensitive,
-.notebook .check row:inconsistent:insensitive:hover,
 .check row:selected:inconsistent:insensitive,
 .check row:selected:focus:inconsistent:insensitive,
-.notebook .check row:selected:inconsistent:insensitive,
-.notebook .check row:selected:focus:inconsistent:insensitive,
 .check row:selected:inconsistent:insensitive:hover,
 .check row:selected:focus:inconsistent:insensitive:hover,
-.notebook .check row:selected:inconsistent:insensitive:hover,
-.notebook .check row:selected:focus:inconsistent:insensitive:hover {
-	background-image: url("assets/notebook-check-radio/check-mixed-insensitive-alt-inset.svg");
-	background-color: transparent;
- }
 
-.check:inconsistent:insensitive:backdrop,
-.check:inconsistent:insensitive:hover:backdrop,
+.check row:inconsistent:insensitive:backdrop,
+.check row:inconsistent:insensitive:hover:hover:backdrop,
 .check row:selected:inconsistent:insensitive:backdrop,
 .check row:selected:focus:inconsistent:insensitive:backdrop,
-.check row:selected:inconsistent:insensitive:hover:backdrop,
-.check row:selected:focus:inconsistent:insensitive:hover:backdrop,
-.notebook .check:inconsistent:insensitive:backdrop,
-.notebook .check:inconsistent:insensitive:hover:backdrop,
-.notebook .check row:selected:inconsistent:insensitive:backdrop,
-.notebook .check row:selected:focus:inconsistent:insensitive:backdrop,
-.notebook .check row:selected:inconsistent:insensitive:hover:backdrop,
-.notebook .check row:selected:focus:inconsistent:insensitive:hover:backdrop {
-    background-image: url("assets/check-inconsistant-insensitive-backdrop.svg");
+.check row:selected:inconsistent:insensitive:hover:hover:backdrop,
+.check row:selected:focus:inconsistent:insensitive:hover:hover:backdrop {
+	background-image: url("assets/check-radio/check-mixed-insensitive-alt-inset.svg");
 	background-color: transparent;
+ }
+/*
+.check:inconsistent:backdrop,
+.check row:selected:inconsistent:backdrop {
+    background-image: url("assets/checkbox-mixed-backdrop.png");
 }
+
+.check:inconsistent:insensitive:backdrop,
+.check row:selected:inconsistent:insensitive:backdrop {
+    background-image: url("assets/checkbox-mixed-backdrop-insensitive.png");
+}*/
 
 .radio {
-    background-image: url("assets/notebook-check-radio/radio-un.svg");
+    background-image: url("assets/check-radio/radio-un.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.notebook .radio {
-    background-image: url("assets/notebook-check-radio/radio-un.svg");
-}
+.view.cell.radio,
+.cell.radio row,
 
-.notebook .cell.radio,
-.cell.radio {
-    background-image: url("assets/notebook-check-radio/radio-un-alt.svg");
-	background-color: transparent;
-}
+.view.cell.radio:backdrop,
+.cell.radio row:backdrop,
 
-.notebook .radio row:selected,
-.notebook .radio row:selected:focus,
-.radio row:selected,
-.radio row:selected:focus {
-    background-image: url("assets/notebook-check-radio/radio-un-selected-alt.svg");
-	background-color: transparent;
-}
-
-.radio:hover {
-    background-image: url("assets/notebook-check-radio/radio-un-hover.svg");
-}
-
-.notebook .radio:hover {
-    background-image: url("assets/notebook-check-radio/radio-un-hover.svg");
-}
-
-.notebook .radio row:hover,
+.radio.cell:hover,
 .radio row:hover,
-.radio row:nth-child(even):hover,
-.radio row:nth-child(odd):hover  {
-    background-image: url("assets/notebook-check-radio/radio-un-alt-hover.svg");
+.notebook .radio.cell:hover,
+.notebook .radio row:hover,
+
+.radio.cell:hover:hover:backdrop,
+.radio row:hover:hover:backdrop,
+.notebook .radio.cell:hover:hover:backdrop,
+.notebook .radio row:hover:hover:backdrop {
+    background-image: url("assets/check-radio/radio-un-alt.svg");
 	background-color: transparent;
 }
 
-.radio.cell:selected:hover,
-.radio.cell:selected:hover:focus,
-.notebook .radio row:selected:hover,
-.notebook .radio row:selected:hover:focus,
-.radio row:selected:hover,
-.radio row:selected:hover:focus {
-    background-image: url("assets/notebook-check-radio/radio-un-selected-alt-hover.svg");
-	background-color: transparent;
-}
+.radio row:selected:selected,
+.radio row:selected:selected:focus,
+.radio.cell:selected:selected,
+.radio.cell:selected:selected:focus,
 
-.radio:backdrop,
-.radio:hover:backdrop,
-.radio.cell:backdrop,
-.notebook .radio:backdrop,
-.notebook .radio:hover:backdrop,
-.notebook .radio.cell:backdrop,
-.radio row:hover:backdrop,
-.notebook .radio row:hover:backdrop,
-.radio row:nth-child(even):hover:backdrop,
-.radio row:nth-child(odd):hover:backdrop,
-.radio row:selected:backdrop,
-.radio row:selected:focus:backdrop,
-.notebook .radio row:selected:backdrop,
-.notebook .radio row:selected:focus:backdrop,
-.radio.cell:selected:hover:backdrop,
-.radio.cell:selected:hover:focus:backdrop,
-.notebook .radio.cell:selected:hover:backdrop,
-.notebook .radio.cell:selected:hover:focus:backdrop {
-    background-image: url("assets/radio-unchecked-backdrop.svg");
+.notebook .radio row:selected:selected,
+.notebook .radio row:selected:selected:focus,
+.notebook .radio.cell:selected:selected,
+.notebook .radio.cell:selected:selected:focus,
+
+.radio row:selected:selected:backdrop,
+.radio.cell:selected:selected:backdrop,
+.radio row:selected:selected:hover:hover:backdrop,
+.radio.cell:selected:selected:hover:hover:backdrop,
+
+.notebook .radio row:selected:selected:backdrop,
+.notebook .radio.cell:selected:selected:backdrop,
+.notebook .radio row:selected:selected:hover:hover:backdrop,
+.notebook .radio.cell:selected:selected:hover:hover:backdrop {
+    background-image: url("assets/radio-unchecked-alt.png");
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: transparent;
+    box-shadow: none;
+    background-size: 16px;
 }
 
 .radio:insensitive {
-    background-image: url("assets/notebook-check-radio/radio-insensitive.svg");
+    background-image: url("assets/check-radio/radio-insensitive.svg");
 }
 
-.notebook .radio:insensitive {
-    background-image: url("assets/notebook-check-radio/radio-insensitive.svg");
+.radio row:insensitive {
+    background-color: transparent;
 }
 
 .radio row:insensitive,
@@ -447,356 +313,239 @@ GtkEmpty:backdrop,
 .radio row:selected:focus:insensitive,
 .radio row:selected:insensitive:hover,
 .radio row:selected:focus:insensitive:hover,
-.notebook .radio row:insensitive,
-.notebook .radio row:nth-child(even):insensitive,
-.notebook .radio row:nth-child(odd):insensitive,
-.notebook .radio row:insensitive:hover,
-.notebook .radio row:selected:insensitive,
-.notebook .radio row:selected:focus:insensitive,
-.notebook .radio row:selected:insensitive:hover,
-.notebook .radio row:selected:focus:insensitive:hover {
-    background-image: url("assets/notebook-check-radio/radio-insensitive-alt.svg");
-    background-color: transparent;
-}
 
-.radio:insensitive:backdrop,
-.notebook .radio:insensitive:backdrop,
 .radio row:insensitive:backdrop,
 .radio row:nth-child(even):insensitive:backdrop,
 .radio row:nth-child(odd):insensitive:backdrop,
-.radio row:insensitive:hover:backdrop,
-.radio row:selected:insensitive:backdrop,
-.radio row:selected:focus:insensitive:backdrop,
-.radio row:selected:insensitive:hover:backdrop,
-.radio row:selected:focus:insensitive:hover:backdrop,
-.notebook .radio row:insensitive:backdrop,
-.notebook .radio row:nth-child(even):insensitive:backdrop,
-.notebook .radio row:nth-child(odd):insensitive:backdrop,
-.notebook .radio row:insensitive:hover:backdrop,
-.notebook .radio row:selected:insensitive:backdrop,
-.notebook .radio row:selected:focus:insensitive:backdrop,
-.notebook .radio row:selected:insensitive:hover:backdrop,
-.notebook .radio row:selected:focus:insensitive:hover:backdrop {
-    background-image: url("assets/radio-unchecked-insensitive-backdrop.svg");
-}
-
-.radio:active {
-    background-image: url("assets/notebook-check-radio/radio-active.svg");
-}
-
-.notebook .radio:active {
-    background-image: url("assets/notebook-check-radio/radio-active.svg");
-}
-
-.notebook .cell.radio:active,
-.cell.radio:active {
-    background-image: url("assets/notebook-check-radio/radio-active-alt.svg");
-	background-color: transparent;
-}
-
-.notebook .radio row:selected:active,
-.notebook .radio row:selected:focus:active,
-.radio row:selected:active,
-.radio row:selected:focus:active {
-    background-image: url("assets/notebook-check-radio/radio-active-selected-alt.svg");
-	background-color: transparent;
-	}
-
-.radio:active:hover {
-   background-image: url("assets/notebook-check-radio/radio-active-hover.svg");
-}
-
-.notebook .radio:active:hover {
-    background-image: url("assets/notebook-check-radio/radio-active-hover.svg");
-}
-
-.notebook .cell.radio:active:hover,
-.cell.radio:active:hover {
-	background-image: url("assets/notebook-check-radio/radio-active-hover-alt.svg");
-	background-color: transparent;
-	}
-
-.notebook .radio row:selected:active:hover,
-.notebook .radio row:selected:focus:active:hover,
-.radio row:selected:active:hover,
-.radio row:selected:focus:active:hover {
-    background-image:  url("assets/notebook-check-radio/radio-active-hover-selected-alt.svg");
+.radio row:insensitive:hover:hover:backdrop,
+.radio row:selected:selected:insensitive:backdrop,
+.radio row:selected:selected:insensitive:hover:hover:backdrop {
+    background-image: url("assets/check-radio/radio-insensitive-alt.svg");
     background-color: transparent;
 }
-
-
-
-.radio:active:backdrop,
-.radio:active:hover:backdrop,
-.notebook .radio:active:backdrop,
-.notebook .radio:active:hover:backdrop,
-.radio row:active:hover:backdrop,
-.radio row:selected:active:hover:backdrop,
-.radio row:selected:focus:active:hover:backdrop,
-.notebook .radio row:active:hover:backdrop,
-.notebook .radio row:selected:active:hover:backdrop,
-.notebook .radio row:selected:focus:active:hover:backdrop,
-.radio row:selected:active:backdrop,
-.radio row:selected:focus:active:backdrop,
-.notebook .radio row:selected:active:backdrop,
-.notebook .radio row:selected:focus:active:backdrop {
-    background-image: url("assets/radio-active-backdrop.svg");
+/*
+.radio:backdrop,
+.view.cell.radio:backdrop,
+.radio row:selected:backdrop {
+    background-image: url("assets/radio-unchecked-backdrop.png");
 }
 
-.radio:active:insensitive,
-.radio:active:insensitive:hover {
-    background-image: url("assets/notebook-check-radio/radio-insensitive-active.svg");
+.radio:insensitive:backdrop,
+.radio row:selected:insensitive:backdrop {
+    background-image: url("assets/radio-unchecked-backdrop-insensitive.png");
+}
+*/
+
+.radio:active {
+    background-image: url("assets/check-radio/radio-active.svg");
 }
 
-.notebook .radio:active:insensitive,
-.notebook .radio:active:insensitive:hover {
-    background-image: url("assets/notebook-check-radio/radio-insensitive-active.svg");
+.view.cell.radio:active,
+.cell.radio:active,
+
+.cell.radio:active:backdrop,
+.view.cell.radio:active:backdrop,
+
+.radio.cell:active:hover:hover:backdrop,
+.radio row:active:hover:hover:backdrop,
+.notebook .radio.cell:active:hover:hover:backdrop,
+.notebook .radio row:active:hover:hover:backdrop {
+    background-image: url("assets/check-radio/radio-active-alt.svg");
+	background-color: transparent;
+}
+
+.radio row:selected:selected:active,
+.radio row:selected:selected:active:focus,
+.radio.cell:selected:selected:active,
+.radio.cell:selected:selected:active:focus,
+
+.notebook .radio row:selected:selected:active,
+.notebook .radio row:selected:selected:active:focus,
+.notebook .radio.cell:selected:selected:active,
+.notebook .radio.cell:selected:selected:active:focus,
+
+.radio row:selected:selected:active:backdrop,
+.radio row:selected:selected:hover:hover:active:backdrop,
+.notebook .radio row:selected:selected:active:backdrop,
+.notebook .radio row:selected:selected:hover:hover:active:backdrop {
+    background-image: url("assets/check-radio/radio-active-alt.svg");
+}
+
+.radio:active:insensitive {
+    background-image: url("assets/check-radio/radio-insensitive-active.svg");
 }
 
 .radio row:active:insensitive,
-.notebook .radio row:active:insensitive,
 .radio row:active:insensitive:hover,
-.notebook .radio row:active:insensitive:hover,
 .radio row:selected:active:insensitive,
 .radio row:selected:focus:active:insensitive,
-.notebook .radio row:selected:active:insensitive,
-.notebook .radio row:selected:focus:active:insensitive,
 .radio row:selected:active:insensitive:hover,
 .radio row:selected:focus:active:insensitive:hover,
-.notebook .radio row:selected:active:insensitive:hover,
-.notebook .radio row:selected:focus:active:insensitive:hover {
-    background-image: url("assets/notebook-check-radio/radio-insensitive-active-alt.svg");
+
+.radio row:active:insensitive:backdrop,
+.radio row:active:insensitive:hover:hover:backdrop,
+.radio row:selected:selected:active:insensitive:backdrop,
+.radio row:selected:selected:hover:hover:active:insensitive:backdrop{
+    background-image: url("assets/check-radio/radio-insensitive-active-alt.svg");
     background-color: transparent;
+}
+/*
+.radio:active:backdrop,
+.view.cell.radio:active:backdrop,
+.radio row:selected:active:backdrop {
+    background-image: url("assets/radio-checked-backdrop.png");
 }
 
 .radio:active:insensitive:backdrop,
-.radio row:active:insensitive:backdrop,
-.radio row:active:insensitive:hover:backdrop,
-.radio row:selected:active:insensitive:backdrop,
-.radio row:selected:focus:active:insensitive:backdrop,
-.radio row:selected:active:insensitive:hover:backdrop,
-.radio row:selected:focus:active:insensitive:hover:backdrop,
-.notebook .radio:active:insensitive:backdrop,
-.notebook .radio row:active:insensitive:backdrop,
-.notebook .radio row:active:insensitive:hover:backdrop,
-.notebook .radio row:selected:active:insensitive:backdrop,
-.notebook .radio row:selected:focus:active:insensitive:backdrop,
-.notebook .radio row:selected:active:insensitive:hover:backdrop,
-.notebook .radio row:selected:focus:active:insensitive:hover:backdrop {
-    background-image: url("assets/radio-active-insensitive-backdrop.svg");
+.radio row:selected:active:insensitive:backdrop {
+    background-image: url("assets/radio-checked-backdrop-insensitive.png");
 }
+*/
 
 .radio:inconsistent {
-    background-image: url("assets/notebook-check-radio/radio-mixed.svg");
+    background-image: url("assets/check-radio/radio-mixed.svg");
 }
 
-.notebook .radio:inconsistent {
-    background-image: url("assets/notebook-check-radio/radio-mixed.svg");
-}
+.view.cell.radio:inconsistent,
+.cell.radio:inconsistent,
 
-.notebook .cell.radio:inconsistent,
-.cell.radio:inconsistent {
-	background-image: url("assets/notebook-check-radio/radio-mixed-alt.svg");
+.cell.radio:inconsistent:backdrop,
+.view.cell.radio:inconsistent:backdrop,
+
+.radio.cell:inconsistent:hover:hover:backdrop,
+.radio row:inconsistent:hover:hover:backdrop,
+.notebook .radio.cell:inconsistent:hover:hover:backdrop,
+.notebook .radio row:inconsistent:hover:hover:backdrop {
+	background-image: url("assets/check-radio/radio-mixed-alt.svg");
 	background-color: transparent;
 	}
 
-.notebook .radio row:selected:inconsistent,
-.notebook .radio row:selected:focus:inconsistent,
-.radio row:selected:inconsistent,
-.radio row:selected:focus:inconsistent {
-    background-image: url("assets/notebook-check-radio/radio-mixed-selected.svg");
-	background-color: transparent;
+.radio row:selected:selected:inconsistent,
+.radio row:selected:selected:inconsistent:focus,
+.radio.cell:selected:selected:inconsistent,
+.radio.cell:selected:selected:inconsistent:focus,
+
+.notebook .radio row:selected:selected:inconsistent,
+.notebook .radio row:selected:selected:inconsistent:focus,
+.notebook .radio.cell:selected:selected:inconsistent,
+.notebook .radio.cell:selected:selected:inconsistent:focus,
+
+.radio row:selected:selected:inconsistent:backdrop,
+.radio row:selected:selected:hover:hover:inconsistent:backdrop,
+.notebook .radio row:selected:selected:inconsistent:backdrop,
+.notebook .radio row:selected:selected:hover:hover:inconsistent:backdrop {
+    background-image: url("assets/check-radio/radio-mixed-alt.svg");
 }
 
-.radio:inconsistent:hover {
-    background-image: url("assets/notebook-check-radio/radio-mixed-hover.svg");
-}
-
-.notebook .radio:inconsistent:hover {
-    background-image: url("assets/notebook-check-radio/radio-mixed-hover.svg");
-}
-
-.notebook .cell.radio:inconsistent:hover,
-.cell.radio:inconsistent:hover {
-    background-image: url("assets/notebook-check-radio/radio-mixed-hover-alt.svg");
-	background-color: transparent;
-}
-
-.notebook .radio row:selected:inconsistent:hover,
-.notebook .radio row:selected:focus:inconsistent:hover,
-.radio row:selected:inconsistent:hover,
-.radio row:selected:focus:inconsistent:hover {
-    background-image: url("assets/notebook-check-radio/radio-mixed-selected-hover.svg");
-	background-color: transparent;
-}
-
-.radio:inconsistent:backdrop,
-.radio:inconsistent:hover:backdrop,
-.notebook .radio:inconsistent:backdrop,
-.notebook .radio:inconsistent:hover:backdrop,
-.radio row:inconsistent:hover:backdrop,
-.notebook .radio row:inconsistent:hover:backdrop,
-.radio row:selected:inconsistent:backdrop,
-.radio row:selected:focus:inconsistent:backdrop,
-.notebook .radio row:selected:inconsistent:backdrop,
-.notebook .radio row:selected:focus:inconsistent:backdrop,
-.radio row:selected:inconsistent:hover:backdrop,
-.radio row:selected:focus:inconsistent:hover:backdrop,
-.notebook .radio row:selected:inconsistent:hover:backdrop,
-.notebook .radio row:selected:focus:inconsistent:hover:backdrop {
-    background-image: url("assets/radio-inconsistant-backdrop.svg");
-}
-
-.radio:inconsistent:insensitive,
-.radio:inconsistent:insensitive:hover {
-    background-image: url("assets/notebook-check-radio/radio-mixed-insensitive.svg");
-}
-
-.notebook .radio:inconsistent:insensitive,
-.notebook .radio:inconsistent:insensitive:hover {
-    background-image: url("assets/notebook-check-radio/radio-mixed-insensitive.svg");
+.radio:inconsistent:insensitive {
+    background-image: url("assets/check-radio/radio-mixed-insensitive.svg");
 }
 
 .radio row:inconsistent:insensitive,
 .radio row:inconsistent:insensitive:hover,
-.notebook .radio row:inconsistent:insensitive,
-.notebook .radio row:inconsistent:insensitive:hover,
 .radio row:selected:inconsistent:insensitive,
 .radio row:selected:focus:inconsistent:insensitive,
-.notebook .radio row:selected:inconsistent:insensitive,
-.notebook .radio row:selected:focus:inconsistent:insensitive,
 .radio row:selected:inconsistent:insensitive:hover,
 .radio row:selected:focus:inconsistent:insensitive:hover,
-.notebook .radio row:selected:inconsistent:insensitive:hover,
-.notebook .radio row:selected:focus:inconsistent:insensitive:hover {
-    background-image: url("assets/notebook-check-radio/radio-mixed-insensitive-alt.svg");
+ 
+.radio row:inconsistent:insensitive:backdrop,
+.radio row:inconsistent:insensitive:hover:hover:backdrop,
+.radio row:selected:selected:inconsistent:insensitive:backdrop,
+.radio row:selected:selected:inconsistent:insensitive:hover:hover:backdrop {
+    background-image: url("assets/check-radio/radio-mixed-insensitive-alt.svg");
     background-color: transparent;
+}
+/*
+.radio:inconsistent:backdrop,
+.radio row:selected:inconsistent:backdrop {
+    background-image: url("assets/radio-mixed-backdrop.png");
 }
 
 .radio:inconsistent:insensitive:backdrop,
-.radio:inconsistent:insensitive:hover:backdrop,
-.radio row:selected:inconsistent:insensitive:backdrop,
-.radio row:selected:focus:inconsistent:insensitive:backdrop,
-.radio row:selected:inconsistent:insensitive:hover:backdrop,
-.radio row:selected:focus:inconsistent:insensitive:hover:backdrop,
-.notebook .radio:inconsistent:insensitive:backdrop,
-.notebook .radio:inconsistent:insensitive:hover:backdrop,
-.notebook .radio row:selected:inconsistent:insensitive:backdrop,
-.notebook .radio row:selected:focus:inconsistent:insensitive:backdrop,
-.notebook .radio row:selected:inconsistent:insensitive:hover:backdrop,
-.notebook .radio row:selected:focus:inconsistent:insensitive:hover:backdrop {
-    background-image: url("assets/radio-inconsistant-insensitive-backdrop.svg");
-}
+.radio row:selected:inconsistent:insensitive:backdrop {
+    background-image: url("assets/radio-mixed-backdrop-insensitive.png");
+}*/
 
 .sidebar .radio:active,
 .sidebar .radio:active:focus,
 .sidebar .radio:active:hover {
-    background-image: url("assets/sidebar-radio-checked.svg");
+    background-image: url("assets/sidebar-radio/sidebar-radio-checked.svg");
 }
 
 .sidebar .radio:hover {
-    background-image: url("assets/sidebar-radio-prelight.svg");
+    background-image: url("assets/sidebar-radio/sidebar-radio-prelight.svg");
 }
 
 .sidebar .radio:active:selected,
 .sidebar .radio:active:selected:focus {
-    background-image: url("assets/sidebar-radio-selected.svg");
+    background-image: url("assets/sidebar-radio/sidebar-radio-selected.svg");
 }
 
 .sidebar .radio:selected:hover,
 .sidebar .radio:selected:focus {
-    background-image: url("assets/sidebar-radio-selected-prelight.svg");    
-}
-
-.sidebar .radio:active:backdrop,
-.sidebar .radio:active:focus:backdrop,
-.sidebar .radio:active:hover:backdrop,
-.sidebar .radio:hover:backdrop,
-.sidebar .radio:active:selected:backdrop,
-.sidebar .radio:active:selected:focus:backdrop,
-.sidebar .radio:selected:hover:backdrop,
-.sidebar .radio:selected:focus:backdrop {
-    background-image: url("assets/sidebar-radio-backdrop.svg");
+    background-image: url("assets/sidebar-radio/sidebar-radio-selected-prelight.svg");    
 }
 
 /*********************
  * GtkScale's slider *
  *********************/
- /*
+
 .scale.slider,
+.scale.slider.vertical,
 .scale.slider.horizontal {
-    background-image: url("assets/scale-slider-horz.png");
+    background-image: url("borders/scale/scale-slider.svg");
 }
 
 .scale.slider:hover,
+.scale.slider.vertical:hover,
 .scale.slider.horizontal:hover {
-    background-image: url("assets/scale-slider-horz-hover.png");
+    background-image: url("borders/scale/scale-slider-hover.svg");
 }
 
 .scale.slider:active,
 .scale.slider:active:hover,
+.scale.slider.vertical:active,
+.scale.slider.vertical:active:hover,
 .scale.slider.horizontal:active,
 .scale.slider.horizontal:active:hover {
-    background-image: url("assets/scale-slider-horz-active.png");
+    background-image: url("borders/scale/scale-slider-active.svg");
 }
 
 .scale.slider:backdrop,
 .scale.slider:backdrop:hover,
+.scale.slider.vertical:backdrop,
+.scale.slider.vertical:backdrop:hover,
 .scale.slider.horizontal:backdrop,
 .scale.slider.horizontal:backdrop:hover {
-    background-image: url("assets/scale-slider-horz-backdrop.png");
+    background-image: url("borders/scale/scale-slider-backdrop.svg");
 }
 
 .scale.slider:insensitive,
 .scale.slider:insensitive:hover,
+.scale.slider.vertical:insensitive,
+.scale.slider.vertical:insensitive:hover,
 .scale.slider.horizontal:insensitive,
 .scale.slider.horizontal:insensitive:hover {
-    background-image: url("assets/scale-slider-horz-insensitive.png");
+    background-image: url("borders/scale/scale-slider-insensitive.svg");
 }
 
 .scale.slider:insensitive:backdrop,
 .scale.slider:insensitive:backdrop:hover,
+.scale.slider.vertical:insensitive:backdrop,
+.scale.slider.vertical:insensitive:backdrop:hover,
 .scale.slider.horizontal:insensitive:backdrop,
 .scale.slider.horizontal:insensitive:backdrop:hover {
-    background-image: url("assets/scale-slider-horz-backdrop-insensitive.png");
+    background-image: url("borders/scale/scale-slider-insensitive-backdrop.svg");
 }
 
-
-.scale.slider.vertical {
-    background-image: url("assets/scale-slider-vert.png");
-}
-
-.scale.slider.vertical:hover {
-    background-image: url("assets/scale-slider-vert-hover.png");
-}
-
-.scale.slider.vertical:active,
-.scale.slider.vertical:active:hover {
-    background-image: url("assets/scale-slider-vert-active.png");
-}
-
-.scale.slider.vertical:backdrop,
-.scale.slider.vertical:backdrop:hover {
-    background-image: url("assets/scale-slider-vert-backdrop.png");
-}
-
-.scale.slider.vertical:insensitive,
-.scale.slider.vertical:insensitive:hover {
-    background-image: url("assets/scale-slider-vert-insensitive.png");
-}
-
-.scale.slider.vertical:insensitive:backdrop,
-.scale.slider.vertical:insensitive:backdrop:hover {
-    background-image: url("assets/scale-slider-vert-backdrop-insensitive.png");
-}
-*/
+/****** Scale Slider has Marks *******************************/
 
 .scale.scale-has-marks-above.slider.horizontal {
-    background-image: url("assets/scale-slider-up-dark.png");
+    background-image: url("assets/scale-slider/scale-up.svg");
 }
 
 .scale.scale-has-marks-above.slider.horizontal:hover {
-    background-image: url("assets/scale-slider-up-dark-hover.png");
+    background-image: url("assets/scale-slider/scale-up-hover.svg");
 }
 /*
 .scale.scale-has-marks-above.slider.horizontal:active,
@@ -806,25 +555,25 @@ GtkEmpty:backdrop,
 */
 .scale.scale-has-marks-above.slider.horizontal:insensitive,
 .scale.scale-has-marks-above.slider.horizontal:insensitive:hover {
-    background-image: url("assets/scale-slider-up-insensitive-dark.png");
+    background-image: url("assets/scale-slider/scale-up-insensitive.svg");
 }
-
+/*
 .scale.scale-has-marks-above.slider.horizontal:backdrop,
 .scale.scale-has-marks-above.slider.horizontal:backdrop:hover {
     background-image: url("assets/scale-slider-up-dark.png");
-}
-
+}*/
+/*
 .scale.scale-has-marks-above.slider.horizontal:backdrop:insensitive,
 .scale.scale-has-marks-above.slider.horizontal:backdrop:insensitive:hover {
     background-image: url("assets/scale-slider-up-insensitive-dark.png");
-}
+}*/
 
 .scale.scale-has-marks-above.slider.vertical {
-    background-image: url("assets/scale-slider-left-dark.png");
+    background-image: url("assets/scale-slider/scale-left.svg");
 }
 
 .scale.scale-has-marks-above.slider.vertical:hover {
-    background-image: url("assets/scale-slider-left-dark-hover.png");
+    background-image: url("assets/scale-slider/scale-left-hover.svg");
 }
 /*
 .scale.scale-has-marks-above.slider.vertical:active,
@@ -834,25 +583,25 @@ GtkEmpty:backdrop,
 */
 .scale.scale-has-marks-above.slider.vertical:insensitive,
 .scale.scale-has-marks-above.slider.vertical:insensitive:hover {
-    background-image: url("assets/scale-slider-left-insensitive-dark.png");
+    background-image: url("assets/scale-slider/scale-left-insensitive.svg");
 }
-
+/*
 .scale.scale-has-marks-above.slider.vertical:backdrop,
 .scale.scale-has-marks-above.slider.vertical:backdrop:hover {
     background-image: url("assets/scale-slider-left-dark.png");
-}
-
+}*/
+/*
 .scale.scale-has-marks-above.slider.vertical:backdrop:insensitive,
 .scale.scale-has-marks-above.slider.vertical:backdrop:insensitive:hover {
     background-image: url("assets/scale-slider-left-insensitive-dark.png");
-}
+}*/
 
 .scale.scale-has-marks-below.slider.horizontal {
-    background-image: url("assets/scale-slider-down-dark.png");
+    background-image: url("assets/scale-slider/scale-down.svg");
 }
 
 .scale.scale-has-marks-below.slider.horizontal:hover {
-    background-image: url("assets/scale-slider-down-dark-hover.png");
+    background-image: url("assets/scale-slider/scale-down-hover.svg");
 }
 /*
 .scale.scale-has-marks-below.slider.horizontal:active,
@@ -862,25 +611,25 @@ GtkEmpty:backdrop,
 */
 .scale.scale-has-marks-below.slider.horizontal:insensitive,
 .scale.scale-has-marks-below.slider.horizontal:insensitive:hover {
-    background-image: url("assets/scale-slider-down-insensitive-dark.png");
+    background-image: url("assets/scale-slider/scale-down-insensitive.svg");
 }
-
+/*
 .scale.scale-has-marks-below.slider.horizontal:backdrop,
 .scale.scale-has-marks-below.slider.horizontal:backdrop:hover {
     background-image: url("assets/scale-slider-down-dark.png");
-}
-
+}*/
+/*
 .scale.scale-has-marks-below.slider.horizontal:backdrop:insensitive,
 .scale.scale-has-marks-below.slider.horizontal:backdrop:insensitive:hover {
     background-image: url("assets/scale-slider-down-insensitive-dark.png");
-}
+}*/
 
 .scale.scale-has-marks-below.slider.vertical {
-    background-image: url("assets/scale-slider-right-dark.png");
+    background-image: url("assets/scale-slider/scale-right.svg");
 }
 
 .scale.scale-has-marks-below.slider.vertical:hover {
-    background-image: url("assets/scale-slider-right-dark-hover.png");
+    background-image: url("assets/scale-slider/scale-right-hover.svg");
 }
 /*
 .scale.scale-has-marks-below.slider.vertical:active,
@@ -890,26 +639,33 @@ GtkEmpty:backdrop,
 */
 .scale.scale-has-marks-below.slider.vertical:insensitive,
 .scale.scale-has-marks-below.slider.vertical:insensitive:hover {
-    background-image: url("assets/scale-slider-right-insensitive-dark.png");
+    background-image: url("assets/scale-slider/scale-right-insensitive.svg");
 }
-
+/*
 .scale.scale-has-marks-below.slider.vertical:backdrop,
 .scale.scale-has-marks-below.slider.vertical:backdrop:hover {
     background-image: url("assets/scale-slider-right-dark.png");
-}
-
+}*/
+/*
 .scale.scale-has-marks-below.slider.vertical:backdrop:insensitive,
 .scale.scale-has-marks-below.slider.vertical:backdrop:insensitive:hover {
     background-image: url("assets/scale-slider-right-insensitive-dark.png");
-}
+}*/
 
 /********************************
  * Touch text selection handles *
  ********************************/
 .cursor-handle.bottom {
-    background-image: url("assets/scale-slider-up-dark.png");
+    background-image: url("assets/scale-slider-up-backdrop.png");
 }
 
 .cursor-handle.top {
-    background-image: url("assets/scale-slider-down-dark.png");
+    background-image: url("assets/scale-slider-down-backdrop.png");
+}
+
+/****************
+ * Content view *
+ ****************/
+.content-view.view {
+    background-image: url("assets/noise-texture-light.png");
 }

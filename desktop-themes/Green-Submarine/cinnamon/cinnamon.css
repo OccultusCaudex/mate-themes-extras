@@ -27,6 +27,9 @@ stage {
 .window-caption, .switcher-list, .expo-workspaces-name-entry, #Tooltip {
 	font-size: 8pt;
 	font-weight: bold;
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(219,255,243,0.9);
+	background-gradient-end: rgba(219,255,251,0.9);
 }
 
 .cinnamon-link {
@@ -91,7 +94,6 @@ StScrollBar StButton#vhandle:hover {
 #Tooltip {
 	border-radius: 2px;
 	padding: 4px 12px;
-	background-color: rgba(0,0,0,0.5);
 	text-align: center;
 }
 
@@ -230,8 +232,8 @@ StScrollBar StButton#vhandle:hover {
 
 .popup-menu-item:active {
 	background-gradient-direction: vertical;
-	background-gradient-start: rgba(180,147,114,0.3);
-	background-gradient-end: rgba(180,147,114,0.3);
+	background-gradient-start: rgba(114,180,147,0.9);
+	background-gradient-end: rgba(114,180,165,0.9);
 	color: #fff;
 	border: 1px solid rgba(255,255,255,0.35);
 	border-left-width: 0;
@@ -966,7 +968,7 @@ StScrollBar StButton#vhandle:hover {
 	border: 1px solid rgba(200,200,200,0.3);
 
 	caret-color: white;
-	selection-background-color: #B49372;
+	selection-background-color: #72B493;
 }
 
 /* ===================================================================
@@ -1121,7 +1123,7 @@ StScrollBar StButton#vhandle:hover {
 .run-dialog-entry {
 	font-weight: normal;
 	width: 23em;
-	selection-background-color: #B49372;
+	selection-background-color: #72B493;
 	selected-color: white;
 	border-radius: 2px;
 	padding: 4px;
@@ -1336,7 +1338,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .polkit-dialog-user-root-label {
-	color: #ff0000;
+	color: #CBD9D4;
 }
 
 /* ===================================================================
@@ -1497,8 +1499,8 @@ StScrollBar StButton#vhandle:hover {
 	height: 2.85em;
 	color: #ffffff;
 	background-gradient-direction: vertical;
-	background-gradient-start: rgba(180,147,114,0.9);
-	background-gradient-end: rgba(153,125,97,0.9);
+	background-gradient-start: rgba(114,180,147,0.9);
+	background-gradient-end: rgba(114,180,165,0.9);
 	box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.3);
 	border: 1px solid rgba(0,0,0,0.15);
 	border-radius: 3px;
@@ -1531,8 +1533,8 @@ StScrollBar StButton#vhandle:hover {
 	height: 2.85em;
 	color: #ffffff;
 	background-gradient-direction: vertical;
-	background-gradient-start: rgba(180,147,114,0.9);
-	background-gradient-end: rgba(153,125,97,0.9);
+	background-gradient-start: rgba(114,180,147,0.9);
+	background-gradient-end: rgba(114,180,165,0.9);
 	box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.3);
 	border: 1px solid rgba(0,0,0,0.15);
 	border-radius: 3px;
@@ -1601,7 +1603,7 @@ StScrollBar StButton#vhandle:hover {
 #menu-search-entry {
 	font-weight: normal;
 	width: 23em;
-	selection-background-color: #B49372;
+	selection-background-color: #72B493;
 	selected-color: white;
 	border-radius: 2px;
 	padding: 4px;
@@ -1852,7 +1854,7 @@ StScrollBar StButton#vhandle:hover {
 .panel-launcher-add-dialog-entry {
 	font-weight: normal;
 	width: 23em;
-	selection-background-color: #B49372;
+	selection-background-color: #72B493;
 	selected-color: white;
 	border-radius: 2px;
 	padding: 4px;

@@ -14,6 +14,8 @@ theme_DATA = \
 	notebook-gap-horiz.svg \
 	notebook-gap-vert.png \
 	notebook-gap-vert.svg \
+	notebook-left.svg \
+	notebook-right.svg \
 	notebook.svg \
 	tab-bottom-active.svg \
 	tab-bottom.svg \

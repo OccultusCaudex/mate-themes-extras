@@ -26,4 +26,3 @@ DIST_SUBDIRS =	\
 	xfwm4
 
 CLEANFILES = index.theme
-

@@ -3,168 +3,67 @@ THEME_NAME=DeLorean-Dark
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-3.0/assets
 
 theme_DATA = \
-	arrow-backdrop.svg \
-	arrow-down-active.svg \
-	arrow-down-hover.svg \
-	arrow-down-insensitive.svg \
-	arrow-down.svg \
-	arrow-left-active.svg \
-	arrow-left-hover.svg \
-	arrow-left-insensitive.svg \
-	arrow-left.svg \
-	arrow-right-active.svg \
-	arrow-right-hover.svg \
-	arrow-right-insensitive.svg \
-	arrow-right.svg \
-	arrow.svg \
-	arrow-up-active.svg \
+	arrow-up-file-pathbar-bottom-backdrop.svg \
+	arrow-up-file-pathbar-bottom.svg \
 	arrow-up-hover-arrow.svg \
-	arrow-up-hover.svg \
-	arrow-up-insensitive.svg \
-	arrow-up.svg \
-	arrow-up-with-arrow-active.svg \
-	arrow-up-with-arrow.svg \
-	check-active-backdrop.svg \
-	check-active-insensitive-alt-inset.svg \
-	check-active-insensitive-backdrop.svg \
-	check-active-insensitive-inset.svg \
-	checkbox-checked-alt-dark-inset.png \
-	checkbox-checked-alt-dark.png \
-	checkbox-checked-dark-inset.png \
-	checkbox-checked-dark.png \
-	checkbox-checked-insensitive-alt-dark-inset.png \
-	checkbox-checked-insensitive-alt-dark.png \
-	checkbox-checked-insensitive-dark-inset.png \
-	checkbox-checked-insensitive-dark.png \
-	checkbox-mixed-alt-dark-inset.png \
-	checkbox-mixed-alt-dark.png \
-	checkbox-mixed-backdrop-dark.png \
-	checkbox-mixed-dark-inset.png \
-	checkbox-mixed-dark.png \
-	checkbox-mixed-insensitive-alt-dark-inset.png \
-	checkbox-mixed-insensitive-alt-dark.png \
-	checkbox-mixed-insensitive-dark-inset.png \
-	checkbox-mixed-insensitive-dark.png \
-	checkbox-unchecked-alt-dark-hover.png \
-	checkbox-unchecked-alt-dark.png \
-	checkbox-unchecked-backdrop-dark.png \
-	checkbox-unchecked-dark-hover.png \
-	checkbox-unchecked-dark.png \
-	checkbox-unchecked-insensitive-alt-dark.png \
-	checkbox-unchecked-insensitive-dark.png \
-	check-inconsistant-backdrop.svg \
-	check-inconsistant-insensitive-backdrop.svg \
-	check-insensitive-backdrop.svg \
-	check-mixed-insensitive-alt-inset.svg \
-	check-mixed-insensitive-inset.svg \
-	check.svg \
-	check-unchecked-backdrop.svg \
-	check-unchecked-insensitive-alt.svg \
-	check-unchecked-insensitive.svg \
+	arrow-up-pathbar-bottom-dummy.svg \
+	arrow-up-pathbar-bottom.svg \
+	contacts-stripes-10.png \
+	contacts-stripes-9.png \
+	contacts-stripes.png \
+	dark-marble-2.png \
+	deco-dark.png \
+	deco.png \
+	delorean-backdrop-bg.png \
+	delorean-dark-bg.png \
+	delorean-darker-bg.png \
+	delorean-dark-menu.png \
 	dnd-counter.svg \
+	frame-2.png \
+	frame-3.png \
 	frame.png \
 	grid-selection-checked.svg \
 	grid-selection-unchecked.svg \
-	pane-handle.svg \
+	mesh-dark.png \
+	noise-texture-dark.png \
+	noise-texture-light.png \
+	oriental-2.png \
+	oriental-3.png \
+	oriental-4.png \
+	oriental.png \
+	pane-separator-grip-dark.svg \
+	pane-separator-grip-prelight-dark.svg \
+	pane-separator-grip-prelight.svg \
 	pane-separator-grip.svg \
+	pane-separator-grip-vertical-dark.svg \
+	pane-separator-grip-vertical-prelight-dark.svg \
+	pane-separator-grip-vertical-prelight.svg \
 	pane-separator-grip-vertical.svg \
-	radio-active-backdrop.svg \
-	radio-active-dark-insensitive-alt-inset.svg \
-	radio-active-dark-insensitive-inset.svg \
-	radio-active-insensitive-backdrop.svg \
-	radio-checked-alt-dark-inset.png \
-	radio-checked-alt-dark.png \
-	radio-checked-dark-inset.png \
-	radio-checked-dark.png \
-	radio-checked-insensitive-alt-dark-inset.png \
-	radio-checked-insensitive-alt-dark.png \
-	radio-checked-insensitive-dark-inset.png \
-	radio-checked-insensitive-dark.png \
-	radio-inconsistant-backdrop.svg \
-	radio-inconsistant-insensitive-backdrop.svg \
-	radio-insensitive-alt.svg \
-	radio-insensitive.svg \
-	radio-mixed-alt-dark-inset.png \
-	radio-mixed-alt-dark.png \
-	radio-mixed-dark-insensitive-alt-inset.svg \
-	radio-mixed-dark-insensitive-inset.svg \
-	radio-mixed-dark-inset.png \
-	radio-mixed-dark.png \
-	radio-mixed-insensitive-alt-dark-inset.png \
-	radio-mixed-insensitive-alt-dark.png \
-	radio-mixed-insensitive-dark-inset.png \
-	radio-mixed-insensitive-dark.png \
-	radio-unchecked-alt-dark-hover.png \
-	radio-unchecked-alt-dark.png \
-	radio-unchecked-backdrop.svg \
-	radio-unchecked-dark-hover.png \
-	radio-unchecked-dark.png \
-	radio-unchecked-insensitive-alt-dark.png \
-	radio-unchecked-insensitive-backdrop.svg \
-	radio-unchecked-insensitive-dark.png \
 	resize-grip.svg \
-	scale-down-hover.svg \
-	scale-down.svg \
-	scale-left-hover.svg \
-	scale-left-insensitive.svg \
-	scale-left.svg \
-	scale-right-hover.svg \
-	scale-right-insensitive.svg \
-	scale-right.svg \
-	scale-slider-down-dark-hover.png \
-	scale-slider-down-dark.png \
-	scale-slider-down-insensitive-dark.png \
-	scale-slider-left-dark-hover.png \
-	scale-slider-left-dark.png \
-	scale-slider-left-insensitive-dark.png \
-	scale-slider-right-dark-hover.png \
-	scale-slider-right-dark.png \
-	scale-slider-right-insensitive-dark.png \
-	scale-slider-up-dark-hover.png \
-	scale-slider-up-dark.png \
-	scale-slider-up-insensitive-dark.png \
-	scrollbar_handle.png \
-	scrollbar_handle_vertical.png \
-	scroll-handle-h.svg \
-	scroll-handle-v.png \
-	scroll-handle-v.svg \
-	scroll-slider-h.svg \
-	scroll-slider-v.svg \
-	sidebar-radio-backdrop.svg \
-	sidebar-radio-checked-dark.svg \
-	sidebar-radio-checked.svg \
-	sidebar-radio-prelight.svg \
-	sidebar-radio-selected-dark.svg \
-	sidebar-radio-selected-prelight.svg \
-	sidebar-radio-selected.svg \
-	slider-h-active.svg \
-	slider-h-hover.svg \
-	slider-h-insensitive.svg \
-	slider-h.svg \
-	slider-v-backdrop.svg \
-	slider-v-hover.svg \
-	slider-v-insensitive.svg \
-	slider-v.svg \
+	scale-slider-down-backdrop.png \
+	scale-slider-up-backdrop.png \
 	switch-slider-grip-dark.svg \
 	switch-slider-grip.svg \
+	tab-background.png \
+	thumbnail-frame.png \
 	Toolbar-backdrop.png \
-	ToolbarDark.png \
 	Toolbar.png \
+	triangle-swirl.png \
 	WindowBg-dark.png \
-	WindowUn-dark.png
+	WindowUn.png
 
 EXTRA_DIST = $(theme_DATA)
 
 SUBDIRS =	\
 	check-radio	\
-	insensitve-check-radio	\
 	menu-check \
-	notebook-check-radio \
-	scroll
+	scale-slider \
+	scroll \
+	sidebar-radio
 
 DIST_SUBDIRS =	\
 	check-radio	\
-	insensitve-check-radio	\
 	menu-check \
-	notebook-check-radio \
-	scroll
+	scale-slider \
+	scroll \
+	sidebar-radio

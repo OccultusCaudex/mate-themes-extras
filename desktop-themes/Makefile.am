@@ -1,17 +1,5 @@
-if BUILD_AMBIANCE_BLUE
-ambiance_blue_SUBDIR = Ambiance-blue
-endif
-
-if BUILD_AMBIANCE_LIME
-ambiance_lime_SUBDIR = Ambiance-lime
-endif
-
 if BUILD_BLUE_SUBMARINE
 blue_submarine_SUBDIR = Blue-Submarine
-endif
-
-if BUILD_DELOREAN_DARK
-delorean_dark_SUBDIR = DeLorean-Dark
 endif
 
 if BUILD_CLEARLOOKS_PHENIX
@@ -20,6 +8,10 @@ endif
 
 if BUILD_COLOGNE
 cologne_SUBDIR = Cologne
+endif
+
+if BUILD_DELOREAN_DARK
+delorean_dark_SUBDIR = DeLorean-Dark
 endif
 
 if BUILD_FAIENCE
@@ -44,14 +36,6 @@ endif
 
 if BUILD_GREEN_SUBMARINE
 green_submarine_SUBDIR = Green-Submarine
-endif
-
-if BUILD_RADIANCEBLUE
-radianceblue_SUBDIR = RadianceBlue
-endif
-
-if BUILD_RADIANCE_XFCE_LXDE_MATE
-radiance_xfce_lxde_mate_SUBDIR = Radiance-Xfce-LXDE-MATE
 endif
 
 if BUILD_SMOOTLY
@@ -99,8 +83,6 @@ zukitwo_colors_SUBDIR = Zukitwo-Colors
 endif
 
 SUBDIRS = \
-	$(ambiance_blue_SUBDIR) \
-	$(ambiance_lime_SUBDIR) \
 	$(blue_submarine_SUBDIR) \
 	$(clearlooks_phenix_SUBDIR) \
 	$(cologne_SUBDIR) \
@@ -111,8 +93,6 @@ SUBDIRS = \
 	$(gnome_cupertino_mint_SUBDIR) \
 	$(gnomishbeige_SUBDIR) \
 	$(green_submarine_SUBDIR) \
-	$(radianceblue_SUBDIR) \
-	$(radiance_xfce_lxde_mate_SUBDIR) \
 	$(smootly_SUBDIR) \
 	$(smootly_black_SUBDIR) \
 	$(zukitwo_SUBDIR) \
@@ -128,8 +108,6 @@ SUBDIRS = \
 
 
 DIST_SUBDIRS = \
-	Ambiance-blue \
-	Ambiance-lime \
 	Blue-Submarine \
 	clearlooks-phenix \
 	Cologne \
@@ -142,8 +120,6 @@ DIST_SUBDIRS = \
 	Green-Submarine \
 	Smoothly \
 	Smoothly-Black \
-	RadianceBlue \
-	Radiance-Xfce-LXDE-MATE \
 	Zukitwo \
 	Zukitwo-Brave \
 	Zukitwo-Dust \

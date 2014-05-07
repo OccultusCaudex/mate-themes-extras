@@ -13,6 +13,8 @@ theme_DATA = \
 	button-hover.svg \
 	button-insensitive.svg \
 	button.svg \
+	header-button-active.svg \
+	header-button.svg \
 	notebook-button-active.svg \
 	notebook-button-default-focus-hover.svg \
 	notebook-button-default-focus.svg \
@@ -20,6 +22,10 @@ theme_DATA = \
 	notebook-button-focus.svg \
 	notebook-button-hover.svg \
 	notebook-button-insensitive.svg \
-	notebook-button.svg
+	notebook-button.svg \
+	rb-button.svg \
+	selection-mode-button-active.svg \
+	selection-mode-button.svg \
+	toolbar-button.svg
 
 EXTRA_DIST = $(theme_DATA)

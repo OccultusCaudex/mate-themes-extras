@@ -20,10 +20,10 @@
 .menuitem.radio,
 * .radio {
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (@gradient_color_a),
+                                     from (shade (@gradient_color_a, 0.90)),
                                      to (@gradient_color_b));
-    box-shadow: inset 1px 0.2px shade (@border_gradient_color_b, 0.85),
-                inset -1px -0.2px shade (@border_gradient_color_b, 0.85);
+    box-shadow: inset 1.0px 0.2px shade (@border_gradient_color_b, 0.85),
+                inset -1.0px -0.2px shade (@border_gradient_color_b, 0.85);
     border-radius: 8px;
 }
 
@@ -38,13 +38,23 @@
 .cell.check:active:selected,
 .menuitem.check:active,
 * .check:active {
+/*    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@glow_color, 0.70)),
+                                     color-stop (0.00, shade (@base_color, 2.95)),
+                                     color-stop (0.90, @glow_color),
+                                     to (@glow_color));
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@base_color, 0.70)),
-                                     color-stop (0.50, shade (@base_color, 0.95)),
-                                     color-stop (0.90, @base_color),
-                                     to (@base_color));
-    box-shadow: inset 2px 2px shade (@inner_gradient_color_a, 1.00),
-                inset -2px -2px shade (@inner_gradient_color_a, 1.00),
+                                     from (shade (@glow_color, 0.70)),
+                                     color-stop (0.00, shade (@glow_color, 1.70)),
+                                     color-stop (0.50, @glow_color),
+                                     to (shade (@glow_color, 1.50)));*/
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@glow_color, 0.70)),
+                                     color-stop (1.00, shade (@glow_color, 1.70)),
+                                     color-stop (2.50, @glow_color),
+                                     to (shade (@glow_color, 3.50)));
+    box-shadow: inset 1.5px 1.5px shade (@inner_gradient_color_a, 1.00),
+                inset -1.5px -1.5px shade (@inner_gradient_color_a, 1.00),
                 inset 1px 1px shade (@border_gradient_color_b, 0.85),
                 inset -1px -1px shade (@border_gradient_color_b, 0.85);
 }
@@ -53,11 +63,16 @@
 .cell.radio:active:selected,
 .menuitem.radio:active,
 * .radio:active {
+/*    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@glow_color, 0.70)),
+                                     color-stop (0.00, shade (@glow_color, 1.70)),
+                                     color-stop (0.50, @glow_color),
+                                     to (shade (@glow_color, 1.50)));*/
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@base_color, 0.70)),
-                                     color-stop (0.50, shade (@base_color, 0.95)),
-                                     color-stop (0.90, @base_color),
-                                     to (@base_color));
+                                     from (shade (@glow_color, 0.70)),
+                                     color-stop (1.00, shade (@glow_color, 1.70)),
+                                     color-stop (2.50, @glow_color),
+                                     to (shade (@glow_color, 3.50)));
     box-shadow: inset 1.2px 0.2px shade (@border_gradient_color_b, 0.75),
                 inset -1.2px -0.2px shade (@border_gradient_color_b, 0.75);
 }
@@ -72,7 +87,6 @@
                                      to (shade (@base_color, 0.60)));
     box-shadow: inset 1.2px 0.2px shade (@border_gradient_color_b, 0.85),
                 inset -1.2px -0.2px shade (@border_gradient_color_b, 0.85);
-
 }
 
 .cell.radio:inconsistent,

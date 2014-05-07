@@ -17,4 +17,3 @@ DIST_SUBDIRS =		\
 	metacity-1
 
 CLEANFILES = index.theme
-

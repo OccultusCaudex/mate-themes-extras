@@ -14,8 +14,8 @@
    height="14"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="notebook-trough-v.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="trough-h.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -507,6 +507,45 @@
        y1="1020.4137"
        x2="7.707315"
        y2="1020.4137" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3843"
+       id="linearGradient3850"
+       x1="0"
+       y1="1020.3622"
+       x2="2"
+       y2="1020.3622"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3843">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3846" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.18125001;"
+         offset="1"
+         id="stop3848" />
+    </linearGradient>
+    <linearGradient
+       y2="1020.3622"
+       x2="2"
+       y1="1020.3622"
+       x1="0"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3178"
+       xlink:href="#linearGradient3843"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3843"
+       id="linearGradient3934"
+       gradientUnits="userSpaceOnUse"
+       x1="0"
+       y1="1020.3622"
+       x2="2"
+       y2="1020.3622"
+       gradientTransform="translate(1038.3622,-1052.3622)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -516,13 +555,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="8.0800657"
-     inkscape:cx="-22.183108"
-     inkscape:cy="31.501616"
+     inkscape:cx="5.4709831"
+     inkscape:cy="16.650252"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="722"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1" />
@@ -543,33 +582,26 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-1038.3622)">
-    <g
-       id="g3929"
-       transform="matrix(0,1.0371842,-1.0067177,0,1059.2167,1038.1019)">
-      <rect
-         inkscape:export-ydpi="93.567406"
-         inkscape:export-xdpi="93.567406"
-         inkscape:export-filename="/home/jo-shva/trough.png"
-         ry="5.413754"
-         rx="5.2922902"
-         y="991.06989"
-         x="1.7077098"
-         height="58.584583"
-         width="10.58458"
-         id="rect3753-8-7-4-3-7"
-         style="fill:url(#linearGradient3933);fill-opacity:1;stroke:url(#linearGradient3935);stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-      <rect
-         inkscape:export-ydpi="93.567406"
-         inkscape:export-xdpi="93.567406"
-         inkscape:export-filename="/home/jo-shva/trough.png"
-         ry="4.5818014"
-         rx="4.2583146"
-         y="991.90375"
-         x="2.7416854"
-         height="56.816631"
-         width="8.5166292"
-         id="rect3753-8-7-4-3-7-2"
-         style="opacity:0.06000001;fill:none;stroke:url(#linearGradient3937);stroke-width:0.883371;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-    </g>
+    <rect
+       style="fill:#1c1c1c;fill-opacity:1;stroke:#1c1c1c;stroke-width:1.02183723000000004;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3753-8-7-4-3-7-5"
+       width="12.978163"
+       height="62.978165"
+       x="1038.8732"
+       y="-63.489094"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="/home/jo-shva/trough.png"
+       inkscape:export-xdpi="93.567406"
+       inkscape:export-ydpi="93.567406"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <rect
+       style="opacity:0.23999999;fill:url(#linearGradient3934);fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3841"
+       width="2"
+       height="64"
+       x="1038.3622"
+       y="-64.000015"
+       transform="matrix(0,1,-1,0,0,0)" />
   </g>
 </svg>

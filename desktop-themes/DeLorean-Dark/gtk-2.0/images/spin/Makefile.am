@@ -11,6 +11,7 @@ theme_DATA = \
 	down-background-prelight.svg \
 	down-background-rtl.svg \
 	down-background.svg \
+	gimp-up-background.svg \
 	notebook-down-background-active-rtl.svg \
 	notebook-down-background-active.svg \
 	notebook-down-background-insensitive-rtl.svg \
@@ -27,6 +28,22 @@ theme_DATA = \
 	notebook-up-background-prelight.svg \
 	notebook-up-background-rtl.svg \
 	notebook-up-background.svg \
+	toolbar-down-background-active-rtl.svg \
+	toolbar-down-background-active.svg \
+	toolbar-down-background-insensitive-rtl.svg \
+	toolbar-down-background-insensitive.svg \
+	toolbar-down-background-prelight-rtl.svg \
+	toolbar-down-background-prelight.svg \
+	toolbar-down-background-rtl.svg \
+	toolbar-down-background.svg \
+	toolbar-up-background-active-rtl.svg \
+	toolbar-up-background-active.svg \
+	toolbar-up-background-insensitive-rtl.svg \
+	toolbar-up-background-insensitive.svg \
+	toolbar-up-background-prelight-rtl.svg \
+	toolbar-up-background-prelight.svg \
+	toolbar-up-background-rtl.svg \
+	toolbar-up-background.svg \
 	up-background-active-rtl.svg \
 	up-background-active.svg \
 	up-background-insensitive-rtl.svg \

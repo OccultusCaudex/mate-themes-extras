@@ -54,7 +54,7 @@ style "default" {
 
     base[ACTIVE]        = "#6BA8E4" 
     base[SELECTED]      = "#bec8ff" 
-    base[NORMAL]        = "#F5F5F5" 
+    base[NORMAL]        = "#FFFFFF" 
     base[PRELIGHT]      = "#E2DEEB" 
     base[INSENSITIVE]   = "#DBDBE5" 
 
@@ -463,17 +463,29 @@ style "panel" {
 
     fg[ACTIVE]          = "#850CFF"
 
-    bg_pixmap[ACTIVE] = "assets/gtk-2.0-panel-background.png"
-    bg_pixmap[NORMAL] = "assets/gtk-2.0-panel-background.png"
-    bg_pixmap[SELECTED] = "assets/gtk-2.0-panel-background.png"
-    bg_pixmap[PRELIGHT] = "assets/gtk-2.0-panel-background.png"
-    bg_pixmap[INSENSITIVE] = "assets/gtk-2.0-panel-background.png"
+#    bg_pixmap[ACTIVE] = "assets/gtk-2.0-panel-background.png"
+#    bg_pixmap[NORMAL] = "assets/gtk-2.0-panel-background.png"
+#    bg_pixmap[SELECTED] = "assets/gtk-2.0-panel-background.png"
+#    bg_pixmap[PRELIGHT] = "assets/gtk-2.0-panel-background.png"
+#    bg_pixmap[INSENSITIVE] = "assets/gtk-2.0-panel-background.png"
 
-    engine "pixmap" { }
-	xthickness=1
-	ythickness=1
+#    engine "pixmap" { }
+#	xthickness=1
+#	ythickness=1
 
+    engine "smooth" {
+        fill {
+	    	 style=shaded
+	    	 hdirection=vertical
+	    	 vdirection=vertical
+        	 color1[SELECTED]    = "#EAF5FF"
+        	 color2[SELECTED]    = "#166FD5"
+	         xthickness=1
+	         ythickness=1
+		     }
 }
+}
+
 widget "*PanelWidget*" style "panel"
 class "*Tray*" style "panel"
 class "*tray*" style "panel"
@@ -584,7 +596,7 @@ widget_class "*CheckButton*" style "radio_check"
 
 style "caja-location"
 {
-	bg[NORMAL]  = mix (0.60, shade (1.05, "#D7D7E6"), "#D7D7E6")
+	bg[NORMAL]  = mix (0.60, shade (1.05, "#E9E9F4"), "#E9E9F4")
 }
 
 widget "*.caja-extra-view-widget" style : highest "caja-location"
@@ -606,3 +618,13 @@ style "caja-sidebar"
 }
 
 widget_class	"*Caja*Places*Sidebar*"	style "caja-sidebar"
+
+style "caja-view"
+{
+	xthickness		= 0
+	ythickness		= 0
+	base[NORMAL]  = mix (0.60, shade (0.99, "#E9E9F4"), "#E9E9F4")
+
+}
+
+widget_class	"*Caja*View*"		style "caja-view"

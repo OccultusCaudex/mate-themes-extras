@@ -27,4 +27,3 @@ DIST_SUBDIRS =		\
 	unity
 
 CLEANFILES = index.theme
-

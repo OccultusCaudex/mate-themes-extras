@@ -14,7 +14,7 @@
    height="13"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="slider-h.svg">
   <defs
      id="defs4">
@@ -465,13 +465,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="10.66"
-     inkscape:cx="21.801126"
+     inkscape:cx="9.7936213"
      inkscape:cy="23.32015"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="722"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1" />
@@ -492,40 +492,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-1039.3622)">
-    <g
-       id="g3838"
-       transform="matrix(-1,0,0,1,45.000041,0)">
-      <rect
-         transform="matrix(0,1,-1,0,0,0)"
-         ry="5.2322636"
-         rx="4.9903059"
-         y="-43.473408"
-         x="1040.9015"
-         height="41.98468"
-         width="9.9806108"
-         id="rect4020"
-         style="fill:url(#linearGradient3843);fill-opacity:1;stroke:url(#linearGradient3845);stroke-width:1.01357603;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-      <rect
-         transform="matrix(0,1,-1,0,0,0)"
-         ry="4.7966475"
-         rx="4.9748211"
-         y="-41.90279"
-         x="1040.8313"
-         height="40.292553"
-         width="9.9496422"
-         id="rect4020-3"
-         style="opacity:0.322;fill:none;stroke:url(#linearGradient3847);stroke-width:0.99139893;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-      <rect
-         transform="matrix(0,1,-1,0,0,0)"
-         ry="4.8373098"
-         rx="5.0109854"
-         y="-43.521687"
-         x="1040.8356"
-         height="40.117233"
-         width="10.021971"
-         id="rect4020-6"
-         style="opacity:0.10100002;fill:none;stroke:url(#linearGradient3849);stroke-width:0.99282879;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-    </g>
     <rect
        style="opacity:0;fill:none;stroke:url(#linearGradient4097);stroke-width:1.02888811;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3868)"
        id="rect4020-6-5"
@@ -536,5 +502,15 @@
        rx="5.1026101"
        ry="4.1801486"
        transform="matrix(0.91926547,0,0,0.90072965,1.395234,103.75777)" />
+    <rect
+       style="fill:#707070;fill-opacity:1;stroke:#7a7a7a;stroke-width:1.01357591;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4020-7"
+       width="5.986424"
+       height="37.986423"
+       x="1042.869"
+       y="-41.49321"
+       rx="2.993212"
+       ry="2.993212"
+       transform="matrix(0,1,-1,0,0,0)" />
   </g>
 </svg>

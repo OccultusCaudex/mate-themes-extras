@@ -18,11 +18,11 @@ theme_DATA = \
 EXTRA_DIST = $(theme_DATA)
 
 SUBDIRS = Handles \
-	Nautilus \
+	Caja \
 	Null \
 	Others
 
 DIST_SUBDIRS =  Handles \
-	Nautilus \
+	Caja \
 	Null \
 	Others

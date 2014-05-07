@@ -6,6 +6,8 @@ theme_DATA = \
 	scale-slider.svg \
 	scale-slider-active.svg \
 	scale-slider-backdrop.svg \
-	scale-slider-insensitive.svg
+	scale-slider-hover.svg \
+	scale-slider-insensitive.svg \
+	scale-slider-insensitive-backdrop.svg
 
 EXTRA_DIST = $(theme_DATA)

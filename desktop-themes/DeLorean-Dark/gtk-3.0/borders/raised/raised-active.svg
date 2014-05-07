@@ -14,8 +14,8 @@
    height="16px"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="button-border-active.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="raised-active.svg">
   <defs
      id="defs33224">
     <linearGradient
@@ -32,11 +32,11 @@
     <linearGradient
        id="linearGradient3758">
       <stop
-         style="stop-color:#0e0e0e;stop-opacity:1;"
+         style="stop-color:#181818;stop-opacity:1;"
          offset="0"
          id="stop3760" />
       <stop
-         style="stop-color:#101010;stop-opacity:1;"
+         style="stop-color:#1f1f1f;stop-opacity:1;"
          offset="1"
          id="stop3762" />
     </linearGradient>
@@ -86,14 +86,14 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="24.24"
-     inkscape:cx="2.0288779"
+     inkscape:cx="2.7508251"
      inkscape:cy="7.8518592"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="722"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -117,7 +117,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -126,7 +126,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer">
     <path
-       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.14"
+       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.11"
        d="m 15.5,4 0,8.999999 c 0,1.385 -1.115,2.5 -2.5,2.5 l -9.9999995,0 c -1.3850003,0 -2.5000005,-1.115 -2.5000005,-2.5 L 0.5,4"
        id="rect17861-5"
        inkscape:connector-curvature="0"
@@ -140,15 +140,5 @@
        width="15"
        id="rect17861"
        style="color:#000000;fill:none;stroke:url(#linearGradient3764);stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <rect
-       ry="1.5"
-       rx="1.5"
-       y="-13.5"
-       x="1.5"
-       height="12"
-       width="13.000001"
-       id="rect17861-6"
-       style="opacity:0.16;color:#000000;fill:none;stroke:url(#linearGradient3769);stroke-width:1.39999999999999991;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter3825)"
-       transform="scale(1,-1)" />
   </g>
 </svg>

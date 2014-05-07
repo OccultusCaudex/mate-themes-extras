@@ -55,7 +55,7 @@ style "caja-location"
 		{
 		function        = FLAT_BOX
 		recolorable     = TRUE
-		file            = "Nautilus/extra-widget.png"
+		file            = "Caja/extra-widget.png"
 		state           = NORMAL
 		stretch         = TRUE
 		border          = { 0, 0, 1, 0 }

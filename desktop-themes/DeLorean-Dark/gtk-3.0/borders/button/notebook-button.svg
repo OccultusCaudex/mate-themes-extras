@@ -14,18 +14,18 @@
    height="16px"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="button-border-dark3.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="notebook-button.svg">
   <defs
      id="defs33224">
     <linearGradient
        id="linearGradient3845">
       <stop
-         style="stop-color:#0b0b0b;stop-opacity:1;"
+         style="stop-color:#191919;stop-opacity:1;"
          offset="0"
          id="stop3847" />
       <stop
-         style="stop-color:#0a0a0a;stop-opacity:1;"
+         style="stop-color:#161616;stop-opacity:1;"
          offset="1"
          id="stop3849" />
     </linearGradient>
@@ -48,7 +48,8 @@
        y1="1.92503"
        x2="7.999999"
        y2="14.003025"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.99721815,0,0,1.0766309,0.02225477,-0.0968643)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3845"
@@ -66,22 +67,22 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="24.48"
-     inkscape:cx="2.3227124"
-     inkscape:cy="8.1669607"
+     inkscape:zoom="26.24"
+     inkscape:cx="4.9801829"
+     inkscape:cy="8.1669106"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="722"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
-     inkscape:showpageshadow="false"
-     showborder="false">
+     inkscape:showpageshadow="true"
+     showborder="true">
     <inkscape:grid
        type="xygrid"
        id="grid2992"
@@ -98,7 +99,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -106,8 +107,17 @@
      id="layer1"
      inkscape:label="Layer 1"
      inkscape:groupmode="layer">
+    <rect
+       ry="1.6149462"
+       rx="1.4958272"
+       y="1.518082"
+       x="1.518082"
+       height="12.91957"
+       width="12.963837"
+       id="rect17861-6"
+       style="opacity:0.04;color:#000000;fill:none;stroke:url(#linearGradient3843);stroke-width:1.03616393000000007;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
-       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.06"
+       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.03"
        d="m 15.5,4 0,8.999999 c 0,1.385 -1.115,2.5 -2.5,2.5 l -9.9999995,0 c -1.3850003,0 -2.5000005,-1.115 -2.5000005,-2.5 L 0.5,4"
        id="rect17861-5"
        inkscape:connector-curvature="0"
@@ -120,15 +130,6 @@
        height="13.999999"
        width="15"
        id="rect17861"
-       style="color:#000000;fill:none;stroke:url(#linearGradient3851);stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <rect
-       ry="1.5"
-       rx="1.5"
-       y="1.5"
-       x="1.5"
-       height="12"
-       width="13.000001"
-       id="rect17861-6"
-       style="color:#000000;fill:none;stroke:url(#linearGradient3843);stroke-width:0.99999994000000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.02" />
+       style="color:#000000;fill:none;stroke:url(#linearGradient3851);stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;fill-opacity:1" />
   </g>
 </svg>

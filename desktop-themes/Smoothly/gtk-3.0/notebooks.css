@@ -4,7 +4,7 @@
  *****************/
 .notebook {
     border-radius: 4px;
-    padding: 4px;
+    padding: 23px;
     background-image: none;
     background-color: shade (@bg_color, 0.90);
     box-shadow: inset 1px 1px shade (@border_gradient_color_b, 1.00),
@@ -12,7 +12,6 @@
                 inset 0px 0px shade (@inner_gradient_color_a, 1.07),
                 inset -0px -0px shade (@inner_gradient_color_a, 1.07);
 }
-
 
 .notebook tab:active {
     border-radius: 4px 4px 0px 0px;

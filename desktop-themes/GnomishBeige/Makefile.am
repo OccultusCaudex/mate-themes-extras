@@ -20,4 +20,3 @@ DIST_SUBDIRS =	\
 	gnome-shell
 
 CLEANFILES = index.theme
-

@@ -2,7 +2,7 @@
  * Menubars *
  ************/
 .menuitem {
-    padding: 1.5px 3px 1.5px 3px;
+    padding: 2.5px 3px 2.5px 3px;
 }
 
 .menubar {
@@ -86,7 +86,6 @@
     color: alpha (@text_color, 0.40);
 }
 
-.menuitem,
 .menuitem:active,
 .menuitem:prelight {
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -100,6 +99,7 @@
     border-radius: 3px;
     color: shade (@text_color, 1.20);
     text-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
+    padding: 2.5px 3px 2.5px 3px;
 }
 
 .separator {

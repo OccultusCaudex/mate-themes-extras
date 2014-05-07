@@ -14,14 +14,14 @@
    height="18"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="notebook-entry-bg.svg">
   <defs
      id="defs33224">
     <linearGradient
        id="linearGradient3848">
       <stop
-         style="stop-color:#000000;stop-opacity:0.35294119;"
+         style="stop-color:#000000;stop-opacity:0.09411765;"
          offset="0"
          id="stop3850" />
       <stop
@@ -116,7 +116,7 @@
        x2="-5.1538467"
        y2="17.989464"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(13.730327,-1.9708224)" />
+       gradientTransform="translate(13.730327,-1.9708222)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3848"
@@ -198,14 +198,14 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="22.62"
-     inkscape:cx="3.9045093"
+     inkscape:cx="3.2025618"
      inkscape:cy="8.4559697"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="722"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -246,7 +246,7 @@
        height="18"
        width="18"
        id="rect17861"
-       style="color:#000000;fill:#0c0c0c;fill-opacity:1;stroke:none;stroke-width:0.96597791000000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;fill:#dbdbdb;fill-opacity:1;stroke:none;stroke-width:0.96597791000000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:1" />
     <rect
        ry="3.2142861"
        rx="0"

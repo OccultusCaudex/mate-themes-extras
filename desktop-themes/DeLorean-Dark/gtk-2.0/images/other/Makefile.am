@@ -3,19 +3,21 @@ THEME_NAME=DeLorean-Dark
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-2.0/images/other
 
 theme_DATA = \
-	button-focus.svg \
-	focus-blue.svg \
+	delorean-dark-bg.png \
+	focus-light-fill.svg \
 	focus-light.svg \
 	focus.png \
-	focus.svg \
 	menubar-button.svg \
+	menubar-menuitem.svg \
+	menuitem.svg \
 	menu.svg \
+	notebook-tree-selected.svg \
 	null.png \
-	WindowBg-dark.png \
-	window-overlay-border.svg \
-	window-overlay-extended.svg \
-	window-overlay.svg \
-	window-overlay-top-extended.svg
+	oriental-4.png \
+	panel.png \
+	stripes-b.png \
+	stripes.png \
+	tree-selected.svg
 
 EXTRA_DIST = $(theme_DATA)
 

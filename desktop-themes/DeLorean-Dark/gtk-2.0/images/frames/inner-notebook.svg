@@ -13,8 +13,8 @@
    height="30"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="notebook.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="inner-notebook.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -68,13 +68,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.54"
-     inkscape:cx="18.544954"
+     inkscape:cx="-4.2004041"
      inkscape:cy="10.795237"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="722"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1" />
@@ -86,7 +86,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -96,7 +96,7 @@
      id="layer1"
      transform="translate(0,-1022.3622)">
     <rect
-       style="fill:#181818;fill-opacity:1;stroke:none"
+       style="fill:#1f1f1f;fill-opacity:1;stroke:none"
        id="rect3753"
        width="30"
        height="30"

@@ -1,15 +1,11 @@
-mate-themes-extras-3
+mate-themes-extras-4
 ====================
 
-GTK2/3 themes optimized for GTK3-3.6.x
-
 The mate-themes-extras package contains a collection of GTK2/3 desktop themes for MATE. These themes can change the appearance of application widgets, window borders, etc.
+This package is optimized for GTK3-3.8.x
 
 Themes:
 
---Ambiance-blue
-
---Ambiance-lime
 
 --Blue-Submarine
 
@@ -17,7 +13,7 @@ Themes:
 
 --Cologne
 
---Delorean-Dark
+--delorean-dark
 
 --Faience
 
@@ -31,19 +27,15 @@ Themes:
 
 --Green-Submarine
 
---RadianceBlue
-
---Radiance-Xfce-LXDE-MATE
-
 --Smootly
 
 --Smootly-Black
 
 --Zukitwo
 
---Zukitwo-Brave
-
 --Zukitwo-Dust
+
+--Zukitwo-Brave
 
 --Zukitwo-Human
 
@@ -56,9 +48,9 @@ Themes:
 --Zukitwo-Wise
 
 
-Installation:
+Use NOCONFIGURE=1 ./autogen.sh for generate configure and make files.
 
-You have to use autogen.sh with configure flags to enable a theme.
+You have to use ./configure with configure flags to enable a theme.
 
 Without a flag nothing will compile!
 
@@ -68,9 +60,10 @@ Use configure --help after autogen to find out the right configure flags for a t
 
 and  mate-appearance-properties doesn't find the themes!
 
-This example installs one theme.
 
-./autogen.sh
+Example for install Gnome-Cupertino theme:
+
+NOCONFIGURE=1 ./autogen.sh
 
 ./configure --prefix=/usr \
 

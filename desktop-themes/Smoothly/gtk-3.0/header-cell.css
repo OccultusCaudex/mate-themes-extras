@@ -19,6 +19,7 @@ GtkIconView {
     icon-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
 }
 
+EggListBox:selected,
 .view.cell:prelight,
 .view.cell:selected:focused {
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -34,6 +35,7 @@ GtkIconView {
     icon-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
 }
 
+EggListBox:hover,
 .view.cell:prelight,
 .view.cell:selected:prelight {
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -49,6 +51,7 @@ GtkIconView {
     text-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
 }
 
+
 GtkIconView.view.cell:hover {
     color: alpha (shade (@text_color, 1.00), 1.0);
     text-shadow: 1px 0px alpha (shade (@text_color, 1.25), 1.0);
@@ -60,6 +63,7 @@ GtkIconView.view.cell:selected:focused {
     text-shadow: 0px 0px alpha (shade (@base_color, 1.25), 0.4);
 }
 
+EggListBox,
 .view,
 CcShellCategoryView {
     background-color: alpha (shade (@sidebar_bg_color, 0.98), 0.9);

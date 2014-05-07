@@ -21,6 +21,7 @@ theme_DATA = \
 	gnome-shell.css \
 	GnomishBeige-preview.png \
 	logged-in-indicator.svg \
+	more-results.svg \
 	panel-button-highlight-narrow.svg \
 	process-working.png \
 	process-working.svg \

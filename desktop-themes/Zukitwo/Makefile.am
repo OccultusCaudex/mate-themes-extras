@@ -5,10 +5,7 @@ themedir = $(datadir)/themes/$(THEME_NAME)
 theme_DATA = \
 	COPYING \
 	index.theme \
-	INSTALL \
-	panelbg.png \
 	README
-
 
 EXTRA_DIST = $(theme_DATA)
 
@@ -29,4 +26,3 @@ DIST_SUBDIRS =		\
 	xfwm4
 
 CLEANFILES = index.theme
-

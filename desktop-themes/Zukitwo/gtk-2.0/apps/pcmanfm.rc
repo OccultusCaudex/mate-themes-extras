@@ -31,7 +31,7 @@ style "pcmanfm-handle"
 		image {
 			function	= HANDLE
 			recolorable	= TRUE
-			file		= "Handles/handle-nautilus.png"
+			file		= "Handles/handle-caja.png"
 			stretch		= TRUE
 			border 		= { 0, 0, 0, 0 }
 		}

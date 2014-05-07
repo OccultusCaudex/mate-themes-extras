@@ -14,8 +14,8 @@
    height="13"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="slider-v-active.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="slider-h-active.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -285,19 +285,6 @@
          offset="1"
          id="stop4026-2" />
     </linearGradient>
-    <filter
-       inkscape:collect="always"
-       id="filter3868"
-       x="-0.15096281"
-       width="1.3019257"
-       y="-0.036411878"
-       height="1.0728238"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.64192029"
-         id="feGaussianBlur3870" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4074"
@@ -475,13 +462,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="10.66"
-     inkscape:cx="21.24015"
+     inkscape:cx="-6.8555348"
      inkscape:cy="3.7618097"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="722"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1" />
@@ -493,7 +480,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -502,49 +489,15 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-1039.3622)">
-    <g
-       id="g4350"
-       transform="translate(-0.16667856,-0.00590312)">
-      <rect
-         transform="matrix(0,1,1,0,0,0)"
-         ry="5.2322636"
-         rx="4.9903059"
-         y="1.6932911"
-         x="1040.9073"
-         height="41.98468"
-         width="9.9806108"
-         id="rect4020"
-         style="fill:url(#linearGradient4355);fill-opacity:1;stroke:url(#linearGradient4357);stroke-width:1.01357603;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-      <rect
-         transform="matrix(0,1,1,0,0,0)"
-         ry="4.7966475"
-         rx="4.9748211"
-         y="3.2639086"
-         x="1040.8372"
-         height="40.292553"
-         width="9.9496422"
-         id="rect4020-3"
-         style="opacity:0.46200005;fill:none;stroke:url(#linearGradient4359);stroke-width:0.99139893;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-      <rect
-         transform="matrix(0,1,1,0,0,0)"
-         ry="4.8373098"
-         rx="5.0109854"
-         y="1.6450123"
-         x="1040.8414"
-         height="40.117233"
-         width="10.021971"
-         id="rect4020-6"
-         style="opacity:0.12099998;fill:none;stroke:url(#linearGradient4361);stroke-width:0.99282879;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-    </g>
     <rect
-       style="opacity:0;fill:none;stroke:url(#linearGradient4336);stroke-width:1.02888811;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3868)"
-       id="rect4020-6-5"
-       width="10.20522"
-       height="42.310608"
-       x="1.3302395"
-       y="1009.7705"
-       rx="5.1026101"
-       ry="4.1801486"
-       transform="matrix(0,0.91926547,0.90072965,0,-903.42223,1040.7929)" />
+       style="fill:#575757;fill-opacity:1;stroke:#8d8d8d;stroke-width:1.01357590999999991;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4020-7"
+       width="5.986424"
+       height="37.986423"
+       x="1042.869"
+       y="-41.49321"
+       rx="2.993212"
+       ry="2.993212"
+       transform="matrix(0,1,-1,0,0,0)" />
   </g>
 </svg>

@@ -14,18 +14,18 @@
    height="16px"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="button-border-normal.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="button.svg">
   <defs
      id="defs33224">
     <linearGradient
        id="linearGradient3845">
       <stop
-         style="stop-color:#181818;stop-opacity:1;"
+         style="stop-color:#222222;stop-opacity:1;"
          offset="0"
          id="stop3847" />
       <stop
-         style="stop-color:#161616;stop-opacity:1;"
+         style="stop-color:#1e1e1e;stop-opacity:1;"
          offset="1"
          id="stop3849" />
     </linearGradient>
@@ -67,15 +67,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="19.88"
-     inkscape:cx="-4.5442656"
-     inkscape:cy="8.1663161"
+     inkscape:zoom="26.24"
+     inkscape:cx="4.9801829"
+     inkscape:cy="8.1669106"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="722"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -117,7 +117,7 @@
        id="rect17861-6"
        style="opacity:0.05;color:#000000;fill:none;stroke:url(#linearGradient3843);stroke-width:1.03616393;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
-       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.14"
+       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.08"
        d="m 15.5,4 0,8.999999 c 0,1.385 -1.115,2.5 -2.5,2.5 l -9.9999995,0 c -1.3850003,0 -2.5000005,-1.115 -2.5000005,-2.5 L 0.5,4"
        id="rect17861-5"
        inkscape:connector-curvature="0"

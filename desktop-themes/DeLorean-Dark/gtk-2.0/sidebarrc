@@ -17,5 +17,21 @@ style "sidebar"
 class		 "*ThunarTreeView"			style		"sidebar"
 widget_class	"*FmPlacesView*"		style 		"sidebar"
 widget_class	"*FmDirTreeView"			style 		"sidebar"
-
 widget_class "*<ThunarShortcutsPane>*<ThunarShortcutsView>"  style  "sidebar"
+
+style "thunar-fm-iconview"
+{
+	text[NORMAL] = @text_color
+	base[NORMAL] = "#1e1e1e"
+}
+
+widget	"*Thunar*ExoIconView*"				style:highest	"thunar-fm-iconview"
+widget	"*FmStandardView*View"				style:highest	"thunar-fm-iconview"	
+
+style "thunar_pathbar_style"
+{
+  xthickness	= 3
+  ythickness	= 4
+}
+
+widget_class	"*ThunarLocationButton*Button*"				style:highest	"thunar_pathbar_style"

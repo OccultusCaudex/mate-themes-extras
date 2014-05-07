@@ -5,12 +5,6 @@ themedir = $(datadir)/themes/$(THEME_NAME)/gtk-2.0/images/scroll
 theme_DATA = \
 	notebook-trough-h.svg \
 	notebook-trough-v.svg \
-	scroll-button-active.svg \
-	scroll-button-hover.svg \
-	scroll-button-insensitive.svg \
-	scroll-button.svg \
-	scroll-handle-h.svg \
-	scroll-handle-v.svg \
 	slider-h-active.svg \
 	slider-h-hover.svg \
 	slider-h-insensitive.svg \
