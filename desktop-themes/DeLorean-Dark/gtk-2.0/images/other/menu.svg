@@ -101,15 +101,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.837729"
-     inkscape:cx="5.9604311"
+     inkscape:cx="-1.8555825"
      inkscape:cy="3.791044"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="722"
+     inkscape:window-height="702"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="339"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -136,28 +136,28 @@
        x="0"
        y="1042.3622" />
     <rect
-       style="fill:#181819;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:#1d1d1d;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3772"
        width="10"
        height="1"
        x="0"
        y="1042.3622" />
     <rect
-       style="fill:#121213;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:#1a1a1a;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3774"
        width="10"
        height="1"
        x="0"
        y="1051.3619" />
     <rect
-       style="fill:#121213;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:#1a1a1a;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3784"
        width="1"
        height="8"
        x="4.4168792e-07"
        y="1043.3622" />
     <rect
-       style="fill:#121213;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:#1a1a1a;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3784-8"
        width="1"
        height="8"
@@ -171,27 +171,12 @@
        x="1"
        y="1043.3622" />
     <rect
-       style="opacity:0.06;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       id="rect3772-2-8"
-       width="8"
-       height="1"
-       x="1"
-       y="1050.3622" />
-    <rect
-       style="opacity:0.005;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="opacity:0.01499999;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3772-2-3"
-       width="6"
+       width="6.9195309"
        height="1"
-       x="-1050.3622"
+       x="-1051.2817"
        y="1"
-       transform="matrix(0,-1,1,0,0,0)" />
-    <rect
-       style="opacity:0.02;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       id="rect3772-2-3-7"
-       width="6"
-       height="1"
-       x="-1050.3622"
-       y="8"
        transform="matrix(0,-1,1,0,0,0)" />
     <rect
        style="opacity:0.008;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"

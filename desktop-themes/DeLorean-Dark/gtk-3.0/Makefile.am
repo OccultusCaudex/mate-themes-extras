@@ -11,7 +11,6 @@ theme_DATA = \
 	gtk-main-common.css \
 	gtk-main.css \
 	gtk-main-dark.css \
-	gtk-main-dark-ORIG.css \
 	gtk-widgets-assets.css \
 	gtk-widgets-assets-dark.css \
 	gtk-widgets-backgrounds.css \
@@ -19,9 +18,12 @@ theme_DATA = \
 	gtk-widgets-borders-dark.css \
 	gtk-widgets.css \
 	gtk-widgets-dark-overrides.css \
-	overlay-scrollbar.css \
-	settings.ini
-	ubuntu-pathbar.css \
+	nautilus-pathbar-vs2.css \
+	nautilus-toolbar.css \
+	nemo.css \
+	notebook.css \
+	raised-buttons.css \
+	settings.ini \
 	unity.css
 
 EXTRA_DIST = $(theme_DATA)
@@ -34,4 +36,3 @@ DIST_SUBDIRS =	\
 	assets	\
 	borders
 
-CLEANFILES = index.theme

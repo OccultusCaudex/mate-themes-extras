@@ -3,6 +3,7 @@ THEME_NAME=DeLorean-Dark
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-2.0
 
 theme_DATA = \
+	appsrc \
 	gtkrc \
 	panelrc \
 	sidebarrc
@@ -17,4 +18,3 @@ DIST_SUBDIRS =	\
 	images	\
 	panel-background
 
-CLEANFILES = index.theme

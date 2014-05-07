@@ -13,8 +13,8 @@
    height="8"
    id="svg4584"
    version="1.1"
-   inkscape:version="0.48.2 r9819"
-   sodipodi:docname="switch-slider-grip-dark.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="switch-slider-grip.svg">
   <defs
      id="defs4586" />
   <sodipodi:namedview
@@ -25,16 +25,16 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.197802"
-     inkscape:cx="-0.15396047"
-     inkscape:cy="8"
+     inkscape:cx="-3.3680217"
+     inkscape:cy="4.3960396"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1280"
-     inkscape:window-height="741"
+     inkscape:window-width="1366"
+     inkscape:window-height="702"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="339"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata4589">
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,31 +54,31 @@
      inkscape:groupmode="layer"
      transform="translate(0,-8)">
     <rect
-       ry="1"
-       rx="1"
+       ry="0.099009894"
+       rx="0.099009894"
        y="8.0356436"
        x="0"
        height="8"
        width="2"
        id="rect62941"
-       style="fill:#e8e8e5;fill-opacity:1;stroke:none;display:inline" />
+       style="opacity:0.32;fill:#000000;fill-opacity:1;stroke:none;display:inline" />
     <rect
-       ry="1"
-       rx="1"
+       ry="0"
+       rx="0"
        y="8.0356436"
        x="4"
        height="8"
        width="2"
        id="rect62943"
-       style="fill:#e8e8e5;fill-opacity:1;stroke:none;display:inline" />
+       style="opacity:0.32;fill:#000000;fill-opacity:1;stroke:none;display:inline" />
     <rect
-       ry="1"
-       rx="1"
+       ry="0"
+       rx="0"
        y="8.0356436"
        x="8"
        height="8"
        width="2"
        id="rect62945"
-       style="fill:#e8e8e5;fill-opacity:1;stroke:none;display:inline" />
+       style="opacity:0.32;fill:#000000;fill-opacity:1;stroke:none;display:inline" />
   </g>
 </svg>

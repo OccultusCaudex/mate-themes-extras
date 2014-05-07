@@ -21,7 +21,7 @@
     <linearGradient
        id="linearGradient3815">
       <stop
-         style="stop-color:#2c2c2c;stop-opacity:1;"
+         style="stop-color:#4d4d4d;stop-opacity:1;"
          offset="0"
          id="stop3817" />
       <stop
@@ -79,15 +79,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.54"
-     inkscape:cx="-22.807363"
+     inkscape:cx="17.413793"
      inkscape:cy="10.795237"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="722"
+     inkscape:window-height="702"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="339"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -107,7 +107,7 @@
      id="layer1"
      transform="translate(0,-1022.3622)">
     <rect
-       style="fill:#1e1e1e;fill-opacity:1;stroke:url(#linearGradient3821);stroke-width:1.07574892000000011;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#393939;fill-opacity:1;stroke:url(#linearGradient3821);stroke-width:1.07574892000000011;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3753"
        width="28.923836"
        height="28.924252"
@@ -116,7 +116,7 @@
        rx="0"
        ry="0" />
     <rect
-       style="fill:#161616;fill-opacity:1;stroke:none"
+       style="fill:#222222;fill-opacity:1;stroke:none"
        id="rect3841"
        width="1"
        height="30"
@@ -124,12 +124,21 @@
        y="1022.362"
        ry="0" />
     <rect
-       style="fill:#161616;fill-opacity:1;stroke:none"
+       style="fill:#4d4d4d;fill-opacity:1;stroke:none"
        id="rect3841-6"
        width="1"
        height="30"
        x="0"
        y="1022.3622"
        ry="0" />
+    <rect
+       style="fill:#222222;fill-opacity:1;stroke:none"
+       id="rect3841-0"
+       width="1"
+       height="30"
+       x="1051.3622"
+       y="-30"
+       ry="0"
+       transform="matrix(0,1,-1,0,0,0)" />
   </g>
 </svg>

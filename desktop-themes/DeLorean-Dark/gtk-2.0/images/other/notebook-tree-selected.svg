@@ -19,6 +19,28 @@
   <defs
      id="defs33224">
     <linearGradient
+       id="linearGradient3918">
+      <stop
+         style="stop-color:#2f4753;stop-opacity:1;"
+         offset="0"
+         id="stop3921" />
+      <stop
+         style="stop-color:#2f4753;stop-opacity:1;"
+         offset="1"
+         id="stop3923" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3815">
+      <stop
+         style="stop-color:#32454f;stop-opacity:1;"
+         offset="0"
+         id="stop3817" />
+      <stop
+         style="stop-color:#2f4754;stop-opacity:1;"
+         offset="1"
+         id="stop3819" />
+    </linearGradient>
+    <linearGradient
        id="linearGradient3833">
       <stop
          style="stop-color:#ffffff;stop-opacity:1;"
@@ -340,13 +362,22 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3833"
-       id="linearGradient3850"
+       id="linearGradient3913"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.080064,0,0,1.2343588,19.231239,-22.472844)"
+       gradientTransform="matrix(1.2343589,0,0,1.2343588,20.835702,-22.472844)"
        x1="-16.919029"
        y1="11.778476"
        x2="-3.8261454"
        y2="11.778476" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3918"
+       id="linearGradient3925"
+       x1="7"
+       y1="0"
+       x2="7"
+       y2="16"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -356,14 +387,14 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="21.311078"
-     inkscape:cx="-3.1260137"
+     inkscape:cx="4.6158683"
      inkscape:cy="8.1666555"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1366"
-     inkscape:window-height="722"
+     inkscape:window-height="714"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -404,44 +435,74 @@
        height="16"
        width="16"
        id="rect17861"
-       style="color:#000000;fill:#016295;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.85" />
+       style="color:#000000;fill:url(#linearGradient3925);fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <rect
        ry="0"
        rx="0"
        y="-16"
-       x="1"
+       x="0"
        height="16"
-       width="14"
+       width="16"
        id="rect17861-6-1"
-       style="opacity:0.15;color:#000000;fill:url(#linearGradient3850);fill-opacity:1;stroke:none;stroke-width:1.03780603;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="opacity:0.08;color:#000000;fill:url(#linearGradient3913);fill-opacity:1;stroke:none;stroke-width:1.03780603000000005;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        transform="matrix(0,1,-1,0,0,0)" />
     <rect
-       style="opacity:0.11000001;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="opacity:0.03;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3857"
        width="16"
-       height="1"
+       height="2"
        x="0"
-       y="1" />
+       y="0" />
     <rect
-       style="opacity:0.11;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="opacity:0.03999999;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3857-0"
        width="16"
-       height="1"
+       height="2"
        x="0"
        y="14" />
     <rect
-       style="opacity:1;fill:#2c2c2c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;opacity:0.38"
        id="rect3857-5"
        width="16"
        height="1"
        x="0"
        y="0" />
     <rect
-       style="fill:#292929;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;opacity:0.26"
        id="rect3857-5-7"
        width="16"
        height="1"
        x="0"
        y="15" />
+    <rect
+       style="opacity:0.005;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3857-8"
+       width="14"
+       height="3"
+       x="1"
+       y="0" />
+    <rect
+       style="opacity:0.02000002;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3857-6"
+       width="12"
+       height="1"
+       x="-14"
+       y="0"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <rect
+       style="opacity:0.12;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3857-6-8"
+       width="12"
+       height="1"
+       x="-14"
+       y="15"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <rect
+       style="opacity:0.02;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3857-0-1"
+       width="14"
+       height="3"
+       x="1"
+       y="13" />
   </g>
 </svg>

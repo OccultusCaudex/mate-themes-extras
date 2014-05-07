@@ -25,7 +25,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="27.580455"
-     inkscape:cx="13.537366"
+     inkscape:cx="7.0653916"
      inkscape:cy="2.1315737"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -33,9 +33,9 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1366"
-     inkscape:window-height="722"
+     inkscape:window-height="702"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="339"
      inkscape:window-maximized="1"
      guidetolerance="10000"
      objecttolerance="10000">
@@ -65,14 +65,14 @@
      id="layer1"
      transform="translate(0,-8)">
     <rect
-       style="opacity:0.032;fill:#ffffff;fill-opacity:1;stroke:none"
+       style="opacity:0.04;fill:#ffffff;fill-opacity:1;stroke:none"
        id="rect3796"
        width="21"
        height="1"
        x="0"
        y="9" />
     <rect
-       style="fill:#111111;fill-opacity:1;stroke:none"
+       style="fill:#212121;fill-opacity:1;stroke:none"
        id="rect2986"
        width="21"
        height="1"

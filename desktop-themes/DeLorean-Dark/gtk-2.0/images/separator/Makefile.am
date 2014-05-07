@@ -3,6 +3,7 @@ THEME_NAME=DeLorean-Dark
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-2.0/images/separator
 
 theme_DATA = \
+	menu-separator.svg \
 	separator.svg \
 	separator-vertical.svg \
 	toolbar-separator-vertical.svg

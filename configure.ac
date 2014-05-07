@@ -1,6 +1,6 @@
 AC_PREREQ(2.53)
 
-AC_INIT([mate-themes-extras-5], [1.7.11], [http://www.raveit.de])
+AC_INIT([mate-themes-extras], [1.7.11], [http://www.raveit.de])
 
 AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz tar-ustar])
 
@@ -249,11 +249,15 @@ desktop-themes/Cologne/gtk-3.0/Makefile
 desktop-themes/Cologne/metacity-1/Makefile
 desktop-themes/DeLorean-Dark/Makefile
 desktop-themes/DeLorean-Dark/cinnamon/Makefile
-desktop-themes/DeLorean-Dark/gnome-shell/Makefile
+desktop-themes/DeLorean-Dark/Firefox/Makefile
+desktop-themes/DeLorean-Dark/Firefox/chrome/Makefile
+desktop-themes/DeLorean-Dark/Firefox/chrome/images/Makefile
+desktop-themes/DeLorean-Dark/Firefox/chrome/images/tabbrowser/Makefile
 desktop-themes/DeLorean-Dark/gtk-2.0/Makefile
 desktop-themes/DeLorean-Dark/gtk-2.0/images/Makefile
 desktop-themes/DeLorean-Dark/gtk-2.0/images/arrows/Makefile
 desktop-themes/DeLorean-Dark/gtk-2.0/images/buttons/Makefile
+desktop-themes/DeLorean-Dark/gtk-2.0/images/buttons/panel/Makefile
 desktop-themes/DeLorean-Dark/gtk-2.0/images/check-radio/Makefile
 desktop-themes/DeLorean-Dark/gtk-2.0/images/columns/Makefile
 desktop-themes/DeLorean-Dark/gtk-2.0/images/entry/Makefile
@@ -275,26 +279,19 @@ desktop-themes/DeLorean-Dark/gtk-2.0/panel-background/Makefile
 desktop-themes/DeLorean-Dark/gtk-3.0/Makefile
 desktop-themes/DeLorean-Dark/gtk-3.0/assets/Makefile
 desktop-themes/DeLorean-Dark/gtk-3.0/assets/check-radio/Makefile
-desktop-themes/DeLorean-Dark/gtk-3.0/assets/menu-check/Makefile
-desktop-themes/DeLorean-Dark/gtk-3.0/assets/scale-slider/Makefile
-desktop-themes/DeLorean-Dark/gtk-3.0/assets/scroll/Makefile
-desktop-themes/DeLorean-Dark/gtk-3.0/assets/sidebar-radio/Makefile
 desktop-themes/DeLorean-Dark/gtk-3.0/borders/Makefile
 desktop-themes/DeLorean-Dark/gtk-3.0/borders/button/Makefile
-desktop-themes/DeLorean-Dark/gtk-3.0/borders/column/Makefile
 desktop-themes/DeLorean-Dark/gtk-3.0/borders/entry/Makefile
-desktop-themes/DeLorean-Dark/gtk-3.0/borders/inline/Makefile
 desktop-themes/DeLorean-Dark/gtk-3.0/borders/primary/Makefile
-desktop-themes/DeLorean-Dark/gtk-3.0/borders/raised/Makefile
-desktop-themes/DeLorean-Dark/gtk-3.0/borders/scale/Makefile
 desktop-themes/DeLorean-Dark/gtk-3.0/borders/separator/Makefile
-desktop-themes/DeLorean-Dark/gtk-3.0/borders/switch/Makefile
-desktop-themes/DeLorean-Dark/gtk-3.0/borders/tooltip/Makefile
 desktop-themes/DeLorean-Dark/gtk-3.0/borders/trough/Makefile
 desktop-themes/DeLorean-Dark/metacity-1/Makefile
-desktop-themes/DeLorean-Dark/openbox-3/Makefile
+desktop-themes/DeLorean-Dark/Thunderbird/Makefile
+desktop-themes/DeLorean-Dark/Thunderbird/chrome/Makefile
+desktop-themes/DeLorean-Dark/Thunderbird/chrome/images/Makefile
 desktop-themes/DeLorean-Dark/Software-Center/Makefile
-desktop-themes/DeLorean-Dark/unity/Makefile
+desktop-themes/DeLorean-Dark/xfce-notify-4.0/Makefile
+desktop-themes/DeLorean-Dark/xfce-notify-4.0/buttons/Makefile
 desktop-themes/DeLorean-Dark/xfwm4/Makefile
 desktop-themes/Faience/Makefile
 desktop-themes/Faience/gnome-shell/Makefile

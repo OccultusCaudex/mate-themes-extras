@@ -8,24 +8,24 @@ EXTRA_DIST = $(theme_DATA)
 
 SUBDIRS =		\
 	cinnamon	\
-	gnome-shell	\
+	Firefox		\
 	gtk-2.0		\
 	gtk-3.0		\
 	metacity-1	\
-	openbox-3	\
+	Thunderbird	\
 	Software-Center	\
-	unity		\
+	xfce-notify-4.0 \
 	xfwm4
 
 DIST_SUBDIRS =	\
 	cinnamon	\
-	gnome-shell	\
+	Firefox		\
 	gtk-2.0		\
 	gtk-3.0		\
 	metacity-1	\
-	openbox-3	\
+	Thunderbird	\
 	Software-Center	\
-	unity		\
+	xfce-notify-4.0 \
 	xfwm4
 
 CLEANFILES = index.theme

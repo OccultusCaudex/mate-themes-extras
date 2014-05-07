@@ -8,6 +8,7 @@ theme_DATA = \
 	inline-toolbar.svg \
 	oo-toolbar.svg \
 	primary-tbar-center.svg \
+	primary-toolbar.svg \
 	Toolbar-Bg-border.png \
 	Toolbar-Bg-border-vert.png \
 	Toolbar.png \

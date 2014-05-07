@@ -19,6 +19,25 @@
   <defs
      id="defs4">
     <linearGradient
+       id="linearGradient3863">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.04;"
+         offset="0"
+         id="stop3865" />
+      <stop
+         id="stop3873"
+         offset="0.25"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+      <stop
+         id="stop3871"
+         offset="0.5"
+         style="stop-color:#000000;stop-opacity:0.01176471;" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.23;"
+         offset="1"
+         id="stop3867" />
+    </linearGradient>
+    <linearGradient
        id="linearGradient3818">
       <stop
          style="stop-color:#585858;stop-opacity:1;"
@@ -326,16 +345,24 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="10.66"
-     inkscape:cx="4.9174483"
+     inkscape:cx="-27.915573"
      inkscape:cy="23.32015"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      inkscape:window-width="1366"
-     inkscape:window-height="722"
+     inkscape:window-height="702"
      inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-y="339"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3817"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -354,7 +381,7 @@
      id="layer1"
      transform="translate(0,-1007.3622)">
     <rect
-       style="fill:#707070;fill-opacity:1;stroke:#7a7a7a;stroke-width:1.01357591;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#444647;fill-opacity:1;stroke:#444647;stroke-width:1.01357590999999991;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4020"
        width="5.986424"
        height="37.986423"
@@ -372,5 +399,23 @@
        rx="5.1026101"
        ry="4.1801486"
        transform="matrix(0.91926547,0,0,0.90072965,1.395234,103.75777)" />
+    <rect
+       style="fill:#626262;fill-opacity:1;stroke:none"
+       id="rect4020-0-3"
+       width="7"
+       height="39"
+       x="3"
+       y="1010.3622"
+       rx="2.993212"
+       ry="2.9932122" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1.01357590999999991;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;opacity:0.02;fill-opacity:1"
+       id="rect4020-0"
+       width="5.986424"
+       height="37.986423"
+       x="3.506788"
+       y="1010.869"
+       rx="2.993212"
+       ry="2.993212" />
   </g>
 </svg>

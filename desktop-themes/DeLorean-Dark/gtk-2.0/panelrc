@@ -6,43 +6,12 @@
 # PANEL SETTINGS / XFCE / LXDE / GNOME2
 #############################################################
 
-style "panel"  
+style "panel"  = "gtk_color"
 {
-	WnckTasklist	:: fade-overlay-rect		= 1
-	WnckTasklist	:: fade-opacity			= 1.0
-	WnckTasklist	:: fade-loop-time		= 6.0
-
-	GtkArrow	:: arrow-scaling		= 0.4
-	
-	xthickness = 0
-	ythickness = 0
-
-	bg[NORMAL]	= shade (1.1, "#0a0a0a")
-	bg[ACTIVE]	= shade (0.9, "#0a0a0a")
-	bg[PRELIGHT]	= shade (1.3, "#0a0a0a")
-	bg[SELECTED]	= shade (0.78, "#0a0a0a")
-	bg[INSENSITIVE] 	= "#0a0a0a"
-	
-	fg[NORMAL]		= @fg_color
-	fg[PRELIGHT]		= shade(1.1, @fg_color)
-	fg[SELECTED]		= @selected_fg_color
-	fg[INSENSITIVE]		= shade(0.5, @fg_color)
-	fg[ACTIVE]		= "#f8f8f8"
-
-	text[NORMAL]		= @text_color
-	text[PRELIGHT]		= shade(1.1, @text_color)
-	text[SELECTED]		= @selected_fg_color
-	text[INSENSITIVE]	= shade(0.5, @text_color)
-	text[ACTIVE]		= "#f8f8f8"
-
-	base[NORMAL]		= @base_color
-	base[PRELIGHT]		= shade (0.95, @bg_color)
-	base[SELECTED]		= @selected_bg_color
-	base[INSENSITIVE]	= "#2a2a2a"
-	base[ACTIVE]		= shade (0.9, @selected_bg_color)
-
-	bg_pixmap[NORMAL] 			= "images/other/panel.png"
-	bg_pixmap[INSENSITIVE] 		= "images/other/panel.png"
+	bg_pixmap[NORMAL] 			= "images/other/delorean-dark-light40-bg.png"
+  engine "pixmap"
+  {
+  }
 }
 
 # syncronize panel menus
@@ -112,93 +81,73 @@ widget		"*Xfce*Panel*Tasklist*"							style:rc		"panel"
 
 #############################################################
 
-style "panel-buttons"
+style "panel-buttons"  =  "gtk_color"
 {
-	xthickness            			= 4
-	ythickness            			= 4
-	GtkWidget::focus_padding 		= 2
-	
-	fg[NORMAL]			= @fg_color
-	fg[PRELIGHT]		= shade(0.8, @fg_color)
-	fg[SELECTED]		= @selected_fg_color
-	fg[INSENSITIVE]		= shade(0.5, @fg_color)
-	fg[ACTIVE]			= "#efefef"
-
 	engine "pixmap"
-	 { 
-	image
-	{
-		function        		= BOX
-		recolorable     		= TRUE
-		state					= NORMAL
-		file            		= "images/buttons/panel-button.svg"
-		border          		= { 4, 4, 5, 2 }
-		stretch         		= TRUE
-	}	
-	image
-	{
-		function        		= BOX
-		shadow					= OUT
-		recolorable     		= TRUE
-		state					= PRELIGHT
-		file            		= "images/buttons/panel-button-hover.svg"
-		border          		= { 4, 4, 5, 2 }
-		stretch         		= TRUE
-	}		
-	image
-	{
-		function        		= BOX
-		recolorable     		= TRUE
-		shadow					= IN
-		state					= PRELIGHT
-		file            		= "images/buttons/panel-button-active-prelight.svg"
-		border          		= { 4, 4, 5, 2 }
-		stretch         		= TRUE
+  {
+    
+    image
+    {
+      function			= BOX
+      state				= PRELIGHT
+      shadow			= OUT
+      recolorable		= TRUE
+      file				= "images/other/delorean-dark-light40-bg.png"		
+      border			= { 0,0,0,0 }
+      stretch			= FALSE
+      overlay_file		= "images/buttons/panel-button-prelight.svg"
+	  overlay_stretch	= TRUE
+	  overlay_border	= { 2, 4, 4, 4 }
+    }
+    image
+    {
+      function			= BOX
+      state				= ACTIVE
+      file				= "images/other/delorean-dark-light40-bg.png"	
+      border			= { 0,0,0,0 }
+      stretch			= FALSE
+      overlay_file		= "images/buttons/panel-button-active.svg"
+	  overlay_stretch	= TRUE
+	  overlay_border	= { 2, 4, 4, 4 }
+    }
+    image	
+    {
+	  function			= BOX
+	  shadow			= IN
+	  state				= PRELIGHT
+	  file				= "images/other/delorean-dark-light40-bg.png"	
+      border			= { 0,0,0,0 }
+      stretch			= FALSE
+      overlay_file		= "images/buttons/panel-button-active-prelight.svg"
+	  overlay_stretch	= TRUE
+	  overlay_border	= { 2, 4, 4, 4 }
 	}
-	image
-	{
-		function        		= BOX
-		recolorable     		= TRUE
-		state					= ACTIVE
-		file            		= "images/buttons/panel-button-active.svg"
-		border          		= { 4, 4, 5, 2 }
-		stretch         		= TRUE
-	}  
-	image
-	{
-		function        		= BOX
-		recolorable     		= TRUE
-		state					= INSENSITIVE
-		file            		= "images/buttons/panel-button.svg"
-		border          		= { 4, 4, 5, 2 }
-		stretch         		= TRUE
-		overlay_file			= "images/other/stripes-b.png"
-	 overlay_stretch			= FALSE
-	} 
-	image
-	{
-		function        		= BOX
-		recolorable     		= TRUE
-		state					= SELECTED
-		file            		= "images/buttons/panel-button-active.svg"
-		border          		= { 4, 4, 5, 2 }
-		stretch         		= TRUE
-	}  
- }
+    image 
+   {
+     function			= BOX
+     state				= INSENSITIVE
+     file				= "images/other/delorean-dark-light40-bg.png"	
+     border				= { 0,0,0,0 }
+     stretch			= FALSE
+      overlay_file		= "images/buttons/panel-button.svg"
+	  overlay_stretch	= TRUE
+	  overlay_border	= { 2, 4, 4, 4 }
+    }
+    image 
+    {
+      function			= BOX
+      file				= "images/other/delorean-dark-light40-bg.png"		
+      border			= { 0,0,0,0 }
+      stretch			= FALSE
+      overlay_file		= "images/buttons/panel-button.svg"
+	  overlay_stretch	= TRUE
+	  overlay_border	= { 2, 4, 4, 4 }
+     }
+  }
 }
 
-style "panel-toggle-buttons" = "panel"
+style "panel-toggle-buttons"
 {
-	GtkWidget::focus_padding = 0
-	
-	xthickness            			= 4
-	ythickness            			= 1
-
-	bg[NORMAL]	= shade (1.1, "#0a0a0a")
-	bg[ACTIVE]	= shade (0.9, "#0a0a0a")
-	bg[PRELIGHT]	= shade (1.3, "#0a0a0a")
-	bg[SELECTED]	= shade (0.78, "#0a0a0a")
-
 	engine "pixmap" 
    {
 	image
@@ -206,17 +155,28 @@ style "panel-toggle-buttons" = "panel"
 		function        		= BOX
 		recolorable     		= TRUE
 		state					= NORMAL
-		file            		= "images/other/panel.png"
-		border          		= { 2,2,2,2 }
-		stretch         		= TRUE
+		file					= "/images/other/null.png"
+		border					= { 0,0,0,0}
+		stretch					= TRUE
 	}
 	image
 	{
 		function				= BOX
 		recolorable				= TRUE
+		shadow					= OUT
 		state					= PRELIGHT
-		file					= "images/other/menubar-menuitem.svg"
-		border					= { 3,3, 4, 0 }
+		file					= "/images/other/null.png"
+		border					= { 0,0,0,0}
+		stretch					= TRUE
+	}
+	image
+	{
+		function        		= BOX
+		recolorable     		= TRUE
+		shadow					= IN
+		state					= PRELIGHT
+		file					= "/images/buttons/menubar-pressed.svg"
+		border					= { 5, 5 , 1 , 1}
 		stretch					= TRUE
 	}
 	image
@@ -224,27 +184,27 @@ style "panel-toggle-buttons" = "panel"
 		function        		= BOX
 		recolorable     		= TRUE
 		state					= ACTIVE
-		file					= "images/other/menubar-menuitem.svg"
-		border					= { 3,3, 4, 0 }
-		stretch         		= TRUE
+		file					= "/images/buttons/menubar-pressed.svg"
+		border					= { 5, 5 , 1 , 1}
+		stretch					= TRUE
 	} 
 	image
 	{
 		function        		= BOX
 		recolorable     		= TRUE
 		state					= INSENSITIVE
-		file            		= "images/other/panel.png"
-		border          		= { 2,2,2,2 }
-		stretch         		= TRUE
+		file					= "/images/other/null.png"
+		border					= { 0,0,0,0}
+		stretch					= TRUE
 	}
 	image
 	{
 		function        		= BOX
 		recolorable     		= TRUE
 		state					= SELECTED
-		file					= "images/other/menubar-menuitem.svg"
-		border					= { 3,3, 4, 0 }
-		stretch         		= TRUE
+		file					= "/images/buttons/menubar-pressed.svg"
+		border					= { 5, 5 , 1 , 1}
+		stretch					= TRUE
 	}  
   }
 }
@@ -254,96 +214,52 @@ style "panel-toggle-buttons" = "panel"
 # and lastly change the '10' to whatever font size you would like #
 style "panel-frame-label"
 {
-	fg[NORMAL]   =  shade(1.42, @selected_fg_color)
-	font_name = "* Bold "
+
+	fg[NORMAL]   =  shade(1.1, @text_color)
+	font_name 		= "* Bold 11"
+	
+	engine "murrine"
+ 	{
+		text_shade = 1.3
+		textstyle = 2
+		
+	}
 }
 
-style "switcher"
+style "switcher" = "gtk_color"
 {
 xthickness 		= 3
 ythickness 		= 3
 
-bg[NORMAL] 			= "#212121"
-bg[PRELIGHT] 		= shade(0.8, "#212121")
-bg[SELECTED] 		= shade(1.1, @selected_bg_color)
+	bg[NORMAL]			= shade(0.88, @bg_color)
+	bg[PRELIGHT]		= shade (0.68, @bg_color)
+	bg[SELECTED]		= @selected_bg_color
+
+	fg[NORMAL]			= "#787878"
+	fg[PRELIGHT]		= "#9d9d9d"
+	fg[SELECTED]		= shade(1.8, @selected_bg_color)
 
 }
 
 widget_class "*Pager*" 				style "switcher"
 
-# XFCE Notify #
-style "notify-window"
-{
-    XfceNotifyWindow::summary-bold = 1
-    XfceNotifyWindow::border-color = "#000000"
-    XfceNotifyWindow::border-radius = 3.0
-    XfceNotifyWindow::border-width = 1.0
-    bg[NORMAL] = "#FFFFFF"
-}
-
-style "notify-button"
-{
-	GtkWidget::focus_padding = 0
-
-    fg[NORMAL] = "#080808"
-    fg[PRELIGHT] = "#040404"
-    engine "pixmap" 
-   {
-	 image
-    {
-      function			= BOX
-      state				= NORMAL
-      file				= "images/buttons/xfce-notify-button.svg"
-      border			= { 2, 2, 2, 2 }
-      stretch			= TRUE
-    }	
-     image
-    {
-      function			= BOX
-      state				= PRELIGHT
-      file				= "images/buttons/xfce-notify-button-prelight.svg"
-      border			= { 2, 2, 2, 2 }
-      stretch			= TRUE
-    }  
-    image
-    {
-      function			= BOX
-      state				= ACTIVE
-      file				= "images/buttons/xfce-notify-button-active.svg"
-      border			= { 2, 2, 2, 2 }
-      stretch			= TRUE
-    }
-   }
-}
-
-style "notify-text"
-{
-    fg[NORMAL] = "#060606"
-    GtkWidget::link-color = "#006AA8"
-}
-
 style "xfdesktop-icon-view" { 
-	#XfdesktopIconView::label-alpha = 9.8
+	XfdesktopIconView::label-alpha = 140.00
 
 		base[NORMAL] 	= "#000000"
-		base[SELECTED] 	= @selected_bg_color
-		base[ACTIVE] 	= shade (0.6, @selected_bg_color)
-		base[INSENSITIVE] = "#1f1f1f"
-		fg[NORMAL]		= "#dbdbdb"
+		base[SELECTED] 	= mix(0.8, @selected_bg_color, @bg_color)
+		base[ACTIVE] 	= lighter("#393939")
+		base[INSENSITIVE] = "#2c2c2c"
+		fg[NORMAL]		= @selected_fg_color
 		fg[SELECTED] 	= @selected_fg_color
-		fg[ACTIVE] 		= "#ababab"
+		fg[ACTIVE] 		= @text_color
 
 	engine "murrine" { 	
-		textstyle 	= 0 
+		textstyle 	= 1
 }}
 
 #This is for the desktop icons
 widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
-
-#this is for the xfce Notify#
-class "XfceNotifyWindow" style "notify-window"
-widget_class "XfceNotifyWindow.*<GtkButton>" style "notify-button"
-widget_class "XfceNotifyWindow.*.<GtkLabel>" style "notify-text"
 
 #this is the open close log-out dialogue button# ##(otherwise try 'xfce-panel-button') its sub class of GtkButton!##
 widget_class "*<XfceArrowButton>" 	style "panel-toggle-buttons"
@@ -351,6 +267,9 @@ widget_class "*<XfceActionsPlugin>*"  style "panel-toggle-buttons"
 
 #This is the mount button#
 widget_class "*XfcePanelPlugin.GtkButton"  style "panel-toggle-buttons"
+
+#This is the volume button#
+widget_class "*XfceVolumeButton*"  style "panel-toggle-buttons"
 
 #xfce system tray#
 widget_class "*XfceSystrayPlugin"   style "panel"
@@ -363,50 +282,52 @@ widget_class "*Xfce*NetkTasklist*GtkToggleButton" style "panel-toggle-buttons"
 
 #This is for the window-list/task-list buttons#
 widget_class "*PanelToplevel*GtkToggleButton"   style "button" #LXDE's task list buttons are inside GtkEventboxes.  There fore the 'panel-button' wont draw properly.  So I chose to use the default buttons here.#
-widget "*tasklist*" 			style:highest "panel-buttons"
+widget "*tasklist*Button" 			style:highest "panel-buttons"
 
 #This is for the panel clock#
 widget_class "*Panel*.<GtkFrame>.<GtkLabel>" 		style "panel-frame-label"
 
 #
 
-style "panel-progressbar" {
-	xthickness	= 1
-	ythickness	= 1
-	
-	fg[PRELIGHT] 	= shade(1.15, @fg_color)
-	fg[NORMAL] 		= shade(0.85, @text_color)
-    font_name 		= "Bold"
-	
-	bg[NORMAL]  = "#141414"
-	bg[SELECTED]	=  @selected_bg_color
-	bg[INSENSITIVE]	= "#171717"
-	bg[ACTIVE]	= "#0e0e0e"
+style "panel_text"  
+{
 
-	engine "murrine" {
-		progressbarstyle	= 0
-		#gradient_shades		= {0.80, 1.00, 1.00, 1.20}
-		glazestyle		= 1
-		roundness			= 0
-		reliefstyle			= 0
-		trough_border_shades = {0.6, 0.4}
-		#border_shades		= { 1.1, 0.8 }
-		textstyle		= 1	
+		fg[NORMAL]       			=  shade(1.2, @fg_color)
+		fg[ACTIVE]       			=  "#4e4e4e"
+		fg[PRELIGHT]     			=  shade(1.04, @fg_color)
+
+engine "murrine"
+ 	{
+		text_shade 	= 1.3
+		textstyle 	= 2
+
 	}
 }
 
-style "panel-menu-progressbar" = "panel-progressbar" {
-	bg[ACTIVE]	= "#181818"
-engine "murrine" {
-		progressbarstyle	= 0
-		#gradient_shades		= {1.10, 1.00, 1.00, 0.90}
-		glazestyle		= 0
-		roundness			= 2
-		reliefstyle			= 0
-		trough_border_shades = {0.6, 0.4}
-		textstyle		= 1	
+style "tasklist_text"  
+{
+
+		fg[NORMAL]       			=  @fg_color
+		fg[ACTIVE]       			=  "#e2e2e2"
+		fg[PRELIGHT]     			=  @text_color
+
+engine "murrine"
+ 	{
+		text_shade 	= 0.7
+		textstyle 	= 2
+
 	}
 }
 
-widget_class "*Panel*<GtkProgressBar>" 		style "panel-progressbar"
-widget_class "*<GtkMenu>*<GtkProgressBar>" 		style "panel-menu-progressbar"
+# Menubar
+widget "*PanelMenuBar*"				style "panel"
+widget_class "*Panel*<GtkMenuBar>*"		style "panel"
+#widget "*.clock-applet-button.*"		style "panel"
+widget "*PanelApplet*"				style "panel"
+#widget_class "*PanelAppletFrame*BonoboWidget*"	style "panel"
+
+widget_class "*Panel*GtkLabel" style "panel_text"
+widget_class "*<XfceArrowButton>*<GtkLabel>" style:highest "panel_text"
+widget_class "*<XfceActionsPlugin>*<GtkLabel>" style:highest "panel_text"
+widget_class "*Panel*GtkToggleButton*<GtkLabel>" style:highest "panel_text"
+widget "*tasklist*GtkLabel" style:highest "tasklist_text"
