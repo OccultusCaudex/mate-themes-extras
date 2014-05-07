@@ -3,9 +3,7 @@ Date:   Mon Jul 09 22:34:11 2012 +0100
 
 change version to 1.4.0
 add configure flags for enable a theme
-fix themes for GTK3-3.2.x
-drop out Zukitwo-Resonance, it's not developed any more
-
+fix themes for GTK3-3.4.0
 
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Sat May 13 02:11:11 2012 +0100

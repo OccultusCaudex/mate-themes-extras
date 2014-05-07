@@ -1,7 +1,7 @@
 ##########################################
 # CAJA	
 ##########################################
-gtk_color_scheme = "fg_color:#101010\nbg_color:#3b3b3e"
+gtk_color_scheme = "fg_color:#101010\nbg_color:#4D4D4D"
 
 style "caja-handle"
 {
@@ -14,7 +14,7 @@ style "caja-handle"
 style "caja-sidebar"  = "clearlooks-default"
 {
 
-	text[NORMAL] = @fg_color
+#	text[NORMAL] = @fg_color
 	base[NORMAL] = @bg_color
 	font_name = "Regular"
 
@@ -41,8 +41,8 @@ style "caja-view"
 {
 	#xthickness		= 0
 	#ythickness		= 0
-	#bg[NORMAL]	= @bg_color
-	#base[NORMAL]	= @bg_color
+	bg[NORMAL]	= @bg_color
+	base[NORMAL]	= @bg_color
 
 }
 style "caja-statusbar"
@@ -56,6 +56,10 @@ style "caja-window-base"
 
 }
 
+style "caja-location" {
+	bg[NORMAL]  = mix (0.60, shade (1.05, "#454548"), "#454548")
+}
+
 # CAJA
 widget_class	"*Caja*Window*"		style "caja-window-base"
 widget_class	"*Caja*Places*Sidebar*"	style "caja-sidebar"
@@ -65,4 +69,5 @@ widget_class	"*Caja*Statusbar*"		style "caja-statusbar"
 # For Elementay Caja
 widget_class	"*Caja*GtkToolbar*"		style "murrine-togglebutton"
 
-widget "*.caja-extra-view-widget" 		style : highest "caja-extra-view"
+widget "*.caja-extra-view-widget" 		style : highest "caja-location"
+

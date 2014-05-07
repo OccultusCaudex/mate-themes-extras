@@ -41,13 +41,13 @@ style "default"
 
     fg[ACTIVE]        = "#0E1978"
     fg[INSENSITIVE]   = "#BFBCB2"
-    fg[NORMAL]        = "#1f1f1f"
+    fg[NORMAL]        = "#212C58"
     fg[PRELIGHT]      = "#1f1f1f"
     fg[SELECTED]      = "#1f1f1f"
 
     text[ACTIVE]      = "#132CCF"
     text[INSENSITIVE] = "#e9e9e9"
-    text[NORMAL]      = "#1f1f1f"
+    text[NORMAL]      = "#212C58"
     text[PRELIGHT]    = "#1f1f1f"
     text[SELECTED]    = "#2438B7"
 
@@ -172,4 +172,12 @@ class "*Panel*" style "panel"
 class "*Tray*" style "panel"
 class "*tray*" style "panel"
 
+# fix for caja
 
+style "cologne-caja-location"
+{
+	bg[NORMAL]  = mix (0.60, shade (1.05, "#ECC250"), "#ECC250")
+}
+
+widget "*.caja-extra-view-widget" style : highest "cologne-caja-location"
+include "Styles/caja.rc"

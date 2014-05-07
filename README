@@ -2,7 +2,7 @@ mate-themes-extras
 ==================
 
 The mate-themes-extras package contains a collection of GTK2/3 desktop themes for MATE. These themes can change the appearance of application widgets, window borders, etc.
-This package is optimized for GTK3-3.2.x
+This package is optimized for GTK3-3.4.x
 
 Themes:
 
@@ -37,7 +37,7 @@ Without a flag nothing will compile!
 This will install all themes.
 
 ./autogen.sh \
-	--enable-Adwaita-Cupertino-S \
+	--enable-Adwaita-Cupertino-SL \
 	--enable-AmbianceBlue \
 	--enable-Ambiance-Xfce-LXDE-MATE \
 	--enable-ANewStartBlood \

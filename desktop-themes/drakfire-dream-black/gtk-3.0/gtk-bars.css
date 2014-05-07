@@ -57,7 +57,7 @@ GtkProgressBar.trough,
 		from (#515151),
 		to (#4E4E4E));
 
-	border-width: 1;
+	border-width: 1px;
 	border-style: solid;
 	border-radius: 0;
 	border-color: #444;
@@ -70,7 +70,7 @@ GtkProgressBar.trough.vertical,
 		from (#515151),
 		to (#4E4E4E));
 
-	border-width: 1;
+	border-width: 1px;
 	border-style: solid;
 	border-radius: 0;
 	border-color: #444;
@@ -141,7 +141,7 @@ GtkProgressBar.trough.vertical,
 		left top, left bottom,
 		from (alpha (@scrollslider_gradient_a, 1.00)),
 		to (alpha (@scrollslider_gradient_a, 0.00)));
-	border-width: 1;
+	border-width: 1px;
 	border-style: solid;
 }
 
@@ -155,8 +155,8 @@ GtkProgressBar.trough.vertical,
 		to (#2F2F2F));
 	background-color: @theme_base_color;
 	border-color: #545454;
-	border-radius: 10;
-	border-width: 1;
+	border-radius: 10px;
+	border-width: 1px;
 }
 
 .scrollbar.slider.vertical:prelight {
@@ -168,8 +168,8 @@ GtkProgressBar.trough.vertical,
 	background-color: #fff;
 	background-color: @theme_base_color;
 	border-color: #545454;
-	border-radius: 10;
-	border-width: 1;
+	border-radius: 10px;
+	border-width: 1px;
 }
 
 .scrollbar.slider.vertical:prelight:active {
@@ -181,8 +181,8 @@ GtkProgressBar.trough.vertical,
 	background-color: #fff;
 	background-color: @theme_base_color;
 	border-color: #545454;
-	border-radius: 10;
-	border-width: 1;
+	border-radius: 10px;
+	border-width: 1px;
 }
 
 .scrollbar.slider.horizontal,
@@ -194,8 +194,8 @@ GtkProgressBar.trough.vertical,
 		to (#2F2F2F));
 	background-color: @theme_base_color;
 	border-color: #545454;
-	border-radius: 10;
-	border-width: 1;
+	border-radius: 10px;
+	border-width: 1px;
 }
 
 .scrollbar.slider.horizontal:prelight {
@@ -207,8 +207,8 @@ GtkProgressBar.trough.vertical,
 	background-color: #fff;
 	background-color: @theme_base_color;
 	border-color: #545454;
-	border-radius: 10;
-	border-width: 1;
+	border-radius: 10px;
+	border-width: 1px;
 }
 
 .scrollbar.slider.horizontal:prelight:active {
@@ -220,8 +220,8 @@ GtkProgressBar.trough.vertical,
 	background-color: #fff;
 	background-color: @theme_base_color;
 	border-color: #545454;
-	border-radius: 10;
-	border-width: 1;
+	border-radius: 10px;
+	border-width: 1px;
 }
 
 .scrollbar.slider:insensitive {
@@ -253,9 +253,9 @@ GtkProgressBar.trough.vertical,
 .toolbar {
 	border-style: solid;
 	border-color: @theme_bg_color;
-	border-width: 2;
+	border-width: 2px;
 	border-radius: 0;
-	padding: 4;
+	padding: 4px;
 }
 
 .toolbar:insensitive {
@@ -265,10 +265,10 @@ GtkProgressBar.trough.vertical,
 /* Toolbar buttons */
 
 .primary-toolbar.toolbar.button {
-	padding: 0 2;
+	padding: 0 2px;
 	border-style: none;
-	border-width: 1;
-	border-radius: 2;
+	border-width: 1px;
+	border-radius: 2px;
 	background-image: -gtk-gradient (linear,
 		left top, left bottom,
 		from (alpha (@button_gradient_color_a, 0.0)),
@@ -292,7 +292,7 @@ GtkProgressBar.trough.vertical,
 		left top, left bottom,
 		from (alpha (@button_hover_gradient_color_a, 0.60)),
 		to (alpha (@button_hover_gradient_color_b, 0.60)));
-	border-radius: 2;
+	border-radius: 2px;
 	-unico-border-gradient: -gtk-gradient (linear,
 		left top, left bottom,
 		from (shade (@theme_border_color_a, 1.10)),
@@ -335,7 +335,7 @@ GtkProgressBar.trough.vertical,
 }
 
 .primary-toolbar.toolbar.raised.button {
-	border-width: 1;
+	border-width: 1px;
 	border-style: solid;
 
 	background-image: -gtk-gradient (linear,
@@ -364,7 +364,7 @@ GtkProgressBar.trough.vertical,
 		left top, left bottom,
 		from (shade (@theme_border_color_a, 1.10)),
 		to (shade (@theme_border_color_b, 1.10)));
-	border-width: 1;
+	border-width: 1px;
 	border-style: solid;
 }
 
@@ -377,12 +377,12 @@ GtkProgressBar.trough.vertical,
 	background-color: @theme_base_color;
 
 	border-color: @highlighted_border;
-	border-width: 1;
+	border-width: 1px;
 	border-style: solid;
 }
 
 .primary-toolbar.toolbar.raised.button:insensitive:active {
 	border-style: solid;
-	border-width: 1;
+	border-width: 1px;
 	background-image: none;
 }

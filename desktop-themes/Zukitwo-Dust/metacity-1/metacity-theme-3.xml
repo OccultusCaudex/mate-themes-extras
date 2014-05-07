@@ -2,48 +2,51 @@
 <metacity_theme>
 <info>
 	<name>Zukitwo-Dust</name>
-	<author>karashata (Modified from Zukitwo-Dark by lassekongo83)</author>
+	<author>Karashata</author>
 	<copyright>GPL</copyright>
-	<date>2011</date>
+	<date>2012</date>
 	<description>Zukitwo-Dust GNOME 3 window theme</description>
 </info>
 
 <!-- meaningfull constants -->
 
-<constant name="C_border_focused" value="blend/#000000/gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))/0.7" />
-<constant name="C_border_unfocused" value="blend/#000000/gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))/0.8" />
-<constant name="C_border_attached_focused" value="blend/#000000/gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))/0.7" />
+<constant name="C_border_focused" value="blend/#000000/gtk:bg[NORMAL]/0.2" />
+<constant name="C_border_unfocused" value="blend/#000000/gtk:bg[NORMAL]/0.3" />
+<constant name="C_border_attached_focused" value="blend/#000000/gtk:bg[NORMAL]/0.2" />
 <constant name="C_titlebar_focused_hilight" value="gtk:custom(wm_highlight,gtk:base[NORMAL])" />
-<constant name="C_titlebar_unfocused" value="gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))" />
-<constant name="C_title_focused" value="blend/gtk:custom(dark_fg_color,gtk:fg[NORMAL])/gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))/0.1" />
+<constant name="C_titlebar_unfocused" value="blend/gtk:base[NORMAL]/gtk:bg[NORMAL]/0.4" />
+<constant name="C_title_focused" value="gtk:custom(wm_title,gtk:base[NORMAL])" />
 <constant name="C_title_focused_hilight" value="gtk:custom(wm_title_highlight,gtk:base[NORMAL])" />
-<constant name="C_title_unfocused" value="blend/gtk:custom(dark_fg_color,gtk:fg[NORMAL])/gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))/0.9" />
+<constant name="C_title_unfocused" value="#999999" />
 <!-- color of the button icons -->
 <constant name="D_icons_unfocused_offset" value="0" /> <!-- offset of the unfocused icons -->
+
 <!-- geometries -->
 
 <frame_geometry name="normal" title_scale="medium" rounded_top_left="4" rounded_top_right="4">
 	<distance name="left_width" value="1" />
 	<distance name="right_width" value="1" />
 	<distance name="bottom_height" value="1" />
-	<distance name="left_titlebar_edge" value="6"/>
-	<distance name="right_titlebar_edge" value="6"/>
+	<distance name="left_titlebar_edge" value="5"/>
+	<distance name="right_titlebar_edge" value="5"/>
 	<distance name="title_vertical_pad" value="11"/>
+	<distance name="button_width" value="24"/>
+	<distance name="button_height" value="24"/>
 	<border name="title_border" left="10" right="10" top="1" bottom="0"/>
 	<border name="button_border" left="0" right="0" top="0" bottom="2"/>
-	<aspect_ratio name="button" value="1"/>
+	<!-- <aspect_ratio name="button" value="1"/> -->
 </frame_geometry>
 
 <frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="4" rounded_top_right="4" parent="normal">
-	<distance name="left_titlebar_edge" value="6"/>
-	<distance name="right_titlebar_edge" value="6"/>
+	<distance name="left_titlebar_edge" value="5"/>
+	<distance name="right_titlebar_edge" value="5"/>
 </frame_geometry>
 
 <frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
-	<distance name="left_titlebar_edge" value="6"/>
-	<distance name="right_titlebar_edge" value="6"/>
+	<distance name="left_titlebar_edge" value="5"/>
+	<distance name="right_titlebar_edge" value="5"/>
 	<distance name="title_vertical_pad" value="10"/> <!-- 
 							This needs to be 1 less then the
 							title_vertical_pad on normal state
@@ -68,8 +71,8 @@
 </frame_geometry>
 
 <frame_geometry name="small_unfocused" parent="small">
-	<distance name="left_titlebar_edge" value="6"/>
-	<distance name="right_titlebar_edge" value="6"/>
+	<distance name="left_titlebar_edge" value="5"/>
+	<distance name="right_titlebar_edge" value="5"/>
 </frame_geometry>
 
 <frame_geometry name="nobuttons" hide_buttons="true" parent="normal">
@@ -97,16 +100,8 @@
 	<!-- title -->
 
 <draw_ops name="title_focused">
-	<title version="< 3.1"
-               x="(0 `max` ((width - title_width) / 2)) + 3"
-               y="(0 `max` ((height - title_height) / 2)) + 2"
-               color="C_title_focused_hilight" />
-	<title version="< 3.1"
-               x="(0 `max` ((width - title_width) / 2)) + 2"
-               y="(0 `max` ((height - title_height) / 2)) + 1"
-               color="C_title_focused" />
 	<title version=">= 3.1"
-               x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width))) + 3"
+               x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width))) + 2"
                y="(0 `max` ((height - title_height) / 2)) + 2"
                ellipsize_width="width"
                color="C_title_focused_hilight" />
@@ -118,21 +113,22 @@
 </draw_ops>
 
 <draw_ops name="title_unfocused">
-	<title version="< 3.1"
-               x="(0 `max` ((width - title_width) / 2)) + 2"
-               y="(0 `max` ((height - title_height) / 2)) + 1"
-               color="C_title_unfocused"/>
 	<title version=">= 3.1"
-               x="(0 `max` ((frame_x_center - title_width/2) `min` (width - title_width))) + 2"
+               x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width))) + 2"
+               y="(0 `max` ((height - title_height) / 2)) + 2"
+               ellipsize_width="width"
+               color="C_title_focused_hilight" />
+	<title version=">= 3.1"
+               x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width))) + 2"
                y="(0 `max` ((height - title_height) / 2)) + 1"
                ellipsize_width="width"
-               color="C_title_unfocused"/>
+               color="C_title_unfocused" />
 </draw_ops>
 
 	<!-- window decorations -->
 
 <draw_ops name="entire_background_focused">
-	<rectangle color="gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
@@ -140,40 +136,37 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_focused">
-	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="gtk:custom(wm_bg_a,blend/gtk:custom(wm_bg_b,gtk:bg[NORMAL])/gtk:base[NORMAL]/0.4)" />
-		<color value="gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))" />
+	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
+		<color value="gtk:custom(wm_bg_a,blend/gtk:bg[NORMAL]/gtk:base[NORMAL]/0.4)" />
+		<color value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
 	</gradient>
 </draw_ops>
 
 
 <draw_ops name="titlebar_fill_attached_focused"> <!-- gradient for attached and modal dialogs titlebar-->
-	<gradient type="vertical" x="0" y="0" width="width" height="title_height">
-		<color value="gtk:custom(wm_bg_a,blend/gtk:custom(wm_bg_b,gtk:bg[NORMAL])/gtk:base[NORMAL]/0.4)" />
-		<color value="gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))" />
+	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
+		<color value="gtk:custom(wm_bg_a,blend/gtk:bg[NORMAL]/gtk:base[NORMAL]/0.4)" />
+		<color value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
 	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_fill_unfocused">
-	<rectangle color="C_titlebar_unfocused" x="0" y="0" width="width" height="height" filled="true" />
+	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
+		<color value="gtk:custom(wm_bg_a,blend/gtk:bg[NORMAL]/gtk:base[NORMAL]/0.9)" />
+		<color value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
+	</gradient>
 </draw_ops>
 
 <draw_ops name="hilight">
 	<line x1="0" y1="1" x2="width-1" y2="1" color="C_titlebar_focused_hilight" />
 	<gradient type="vertical" x="1" y="1" width="1" height="height-4">
 		<color value="C_titlebar_focused_hilight" />
-		<color value="blend/gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))/#000000/0.03" />
+		<color value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
 	</gradient>
 </draw_ops>
 
 <draw_ops name="rounded_hilight">
 	<line x1="5" y1="1" x2="width-6" y2="1" color="C_titlebar_focused_hilight" />
-	<arc color="C_titlebar_focused_hilight" x="1" y="1" width="7" height="7"  start_angle="270" extent_angle="90" />
-	<arc color="C_titlebar_focused_hilight" x="width-10" y="1" width="9" height="7"  start_angle="0" extent_angle="90" />
-	<gradient type="vertical" x="1" y="5" width="1" height="height-9">
-		<color value="C_titlebar_focused_hilight" />
-		<color value="blend/gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))/#000000/0.03" />
-	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_focused">
@@ -206,22 +199,6 @@
 <draw_ops name="border_attached_focused">
 	<rectangle color="C_border_focused" x="0" y="0" width="width-1" height="height-1" filled="false" />
 	<line x1="0" y1="0" x2="width" y2="0" color="C_border_attached_focused" />
-	<gradient type="vertical" x="0" y="0" width="1" height="top_height">
-		<color value="blend/gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))/#000000/0.3" />
-		<color value="blend/gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))/#000000/0.1" />		
-		<color value="blend/gtk:custom(wm_bg_b,gtk:custom(wm_bg_b,gtk:bg[NORMAL]))/#000000/0.1" />
-		<color value="blend/gtk:custom(wm_bg_b,gtk:bg[NORMAL])/#000000/0.2" />
-		<color value="blend/gtk:custom(wm_bg_b,gtk:bg[NORMAL])/#000000/0.2" />
-		<color value="C_border_focused" />
-	</gradient>
-	<gradient type="vertical" x="width-1" y="0" width="1" height="top_height">
-		<color value="blend/gtk:custom(wm_bg_b,gtk:bg[NORMAL])/#000000/0.3" />
-		<color value="blend/gtk:custom(wm_bg_b,gtk:bg[NORMAL])/#000000/0.1" />
-		<color value="blend/gtk:custom(wm_bg_b,gtk:bg[NORMAL])/#000000/0.1" />
-		<color value="blend/gtk:custom(wm_bg_b,gtk:bg[NORMAL])/#000000/0.2" />
-		<color value="blend/gtk:custom(wm_bg_b,gtk:bg[NORMAL])/#000000/0.2" />
-		<color value="C_border_focused" />
-	</gradient>
 </draw_ops>
 
 
@@ -244,12 +221,10 @@
 	<line color="C_border_unfocused" x1="width-1" y1="4" x2="width-1" y2="height-2" />
 	<arc color="C_border_unfocused" x="0" y="0" width="9" height="9"  start_angle="270" extent_angle="90" />
 	<arc color="C_border_unfocused" x="width-10" y="0" width="9" height="9"  start_angle="0" extent_angle="90" />
-
 	<!-- double arcs for darker borders -->
 	<arc color="C_border_unfocused" x="0" y="0" width="9" height="9"  start_angle="270" extent_angle="90" />
 	<arc color="C_border_unfocused" x="width-10" y="0" width="9" height="9"  start_angle="0" extent_angle="90" />
 </draw_ops>
-
 
 <draw_ops name="border_right_focused">
 	<line
@@ -279,7 +254,7 @@
 		color="C_border_unfocused" />
 </draw_ops>
 
-	<!-- button icons-->
+<!-- button icons-->
 
 <!-- note: negative values in x or y causes gnome-shell to crash -->
 <draw_ops name="close_glyph_focused">

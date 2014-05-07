@@ -3,7 +3,8 @@ THEME_NAME=Radiance-Xfce-LXDE-MATE
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-2.0/apps/img
 
 theme_DATA = \
-	arrow-down.png  \
+	arrow-down.png \
+	handle-caja.png \
 	handle-h.png \
 	handle-v.png \
 	panel.png \

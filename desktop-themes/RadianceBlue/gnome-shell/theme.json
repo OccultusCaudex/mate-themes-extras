@@ -1,0 +1,10 @@
+{ 
+   "shell-theme": {
+   "name": "Radiance-Blue", 
+   "author": "RAVEfinity Project", 
+   "version": "12.04",
+   "type":   "custom",
+   "thumbnail": "preview.jpg", 
+   "url": "http://ravefinity.blogspot.com/" 
+    }
+}

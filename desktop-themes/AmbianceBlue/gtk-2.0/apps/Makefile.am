@@ -6,10 +6,6 @@ theme_DATA = \
 	banshee.rc  \
 	chromium.rc \
 	ff.rc \
-	gedit.rc \
-	gnome-panel.rc \
-	gnome-terminal.rc \
-	nautilus.rc \
 	ubuntuone.rc \
 	mate-panel.rc \
 	mate-terminal.rc \

@@ -2,6 +2,8 @@
 # CAJA SPECIFIC SETTINGS
 # ==============================================================================
 
+gtk_color_scheme = "fg_color:#101010\nbg_color:#F6F4F2"
+
 style "caja_info_pane" {
 	bg[NORMAL] = @bg_color
 }
@@ -9,3 +11,57 @@ style "caja_info_pane" {
 widget_class "*Caja*<GtkNotebook>*<GtkEventBox>" style "caja_info_pane"
 widget_class "*Caja*<GtkButton>" style "notebook_button"
 widget_class "*Caja*<GtkButton>*<GtkLabel>" style "notebook_button"
+
+style "caja-sidebar"
+{
+
+	text[NORMAL] = @fg_color
+	base[NORMAL] = "#DFD7CF"
+
+	GtkTreeView::odd_row_color = "#DFD7CF"
+	GtkTreeView::even_row_color = "#DFD7CF"
+
+      # padding from the left edge
+	GtkTreeView::horizontal_separator = 15
+      	xthickness = 0
+	ythickness = 0
+}
+
+widget_class	"*Caja*Places*Sidebar*"	style "caja-sidebar"
+
+style "caja-view"
+{
+	xthickness		= 0
+	ythickness		= 0
+	bg[NORMAL]	= @bg_color
+	base[NORMAL]	= @bg_color
+
+}
+
+widget_class	"*Caja*View*"		style "caja-view"
+
+style "caja_location"
+{
+	bg[NORMAL] = mix (0.60, shade (1.05, @bg_color), @bg_color)
+}
+
+# Special case the caja-extra-view-widget
+# ToDo: A more generic approach for all applications that have a widget like this.
+widget "*.caja-extra-view-widget" style : highest "caja_location"
+
+style "caja-handle" {
+	GtkPaned::handle-size = 1
+	
+#	engine "pixmap" {
+#		# for the thin gray line separating the sidepane and viewpane
+#		image {
+#			function	= HANDLE
+#			recolorable	= TRUE
+#			file		= "img/handle-caja.png"
+#			stretch		= TRUE
+#			border		= { 0, 0, 0, 0 }
+#		}
+#	}
+}
+
+widget "*Caja*Splitter"            style "caja-handle"

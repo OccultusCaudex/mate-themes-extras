@@ -17,14 +17,9 @@
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
 @define-color theme_selected_bg_color @selected_bg_color;
 @define-color theme_selected_fg_color @selected_fg_color;
-/*
-@define-color menu_bg_color shade (@theme_bg_color, 0.25);
-@define-color menu_fg_color shade(@theme_selected_fg_color, 0.85);
-@define-color menu_controls_color shade (@theme_fg_color, 0.9);
-@define-color menu_combobox_border #3277bf;
-@define-color menu_separator mix (@menu_fg_color, @menu_bg_color, 0.9);
-*/
 
+@define-color menu_gradient_a #6483F8;
+@define-color menu_gradient_b #2255F5;
 @define-color menu_bg_color shade(@theme_bg_color, 1.05);
 @define-color menu_fg_color shade(@theme_text_color, 0.70);
 @define-color menu_controls_color shade (@theme_fg_color, 0.9);
@@ -155,7 +150,7 @@
 @define-color sidebar_background #E1E5EA;
 @define-color sidebar_selected_bg #3765B8;
 
-@define-color nautilus_cluebar_color shade (@bg_color, 0.50);
+@define-color nautilus_cluebar_color shade (@theme_selected_bg_color, 1.05);
 
 @define-color wm_highlight #ffffff;
 @define-color wm_title_highlight #ffffff;
@@ -182,6 +177,7 @@
 @import url("sidebar.css");
 @import url("gtk-widgets-assets.css");
 @import url("gnome-panel.css");
+@import url("nemo.css");
 
 /* Select style for TABS 
    ---------------------
@@ -195,6 +191,9 @@
 	edit the line below according to the style you want) 
 */
 @import url("tabs.css");
+
+/* some gnome-mdi-apps */
+@import url("gnome-mdi.css");
 
 /* 
 	There are 3 options for Unity panel
@@ -210,7 +209,7 @@
 
 	(edit the line below according to the style you want) 	
 */
-@import url("unity.css");
+@import url("unity-transparent.css");
 
 /*  
 	There are three options for nautilus:
@@ -231,6 +230,6 @@
 	(edit the line below according to the style of nautilus you want) 
 */
 /* ---------------------------------------------------- */
-@import url("gnome-applications-gray.css");
+@import url("gnome-applications-gray-light.css");
 /* ---------------------------------------------------- */
 

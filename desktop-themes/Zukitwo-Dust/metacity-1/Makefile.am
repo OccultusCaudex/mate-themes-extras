@@ -4,6 +4,7 @@ themedir = $(datadir)/themes/$(THEME_NAME)/metacity-1
 
 theme_DATA = \
 	metacity-theme-1.xml \
+	metacity-theme-3.xml \
 	close_focused_normal.png \
 	close_focused_prelight.png \
 	close_focused_pressed.png \

@@ -6,7 +6,11 @@ theme_DATA = \
 	close_focused_normal.png \
 	close_focused_prelight.png \
 	close_focused_pressed.png \
+	close-focus-none.svg \
+	close-focus-normal.svg \
+	close-focus.svg \
 	close.png \
+	close-pressed.svg \
 	close_unfocused_over.png \
 	close_unfocused.png \
 	close_unfocused_prelight.png \
@@ -19,8 +23,12 @@ theme_DATA = \
 	maximize_unfocused.png \
 	maximize_unfocused_prelight.png \
 	maximize_unfocused_pressed.png \
+	menu-focus-none.svg \
+	menu-focus-normal.svg \
+	menu-focus.svg \
 	menu.png \
 	menu_prelight.png \
+	menu-pressed.svg \
 	metacity-theme-1.xml \
 	minimize_focused_normal.png \
 	minimize_focused_prelight.png \

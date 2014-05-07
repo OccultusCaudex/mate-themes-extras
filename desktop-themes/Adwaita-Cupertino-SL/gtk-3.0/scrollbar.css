@@ -3,49 +3,55 @@
  **************/
 
 .scrollbar {
-    -GtkRange-slider-width:     7;
-    -GtkRange-stepper-size:     0;
-    -GtkRange-stepper-spacing:  0;
-    -GtkRange-trough-border:    3;
+    -GtkRange-slider-width: 7px;
+    -GtkRange-stepper-size: 0px;
+    -GtkRange-stepper-spacing: 0px;
+    -GtkRange-trough-border: 4px;
 
-    -GtkScrollbar-has-backward-stepper: 0;
-    -GtkScrollbar-has-forward-stepper: 0;
+    -GtkScrollbar-has-backward-stepper: 0px;
+    -GtkScrollbar-has-forward-stepper: 0px;
     
-    -GtkScrollbar-min-slider-length: 30;
+    -GtkScrollbar-min-slider-length: 30px;
 }
 
 .scrollbar.trough.vertical {
-    border-radius:      0;
-	border-width:      0;
+    border-radius: 0px;
+	border-width: 0px;
     background-image: -gtk-gradient (linear, left top, right top,
-                                     from (shade (@base_color, 0.935)),
-                                     to (shade (@base_color, 1.00)));
+                                     from (shade (@base_color, 0.85)),
+									 color-stop (0.30, shade(@base_color, 0.93)),
+									 color-stop (0.50, shade(@base_color, 0.97)),
+									 color-stop (0.75, shade(@base_color, 1.00)),
+                                     to (shade (@base_color, 0.97)));
 
-	-unico-outer-stroke-width: 			0;
-	-unico-inner-stroke-width:          0 1 0 1;
+	-unico-outer-stroke-width: 0px;
+	-unico-inner-stroke-width: 0px 1px 0px 1px;
 	-unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-                                           from (shade (@base_color, 0.88)),
-                                           to (shade (@base_color, 0.88)));    
+                                           from (alpha (#000, 0.005)),
+                                           to 	(alpha (#000, 0.005)));    
 }
 
 .scrollbar.trough.horizontal {
-    border-radius:      0;
-	border-width:      0;
+    border-radius: 0px;
+	border-width: 0px;
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@base_color, 0.935)),
-                                     to (shade (@base_color, 1.00)));
+                                     from (shade (@base_color, 0.85)),
+									 color-stop (0.30, shade(@base_color, 0.93)),
+									 color-stop (0.50, shade(@base_color, 0.97)),
+									 color-stop (0.75, shade(@base_color, 1.00)),
+                                     to (shade (@base_color, 0.97)));
 
-	-unico-outer-stroke-width: 			0;
-	-unico-inner-stroke-width:          1 0 1 0;
+	-unico-outer-stroke-width: 0px;
+	-unico-inner-stroke-width: 0px 0px 1px 0px;
     -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-                                           from (shade (@base_color, 0.88)),
-                                           to (shade (@base_color, 0.88))); 
+                                           from (alpha (#000, 0.02)),
+                                           to 	(alpha (#000, 0.02)));    
 }
 
 .scrollbar.slider,
 .scrollbar.button {
-    border-width:              	0;
-    border-radius:              10;
+    border-width: 0px;
+    border-radius: 10px;
 	background-color:         alpha (#000, 0.23);
 }
 
@@ -54,11 +60,11 @@
 }
 
 .scrollbar.slider:insensitive {
-    -GtkRange-slider-width: 0;
+    -GtkRange-slider-width: 0px;
 }
 
 .scrollbar.trough:insensitive {
-    -GtkRange-trough-border: 3;
+    -GtkRange-trough-border: 3px;
 }
 
 /* overlay scrollbar */

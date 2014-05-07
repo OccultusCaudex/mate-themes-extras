@@ -1,5 +1,5 @@
 
-themedir = $(datadir)/themes/Zukitwo-Dust/gtk-2.0/Others
+themedir = $(datadir)/themes/Zukitwo-Dust/gtk-2.0/apps/Others
 
 theme_DATA = \
 	null.png \

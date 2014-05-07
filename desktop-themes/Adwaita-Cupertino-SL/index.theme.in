@@ -9,5 +9,3 @@ GtkTheme=Adwaita-Cupertino-SL
 MetacityTheme=Adwaita-Cupertino-SL
 IconTheme=Faenza-Dark
 CursorTheme=adwaita
-ButtonLayout=:minimize,maximize,close
-

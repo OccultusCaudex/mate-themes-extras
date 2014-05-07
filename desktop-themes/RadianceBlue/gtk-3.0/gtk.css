@@ -1,7 +1,7 @@
-/* This is the: Ambiance & Radiance Colors Theme. The Ambiance & Radiance themes in all the colors of the rainbow and then some! 
- Based on Ambiance & Radiance 11.10 (C) 2010-2011 Canonical Ltd.
+/* This is the: Ambiance & Radiance Colors Theme. Bring you The Ambiance & Radiance themes in all the colors of the rainbow and then some! 
+ Based on Ambiance & Radiance 12.04 (C) 2010-2012 Canonical Ltd.
  Based on Ambiance and Radiance improved GS theme by: Victor Eduardo ("SimplyGreat") (C) 2010-2011.
- Colors version and redesign by RAVEfinity. (C) 2011-2012 RAVEfinity. GPL V.2 */
+ Colors version and redesign by RAVEfinity. (C) 2011-2012 RAVEfinity. GPL Version 2. */
 
 /* default color scheme */
 @define-color bg_color #f6f4f2;
@@ -31,9 +31,14 @@
 @define-color dark_bg_color #dfd7cf;
 @define-color dark_fg_color @fg_color;
 @define-color transparent rgba (0, 0, 0, 0);
+@define-color backdrop_selected_bg_color shade (@bg_color, 0.92);
+@define-color backdrop_selected_fg_color @fg_color;
 
 @import url("gtk-widgets.css");
+@import url("gtk-widgets-backdrop.css");
+@import url("apps/gedit.css");
 @import url("apps/gnome-panel.css");
 @import url("apps/gnome-terminal.css");
 @import url("apps/nautilus.css");
+@import url("apps/nemo.css");
 @import url("apps/unity.css");

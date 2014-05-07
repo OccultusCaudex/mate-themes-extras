@@ -11,9 +11,9 @@ PanelApplet {
     background-image: 			none;
     background-color: 			@os_chrome_bg_color;
     color: 						@os_chrome_fg_color;
-	border-width: 				0;
-	-unico-inner-stroke-width: 	0;
-	-unico-outer-stroke-width: 	0;
+	border-width: 0px;
+	-unico-inner-stroke-width: 0px;
+	-unico-outer-stroke-width: 0px;
 	border-image: none;
     border-style:               none;
 
@@ -38,15 +38,15 @@ ClockBox,
 PanelApplet .button,
 PanelApplet .button:prelight,
 PanelApplet .button *:prelight {
-    padding: 4;
+    padding: 4px;
 
     border-image: none;
-    border-width: 0;
-    border-radius: 0;
+    border-width: 0px;
+    border-radius: 0px;
 	-unico-border-gradient: none;
-    -unico-outer-stroke-width: 0;
+    -unico-outer-stroke-width: 0px;
     -unico-outer-stroke-gradient:  none;
-	-unico-inner-stroke-width: 	0;
+	-unico-inner-stroke-width: 0px;
 
     background-image: none;
     background-color: alpha(@theme_base_color, 0.0);
@@ -72,8 +72,8 @@ PanelApplet .button *:active:prelight {
 
 	color: @os_chrome_selected_fg_color;
 	text-shadow: none;
-    border-width: 0;
-    border-radius: 0;
+    border-width: 0px;
+    border-radius: 0px;
 	-unico-border-gradient: none;	
 }
 
@@ -88,8 +88,8 @@ PanelApplet *:prelight:active {
 }
 
 NaTrayApplet {
-    -NaTrayApplet-icon-padding: 3;
-    -NaTrayApplet-icon-size: 16;
+    -NaTrayApplet-icon-padding: 3px;
+    -NaTrayApplet-icon-size: 1px 6px;
 }
 
 WnckPager, WnckTasklist {

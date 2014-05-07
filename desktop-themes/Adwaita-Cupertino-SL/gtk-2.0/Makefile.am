@@ -6,6 +6,8 @@ theme_DATA = gtkrc
 
 EXTRA_DIST = $(theme_DATA)
 
-SUBDIRS = assets
+SUBDIRS = \
+	assets
 
-DIST_SUBDIRS = assets
+DIST_SUBDIRS = \
+	assets

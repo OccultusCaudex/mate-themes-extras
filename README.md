@@ -1,7 +1,7 @@
-mate-themes-extras
-==================
+mate-themes-extras-2
+====================
 
-GTK2/3 themes optimized for GTK3-3.2.x
+GTK2/3 themes optimized for GTK3-3.4.x
 
 The mate-themes-extras package contains a collection of GTK2/3 desktop themes for MATE. These themes can change the appearance of application widgets, window borders, etc.
 
@@ -13,8 +13,6 @@ Themes:
 
 --Ambiance-Xfce-LXDE-MATE
 
---ANewStartBlood
-
 --Cologne
 
 --drakfire-dream-black
@@ -24,6 +22,10 @@ Themes:
 --RadianceBlue
 
 --Radiance-Xfce-LXDE-MATE
+
+--Smootly
+
+--Smootly-Black
 
 --Sonar
 
@@ -36,8 +38,6 @@ Themes:
 --Zukitwo-Dust
 
 --Zukitwo-Brave
-
---Zukitwo-Colors
 
 --Zukitwo-Human
 

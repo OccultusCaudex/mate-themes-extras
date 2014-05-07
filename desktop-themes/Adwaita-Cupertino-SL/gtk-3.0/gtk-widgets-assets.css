@@ -170,32 +170,32 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(last) {
 /* for RTL languages */
 .primary-toolbar GtkComboBox.combobox-entry .button:nth-child(first),
 GtkComboBox.combobox-entry .button:nth-child(first) {
-    border-image: url("assets/entry-border-normal.svg") 2 / 2 0 2 2 stretch;
+    /* border-image: url("assets/entry-border-normal.svg") 2 / 2 0 2 2 stretch; */
 }
 
 .primary-toolbar GtkComboBox.combobox-entry .button:active:nth-child(first),
 .primary-toolbar GtkComboBox.combobox-entry .button:hover:active:nth-child(first),
 GtkComboBox.combobox-entry .button:active:nth-child(first),
 GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
-    border-image: url("assets/combobox-entry-border-active.svg") 2 / 2 0 2 2 stretch;
+    /* border-image: url("assets/combobox-entry-border-active.svg") 2 / 2 0 2 2 stretch; */
 }
 
 GtkScale.trough,
 GtkScale.trough.horizontal {
-    border-image: url("assets/trough-border-horizontal.svg") 2 / 2 stretch;
+    /* border-image: url("assets/trough-border-horizontal.svg") 2 / 2 stretch; */
 }
 
 GtkScale.trough.vertical {
-    border-image: url("assets/trough-border-vertical.svg") 2 / 2 stretch;
+    /* border-image: url("assets/trough-border-vertical.svg") 2 / 2 stretch; */
 }
 
 
 GtkScale.progressbar.horizontal {
-    border-image: url("assets/trough-active-border-horizontal.svg") 2 / 2 stretch;
+    /* border-image: url("assets/trough-active-border-horizontal.svg") 2 / 2 stretch; */
 }
 
 GtkScale.progressbar.vertical {
-    border-image: url("assets/trough-active-border-vertical.svg") 2 / 2 stretch;
+    /* border-image: url("assets/trough-active-border-vertical.svg") 2 / 2 stretch; */
 }
 
 .progressbar,
@@ -204,9 +204,9 @@ GtkScale.progressbar.vertical {
 .progressbar row:hover,
 .progressbar row:selected,
 .progressbar row:selected:focused {
-    border-width: 1;
+    border-width: 1px;
     border-style: solid;
-    border-radius: 4;    
+    border-radius: 4px;    
 	-unico-border-gradient: -gtk-gradient (linear,
 							left top, left bottom,
 							from (shade (#80B8EA, 0.70)),
@@ -214,9 +214,9 @@ GtkScale.progressbar.vertical {
 }
 
 .progressbar.vertical {
-    border-width: 1;
+    border-width: 1px;
     border-style: solid;
-    border-radius: 4;    
+    border-radius: 4px;    
 	-unico-border-gradient: -gtk-gradient (linear,
 							left top, left bottom,
 							from (shade (#80B8EA, 0.70)),
@@ -313,15 +313,10 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 .toolbar .raised.linked .button,
 .toolbar .raised.linked .button:active,
 .toolbar .raised.linked .button:active:hover {
-    /* unico no lee esto - border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 0 stretch;  */
-    border-width: 1;
-    border-style: solid;
-    border-radius: 4 0;
-    
-    -unico-border-gradient: -gtk-gradient (linear,
-                            left top, left bottom,
-                            from (shade (@button_border, 0.90)),
-                            to (shade (@button_border, 1.00)));
+    -unico-border-gradient:  -gtk-gradient (linear,
+											left top, left bottom,
+											from (shade (@button_border, 0.80)),
+											to (shade (@button_border, 0.70)));
 }
 
 .toolbar .raised.linked.button:nth-child(first) ,
@@ -330,15 +325,11 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 .toolbar .raised.linked:nth-child(first) .button,
 .toolbar .raised.linked:nth-child(first) .button:active,
 .toolbar .raised.linked:nth-child(first) .button:active:hover {
-	/* unico no lee esto -  border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 0 4 4 stretch; */
-    border-width: 1;
-    border-style: solid;
-    border-radius: 4 0 4 4;
-    
-    -unico-border-gradient: -gtk-gradient (linear,
-                            left top, left bottom,
-                            from (shade (@button_border, 0.90)),
-                            to (shade (@button_border, 1.00)));
+
+    -unico-border-gradient:  -gtk-gradient (linear,
+											left top, left bottom,
+											from (shade (@button_border, 0.80)),
+											to (shade (@button_border, 0.70)));
 
 }
 
@@ -348,14 +339,10 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 .toolbar .raised.linked:nth-child(last) .button,
 .toolbar .raised.linked:nth-child(last) .button:active,
 .toolbar .raised.linked:nth-child(last) .button:active:hover {
-   /* unico no lee esto - border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 4 4 0 stretch; */
-    border-width: 1;
-    border-style: solid;
-    border-radius: 4 4 4 0;
-    
-    -unico-border-gradient: -gtk-gradient (linear,
-                            left top, left bottom,
-                            from (shade (@button_border, 0.90)),
-                            to (shade (@button_border, 1.00)));
+
+    -unico-border-gradient:  -gtk-gradient (linear,
+											left top, left bottom,
+											from (shade (@button_border, 0.80)),
+											to (shade (@button_border, 0.70)));
 
 }

@@ -5,7 +5,7 @@
   	<name>Radiance-Blue</name>
   	<author>Kenneth Wimer, James Schriver, Andrea Cimitan, Victor Eduardo (simplygreat), Jared Sot (RAVEfinity Project),</author>
   	<copyright>Canonical Ltd, RAVEfinity, SimplyGreat.</copyright>
-  	<date>Jan, 2012</date>
+  	<date>April, 2012</date>
   	<description>Metacity theme</description>
 </info>
 
@@ -35,7 +35,6 @@
   	<border name="title_border" left="2" right="2" top="0" bottom="0"/>
 	<border name="button_border" left="0" right="0" top="1" bottom="1"/>
 </frame_geometry>
-
 
 
 <frame_geometry name="geometry_maximized" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">

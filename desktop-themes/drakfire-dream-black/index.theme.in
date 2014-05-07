@@ -8,6 +8,4 @@ Encoding=UTF-8
 GtkTheme=drakfire-dream-black
 MetacityTheme=drakfire-dream-black
 IconTheme=Humanity
-CursorTheme=mate
-ButtonLayout=:minimize,maximize,close
-
+CursorTheme=Adwaita

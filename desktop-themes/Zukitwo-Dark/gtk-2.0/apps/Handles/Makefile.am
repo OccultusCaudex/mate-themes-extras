@@ -1,10 +1,10 @@
 
-themedir = $(datadir)/themes/Zukitwo-Dark/gtk-2.0/Handles
+themedir = $(datadir)/themes/Zukitwo-Dark/gtk-2.0/apps/Handles
 
 theme_DATA = \
 	handle-nautilus.png \
 	resize_grip.png \
-	Thumbs.db
+	handle-caja.png
 
 EXTRA_DIST = $(theme_DATA)
 

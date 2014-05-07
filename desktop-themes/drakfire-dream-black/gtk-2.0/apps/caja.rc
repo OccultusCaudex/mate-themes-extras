@@ -2,7 +2,8 @@
 
 style "caja-window-base" { bg[NORMAL] = @base_color }
 
-style "caja-sidebar" = "murrine-sidebar" {
+style "caja-sidebar"
+{
 	GtkTreeView::horizontal_separator = 15
 	GtkTreeView::vertical_separator = 2
 }
@@ -42,19 +43,19 @@ style "caja-location"
 	xthickness = 0
 	ythickness = 0
 
-	bg[NORMAL] = @base_color
+	bg[NORMAL] = "#666666"
 
-	engine "pixmap" {
-		image
-		{
-		function        = FLAT_BOX
-		recolorable     = TRUE
-		file            = "Nautilus/extra-widget.png"
-		state           = NORMAL
-		stretch         = TRUE
-		border          = { 0, 0, 1, 0 }
-		}
-	}
+#	engine "pixmap" {
+#		image
+#		{
+#		function        = FLAT_BOX
+#		recolorable     = TRUE
+#		file            = "Nautilus/extra-widget.png"
+#		state           = NORMAL
+#		stretch         = TRUE
+#		border          = { 0, 0, 1, 0 }
+#		}
+#	}
 }
 
 style "caja-pathbar"
@@ -88,4 +89,4 @@ widget_class "*Caja*<GtkList>.<GtkButton>"     style "murrine-treeview-header"
 widget_class "*Caja*<GtkCList>.<GtkButton>"    style "murrine-treeview-header"
 
 widget_class "*CajaPathBar*"                   style "caja-pathbar" 
-widget "*.caja-extra-view-widget"              style "caja-location"
+widget "*.caja-extra-view-widget" 		       style : highest "caja-location"

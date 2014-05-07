@@ -15,7 +15,7 @@ gtk_color_scheme = "fg_color:#3C3C3C\nselected_fg_color:#f5f5f5\ntext_color:#3C3
 gtk_color_scheme = "tooltip_bg_color:#F5F5B5\ntooltip_fg_color:#000000" # Tooltips.
 gtk_color_scheme = "link_color:#08c" # Hyperlinks
 gtk_color_scheme = "bg_color_dark:#383838\ntext_color_dark:#FFF" # Dark colors
-gtk_color_scheme = "sidebar_color:#dcdcdc" # Sidebar color in Nautilus-Elementary.
+gtk_color_scheme = "sidebar_color:#dcdcdc" # Sidebar color in caja-Elementary.
 gtk_color_scheme = "menu_color:#4c4c4c" # Color for menus.
 
 ### EXTERNAL FILES ###
@@ -630,6 +630,6 @@ widget "*OOoFixed*"			style "performance-fix" # Openoffice/Libreoffice
 widget_class "*MozContainer*"		style "performance-fix" # Firefox (Not sure if this one does anything though.)
 
 ### EXTERNAL FILES ###
-include "apps/gedit.rc"		# Gedit styling
 include "apps/pcmanfm.rc"	# PCManFM styling
-include "apps/nautilus-e.rc"	# Nautilus styling. Replace with nautilus-e.rc if you're using Nautilus-elementary or nautilus.rc if you're using normal Nautilus.
+include "apps/caja.rc"
+include "apps/pluma.rc"

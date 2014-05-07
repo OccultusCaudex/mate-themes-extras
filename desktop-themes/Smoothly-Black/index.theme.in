@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Smoothly-Black
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Smoothly-Black
+MetacityTheme=Smoothly-Black
+IconTheme=Faience
+CursorTheme=adwaita

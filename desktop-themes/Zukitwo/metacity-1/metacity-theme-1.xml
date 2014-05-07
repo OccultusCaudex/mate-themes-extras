@@ -66,7 +66,7 @@
 
 <draw_ops name="draw_title_text_normal">
 	<title color="#ffffff" x="3 `max` (width-title_width)/2" y="1 `max` ((height-title_height)/2)+1"/>
-	<title color="#3C3C3C" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
+	<title color="#2C2C2C" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
 </draw_ops>
 
 <draw_ops name="draw_title_text_inactive">

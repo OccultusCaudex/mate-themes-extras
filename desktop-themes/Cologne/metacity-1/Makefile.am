@@ -4,14 +4,14 @@ themedir = $(datadir)/themes/$(THEME_NAME)/metacity-1
 
 theme_DATA = \
 	metacity-theme-1.xml \
-	close.png \
-	close_unfocused.png \
-	maximize.png \
-	maximize_unfocused.png \
-	minimize.png \
-	minimize_unfocused.png \
-	prelight.png \
-	prelight_unfocused.png \
-	pressed.png
+	icon_close.png \
+	icon_close_u.png \
+	icon_maximize.png \
+	icon_maximize_u.png \
+	icon_minimize.png \
+	icon_minimize_u.png \
+	icon_restore.png \
+	icon_restore_u.png \
+	stripes.png
 
 EXTRA_DIST = $(theme_DATA)

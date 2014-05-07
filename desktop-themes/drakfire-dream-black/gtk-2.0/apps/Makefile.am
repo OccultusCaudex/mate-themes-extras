@@ -3,9 +3,6 @@ THEME_NAME=drakfire-dream-black
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-2.0/apps
 
 theme_DATA = \
-	nautilus.rc \
-	nautilus-e.rc \
-	gedit.rc \
 	pluma.rc \
 	caja.rc \
 	pcmanfm.rc \

@@ -14,63 +14,21 @@
    height="16px"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
+   inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="primary-toolbar-raised-button-border-dark.svg">
   <defs
      id="defs33224">
     <linearGradient
        id="linearGradient9224">
       <stop
-         style="stop-color:#16191a;stop-opacity:1;"
+         style="stop-color:#181818;stop-opacity:1;"
          offset="0"
          id="stop9226" />
       <stop
-         style="stop-color:#232729;stop-opacity:1;"
+         style="stop-color:#262626;stop-opacity:1;"
          offset="1"
          id="stop9228" />
     </linearGradient>
-    <linearGradient
-       id="linearGradient4410-4-9-7-9">
-      <stop
-         style="stop-color:#535156;stop-opacity:1;"
-         offset="0"
-         id="stop4412-6-7-4-4" />
-      <stop
-         style="stop-color:#333333;stop-opacity:1;"
-         offset="1"
-         id="stop4414-9-8-8-8" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5378-2-93"
-       id="linearGradient17869"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.59659086,0,0,0.59090912,-423.94512,-57.054903)"
-       x1="220"
-       y1="304"
-       x2="220"
-       y2="336.06244" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient5378-2-93">
-      <stop
-         style="stop-color:#f4f6f4;stop-opacity:1"
-         offset="0"
-         id="stop5380-6-3" />
-      <stop
-         style="stop-color:#d7dad7;stop-opacity:1"
-         offset="1"
-         id="stop5382-06-2" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4410-4-9-7-9"
-       id="linearGradient34952"
-       x1="7.9695358"
-       y1="0.96953601"
-       x2="7.9695358"
-       y2="14.937024"
-       gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient9224"
@@ -90,17 +48,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="31.357231"
-     inkscape:cx="5.2676336"
+     inkscape:cx="5.3314147"
      inkscape:cy="8.7791051"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1280"
-     inkscape:window-height="741"
-     inkscape:window-x="0"
-     inkscape:window-y="26"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="898"
+     inkscape:window-height="673"
+     inkscape:window-x="245"
+     inkscape:window-y="206"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata33227">
     <rdf:RDF>
@@ -118,8 +76,8 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer">
     <rect
-       ry="3.0102491"
-       rx="3.0102491"
+       ry="3"
+       rx="3"
        y="0.5"
        x="-15.5"
        height="15"

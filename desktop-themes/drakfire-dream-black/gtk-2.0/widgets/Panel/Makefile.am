@@ -10,7 +10,6 @@ theme_DATA = \
 	panel-bg.png \
 	panel-button-active.png \
 	panel-button-hover.png \
-	panel-button-inactive.png \
-	Thumbs.db
+	panel-button-inactive.png
 
 EXTRA_DIST = $(theme_DATA)

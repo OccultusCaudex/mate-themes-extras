@@ -8,6 +8,7 @@ theme_DATA = \
 	breadcrumb_prelight.png \
 	extra-widget.png \
 	left_slider_normal.png \
+	Makefile.am
 	mode_normal.png \
 	mode_prelight.png \
 	mode_pressed.png \

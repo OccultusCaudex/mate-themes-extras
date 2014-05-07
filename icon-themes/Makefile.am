@@ -8,4 +8,3 @@ SUBDIRS = \
 DIST_SUBDIRS = \
 	Sonar
 
-

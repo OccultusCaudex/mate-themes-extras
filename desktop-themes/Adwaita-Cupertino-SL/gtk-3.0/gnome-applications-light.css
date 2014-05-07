@@ -1,6 +1,9 @@
-/****************
- * Applications *
- ****************/
+/********************************************/
+/* gnome-applications-light.css gnome-shell */
+/********************************************/
+
+@define-color nautilus_cluebar_color shade (@theme_bg_color, 1.05);
+
 ApDocView, /* Abiword */
 EogScrollView, /* Eog */
 CheeseThumbView /* Cheese */
@@ -11,7 +14,7 @@ CheeseThumbView /* Cheese */
 
 /* nautilus */
 .nautilus-canvas-item {
-    border-radius: 5;
+    border-radius: 5px;
 }
 
 .nautilus-desktop.nautilus-canvas-item {
@@ -33,44 +36,85 @@ CheeseThumbView /* Cheese */
     text-shadow: none;
 }
 
+NautilusWindow .notebook {
+	border-width: 1px 0px 0px 0px;
+}
+
+NautilusWindow .notebook tab {
+	border-width: 0px 1px 1px 1px;
+}
+
+NautilusWindow .notebook tab:active {
+	border-width: 1px;
+	-unico-border-gradient: none;
+	border-top-color: 		shade(#ebf1fb, 1.00);
+	border-left-color: 		shade(#638ec2, 1.05);
+	border-right-color: 	shade(#638ec2, 1.05);
+	border-bottom-color: 	shade(@button_border, 0.70);
+}
+
+NautilusWindow .notebook tab:first-child:active {
+	border-width: 1px 1px 1px 0px;
+}
+
 NautilusWindow .primary-toolbar.toolbar {
     background-image: -gtk-gradient (linear,
 				     left top, left bottom,
-				     from (shade (@bg_color, 1.03)),
-			         to (shade (@bg_color, 0.98)));
+				     from (shade (@bg_color, 0.935)),
+			 		 color-stop (0.08, shade (@bg_color, 0.955) ),
+			 		 color-stop (0.08, shade (@bg_color, 0.97) ),
+			         to (shade (@base_color, 1.00)));
 
-    border-width: 0 0 1 0;
-    border-radius: 0;
+    border-width: 1px 0px 1px 0px;
+    border-radius: 0px;
     border-style: solid;
-    border-color: shade(@bg_color, 0.64) @transparent shade(@bg_color, 0.75);
+    border-color: shade(@bg_color, 0.95) @transparent shade(@bg_color, 0.80) @transparent;
 
-	padding: 0 2; 
+	padding: 0px 2px; 
 	
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;
-    color: 	@text_color;
+	color: @text_color;
 }
-
 
 NautilusWindow .primary-toolbar .toolbar .button,
 NautilusWindow .primary-toolbar.toolbar .button {
-    padding: 		0;
-    color: @text_color;
-    text-shadow: none; 
+	color: shade(@theme_fg_color, 1.00);
+    text-shadow: 1 1 alpha(#fff, 0.25);
+	padding: 0px 6px;
+
+    border-style: solid;
+	border-width: 1px;
+    border-radius: 9px;
+	border-color: @transparent;
+
+	-unico-inner-stroke-gradient: none;
+    -unico-inner-stroke-width: 2px 1px 1px 1px;
+	-unico-inner-stroke-color: @transparent;
+
+	-unico-outer-stroke-gradient: none;
+	-unico-outer-stroke-width: 8px 0px 8px 0px;	
+	-unico-outer-stroke-color: @transparent;
 }
 
 #nautilus-search-button *:prelight,
+NautilusWindow .primary-toolbar .toolbar .button *:hover,
+NautilusWindow .primary-toolbar.toolbar .button *:hover {
+    color: @theme_text_color;
+    text-shadow: none; 
+
+}
+
+
 #nautilus-search-button *:active,
 #nautilus-search-button *:active:prelight,
 NautilusWindow .primary-toolbar .toolbar .button *:active,
 NautilusWindow .primary-toolbar.toolbar .button *:active,
-NautilusWindow .primary-toolbar .toolbar .button *:hover,
-NautilusWindow .primary-toolbar.toolbar .button *:hover,
 NautilusWindow .primary-toolbar .toolbar .button *:hover:active,
 NautilusWindow .primary-toolbar.toolbar .button *:hover:active {
 	/* Rebajar un poco la sombra del texto	*/
-    color: @text_color;
-    text-shadow: none; 
+    color: shade(@theme_selected_fg_color, 0.98);
+    text-shadow: 0 1 alpha(#000, 0.25); 
 }
 
 #nautilus-search-button .button:active,
@@ -79,90 +123,92 @@ NautilusWindow .primary-toolbar .toolbar .button:active,
 NautilusWindow .primary-toolbar.toolbar .button:active, 
 NautilusWindow .primary-toolbar .toolbar .button:hover:active,
 NautilusWindow .primary-toolbar.toolbar .button:hover:active {  
-    border-style: solid; 
-    border-width: 0 1;
-    border-radius: 2;
-
-    -unico-border-gradient: -gtk-gradient (linear,
-				             left top, left bottom,
-				             from (shade (@toolbar_gradient_base, 1.30)),
-			                 color-stop (0.50, shade (@toolbar_gradient_base, 0.90) ),
-				             to   (shade (@toolbar_gradient_base, 1.20)));
-
-    
+    border-width: 1px;
+    border-style: solid;  
+	border-radius: 9px;
+	
+	-unico-inner-stroke-width: 2px 1px 1px 1px;
 	-unico-inner-stroke-gradient: -gtk-gradient (linear,
-				             left top, left bottom,
-				             from (alpha (shade (@toolbar_gradient_base, 1.25), 0.00)),
-			                 color-stop (0.50, shade (@toolbar_gradient_base, 1.15) ),
-				             to   (alpha (shade (@toolbar_gradient_base, 1.25), 0.00)));
+												 left top, left bottom,
+										         from (alpha (#000, 0.10)),
+										 		 color-stop (0.10, alpha (#000, 0.00) ),
+										 		 color-stop (0.10, alpha (#000, 0.05) ),
+										         to (alpha (#000, 0.00)));
 
-    background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-				     from (alpha (shade (@toolbar_gradient_base, 1.35), 0.0)),
-			         color-stop (0.50, shade (@toolbar_gradient_base, 1.25) ),
-				     to   (alpha (shade (@toolbar_gradient_base, 1.25), 0.0)));
+	-unico-border-gradient: -gtk-gradient (linear,
+											 left top, left bottom,
+								             from (alpha (#000, 0.57)),
+									 		 color-stop (0.10, alpha (#000, 0.55) ),
+								             to (alpha (#000, 0.50)));
+
+	background-image: -gtk-gradient (radial,
+										0.5 0.5, 0.3,
+										0.6 0.8, 1,
+										from (alpha (shade (@theme_bg_color, 0.60), 1.0)),
+										to   (alpha (shade (@theme_bg_color, 0.40), 1.0)));
+    
 }
 
 #nautilus-search-button .button:prelight,
 NautilusWindow .primary-toolbar .toolbar .button:hover,
 NautilusWindow .primary-toolbar.toolbar .button:hover {
-    border-style: solid; 
-    border-width: 0 1;
-    border-radius: 2;
-
+    /* -unico-inner-stroke-gradient: none;
+	-unico-inner-stroke-color: @transparent;
+	-unico-inner-stroke-width: 2px 1px 1px 1px; */
+    border-width: 1px;
+    border-style: solid;  
+	border-radius: 9px;
     -unico-border-gradient: -gtk-gradient (linear,
 				             left top, left bottom,
-				             from (shade (@toolbar_gradient_base, 1.35)),
-			                 color-stop (0.50, shade (@toolbar_gradient_base, 0.95) ),
-				             to   (shade (@toolbar_gradient_base, 1.25)));
+				             from (shade (@theme_bg_color, 0.85)),
+				             to   (shade (@theme_bg_color, 0.80)));
 
     background-image: -gtk-gradient (linear,
 				     left top, left bottom,
-				     from (alpha (shade (@toolbar_gradient_base, 1.40), 0.0)),
-			         color-stop (0.50, shade (@toolbar_gradient_base, 1.30) ),
-				     to   (alpha (shade (@toolbar_gradient_base, 1.30), 0.0)));
-
+				     from (alpha (shade (@theme_bg_color, 0.75), 0.05)),
+				     to   (alpha (shade (@theme_bg_color, 0.50), 0.15)));
 }
 
-
 NautilusWindow .menubar {
-    border-style: none;
-    border-width: 0;
-    border-radius: 0;   
-    border-color: shade (@bg_color, 0.64);
-	-unico-inner-stroke-color: shade (@bg_color, 0.52);
-	/* -unico-inner-stroke-width: 0 0 1 0; */
+    /* linea 3D  (oscura) */
+	-unico-inner-stroke-width: 0px;
+
+    /* Cambiar linea 3D (clara) por oscura */
+	border-width: 0px 0px 1px 0px;
+	border-style: solid; 
+    border-color: shade (@button_border, 0.70); 
 
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade (@bg_color, 0.81)),
                                      to (shade (@bg_color, 0.72)));
-    color: @text_color;
-	text-shadow: 0 1 alpha(@theme_base_color, 0.35);
+    
+    text-shadow: 0 1 alpha(@theme_base_color, 0.35);
+    /* -GtkMenuBar-internal-padding: 4 0 0 0; */
 }
 
 #nautilus-search-button * {
-	-unico-border-gradient: none;
-	-unico-outer-stroke-gradient: none;
-	-unico-outer-stroke-width: 0px;
-
+	-unico-border-gradient: none;    
     border-image: none;
     border-style: solid;
-	border-width: 0px 1px;
+	border-width: 1px;
 	border-color: @transparent;
-    border-radius: 2;
-    box-shadow: none;
-    background-image: none;
-    padding: 0 3;
-}
 
-/*
-#nautilus-search-button *:prelight,
-#nautilus-search-button *:active,
-#nautilus-search-button *:active:prelight {
-    color: shade(@nautilus_cluebar_color, 0.50);
+    border-radius: 9px;
+    box-shadow: none;
+    -unico-inner-stroke-width: 2px 1px 1px 1px;
+	-unico-inner-stroke-gradient: none;
+	-unico-inner-stroke-color: @transparent;
+
+	-unico-outer-stroke-width: 8px 4px 8px 4px;
+	-unico-outer-stroke-gradient: none;
+	-unico-outer-stroke-color: @transparent;
+
+    background-image: none;
+
+    padding: 0px 6px;
+	color: shade(@theme_fg_color, 1.00);
 }
-*/
 
 NautilusFloatingBar {
     background-image: -gtk-gradient (linear,
@@ -172,8 +218,8 @@ NautilusFloatingBar {
 
     border-color: shade (@notebook_tab_gradient_b, 0.80);
 
-    border-radius: 3 3 0 0;
-    border-width: 1;
+    border-radius: 3px 3px 0px 0px;
+    border-width: 1px;
     border-style: solid;
 }
 
@@ -189,21 +235,20 @@ NautilusFloatingBar .button {
 }
 
 NautilusWindow .sidebar .scrollbar {
-	-GtkRange-trough-border:    1;
-    -GtkRange-slider-width:     6;
+	-GtkRange-trough-border: 1;
+    -GtkRange-slider-width:  6;
 }
 
 NautilusWindow .sidebar .scrollbar.trough,
 NautilusWindow .sidebar .scrollbar.trough.vertical {
     background-image: none;
     background-color: @sidebar_background;
-	-unico-inner-stroke-width:          0;
+	-unico-inner-stroke-width:          0px;
 }
 
 NautilusWindow .sidebar .frame {
-    border-width: 0 0 0 0;
+    border-width: 0px;
     border-style: none;
-	border-color: shade(@bg_color, 0.64);
 }
 
 NautilusWindow > GtkTable > .pane-separator,
@@ -217,13 +262,11 @@ NautilusWindow .pane-separator {
                                     left top, right top,
                                     from(@sidebar_background),
                                     color-stop(0.70, @sidebar_background),
-                                    to(shade (@button_border, 0.72)));
+                                    to(shade (@button_border, 0.80)));
 
     -unico-border-gradient: none;
-    -unico-inner-stroke-width: 0;
+    -unico-inner-stroke-width: 0px;
 }
 
-NautilusWindow > GtkTable > .pane-separator:hover {
-    background-color: @sidebar_background;
-}
+@import url("cluebar.css");
 

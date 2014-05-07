@@ -14,7 +14,7 @@
    height="16px"
    id="svg11633"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
+   inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="entry-border-normal-dark.svg">
   <defs
      id="defs11635">
@@ -47,7 +47,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="26.24"
-     inkscape:cx="10.353659"
+     inkscape:cx="10.506099"
      inkscape:cy="8.1522251"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -55,8 +55,8 @@
      inkscape:document-units="px"
      inkscape:window-width="1065"
      inkscape:window-height="814"
-     inkscape:window-x="832"
-     inkscape:window-y="233"
+     inkscape:window-x="301"
+     inkscape:window-y="155"
      inkscape:window-maximized="0"
      inkscape:object-nodes="true" />
   <metadata
@@ -77,14 +77,14 @@
      inkscape:groupmode="layer">
     <rect
        transform="scale(1,-1)"
-       ry="2.2980974"
-       rx="2.2980974"
+       ry="3"
+       rx="3"
        y="-15.5"
        x="0.49999997"
        height="15"
        width="15.000001"
        id="rect5760"
-       style="fill:none;fill-opacity:0;stroke:url(#linearGradient3757);stroke-width:0.99999987999999995;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline;enable-background:new"
+       style="fill:none;stroke:url(#linearGradient3757);stroke-width:0.99999988;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline;enable-background:new"
        inkscape:export-filename="/home/cosimoc/Sources/Checkouts/gnome-themes-standard/themes/Adwaita/gtk-3.0/assets/entry-normal-border.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />

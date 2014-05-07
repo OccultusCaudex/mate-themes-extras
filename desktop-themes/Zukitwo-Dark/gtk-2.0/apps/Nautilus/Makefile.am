@@ -1,5 +1,5 @@
 
-themedir = $(datadir)/themes/Zukitwo-Dark/gtk-2.0/Nautilus
+themedir = $(datadir)/themes/Zukitwo-Dark/gtk-2.0/apps/Nautilus
 
 theme_DATA = \
 	breadcrumb_active.png \

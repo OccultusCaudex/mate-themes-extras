@@ -7,7 +7,7 @@ style "panel"
 	xthickness = 0
 	ythickness = 0
 
-	bg_pixmap[NORMAL] = "img/panel.png"
+#	bg_pixmap[NORMAL] = "img/panel.png"
 #	bg[NORMAL] = "#4b4a46"
 
 	engine "murrine" {

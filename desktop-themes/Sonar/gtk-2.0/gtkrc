@@ -337,7 +337,7 @@ class "GtkHandleBox" style "sonar-toolbar"
 #
 
 style "theme-panel" {
-	bg_pixmap[NORMAL] = "panel-bg-dark.png" # Disable for normal panel backgrounds.
+#	bg_pixmap[NORMAL] = "panel-bg-dark.png" # Disable for normal panel backgrounds.
 
 	bg[SELECTED] = shade (0.85, @selected_bg_color) # Makes selected items dark.
 	bg[NORMAL] = "#3c3c3c" # Makes panel background dark.
@@ -467,12 +467,27 @@ widget_class "*GtkCList*" style "evolution-hack"
 widget_class "*.ETree.*" style "evolution-hack"
 widget_class "*EInfoLabel*" style "evolution-hack"
 
-style "sonar-nautilus-location"
+style "sonar-caja-location"
 {
-	bg[NORMAL] = shade (1.25, @selected_bg_color)
+	bg[NORMAL]  = mix (0.60, shade (1.05, @bg_color), @bg_color)
 }
 
-widget "*.nautilus-extra-view-widget" style : highest "sonar-nautilus-location"
+widget "*.caja-extra-view-widget" style : highest "sonar-caja-location"
+
+style "caja-sidebar"
+{
+
+	text[NORMAL] = @fg_color
+	base[NORMAL] = mix (0.60, shade (1.05, @bg_color), @bg_color)
+
+	GtkTreeView::odd_row_color = mix (0.60, shade (1.05, @bg_color), @bg_color)
+	GtkTreeView::even_row_color = mix (0.60, shade (1.05, @bg_color), @bg_color)
+
+   	xthickness = 0
+	ythickness = 0
+}
+
+widget_class	"*Caja*Places*Sidebar*"	style "caja-sidebar"
 
 style "sonar-text-is-fg-color-workaround" {
 	text[NORMAL] = @fg_color
@@ -509,7 +524,6 @@ widget_class "*<EelEditableLabel>" style "sonar-fg-is-text-color-workaround"
 style "inkscape-toolbar-fix" {
         engine "murrine" 
         {
-
                 gradient_shades = {1.00,1.00,1.00,1.00}
                 highlight_shade = 1.00
    }

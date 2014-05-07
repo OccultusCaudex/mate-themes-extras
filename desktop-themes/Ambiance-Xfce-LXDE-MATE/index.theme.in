@@ -10,6 +10,6 @@ Name[en_US]=Ambiance-Xfce-LXDE-MATE
 GtkTheme=Ambiance-Xfce-LXDE-MATE
 MetacityTheme=Ambiance-Xfce-LXDE-MATE
 IconTheme=elementary-mono-dark
-CursorTheme=DMZ-White
+CursorTheme=dmz
 ButtonLayout=:minimize,maximize,close
 

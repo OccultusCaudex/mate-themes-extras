@@ -336,7 +336,7 @@ class "GtkHandleBox" style "sonar-blue-toolbar"
 #
 
 style "theme-panel" {
-	bg_pixmap[NORMAL] = "panel-bg-dark.png" # Disable for normal panel backgrounds.
+#	bg_pixmap[NORMAL] = "panel-bg-dark.png" # Disable for normal panel backgrounds.
 
 	bg[SELECTED] = shade (0.85, @selected_bg_color) # Makes selected items dark.
 	bg[NORMAL] = "#3c3c3c" # Makes panel background dark.
@@ -509,12 +509,27 @@ widget_class "*GtkCList*" style "evolution-hack"
 widget_class "*.ETree.*" style "evolution-hack"
 widget_class "*EInfoLabel*" style "evolution-hack"
 
-style "sonar-blue-nautilus-location"
+style "sonar-blue-caja-location"
 {
-	bg[NORMAL] = shade (1.25, @selected_bg_color)
+	bg[NORMAL]  = mix (0.60, shade (1.05, "#D5D6DA"), "#D5D6DA")
 }
 
-widget "*.nautilus-extra-view-widget" style : highest "sonar-blue-nautilus-location"
+widget "*.caja-extra-view-widget" style : highest "sonar-blue-caja-location"
+
+style "caja-sidebar"
+{
+
+	text[NORMAL] = @fg_color
+	base[NORMAL] = mix (0.60, shade (1.05, "#D5D6DA"), "#D5D6DA")
+
+	GtkTreeView::odd_row_color = mix (0.60, shade (1.05, "#D5D6DA"), "#D5D6DA")
+	GtkTreeView::even_row_color = mix (0.60, shade (1.05, "#D5D6DA"), "#D5D6DA")
+
+   	xthickness = 0
+	ythickness = 0
+}
+
+widget_class	"*Caja*Places*Sidebar*"	style "caja-sidebar"
 
 style "sonar-blue-text-is-fg-color-workaround" {
 	text[NORMAL] = @fg_color

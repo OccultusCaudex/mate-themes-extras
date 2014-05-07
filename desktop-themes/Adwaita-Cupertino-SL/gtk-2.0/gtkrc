@@ -1,6 +1,8 @@
 gtk-color-scheme = "base_color:#ffffff\nfg_color:#1A1A1A\ntooltip_fg_color:#ffffff\nselected_bg_color:#3774D6\nselected_fg_color:#ffffff\ntext_color:#1A1A1A\nbg_color:#EDEDED\ntooltip_bg_color:#080808\nlink_color:#0033ff"
 gtk-auto-mnemonics	= 1
 
+gtk_color_scheme	= "menu_gradient:#2255F5"
+
 style "default" {
 	xthickness									= 1
 	ythickness									= 1
@@ -54,7 +56,7 @@ style "default" {
 	GtkScrollbar::slider-width					= 9
 	GtkScrollbar::trough-border					= 3
 	GtkScrollbar::activate-slider 				= FALSE
-	GtkScrollbar::trough-side-details			= FALSE
+	GtkScrollbar::trough-side-details			= 0
 	GtkScrollbar::stepper-size              	= 1
 
 	GtkScrolledWindow::scrollbar-spacing		= 0
@@ -438,8 +440,8 @@ style "menu_item_white" {
 	ythickness	= 3
 
 	fg[PRELIGHT]	= @selected_fg_color
-    bg[PRELIGHT]      = shade (1.00, "#2255F5")
-    bg[SELECTED]      = shade (1.00, "#2255F5")
+    bg[PRELIGHT]	= @menu_gradient
+    bg[SELECTED]	= @menu_gradient
 
 	engine "murrine" {
         gradient_shades		= {1.30, 1.15, 1.15, 1.00}
@@ -661,6 +663,7 @@ style "checkradio" = "button" {
     bg[ACTIVE]                      = shade (0.80, @bg_color)	# button option "#80B8EA"
 
 	engine "murrine" {
+		reliefstyle = 3
 	}
 }
 
@@ -828,4 +831,27 @@ widget "vim-main-window.*Scrollbar*"	style "vim-scrollbar"
 # For Eclipse (swt) toolbars.
 widget "*swt*toolbar*"			style "default"
 
+##########################################
+# CAJA	
+##########################################
+
+style "caja-sidebar"
+{
+
+	text[NORMAL] = @fg_color
+	base[NORMAL] = "#DFDFDF"
+
+	GtkTreeView::odd_row_color = "#DFDFDF"
+	GtkTreeView::even_row_color = "#DFDFDF"
+
+}
+
+style "caja-location"
+{
+	bg[NORMAL]  = mix (0.60, shade (1.05, @bg_color), @bg_color)
+}
+
+# CAJA
+widget_class	"*Caja*Places*Sidebar*"	style "caja-sidebar"
+widget "*.caja-extra-view-widget" style : highest "caja-location"
 

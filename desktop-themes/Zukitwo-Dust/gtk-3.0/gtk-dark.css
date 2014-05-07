@@ -27,21 +27,29 @@
 @define-color dark_fg_color #E6E6E6;
 @define-color transparent rgba (0, 0, 0, 0);
 
+@define-color backdrop_selected_bg_color shade (@theme_selected_bg_color, 1.12);
+@define-color backdrop_selected_fg_color @theme_selected_fg_color;
+
 /* Zukitwo colors */
 @define-color toolbar_gradient_base #39342b;
 @define-color toolbar_gradient_final #2e2920;
 @define-color toolbar_border #29241b;
 @define-color menubar_color @dark_bg_color;
 
-/* Window Manager colors */
+/* WM colors */
+@define-color wm_title @dark_fg_color;
 @define-color wm_highlight shade (@menubar_color, 1.5);
-@define-color wm_title_highlight #111111;
+@define-color wm_title_highlight shade (@menubar_color, 1.5);
 
 @define-color wm_bg_a shade (@menubar_color, 1.4);
 @define-color wm_bg_b @menubar_color;
 
 @import url("gtk-widgets.css");
+@import url("apps/gedit.css");
 @import url("apps/gnome-panel.css");
-@import url("apps/gnome-applications.css");
+@import url("apps/gnome-terminal.css");
 @import url("apps/nautilus.css");
+@import url("apps/nemo.css");
 @import url("apps/unity.css");
+@import url("apps/popover.css");
+@import url("apps/epiphany.css");
