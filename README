@@ -1,5 +1,5 @@
-mate-themes-extras-3
-====================
+mate-themes-extras
+==================
 
 GTK2/3 themes optimized for GTK3-3.6.x
 
