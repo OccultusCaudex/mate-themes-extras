@@ -55,6 +55,8 @@ theme_DATA = \
 	scale-slider-vertical.svg \
 	sidebar-radio-prelight.svg \
 	sidebar-radio-selected-prelight.svg \
+	slider_fine_horizontal.svg \
+	slider_fine_vertical.svg \
 	switch-slider-grip.svg \
 	switch-trough-border-active.svg \
 	toolbar-button-border.svg
