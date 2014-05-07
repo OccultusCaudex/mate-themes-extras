@@ -1,63 +1,51 @@
-mate-themes-extras
-==================
+mate-themes-extras-3
+====================
+
+GTK2/3 themes optimized for GTK3-3.6.x
 
 The mate-themes-extras package contains a collection of GTK2/3 desktop themes for MATE. These themes can change the appearance of application widgets, window borders, etc.
-This package is optimized for GTK3-3.4.x
 
 Themes:
 
---Adwaita-Cupertino-SL
---AmbianceBlue
---Ambiance-Xfce-LXDE-MATE
---ANewStartBlood
+--Ambiance-blue
+--Ambiance-lime
+--Blue-Submarine
+--clearlooks-phenix
 --Cologne
---drakfire-dream-black
---GnomishDark
+--Delorean-Dark
+--Faience
+--Faience-Ocre
+--Gnome-Cupertino
+--Gnome-Cupertino-Mint
+--GnomishBeige
+--Green-Submarine
 --RadianceBlue
 --Radiance-Xfce-LXDE-MATE
---Sonar
---SonarBlue
+--Smootly
+--Smootly-Black
 --Zukitwo
---Zukitwo-Dark
---Zukitwo-Dust
 --Zukitwo-Brave
---Zukitwo-Colors
+--Zukitwo-Dust
 --Zukitwo-Human
 --Zukitwo-Illustrious
 --Zukitwo-Noble
 --Zukitwo-Wine
 --Zukitwo-Wise
---Sonar-Icons
 
 
 Installation:
 
 You have to use autogen.sh with configure flags to enable a theme.
 Without a flag nothing will compile!
-This will install all themes.
+Use configure --help after autogen to find out the right configure flags for a theme.
+--prefix=/usr is needed, otherwise the themes are installed in /usr/local/share/themes ,
+and  mate-appearance-properties doesn't find the themes!
+This example installs one theme.
 
-./autogen.sh \
-	--enable-Adwaita-Cupertino-SL \
-	--enable-AmbianceBlue \
-	--enable-Ambiance-Xfce-LXDE-MATE \
-	--enable-ANewStartBlood \
-	--enable-Cologne \
-	--enable-drakfire-dream-black \
-	--enable-GnomishDark \
-	--enable-RadianceBlue \
-	--enable-Radiance-Xfce-LXDE-MATE \
-	--enable-Sonar \
-	--enable-SonarBlue \
-	--enable-Zukitwo \
-	--enable-Zukitwo-Dark \
-	--enable-Zukitwo-Dust \
-	--enable-Zukitwo-Brave \
-	--enable-Zukitwo-Colors \
-	--enable-Zukitwo-Human \
-	--enable-Zukitwo-Illustrious \
-	--enable-Zukitwo-Noble \
-	--enable-Zukitwo-Wine \
-	--enable-Zukitwo-Wise \
-	--enable-Sonar-Icons
+./autogen.sh
+./configure --prefix=/usr \
+--enable-Gnome-Cupertino
+
 make
+
 make install (as root)

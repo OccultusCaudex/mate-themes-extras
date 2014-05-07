@@ -1,10 +1,9 @@
-@define-color cluebar_color shade (mix (@bg_color, @selected_bg_color, 0.5), 0.95);
+@define-color cluebar_color shade (@base_color, 0.9);
 
 NemoWindow * {
 	-GtkPaned-handle-size: 1;
 }
 
-/* FIXME - Something I don't understand. Why this theme gets a gray bg without this, and Ambiance which it's based on does not. */
 NemoWindow .view {
 	background-color: @base_color;
 }
@@ -20,7 +19,6 @@ NemoWindow .view:selected:backdrop {
 NemoWindow .view.rubberband {
 	background-color: alpha (@selected_bg_color, 0.35);
 }
-/* FIXME end */
 
 .nemo-inactive-pane .view {
 	background-color: shade (@base_color, 0.96);
@@ -43,20 +41,18 @@ NemoWindow .view.rubberband {
 /* desktop mode */
 .nemo-desktop.nemo-canvas-item {
 	color: @bg_color;
-	text-shadow: 1 1 alpha (#000000, 0.8);
+	text-shadow: 1px 1px alpha (#000000, 0.8);
 }
 
 .nemo-desktop.nemo-canvas-item:active {
 	background-image: none;
 	background-color: alpha (@bg_color, 0.84);
-
 	color: @fg_color;
 }
 
 .nemo-desktop.nemo-canvas-item:selected {
 	background-image: none;
 	background-color: alpha (@selected_bg_color, 0.84);
-
 	color: @selected_fg_color;
 }
 
@@ -72,47 +68,14 @@ NemoXContentBar.info,
 NemoSearchBar.info,
 NemoQueryEditor.info {
 	background-image: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@cluebar_color, 1.02)),
-		to (shade (@cluebar_color, 0.98)));
+		from (shade (@cluebar_color, 1.0)),
+		to (shade (@cluebar_color, 1.0)));
 	background-color: @cluebar_color;
 	border-bottom-color: shade (@cluebar_color, 0.92);
 	border-radius: 0;
 	border-style: solid;
 	border-width: 0px 0px 1px 0px;
-
-	-unico-border-gradient: none;
-	-unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@cluebar_color, 1.04)),
-		to (shade (@cluebar_color, 1.01)));
 	color: @fg_color;
-}
-
-NemoTrashBar.info:backdrop,
-NemoXContentBar.info:backdrop,
-NemoSearchBar.info:backdrop,
-NemoQueryEditor.info:backdrop {
-	background-image: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@cluebar_color, 1.01)),
-		to (shade (@cluebar_color, 0.99)));
-	background-color: @cluebar_color;
-	border-bottom-color: shade (@cluebar_color, 0.92);
-
-	-unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@cluebar_color, 1.02)),
-		to (shade (@cluebar_color, 1.0)));
-}
-
-NemoSearchBar .entry {
-}
-
-.nemo-cluebar-label {
-	font: bold;
-	text-shadow: 0 1 shade (@cluebar_color, 1.06);
-}
-
-.nemo-cluebar-label:backdrop {
-	color: mix (@fg_color, @cluebar_color, 0.2);
-	text-shadow: 0 1 shade (@cluebar_color, 1.02);
 }
 
 #nemo-search-button *:active,
@@ -120,60 +83,62 @@ NemoSearchBar .entry {
 	color: @fg_color;
 }
 
-NemoFloatingBar {
-	background-color: @info_bg_color;
-	border-radius: 2px 2px 0 0;
-	border-style: solid;
-	border-width: 1px;
-	border-color: darker (@info_bg_color);
-
-	-unico-border-gradient: none;
+NemoWindow .toolbar {
+	padding: 2px;
 }
 
-NemoFloatingBar .button {
-	-GtkButton-image-spacing: 0;
-	-GtkButton-inner-border: 0;
+NemoWindow > GtkGrid > .pane-separator {
+	border-width: 1px 1px 0 0;
+	border-style: solid;
+	border-color: shade (@bg_color, 0.84);
+}
+
+NemoWindow > GtkGrid > .pane-separator,
+NemoWindow > GtkGrid > .pane-separator:hover {
+	border-width: 1px 1px 0 0;
+	border-style: solid;
+	border-color: shade (@bg_color, 0.84);
+	background-color: @bg_color;
+	color: shade (@bg_color, 0.9);
+}
+
+NemoView.frame,
+NemoNotebook.notebook {
+	border-right-width: 0;
+	border-left-width: 0;
+	border-bottom-width: 0;
+}
+
+NemoNotebook.notebook tab.top,
+NemoNotebook.notebook tab.bottom {
+	border-right-width: 1px;
+	border-left-width: 1px;
+}
+
+NemoNotebook .frame {
+	border-width: 1px 0 0 0;
 }
 
 /* sidebar */
 NemoWindow .sidebar,
 NemoWindow .sidebar .view {
-	background-color: @bg_color;
-
+	background-color: shade (@bg_color, 1.08);
 	color: @fg_color;
-	text-shadow: 0 1 shade (shade (@bg_color, 0.95), 1.04);  
+	text-shadow: 0 1px shade (shade (@bg_color, 0.95), 1.04);  
 }
 
 NemoWindow .sidebar row:selected {
 	color: @selected_fg_color;
-	text-shadow: 0 -1 shade (@selected_bg_color, 0.8); 
+	text-shadow: 0 -1px shade (@selected_bg_color, 0.8); 
+}
+
+NemoWindow .sidebar row:backdrop:selected {
+	color: @backdrop_selected_fg_color;
+	text-shadow: none; 
 }
 
 NemoWindow .sidebar .frame {
-}
-
-NemoWindow .pane-separator {
-	background-color: shade (shade (@bg_color, 0.95), 0.94);
-	border-color: @dark_bg_color;
+	border-top-width: 1px;
 	border-style: solid;
-	border-width: 0;
-
-	-unico-border-gradient: none;
-	-unico-inner-stroke-width: 0;
+	border-color: shade (@bg_color, 0.82);
 }
-
-NemoWindow .pane-separator:backdrop {
-	background-color: shade (shade (@bg_color, 0.95), 0.96);
-}
-
-/* FIXME - Just a workaround atm. */
-NemoWindow .primary-toolbar .button {
-	-unico-border-gradient: none;
-}
-
-NemoWindow .primary-toolbar .button:hover {
-	-unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@bg_color, 0.7)),
-		to (shade (@bg_color, 0.6)));
-}
-

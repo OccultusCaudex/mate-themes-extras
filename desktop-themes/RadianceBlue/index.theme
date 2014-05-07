@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=RadianceBlue
+Comment=Blue Variant of Radiance theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=RadianceBlue
+MetacityTheme=RadianceBlue
+IconTheme=elementary
+CursorTheme=dmz
+ButtonLayout=:minimize,maximize,close
+

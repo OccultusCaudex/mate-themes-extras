@@ -1,0 +1,10 @@
+{ 
+   "shell-theme": {
+   "name": "GnomishBeige",
+   "author": "Pedram Pourang (aka. Tsu Jan)",
+   "version": "1.0",
+   "type":   "custom",
+   "thumbnail": "GnomishBeige-preview.png",
+   "url": "tsujan2000@gmail.com"
+    }
+}

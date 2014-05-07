@@ -37,7 +37,7 @@ style "default"
     bg[INSENSITIVE]   = "#ECB850"
     bg[NORMAL]        = "#ECB850"
     bg[PRELIGHT]      = "#F68C15"
-    bg[SELECTED]      = "#F1D276"
+    bg[SELECTED]      = "#FFCB63"
 
     fg[ACTIVE]        = "#0E1978"
     fg[INSENSITIVE]   = "#BFBCB2"
@@ -77,6 +77,7 @@ style "menustyle" = "default"
         }
     }
 }
+
 widget_class "*BonoboDockItem"     style "menustyle"
 class "*BonoboDockItem"            style "menustyle"
 widget_class "*HandleBox"          style "menustyle"
@@ -88,6 +89,8 @@ class "*MenuBar"                   style "menustyle"
 
 style "buttonstyle" = "default"
 {
+bg[PRELIGHT] ="#FFD763"
+bg[ACTIVE] = "#FFD763"
     xthickness = 1
     ythickness = 1
     engine "xfce" 
@@ -156,28 +159,44 @@ widget_class "MetaFrames"          style "titlebar"
 
 style "panel"
 {
-fg[NORMAL] = "#F88E0B"
-fg[PRELIGHT] ="#09FB81"
-fg[ACTIVE] = "#76CEF1"
-bg[NORMAL] = "#393A34"
-bg[PRELIGHT] ="#000000"
+bg[NORMAL] = "#FFD763"
+bg[PRELIGHT] ="#FFCB63"
 bg[ACTIVE] = "#010101"
+fg[NORMAL] = "#212C58"
+fg[PRELIGHT] ="#0E1978"
+fg[ACTIVE] = "#76CEF1"
 text[NORMAL] = "#F88E0B"
 }
-widget "*PanelWidget*" style "panel"
-widget "*PanelApplet*" style "panel"
-widget "*Panel*" style "panel"
-widget_class "*Panel*" style "panel"
-class "*Panel*" style "panel"
-class "*Tray*" style "panel"
-class "*tray*" style "panel"
 
-# fix for caja
-
-style "cologne-caja-location"
+# syncronize panel menus
+style "panel-applet"
 {
-	bg[NORMAL]  = mix (0.60, shade (1.05, "#ECC250"), "#ECC250")
+bg[NORMAL] = "#FFD763"
+bg[PRELIGHT] ="#F68C15"
+bg[SELECTED]      = "#FFCB63"
+bg[ACTIVE]        = "#FFCB63"
+bg[INSENSITIVE]   = "#ECB850"
+fg[PRELIGHT]      = "#1f1f1f"
+fg[NORMAL]        = "#212C58"
+fg[ACTIVE]        = "#0E1978"
 }
 
-widget "*.caja-extra-view-widget" style : highest "cologne-caja-location"
+widget "*PanelWidget*"			style "panel"
+widget "*fast-user-switch*"		style "panel"
+widget "*CPUFreq*Applet*"		style "panel"
+widget "*indicator-applet*"		style "panel"
+class "PanelApp*"			style "panel"
+class "PanelToplevel*"			style "panel"
+widget_class "*PanelToplevel*"		style "panel"
+widget_class "*notif*"			style "panel"
+widget_class "*Notif*"			style "panel"
+widget_class "*Tray*"			style "panel" 
+widget_class "*tray*"			style "panel"
+widget_class "*computertemp*"		style "panel"
+widget_class "*Applet*Tomboy*"		style "panel"
+widget_class "*Applet*Netstatus*"	style "panel"
+
+widget_class "*MatePanelAppletFrameDBus*" style "panel-applet"
+widget "*PanelApplet*"				style "panel-applet"
+
 include "Styles/caja.rc"

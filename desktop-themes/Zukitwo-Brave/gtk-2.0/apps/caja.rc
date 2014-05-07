@@ -1,4 +1,4 @@
-### This file styles Caja. ###
+### This file styles Caja. caja-e.rc is for Caja elementary. ###
 
 style "caja-window-base" { bg[NORMAL] = @base_color }
 
@@ -42,7 +42,7 @@ style "caja-location"
 	xthickness = 0
 	ythickness = 0
 
-	bg[NORMAL] = mix (0.60, shade (1.05, @bg_color), @bg_color)
+	bg[NORMAL]  = mix (0.60, shade (1.05, @bg_color), @bg_color)
 
 	engine "pixmap" {
 		image
@@ -88,4 +88,4 @@ widget_class "*Caja*<GtkList>.<GtkButton>"     style "murrine-treeview-header"
 widget_class "*Caja*<GtkCList>.<GtkButton>"    style "murrine-treeview-header"
 
 widget_class "*CajaPathBar*"                   style "caja-pathbar" 
-widget "*.caja-extra-view-widget" 		       style : highest "caja-location"
+widget "*.caja-extra-view-widget"              style "caja-location"

@@ -4,10 +4,10 @@ themedir = $(datadir)/themes/Zukitwo/gnome-shell
 theme_DATA = \
 	calendar-arrow-left.svg \
 	calendar-arrow-right.svg \
-	checkbox-focused.svg \
-	checkbox-off-focused.svg \
-	checkbox-off.svg \
 	checkbox.svg \
+	checkbox-focused.svg \
+	checkbox-off.svg \
+	checkbox-off-focused.svg \
 	close.svg \
 	close-window.svg \
 	corner-ripple-ltr.png \
@@ -15,15 +15,20 @@ theme_DATA = \
 	dash-placeholder.svg \
 	filter-selected-ltr.svg \
 	filter-selected-rtl.svg \
-	gdm.css \
 	gnome-shell.css \
+	heart.png \
+	heart-hover.png \
+	logged-in-indicator.svg \
+	message-tray-background.png \
+	noise-texture.png \
 	panel-button-border.svg \
 	panel-button-highlight-narrow.svg \
 	panel-button-highlight-wide.svg \
 	process-working.svg \
 	running-indicator.svg \
-	start1.png \
-	start2.png \
+	summary-counter.svg
+	switch-off.png \
+	switch-on.png \
 	ws-switch-arrow-down.svg \
 	ws-switch-arrow-up.svg
 

@@ -380,14 +380,20 @@ style "panel" {
 	ythickness=1
 }
 widget "*PanelWidget*" style "panel"
-widget "*PanelApplet*" style "panel"
 class "*Tray*" style "panel"
 class "*tray*" style "panel"
 class "*Panel*" style "panel"
 widget "*Xfce*Panel*" style "panel"
 class "*Xfce*Panel*" style "panel"
 
+# syncronize panel menus
+style "applet"
+{
+}
 
+# syncronize panel menus
+widget_class "*MatePanelAppletFrameDBus*"	style "applet"
+widget "*PanelApplet*"				style "applet"
 
 style "notebook"        = "default" {
     fg[ACTIVE]          = "#A6A6A6"
@@ -508,34 +514,21 @@ widget_class "*.GtkTreeView" style "fix-combo"
 
 # caja improvements
 
-style "Smoothly-Black-caja-location"
+style "caja-location"
 {
 	bg[NORMAL]  = mix (0.60, shade (1.05, "#6F6F6F"), "#6F6F6F")
 }
 
-widget "*.caja-extra-view-widget" style : highest "Smoothly-Black-caja-location"
-
-style "caja-sidebar"
-{
-	text[NORMAL] = "#000000"
-	base[NORMAL] = "#DADADA"
-
-	GtkTreeView::odd_row_color = "#DADADA"
-	GtkTreeView::even_row_color = "#DADADA"
-
-   	xthickness = 0
-	ythickness = 0
-}
-
-widget_class	"*Caja*Places*Sidebar*"	style "caja-sidebar"
+widget "*.caja-extra-view-widget" style : highest "caja-location"
 
 style "caja-view"
 {
 	xthickness		= 0
 	ythickness		= 0
-	bg[NORMAL]	= "#E1E1E1"
-	base[NORMAL]	= "#E1E1E1"
+	bg[NORMAL]	= "#DFDFDF"
+	base[NORMAL]	= "#DFDFDF"
 
 }
 
 widget_class	"*Caja*View*"		style "caja-view"
+

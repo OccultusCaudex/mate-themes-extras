@@ -1,23 +1,35 @@
-mate-themes-extras-2
+mate-themes-extras-3
 ====================
 
-GTK2/3 themes optimized for GTK3-3.4.x
+GTK2/3 themes optimized for GTK3-3.6.x
 
 The mate-themes-extras package contains a collection of GTK2/3 desktop themes for MATE. These themes can change the appearance of application widgets, window borders, etc.
 
 Themes:
 
---Adwaita-Cupertino-SL
+--Ambiance-blue
 
---AmbianceBlue
+--Ambiance-lime
 
---Ambiance-Xfce-LXDE-MATE
+--Blue-Submarine
+
+--clearlooks-phenix
 
 --Cologne
 
---drakfire-dream-black
+--Delorean-Dark
 
---GnomishDark
+--Faience
+
+--Faience-Ocre
+
+--Gnome-Cupertino
+
+--Gnome-Cupertino-Mint
+
+--GnomishBeige
+
+--Green-Submarine
 
 --RadianceBlue
 
@@ -27,17 +39,11 @@ Themes:
 
 --Smootly-Black
 
---Sonar
-
---SonarBlue
-
 --Zukitwo
 
---Zukitwo-Dark
+--Zukitwo-Brave
 
 --Zukitwo-Dust
-
---Zukitwo-Brave
 
 --Zukitwo-Human
 
@@ -49,20 +55,26 @@ Themes:
 
 --Zukitwo-Wise
 
---Sonar-Icons
-
 
 Installation:
 
 You have to use autogen.sh with configure flags to enable a theme.
 
-Without a flag nothing will compile!!!!!
+Without a flag nothing will compile!
 
-This example for one theme, use ./configure --help after autogen.sh to find the right configure flags.
+Use configure --help after autogen to find out the right configure flags for a theme.
 
-./autogen.sh \
+--prefix=/usr is needed, otherwise the themes are installed in /usr/local/share/themes ,
 
---enable-Adwaita-Cupertino-SL
+and  mate-appearance-properties doesn't find the themes!
+
+This example installs one theme.
+
+./autogen.sh
+
+./configure --prefix=/usr \
+
+--enable-Gnome-Cupertino
 
 make
 

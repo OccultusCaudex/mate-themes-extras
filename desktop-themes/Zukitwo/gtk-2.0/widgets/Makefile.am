@@ -2,8 +2,7 @@
 themedir = $(datadir)/themes/Zukitwo/gtk-2.0/widgets
 
 theme_DATA = \
-	panel.rc \
-	toolbar.rc
+	panel.rc
 
 EXTRA_DIST = $(theme_DATA)
 

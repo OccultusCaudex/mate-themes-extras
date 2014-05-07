@@ -475,14 +475,20 @@ style "panel" {
 
 }
 widget "*PanelWidget*" style "panel"
-widget "*PanelApplet*" style "panel"
 class "*Tray*" style "panel"
 class "*tray*" style "panel"
 class "*Panel*" style "panel"
 widget "*Xfce*Panel*" style "panel"
 class "*Xfce*Panel*" style "panel"
 
+# syncronize panel menus
+style "applet"
+{
+}
 
+# syncronize panel menus
+widget_class "*MatePanelAppletFrameDBus*"	style "applet"
+widget "*PanelApplet*"						style "applet"
 
 style "notebook"        = "default" {
     fg[ACTIVE]          = "#6F6F6F"
@@ -585,13 +591,17 @@ widget "*.caja-extra-view-widget" style : highest "caja-location"
 
 style "caja-sidebar"
 {
+
 	text[NORMAL] = "#000000"
 	base[NORMAL] = "#E9E9F4"
+	font_name = "Regular"
 
 	GtkTreeView::odd_row_color = "#EDEDED"
 	GtkTreeView::even_row_color = "#EDEDED"
 
-   	xthickness = 0
+      # padding from the left edge
+	GtkTreeView::horizontal_separator = 15
+      	xthickness = 0
 	ythickness = 0
 }
 

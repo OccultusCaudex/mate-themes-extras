@@ -5,6 +5,9 @@ theme_DATA = \
 	chromium.rc \
 	combo_down.png \
 	dummy.png \
+	gedit.rc \
+	nautilus.rc \
+	nautilus-e.rc \
 	pcmanfm.rc \
 	pluma.rc \
 	stock_back.png \
@@ -21,11 +24,13 @@ EXTRA_DIST = $(theme_DATA)
 SUBDIRS =	\
 	Caja	\
 	Handles	\
+	Nautilus \
 	Null	\
 	Others
 
 DIST_SUBDIRS = \
 	Caja		\
 	Handles		\
+	Nautilus	\
 	Null		\
 	Others

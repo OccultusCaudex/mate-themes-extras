@@ -2,8 +2,7 @@
 themedir = $(datadir)/themes/Zukitwo-Dust/gtk-2.0/apps/Others
 
 theme_DATA = \
-	null.png \
-	Thumbs.db
+	null.png
 
 EXTRA_DIST = $(theme_DATA)
 

@@ -186,10 +186,10 @@
 <!-- ::: TITLES ::: -->
 
 <draw_ops name="title">
-  <title color="#252525"
+  <title color="#F0E4D3"
          x="(3 `max` (width-title_width)) / 2"
          y="(height - title_height) / 2 + 1"/>
-  <title color="gtk:fg[SELECTED]"
+  <title color="#F0E4D3"
          x="(3 `max` (width-title_width)) / 2"
          y="(height - title_height) / 2 + 1"/>
 </draw_ops>
@@ -201,10 +201,10 @@
 </draw_ops>
 
 <draw_ops name="title_max">
-  <title color="#252525"
+  <title color="#5875EB"
          x="(3 `max` (width-title_width)) / 2"
          y="(height - title_height) / 2 + 3"/>
-  <title color="gtk:fg[SELECTED]"
+  <title color="#F0E4D3"
          x="(3 `max` (width-title_width)) / 2"
          y="(height - title_height) / 2 + 1"/>
 </draw_ops>

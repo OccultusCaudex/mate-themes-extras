@@ -10,7 +10,7 @@ style "pluma-frame"
 }
 
 style "thin"
-{ 
+{
 	xthickness = 0 
 	ythickness = 0 
 }

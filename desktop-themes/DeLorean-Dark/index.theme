@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=DeLorean-Dark
+Type=X-GNOME-Metatheme
+Comment=Celebrate the darker side within you
+Encoding=UTF-8
+GtkTheme=DeLorean-Dark
+MetacityTheme=DeLorean-Dark
+IconTheme=gnome
+CursorTheme=Adwaita
+CursorSize=24

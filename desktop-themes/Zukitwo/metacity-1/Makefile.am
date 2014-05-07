@@ -2,32 +2,32 @@
 themedir = $(datadir)/themes/Zukitwo/metacity-1
 
 theme_DATA = \
+	close_focused_normal.svg \
+	close_focused_prelight.svg \
+	close_focused_pressed.svg \
+	close_unfocused_prelight.svg \
+	close_unfocused.svg \
+	maximize_focused_normal.svg \
+	maximize_focused_prelight.svg \
+	maximize_focused_pressed.svg \
+	maximize_unfocused_prelight.svg \
+	maximize_unfocused.svg \
+	menu.png \
+	menu_prelight.png \
 	metacity-theme-1.xml \
 	metacity-theme-3.xml \
-	close_focused_normal.png \
-	close_focused_prelight.png \
-	minimize_focused_normal.png \
-	close_focused_pressed.png \
-	minimize_focused_prelight.png \
-	close_unfocused.png \
-	minimize_focused_pressed.png \
-	close_unfocused_prelight.png \
-	minimize_unfocused.png \
-	minimize_unfocused_prelight.png \
-	maximize_focused_normal.png \
+	minimize_focused_normal.svg \
+	minimize_focused_prelight.svg \
+	minimize_focused_pressed.svg \
+	minimize_unfocused_prelight.svg \
+	minimize_unfocused.svg \
 	trough_left.png \
-	maximize_focused_prelight.png \
 	trough_middle.png \
-	maximize_focused_pressed.png \
 	trough_right.png \
-	maximize_unfocused.png \
-	unmaximize_focused_normal.png \
-	maximize_unfocused_prelight.png \
-	unmaximize_focused_prelight.png \
-	menu.png \
-	unmaximize_focused_pressed.png \
-	menu_prelight.png \
-	unmaximize_unfocused.png \
-	unmaximize_unfocused_prelight.png
+	unmaximize_focused_normal.svg \
+	unmaximize_focused_prelight.svg \
+	unmaximize_focused_pressed.svg \
+	unmaximize_unfocused_prelight.svg \
+	unmaximize_unfocused.svg
 
 EXTRA_DIST = $(theme_DATA)

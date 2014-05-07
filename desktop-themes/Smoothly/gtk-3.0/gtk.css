@@ -1,6 +1,11 @@
 /**************
 * Base colors *
 ***************/
+@define-color r #FF0000;
+@define-color g #00FF00;
+@define-color y #FAFF00;
+
+
 @define-color base_color #ffffff; 
 @define-color text_color #000000; 
 @define-color nautilus_desktop_text_color #ffffff; 
@@ -37,6 +42,7 @@
 @define-color warning_color #f57900;
 @define-color error_color #cc0000;
 @define-color question_color #62B5FF;
+@define-color success_color #4e9a06;
 
 @define-color info_bg_color #AD8F43;
 @define-color warning_bg_color #E06629;

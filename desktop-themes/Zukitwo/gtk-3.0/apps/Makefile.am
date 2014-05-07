@@ -2,10 +2,9 @@
 themedir = $(datadir)/themes/Zukitwo/gtk-3.0/apps
 
 theme_DATA = \
-	epiphany.css \
 	gedit.css \
-	gnome-terminal.css \
 	gnome-panel.css \
+	gnome-terminal.css \
 	nautilus.css \
 	nemo.css \
 	popover.css \

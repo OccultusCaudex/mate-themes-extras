@@ -1,0 +1,16 @@
+[X-GNOME-Metatheme]
+Name=GnomishBeige
+Type=X-GNOME-Metatheme
+Comment=A clean beige theme
+Encoding=UTF-8
+GtkTheme=GnomishBeige
+MetacityTheme=GnomishBeige
+IconTheme=gnome
+CursorTheme=Adwaita
+CursorSize=24
+
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=GnomishBeige
+Comment=A clean beige theme
+Encoding=UTF-8

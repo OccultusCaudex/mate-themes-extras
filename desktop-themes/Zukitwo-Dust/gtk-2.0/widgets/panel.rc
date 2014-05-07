@@ -5,11 +5,13 @@ style "theme-panel"
 
 	#bg_pixmap[NORMAL] = "/Panel/panel-bg.png" # Disable for normal panel backgrounds.
 
+	bg[NORMAL]	= "#27241f"
+	bg[PRELIGHT]	= "#4D473D"
 	fg[NORMAL]	= "#f5f5f5"
 	fg[PRELIGHT]	= "#ffffff"
 	fg[ACTIVE]	= "#f5f5f5"
 	text[NORMAL]	= "#f5f5f5"
-	text[PRELIGHT]	= "#ffffff"
+	text[PRELIGHT]	= "#f5f5f5"
 	text[ACTIVE]	= "#f5f5f5"
 	
 	engine "pixmap" {
@@ -18,30 +20,30 @@ style "theme-panel"
 			recolorable	= TRUE
 			state		= NORMAL
 		}
-		image {
-			function	= BOX
-			recolorable	= TRUE
-			state		= PRELIGHT
-			file		= "Panel/panel-button-hover.png"
-			border		= { 4, 4, 1, 1 }
-			stretch		= TRUE
-		}
-		image {
-			function	= BOX
-			recolorable	= TRUE
-			state		= ACTIVE
-			file		= "Panel/panel-button-active.png"
-			border		= { 4, 4, 1, 1 }
-			stretch		= TRUE
-		}
-		image {
-			function	= BOX
-			recolorable	= TRUE
-			state		= SELECTED
-			file		= "Panel/panel-button-active.png"
-			border		= { 4, 4, 1, 1 }
-			stretch		= TRUE
-		}
+#		image {
+#			function	= BOX
+#			recolorable	= TRUE
+#			state		= PRELIGHT
+#			file		= "Panel/panel-button-hover.png"
+#			border		= { 4, 4, 1, 1 }
+#			stretch		= TRUE
+#		}
+#		image {
+#			function	= BOX
+#			recolorable	= TRUE
+#			state		= ACTIVE
+#			file		= "Panel/panel-button-active.png"
+#			border		= { 4, 4, 1, 1 }
+#			stretch		= TRUE
+#		}
+#		image {
+#			function	= BOX
+#			recolorable	= TRUE
+#			state		= SELECTED
+#			file		= "Panel/panel-button-active.png"
+#			border		= { 4, 4, 1, 1 }
+#			stretch		= TRUE
+#		}
 		image {
 			function	= BOX
 			recolorable	= TRUE
@@ -96,8 +98,22 @@ style "theme-panel-handle"
 	}
 }
 
+# syncronize panel menus
+style "applet"
+{
+	bg[NORMAL]	= "#27241f"
+	bg[PRELIGHT]	= "#826A52"
+	bg[SELECTED]	= "#B49372"
+	bg[ACTIVE]	= "#4D473D"
+	fg[NORMAL]	= "#f5f5f5"
+	fg[PRELIGHT]	= "#f5f5f5"
+	fg[ACTIVE]	= "#f5f5f5"
+	text[NORMAL]	= "#f5f5f5"
+	text[PRELIGHT]	= "#f5f5f5"
+	text[ACTIVE]	= "#f5f5f5"
+}
+
 widget "*PanelWidget*"			style "theme-panel"
-widget "*PanelApplet*"			style "theme-panel"
 widget "*fast-user-switch*"		style "theme-panel"
 widget "*CPUFreq*Applet*"		style "theme-panel"
 widget "*indicator-applet*"		style "theme-panel"
@@ -129,7 +145,10 @@ widget_class "*GtkBgbox*"	style "theme-panel"
 widget_class "*Panel*MenuBar*"		style "theme-main-menu-text"
 widget_class "*Panel*<GtkMenuBar>*"	style "theme-main-menu-text"
 widget "*.clock-applet-button.*"	style "theme-panel-text"
-widget "*PanelApplet*"			style "theme-panel-text"
+
+# syncronize panel menus
+widget_class "*MatePanelAppletFrameDBus*"	style "applet"
+widget "*PanelApplet*"						style "applet"
 
 # Hide ugly handle
 class "PanelAppletFrame" style:highest "theme-panel-handle"

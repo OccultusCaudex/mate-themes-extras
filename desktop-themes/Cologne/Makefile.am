@@ -18,7 +18,3 @@ DIST_SUBDIRS =		\
 
 CLEANFILES = index.theme
 
-index.theme: index.theme.in
-	$(AM_V_GEN)sed \
-		-e s!\@BACKGROUND_DIR\@!$(datadir)/pixmaps/backgrounds/mate/desktop! \
-		< $< > $@

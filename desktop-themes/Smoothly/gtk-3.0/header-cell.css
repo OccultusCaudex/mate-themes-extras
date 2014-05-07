@@ -1,7 +1,6 @@
 /***************
  * Header/Cell *
 ****************/
-
 GtkViewport,
 GtkIconView {
 }
@@ -10,20 +9,14 @@ GtkIconView {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@gradient_color_a, 0.92)),
                                      to (shade (@gradient_color_b, 0.92)));
-
-    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-                                           from (shade (@border_gradient_color_a, 0.92)),
-                                           to (shade (@border_gradient_color_b, 0.72)));
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-                                                 from (shade (@inner_gradient_color_a, 1.07)),
-                                                 to (shade (@inner_gradient_color_b, 0.92)));
-    -unico-inner-stroke-width: 1;
+    border-color: shade (@border_gradient_color_a, 0.92);
+    box-shadow: inset 1px 1px shade (@inner_gradient_color_a, 1.07),
+                inset -1px -1px shade (@inner_gradient_color_b, 0.92);
     border-style: solid;
     border-width: 1px;
     border-radius: 3px;
     color: shade (@glow_color, 0.80);
-    icon-shadow: 1 1 alpha (shade (@text_shadow_color, 1.25), 0.4);
+    icon-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
 }
 
 .view.cell:prelight,
@@ -31,61 +24,59 @@ GtkIconView {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@gradient_color_a, 0.92)),
                                      to (shade (@gradient_color_b, 0.92)));
-
-    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-                                           from (shade (@border_gradient_color_a, 0.92)),
-                                           to (shade (@border_gradient_color_b, 0.72)));
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-                                                 from (shade (@inner_gradient_color_a, 1.07)),
-                                                 to (shade (@inner_gradient_color_b, 0.92)));
-    -unico-inner-stroke-width: 1;
+    border-color: shade (@border_gradient_color_a, 0.92);
+    box-shadow: inset 1px 1px shade (@inner_gradient_color_a, 1.07),
+                inset -1px -1px shade (@inner_gradient_color_b, 0.92);
     border-style: solid;
     border-width: 1px;
     border-radius: 3px;
     color: shade (@glow_color, 0.80);
-    icon-shadow: 1 1 alpha (shade (@text_shadow_color, 1.25), 0.4);
+    icon-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
 }
 
-.view.cell:selected:prelight, .view.cell:prelight {
+.view.cell:prelight,
+.view.cell:selected:prelight {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (@gradient_color_a),
                                      to (@gradient_color_b));
-
-    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-                                           from (@border_gradient_color_a),
-                                           to (shade (@border_gradient_color_b, 0.80)));
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-                                                 from (shade (@inner_gradient_color_a, 1.15)),
-                                                 to (shade (@inner_gradient_color_b, 1.00)));
-    -unico-inner-stroke-width: 1;
+    border-color: @border_gradient_color_a;
+    box-shadow: inset 1px 1px shade (@inner_gradient_color_a, 1.15),
+                inset -1px -1px shade (@inner_gradient_color_b, 1.00);
     border-style: solid;
     border-width: 1px;
     border-radius: 3px;
     color: @text_color;
-    text-shadow: 1 1 alpha (shade (@text_shadow_color, 1.25), 0.4);
+    text-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
 }
 
 GtkIconView.view.cell:hover {
     color: alpha (shade (@text_color, 1.00), 1.0);
-    text-shadow: 1 0 alpha (shade (@text_color, 1.25), 1.0);
-    icon-shadow: 3 3 alpha (shade (@text_color, 1.25), 0.4);
+    text-shadow: 1px 0px alpha (shade (@text_color, 1.25), 1.0);
+    icon-shadow: 3px 3px alpha (shade (@text_color, 1.25), 0.4);
 }
 
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focused {
-    text-shadow: 0 0 alpha (shade (@base_color, 1.25), 0.4);
+    text-shadow: 0px 0px alpha (shade (@base_color, 1.25), 0.4);
 }
 
-.view, CcShellCategoryView {
+.view,
+CcShellCategoryView {
     background-color: alpha (shade (@sidebar_bg_color, 0.98), 0.9);
     color: @sidebar_text_color;
-    text-shadow: 1 1 alpha (shade (@sidebar_text_shadow_color, 1.25), 0.4);
+    text-shadow: 1px 1px alpha (shade (@sidebar_text_shadow_color, 1.25), 0.4);
     border-style: solid;
     border-color: shade (@border_gradient_color_b, 1.40);
     border-width: 1px 1px 1px 1px;
     border-radius: 3px;
+}
+
+.view:selected {
+    background-color: shade (@gradient_color_b, 1.20);
+}
+
+.view:selected:focused {
+    background-color: shade (@gradient_color_b, 1.00);
 }
 
 GtkTreeView {
@@ -102,57 +93,37 @@ column-header {
 }
 
 column-header .button {
-    -unico-outer-stroke-style: none;
     border-radius: 3px;
     border-width: 1px;
     -GtkButton-inner-border: 2;
-    padding: 3.5px 4px 1.5px 2px;
+    /*padding: 3.5px 4px 1.5px 2px;*/
+    padding: 3.5px 2px 1.5px 2px;
 }
 
 column-header .button:hover {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (@gradient_color_a),
-                                     color-stop (0.03, @gradient_color_a),
-                                     to (@gradient_color_b));
-
-    -unico-outer-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-                                                 from (alpha (@text_color, 0.00)),
-                                                 to (alpha (@text_color, 0.00)));
-
-    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-                                           from (shade (@border_gradient_color_a, 0.90)),
-                                           to (shade (@border_gradient_color_b, 0.70)));
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-                                                 from (shade (@inner_gradient_color_a, 1.05)),
-                                                 to (shade (@inner_gradient_color_b, 0.90)));
-    -unico-glow-color: shade (@glow_color, 0.85);
-    -unico-glow-radius: 5;
     border-radius: 3px;
     border-width: 1px;
-    border-color: @border_gradient_color_b;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@gradient_color_a, 1.20)),
+                                     to (shade (@gradient_color_b, 1.10)));
+    border-color: alpha (@text_color, 0.00);
+    box-shadow: inset 2px 2px shade (@inner_gradient_color_a, 1.30),
+                inset -2px -2px shade (@inner_gradient_color_b, 1.10),
+                inset 1px 1px shade (@border_gradient_color_a, 1.10),
+                inset -1px -1px shade (@border_gradient_color_b, 0.90);
 }
 
 column-header .button:active {
+    border-radius: 3px;
+    border-width: 1px;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (@gradient_activ_color_a),
                                      to (@gradient_activ_color_b));
-
-    -unico-outer-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-                                                 from (alpha (@text_color, 0.00)),
-                                                 to (alpha (@text_color, 0.00)));
-
-    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-                                           from (shade (@border_gradient_color_a, 0.90)),
-                                           to (shade (@border_gradient_color_a, 0.75)));
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-                                                 from (shade (@border_gradient_color_a, 0.60)),
-                                                 to (shade (@border_gradient_color_a, 1.10)));
-    -unico-glow-radius: 0;
-    border-radius: 3px;
-    border-width: 1px;
-    border-color: @border_gradient_color_b;
+    border-color: alpha (@text_color, 0.00);
+    box-shadow: inset 2px 2px shade (@border_gradient_color_a, 0.60),
+                inset -2px -2px shade (@border_gradient_color_a, 1.10),
+                inset 1px 1px shade (@border_gradient_color_a, 0.90),
+                inset -1px -1px shade (@border_gradient_color_a, 0.75);
 }
 
 row:hover {
@@ -174,10 +145,13 @@ row:selected {
 }
 
 .expander {
+    border-radius: 1px;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (@gradient_color_a),
                                      to (@gradient_color_b));
     border-color:@border_gradient_color_b;
+    box-shadow: inset 1px 1px shade (@inner_gradient_color_a, 1.15),
+                inset -1px -1px shade (@inner_gradient_color_b, 1.00);
 }
 
 .expander:active {

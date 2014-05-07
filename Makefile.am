@@ -1,7 +1,5 @@
 SUBDIRS = \
-	desktop-themes \
-	icon-themes
+	desktop-themes
 
 DIST_SUBDIRS = \
-	desktop-themes \
-	icon-themes
+	desktop-themes
