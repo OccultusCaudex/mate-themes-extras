@@ -55,7 +55,7 @@ style "default" {
 
     base[ACTIVE]        = "#3B3B3B" 
     base[SELECTED]      = "#808080" 
-    base[NORMAL]        = "#D1D1D1" 
+    base[NORMAL]        = "#FFFFFF" 
     base[PRELIGHT]      = "#808080" 
     base[INSENSITIVE]   = "#5E5E5E" 
 
@@ -370,7 +370,7 @@ style "panel" {
     fg[ACTIVE]          = "#BFBFBF"
 
     bg_pixmap[ACTIVE] = "assets/gtk-2.0-panel-background.png"
-#    bg_pixmap[NORMAL] = "assets/gtk-2.0-panel-background.png"
+    bg_pixmap[NORMAL] = "assets/gtk-2.0-panel-background.png"
     bg_pixmap[SELECTED] = "assets/gtk-2.0-panel-background.png"
     bg_pixmap[PRELIGHT] = "assets/gtk-2.0-panel-background.png"
     bg_pixmap[INSENSITIVE] = "assets/gtk-2.0-panel-background.png"

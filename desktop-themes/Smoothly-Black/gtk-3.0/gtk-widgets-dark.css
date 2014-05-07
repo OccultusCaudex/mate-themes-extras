@@ -53,6 +53,9 @@
     -GtkWidget-visited-link-color: @link_color-b;
     -WnckTasklist-fade-overlay-rect: 0;
 
+    -GtkWindow-resize-grip-width: 13;
+    -GtkWindow-resize-grip-height: 13
+
     background-origin: border-box;
     background-clip: padding-box;
     border-width: 0;
@@ -133,7 +136,8 @@ GtkWindow {
 }
 
 .grip {
-    background-color: @border_gradient_color_b-b;
+	background-color: @transparent-b;
+    /*background-color: @bg_color-b;*/
 }
 
 .separator,
@@ -556,3 +560,4 @@ GtkLevelBar.vertical {
 @import url("toolbar-dark.css");
 @import url("check-radio-dark.css");
 @import url("gnome-applications-dark.css");
+

@@ -84,13 +84,14 @@
     -GtkRange-trough-border: 0;
 }
 
+.scrollbars-junction,
 .scrollbar.button {
     border-style: none;
     background-image: none;
     border-image: none;
     border-width: 0px;
-    border-radius: 3px;
-    background-color: @transparent-b;
+    border-radius: 0px;
+    background-color: @bg_color-b;
     color: shade (@text_color-b, 0.85);
     box-shadow: none;
 }

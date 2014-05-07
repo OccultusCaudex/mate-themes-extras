@@ -5,6 +5,9 @@ GtkViewport,
 GtkIconView {
 }
 
+.list-row {
+    border-width: 1px;
+}
 .view.cell:selected {
     border-style: solid;
     border-width: 1px;
@@ -20,6 +23,7 @@ GtkIconView {
                 inset -1px -1px shade (@inner_gradient_color_a-b, 0.70);
 }
 
+.list-row:selected,
 EggListBox:selected,
 .view.cell:prelight,
 .view.cell:selected:focused {
@@ -35,6 +39,7 @@ EggListBox:selected,
                 inset -1px -1px shade (@inner_gradient_color_a-b, 0.70);
 }
 
+.list-row:hover,
 EggListBox:hover,
 .view.cell:selected:prelight, 
 .view.cell:prelight {
