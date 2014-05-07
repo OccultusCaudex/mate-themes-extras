@@ -6,6 +6,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Zukitwo
 MetacityTheme=Zukitwo
-IconTheme=elementary
+IconTheme=gnome-colors-brave
 CursorTheme=mate
 

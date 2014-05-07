@@ -1,32 +1,6 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Sat Dez 07 2013
 
-release version to 1.7.5
+release version to 1.7.11
 gtk2, syncronize panel-applets menus
 several theme improvements, see git commits
-
-Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
-Date:   Thu Aug 16 02:11:11 2013 +0100
-
-release 1.7.2
-
-	- uddate GnomishBeige to GTK3-3.8
-	- faience fixes
-
-Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
-Date:   Thu Jul 27 02:11:11 2013 +0100
-
-release 1.7.1
-
-	- fix blue-submarine colors cinnamon
-	- update Delorean-Dark to GTK3-3.8
-	- update smoothly-black to GTK3-3.8
-	- update smoothly to GTK3-3.8
-	- several fixes
-
-Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
-Date:   Thu Jun 27 02:11:11 2013 +0100
-
-start package building
-
-release 1.7.0

@@ -65,7 +65,7 @@
 		shade (@button_active_gradient_color_a, 1.05),
 		shade (@button_active_gradient_color_b, 1.05));
 	background-color: transparent;
-}	
+}
 
 /* Prelit button background */
 .button:hover,
@@ -140,10 +140,9 @@ GtkComboBox.combobox-entry .button:active,
 column-header.button,
 column-header .button {
 	background-image: linear-gradient(to bottom,
-		shade(@entry_background_a, 0.94),
+		shade(@entry_background_a, 0.96),
 		@entry_background_b);
-	box-shadow: inset 0 1px @entry_inset, 
-		inset 0 2px alpha(@entry_inset, 0.4);
+	box-shadow: inset 0 2px 0 0 alpha(@borders, 0.3);
 }
 
 column-header.button:hover,
@@ -151,20 +150,25 @@ column-header .button:hover {
 	background-image: linear-gradient(to bottom,
 		shade(@entry_background_a, 1.0),
 		@entry_background_b);
-	box-shadow: inset 0 1px @entry_inset, 
-		inset 0 2px alpha(@entry_inset, 0.4);
+	box-shadow: inset 0 2px 0 0 alpha(@theme_selected_bg_color, 0.3);
 }
 
+column-header.button:hover:backdrop,
+column-header .button:hover:backdrop {
+	box-shadow: inset 0 2px 0 0 alpha(@theme_fg_color, 0.18);
+}
+column-header.button:focus,
+column-header .button:focus,
 column-header.button:active,
 column-header .button:active,
 column-header.button:active:hover,
 column-header .button:active:hover {
 	background-image: linear-gradient(to bottom,
-		shade(@entry_background_a, 0.9),
+		shade(@entry_background_a, 0.92),
 		@entry_background_b);
 	background-color: transparent;
-	box-shadow: inset 0 1px @entry_inset, 
-		inset 0 2px alpha(@entry_inset, 0.4);
+	box-shadow: inset 0 2px 0 0 alpha(@theme_selected_bg_color, 0.5);
+	border-image: none;
 }
 
 /* Insensitive entry background */
@@ -195,7 +199,20 @@ GtkComboBox.combobox-entry .button:insensitive,
 	background-color: transparent;
 }
 
+.scale.trough {
+	background-image: linear-gradient(to bottom,
+		@scale_trough_bg_a,
+		@scale_trough_bg_b);
+}
+
+.scale.trough.vertical {
+	background-image: linear-gradient(to right,
+		@scale_trough_bg_a,
+		@scale_trough_bg_b);
+}
+
 /* Active switch background*/
+GtkSwitch.trough:active,
 .scale.progressbar {
 	background-image: linear-gradient(to bottom,
 		@switch_trough_active_bg_a,

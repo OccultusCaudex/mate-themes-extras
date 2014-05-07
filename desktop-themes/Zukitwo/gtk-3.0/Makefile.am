@@ -4,6 +4,7 @@ themedir = $(datadir)/themes/Zukitwo/gtk-3.0
 theme_DATA = \
 	gnome-applications.css \
 	gtk.css \
+	gtk-fallback.css \
 	gtk-main-common.css \
 	gtk-main.css \
 	gtk-widgets-assets.css \

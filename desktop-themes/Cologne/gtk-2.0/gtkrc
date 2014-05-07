@@ -161,6 +161,7 @@ style "panel"
 {
 bg[NORMAL] = "#FFD763"
 bg[PRELIGHT] ="#FFCB63"
+bg[ACTIVE] = "#010101"
 fg[NORMAL] = "#212C58"
 fg[PRELIGHT] ="#0E1978"
 fg[ACTIVE] = "#76CEF1"
@@ -178,7 +179,6 @@ bg[INSENSITIVE]   = "#ECB850"
 fg[PRELIGHT]      = "#1f1f1f"
 fg[NORMAL]        = "#212C58"
 fg[ACTIVE]        = "#0E1978"
-fg[INSENSITIVE]   = "#BFBCB2"
 }
 
 widget "*PanelWidget*"			style "panel"

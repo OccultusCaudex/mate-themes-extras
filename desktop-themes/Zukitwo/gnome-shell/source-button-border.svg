@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="17"
+   width="21"
    height="10"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
-   sodipodi:docname="panel-button-border.svg">
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="source-button-border.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,15 +25,15 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="44.8"
-     inkscape:cx="8.6594891"
+     inkscape:cx="8.704132"
      inkscape:cy="5.7029946"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1440"
-     inkscape:window-height="843"
+     inkscape:window-width="1600"
+     inkscape:window-height="1145"
      inkscape:window-x="0"
      inkscape:window-y="26"
      inkscape:window-maximized="1"
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -66,9 +66,9 @@
     <rect
        style="opacity:0.8;fill:#ffffff;fill-opacity:1;stroke-width:0.43599999;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect3796"
-       width="7"
+       width="19"
        height="2"
-       x="5"
+       x="1"
        y="8" />
   </g>
 </svg>

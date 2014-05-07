@@ -1,6 +1,6 @@
 AC_PREREQ(2.53)
 
-AC_INIT([mate-themes-extras-4], [1.7.5], [http://www.raveit.de])
+AC_INIT([mate-themes-extras-5], [1.7.11], [http://www.raveit.de])
 
 AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz tar-ustar])
 
@@ -396,6 +396,7 @@ desktop-themes/Zukitwo/gtk-2.0/widgets/Makefile
 desktop-themes/Zukitwo/gtk-2.0/widgets/Null/Makefile
 desktop-themes/Zukitwo/gtk-2.0/widgets/Others/Makefile
 desktop-themes/Zukitwo/gtk-2.0/widgets/Panel/Makefile
+desktop-themes/Zukitwo/gtk-2.0/widgets/Scale/Makefile
 desktop-themes/Zukitwo/gtk-3.0/Makefile
 desktop-themes/Zukitwo/gtk-3.0/assets/Makefile
 desktop-themes/Zukitwo/gtk-3.0/borders/Makefile
