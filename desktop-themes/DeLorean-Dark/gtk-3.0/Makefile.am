@@ -8,6 +8,7 @@ theme_DATA = \
 	gtk.css \
 	gtk-dark.css \
 	gtk-fallback.css \
+	gtk-infobar.css \
 	gtk-main-common.css \
 	gtk-main.css \
 	gtk-main-dark.css \

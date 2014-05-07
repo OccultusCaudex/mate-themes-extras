@@ -8,8 +8,17 @@
 
 style "panel"  = "gtk_color"
 {
+	WnckTasklist	:: fade-overlay-rect		= 1
+	WnckTasklist	:: fade-opacity			= 1.0
+	WnckTasklist	:: fade-loop-time		= 6.0
+
+	GtkArrow	:: arrow-scaling		= 0.4
+	
+	xthickness = 0
+	ythickness = 0
+
 	bg_pixmap[NORMAL] 			= "images/other/delorean-dark-light40-bg.png"
-  engine "pixmap"
+	engine "pixmap"
   {
   }
 }
