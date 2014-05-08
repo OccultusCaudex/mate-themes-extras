@@ -7,7 +7,6 @@ theme_DATA = \
 	gnome-terminal.css \
 	nautilus.css \
 	nemo.css \
-	popover.css \
-	unity.css
+	popover.css
 
 EXTRA_DIST = $(theme_DATA)

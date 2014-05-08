@@ -222,7 +222,6 @@ desktop-themes/Blue-Submarine/gtk-3.0/Makefile
 desktop-themes/Blue-Submarine/gtk-3.0/apps/Makefile
 desktop-themes/Blue-Submarine/gtk-3.0/assets/Makefile
 desktop-themes/Blue-Submarine/metacity-1/Makefile
-desktop-themes/Blue-Submarine/unity/Makefile
 desktop-themes/clearlooks-phenix/Makefile
 desktop-themes/clearlooks-phenix/doc/Makefile
 desktop-themes/clearlooks-phenix/gtk-2.0/Makefile
@@ -356,7 +355,6 @@ desktop-themes/Green-Submarine/gtk-3.0/Makefile
 desktop-themes/Green-Submarine/gtk-3.0/apps/Makefile
 desktop-themes/Green-Submarine/gtk-3.0/assets/Makefile
 desktop-themes/Green-Submarine/metacity-1/Makefile
-desktop-themes/Green-Submarine/unity/Makefile
 desktop-themes/Smoothly/Makefile
 desktop-themes/Smoothly/gtk-2.0/Makefile
 desktop-themes/Smoothly/gtk-2.0/assets/Makefile
