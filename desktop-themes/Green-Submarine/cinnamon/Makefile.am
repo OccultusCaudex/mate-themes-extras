@@ -1,4 +1,4 @@
-themedir = $(datadir)/themes/Blue-Submarine/cinnamon
+themedir = $(datadir)/themes/Green-Submarine/cinnamon
 
 theme_DATA = \
 	add-workspace.png \
