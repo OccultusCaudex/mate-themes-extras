@@ -102,6 +102,11 @@
     padding: 2.5px 3px 2.5px 3px;
 }
 
+.menuitem.check,
+.menuitem.radio {
+    border-width: 0px;
+}
+
 .separator {
     border-width: 1px;
     border-style: solid;

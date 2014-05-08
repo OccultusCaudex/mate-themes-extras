@@ -19,10 +19,15 @@
 .cell.radio,
 .menuitem.radio,
 * .radio {
-    background-image: -gtk-gradient (linear, left top, left bottom,
+/*    background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@gradient_color_a, 0.90)),
                                      to (@gradient_color_b));
     box-shadow: inset 1.0px 0.2px shade (@border_gradient_color_b, 0.85),
+                inset -1.0px -0.2px shade (@border_gradient_color_b, 0.85);*/
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@gradient_color_a, 1.85)),
+                                     to (shade (@gradient_color_a, 0.55)));
+    box-shadow: inset 1.0px.0.2px shade (@border_gradient_color_b, 0.85),
                 inset -1.0px -0.2px shade (@border_gradient_color_b, 0.85);
     border-radius: 8px;
 }
@@ -65,8 +70,8 @@
 * .radio:active {
 /*    background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@glow_color, 0.70)),
-                                     color-stop (0.00, shade (@glow_color, 1.70)),
-                                     color-stop (0.50, @glow_color),
+                                     color-stop (1.00, shade (@glow_color, 1.60)),
+                                     color-stop (1.50, @glow_color),
                                      to (shade (@glow_color, 1.50)));*/
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@glow_color, 0.70)),
@@ -119,20 +124,18 @@
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@gradient_color_a, 0.95)),
                                      to (shade (@gradient_color_b, 1.10)));
-    box-shadow: inset 1px 0.2px shade (@border_gradient_color_b, 0.85),
-                inset -1px -0.2px shade (@border_gradient_color_b, 0.85);
+    box-shadow: inset 1px 0.2px shade (@border_gradient_color_b, 1.25),
+                inset -1px -0.2px shade (@border_gradient_color_b, 1.25);
 }
 
 .cell.check:active:insensitive,
 .menuitem.check:active:insensitive,
 * .check:active:insensitive {
    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@gradient_activ_color_b, 1.20)),
-                                     to (@gradient_activ_color_a));
-    box-shadow: inset 2px 2px shade (@inner_gradient_color_a, 1.05),
-                inset -2px -2px shade (@inner_gradient_color_b, 1.15),
-                inset 1px 1px shade (@border_gradient_color_a, 1.05),
-                inset -1px -1px shade (@border_gradient_color_b, 1.20);
+                                     from (shade (@gradient_activ_color_b, 1.10)),
+                                     to (shade (@gradient_activ_color_a, 0.95)));
+    box-shadow: inset 1px 0.2px shade (@border_gradient_color_b, 1.25),
+                inset -1px -0.2px shade (@border_gradient_color_b, 1.25);
 }
 
 .cell.radio:active:insensitive,
@@ -185,6 +188,7 @@ GtkRadioButton:hover {
                                      to (shade (@gradient_color_a, 0.55)));
 }
 
+.linked GtkRadioButton:hover,
 .toolbar GtkRadioButton:hover {
-    border-radius: 4px 7px 4px 7px;
+	border-radius: 4px 6px 4px 6px;
 }

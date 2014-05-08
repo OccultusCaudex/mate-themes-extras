@@ -1,6 +1,11 @@
 /************
  * Toolbars *
  ***********/
+.window-frame {
+	background-color: @bg_color;
+}
+
+.titlebar,
 .toolbar {
     border-width: 0;
     border-style: none;

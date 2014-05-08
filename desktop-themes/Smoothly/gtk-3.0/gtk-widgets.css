@@ -13,7 +13,7 @@
     -GtkCheckButton-indicator-size: 16;
     -GtkCheckMenuItem-indicator-size: 14;
     -GtkEntry-inner-border: 2px;
-    -GtkEntry-progress-border: 0; 
+    -GtkEntry-progress-border: 0;
     -GtkExpander-expander-size: 12;   
     -GtkHTML-link-color: @link_color;
     -GtkIMHtml-hyperlink-color: @link_color;
@@ -52,6 +52,9 @@
     -GtkWidget-link-color: @link_color;
     -GtkWidget-visited-link-color: @link_color;
     -WnckTasklist-fade-overlay-rect: 0;
+
+    -GtkWindow-resize-grip-width: 13;
+    -GtkWindow-resize-grip-height: 13;
     
     background-origin: border-box;
     background-clip: padding-box;
@@ -128,7 +131,8 @@ GtkWindow {
 }
 
 .grip {
-    background-color: @border_gradient_color_b;
+	background-color: @transparent;
+    /*background-color: @bg_color;*/
 }
 
 .separator,

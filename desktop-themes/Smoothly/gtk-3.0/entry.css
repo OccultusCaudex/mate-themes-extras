@@ -17,7 +17,8 @@
     border-style: solid;
     border-width: 1px;
     border-radius: 6px 6px 6px 6px;
-    padding: 5px;
+    padding:  5px;
+	background-color: shade (@base_color, 1.00);/*evolution*/
 }
 
 .entry:focused {
@@ -43,6 +44,7 @@
     background-image: -gtk-gradient (linear, left top, left bottom,
 			                         from (alpha (@base_color, 0.20)),
 			                         to (alpha (@base_color, 0.00)));
+	background-color: alpha (@base_color, 0.20);/*evolution*/
 }
 
 .primary-toolbar .entry.progressbar,
@@ -58,4 +60,44 @@
     color: @text_color;
     border-width: 1px;
     border-radius: 1px;
+}
+
+/* Leftmost button */
+.linked .entry:first-child {
+    border-right-width: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Middle button */
+.linked .entry:only-child {
+    border-right-width: 0;
+    border-left-width: 0;
+    border-radius: 0;
+}
+
+/* Rightmost button */
+.linked .entry:last-child {
+    border-left-width: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+/* Top button (vertical) */
+.linked.vertical .entry:first-child {
+    border-bottom-width: 0;
+    border-radius: 6px 6px 0 0;
+}
+
+/* Middle button (vertical) */
+.linked.vertical .entry {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-radius: 0;
+}
+
+/* Bottom button (vertical) */
+.linked.vertical .entry:last-child {
+    border-top-width: 0;
+    border-radius: 0 0 6px 6px;
 }

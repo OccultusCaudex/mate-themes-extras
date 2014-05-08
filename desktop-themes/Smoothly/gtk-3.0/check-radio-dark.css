@@ -177,6 +177,7 @@ GtkRadioButton:hover {
                                      to (shade (@gradient_color_b-b, 1.00)));
 }
 
+.linked GtkRadioButton:hover,
 .toolbar GtkRadioButton:hover {
-    border-radius: 4px 7px 4px 7px;
+    border-radius: 4px 6px 4px 6px;
 }

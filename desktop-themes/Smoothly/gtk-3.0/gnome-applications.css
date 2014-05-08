@@ -8,6 +8,14 @@ CheeseThumbView /* Cheese */
     -EogScrollView-shadow-type: none;
 }
 
+/* gnome-tweak-tool */
+.tweak-group .list-row:hover,
+.tweak-white.list-row:hover {
+    background-image: none;
+	border-width: 0px;
+	box-shadow: none;
+}
+
 /* gnome-terminal */
 TerminalScreen {
     background-color: @text_color;
@@ -34,11 +42,16 @@ EShellWindow *.entry {
     background-color: shade (@base_color, 1.00);
 }
 
+.toolbar {
+    background-color: shade (@bg_color, 1.00);
+}
+
 EShellWindow *:active {
     color: shade (@text_color, 1.00);
     background-color: shade (@bg_color, 0.80);
 }
 
+.entry:selected,
 EShellWindow *:selected {
     color: shade (@text_color, 1.00);
     background-color: shade (@bg_color, 0.80);
@@ -92,6 +105,10 @@ EShellWindow *.button*:insensitive {
     box-shadow: inset 2px 2px shade (@gbase_color-b, 1.25);
 }
 
+NemoTrashBar.info,
+NemoXContentBar.info,
+NemoSearchBar.info,
+NemoQueryEditor.info,
 NautilusTrashBar.info,
 NautilusXContentBar.info,
 NautilusSearchBar.info,

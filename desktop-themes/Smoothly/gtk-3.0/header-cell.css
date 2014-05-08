@@ -5,6 +5,10 @@ GtkViewport,
 GtkIconView {
 }
 
+.list-row {
+	border-width: 1px;
+}
+
 .view.cell:selected {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@gradient_color_a, 0.92)),
@@ -19,6 +23,7 @@ GtkIconView {
     icon-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
 }
 
+.list-row:selected,
 EggListBox:selected,
 .view.cell:prelight,
 .view.cell:selected:focused {
@@ -35,6 +40,7 @@ EggListBox:selected,
     icon-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
 }
 
+.list-row:hover,
 EggListBox:hover,
 .view.cell:prelight,
 .view.cell:selected:prelight {
@@ -50,7 +56,6 @@ EggListBox:hover,
     color: @text_color;
     text-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
 }
-
 
 GtkIconView.view.cell:hover {
     color: alpha (shade (@text_color, 1.00), 1.0);

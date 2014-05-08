@@ -8,6 +8,14 @@ CheeseThumbView /* Cheese */
     -EogScrollView-shadow-type: none;
 }
 
+/* gnome-tweak-tool */
+.tweak-group .list-row:hover,
+.tweak-white.list-row:hover {
+    background-image: none;
+    border-width: 0px;
+    box-shadow: none;
+}
+
 /* gedit line numbers */
 GeditView {
     background-color: shade (@bg_color-b, 1.20);
@@ -58,6 +66,7 @@ EShellWindow *:active {
     background-color: shade (@bg_color-b, 1.00);
 }
 
+.toolbar,
 EShellWindow *:selected {
     color: shade (@base_color-b, 1.00);
     background-color: shade (@bg_color-b, 2.00);
@@ -78,6 +87,7 @@ EShellSidebar *.entry {
     background-color: shade (@bg_color-b, 2.00)
 }
 
+.entry:selected,
 EShellSidebar *.entry:selected {
     background-color: shade (@bg_color-b, 1.20)
 }
@@ -102,7 +112,7 @@ EShellSidebar *:active {
     background-color: alpha (shade (@gradient_color_a-b, 1.8), 0.0);
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@base_color-b, 1.40)),
-                                     color-stop (0.55, shade (@glow_color-b, 0.95)),
+                                     color-stop (0.55, shade (@glow_color-b, 0.85)),
                                      to (shade (@base_color-b, 1.40)));
     box-shadow: inset 0px 0px shade (@gbase_color-b, 1.25),
                 inset -0px -0px shade (@base_color-b, 1.25),
@@ -144,6 +154,10 @@ EShellSidebar *:active {
     text-shadow: 1px 1px @nautilus_desktop_text_color-b;
 }
 
+NemoTrashBar.info,
+NemoXContentBar.info,
+NemoSearchBar.info,
+NemoQueryEditor.info,
 NautilusTrashBar.info,
 NautilusXContentBar.info,
 NautilusSearchBar.info,
@@ -165,6 +179,10 @@ NautilusQueryEditor.info {
                 inset -1px -1px shade (@border_gradient_color_b-b, 0.85);
 }
 
+NemoView,
+NautilusView {
+    background-color: alpha (shade (@text_color-b, 0.95), 0.9);
+}
 
 NautilusSearchBar .entry {
 }

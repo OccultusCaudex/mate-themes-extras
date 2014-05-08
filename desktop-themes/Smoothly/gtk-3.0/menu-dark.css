@@ -132,3 +132,8 @@
 .menu.radio:prelight {
     color: @border_gradient_color_b-b;
 }
+
+.menuitem.check,
+.menuitem.radio {
+    border-width: 0px;
+}
