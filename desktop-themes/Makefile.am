@@ -6,10 +6,6 @@ if BUILD_CLEARLOOKS_PHENIX
 clearlooks_phenix_SUBDIR = clearlooks-phenix
 endif
 
-if BUILD_COLOGNE
-cologne_SUBDIR = Cologne
-endif
-
 if BUILD_DELOREAN_DARK
 delorean_dark_SUBDIR = DeLorean-Dark
 endif
@@ -85,7 +81,6 @@ endif
 SUBDIRS = \
 	$(blue_submarine_SUBDIR) \
 	$(clearlooks_phenix_SUBDIR) \
-	$(cologne_SUBDIR) \
 	$(delorean_dark_SUBDIR) \
 	$(faience_SUBDIR) \
 	$(faience_ocre_SUBDIR) \
@@ -110,7 +105,6 @@ SUBDIRS = \
 DIST_SUBDIRS = \
 	Blue-Submarine \
 	clearlooks-phenix \
-	Cologne \
 	DeLorean-Dark \
 	Faience \
 	Faience-Ocre \
