@@ -30,6 +30,7 @@ stage {
 	background-gradient-direction: vertical;
 	background-gradient-start: rgba(219,244,255,0.9);
 	background-gradient-end: rgba(219,229,255,0.9);
+	color: #000000;
 }
 
 .cinnamon-link {
