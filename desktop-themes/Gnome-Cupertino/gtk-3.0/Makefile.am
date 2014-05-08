@@ -3,33 +3,14 @@ THEME_NAME=Gnome-Cupertino
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-3.0
 
 theme_DATA = \
-	gnome-apps.css \
-	gnome-mdi.css \
-	gnome-nautilus34-gray.css \
-	gnome-nautilus34-gray-light.css \
-	gnome-nautilus34-light.css \
-	gnome-panel.css \
 	gtk.css \
+	gtk-main.css \
 	gtk-widgets-assets.css \
+	gtk-widgets-borders.css \
 	gtk-widgets.css \
-	menu.css \
-	modulos.txt \
-	nautilus36.css \
-	scrollbar.css \
-	settings.ini \
-	sidebar.css \
-	tabs-classic.css \
-	tabs.css \
-	tabs-dark.css \
-	tabs-mono.css \
-	tabs-themed.css \
-	unity-apps.css \
-	unity.css \
-	unity-darkest.css \
-	unity-nautilus34-gray.css \
-	unity-nautilus34-gray-light.css \
-	unity-nautilus34-light.css \
-	unity-white.css
+	header-bar.css \
+	headerbase.css \
+	settings.ini
 
 EXTRA_DIST = $(theme_DATA)
 

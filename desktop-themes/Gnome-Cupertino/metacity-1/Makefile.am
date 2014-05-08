@@ -23,7 +23,7 @@ theme_DATA = \
 	menu-focus-normal.svg \
 	menu-focus.svg \
 	menu-pressed.svg \
-	metacity-theme-1.xml \
+	metacity-theme-1.xml\
 	metacity-theme-3.xml \
 	readme.txt
 
