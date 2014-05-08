@@ -1,5 +1,7 @@
 3.8.0
   * pre-bump version to reflect GTK3 version
+  * update faince themes to GTK3-3.10 (works with GTK3-3.8)
+  * drop cologne theme, get rid of runtime require gtk-xfce-engine
 
 1.7.6
   * update Clearlook-Phenix to upstream version 4 (GTK3-3.8)

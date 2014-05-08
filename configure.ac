@@ -41,15 +41,6 @@ AC_ARG_ENABLE([clearlooks-phenix],
 AM_CONDITIONAL(BUILD_CLEARLOOKS_PHENIX, test "x$enable_clearlooks_phenix" = "xyes")
 
 dnl ***************************************************************************
-dnl *** Cologne specific checks                           		    		***
-dnl ***************************************************************************
-AC_ARG_ENABLE([Cologne],
-    AC_HELP_STRING([--enable-Cologne], [Install the Cologne desktop theme.]),
-    enable_cologne=$enableval,
-    enable_cologne=no)
-AM_CONDITIONAL(BUILD_COLOGNE, test "x$enable_cologne" = "xyes")
-
-dnl ***************************************************************************
 dnl *** Delorean-Dark specific checks                   	        	    ***
 dnl ***************************************************************************
 AC_ARG_ENABLE([DeLorean-Dark],
@@ -242,11 +233,6 @@ desktop-themes/clearlooks-phenix/openbox-3/Makefile
 desktop-themes/clearlooks-phenix/wallpapers/Makefile
 desktop-themes/clearlooks-phenix/xfwm4/Makefile
 desktop-themes/clearlooks-phenix/xfwm4/png/Makefile
-desktop-themes/Cologne/Makefile
-desktop-themes/Cologne/gtk-2.0/Makefile
-desktop-themes/Cologne/gtk-2.0/Styles/Makefile
-desktop-themes/Cologne/gtk-3.0/Makefile
-desktop-themes/Cologne/metacity-1/Makefile
 desktop-themes/DeLorean-Dark/Makefile
 desktop-themes/DeLorean-Dark/cinnamon/Makefile
 desktop-themes/DeLorean-Dark/gnome-shell/Makefile
@@ -540,7 +526,6 @@ echo "
 	Building desktop themes:
 		Install Blue-Submarine:             ${enable_blue_submarine}
 		Install Clearlooks-Phenix:          ${enable_clearlooks_phenix}
-		Install Cologne:                    ${enable_cologne}
 		Install DeLorean-Dark:              ${enable_delorean_dark}
 		Install Faience:              	    ${enable_faience}
 		Install Faience-Ocre:               ${enable_faience_ocre}
