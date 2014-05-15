@@ -6,8 +6,8 @@ theme_DATA = gtkrc
 EXTRA_DIST = $(theme_DATA)
 
 SUBDIRS = apps \
-	widgets
+	assets
 
 DIST_SUBDIRS =  apps \
-	widgets
+	assets
 
