@@ -517,6 +517,8 @@ style "notebook"        = "default" {
             border = {6,6,9,9}
             stretch = TRUE
         }
+		# disable the ugly button look in tabs if focused
+		focusstyle = 0
 	}
 }
 widget_class "*<GtkNotebook>"               		style "notebook"

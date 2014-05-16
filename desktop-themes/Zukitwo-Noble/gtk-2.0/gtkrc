@@ -243,6 +243,8 @@ style "murrine-notebook" = "murrine-notebook-bg" {
 		gradient_shades		= {1.28,1.28,0.87,0.87}
 		focusstyle		= 2
 		lightborder_shade	= 1.16
+		# disable the ugly button look in tabs if focused
+		focusstyle = 0
 	}
 }
 
