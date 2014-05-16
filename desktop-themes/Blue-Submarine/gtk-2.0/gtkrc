@@ -548,7 +548,7 @@ style "murrine-notebook" = "murrine-notebook-bg" {
         highlight_shade		= 1.03
 		roundness 			= 2
 		prelight_shade		= 1.5
-# disable the ugly button look in tabs if focused
+		# disable the ugly button look in tabs if focused
 		focusstyle = 0
 	}
 }
