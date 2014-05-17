@@ -1,6 +1,20 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
-Date:   Sat Dez 07 2013
 
-release version to 1.7.11
-gtk2, syncronize panel-applets menus
-several theme improvements, see git commits
+Date:   Sat May 16 2014
+release 1.8.0
+
+- Blue-Submarine: update to GTK 3.12
+- Green-Submarine: update to GTK 3.12
+- Gnome-Cupertino: update to GTK 3.10
+- Smoothly: update to GTK 3.10
+- Smootly-Black: update to GTK 3.10
+- GnomishBeige: complete GTK3-3.10
+- DeloreanDark: update to GTK3-3.10
+- drop Cologne theme, get rid of xfce theme engine
+- several improvements, see git history
+
+Date:   Sat Dez 07 2013
+release 1.7.11
+
+- gtk2, syncronize panel-applets menus
+- several theme improvements, see git commits
