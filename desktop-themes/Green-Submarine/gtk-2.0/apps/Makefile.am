@@ -3,29 +3,19 @@ themedir = $(datadir)/themes/Green-Submarine/gtk-2.0/apps
 
 theme_DATA = \
 	caja.rc \
-	chromium.rc \
-	combo_down.png \
-	dummy.png \
+	gmusicbrowser.rc \
+	panel.rc \
 	pcmanfm.rc \
 	pluma.rc \
-	stock_back.png \
-	stock_find.png \
-	stock_forward.png \
-	stock_home.png \
-	stock_refresh.png \
-	stock_stop.png \
-	terminal.rc
+	terminal.rc \
+	thunar.rc
 
 EXTRA_DIST = $(theme_DATA)
 
 SUBDIRS = \
 	Handles \
-	Caja \
-	Null \
-	Others
+	Panel
 
 DIST_SUBDIRS = \
 	Handles \
-	Caja \
-	Null \
-	Others
+	Panel

@@ -1,4 +1,4 @@
-style "pcmanfm-sidebar" = "murrine-sidebar" {
+style "pcmanfm-sidebar" = "sidebar" {
 	font_name = "Regular"
 
 	GtkTreeView::odd_row_color	= @bg_color
