@@ -28,7 +28,7 @@
 @define-color fg_dark_color #CACACC;
 @define-color theme_bg_dark_color @bg_dark_color;
 @define-color theme_fg_dark_color @fg_dark_color;
-@define-color theme_text_dark_color #E6E6E6;
+@define-color theme_text_dark_color #E4E4E6;
 @define-color theme_shadow_dark_color alpha(#000, 0.30);
 @define-color theme_highlight_color alpha(#fff, 0.05);
 @define-color theme_button_border_dark shade(@theme_bg_dark_color, 0.68);
@@ -116,7 +116,7 @@
 @define-color scale_border_b shade (@internal_element_color, 1.25);
 
 @define-color progressbar_fill_a @button_bg_active;
-@define-color progressbar_fill_b shade(mix(@button_bg_active, green, 0.10), 1.10);
+@define-color progressbar_fill_b shade(mix(@button_bg_active, blue, 0.10), 1.10);
 
 @define-color highlighted_border #818B90;
 @define-color transparent alpha(#000, 0.0);
