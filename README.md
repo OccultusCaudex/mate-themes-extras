@@ -74,6 +74,8 @@ Themes:
 --Zukitwo-Wise
 
 
+Installation:
+
 Use NOCONFIGURE=1 ./autogen.sh for generate configure and make files.
 
 You have to use ./configure with configure flags to enable a theme.
