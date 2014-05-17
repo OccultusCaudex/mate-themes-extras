@@ -1,9 +1,11 @@
 mate-themes-extras
 ==================
 
-GTK2/3 themes optimized for GTK3-3.4.x
+GTK2/3 themes
 
 The mate-themes-extras package contains a collection of GTK2/3 desktop themes for MATE. These themes can change the appearance of application widgets, window borders, etc.
+
+This branch is  optimized for GTK3-3.4.x
 
 Themes:
 

@@ -1,1 +1,4 @@
-
+1.5.3
+  * change version to 1.5.3
+  * add configure flags for enable a theme
+  * fix themes for GTK3-3.4.0
