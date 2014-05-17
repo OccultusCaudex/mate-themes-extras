@@ -1,1 +1,5 @@
-
+1.4.0
+  * change version to 1.4.0
+  * add configure flags for enable a theme
+  * fix themes for GTK3-3.2.x
+  * drop out Zukitwo-Resonance, it's not developed any more
