@@ -1,15 +1,25 @@
 themedir = $(datadir)/themes/Green-Submarine/gtk-3.0
 
 theme_DATA = \
-	settings.ini \
+	gnome-mdi.css \
 	gtk.css \
+	gtk-widgets-assets.css \
 	gtk-widgets.css \
-	gtk-dark.css
+	mate-applications.css \
+	menu.css \
+	nautilus36.css \
+	scrollbar.css \
+	settings.ini \
+	sidebar.css \
+	tabs-classic.css \
+	tabs.css \
+	tabs-dark.css \
+	tabs-mono.css \
+	tabs-themed.css \
+	tabs-themed-dark.css
 
 EXTRA_DIST = $(theme_DATA)
 
-SUBDIRS = apps \
-	assets
+SUBDIRS = assets
 
-DIST_SUBDIRS = apps \
-	assets
+DIST_SUBDIRS = assets
