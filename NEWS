@@ -1,1 +1,11 @@
+1.8.0
 
+  * Blue-Submarine: update to GTK 3.12
+  * Green-Submarine: update to GTK 3.12
+  * Gnome-Cupertino: update to GTK 3.10
+  * Smoothly: update to GTK 3.10
+  * Smootly-Black: update to GTK 3.10
+  * GnomishBeige: complete GTK3-3.10
+  * DeloreanDark: update to GTK3-3.10
+  * drop Cologne theme, get rid of xfce theme engine
+  * several improvements, see git history
