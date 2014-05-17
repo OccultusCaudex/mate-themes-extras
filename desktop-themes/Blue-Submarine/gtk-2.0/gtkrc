@@ -599,18 +599,6 @@ style "murrine-progressbar" = "murrine-thin" {
 
 style "murrine-statusbar" = "murrine-wide" {
 	xthickness = 2
-
-	engine "pixmap" {
-		image
-		{
-		function        = HANDLE
-		recolorable     = TRUE
-		file            = "assets/resize-grip.png"
-		state           = NORMAL
-		stretch         = TRUE
-		border          = { 0, 0, 1, 0 }
-		}
-	}
 }
 
 style "murrine-scale" 	= "murrine-wider" {
