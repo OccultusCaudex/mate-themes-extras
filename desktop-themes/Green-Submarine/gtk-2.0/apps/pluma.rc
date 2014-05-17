@@ -16,7 +16,7 @@ style "pluma-statusbar" {
 		{
 		function        = HANDLE
 		recolorable     = TRUE
-		file            = "Handles/resize_grip.png"
+		file            = "Handles/resize-grip.png"
 		state           = NORMAL
 		stretch         = TRUE
 		border          = { 0, 0, 1, 0 }
