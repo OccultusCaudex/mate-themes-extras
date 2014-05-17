@@ -6,10 +6,10 @@ style "caja-sidebar" = "murrine-sidebar" {
 	GtkTreeView::horizontal_separator = 15
 	GtkTreeView::vertical_separator = 2
 	text[NORMAL] = @fg_color
-	bg[NORMAL]  = mix (0.60, shade (1.05, @bg_color), @bg_color)
+	bg[NORMAL]  = mix (0.60, shade (1.15, @bg_color), @bg_color)
 
-	GtkTreeView::odd_row_color = mix (0.60, shade (1.05, @bg_color), @bg_color)
-	GtkTreeView::even_row_color = mix (0.60, shade (1.05, @bg_color), @bg_color)
+	GtkTreeView::odd_row_color = mix (0.60, shade (1.15, @bg_color), @bg_color)
+	GtkTreeView::even_row_color = mix (0.60, shade (1.15, @bg_color), @bg_color)
 }
 
 style "caja-view" {
