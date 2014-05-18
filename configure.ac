@@ -1,6 +1,6 @@
 AC_PREREQ(2.53)
 
-AC_INIT([mate-themes-extras], [1.8.0], [http://www.raveit.de])
+AC_INIT([mate-themes-extras], [1.9.0], [http://www.raveit.de])
 
 AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz tar-ustar])
 
@@ -331,8 +331,7 @@ desktop-themes/GnomishBeige/gtk-2.0/Styles/Makefile
 desktop-themes/GnomishBeige/gtk-3.0/Makefile
 desktop-themes/GnomishBeige/gtk-3.0/assets/Makefile
 desktop-themes/GnomishBeige/metacity-1/Makefile
-desktop-themes/GnomishBeige/gnome-shell/Makefile
-desktop-themes/GnomishBeige/gnome-shell/dashtodock/Makefile
+desktop-themes/GnomishBeige/unity/Makefile
 desktop-themes/Green-Submarine/Makefile
 desktop-themes/Green-Submarine/cinnamon/Makefile
 desktop-themes/Green-Submarine/gtk-2.0/Makefile

@@ -8,7 +8,8 @@ theme_DATA = \
 	gtk-main-common.css \
 	gtk-widgets.css \
 	gtk-widgets-assets.css \
-	settings.ini
+	settings.ini \
+	unity.css
 
 EXTRA_DIST = $(theme_DATA)
 
