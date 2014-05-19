@@ -1,5 +1,10 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Mon May 19 2014
+release 1.8.0
 
+- some build fixes
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Sat May 16 2014
 release 1.8.0
 
@@ -13,6 +18,7 @@ release 1.8.0
 - drop Cologne theme, get rid of xfce theme engine
 - several improvements, see git history
 
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Sat Dez 07 2013
 release 1.7.11
 
