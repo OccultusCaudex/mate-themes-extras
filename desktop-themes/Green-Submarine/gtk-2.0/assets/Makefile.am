@@ -22,7 +22,7 @@ theme_DATA = \
 	radio-unselected-insensitive.png \
 	radio-unselected.png \
 	resize-grip.png \
-	resize-grip.svg
+	resize-grip.svg \
 	scroll-background.png \
 	slider-horizontal.png \
 	slider-vertical.png \
