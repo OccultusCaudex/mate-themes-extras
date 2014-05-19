@@ -24,7 +24,7 @@ theme_DATA = \
 	panel-button.svg \
 	toolbar-button-active-hover.svg \
 	toolbar-button-active.svg \
-	toolbar-button-hover.svg
+	toolbar-button-hover.svg \
 	tool-button.png
 
 EXTRA_DIST = $(theme_DATA)
