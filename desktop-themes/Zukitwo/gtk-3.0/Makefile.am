@@ -13,14 +13,17 @@ theme_DATA = \
 	gtk-widgets.css \
 	other-applications.css \
 	settings.ini \
-	unity.css
+	unity.css \
+	window-controls.css
 
 EXTRA_DIST = $(theme_DATA)
 
 SUBDIRS = \
 	assets \
-	borders
+	borders \
+	window-controls
 
 DIST_SUBDIRS =  \
 	assets \
-	borders
+	borders \
+	window-controls

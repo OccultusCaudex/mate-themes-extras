@@ -7,11 +7,6 @@ theme_DATA = \
 	calendar-today.svg \
 	checkbox-off.png \
 	checkbox.png \
-	classic-process-working.svg \
-	classic-toggle-off-intl.svg \
-	classic-toggle-off-us.svg \
-	classic-toggle-on-intl.svg \
-	classic-toggle-on-us.svg \
 	close.svg \
 	close-window.svg \
 	corner-ripple-ltr.png \
@@ -19,9 +14,9 @@ theme_DATA = \
 	dash-placeholder.svg \
 	filter-selected-ltr.svg \
 	filter-selected-rtl.svg \
-	gnome-classic.css \
 	gnome-shell.css \
 	logged-in-indicator.svg \
+	menu-arrow-symbolic.svg \
 	message-tray-background.png \
 	more-results.svg \
 	noise-texture.png \
@@ -36,10 +31,6 @@ theme_DATA = \
 	summary-counter.svg \
 	switch-off.svg \
 	switch-on.svg \
-	toggle-off-intl.svg \
-	toggle-off-us.svg \
-	toggle-on-intl.svg \
-	toggle-on-us.svg \
 	ws-switch-arrow-down.png \
 	ws-switch-arrow-up.png
 

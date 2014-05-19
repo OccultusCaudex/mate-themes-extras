@@ -368,6 +368,7 @@ desktop-themes/Zukitwo/gtk-2.0/widgets/Scale/Makefile
 desktop-themes/Zukitwo/gtk-3.0/Makefile
 desktop-themes/Zukitwo/gtk-3.0/assets/Makefile
 desktop-themes/Zukitwo/gtk-3.0/borders/Makefile
+desktop-themes/Zukitwo/gtk-3.0/window-controls/Makefile
 desktop-themes/Zukitwo/gnome-shell/Makefile
 desktop-themes/Zukitwo/metacity-1/Makefile
 desktop-themes/Zukitwo/unity/Makefile

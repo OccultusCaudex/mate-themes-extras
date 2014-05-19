@@ -163,7 +163,7 @@ style "murrine-default" {
 		stepperstyle		= 1			# 0 = standard, 1 = integrated stepper handles, 2 = unknown
 		progressbarstyle	= 1			# 0 = nothing, 1 = stripes, 2 = lines
 		shadow_shades		= {0.5, 0.0}		# gradient for shadows.		
-		textstyle		= 0			# 0 = normal text, 1 = inset		
+		textstyle		= 0			# 0 = normal text, 1 = inset. Very resource heavy!	
 		toolbarstyle		= 2			# 0 = flat, 1 = glassy, 2 = gradient		
 		trough_shades		= {0.98, 1.06}		# draw gradient on trough of GtkScrollbar and GtkProgressbar
 	}
@@ -361,7 +361,7 @@ style "murrine-progressbar" = "murrine-thin" {
 		trough_shades		= { 1.06, 1.16}
 		gradient_shades		= {0.95,0.95,1.1,1.1}
 		border_shades		= { 1.1, 1.1 }
-		roundness		= 20
+		roundness		= 0
 	}
 }
 
@@ -561,6 +561,7 @@ style "murrine-radiocheck-menu" {
 
 style "murrine-toolbar" = "murrine-thin" {
 	bg[NORMAL] = @bg_color
+	ythickness = 3
 }
 
 style "pixmap-sidebar-handle-left" {
@@ -600,7 +601,6 @@ class "GtkHScrollbar"	style "murrine-scrollbar"
 widget "*ToggleSwitch*"	style "murrine-toggleswitch"
 
 widget "*SidebarHandleLeft"	style "pixmap-sidebar-handle-left"
-
 widget "*SidebarContent"	style "murrine-sidebar"
 
 # General matching following, the order is choosen so that the right styles override each other eg. progressbar needs to be more important then the menu match.
@@ -718,15 +718,6 @@ style "murrine-toolseparator" {
  	}
 }
 class "GtkSeparatorToolItem" style "murrine-toolseparator"
-
-# Various performance fixes if murrine textstyle is on by default in the theme.
-style "performance-fix" {engine "murrine" {textstyle = 0}}
-widget_class "*gtkmm__GtkWindow*"	style "performance-fix" # Inkscape
-widget_class "*GimpDisplayShell*"	style "performance-fix" # Gimp
-widget_class "*GimpToolbox*"		style "performance-fix"
-widget_class "*GimpMenuDock*"		style "performance-fix"
-widget "*OOoFixed*"			style "performance-fix" # Openoffice/Libreoffice
-widget_class "*MozContainer*"		style "performance-fix" # Firefox (Not sure if this one does anything though.)
 
 ### EXTERNAL FILES ###
 include "apps/chromium.rc"	# Chromium styling

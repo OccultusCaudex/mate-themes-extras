@@ -1,7 +1,6 @@
 /*********************
  * NEMO File manager *
  *********************/
-
 /* for breadcrumbs path bar */
 
 .nemo-pathbar-button,
@@ -60,7 +59,6 @@ NemoPlacesTreeView:hover {
 
 NemoPlacesTreeView:selected:hover {
 }
-
 @define-color cluebar_color shade (@theme_base_color, 0.9);
 
 NemoWindow * {

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
 Name=Zukitwo
+Comment=A simple grey theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
@@ -8,4 +9,5 @@ GtkTheme=Zukitwo
 MetacityTheme=Zukitwo
 IconTheme=gnome-colors-brave
 CursorTheme=mate
+ButtonLayout=:minimize,maximize,close
 

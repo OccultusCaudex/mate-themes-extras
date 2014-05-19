@@ -12,7 +12,8 @@ theme_DATA = \
 	stock_refresh.png \
 	stock_stop.png \
 	caja.rc \
-	pluma.rc
+	pluma.rc \
+	thunar.rc
 
 EXTRA_DIST = $(theme_DATA)
 
