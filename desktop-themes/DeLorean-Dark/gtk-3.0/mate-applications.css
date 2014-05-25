@@ -1,0 +1,662 @@
+/* caja */
+
+/* Look out !
+This is the background color of caja view */
+
+CajaView .entry {
+    background-color: @notebook_color;
+}
+
+/*FIXME normaly this isn't the right entry for adjusting
+the sidebar background color*/
+CajaWindow .view {
+	background-color: shade (@theme_bg_color, 1.0);
+}
+
+.caja-canvas-item {
+    border-radius: 5px;
+}
+
+.caja-desktop.caja-canvas-item {
+    color: @theme_selected_fg_color;
+    text-shadow: 1px 1px black;
+}
+
+.caja-desktop.caja-canvas-item:active {
+    color: @theme_text_color;
+}
+
+.caja-desktop.caja-canvas-item:selected {
+    color: @theme_selected_fg_color;
+}
+
+.caja-desktop.caja-canvas-item:active,
+.caja-desktop.caja-canvas-item:prelight,
+.caja-desktop.caja-canvas-item:selected {
+    text-shadow: none;
+}
+
+.caja-desktop.caja-canvas-item:selected:backdrop {
+    color: @theme_unfocused_selected_fg_color;
+}
+
+CajaWindow .sidebar,
+CajaWindow .sidebar .view,
+CajaWindow .sidebar .cell,
+CajaWindow .sidebar .cell:hover,
+CajaWindow .sidebar GtkScrolledWindow,
+CajaWindow .sidebar:backdrop,
+CajaWindow .sidebar .view:backdrop,
+CajaWindow .sidebar .cell:backdrop,
+CajaWindow .sidebar .cell:backdrop:hover,
+CajaWindow .sidebar GtkScrolledWindow:backdrop {
+	background-color: transparent;
+	background-image: none;
+}
+/*
+CajaWindow .sidebar .cell:selected:selected,
+CajaWindow .sidebar .cell:selected:selected:backdrop {
+	border-radius: 0 2px 2px 0;
+	border-width: 1px 1px 1px 0;
+}*/
+
+CajaWindow .sidebar .scrollbar.trough:backdrop {
+    background-color: #1f1f1f;
+    box-shadow: none;
+}
+
+CajaWindow .sidebar .frame,
+CajaWindow .sidebar .frame:backdrop {
+    border-style: none;
+    border-image: none;
+}
+
+CajaWindow > GtkGrid > .pane-separator,
+CajaWindow > GtkGrid > .pane-separator:hover {
+    border-width: 0px 0px 0px 0px;
+    border-style: solid;
+    border-left-color: alpha(white, 0.09);
+    background-color: transparent;
+    color: shade (@theme_bg_color, 0.9);
+}
+
+CajaWindow > GtkGrid > .pane-separator:backdrop,
+CajaWindow > GtkGrid > .pane-separator:hover:backdrop {
+	 border-width: 0px 0px 0px 0px;
+    border-color: @unfocused_borders;
+    background-color: transparent;
+}
+/*
+CajaNotebook.notebook {
+	border-top-width: 1px;
+    border-right-width: 0;
+    border-left-width: 1px;
+    border-bottom-width: 0;
+    border-top-color: shade( @notebook_color, 1.36);
+    border-left-color: shade( @notebook_color, 1.30);
+    border-image: none;
+}
+
+CajaNotebook.notebook:backdrop {
+	border-top-width: 1px;
+    border-right-width: 0;
+    border-left-width: 1px;
+    border-bottom-width: 0;
+    border-top-color: shade( @notebook_color, 1.16);
+    border-left-color: shade( @notebook_color, 1.10);
+    border-image: none;
+}
+
+CajaNotebook.notebook tab {
+    border-color: shade( @notebook_tab_bg, 0.74);
+    box-shadow: inset 0 1px alpha(white, 0.12);
+    background-color: @notebook_tab_bg;
+    background-image: linear-gradient(to bottom,
+                                      alpha(white, 0.08),
+                                      alpha(white, 0.02) 39%,
+                                      alpha(black, 0.05) 41%,
+                                      alpha(black, 0.00)
+                                      );
+}
+
+CajaNotebook.notebook tab:backdrop {
+    border-color: shade( @notebook_tab_bg, 0.65);
+    box-shadow: inset 0 1px alpha(white, 0.06);
+    background-color: shade(@notebook_tab_bg, 0.8);
+    background-image: linear-gradient(to bottom,
+                                      alpha(white, 0.08),
+                                      alpha(white, 0.02) 39%,
+                                      alpha(black, 0.05) 41%,
+                                      alpha(black, 0.00)
+                                      );
+}*/
+
+CajaWindow .titlebar,
+CajaWindow .titlebar:backdrop {
+	border-width: 0;
+	border-style: none;
+	box-shadow: 0 1px #525252 inset;
+}
+
+CajaNotebook .frame,
+CajaNotebook .frame:backdrop {
+    border-width: 0;
+}
+
+CajaNotebook.notebook .view,
+CajaNotebook.notebook .view:backdrop {
+background-color: @notebook_color;
+}
+
+/**** FIXES FOR NAUTILUS VIEW AND DESKTOP ***/
+/* Fixes issue with Caja drawing the .background image inside the view after closing a tab */
+
+CajaWindow CajaView,
+CajaWindow CajaView .view {
+	background-color: @theme_bg_color;
+}
+
+CajaWindow CajaView:backdrop,
+CajaWindow CajaView .view:backdrop {
+	background-color: shade(@notebook_color, 0.8);
+}
+
+/* Fixes issue with Caja drawing the above view color on the desktop */
+CajaDesktopWindow CajaView,
+CajaDesktopWindow CajaView .view {
+	background-color: transparent;
+}
+
+CajaDesktopWindow CajaView:backdrop,
+CajaDesktopWindow CajaView .view:backdrop {
+	background-color: transparent;
+}
+
+/* Fixes issue with Caja drawing the .background image on the desktop */
+CajaDesktopWindow.background {
+	background-image: none;
+	background-color: @theme_bg_color;
+}
+
+
+CajaDesktopWindow.background:backdrop {
+	background-image: none;
+	background-color: shade(@theme_bg_color,0.8);
+}
+
+/***   ***/
+
+CajaWindow CajaView.frame,
+CajaWindow CajaView .view.frame {
+	border-style: solid;
+	border-width: 1px 0 0 1px;
+	border-color: darker (@theme_bg_color);
+}
+
+CajaWindow CajaView.frame:backdrop,
+CajaWindow CajaView .view.frame:backdrop {
+	border-style: solid;
+	border-width: 1px 0 0 1px;
+	border-color: darker (shade(@theme_bg_color, 1.15));
+}
+
+/* Fixes 1st opened notebook-tab from having a border drawn across it */
+CajaNotebook .frame,
+CajaNotebook.notebook .frame {
+    border-width: 1px 0 0 0px;
+    border-color:@notebook_color;
+    background-color: @notebook_color;
+    background-image: none;
+    border-image:none;
+}
+
+CajaNotebook .frame:backdrop,
+CajaNotebook.notebook .frame:backdrop {
+    border-width: 1px 0 0 0;
+    background-color: @notebook_color;
+    background-image: none;
+    border-color: @notebook_color;
+    border-image:none;
+}
+
+CajaToolbar .button {
+    icon-shadow: 0 1px @button_text_shadow;
+}
+
+CajaToolbar .button:active {
+    icon-shadow: 0 1px @button_active_text_shadow;
+}
+
+CajaToolbar .button:insensitive,
+CajaToolbar .button:active *:insensitive {
+    icon-shadow: none;
+}
+
+CajaQueryEditor .primary-toolbar.toolbar ,
+CajaQueryEditor .primary-toolbar.toolbar:backdrop {
+    border-top-width: 0px;
+    border-top-color: transparent;
+    border-bottom-width: 0;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;              
+}
+
+CajaQueryEditor .primary-toolbar.toolbar .entry {
+	border-image-source: url("borders/entry/ephy-entry.svg");
+    border-image-width: 4px;
+}
+
+CajaQueryEditor .primary-toolbar.toolbar .entry:focus {
+	border-image-source: url("borders/button/entry-2.svg");
+	background-color: @entry_bg_focus;
+	background-image: none;
+}
+
+CajaQueryEditor .primary-toolbar.toolbar .entry:selected,
+CajaQueryEditor .primary-toolbar.toolbar .entry:focus:selected {
+    color: @theme_selected_fg_color;
+    background-color: @theme_selected_bg_color;
+}
+
+CajaQueryEditor .toolbar {
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    border-width: 0 ;
+    border-style: solid;
+    border-color: alpha(white, 0.11);
+	background-image: none;
+			
+}
+
+CajaQueryEditor .toolbar:nth-child(2) {
+	border-width: 0 ;
+    border-color: alpha(white, 0.11);
+}
+
+CajaQueryEditor .toolbar:last-child {
+    border-width: 0 0 1px 0;
+    border-bottom-color: alpha(white, 0.06);
+    box-shadow: inset 0 -1px alpha(black, 0.2);	
+}
+
+CajaQueryEditor .primary-toolbar.toolbar:last-child {
+	border-width: 0;
+    box-shadow: none;
+}
+
+CajaQueryEditor .toolbar:backdrop {
+    box-shadow: none;
+}
+
+CajaQueryEditor .toolbar:backdrop:nth-child(2) {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+
+
+CajaQueryEditor .toolbar:nth-child(2) .button.raised,
+CajaQueryEditor .toolbar:nth-child(2) .button.raised:backdrop,
+CajaQueryEditor .toolbar:nth-child(2) .button.raised:backdrop:hover {
+	background-image: none;
+	background-color: transparent;
+	border-image: none;
+	border-color: transparent;
+	box-shadow: none;
+	padding:4px;
+}
+
+CajaQueryEditor .toolbar:nth-child(2) .button.raised:active,
+CajaQueryEditor .toolbar:nth-child(2) .button.raised:active:hover,
+CajaQueryEditor .toolbar:nth-child(2) .button.raised:hover {
+	background-image: none;
+    background-color: alpha(black, 0.32);
+    box-shadow: inset 0 1px alpha(black, 0.16),
+				inset 0 2px alpha(black, 0.06),
+				inset 1px 0 alpha(black, 0.12),
+				inset 2px 0 alpha(black, 0.04);
+    color:  @error_color;
+    icon-shadow: -1px 0px alpha(black, 0.22),
+				0px -1px alpha(black, 0.34);
+	border-image: none;			
+    border-color: alpha(white, 0.05);
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+CajaNotebook.notebook CajaQueryEditor .toolbar:nth-child(2) GtkToggleButton.button,
+CajaNotebook.notebook CajaQueryEditor .toolbar:nth-child(2) GtkToggleButton.button:hover,
+CajaNotebook.notebook CajaQueryEditor .toolbar:nth-child(2) GtkToggleButton.button:backdrop,
+CajaNotebook.notebook CajaQueryEditor .toolbar:nth-child(2) GtkToggleButton.button:backdrop:hover,
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .button.raised {
+	border-radius: 0px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+	background-color: transparent;
+	box-shadow: 0 1px alpha(white, 0.02) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 3px alpha(white, 0.01) inset,
+				1px 0 alpha(white, 0.03) inset,
+				-1px 0 alpha(black, 0.08) inset,
+				0 -1px alpha(white, 0.02) inset;
+
+	background-image: linear-gradient(to bottom,
+                                      @button_gradient_color_a,
+                                      @button_gradient_color_a 49%,
+                                      shade(@button_gradient_color_a, 0.95) 51%,
+                                      shade(@button_gradient_color_a, 0.95)
+                                      );
+    border-image: url("borders/button/button-notebook.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;                                  
+}
+
+CajaNotebook.notebook CajaQueryEditor .toolbar:nth-child(2) GtkToggleButton.button:hover,
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:hover,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:hover,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .button.raised:hover {
+	box-shadow: 0 1px alpha(white, 0.05) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 3px alpha(white, 0.01) inset,
+				1px 0 alpha(white, 0.03) inset,
+				-1px 0 alpha(white, 0.03) inset,
+				0 -1px alpha(white, 0.02) inset,
+				0 -2px alpha(white, 0.02) inset;
+
+	background-image: linear-gradient(to bottom,
+                                      shade(@button_gradient_color_a, 1.02),
+                                      shade(@button_gradient_color_a, 1.02) 49%,
+                                      shade(@button_gradient_color_a, 0.98) 51%,
+                                      shade(@button_gradient_color_a, 0.98)
+                                      );                                  
+}
+
+CajaNotebook.notebook CajaQueryEditor .toolbar:nth-child(2) GtkToggleButton.button:active,
+CajaNotebook.notebook CajaQueryEditor .toolbar:nth-child(2) GtkToggleButton.button:hover:active,
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .button.raised:active,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .button.raised:active:hover {
+	background-image: linear-gradient(to bottom,
+                                      shade(@button_gradient_color_a, 0.90),
+                                      shade(@button_gradient_color_a, 0.90) 49%,
+                                      shade(@button_gradient_color_a, 0.90) 51%,
+                                      shade(@button_gradient_color_a, 0.90)
+                                      );
+	border-image: url("borders/button/button-notebook-active.svg") 4 3 4 3 / 4px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+	box-shadow: 0 1px alpha(black, 0.08) inset,
+				0 2px alpha(black, 0.04) inset,
+				0 3px alpha(black, 0.02) inset,
+
+				-1px 0 alpha(black, 0.02) inset,
+				-2px 0 alpha(black, 0.01) inset,
+
+				1px 0 alpha(black, 0.04) inset,
+				2px 0 alpha(black, 0.02) inset,
+				3px 0 alpha(black, 0.01) inset;
+}
+
+CajaNotebook.notebook CajaQueryEditor .toolbar:nth-child(2) GtkToggleButton.button:backdrop,
+CajaNotebook.notebook CajaQueryEditor .toolbar:nth-child(2) GtkToggleButton.button:hover:backdrop,
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:backdrop,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:backdrop,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .button.raised:backdrop,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:backdrop:hover,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:backdrop:hover,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .button.raised:backdrop:hover {
+	background-color: @button_gradient_color_a;
+	background-image: none;
+	border-image: url("borders/button/button-notebook-backdrop.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+}
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:backdrop:active,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:backdrop:active,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:backdrop:hover:active,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:backdrop:hover:active {
+	background-color: mix(@button_gradient_color_a, @theme_unfocused_selected_bg_color, 0.8);
+	background-image: none;
+	border-image: url("borders/button/button-notebook-backdrop.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+	color: shade(@theme_unfocused_fg_color, 0.8);
+}
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .button.raised {
+	padding: 2px;
+}
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:active,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:active,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:hover:active,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:hover:active {
+	background-image: linear-gradient(to bottom,
+                                      mix(@button_gradient_color_a, @theme_selected_bg_color, 0.8),
+                                      mix(@button_gradient_color_a, @theme_selected_bg_color, 0.8) 49%,
+                                      shade(mix(@button_gradient_color_a, @theme_selected_bg_color, 0.8), 0.95) 51%,
+                                      shade(mix(@button_gradient_color_a, @theme_selected_bg_color, 0.8), 0.95)
+                                      );
+    }
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:first-child,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:first-child,
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:first-child:backdrop,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:first-child:backdrop,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:first-child:backdrop:hover,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:first-child:backdrop:hover {
+	border-right-width: 0;
+    border-image-width: 3px 0 4px 3px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+    box-shadow: 0 1px alpha(white, 0.02) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 3px alpha(white, 0.01) inset,
+				1px 0 alpha(white, 0.03) inset,
+				-1px 0 alpha(black, 0.08) inset,
+				0 -1px alpha(white, 0.02) inset;
+}
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:last-child,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:last-child,
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:last-child:backdrop,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:last-child:backdrop,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:last-child:backdrop:hover,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:last-child:backdrop:hover  {
+	border-left-width: 0;
+    border-image-width: 3px 3px 4px 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+
+    box-shadow: 0 1px alpha(white, 0.02) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 3px alpha(white, 0.01) inset,
+				1px 0 alpha(white, 0.09) inset,
+				0 -1px alpha(white, 0.02) inset;
+}
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:active:first-child,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:active:first-child,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:active:hover:first-child,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:active:hover:first-child {
+	box-shadow: 0 1px alpha(white, 0.02) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 3px alpha(white, 0.01) inset,
+				-1px 0 alpha(black, 0.26) inset,
+				0 -1px alpha(white, 0.02) inset;
+}
+
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:active:last-child,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:active:last-child,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .linked .button:active:hover:last-child,
+CajaNotebook.notebook CajaQueryEditor .primary-toolbar.toolbar .raised .button:active:hover:last-child {
+	box-shadow: 0 1px alpha(white, 0.02) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 3px alpha(white, 0.01) inset,
+				1px 0 alpha(white, 0.09) inset,
+				0 -1px alpha(white, 0.02) inset;
+}
+
+/****************
+ * Mate-terminal *
+ ****************/
+
+/* Background mate-terminal, this isn't the normal way to style that! */
+TerminalWindow .entry {
+    background-color: shade(@theme_base_color, 0.8);
+    color: @theme_fg_color;
+}
+
+/****************
+ * Mate-Panel *
+ ****************/
+
+/* the panel bar itself */
+.mate-panel-menu-bar,
+MatePanelApplet > GtkMenuBar.menubar,
+PanelToplevel,
+PanelWidget,
+PanelAppletFrame,
+MatePanelApplet {
+	background-image: none;
+	background-color: @button_gradient_color_b;
+	padding: 0;
+	color: @theme_fg_color;
+	text-shadow: none;
+}
+
+MatePanelApplet {
+	border-width: 0;
+}
+
+/* set selected menubar button */
+PanelMenuBar.menubar .menuitem:hover {
+	background-image: none;
+	background-color: @theme_base_color;
+	color: shade (@theme_text_color, 0.65);
+	text-shadow: none;
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 5px;
+}
+
+/* set selected menubar menuitem */
+PanelMenuBar.menubar .menu .menuitem:active:hover,
+PanelMenuBar.menubar .menu .menuitem:hover {
+    background-color: darker(@menu_fg_color);
+	background-image: none;
+	text-shadow: none;
+	border-style: none;
+	border-width: 0px;
+	border-radius: 0px;
+	color: @theme_bg_color;
+}
+
+PanelSeparator {
+	border-width: 0;
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@button_gradient_color_b, 1.03)),
+		to (shade (@button_gradient_color_b, 0.95)));
+	color: shade (@button_gradient_color_b, 1.85);
+	text-shadow: none;
+}
+
+WnckPager {
+	background-image: none;
+	border-color: transparent;
+	background-color: shade (@theme_bg_color, 1.15);
+}
+
+/* prelight of WnckPager */
+MatePanelApplet *:hover {
+	background-image: linear-gradient(to bottom,
+		shade (@theme_selected_bg_color, 1.15),
+		shade (@theme_selected_bg_color, 0.86));
+	background-color: @theme_base_color;
+}
+
+MatePanelApplet .button,
+WnckTasklist .button {
+	background-image: none;
+	background-color: @theme_bg_color;
+	border-color: @theme_bg_color;
+	border-radius: 0;
+	border-width: 0 0 0 0;
+	color: shade (@theme_text_color, 0.65);
+	text-shadow: none;
+	padding: 2px;
+}
+
+MatePanelApplet .button:active:hover,
+MatePanelApplet .button:active,
+WnckTasklist .button:active:hover,
+WnckTasklist .button:active {
+	background-image: none;
+	border-color: @theme_selected_bg_color;
+	background-color: shade (@selected_bg_color, 0.90);
+	border-radius: 0;
+	border-width: 1px 1px 1px 1px;
+	color: shade (@theme_text_color, 0.90);
+	text-shadow: none;
+	padding: 2px;
+}
+
+MatePanelApplet .button:hover,
+WnckTasklist .button:hover {
+	background-image: none;
+	border-color: @theme_selected_bg_color;
+	background-color: shade (@selected_bg_color, 1.10);
+	border-radius: 0;
+	border-width: 1px 1px 1px 1px;
+	color: @selected_fg_color;
+	text-shadow: none;
+	padding: 2px;
+}
+
+/* set normal button WnckSelector */
+.mate-panel-window-menu-menu-bar .menuitem,
+MatePanelApplet > WnckSelector.menubar .menuitem {
+	background-image: none;
+	background-color: @theme_bg_color;
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 0px;
+}
+
+/* set selected button WnckSelector */
+.mate-panel-window-menu-menu-bar .menuitem:hover,
+MatePanelApplet > WnckSelector.menubar .menuitem:hover {
+	background-image: none;
+	border-color: @selected_bg_color;
+	background-color: shade (@selected_bg_color, 0.90);
+	border-radius: 0;
+	border-width: 0 0 0 0;
+	color: shade (@theme_text_color, 0.90);
+	text-shadow: none;
+}
+
+/* set WnckSelector selected menuitem */
+.mate-panel-window-menu-menu-bar .menu .menuitem:hover,
+MatePanelApplet > WnckSelector.menubar .menu .menuitem:hover {
+    background-color: darker(@menu_fg_color);
+	background-image: none;
+	text-shadow: none;
+	color: @theme_bg_color;
+}
+
+ClockBox,
+.mate-panel-menu-bar.menubar,
+MatePanelApplet > GtkMenuBar.menubar {
+	font: normal;
+}
+
