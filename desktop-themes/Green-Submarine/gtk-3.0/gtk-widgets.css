@@ -477,7 +477,7 @@ This is 'also' the background color of mate-control-center */
     border-bottom-color: 	shade(@button_border_active, 1.00);
 
 /* Label font color of progressbar*/
-	color: 			none;
+	color: 			@theme_fg_color;
 	text-shadow:	none;
 }
 
@@ -517,7 +517,7 @@ This is 'also' the background color of mate-control-center */
     border-bottom-color: 	shade(@button_border_active, 0.85);
 
 /* Label font color of progressbar*/
-	color: 			none;
+	color: 			@theme_fg_color;
 	text-shadow:	none;
 }
 
