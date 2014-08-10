@@ -212,6 +212,10 @@
 @define-color wm_button_bg_active_b shade (@bg_color, 0.9);
 @define-color wm_button_bg_active_c shade (@bg_color, 0.9);
 
+/***********
+ * Popover *
+ ***********/
+@define-color osd_popover_bg alpha(@osd_base, 0.90);
 
 /* GTKHeaderBar colours */
 @define-color borders @theme_bg_dark_color;
