@@ -1,4 +1,12 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Sun Aug 10 2014
+release 1.9.1
+
+- add add GtkPopover funktion to submarine themes
+
+- add more adjustments for Mate GTK3 applications
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Mon May 19 2014
 release 1.9.0
 
