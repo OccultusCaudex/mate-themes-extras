@@ -478,7 +478,7 @@ This is 'also' the background color of mate-control-center */
 
 /* Label font color of progressbar*/
 	color: 			none;
-	text-shadow:  none;
+	text-shadow:	none;
 }
 
 .progressbar.vertical {
@@ -518,7 +518,7 @@ This is 'also' the background color of mate-control-center */
 
 /* Label font color of progressbar*/
 	color: 			none;
-	text-shadow:  none;
+	text-shadow:	none;
 }
 
 /* through component */
@@ -3218,7 +3218,6 @@ GtkCalendar.header {
                                      to   (shade(@theme_bg_color, 0.89)));
     border-width: 0px;
 }
-
 
 GtkCalendar.button {
     background-image: -gtk-gradient (linear,
