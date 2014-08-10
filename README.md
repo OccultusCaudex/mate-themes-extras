@@ -25,7 +25,7 @@ Releases:
 
 https://github.com/NiceandGently/mate-themes-extras/releases
 
-1.9.0 for GTK3-3.12
+1.9.1 for GTK3-3.12
 
 1.8.2 for GTK3-3.10
 
