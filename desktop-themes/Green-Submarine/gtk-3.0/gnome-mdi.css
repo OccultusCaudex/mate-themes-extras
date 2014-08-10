@@ -255,9 +255,9 @@ TerminalScreen {
 }
 
 
-MathWindow * {
+/*MathWindow * {
     background-color: transparent;
-}
+}*/
 
 MathWindow {
     color: @theme_fg_dark_color;    
@@ -317,12 +317,72 @@ MathWindow.background > GtkBox.vertical > GtkBox.vertical > GtkScrolledWindow {
 /*******************************
 Buttons set in buttons raised
 *******************************/
-/*
+
 MathWindow .button:hover,
-MathWindow .button {}
+MathWindow .button {
+
+    background-image: -gtk-gradient (linear,
+						left top, left bottom,
+						from (@button_raised_gradient_color_a),
+						to   (@button_raised_gradient_color_b));
+
+	color: @theme_text_dark_color;
+	text-shadow: 0px 1px @theme_shadow_dark_color;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+
+	/* outer */
+    border-top-color: 		transparent;
+    border-left-color: 		alpha (#fff, 0.02);
+    border-right-color: 	alpha (#fff, 0.02);
+    border-bottom-color: 	@theme_highlight_color;
+
+	/* border and inset */
+    box-shadow: inset  0px  2px alpha(#fff, 0.09),
+                inset  2px  0px alpha(#fff, 0.06),
+                inset -2px  0px alpha(#fff, 0.06),
+                inset  0px -2px alpha(#fff, 0.06),
+				inset  0px  1px shade(@theme_button_border_dark, 1.00),
+                inset  1px  0px shade(@theme_button_border_dark, 0.94),
+                inset -1px  0px shade(@theme_button_border_dark, 0.94),
+                inset  0px -1px shade(@theme_button_border_dark, 0.88);
+
+    -GtkWidget-focus-line-width: 0;
+	color: shade(@theme_fg_dark_color, 1.00);
+}
+
 MathWindow .button:active,
-MathWindow .button:hover:active {}
-*/
+MathWindow .button:hover:active {
+    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+                     from (shade(@button_raised_gradient_color_b, 0.90)),
+                     to   (shade(@button_raised_gradient_color_a, 0.80)));
+
+	color: @theme_text_dark_color;
+	text-shadow: 0px 1px @theme_shadow_dark_color;
+    border-width: 1px;
+    border-style: solid; 
+    border-radius: 5px;
+	border-image: 			none;
+    border-top-color: 		transparent;
+    border-left-color: 		alpha (#fff, 0.01);
+    border-right-color: 	alpha (#fff, 0.01);
+    border-bottom-color: 	alpha (#fff, 0.05);
+
+    box-shadow: inset  0px  4px alpha(#000, 0.02),
+				inset  0px  3px alpha(#000, 0.03),
+				inset  0px  2px alpha(#000, 0.04),
+                inset  3px  0px alpha(#000, 0.02),
+                inset  2px  0px alpha(#000, 0.03),
+                inset -3px  0px alpha(#000, 0.02),
+                inset -2px  0px alpha(#000, 0.03),
+                inset  0px -2px alpha(#000, 0.01),
+				inset  0px  1px alpha(#000, 0.25),
+                inset  1px  0px alpha(#000, 0.16),
+                inset -1px  0px alpha(#000, 0.16),
+                inset  0px -1px alpha(#000, 0.09);
+}
 
 MathWindow .button,
 MathWindow .cell {
