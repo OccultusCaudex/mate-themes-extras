@@ -478,7 +478,7 @@ This is 'also' the background color of mate-control-center */
 
 /* Label font color of progressbar*/
 	color: 			none;
-	text-shadow:  none;
+	text-shadow:	none;
 }
 
 .progressbar.vertical {
@@ -518,7 +518,7 @@ This is 'also' the background color of mate-control-center */
 
 /* Label font color of progressbar*/
 	color: 			none;
-	text-shadow:  none;
+	text-shadow:	none;
 }
 
 /* through component */
@@ -2950,6 +2950,7 @@ GtkViewport {
 }
 
 GtkViewport.frame {
+
 	border-width: 0px;
     border-style: none;
 	padding: 0px;
