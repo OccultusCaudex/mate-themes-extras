@@ -20,7 +20,7 @@ theme_DATA = \
 	gtk-widgets.css \
 	gtk-widgets-dark-overrides.css \
 	overlay-scrollbar.css \
-	settings.ini
+	settings.ini \
 	ubuntu-pathbar.css \
 	unity.css
 
