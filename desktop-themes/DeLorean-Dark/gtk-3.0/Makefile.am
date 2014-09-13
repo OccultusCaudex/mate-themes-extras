@@ -19,6 +19,7 @@ theme_DATA = \
 	gtk-widgets-borders-dark.css \
 	gtk-widgets.css \
 	gtk-widgets-dark-overrides.css \
+	mate-applications.css \
 	nautilus-pathbar-vs2.css \
 	nautilus-toolbar.css \
 	nemo.css \
