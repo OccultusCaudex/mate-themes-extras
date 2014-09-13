@@ -1811,7 +1811,14 @@ GtkProgressBar.osd.progressbar {
 .header-bar.frame.titlebar .button.image-button.titlebutton:hover:backdrop {
 	color: #747473;
 }
- 
+
+/****************************************************************************************
+ * Give and take related to recent gtk3 development,                                    *
+ * to achieve full size of the icon menu of some of the applications whose notification *
+ * icons appear in the system tray, the "shadow" is disabled.                           *
+ ****************************************************************************************/
+/*
+
 .window-frame {
     border-color: @theme_bg_color;
     border-radius: 7px 7px 0 0;
@@ -1819,10 +1826,11 @@ GtkProgressBar.osd.progressbar {
     border-style: solid;
     background-color: @theme_bg_color;
     box-shadow: 0 0 0 2px @osd_button_shadow, 0 2px 8px 3px @osd_button_shadow;
-
+*/
     /* this is used for the resize cursor area */
-    margin: 10px;
+/*    margin: 10px;
 }
+*/
 
 /****************************
  * Suggested action buttons *
@@ -2045,16 +2053,16 @@ GtkColorSwatch:selected:hover {
  ***************************/
 .radio,
 .check,
-.radio:selected, 
-.check:selected,
-.radio:selected:focus, 
-.check:selected:focus,
+.radio:active, 
+.check:active,
+.radio:active:focus, 
+.check:active:focus,
 .cell.radio,
 .cell.check,
-.cell.radio:selected, 
-.cell.check:selected,
-.cell.radio:selected:focus, 
-.cell.check:selected:focus {
+.cell.radio:active, 
+.cell.check:active,
+.cell.radio:active:focus, 
+.cell.check:active:focus {
 	background-color: transparent;
 	border-width: 0px;
 	border-style: none;
