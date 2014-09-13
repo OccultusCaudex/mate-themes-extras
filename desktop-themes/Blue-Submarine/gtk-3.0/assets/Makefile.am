@@ -4,6 +4,13 @@ theme_DATA = \
 	checkbox-checked-insensitive.png \
 	checkbox-checked.png \
 	checkbox-checked.svg \
+	checkbox-menuitem-checked-insensitive.svg \
+	checkbox-menuitem-checked-prelight.svg \
+	checkbox-menuitem-checked.svg \
+	checkbox-menuitem-mixed-insensitive.svg \
+	checkbox-menuitem-mixed-prelight.svg \
+	checkbox-menuitem-mixed.svg \
+	checkbox-menuitem-unchecked.svg \
 	checkbox-mixed-insensitive.png \
 	checkbox-mixed.png \
 	checkbox-mixed.svg \
@@ -13,6 +20,13 @@ theme_DATA = \
 	dnd-counter.svg \
 	grid-selection-checked.svg \
 	grid-selection-unchecked.svg \
+	radio-menuitem-checked-insensitive.svg \
+	radio-menuitem-checked-prelight.svg \
+	radio-menuitem-checked.svg \
+	radio-menuitem-mixed-insensitive.svg \
+	radio-menuitem-mixed-prelight.svg \
+	radio-menuitem-mixed.svg \
+	radio-menuitem-unselected.svg \
 	radio-mixed-insensitive.png \
 	radio-mixed.png \
 	radio-mixed.svg \

@@ -1248,7 +1248,6 @@ GtkScrolledWindow.frame {
 .toolbar.menubar .linked .button:insensitive:only-child,
 .toolbar .button.raised.linked:insensitive:only-child,
 .toolbar .raised.linked .button:insensitive:only-child,
-
 .primary-toolbar .linked .entry:insensitive:only-child,
 .primary-toolbar .linked .button:insensitive:only-child {
     border-width: 1px;
@@ -2627,6 +2626,7 @@ NemoWindow .primary-toolbar.toolbar .button:hover:active,
 	border-top: 1px solid @borders;
 	border-left: 1px solid @borders;
 	border-right: 1px solid @borders;
+
 }
 
 .notebook.header.frame.bottom {
@@ -2788,6 +2788,18 @@ NemoWindow .primary-toolbar.toolbar .button:hover:active,
 	icon-shadow: none;
 }
 
+/*****************************************************************************************************
+* Check and Radio items                                                                             *
+* Related to recent gtk3 development, to reveal checkboxes as part of the dialogue                  *
+* of some of the applications whose notification icons appear in the system tray                    *
+* the reference section of the HighContrast theme is used.                                          *
+* https://git.gnome.org/browse/gnome-themes-standard/tree/themes/HighContrast/gtk-3.0/gtk.css#n1398 *
+*****************************************************************************************************/
+
+GtkCheckButton.text-button, GtkRadioButton.text-button {
+  padding: 1px;
+  outline-offset: 0; }
+
 /***************
 
  * Header bars *
@@ -2944,7 +2956,6 @@ GtkViewport {
 }
 
 GtkViewport.frame {
-
 	border-width: 0px;
     border-style: none;
 	padding: 0px;
@@ -3703,7 +3714,13 @@ GtkModelButton.button:selected {
     border-image: none;
     icon-shadow: none;
 }
- 
+
+/****************************************************************************************
+* Give and take related to recent gtk3 development,                                    *
+* to achieve full size of the icon menu of some of the applications whose notification *
+* icons appear in the system tray, the "shadow" is disabled.                           *
+****************************************************************************************/
+/*
 .window-frame {
     border-color: darker(@theme_bg_dark_color);
     border-radius: 9px 9px 0 0;
@@ -3711,14 +3728,15 @@ GtkModelButton.button:selected {
     border-style: solid;
     background-color: @theme_bg_color;
     box-shadow: 0 0 0 2px @theme_shadow_dark_color, 0 2px 8px 3px @theme_shadow_dark_color;
-
+*/
     /* this is used for the resize cursor area */
-    margin: 10px;
+/*    margin: 10px;
 }
  
 .window-frame:backdrop {
     box-shadow: 0 0 0 2px @theme_shadow_dark_color, 0 2px 5px 1px @theme_shadow_dark_color;
 }
+*/
 
 /*****************
  * Miscellaneous *
