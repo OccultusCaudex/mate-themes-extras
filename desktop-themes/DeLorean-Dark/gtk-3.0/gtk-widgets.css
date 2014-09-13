@@ -3561,6 +3561,10 @@ GtkMenuButton .menu {
  * Radiobuttons *
  ****************/
 
+GtkCheckButton.text-button, GtkRadioButton.text-button {
+  padding: 1px;
+  outline-offset: 0; }
+
 .check,
 .radio,
 .check:insensitive,
@@ -3570,9 +3574,9 @@ GtkMenuButton .menu {
 }
 
 GtkCheckButton:hover,
-GtkCheckButton:active:hover,
-GtkCheckButton:selected,
-GtkCheckButton:selected:focus {
+GtkCheckButton:checked:hover,
+GtkCheckButton:active,
+GtkCheckButton:active:focus {
     background-color: transparent;
 }
 
@@ -5849,6 +5853,12 @@ GtkBubbleWindow .toolbar {
 	color: @theme_unfocused_fg_color;
 }
 
+/****************************************************************************************
+* Give and take related to recent gtk3 development,                                     *
+* to achieve full size of the icon menu of some of the applications whose notification  *
+* icons appear in the system tray, the "shadow" is disabled.                            *
+*****************************************************************************************/
+/*
 .window-frame {
     border-color: darker(@theme_bg_color);
     border-radius: 7px 7px 0 0;
@@ -5856,14 +5866,15 @@ GtkBubbleWindow .toolbar {
     border-style: solid;
 
     box-shadow: 0 2px 8px 3px @wm_shadow;
-
+*/
     /* this is used for the resize cursor area */
-    margin: 10px;
+/*    margin: 10px;
 }
 
 .window-frame:backdrop {
     box-shadow: 0 2px 5px 1px @wm_shadow;
 }
+*/
 
 /**********************
  * Fallback Mode Panel
