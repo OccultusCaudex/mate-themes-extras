@@ -72,3 +72,7 @@ NOCONFIGURE=1 ./autogen.sh
 make
 
 make install (as root)
+
+
+
+Anther way to install is simple copy the theme folders to ~/themes

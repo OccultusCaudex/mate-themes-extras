@@ -1,4 +1,11 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Thu Oct 16 2014
+
+release version to 1.7.5
+	- update Clearlook-Phenix to upstream version 4 (GTK3-3.8)
+	- serveral fixes
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Sat Dez 07 2013
 
 release version to 1.7.5

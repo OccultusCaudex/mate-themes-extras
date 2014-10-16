@@ -1,3 +1,7 @@
+1.7.6
+  * update Clearlook-Phenix to upstream version 4 (GTK3-3.8)
+  * serveral fixes
+
 1.7.5
   * gtk2, syncronize panel-applets menus
   * several theme improvements, see git commits
