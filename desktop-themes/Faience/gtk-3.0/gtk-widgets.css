@@ -59,14 +59,14 @@
     background-clip: padding-box;
     border-width: 1px;
 
-/*    engine: unico;
+    engine: unico;
 
     -unico-arrow-texture: url("assets/combobox-arrow.png");
 
     -unico-focus-border-color: alpha (@theme_selected_bg_color, 0.5);
     -unico-focus-border-radius: 3;
     -unico-focus-fill-color: alpha (@theme_selected_bg_color, 0.1);
-*/
+
 }
 
 * {
