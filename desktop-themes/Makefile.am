@@ -46,38 +46,6 @@ if BUILD_ZUKITWO
 zukitwo_SUBDIR = Zukitwo
 endif
 
-if BUILD_ZUKITWO_BRAVE
-zukitwo_brave_SUBDIR = Zukitwo-Brave
-endif
-
-if BUILD_ZUKITWO_DUST
-zukitwo_dust_SUBDIR = Zukitwo-Dust
-endif
-
-if BUILD_ZUKITWO_HUMAN
-zukitwo_human_SUBDIR = Zukitwo-Human
-endif
-
-if BUILD_ZUKITWO_ILLUSTRIOUS
-zukitwo_illustrious_SUBDIR = Zukitwo-Illustrious
-endif
-
-if BUILD_ZUKITWO_NOBLE
-zukitwo_noble_SUBDIR = Zukitwo-Noble
-endif
-
-if BUILD_ZUKITWO_WINE
-zukitwo_wine_SUBDIR = Zukitwo-Wine
-endif
-
-if BUILD_ZUKITWO_WISE
-zukitwo_wise_SUBDIR = Zukitwo-Wise
-endif
-
-if BUILD_ZUKITWO_COLORS
-zukitwo_colors_SUBDIR = Zukitwo-Colors
-endif
-
 SUBDIRS = \
 	$(blue_submarine_SUBDIR) \
 	$(clearlooks_phenix_SUBDIR) \
@@ -90,17 +58,7 @@ SUBDIRS = \
 	$(green_submarine_SUBDIR) \
 	$(smootly_SUBDIR) \
 	$(smootly_black_SUBDIR) \
-	$(zukitwo_SUBDIR) \
-	$(zukitwo_brave_SUBDIR) \
-	$(zukitwo_dust_SUBDIR) \
-	$(zukitwo_human_SUBDIR) \
-	$(zukitwo_illustrious_SUBDIR) \
-	$(zukitwo_noble_SUBDIR) \
-	$(zukitwo_wine_SUBDIR) \
-	$(zukitwo_wise_SUBDIR) \
-	$(zukitwo_colors_SUBDIR)
-
-
+	$(zukitwo_SUBDIR)
 
 DIST_SUBDIRS = \
 	Blue-Submarine \
@@ -114,13 +72,5 @@ DIST_SUBDIRS = \
 	Green-Submarine \
 	Smoothly \
 	Smoothly-Black \
-	Zukitwo \
-	Zukitwo-Brave \
-	Zukitwo-Dust \
-	Zukitwo-Human \
-	Zukitwo-Illustrious \
-	Zukitwo-Noble \
-	Zukitwo-Wine \
-	Zukitwo-Wise \
-	Zukitwo-Colors
+	Zukitwo
 
