@@ -191,6 +191,7 @@ style "murrine-dark" {
 }
 
 
+
 style "murrine-thin"		= "murrine-default"	{ xthickness = 0 ythickness = 0 }
 style "murrine-wide"		= "murrine-default"	{ xthickness = 2 ythickness = 2 }
 style "murrine-wider"		= "murrine-default"	{ xthickness = 3 ythickness = 3 }
@@ -480,11 +481,13 @@ class "GtkCalendar"	style "murrine-wide"
 class "GtkInfoBar"	style "murrine-default"
 class "GtkIconView"	style "murrine-default"
 
-class "GtkToolbar"	style "murrine-toolbar"
+class "GtkToolbar"			style "murrine-toolbar"
 class "*HandleBox"          style "murrine-toolbar"
-widget_class "*HandleBox"   style "murrine-toolbar"
+widget_class "*HandleBox"   	style "murrine-toolbar"
+widget_class "*<GtkToolbar>*" 	style "murrine-toolbar"
 
 class "GtkSpinButton"	style "murrine-spinbutton"
+
 class "GtkScale"	style "murrine-scale"
 class "GtkVScale"	style "murrine-scale"
 class "GtkHScale"	style "murrine-scale"

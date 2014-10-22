@@ -14,7 +14,7 @@
    height="36"
    id="svg3783"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.48+devel r12703"
    sodipodi:docname="dash.svg"
    inkscape:export-filename="/home/matthieu/Eye-Candy/Faience/0.5/theme/Faience/gnome-shell/assets/search-section-header.png"
    inkscape:export-xdpi="180"
@@ -212,9 +212,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="15.327746"
-     inkscape:cx="-24.960547"
-     inkscape:cy="17.500892"
+     inkscape:zoom="12.262197"
+     inkscape:cx="-31.69407"
+     inkscape:cy="17.737379"
      inkscape:document-units="px"
      inkscape:current-layer="g3027"
      showgrid="true"
@@ -240,7 +240,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -263,27 +263,27 @@
          transform="matrix(0,1,-1,0,36,1048.3622)"
          id="path3788" />
       <path
-         style="opacity:0.03;color:#000000;fill:#323841;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="opacity:0.03;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          d="M 0 2.03125 L 0 6 L 5.5 6 C 7.993 6 10 8.007 10 10.5 L 10 25.5 C 10 27.993 7.993 30 5.5 30 L 0 30 L 0 33.90625 A 1.0124567 1.0124567 0 0 0 0.375 33.96875 C 0.3888 33.968563 0.4344 33.969496 0.5 33.96875 C 2.3523 33.947708 4.3501 34.014677 6.375 33.90625 C 6.4073 33.90452 6.43635 33.908072 6.46875 33.90625 A 1.0124567 1.0124567 0 0 0 6.5625 33.90625 C 10.8027 33.444072 14.07725 29.673216 13.96875 25.40625 C 13.97095 25.464686 13.97075 25.448491 13.96875 25.375 C 13.95895 20.32524 13.98925 15.260168 13.96875 10.1875 C 13.96865 10.177062 13.96875 10.166688 13.96875 10.15625 C 13.96865 10.136479 13.96865 10.092998 13.96875 10.09375 C 13.83455 5.765052 10.23515 2.165202 5.90625 2.03125 C 5.90705 2.031263 5.86345 2.031254 5.84375 2.03125 C 5.83315 2.031148 5.823 2.031349 5.8125 2.03125 C 3.8505408 2.0127435 1.9180183 2.0343878 0 2.03125 z "
          transform="matrix(0,1,-1,0,36,1048.3622)"
          id="path3029" />
       <path
-         style="opacity:0.05;color:#000000;fill:#323841;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="opacity:0.05;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          d="M 0 3.03125 L 0 6 L 5.5 6 C 7.993 6 10 8.007 10 10.5 L 10 25.5 C 10 27.993 7.993 30 5.5 30 L 0 30 L 0 32.9375 C 0.12992969 32.941849 0.244575 32.948917 0.375 32.9375 L 0.375 32.96875 C 0.4155 32.968203 0.4595 32.96921 0.5 32.96875 C 2.4151 32.946994 4.40955 33.018794 6.40625 32.90625 A 0.91346767 0.91346767 0 0 0 6.4375 32.90625 C 10.1352 32.503207 13.06355 29.158418 12.96875 25.4375 C 12.96845 25.426933 12.96905 25.416823 12.96875 25.40625 C 12.95885 20.330354 12.98965 15.242969 12.96875 10.15625 A 0.91346767 0.91346767 0 0 0 12.96875 10.125 C 12.85185 6.350258 9.6498 3.148058 5.875 3.03125 A 0.91346767 0.91346767 0 0 0 5.84375 3.03125 C 3.8853588 3.0123379 1.9376523 3.0344134 0 3.03125 z "
          transform="matrix(0,1,-1,0,36,1048.3622)"
          id="path3025" />
       <path
-         style="opacity:0.07;color:#000000;fill:#323841;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="opacity:0.07;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          d="M 0 3.9375 L 0 6 L 5.5 6 C 7.993 6 10 8.007 10 10.5 L 10 25.5 C 10 27.993 7.993 30 5.5 30 L 0 30 L 0 32.0625 C 0.12954857 32.068948 0.24537692 32.079469 0.375 32.0625 C 2.3597 32.03568 4.36265 32.111669 6.34375 32 C 9.54685 31.650876 12.1595 28.661338 12.0625 25.4375 C 12.0525 20.346353 12.0835 15.247169 12.0625 10.15625 C 11.9617 6.898978 9.10105 4.038295 5.84375 3.9375 C 3.8983716 3.9187132 1.945591 3.9412685 0 3.9375 z "
          transform="matrix(0,1,-1,0,36,1048.3622)"
          id="path3020" />
       <path
-         style="opacity:0.1;color:#000000;fill:#323841;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="opacity:0.1;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          d="M 0 5.03125 L 0 6 L 5.5 6 C 7.993 6 10 8.007 10 10.5 L 10 25.5 C 10 27.993 7.993 30 5.5 30 L 0 30 L 0 30.96875 L 5.5 30.96875 C 8.5182 30.96875 10.96875 28.518227 10.96875 25.5 L 10.96875 10.5 C 10.96875 7.481773 8.5182 5.03125 5.5 5.03125 L 0 5.03125 z "
          transform="matrix(0,1,-1,0,36,1048.3622)"
          id="path3016" />
       <path
-         style="opacity:0.7;color:#000000;fill:#323841;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="opacity:0.8;color:#000000;fill:#323841;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          d="m 30,1048.3622 -24,0 0,5.5 c 0,2.493 2.007,4.5 4.5,4.5 l 15,0 c 2.493,0 4.5,-2.007 4.5,-4.5 l 0,-5.5 z"
          id="rect3028"
          inkscape:connector-curvature="0" />

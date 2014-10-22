@@ -246,26 +246,6 @@
     background-image: url("assets/backdrop-radio-mixed-disabled.png");
 }
 
-/*.sidebar .radio:active,
-.sidebar .radio:active:focus,
-.sidebar .radio:active:hover {
-    background-image: url("assets/sidebar-radio-selected.svg");
-}
-
-.sidebar .radio:hover {
-    background-image: url("assets/sidebar-radio-prelight.svg");
-}
-
-.sidebar .radio:active:selected,
-.sidebar .radio:active:selected:focus {
-    background-image: url("assets/sidebar-radio-selected.svg");
-}
-
-.sidebar .radio:selected:hover,
-.sidebar .radio:selected:focus {
-    background-image: url("assets/sidebar-radio-selected-prelight.svg");
-}*/
-
 .menu .check {
     background-image: url("assets/menuitem-check-unselected.png");
 }
@@ -327,12 +307,18 @@
 
 .scale.slider:backdrop,
 .scale.slider.horizontal:backdrop {
-    /*background-image: url("assets/slider-horizontal-disabled.png");*/
 }
 
 .scale.slider:hover,
 .scale.slider.horizontal:hover {
     background-image: url("assets/slider-horizontal-hover.png");
+}
+
+.toolbar .scale.slider,
+.toolbar .scale.slider.horizontal,
+.toolbar .scale.slider:hover,
+.toolbar .scale.slider.horizontal:hover {
+    background-image: url("assets/slider-horizontal-toolbar.png");
 }
 
 .scale.slider:focused,
@@ -350,9 +336,13 @@
     background-image: url("assets/slider-horizontal-disabled.png");
 }
 
+.toolbar .scale.slider:insensitive,
+.toolbar .scale.slider.horizontal:insensitive {
+    background-image: url("assets/slider-horizontal.png");
+}
+
 .scale.slider:insensitive:backdrop,
 .scale.slider.horizontal:insensitive:backdrop {
-    /*background-image: url("assets/slider-horizontal-backdrop-disabled.png");*/
 }
 
 .scale.slider.vertical {
@@ -360,7 +350,6 @@
 }
 
 .scale.slider.vertical:backdrop {
-    /*background-image: url("assets/slider-vertical-backdrop.png");*/
 }
 
 .scale.slider.vertical:hover {
@@ -380,7 +369,6 @@
 }
 
 .scale.slider.vertical:insensitive:backdrop {
-    /*background-image: url("assets/slider-vertical-backdrop-disabled.png");*/
 }
 
 GtkSwitch.trough {
@@ -391,19 +379,3 @@ GtkSwitch.trough:active {
     background-image: url("assets/switch-on.svg");
 }
 
-/*.progressbar {
-    background-image: url("assets/progressbar-horizontal.png");
-}
-
-.progressbar:backdrop {
-    background-image: url("assets/backdrop-progressbar-horizontal.png");
-}
-
-.progressbar.vertical {
-    background-image: url("assets/progressbar-vertical.png");
-}
-
-.progressbar.vertical:backdrop {
-    background-image: url("assets/backdrop-progressbar-vertical.png");
-}
-*/
