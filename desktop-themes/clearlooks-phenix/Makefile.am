@@ -2,7 +2,9 @@ THEME_NAME=clearlooks-phenix
  
 themedir = $(datadir)/themes/$(THEME_NAME)
 
-theme_DATA = index.theme
+theme_DATA = \
+	index.theme \
+	COPYING
 
 EXTRA_DIST = $(theme_DATA)
 
