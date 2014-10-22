@@ -1,8 +1,8 @@
 AC_PREREQ(2.53)
 
-AC_INIT([mate-themes-extras], [1.8.2], [http://www.raveit.de])
+AC_INIT([mate-themes-extras], [3.10.0], [http://www.raveit.de])
 
-AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz tar-ustar])
+AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz tar-ustar check-news])
 
 # Enable silent build rules by default, requires at least
 # Automake-1.11. Disable by either passing --disable-silent-rules to
