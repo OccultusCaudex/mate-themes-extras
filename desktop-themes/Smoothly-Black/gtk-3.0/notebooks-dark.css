@@ -3,6 +3,12 @@
  * tabs          *
  *****************/
 .notebook {
+    -GtkNotebook-initial-gap: 1;
+    -GtkNotebook-arrow-spacing: 5;
+    -GtkNotebook-tab-curvature: 0;
+    -GtkNotebook-tab-overlap: 1;
+    -GtkWidget-focus-padding: 0;
+    -GtkWidget-focus-line-width: 1;
     background-color: shade (@bg_color-b, 1.20);
     background-image: none;
     border-radius: 3px 5px 3px 5px;
@@ -11,6 +17,12 @@
                 inset -2px -2px shade (@border_gradient_color_a-b, 1.50),
                 inset 1px 1px shade (@inner_gradient_color_b-b, 1.00),
                 inset -1px -1px shade (@inner_gradient_color_b-b, 1.00);
+}
+
+.notebook.header {
+    background-color: @transparent;
+    border-width: 0px;
+    box-shadow: none   
 }
 
 .notebook tab:active {
