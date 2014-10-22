@@ -71,8 +71,8 @@
 /*    background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@glow_color, 0.70)),
                                      color-stop (1.00, shade (@glow_color, 1.60)),
-                                     color-stop (1.50, @glow_color),
-                                     to (shade (@glow_color, 1.50)));*/
+                                     color-stop (0.00, shade (@glow_color, 1.70)),
+                                     color-stop (0.50, @glow_color),
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@glow_color, 0.70)),
                                      color-stop (1.00, shade (@glow_color, 1.70)),
@@ -132,20 +132,22 @@
 .menuitem.check:active:insensitive,
 * .check:active:insensitive {
    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@gradient_activ_color_b, 1.10)),
-                                     to (shade (@gradient_activ_color_a, 0.95)));
-    box-shadow: inset 1px 0.2px shade (@border_gradient_color_b, 1.25),
-                inset -1px -0.2px shade (@border_gradient_color_b, 1.25);
+                                     from (shade (@gradient_activ_color_b, 1.20)),
+                                     to (@gradient_activ_color_a));
+    box-shadow: inset 2px 2px shade (@inner_gradient_color_a, 1.05),
+                inset -2px -2px shade (@inner_gradient_color_b, 1.15),
+                inset 1px 1px shade (@border_gradient_color_a, 1.05),
+                inset -1px -1px shade (@border_gradient_color_b, 1.20);
 }
 
 .cell.radio:active:insensitive,
 .menuitem.radio:active:insensitive,
 * .radio:active:insensitive {
    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@gradient_activ_color_b, 1.20)),
-                                     to (@gradient_activ_color_a));
-    box-shadow: inset 1px 0.2px shade (@border_gradient_color_b, 0.85),
-                inset -1px -0.2px shade (@border_gradient_color_b, 0.85);
+                                     from (shade (@gradient_activ_color_b, 1.10)),
+                                     to (shade (@gradient_activ_color_a, 0.95)));
+    box-shadow: inset 1px 0.2px shade (@border_gradient_color_b, 1.25),
+                inset -1px -0.2px shade (@border_gradient_color_b, 1.25);
 }
 
 .cell.check:inconsistent:insensitive,

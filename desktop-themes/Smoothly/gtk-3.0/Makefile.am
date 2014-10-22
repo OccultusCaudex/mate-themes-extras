@@ -26,9 +26,13 @@ theme_DATA = \
 	progressbar.css \
 	progressbar-dark.css \
 	scale.css \
+	scale-dark.css \
 	scrollbar.css \
+	scrollbar-dark.css \
 	sidebar.css \
-	toolbar.css
+	sidebar-dark.css \
+	toolbar.css \
+	toolbar-dark.css
 
 EXTRA_DIST = $(theme_DATA)
 

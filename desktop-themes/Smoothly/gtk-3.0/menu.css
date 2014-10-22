@@ -59,7 +59,7 @@
                 inset 1px 1px shade (@border_gradient_color_b, 0.85),
                 inset -1px -1px shade (@border_gradient_color_b, 0.85);
     -GtkMenuItem-arrow-scaling: 0.4;
-    padding: 0px 3px 0px 3px;
+    padding: 3px 3px 3px 3px;
     border-style: solid;
     border-width: 1px;
     border-radius: 1px;
