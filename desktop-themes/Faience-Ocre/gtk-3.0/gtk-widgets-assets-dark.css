@@ -246,26 +246,6 @@
     background-image: url("assets/dark-backdrop-radio-mixed-disabled.png");
 }
 
-/*.sidebar .radio:active,
-.sidebar .radio:active:focus,
-.sidebar .radio:active:hover {
-    background-image: url("assets/dark-sidebar-radio-selected.svg");
-}
-
-.sidebar .radio:hover {
-    background-image: url("assets/dark-sidebar-radio-prelight.svg");
-}
-
-.sidebar .radio:active:selected,
-.sidebar .radio:active:selected:focus {
-    background-image: url("assets/dark-sidebar-radio-selected.svg");
-}
-
-.sidebar .radio:selected:hover,
-.sidebar .radio:selected:focus {
-    background-image: url("assets/dark-sidebar-radio-selected-prelight.svg");
-}*/
-
 .menu .check {
     background-image: url("assets/dark-menuitem-check-unselected.png");
 }
@@ -327,7 +307,6 @@
 
 .scale.slider:backdrop,
 .scale.slider.horizontal:backdrop {
-    /*background-image: url("assets/dark-slider-horizontal-disabled.png");*/
 }
 
 .scale.slider:hover,
@@ -352,7 +331,6 @@
 
 .scale.slider:insensitive:backdrop,
 .scale.slider.horizontal:insensitive:backdrop {
-    /*background-image: url("assets/dark-slider-horizontal-backdrop-disabled.png");*/
 }
 
 .scale.slider.vertical {
@@ -360,7 +338,6 @@
 }
 
 .scale.slider.vertical:backdrop {
-    /*background-image: url("assets/dark-slider-vertical-backdrop.png");*/
 }
 
 .scale.slider.vertical:hover {
@@ -380,7 +357,6 @@
 }
 
 .scale.slider.vertical:insensitive:backdrop {
-    /*background-image: url("assets/dark-slider-vertical-backdrop-disabled.png");*/
 }
 
 GtkSwitch.trough {
@@ -391,18 +367,3 @@ GtkSwitch.trough:active {
     background-image: url("assets/dark-switch-on.svg");
 }
 
-/*.progressbar {
-    background-image: url("assets/dark-progressbar-horizontal.png");
-}
-
-.progressbar:backdrop {
-    background-image: url("assets/dark-backdrop-progressbar-horizontal.png");
-}
-
-.progressbar.vertical {
-    background-image: url("assets/dark-progressbar-vertical.png");
-}
-
-.progressbar.vertical:backdrop {
-    background-image: url("assets/dark-backdrop-progressbar-vertical.png");
-}*/

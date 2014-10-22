@@ -218,8 +218,6 @@ desktop-themes/Faience/gtk-3.0/assets/Makefile
 desktop-themes/Faience/metacity-1/Makefile
 desktop-themes/Faience/unity/Makefile
 desktop-themes/Faience-Ocre/Makefile
-desktop-themes/Faience-Ocre/gnome-shell/Makefile
-desktop-themes/Faience-Ocre/gnome-shell/assets/Makefile
 desktop-themes/Faience-Ocre/gtk-2.0/Makefile
 desktop-themes/Faience-Ocre/gtk-2.0/apps/Makefile
 desktop-themes/Faience-Ocre/gtk-2.0/apps/Handles/Makefile

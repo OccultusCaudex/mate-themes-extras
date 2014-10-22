@@ -42,13 +42,23 @@ theme_DATA = \
 	button-lightblue-hover-focus.png \
 	button-lightblue-hover.png \
 	button-lightblue.png \
+	button-linked-left-active.png \
+	button-linked-left-hover.png \
+	button-linked-left.png \
+	button-linked-right-active.png \
+	button-linked-right-hover.png \
+	button-linked-right.png \
 	button.png \
 	button-red-active.png \
 	button-red-focus.png \
 	button-red-hover-focus.png \
 	button-red-hover.png \
 	button-red.png \
+	calendar-arrow-left-active.svg \
+	calendar-arrow-left-hover.svg \
 	calendar-arrow-left.svg \
+	calendar-arrow-right-active.svg \
+	calendar-arrow-right-hover.svg \
 	calendar-arrow-right.svg \
 	calendar-day-active.png \
 	calendar-day.png \
@@ -86,22 +96,34 @@ theme_DATA = \
 	entry-dark.png \
 	entry-focus.png \
 	entry.png \
-	hscrollbar-slider-active.png \
-	hscrollbar-slider-hover.png \
-	hscrollbar-slider.png \
-	hscrollbar-trough.png \
+	key-active.png \
+	key-hover.png \
+	key-insensitive.png \
+	key.png \
+	list-search-result-hover.svg \
+	list-search-result-last-hover.svg \
+	list-search-result-last.svg \
+	list-search-result.svg \
 	logged-in-indicator.png \
+	message-indicator-hover.svg \
+	message-indicator.svg \
+	more-results.svg \
 	noise-texture-dark.png \
 	noise-texture-light.png \
 	notification-separator.svg \
+	page-indicator-active.svg \
+	page-indicator-checked.svg \
+	page-indicator-hover.svg \
+	page-indicator-inactive.svg \
+	panel-menu-active-overview.png \
 	panel-menu-active.png \
 	panel-menu-hover.png \
 	process-working.svg \
-	rect3946.png \
-	rect4762.png \
-	running-indicator.png \
+	running-indicator-overview.svg \
+	running-indicator.svg \
 	search-entry-focus.png \
 	search-entry.png \
+	search-section-separator.svg \
 	separator-app-list02.svg \
 	separator-app-list.svg \
 	separator-horizontal.svg \
@@ -109,15 +131,9 @@ theme_DATA = \
 	status-chooser-combo-arrow.svg \
 	summary-counter.png \
 	toggle-off-intl.svg \
-	toggle-off-us2.svg \
 	toggle-off-us.svg \
 	toggle-on-intl.svg \
-	toggle-on-us2.svg \
 	toggle-on-us.svg \
-	vscrollbar-slider-active.png \
-	vscrollbar-slider-hover.png \
-	vscrollbar-slider.png \
-	vscrollbar-trough.png \
 	ws-switch-arrow-down.svg \
 	ws-switch-arrow-up.svg \
 	ws-thumbnails.svg
