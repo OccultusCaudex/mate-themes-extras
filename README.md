@@ -9,6 +9,8 @@ Branches:
 
 master - development
 
+GTK3-3.14
+
 GTK3-3.12
 
 GTK3-3.10
@@ -63,20 +65,6 @@ Themes:
 
 --Zukitwo
 
---Zukitwo-Dust
-
---Zukitwo-Brave
-
---Zukitwo-Human
-
---Zukitwo-Illustrious
-
---Zukitwo-Noble
-
---Zukitwo-Wine
-
---Zukitwo-Wise
-
 
 Installation:
 
@@ -104,3 +92,6 @@ NOCONFIGURE=1 ./autogen.sh
 make
 
 make install (as root)
+
+
+Or simply copy the theme folders to ~./themes
