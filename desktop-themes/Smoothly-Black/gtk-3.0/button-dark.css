@@ -14,7 +14,7 @@ GtkComboBox *{
 
 GtkComboBox,
 .button {
-    transition: 80ms ease-in-out;
+    /*transition: 80ms ease-in-out;*/
     border-radius: 4px 7px 4px 7px;
     border-style: solid;
     text-shadow: 1px 1px alpha (shade (@text_shadow_color-b, 1.25), 0.40);

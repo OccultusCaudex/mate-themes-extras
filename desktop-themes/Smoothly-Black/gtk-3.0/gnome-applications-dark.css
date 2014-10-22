@@ -14,8 +14,10 @@ GeditView {
 }
 
 /* gnome-contacts view background */
++ContactsWindow .sidebar *
 .contacts-main-view.view {
     background-color: shade (@bg_color-b, 1.00);
++    color: shade (@text_color-b, 1.00);
 }
 
 /* Gucharmap */
