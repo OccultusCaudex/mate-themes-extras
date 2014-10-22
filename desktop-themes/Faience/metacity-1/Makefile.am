@@ -22,7 +22,8 @@ theme_DATA = \
 	minimize_focused_pressed.png \
 	minimize_unfocused.png \
 	minimize_unfocused_prelight.png \
-	sources.svg \
+	sources_dark.svg \
+	sources_light.svg \
 	unmaximize_focused_normal.png \
 	unmaximize_focused_prelight.png \
 	unmaximize_focused_pressed.png \

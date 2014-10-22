@@ -25,9 +25,11 @@ theme_DATA = \
 	backdrop-check-unselected.png \
 	backdrop-combobox-button-disabled.png \
 	backdrop-combobox-button.png \
+	backdrop-combobox-button-toolbar.png \
 	backdrop-combobox-entry-disabled.png \
 	backdrop-entry-disabled.png \
 	backdrop-entry.png \
+	backdrop-entry-toolbar.png \
 	backdrop-progressbar-horizontal.png \
 	backdrop-progressbar-vertical.png \
 	backdrop-radio-mixed-disabled.png \
@@ -75,6 +77,9 @@ theme_DATA = \
 	combobox-button-focused.png \
 	combobox-button.png \
 	combobox-button-pressed-focused.png \
+	combobox-button-toolbar-focused.png \
+	combobox-button-toolbar.png \
+	combobox-button-toolbar-pressed-focused.png \
 	dark-backdrop-button-active-disabled.png \
 	dark-backdrop-button-active-hover.png \
 	dark-backdrop-button-active.png \
@@ -95,8 +100,10 @@ theme_DATA = \
 	dark-backdrop-check-unselected.png \
 	dark-backdrop-combobox-button-disabled.png \
 	dark-backdrop-combobox-button.png \
+	dark-backdrop-combobox-button-toolbar.png \
 	dark-backdrop-entry-disabled.png \
 	dark-backdrop-entry.png \
+	dark-backdrop-entry-toolbar.png \
 	dark-backdrop-progressbar-horizontal.png \
 	dark-backdrop-progressbar-vertical.png \
 	dark-backdrop-radio-mixed-disabled.png \
@@ -144,9 +151,13 @@ theme_DATA = \
 	dark-combobox-button-focused.png \
 	dark-combobox-button.png \
 	dark-combobox-button-pressed-focused.png \
+	dark-combobox-button-toolbar-focused.png \
+	dark-combobox-button-toolbar.png \
+	dark-combobox-button-toolbar-pressed-focused.png \
 	dark-entry-disabled.png \
 	dark-entry-focused.png \
 	dark-entry.png \
+	dark-entry-toolbar-disabled.png \
 	dark-entry-toolbar-focused.png \
 	dark-entry-toolbar.png \
 	dark-menuitem-arrow-disabled.png \
@@ -176,8 +187,6 @@ theme_DATA = \
 	dark-notebook-tab-top-active.png \
 	dark-notebook-tab-top-focused.png \
 	dark-notebook-tab-top.png \
-	dark-progressbar-horizontal.png \
-	dark-progressbar-vertical.png \
 	dark-radio-mixed-disabled.png \
 	dark-radio-mixed-hover.png \
 	dark-radio-mixed.png \
@@ -187,19 +196,12 @@ theme_DATA = \
 	dark-radio-unselected-disabled.png \
 	dark-radio-unselected-hover.png \
 	dark-radio-unselected.png \
-	dark-scrollbar-slider-horizontal-active.png \
-	dark-scrollbar-slider-horizontal-hover.png \
-	dark-scrollbar-slider-horizontal.png \
-	dark-scrollbar-slider-vertical-active.png \
-	dark-scrollbar-slider-vertical-hover.png \
-	dark-scrollbar-slider-vertical.png \
-	dark-scrollbar-trough-horizontal.png \
-	dark-scrollbar-trough-vertical.png \
 	dark-slider-horizontal-disabled.png \
 	dark-slider-horizontal-focused-hover.png \
 	dark-slider-horizontal-focused.png \
 	dark-slider-horizontal-hover.png \
 	dark-slider-horizontal.png \
+	dark-slider-horizontal-toolbar.png \
 	dark-switch-off-disabled.svg \
 	dark-switch-off.svg \
 	dark-switch-on-disabled.svg \
@@ -208,6 +210,7 @@ theme_DATA = \
 	entry-disabled.png \
 	entry-focused.png \
 	entry.png \
+	entry-toolbar-disabled.png \
 	entry-toolbar-focused.png \
 	entry-toolbar.png \
 	frame.png \
@@ -240,8 +243,6 @@ theme_DATA = \
 	notebook-tab-top-active.png \
 	notebook-tab-top-focused.png \
 	notebook-tab-top.png \
-	progressbar-horizontal.png \
-	progressbar-vertical.png \
 	radio-mixed-disabled.png \
 	radio-mixed-hover.png \
 	radio-mixed.png \
@@ -253,14 +254,6 @@ theme_DATA = \
 	radio-unselected.png \
 	scrollbar_handle.png \
 	scrollbar_handle_vertical.png \
-	scrollbar-slider-horizontal-active.png \
-	scrollbar-slider-horizontal-hover.png \
-	scrollbar-slider-horizontal.png \
-	scrollbar-slider-vertical-active.png \
-	scrollbar-slider-vertical-hover.png \
-	scrollbar-slider-vertical.png \
-	scrollbar-trough-horizontal.png \
-	scrollbar-trough-vertical.png \
 	sidebar-radio-checked-dark.svg \
 	sidebar-radio-checked.svg \
 	sidebar-radio-prelight.svg \
@@ -272,6 +265,7 @@ theme_DATA = \
 	slider-horizontal-focused.png \
 	slider-horizontal-hover.png \
 	slider-horizontal.png \
+	slider-horizontal-toolbar.png \
 	switch-off-disabled.svg \
 	switch-off.svg \
 	switch-on-disabled.svg \
