@@ -63,11 +63,10 @@
 	border-color: shade (@theme_bg_color, 0.8);
 
 	/* Highlight drag-drop destination */
-/*	engine: unico;
+	engine: unico;
 	-unico-focus-border-color: alpha(@theme_selected_bg_color, 0.25);
     -unico-focus-border-radius: 3;
     -unico-focus-fill-color: alpha(@theme_selected_bg_color, 0.1);
-*/
 }
 
 /***************
@@ -2626,6 +2625,7 @@ NemoWindow .primary-toolbar.toolbar .button:hover:active,
 	border-top: 1px solid @borders;
 	border-left: 1px solid @borders;
 	border-right: 1px solid @borders;
+
 }
 
 .notebook.header.frame.bottom {
