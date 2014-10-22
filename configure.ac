@@ -14,14 +14,6 @@ PKG_PROG_PKG_CONFIG([0.19])
 # Workaround to make aclocal get the right flags
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
-# Check GTK+ theme engines
-PKG_CHECK_MODULES(THEME_ENGINE,
- [gtk+-2.0 >= 2.0.0 dnl
-  gdk-pixbuf-2.0 >= 2.0.0 ]) 
-
-GTK_VERSION=`$PKG_CONFIG --variable=gtk_binary_version gtk+-2.0`
-AC_SUBST(GTK_VERSION)
-
 dnl ***************************************************************************
 dnl *** Blue-Submarine checks							    				***
 dnl ***************************************************************************
