@@ -1,3 +1,9 @@
+3.10.0
+
+  * bump version to reflect GTK3 version
+  * udate clearlook-phenix to GTK3-3.10/12
+  * update faince themes to GTK3-3.10
+
 1.8.2
 
   * adjustments for Submarine themes
