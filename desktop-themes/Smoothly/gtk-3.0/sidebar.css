@@ -12,6 +12,10 @@
     border-radius: 3px;
 }
 
+.sidebar .scrollbar {
+    background-color: @bg_color;
+}
+
 .sidebar.view:prelight {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (@gradient_color_a),
