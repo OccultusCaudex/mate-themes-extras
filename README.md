@@ -35,20 +35,6 @@ But i don't wanna drop them for the momment.
 
 --Gnome-Cupertino-Mint
 
---Zukitwo-Dust
-
---Zukitwo-Brave
-
---Zukitwo-Human
-
---Zukitwo-Illustrious
-
---Zukitwo-Noble
-
---Zukitwo-Wine
-
---Zukitwo-Wise
-
 
 Installation:
 
@@ -76,3 +62,6 @@ NOCONFIGURE=1 ./autogen.sh
 make
 
 make install (as root)
+
+
+Or simply copy the theme folders to ~./themes
