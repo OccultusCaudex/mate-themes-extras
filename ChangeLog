@@ -1,4 +1,13 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Wed Oct 22 2014
+release 3.12.0
+
+- bump version to refect GTK3 version
+- update smoothly themes to GTK3-3.12
+- update clearlooks-phenix to GTK3-3.12
+- update faience themes to GTk3-3.10
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Sun Aug 10 2014
 release 1.9.1
 
