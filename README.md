@@ -2,58 +2,14 @@ mate-themes-extras
 ====================
 
 The mate-themes-extras package contains a collection of GTK2/3 desktop themes for MATE. These themes can change the appearance of application widgets, window borders, etc.
-As everybody know you need an optimize package for GTK3 for your distro.
-You can use several branches or release packages for download.
 
-Branches:
-
-master - development
-
-GTK3-3.14
-
-GTK3-3.12
-
-GTK3-3.10
-
-GTK3-3.8
-
-GTK3-3.6
-
-GTK3-3.4
-
-GTK3-3.2
-
-Releases:
-
-https://github.com/NiceandGently/mate-themes-extras/releases
-
-1.9.1 for GTK3-3.12
-
-1.8.2 for GTK3-3.10
-
-1.7.5 for GTK3-3.8
-
-1.6.7 for GTK3-3.6
-
-1.5.3 for GTK3-3.4
-
-1.4.0 for GTK3-3.2
+This branch is optimized for GTK3-3.14.
 
 Themes:
 
 --Blue-Submarine
 
---clearlooks-phenix
-
 --delorean-dark
-
---Faience
-
---Faience-Ocre
-
---Gnome-Cupertino
-
---Gnome-Cupertino-Mint
 
 --GnomishBeige
 
@@ -64,6 +20,20 @@ Themes:
 --Smootly-Black
 
 --Zukitwo
+
+Note: Those themes aren't ready for GTK3-3.14, it seems that some of them have a death upstream.
+
+But i don't wanna drop them for the momment.
+
+--clearlooks-phenix
+
+--Faience
+
+--Faience-Ocre
+
+--Gnome-Cupertino
+
+--Gnome-Cupertino-Mint
 
 
 Installation:
