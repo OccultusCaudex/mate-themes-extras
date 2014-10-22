@@ -46,3 +46,26 @@ NOCONFIGURE=1 ./autogen.sh
 make
 
 make install (as root)
+
+Anther way to install is simple copy the theme folders to ~/themes
+
+
+Needed gtk-engines:
+
+Blue-Submarine, Green-Submarine: gtk-murrine-engine, gtk-unico-engine
+
+clearlook-phenix: gtk2-engines (clearlooks)
+
+DeLorean-Dark : gtk-murrine-engine
+
+Faience, Faience-Ocre: gtk-murrine-engine, gtk-unico-engine
+
+Gnome-Cupertino, Gnome-Cupertino-Mint: gtk-murrine-engine, gtk-unico-engine
+
+GnomishBeige: gtk-murrine-engine
+
+Smoothly, Smoothly-Black: gtk-smooth-engine
+
+Zukitwo: gtk-murrine-engine
+
+Zukitwo Color themes: gtk-murrine-engine, gtk-unico-engine
