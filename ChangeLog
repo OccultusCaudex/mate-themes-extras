@@ -1,7 +1,15 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Wed Oct 22 2014
+
+release version to 3.8.0
+	- pre-bump version to reflect GTK3 version
+	- update faince themes to GTK3-3.10 (works with GTK3-3.8)
+	- drop cologne theme, get rid of runtime require gtk-xfce-engine
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Thu Oct 16 2014
 
-release version to 1.7.5
+release version to 1.7.6
 	- update Clearlook-Phenix to upstream version 4 (GTK3-3.8)
 	- serveral fixes
 
