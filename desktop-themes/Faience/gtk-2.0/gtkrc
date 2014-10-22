@@ -483,9 +483,10 @@ class "GtkCalendar"	style "murrine-wide"
 class "GtkInfoBar"	style "murrine-default"
 class "GtkIconView"	style "murrine-default"
 
-class "GtkToolbar"	style "murrine-toolbar"
+class "GtkToolbar"			style "murrine-toolbar"
 class "*HandleBox"          style "murrine-toolbar"
-widget_class "*HandleBox"   style "murrine-toolbar"
+widget_class "*HandleBox"   	style "murrine-toolbar"
+widget_class "*<GtkToolbar>*" 	style "murrine-toolbar"
 
 class "GtkSpinButton"	style "murrine-spinbutton"
 

@@ -35,7 +35,7 @@
 @define-color notebook_bg_color #f2f2f2;
 @define-color notebook_tab_bg_color #e8e8e8;
 
-@define-color sidebar_bg_color #EEEEEE;
+@define-color sidebar_bg_color #d4dae1;
 @define-color sidebar_fg_color #3d444f;
 @define-color sidebar_selected_bg_color #9ab1cb;
 
@@ -60,10 +60,12 @@
 
 /* Window manager */
 @define-color wm_title @theme_fg_color;
+@define-color wm_title_shadow alpha (white, 0.3);
 @define-color wm_unfocused_title shade(@theme_fg_color, 1.2);
-@define-color wm_highlight alpha(#ffffff, 0.6);
-@define-color wm_title_highlight_dark alpha(#ffffff, 0.1);
-@define-color wm_title_highlight alpha(#ffffff, 0.4);
+@define-color wm_highlight alpha (white, 0.5);
+@define-color wm_title_highlight_dark alpha (white, 0.1);
+@define-color wm_title_highlight alpha (white, 0.4);
+@define-color wm_shadow alpha (black, 0.6);
 
 @import url("gtk-widgets-borders.css");
 @import url("gtk-widgets-assets.css");
