@@ -63,11 +63,10 @@
 	border-color: shade (@theme_bg_color, 0.8);
 
 	/* Highlight drag-drop destination */
-/*	engine: unico;
+	engine: unico;
 	-unico-focus-border-color: alpha(@theme_selected_bg_color, 0.25);
     -unico-focus-border-radius: 3;
     -unico-focus-fill-color: alpha(@theme_selected_bg_color, 0.1);
-*/
 }
 
 /***************
@@ -3217,6 +3216,7 @@ GtkCalendar.header {
                                      to   (shade(@theme_bg_color, 0.89)));
     border-width: 0px;
 }
+
 
 GtkCalendar.button {
     background-image: -gtk-gradient (linear,
