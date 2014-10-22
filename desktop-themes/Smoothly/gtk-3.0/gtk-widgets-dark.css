@@ -547,6 +547,25 @@ GtkLevelBar.vertical {
     animation: spinner 1s infinite linear;
 }
 
+GtkPopover {
+    border-radius: 5px;
+    background-clip: border-box;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0 2px 3px @wm_shadow;
+    margin: 10px;
+    padding: 2px;
+    border-color: shade (@border_gradient_color_a-b, 0.80);
+    box-shadow: inset 2px 2px shade (@border_gradient_color_a-b, 1.50),
+                inset -2px -2px shade (@border_gradient_color_a-b, 1.50),
+                inset 1px 1px shade (@inner_gradient_color_b-b, 1.00),
+                inset -1px -1px shade (@inner_gradient_color_b-b, 1.00);
+    background-color: shade (@bg_color-b, 0.90);
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (alpha (@text_color-b, 0.20)),
+                                     to (alpha (@text_color-b, 0.20)));
+}
+
 @import url("entry-dark.css");
 @import url("button-dark.css");
 @import url("header-cell-dark.css");
