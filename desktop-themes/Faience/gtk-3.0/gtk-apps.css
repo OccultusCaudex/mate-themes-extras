@@ -1,5 +1,84 @@
 /*** Unity ***/
 
+UnityDecoration {
+    -UnityDecoration-extents: 28px 0 0 0;
+    -UnityDecoration-input-extents: 10px;
+
+    -UnityDecoration-shadow-offset-x: 1px;
+    -UnityDecoration-shadow-offset-y: 5px;
+    -UnityDecoration-active-shadow-color: rgba (0, 0, 0, 0.75);
+    -UnityDecoration-active-shadow-radius: 30px;
+    -UnityDecoration-inactive-shadow-color: rgba (0, 0, 0, 0.3);
+    -UnityDecoration-inactive-shadow-radius: 25px;
+
+    -UnityDecoration-glow-size: 10px;
+    -UnityDecoration-glow-color: rgb (221, 72, 20);
+
+    -UnityDecoration-title-indent: 10px;
+    -UnityDecoration-title-fade: 35px;
+    -UnityDecoration-title-alignment: 0.0;
+}
+
+UnityDecoration.top {
+    border: 0px solid rgba (0, 0, 0, 0.03);
+    border-bottom-width: 0;
+    border-radius: 6px 6px 0 0;
+    padding: 1px 6px 0 6px;
+
+    box-shadow: inset 0 0 transparent, inset 0 0 transparent,
+                inset 0 1px @wm_highlight, inset 0 0 transparent;
+
+    background-color: transparent;
+    background-clip: border-box;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@theme_bg_color, 0.95)),
+                                     to (shade (@toolbar_gradient_start, 1.0)));
+
+    color: @wm_title;
+    text-shadow: 0 1px @wm_title_shadow;
+    /*text-shadow: 1px 0 #333, -1px 0 #333, 0 1px #333, 0 -1px #333;*/
+}
+
+UnityDecoration.top:backdrop {
+    border: 0px solid rgba (0, 0, 0, 0.03);
+    border-bottom-width: 0;
+    background-color: transparent;
+    background-clip: border-box;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@theme_bg_color, 1.05)),
+                                     to (@theme_bg_color));
+    box-shadow: inset 0 0 transparent, inset 0 0 transparent,
+                inset 0 1px @wm_highlight, inset 0 0 transparent;
+    color: @wm_unfocused_title;
+}
+
+UnityDecoration.left,
+UnityDecoration.right {
+    background-color: shade (@theme_bg_color, 0.7);
+    background-size: 1px 70px;
+    background-repeat: repeat-x;
+
+    /* start color: mix of the top border color and bg-image gradient end */
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     color-stop (0, #2b2a2a),
+                                     color-stop (0.5, #2b2a2a),
+                                     color-stop (1, shade (@theme_bg_color, 0.7)));
+}
+
+UnityDecoration.left:backdrop,
+UnityDecoration.right:backdrop {
+    /* start color: mix of the top border color and bg-image gradient end */
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     color-stop (0, #373632),
+                                     color-stop (0.5, #373632),
+                                     color-stop (1, shade (@theme_bg_color, 0.7)));
+}
+
+UnityDecoration.bottom {
+    background-image: none;
+    background-color: shade (@bg_color, 0.7);
+}
+
 UnityPanelWidget,
 .unity-panel {
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -43,6 +122,9 @@ UnityPanelWidget,
 
 .unity-panel.menubar.menuitem:hover,
 .unity-panel.menubar .menuitem *:hover {
+    background-image: none;
+    background-color: alpha (shade (@theme_bg_color, 0.5), 0.25);
+    border-radius: 0px;
 }
 
 
@@ -254,11 +336,13 @@ GeditFloatingSlider .not-found {
 .contacts-content.frame {
  border-width: 1px 0 0 0;
  border-radius: 0;
+ background-color: @theme_base_color;
 }
 
 /* Background color in contacts pane, similar to .documents-main-view.view */
 .contacts-main-view.view {
-}
+ background-color: @theme_base_color;
+} 
 
 .contacts-suggestion {
  background-color: #434343;
@@ -277,37 +361,39 @@ GeditFloatingSlider .not-found {
 
 /* Sidebar with line at top and the left */
 ContactsWindow .sidebar.frame {
- border-width: 1px 1px 0 0;
- border-style: solid;
- border-color: shade(@theme_bg_color, 0.9);
- border-image: none;
- border-radius: 0;
- padding: 0;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.9);
+    border-image: none;
+    border-radius: 0;
+    padding: 0;
 }
 
 .contacts-avatar-frame.frame {
- border-width: 1px 1px 0 1px;
- border-style: solid;
- border-color: red;
- border-image: none;
- border-radius: 0;
- padding: 0;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: red;
+    border-image: none;
+    border-radius: 0;
+    padding: 0;
 }
 
 /* Primary toolbar with no line at top to avoid conflicts with frame border */
 ContactsWindow .primary-toolbar.toolbar {
     border-width: 0;
     border-radius: 0px;
-    /*background-image: none;
-    background-color: @theme_bg_color;*/
+    background-image: none;
+    background-color: @theme_bg_color;
 }
 
 ContactsWindow .sidebar .view {
-    background-color: @theme_base_color;
+    background-image: none;
+    background-color: @sidebar_bg_color;
+    color: @sidebar_fg_color;
 }
 ContactsWindow .sidebar .view:selected,
 ContactsWindow .sidebar .view:selected:focus {
-    background-color: @theme_selected_bg_color;
+    background-color: @sidebar_selected_bg_color;
 }
 
 .contacts-button:active {
@@ -328,8 +414,8 @@ ContactsWindow .sidebar .view:selected:focus {
 
 .contacts-entry:selected,
 .contacts-entry:selected:focus {
- background-color: @theme_selected_bg_color;
- color: @theme_selected_fg_color;
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
 .contacts-entry.contacts-postal-entry {
@@ -391,7 +477,20 @@ NautilusWindow  .view.rubberband {
 }
 
 .nautilus-canvas-item:active {
-    background-color: @sidebar_selected_bg_color;
+    background-color: mix( @theme_selected_bg_color, @notebook_bg_color, 0.25);
+}
+
+NautilusWindow .view .entry/*,
+NautilusWindow .view .entry:focus*/ {
+    border-image: none;
+    background-image: none;
+    border: none;
+    color: @theme_fg_color;
+}
+
+NautilusWindow .view .entry:selected/*,
+NautilusWindow .view .entry:focus:selected*/ {
+    color: @theme_selected_fg_color;
 }
 
 /* desktop mode */
@@ -493,138 +592,6 @@ NautilusWindow .pane-separator:backdrop {
     background-color: alpha (shade (@sidebar_bg_color, 0.95), 0.4);
 }
 
-/*** Nemo ***/
-
-@define-color cluebar_color shade (mix (@theme_bg_color, @theme_base_color, 0.5), 0.95);
-
-NemoWindow * {
-    -GtkPaned-handle-size: 1;
-}
-
-NemoWindow .view {
-     background-color: @notebook_bg_color;
-}
-
-.nemo-inactive-pane .view {
-    background-color: shade (@notebook_bg_color, 0.96);
-}
-
-
-NemoWindow  .rubberband,
-NemoWindow  .view.rubberband {
-    background-color: alpha (@theme_selected_bg_color, 0.35);
-}
-
-
-.nemo-canvas-item {
-    border-radius: 4px;
-    background-image: none;
-    background-color: @sidebar_selected_bg_color;
-    color: @theme_text_color;
-}
-
-.nemo-canvas-item:active {
-    background-color: @sidebar_selected_bg_color;
-}
-
-/* desktop mode */
-.nemo-desktop.nemo-canvas-item {
-    color: white;
-    text-shadow: 1px 1px alpha (black, 0.8);
-}
-
-.nemo-desktop.nemo-canvas-item:active,
-.nemo-desktop.nemo-canvas-item:selected {
-    background-image: none;
-    background-color: alpha (@theme_selected_bg_color, 0.84);
-
-    color: @theme_selected_fg_color;
-}
-
-.nemo-desktop.nemo-canvas-item:active,
-.nemo-desktop.nemo-canvas-item:prelight,
-.nemo-desktop.nemo-canvas-item:selected {
-    text-shadow: none;
-}
-
-/* browser window */
-NemoTrashBar.info,
-NemoXContentBar.info,
-NemoSearchBar.info,
-NemoQueryEditor.info {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@cluebar_color, 1.02)),
-                                     to (shade (@cluebar_color, 0.98)));
-    background-color: @cluebar_color;
-    border-bottom-color: shade (@cluebar_color, 0.92);
-    border-radius: 0;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-
-    box-shadow: inset -1px 0px shade (@cluebar_color, 1.02),
-                inset 1px 0px shade (@cluebar_color, 1.02),
-                inset 0 1px shade (@cluebar_color, 1.04),
-                inset 0 -1px shade (@cluebar_color, 1.01);
-}
-
-NemoTrashBar.info:backdrop,
-NemoXContentBar.info:backdrop,
-NemoSearchBar.info:backdrop,
-NemoQueryEditor.info:backdrop {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@cluebar_color, 1.01)),
-                                     to (shade (@cluebar_color, 0.99)));
-    background-color: @cluebar_color;
-    border-bottom-color: shade (@cluebar_color, 0.92);
-
-    box-shadow: inset -1px 0px shade (@cluebar_color, 1.01),
-                inset 1px 0px shade (@cluebar_color, 1.01),
-                inset 0 1px shade (@cluebar_color, 1.02),
-                inset 0 -1px shade (@cluebar_color, 1.0);
-}
-
-NemoSearchBar .entry {
-}
-
-.nemo-cluebar-label {
-    font: bold;
-    text-shadow: 0 1px shade (@cluebar_color, 1.06);
-}
-
-.nemo-cluebar-label:backdrop {
-    color: mix (@theme_fg_color, @cluebar_color, 0.2);
-    text-shadow: 0 1px shade (@cluebar_color, 1.02);
-}
-
-#nemo-search-button *:active,
-#nemo-search-button *:active:prelight {
-    color: @theme_fg_color;
-}
-
-NemoFloatingBar {
-    background-color: @info_bg_color;
-    border-radius: 3px 3px 0 0;
-    border-style: solid;
-    border-width: 1px;
-    border-color: darker (@info_bg_color);
-}
-
-NemoFloatingBar .button {
-    -GtkButton-image-spacing: 0;
-    -GtkButton-inner-border: 0;
-}
-
-NemoWindow .pane-separator {
-    background-color: alpha (shade (@sidebar_bg_color, 0.95), 0.8);
-    border-color: @theme_bg_color;
-    border-style: solid;
-    border-width: 0;
-    box-shadow: none;
-}
-
-NemoWindow .pane-separator:backdrop {
-    background-color: alpha (shade (@sidebar_bg_color, 0.95), 0.4);
-}
 
 
 /*** Gnome Panel ***/
@@ -746,4 +713,31 @@ TerminalWindow GtkNotebook.notebook {
 
 TerminalWindow GtkNotebook.notebook tab {
     border-width: 5px 16px 0px 16px;
+}
+
+TerminalWindow .scrollbar.trough,
+TerminalWindow .scrollbar.trough.vertical {
+    background-color: @terminal_bg_color;
+}
+
+TerminalWindow .scrollbar.slider,
+TerminalWindow .scrollbar.button,
+TerminalWindow .scrollbar.slider.vertical,
+TerminalWindow .scrollbar.button.vertical {
+    border-radius: 0;
+    background-color: shade (@theme_base_color, 0.4);
+}
+
+TerminalWindow .scrollbar.slider:hover,
+TerminalWindow .scrollbar.button:hover,
+TerminalWindow .scrollbar.slider.vertical:hover,
+TerminalWindow .scrollbar.button.vertical:hover {
+    background-color: shade (@theme_base_color, 0.6);
+}
+
+TerminalWindow .scrollbar.slider:active,
+TerminalWindow .scrollbar.button:active,
+TerminalWindow .scrollbar.slider.vertical:active,
+TerminalWindow .scrollbar.button.vertical:active {
+    background-color: @theme_selected_bg_color;
 }
