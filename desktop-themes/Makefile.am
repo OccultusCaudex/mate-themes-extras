@@ -22,10 +22,6 @@ if BUILD_GNOME_CUPERTINO
 gnome_cupertino_SUBDIR = Gnome-Cupertino
 endif
 
-if BUILD_GNOME_CUPERTINO_MINT
-gnome_cupertino_mint_SUBDIR = Gnome-Cupertino-Mint
-endif
-
 if BUILD_GNOMISHBEIGE
 gnomishbeige_SUBDIR = GnomishBeige
 endif
@@ -85,7 +81,6 @@ SUBDIRS = \
 	$(faience_SUBDIR) \
 	$(faience_ocre_SUBDIR) \
 	$(gnome_cupertino_SUBDIR) \
-	$(gnome_cupertino_mint_SUBDIR) \
 	$(gnomishbeige_SUBDIR) \
 	$(green_submarine_SUBDIR) \
 	$(smootly_SUBDIR) \
@@ -109,7 +104,6 @@ DIST_SUBDIRS = \
 	Faience \
 	Faience-Ocre \
 	Gnome-Cupertino \
-	Gnome-Cupertino-Mint \
 	GnomishBeige \
 	Green-Submarine \
 	Smoothly \
