@@ -21,3 +21,7 @@ theme_DATA = \
 	toolbar-dark.css
 
 EXTRA_DIST = $(theme_DATA)
+
+SUBDIRS = assets
+
+DIST_SUBDIRS = assets
