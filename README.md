@@ -23,18 +23,16 @@ Themes:
 
 --Zukitwo
 
+
 Note: Those themes aren't ready for GTK3-3.14, there is work from upstream needed.
 
 But i don't wanna drop them for the momment.
-
 
 --Faience
 
 --Faience-Ocre
 
 --Gnome-Cupertino
-
---Gnome-Cupertino-Mint
 
 
 Installation:
