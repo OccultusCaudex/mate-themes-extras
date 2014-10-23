@@ -3,7 +3,6 @@ THEME_NAME=clearlooks-phenix
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-3.0/img
 
 theme_DATA = \
-	border-error.svg \
 	border-focused-ptb.svg \
 	border-focused.svg \
 	border-focused-switch.svg \
@@ -55,6 +54,5 @@ theme_DATA = \
 	scale-slider-vert.png \
 	slider-horz-grip.png \
 	slider-vert-grip.png
-
 
 EXTRA_DIST = $(theme_DATA)
