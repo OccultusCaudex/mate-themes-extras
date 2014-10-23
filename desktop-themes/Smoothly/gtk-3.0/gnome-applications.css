@@ -9,6 +9,7 @@ CheeseThumbView /* Cheese */
 }
 
 /* gnome-tweak-tool */
+.tweak-group .list-row,
 .tweak-group .list-row:hover,
 .tweak-white.list-row:hover {
     background-image: none;
@@ -23,8 +24,8 @@ GeditView {
 
 /* gnome-terminal */
 TerminalScreen {
-    background-color: @base_color;
-    color: @text_color;
+    background-color: @text_color;
+    color: @base_color;
     -TerminalScreen-background-darkness: 0.95;
 }
 
@@ -172,5 +173,79 @@ NautilusWindow > GtkTable > .pane-separator {
     border-style: solid;
     border-color: shade (@glow_color, 1.30);
     border-radius: 0;
+}
+
+/***********************
+ * Fallback Mode Panel *
+ ***********************/
+PanelApplet > GtkMenuBar.menubar,
+PanelApplet > GtkMenuBar.menubar.menuitem,
+PanelMenuBar.menubar,
+PanelMenuBar.menubar.menuitem,
+.gnome-panel-menu-bar,
+PanelToplevel,
+PanelWidget,
+PanelAppletFrame,
+PanelApplet {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (@gradient_color_a),
+                                     to (shade (@gradient_color_b, 1.15)));
+    border-width: 0;
+    border-radius: 0;
+}
+
+ClockBox,
+.gnome-panel-menu-bar {
+    border-width: 0;
+    font: bold;
+}
+
+.gnome-panel-menu-bar .menuitem:prelight {
+}
+
+.gnome-panel-menu-bar .menuitem *:prelight {
+    color: shade (@glow_color, 0.75);
+    text-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
+}
+
+PanelApplet .button,
+PanelApplet .button:prelight {
+    /*padding: 1px;*/
+}
+
+PanelApplet .button:active:prelight,
+PanelApplet .button:active {
+    color: shade (@glow_color, 0.75);
+    text-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
+}
+
+PanelApplet *:prelight {
+    color: @glow_color;
+}
+
+PanelApplet *:active,
+PanelApplet *:prelight:active {
+    color: shade (@glow_color, 0.75);
+    text-shadow: 1px 1px alpha (shade (@text_shadow_color, 1.25), 0.4);
+}
+
+NaTrayApplet {
+    /*-NaTrayApplet-icon-padding: 1;*/
+    -NaTrayApplet-icon-size: 16;
+}
+
+WnckPager, WnckTasklist {
+    background-color: @gradient_color_a;
+    background-image: none;
+    color: shade (@gradient_color_b, 0.70);
+    border-radius: 0;
+    border-width: 1px;
+    padding: 2px;
+}
+
+GsmFailWhaleDialog {
+}
+
+GsmFailWhaleDialog * {
 }
 

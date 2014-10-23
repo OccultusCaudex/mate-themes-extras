@@ -39,7 +39,7 @@ EggListBox:selected,
                 inset -1px -1px shade (@inner_gradient_color_a-b, 0.70);
 }
 
-.list-row:hover,
+/*.list-row:hover,*/
 EggListBox:hover,
 .view.cell:selected:prelight, 
 .view.cell:prelight {

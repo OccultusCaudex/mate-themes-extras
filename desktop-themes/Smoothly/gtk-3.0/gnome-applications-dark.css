@@ -9,6 +9,7 @@ CheeseThumbView /* Cheese */
 }
 
 /* gnome-tweak-tool */
+.tweak-group .list-row,
 .tweak-group .list-row:hover,
 .tweak-white.list-row:hover {
     background-image: none;
@@ -278,7 +279,7 @@ PanelApplet *:prelight:active {
     text-shadow: 1px 1px alpha (shade (@text_shadow_color-b, 1.25), 0.4);
 }
 
-NaTrayApplet {    
+NaTrayApplet {
 /*    -NaTrayApplet-icon-padding: 1;*/
     -NaTrayApplet-icon-size: 16;
 }

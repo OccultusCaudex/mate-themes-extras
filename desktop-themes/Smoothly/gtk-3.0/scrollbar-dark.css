@@ -84,6 +84,7 @@
     -GtkRange-trough-border: 0;
 }
 
+GtkScrolledWindow.frame.scrollbars-junction,
 .scrollbars-junction,
 .scrollbar.button {
     border-style: none;

@@ -32,6 +32,18 @@ GtkComboBox,
     border-width: 1px;
 }
 
+.list-row.button {
+    background-image: none;
+    box-shadow: none;
+    background-color: alpha (shade (@sidebar_bg_color, 0.98), 0.9);
+    color: @sidebar_text_color;
+    text-shadow: 1px 1px alpha (shade (@sidebar_text_shadow_color, 1.25), 0.4);
+    border-style: solid;
+    border-color: shade (@border_gradient_color_b, 1.40);
+    border-width: 1px 1px 1px 1px;
+    border-radius: 3px;
+}
+
 .primary-toolbar .button:hover,
 .button:hover {
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -44,6 +56,7 @@ GtkComboBox,
                 inset -1px -1px shade (@border_gradient_color_b, 0.90);
 }
 
+.button:checked
 .button:active {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (@gradient_activ_color_a),
@@ -54,7 +67,7 @@ GtkComboBox,
                 inset 1px 1px shade (@border_gradient_color_a, 0.90),
                 inset -1px -1px shade (@border_gradient_color_a, 0.75);
     border-width: 1px;
-    padding: 2.5px 5px 2.5px 3px;
+/*    padding: 2.5px 5px 2.5px 3px;*/
 }
 
 .primary-toolbar .button:active:hover,
