@@ -55,8 +55,6 @@ Themes:
 
 --Gnome-Cupertino
 
---Gnome-Cupertino-Mint
-
 --GnomishBeige
 
 --Green-Submarine
