@@ -9,6 +9,8 @@ Themes:
 
 --Blue-Submarine
 
+--clearlooks-phenix
+
 --delorean-dark
 
 --GnomishBeige
@@ -21,11 +23,10 @@ Themes:
 
 --Zukitwo
 
-Note: Those themes aren't ready for GTK3-3.14, it seems that some of them have a death upstream.
+Note: Those themes aren't ready for GTK3-3.14, there is work from upstream needed.
 
 But i don't wanna drop them for the momment.
 
---clearlooks-phenix
 
 --Faience
 
