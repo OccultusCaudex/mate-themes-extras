@@ -68,24 +68,6 @@ AC_ARG_ENABLE([Faience-Ocre],
 AM_CONDITIONAL(BUILD_FAIENCE_OCRE, test "x$enable_faience_ocre" = "xyes")
 
 dnl ***************************************************************************
-dnl *** Gnome-Cupertino specific checks                               		***
-dnl ***************************************************************************
-AC_ARG_ENABLE([Gnome-Cupertino],
-    AC_HELP_STRING([--enable-Gnome-Cupertino], [Install the Gnome-Cupertino desktop theme.]),
-    enable_gnome_cupertino=$enableval,
-    enable_gnome_cupertino=no)
-AM_CONDITIONAL(BUILD_GNOME_CUPERTINO, test "x$enable_gnome_cupertino" = "xyes")
-
-dnl ***************************************************************************
-dnl *** Gnome-Cupertino-Mint specific checks                                ***
-dnl ***************************************************************************
-AC_ARG_ENABLE([Gnome-Cupertino-Mint],
-    AC_HELP_STRING([--enable-Gnome-Cupertino-Mint], [Install the Gnome-Cupertino-Mint desktop theme.]),
-    enable_gnome_cupertino_mint=$enableval,
-    enable_gnome_cupertino_mint=no)
-AM_CONDITIONAL(BUILD_GNOME_CUPERTINO_MINT, test "x$enable_gnome_cupertino_mint" = "xyes")
-
-dnl ***************************************************************************
 dnl *** GnomishBeige checks						    						***
 dnl ***************************************************************************
 AC_ARG_ENABLE([GnomishBeige],
@@ -315,24 +297,6 @@ desktop-themes/Faience-Ocre/gtk-3.0/Makefile
 desktop-themes/Faience-Ocre/gtk-3.0/assets/Makefile
 desktop-themes/Faience-Ocre/metacity-1/Makefile
 desktop-themes/Faience-Ocre/unity/Makefile
-desktop-themes/Gnome-Cupertino/Makefile
-desktop-themes/Gnome-Cupertino/gtk-2.0/Makefile
-desktop-themes/Gnome-Cupertino/gtk-2.0/assets/Makefile
-desktop-themes/Gnome-Cupertino/gtk-2.0/apps/Makefile
-desktop-themes/Gnome-Cupertino/gtk-3.0/Makefile
-desktop-themes/Gnome-Cupertino/gtk-3.0/assets/Makefile
-desktop-themes/Gnome-Cupertino/gtk-3.0/apps/Makefile
-desktop-themes/Gnome-Cupertino/metacity-1/Makefile
-desktop-themes/Gnome-Cupertino/unity/Makefile
-desktop-themes/Gnome-Cupertino-Mint/Makefile
-desktop-themes/Gnome-Cupertino-Mint/gtk-2.0/Makefile
-desktop-themes/Gnome-Cupertino-Mint/gtk-2.0/assets/Makefile
-desktop-themes/Gnome-Cupertino-Mint/gtk-2.0/apps/Makefile
-desktop-themes/Gnome-Cupertino-Mint/gtk-3.0/Makefile
-desktop-themes/Gnome-Cupertino-Mint/gtk-3.0/assets/Makefile
-desktop-themes/Gnome-Cupertino-Mint/gtk-3.0/apps/Makefile
-desktop-themes/Gnome-Cupertino-Mint/metacity-1/Makefile
-desktop-themes/Gnome-Cupertino-Mint/unity/Makefile
 desktop-themes/GnomishBeige/Makefile
 desktop-themes/GnomishBeige/gtk-2.0/Makefile
 desktop-themes/GnomishBeige/gtk-2.0/Styles/Makefile
@@ -529,8 +493,6 @@ echo "
 		Install DeLorean-Dark:              ${enable_delorean_dark}
 		Install Faience:              	    ${enable_faience}
 		Install Faience-Ocre:               ${enable_faience_ocre}
-		Install Gnome-Cupertino:            ${enable_gnome_cupertino}
-		Install Gnome-Cupertino-Mint:       ${enable_gnome_cupertino_mint}
 		Install Green-Submarine:            ${enable_green_submarine}
 		Install GnomishBeige:               ${enable_gnomishbeige}
 		Install Smoothly:                   ${enable_smootly}
