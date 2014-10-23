@@ -13,8 +13,6 @@ Themes:
 --delorean-dark
 --Faience
 --Faience-Ocre
---Gnome-Cupertino
---Gnome-Cupertino-Mint
 --GnomishBeige
 --Green-Submarine
 --Smootly
@@ -38,11 +36,11 @@ Use configure --help after autogen to find out the right configure flags for a t
 --prefix=/usr is needed, otherwise the themes are installed in /usr/local/share/themes ,
 and  mate-appearance-properties doesn't find the themes!
 
-Example for install Gnome-Cupertino theme:
+Example for install Blue-Submarine theme:
 
 NOCONFIGURE=1 ./autogen.sh
 ./configure --prefix=/usr \
---enable-Gnome-Cupertino
+--enable-Blue-Submarine
 
 make
 
@@ -62,8 +60,6 @@ Cologne: gtk-xfce-engine
 DeLorean-Dark : gtk-murrine-engine
 
 Faience, Faience-Ocre: gtk-murrine-engine, gtk-unico-engine
-
-Gnome-Cupertino, Gnome-Cupertino-Mint: gtk-murrine-engine, gtk-unico-engine
 
 GnomishBeige: gtk-murrine-engine
 

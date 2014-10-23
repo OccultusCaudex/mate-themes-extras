@@ -19,10 +19,6 @@ Themes:
 
 --Faience-Ocre
 
---Gnome-Cupertino
-
---Gnome-Cupertino-Mint
-
 --GnomishBeige
 
 --Green-Submarine
@@ -61,13 +57,13 @@ Use configure --help after autogen to find out the right configure flags for a t
 and  mate-appearance-properties doesn't find the themes!
 
 
-Example for install Gnome-Cupertino theme:
+Example for install Blue-Submarine theme:
 
 NOCONFIGURE=1 ./autogen.sh
 
 ./configure --prefix=/usr \
 
---enable-Gnome-Cupertino
+--enable-Blue-Submarine
 
 make
 
