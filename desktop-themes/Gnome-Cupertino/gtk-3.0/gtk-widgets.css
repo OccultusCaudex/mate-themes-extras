@@ -755,14 +755,14 @@ column-header:nth-child(last) .button {
 }
 
 .content-view.view:prelight {
-    background-color: shade (@bg_color, 1.03);
+    background-color: blue;
 }
+
 
 .view:selected,
 .view:active,
 .content-view.view:selected,
 .content-view.view:active {
-    background-color: @selected_bg_color;
 }
 
 .content-view.view:insensitive {
@@ -2292,15 +2292,18 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
 .primary-toolbar .toolbar .button:insensitive,
 .primary-toolbar.toolbar .button:insensitive {
 	/* ubuntu-12 */
-    background-image: none;
-    background-color: alpha (@theme_base_color, 0.0);
-	border-color: @transparent;
     /* -GtkWidget-focus-line-width: 0; */
+background-color: transparent;
+    background-image: none;
+    border-color: transparent;
 }
 
 .toolbar .button *:insensitive {
 	color: @insensitive_fg_color;
     text-shadow: none;
+background-color: transparent;
+    background-image: none;
+    border-color: transparent;
 }
 
 .primary-toolbar .toolbar .button *:insensitive,
@@ -2590,9 +2593,18 @@ GtkViewport.frame {
 }
 
 
+
 *:insensitive {
-    background-color: @insensitive_bg_color;
     color: @insensitive_fg_color;
     border-color: @insensitive_border_color;
     box-shadow: none;
 }
+
+/* evolution fix*/
+MessageList *:selected {
+background-color: alpha (@selected_bg_color, 0.9);
+   color: @selected_fg_color;
+}
+
+
+

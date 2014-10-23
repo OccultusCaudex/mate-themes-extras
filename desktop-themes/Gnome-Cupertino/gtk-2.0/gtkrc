@@ -97,7 +97,7 @@ style "default" {
 	fg[NORMAL]          = @fg_color
 	fg[PRELIGHT]		= @text_color
 	fg[SELECTED]		= @selected_fg_color
-	fg[INSENSITIVE] 	= darker (@bg_color)
+	#fg[INSENSITIVE] 	= darker (@bg_color)
 	fg[ACTIVE]          = @text_color
 
 	text[NORMAL]		= @text_color
@@ -109,7 +109,7 @@ style "default" {
 	base[NORMAL]		= @base_color
 	base[PRELIGHT]		= shade (0.95, @bg_color)
 	base[SELECTED]		= @selected_bg_color
-	base[INSENSITIVE]	= shade (0.85, @base_color)
+	#base[INSENSITIVE]	= shade (0.85, @base_color)
 	base[ACTIVE]		= @selected_bg_color
 
 	engine "murrine" {

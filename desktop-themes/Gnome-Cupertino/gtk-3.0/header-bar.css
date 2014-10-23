@@ -2,17 +2,21 @@
  * header-bar *
  **************/
 .header-bar {
-    border-style: none;
-    border-image: none;
-    padding: 1px;
-    color: @fg_color;
-    text-shadow: none;
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@theme_bg_dark_color, 1.00)),
-                                     to   (shade(@theme_bg_dark_color, 0.84)));  
+                                     to   (shade(@theme_bg_dark_color, 0.84)));
 
-    color: @fg_color;
+	border-image: none;    
+	border-width: 0px 0px 1px 0px;
+    border-radius: 0px;
+    border-style: solid;    
+    border-color: shade (@theme_bg_dark_color, 0.64);
+	padding: 3px;
+
+    -GtkWidget-window-dragging: true;
+    -GtkToolbar-button-relief: normal;
+	color: @theme_fg_dark_color
 }
 
 .header-bar .button.text-button {
@@ -31,10 +35,6 @@
     font: smaller;
 }
 
-.header-bar .button * {
-border-radius: 0px;
-}
-
 .header-bar GtkComboBox,
 .header-bar .button {
      border-style: solid;
@@ -43,61 +43,135 @@ border-radius: 0px;
     border-color: transparent;
     color: @fg_color;
     border-radius: 0px;
-   border-image: url("assets/transparent.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    box-shadow: none;
+    border-width: 1px;
 }
 
 .header-bar .button:hover {
-   background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#ffffff),
-                                     to (#9d9c9c));
-border-image: url("assets/button-toolbar-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
- border-radius: 0px;
-  
+  background-image: -gtk-gradient (linear, left top, left bottom,
+	                                 from (shade(@theme_bg_dark_color, 1.05)),
+                                     color-stop (0.30, shade(@theme_bg_dark_color, 1.00)),
+	                                 to   (shade(@theme_bg_dark_color, 0.98)));
+
+    border-top-color: 		alpha (#000, 0.20);
+    border-left-color: 		alpha (#000, 0.25);
+    border-right-color: 	alpha (#000, 0.25);
+    border-bottom-color: 	alpha (#000, 0.30);
+	border-image: none;
+
+    box-shadow: inset  1px  0px alpha(#fff, 0.12),
+				inset -1px  0px alpha(#fff, 0.12);
+    border-style: solid;
+   border-radius: 4px;
+    box-shadow: none;
+    
+ 
 }
 
 .header-bar .button:focus,
 .header-bar .button:hover:focus {
-border-radius: 0px;
+border-style: solid;
+  
+   border-radius: 2px;
+   border-width: 1px;
+
 }
 
 .header-bar .button:active {
-background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#ffffff),
-                                     to (#9d9c9c));
-color: black;
-border-image: url("assets/button-toolbar.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
- border-radius: 0px;
+ background-image: -gtk-gradient (linear, left top, left bottom,
+	                                 from (shade(@theme_bg_dark_color, 1.00)),
+                                     color-stop (0.20, shade(@theme_bg_dark_color, 1.09)),
+	                                 to   (shade(@theme_bg_dark_color, 1.10)));
+
+    border-style:  solid;
+	border-width:  1px;
+    border-image:  none;
+
+    border-top-color: 		alpha (#000, 0.38);
+    border-left-color: 		alpha (#000, 0.22);
+    border-right-color: 	alpha (#000, 0.22);
+    border-bottom-color: 	alpha (#000, 0.18);
+
+    box-shadow:	inset  0px  2px alpha(#000, 0.03),
+                inset  0px  1px alpha(#000, 0.06),
+                inset  2px  0px alpha(#000, 0.03),
+                inset  1px  0px alpha(#000, 0.06),
+                inset -2px  0px alpha(#000, 0.03),
+                inset -1px  0px alpha(#000, 0.06),
+                inset  0px -2px alpha(#000, 0.02),
+                inset  0px -1px alpha(#000, 0.04);
+ border-style: solid;
+   border-radius: 4px;
+    box-shadow: none;
 
 }
 
 .header-bar .button:active:hover {
-background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#464646),
-                                     to (#5a5a5a));
-    color: white;
-    border-radius: 0px;
- border-image: url("assets/button-toolbar-active-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+ border-style: solid;
+ background-color: #88901c;
+   color: @fg_color;
+    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
+     
+     box-shadow: inset 1px 0 #a8a8a8,
+                inset -1px 0 #a8a8a8,
+                inset 0 1px #a8a8a8,
+                inset 0 -1px #a8a8a8;
+   border-color: #5a5a5a;
+   border-style: solid;
+  
+   border-radius: 2px;
+   border-width: 1px;
+
 }
 
 .header-bar .button:active:focus,
 .header-bar .button:active:hover:focus {
- background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#464646),
-                                     to (#5a5a5a));
-    color: white;
-    border-radius: 0px;
+border-style: solid;
+background-color: #88901c;
+   color: @fg_color;
+    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
+
+     box-shadow: inset 1px 0 #a8a8a8,
+                inset -1px 0 #a8a8a8,
+                inset 0 1px #a8a8a8,
+                inset 0 -1px #a8a8a8;
+   border-color: #5a5a5a;
+ 
+   border-style: solid;
+  
+   border-radius: 2px;
+   border-width: 1px;
 }
 
 .header-bar .button:insensitive {
- background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#ffffff),
-                                     to (#9d9c9c));
+border-style: solid;
+background-color: #f4f4f4;
+   color: @fg_color;
+    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
+     box-shadow: inset 1px 0 #ffffff,
+                inset -1px 0 #ffffff,
+                inset 0 1px #ffffff,
+                inset 0 -1px #ffffff;
+   border-color: #222222;
+border-style: solid;
+  
+   border-radius: 2px;
+   border-width: 1px;
 }
 
-.header-bar .button:active *:insensitive {
-background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#ffffff),
-                                     to (#9d9c9c));
+.header-bar .button:active:insensitive {
+background-color: #f4f4f4;
+   color: @fg_color;
+    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
+     box-shadow: inset 1px 0 #ffffff,
+                inset -1px 0 #ffffff,
+                inset 0 1px #ffffff,
+                inset 0 -1px #ffffff;
+   border-color: #222222;
+border-style: solid;
+  
+   border-radius: 2px;
+   border-width: 1px;
 }
 
 .header-bar .entry {
@@ -108,6 +182,10 @@ background-image: -gtk-gradient (linear, left top, left bottom,
 
 .header-bar .entry:active,
 .header-bar .entry:focus {
+border-style: solid;
+  
+   border-radius: 2px;
+   border-width: 1px;
 }
 
 
@@ -115,21 +193,39 @@ background-image: -gtk-gradient (linear, left top, left bottom,
 .header-bar .button.raised.linked,
 .header-bar .raised.linked .button,
 .header-bar .linked .button {
- background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#ffffff),
-                                     to (#9d9c9c));
- border-radius: 0px;
- box-shadow: none;
+  
+   background-image: -gtk-gradient (linear, left top, left bottom,
+	                                 from (shade(@theme_bg_dark_color, 1.05)),
+                                     color-stop (0.30, shade(@theme_bg_dark_color, 1.00)),
+	                                 to   (shade(@theme_bg_dark_color, 0.98)));
+
+    border-top-color: 		alpha (#000, 0.20);
+    border-left-color: 		alpha (#000, 0.25);
+    border-right-color: 	alpha (#000, 0.25);
+    border-bottom-color: 	alpha (#000, 0.30);
+	border-image: none;
+
+    box-shadow: inset  1px  0px alpha(#fff, 0.12),
+				inset -1px  0px alpha(#fff, 0.12);
+    border-radius: 2px;
+   border-width: 1px;
 }
 
 .header-bar .button.raised.linked:insensitive,
 .header-bar .raised.linked .button:insensitive,
 .header-bar .linked .button:insensitive {
- background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#ffffff),
-                                     to (#9d9c9c));
- border-radius: 0px;
- box-shadow: none;
+ background-color: #f4f4f4;
+   color: @fg_color;
+    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
+     box-shadow: inset 1px 0 #ffffff,
+                inset -1px 0 #ffffff,
+                inset 0 1px #ffffff,
+                inset 0 -1px #ffffff;
+   border-color: #222222;
+   
+   border-radius: 2px;
+  border-color: #666b18;
+   border-width: 1px;
 }
 
 
@@ -140,11 +236,17 @@ background-image: -gtk-gradient (linear, left top, left bottom,
 .header-bar .raised.linked .button:active,
 .header-bar .linked .button:active {
  background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#464646),
-                                     to (#5a5a5a));
-    border-radius: 0px;
-    color: white;
- box-shadow: none;
+	                                 from (#737373),
+	                                 to   (#ababab));
+    color: @dark_fg_color;
+    
+     box-shadow: inset 1px 0 #a8a8a8,
+                inset -1px 0 #a8a8a8,
+                inset 0 1px #a8a8a8,
+                inset 0 -1px #a8a8a8;
+   border-color: #5a5a5a;
+   border-radius: 2px;
+   border-width: 1px;
 }
 
 
@@ -164,7 +266,8 @@ border-right-width: 0;
     border-left-width: 0;
     border-image-width: 10px 0 10px 0;
     border-radius: 0px;
-     border-image: url("assets/tm.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-width: 1px;
+     
 }
 
 /* leftmost button */
@@ -180,9 +283,12 @@ border-right-width: 0;
  border-left-width: 1px;
     border-right-width: 0;
     border-image-width: 10px 0 10px 12px;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
-    border-image: url("assets/tl.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-width: 1px;
+    padding: 6px 4px;
 }
 
 /* rightmost button */
@@ -198,9 +304,13 @@ border-right-width: 0;
  border-left-width: 0;
     border-right-width: 1px;
     border-image-width: 10px 12px 10px 0;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
-   border-image: url("assets/tr.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-width: 1px;
+    padding: 6px 4px;
+   
 }
 
 /* linked single button */
@@ -254,10 +364,14 @@ background-image: -gtk-gradient (linear, left top, left bottom,
 }
 
 .selection-mode.header-bar .button:hover:active {
-background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#464646),
-                                     to (#5a5a5a));
-    color: white;
+background-color: #4ec2f2;
+   color: @fg_color;
+    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
+     box-shadow: inset 1px 0 #7ed0f4,
+                inset -1px 0 #7ed0f4,
+                inset 0 1px #7ed0f4,
+                inset 0 -1px #7ed0f4;
+   border-color: #18769f;
     
 }
 
