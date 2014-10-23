@@ -1,6 +1,27 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Wed Oct 22 2014
+release 3.10.1
+
+- update Gnome-Cupertino to upstream version 0.0.4
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Wed Oct 22 2014
+release 3.10.0
+
+- bump version to reflect GTK3 version
+- udate clearlook-phenix to GTK3-3.10/12
+- update faince themes to GTK3-3.10
+
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Thu Jul 19 2014
+release 1.8.2
+
+- adjustments for Submarine themes
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Mon May 19 2014
-release 1.8.0
+release 1.8.1
 
 - some build fixes
 
