@@ -1,6 +1,14 @@
 3.14.0
 
   * pre-bump version to reflect GTK3 version
+  * Blue-Submarine theme supports GTK3-3.14
+  * clearlooks-phenix theme supports GTK3-3.14
+  * DeLorean-Dark theme supports GTK3-3.14
+  * GnomishBeige theme supports GTK3-3.14
+  * Green-Submarine theme supports GTK3-3.14
+  * Smoothly theme supports GTK3-3.14
+  * Smoothly-Black supports support GTK3-3.14
+  * zukwito theme supports GTK3-3.14
 
 1.9.1
 
@@ -21,4 +29,4 @@
   * GnomishBeige: complete GTK3-3.10
   * DeloreanDark: update to GTK3-3.10
   * drop Cologne theme, get rid of xfce theme engine
-  * several improvements, see git history
+  * several improvements, see git history-3.
