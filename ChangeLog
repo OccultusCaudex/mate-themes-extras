@@ -1,4 +1,19 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Thu Oct 23 2014
+release 3.14.0
+
+-  pre-bump version to reflect GTK3 version
+-  Blue-Submarine theme supports GTK3-3.14
+-  clearlooks-phenix theme supports GTK3-3.14
+-  DeLorean-Dark theme supports GTK3-3.14
+-  GnomishBeige theme supports GTK3-3.14
+-  Green-Submarine theme supports GTK3-3.14
+-  Smoothly theme supports GTK3-3.14
+-  Smoothly-Black supports support GTK3-3.14
+-  zukwito theme supports GTK3-3.14
+
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Sun Aug 10 2014
 release 1.9.1
 
