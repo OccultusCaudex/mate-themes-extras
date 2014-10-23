@@ -216,6 +216,7 @@ desktop-themes/Faience-Ocre/gtk-3.0/assets/Makefile
 desktop-themes/Faience-Ocre/metacity-1/Makefile
 desktop-themes/Faience-Ocre/unity/Makefile
 desktop-themes/Gnome-Cupertino/Makefile
+desktop-themes/Gnome-Cupertino/gnome-shell/Makefile
 desktop-themes/Gnome-Cupertino/gtk-2.0/Makefile
 desktop-themes/Gnome-Cupertino/gtk-2.0/assets/Makefile
 desktop-themes/Gnome-Cupertino/gtk-2.0/apps/Makefile
