@@ -27,17 +27,19 @@ Releases:
 
 https://github.com/NiceandGently/mate-themes-extras/releases
 
-1.9.1 for GTK3-3.12
+3.14.x for GTK3-3.14
 
-1.8.2 for GTK3-3.10
+3.12.x for GTK3-3.12
 
-1.7.6 for GTK3-3.8
+3.10.x for GTK3-3.10
 
-1.6.7 for GTK3-3.6
+3.8.x  for GTK3-3.8
 
-1.5.3 for GTK3-3.4
+1.6.7  for GTK3-3.6
 
-1.4.0 for GTK3-3.2
+1.5.3  for GTK3-3.4
+
+1.4.0  for GTK3-3.2
 
 Themes:
 
@@ -95,3 +97,5 @@ make install (as root)
 
 
 Or simply copy the theme folders to ~./themes
+
+For requirements please have a look in branch readme.md
