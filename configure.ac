@@ -269,6 +269,7 @@ desktop-themes/Smoothly-Black/Makefile
 desktop-themes/Smoothly-Black/gtk-2.0/Makefile
 desktop-themes/Smoothly-Black/gtk-2.0/assets/Makefile
 desktop-themes/Smoothly-Black/gtk-3.0/Makefile
+desktop-themes/Smoothly-Black/gtk-3.0/assets/Makefile
 desktop-themes/Smoothly-Black/metacity-1/Makefile
 desktop-themes/Zukitwo/Makefile
 desktop-themes/Zukitwo/gtk-2.0/Makefile
