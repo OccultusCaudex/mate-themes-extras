@@ -30,7 +30,7 @@ Note: this themes have currently minor issues with GTK3-3.12
 
 --Faience-Ocre
 
-Note: Those themes aren't ready for GTK3-3.12, it seems that some of them have a death upstream.
+Note: Those themes aren't ready for GTK3-3.12, needs more love from upstream.
 But i don't wanna drop them for the momment.
 
 --Gnome-Cupertino
