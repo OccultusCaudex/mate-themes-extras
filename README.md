@@ -65,3 +65,37 @@ make install (as root)
 
 
 Or simply copy the theme folders to ~./themes
+
+
+Needed gtk-engines:
+
+Blue-Submarine, Green-Submarine: gtk-murrine-engine, gtk-unico-engine
+
+clearlook-phenix: gtk2-engines (clearlooks)
+
+DeLorean-Dark : gtk-murrine-engine
+
+Faience, Faience-Ocre: gtk-murrine-engine, gtk-unico-engine
+
+Gnome-Cupertino, Gnome-Cupertino-Mint: gtk-murrine-engine, gtk-unico-engine
+
+GnomishBeige: gtk-murrine-engine
+
+Smoothly, Smoothly-Black: gtk-smooth-engine
+
+Zukitwo: gtk-murrine-engine
+
+
+Other requirements (depends on the theme):
+
+adwaita-icon-theme
+
+mate-icon-theme
+
+gnome-icon-theme
+
+faience-icon-theme
+
+Note: you can simply edit the index.theme file, if you want to use another icon-theme,
+
+for example.
