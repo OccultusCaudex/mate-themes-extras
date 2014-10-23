@@ -19,8 +19,6 @@ Themes:
 
 --Gnome-Cupertino
 
---Gnome-Cupertino-Mint
-
 --GnomishBeige
 
 --Green-Submarine
@@ -84,7 +82,7 @@ DeLorean-Dark : gtk-murrine-engine
 
 Faience, Faience-Ocre: gtk-murrine-engine, gtk-unico-engine
 
-Gnome-Cupertino, Gnome-Cupertino-Mint: gtk-murrine-engine, gtk-unico-engine
+Gnome-Cupertino: gtk-murrine-engine, gtk-unico-engine
 
 GnomishBeige: gtk-murrine-engine
 
