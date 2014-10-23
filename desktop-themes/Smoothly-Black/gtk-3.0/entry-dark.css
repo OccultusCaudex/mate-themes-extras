@@ -34,8 +34,8 @@
 }
 
 .entry:active {
-+	color: shade (@text_color-b, 0.80);
-+    background-color: shade (@bg_color-b, 1.40);
+	color: shade (@text_color-b, 0.80);
+    background-color: shade (@bg_color-b, 1.40);
 }
 
 .entry:selected {

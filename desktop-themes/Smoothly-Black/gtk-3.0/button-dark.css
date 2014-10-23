@@ -34,6 +34,11 @@ GtkComboBox,
                 inset -1px -1px shade (@border_gradient_color_b-b, 1.00);
 }
 
+.list-row.button {
+    background-image: none;
+    box-shadow: none;
+}
+
 .primary-toolbar .button:hover,
 .button:hover {
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -47,9 +52,10 @@ GtkComboBox,
                 inset -1px -1px shade (@border_gradient_color_b-b, 1.60);
 }
 
+.button:checked,
 .button:active {
     border-width: 1px;
-    padding: 2.5px 5px 2.5px 3px;
+/*    padding: 2.5px 5px 2.5px 3px;*/
     border-radius: 4px 7px 4px 7px;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@gradient_color_a-b, 1.50)),
