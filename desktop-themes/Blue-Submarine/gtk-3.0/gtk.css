@@ -237,29 +237,7 @@
 @import url("gnome-mdi.css");
 @import url("menu.css");
 @import url("mate-applications.css");
-@import url("nautilus36.css");
 @import url("scrollbar.css");
 @import url("sidebar.css");
-
-/* Select style for TABS 
-
-	1.- tabs dark gray (full)
-	@import url("tabs-dark.css");
-
-	2.- tabs themed blue (full)
-	@import url("tabs-themed.css");
-
-	3.- Default theme tabs
-	@import url("tabs.css");
-
-	4.- tabs white highlight
-	@import url("tabs-mono.css");
-
-	5.- more traditional style tabs
-	@import url("tabs-classic.css");
-
-	(Be careful to leave only ONE of the five,
-	edit the line below according to the style you want) 
-*/
-@import url("tabs-classic.css");
+@import url("tabs.css");
 
