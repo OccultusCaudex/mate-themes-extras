@@ -3882,7 +3882,7 @@ GtkModelButton.button:selected {
 }
  
 .titlebar .right .titlebutton:first-child {
-    border-left: 1px solid @menu_separator; 
+    /*border-left: 1px solid @menu_separator;*/
 }
  
 .titlebar .right .titlebutton:last-child {
@@ -3890,7 +3890,7 @@ GtkModelButton.button:selected {
 }
  
 .titlebar .left .titlebutton:last-child {
-    border-right: 1px solid @menu_separator; 
+    /*border-right: 1px solid @menu_separator;*/
 }
  
 .titlebar .left .titlebutton:first-child {
