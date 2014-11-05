@@ -210,7 +210,7 @@ CajaTrashBar .button:hover:active,
 .question .button:checked,
 .question .button:hover:checked,
 CajaTrashBar .button:checked,
-CajaTrashBar .button:hover:checked  {
+CajaTrashBar .button:hover:checked {
 /* .button:hover:active */
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
