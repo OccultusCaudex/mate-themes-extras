@@ -2149,6 +2149,7 @@ GtkHandleBox,
 .primary-toolbar.toolbar .button *:active:hover {
 	color: @theme_text_dark_color;
 	text-shadow: 0px 1px @theme_shadow_dark_color;    
+
 }
 
 .toolbar .button:active:insensitive,
@@ -2626,6 +2627,7 @@ NemoWindow .primary-toolbar.toolbar .button:hover:active,
 	border-left: 1px solid @borders;
 	border-right: 1px solid @borders;
 }
+
 
 .notebook.header.frame.bottom {
 	border-bottom: 1px solid @borders;
@@ -3680,7 +3682,7 @@ GtkModelButton.button:selected {
 }
  
 .titlebar .right .titlebutton:first-child {
-    border-left: 1px solid @menu_separator; 
+    /*border-left: 1px solid @menu_separator;*/
 }
  
 .titlebar .right .titlebutton:last-child {
@@ -3688,7 +3690,7 @@ GtkModelButton.button:selected {
 }
  
 .titlebar .left .titlebutton:last-child {
-    border-right: 1px solid @menu_separator; 
+    /*border-right: 1px solid @menu_separator;*/
 }
  
 .titlebar .left .titlebutton:first-child {
