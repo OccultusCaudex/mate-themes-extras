@@ -4002,12 +4002,6 @@ GtkModelButton.button:selected {
                 inset -1px  0px shade(@selected_bg_color, 0.93);
 }
 
-/****************************************************************************************
-* Give and take related to recent gtk3 development,                                    *
-* to achieve full size of the icon menu of some of the applications whose notification *
-* icons appear in the system tray, the "shadow" is disabled.                           *
-****************************************************************************************/
-/*
 .window-frame {
     border-color: darker(@theme_bg_dark_color);
     border-radius: 9px 9px 0 0;
@@ -4015,15 +4009,13 @@ GtkModelButton.button:selected {
     border-style: solid;
     background-color: @theme_bg_color;
     box-shadow: 0 0 0 2px @theme_shadow_dark_color, 0 2px 8px 3px @theme_shadow_dark_color;
-*/
     /* this is used for the resize cursor area */
-/*    margin: 10px;
+	margin: 10px;
 }
  
 .window-frame:backdrop {
     box-shadow: 0 0 0 2px @theme_shadow_dark_color, 0 2px 5px 1px @theme_shadow_dark_color;
 }
-*/
 
 /*********************
  * Spinner Animation *
