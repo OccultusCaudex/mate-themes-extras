@@ -947,8 +947,8 @@ GtkScrolledWindow.frame {
 
 .button *:active,
 .button *:hover:active,
-.button *:active,
-.button *:hover:active {
+.button *:checked,
+.button *:hover:checked {
 	color: @theme_selected_fg_color;
 	text-shadow: 1px 1px @theme_selected_shadow_color;
 }
