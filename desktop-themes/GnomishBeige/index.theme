@@ -5,8 +5,8 @@ Comment=A clean beige theme
 Encoding=UTF-8
 GtkTheme=GnomishBeige
 MetacityTheme=GnomishBeige
-IconTheme=gnome
-CursorTheme=Adwaita
+IconTheme=Adwaita
+CursorTheme=mate
 CursorSize=24
 
 [Desktop Entry]
