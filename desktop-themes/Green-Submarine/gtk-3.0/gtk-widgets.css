@@ -1167,6 +1167,7 @@ GtkScrolledWindow.frame {
 .toolbar .button.raised.linked:active:hover:only-child,
 .toolbar .raised.linked .button:active:only-child,
 .toolbar .raised.linked .button:active:hover:only-child,
+
 .primary-toolbar .linked .button:active:only-child,
 .primary-toolbar .linked .button:active:hover:only-child {
     box-shadow: inset  0px  4px alpha(#000, 0.02),
@@ -2589,7 +2590,7 @@ MathWindow .button *:active:hover,
     border: 1px solid @theme_button_border_dark;
     border-top-color: shade(@button_raised_gradient_color_a, 0.50);
     box-shadow: inset  0px  1px alpha(#000, 0.05),
-                inset  1px  1px alpha(#000, 0.05),
+                inset  1px  1px alpha(#000, 0.05);
 }
 
 .header-bar .button:insensitive, .header-bar .button:insensitive:last-child, .header-bar .button:insensitive:first-child {
