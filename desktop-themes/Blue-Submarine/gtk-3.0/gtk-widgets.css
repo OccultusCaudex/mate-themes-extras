@@ -1,8 +1,8 @@
-/**
- * Blue-Submarine
- * Part of https://github.com/NiceandGently/mate-themes-extras
- * Author Wolfgang Ulbrich
- **/
+/***************************************************************
+ * Blue-Submarine                                              *
+ * Part of https://github.com/NiceandGently/mate-themes-extras *
+ * Author Wolfgang Ulbrich                                     *
+ ***************************************************************/
  
 * {
 	-GtkArrow-arrow-scaling: 0.7;
@@ -51,7 +51,7 @@
 	-GtkWidget-separator-width: 2px;
 	-GtkWidget-separator-height: 2;
 	-GtkWidget-focus-padding: 0;
-	-GtkWidget-focus-line-width: 1px;
+	-GtkWidget-focus-line-width: 0px;
 	-GtkWidget-link-color: @link_color;
 	-GtkWidget-visited-link-color: @link_color;
 	-GtkWindow-resize-grip-default: true;
