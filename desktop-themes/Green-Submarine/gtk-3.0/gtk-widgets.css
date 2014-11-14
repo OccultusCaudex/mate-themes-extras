@@ -51,7 +51,7 @@
 	-GtkWidget-separator-width: 2px;
 	-GtkWidget-separator-height: 2;
 	-GtkWidget-focus-padding: 0;
-	-GtkWidget-focus-line-width: 1px;
+	-GtkWidget-focus-line-width: 0px;
 	-GtkWidget-link-color: @link_color;
 	-GtkWidget-visited-link-color: @link_color;
 	-GtkWindow-resize-grip-default: true;
@@ -1174,6 +1174,7 @@ GtkScrolledWindow.frame {
 .toolbar .button.raised.linked:active:hover:only-child,
 .toolbar .raised.linked .button:active:only-child,
 .toolbar .raised.linked .button:active:hover:only-child,
+
 
 .primary-toolbar .linked .button:active:only-child,
 .primary-toolbar .linked .button:active:hover:only-child {
