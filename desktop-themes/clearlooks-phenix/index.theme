@@ -10,7 +10,7 @@ Encoding=UTF-8
 GtkTheme=clearlooks-phenix
 MetacityTheme=clearlooks-phenix
 IconTheme=gnome
-CursorTheme=DMZ-White
+CursorTheme=mate
 CursorSize=16
 ButtonLayout=:minimize,maximize,close
 
