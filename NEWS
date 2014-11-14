@@ -1,3 +1,5 @@
+3.8.1
+
 3.8.0
   * pre-bump version to reflect GTK3 version
   * update faince themes to GTK3-3.10 (works with GTK3-3.8)
