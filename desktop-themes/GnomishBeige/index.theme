@@ -6,7 +6,7 @@ Encoding=UTF-8
 GtkTheme=GnomishBeige
 MetacityTheme=GnomishBeige
 IconTheme=gnome
-CursorTheme=Adwaita
+CursorTheme=mate
 CursorSize=24
 
 [Desktop Entry]
