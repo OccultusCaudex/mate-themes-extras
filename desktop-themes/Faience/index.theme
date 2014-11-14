@@ -9,5 +9,5 @@ Encoding=UTF-8
 GtkTheme=Faience
 MetacityTheme=Faience
 IconTheme=Faience
-CursorTheme=DMZ-Black
+CursorTheme=mate
 ButtonLayout=close,minimize,maximize:menu
