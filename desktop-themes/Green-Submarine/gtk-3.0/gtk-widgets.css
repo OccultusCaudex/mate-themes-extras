@@ -51,7 +51,7 @@
 	-GtkWidget-separator-width: 2px;
 	-GtkWidget-separator-height: 2;
 	-GtkWidget-focus-padding: 0;
-	-GtkWidget-focus-line-width: 0px;
+	-GtkWidget-focus-line-width: 1px;
 	-GtkWidget-link-color: @link_color;
 	-GtkWidget-visited-link-color: @link_color;
 	-GtkWindow-resize-grip-default: true;
@@ -70,14 +70,19 @@
 /***************
  * Base States *
  ***************/
+
 GtkWindow {
     color: @theme_fg_color;
 }
 
-* {
-    /* inherit the color from parent by default */
-    color: inherit;
-    background-color: @theme_bg_color;
+.background {
+	color: @theme_fg_color;
+	background-color: @theme_bg_color;
+}
+
+.background:backdrop {
+	text-shadow: none;
+	icon-shadow: none;
 }
 
 /* Ugly hack to fix unexpected background colours (e.g. combo box arrow)
@@ -2345,6 +2350,12 @@ MathWindow .button *:active:hover,
 	-GtkWidget-focus-line-width: 0;
 }
 
+.notebook :hover {
+	-gtk-image-effect: highlight;
+	background-color: shade(@theme_bg_color, 1.13);
+	color: @theme_fg_color;
+}
+
 .notebook.frame {
 	border-width: 1px;
 }
@@ -2779,6 +2790,11 @@ GtkTreeView {
     -GtkWidget-focus-line-width: 1;
     -GtkWidget-focus-padding: 1;
 
+}
+
+.notebook GtkContainer GtkTreeView row:hover {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
 }
 
 GtkTreeView row:nth-child(odd),
