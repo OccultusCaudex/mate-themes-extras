@@ -442,11 +442,12 @@ style "murrine-notebook"
 	{
 		glazestyle = 1
 		highlight_shade = 1.0
-        	glow_shade = 2.0
-        	gradient_shades     = {1.5, 1.5, 0.8, 0.8}
-		roundness=5
+		glow_shade = 2.0
+		gradient_shades = {1.5, 1.5, 0.8, 0.8}
+		roundness = 5
 		#contrast = 1.1
 		#lightborder_shade = 1.5
+		focusstyle = 0
 	}
 }
 
