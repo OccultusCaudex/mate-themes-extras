@@ -235,9 +235,9 @@ style "murrine-notebook" = "murrine-notebook-bg" {
 	ythickness = 1 # Height of tabs and notebook borders.
 
 	engine "murrine" {
-		contrast		= .8
+		contrast			= .8
 		gradient_shades		= {1.28,1.28,0.87,0.87}
-		focusstyle		= 2
+		focusstyle			= 0
 		lightborder_shade	= 1.16
 	}
 }
@@ -490,6 +490,7 @@ class "GtkHScrollbar"	style "murrine-scrollbar"
 widget "*ToggleSwitch*"	style "murrine-toggleswitch"
 
 widget "*SidebarHandleLeft"	style "pixmap-sidebar-handle-left"
+
 widget "*SidebarContent"	style "murrine-sidebar"
 
 # General matching following, the order is choosen so that the right styles override each other eg. progressbar needs to be more important then the menu match.
