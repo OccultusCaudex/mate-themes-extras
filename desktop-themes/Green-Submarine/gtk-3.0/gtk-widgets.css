@@ -72,15 +72,20 @@ GtkWindow {
 	color: @theme_fg_color;
 }
 
-* {
-	/* inherit the color from parent by default */
-	color: inherit;
+/***************
+ * Base States *
+ ***************/
+
+.background {
+	color: @theme_fg_color;
 	background-color: @theme_bg_color;
 }
 
-/**********
- * states *
- **********/
+.background:backdrop {
+	text-shadow: none;
+	icon-shadow: none;
+}
+
 *:insensitive {
 	color: shade (@theme_bg_color, 0.6);
 	text-shadow: 0px 1px alpha (shade (@theme_bg_color, 1.25), 0.5);
@@ -1445,6 +1450,12 @@ DbusmenuGtkMenu .menuitem .accelerator:insensitive,
 	-unico-inner-stroke-gradient: none;
 }
 
+.notebook :hover {
+	-gtk-image-effect: highlight;
+	background-color: shade(@theme_bg_color, 1.13);
+	color: @theme_fg_color;
+}
+
 .notebook tab {
 	background-image: -gtk-gradient (linear, left top, left bottom,
 		from (shade (@theme_bg_color, 0.99)),
@@ -2438,6 +2449,11 @@ GtkTreeView .entry {
 
 	-unico-inner-stroke-gradient: none;
 	-unico-inner-stroke-width: 1px;
+}
+
+.notebook GtkContainer GtkTreeView row:hover {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
 }
 
 GtkTreeView row:nth-child(even),
