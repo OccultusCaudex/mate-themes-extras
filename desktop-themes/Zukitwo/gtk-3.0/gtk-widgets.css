@@ -21,7 +21,7 @@
 	-GtkWidget-link-color: @link_color;
 	-GtkWidget-visited-link-color: @link_color;
 	-GtkWidget-focus-padding: 2;
-	-GtkWidget-focus-line-width: 1;
+	-GtkWidget-focus-line-width: 0;
 	-GtkWindow-resize-grip-width: 0;
 	outline-color: alpha(@theme_text_color, 0.3);
 	outline-style: dashed;
@@ -3326,7 +3326,7 @@ GtkCalendar.header .path-bar .button.titlebutton GtkImage {
 GtkTreeView {
 	-GtkTreeView-vertical-separator: 0;
 
-	-GtkWidget-focus-line-width: 1;
+	-GtkWidget-focus-line-width: 0;
 	-GtkWidget-focus-padding: 1;
 
 	outline-color: alpha(@theme_text_color, 0.6);
