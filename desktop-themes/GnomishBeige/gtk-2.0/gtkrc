@@ -93,6 +93,7 @@ style "murrine-default"
     {
 	#rgba = FALSE
 	focus_color = "#c6b9a6"
+	focusstyle = 0
 	glazestyle = 4
 	#contrast = 0.5
 	highlight_shade = 1.0
