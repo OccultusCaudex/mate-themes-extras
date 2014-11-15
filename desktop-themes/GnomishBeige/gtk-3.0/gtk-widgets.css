@@ -854,7 +854,7 @@ GtkTreeMenu .menuitem * {
  ***********/
 .button {
 	padding: 0px;
-	-GtkWidget-focus-line-width: 1;
+	-GtkWidget-focus-line-width: 0;
 
 	border-radius: 3px;
 	border-width: 1px;
