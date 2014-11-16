@@ -1,6 +1,6 @@
-active_text_color=#cdcdcd
-active_text_shadow_color=#272727
-inactive_text_shadow_color=#9b9b9b
+active_text_color=#131313
+active_text_shadow_color=#999999
+inactive_text_shadow_color=#777777
 button_offset=2
 button_spacing=1
 full_width_title=false

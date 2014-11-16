@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>DeLorean-Dark-3.10 based on Adwaita</name>
+	<name>DeLorean-Dark</name>
 	<author>killhellokitty aka'josh brown-williams' Adwaita:GNOME Art Team &lt;art.gnome.org&gt;</author>
 	<copyright>&#194; Intel, &#194; Red Hat, Lapo Calamandrei</copyright>
 	<date>2012/2014</date>
-	<description>DeLorean-Dark-3.10 window theme</description>
+	<description>DeLorean-Dark window theme</description>
 </info>
 
 <!-- meaningfull constants -->
@@ -31,10 +31,10 @@
 <constant name="D_icons_grow" value="0" /> <!-- increasing this value makes the icons in buttons bigger -->
 <!-- geometries -->
 
-<frame_geometry name="normal" title_scale="medium" rounded_top_left="4" rounded_top_right="4">
-	<distance name="left_width" value="1" />
-	<distance name="right_width" value="1" />
-	<distance name="bottom_height" value="1" />
+<frame_geometry name="normal" title_scale="medium" rounded_top_left="true" rounded_top_right="true">
+	<distance name="left_width" value="2" />
+	<distance name="right_width" value="2" />
+	<distance name="bottom_height" value="2" />
 	<distance name="left_titlebar_edge" value="1"/>
 	<distance name="right_titlebar_edge" value="1"/>
 	<distance name="title_vertical_pad" value="7"/>
@@ -43,7 +43,7 @@
 	<aspect_ratio name="button" value="1"/>
 </frame_geometry>
 
-<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="4" rounded_top_right="4" parent="normal">
+<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="true" rounded_top_right="true" parent="normal">
 	<distance name="left_titlebar_edge" value="1"/>
 	<distance name="right_titlebar_edge" value="1"/>
 </frame_geometry>
@@ -139,15 +139,15 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_focused">
- <image filename="focused.png" height="height" width="width" x="0" y="0" />
+ <image filename="highlight.svg" height="height" width="width" x="0" y="0" />
 </draw_ops>
 
 <draw_ops name="titlebar_fill_focused_alt">
-	 <image filename="focused.png" height="height" width="width" x="0" y="0" />
+	 <image filename="highlight.svg" height="height" width="width" x="0" y="0" />
 </draw_ops>
 
 <draw_ops name="titlebar_fill_unfocused">
-	 <image filename="focused.svg" height="height" width="width" x="0" y="0" />
+	 <image filename="highlight.svg" height="height" width="width" x="0" y="0" />
 </draw_ops>
 
 <draw_ops name="hilight">
