@@ -3,9 +3,25 @@ THEME_NAME=DeLorean-Dark
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-3.0/assets
 
 theme_DATA = \
-	arrow-insensitive.svg \
-	arrow.svg \
+	background-dark.png \
+	background.png \
+	checkbox-active-selectionmode@2.png \
+	checkbox-active-selectionmode-dark@2.png \
+	checkbox-active-selectionmode-dark.png \
+	checkbox-active-selectionmode.png \
+	checkbox-backdrop-selectionmode@2.png \
+	checkbox-backdrop-selectionmode-dark@2.png \
+	checkbox-backdrop-selectionmode-dark.png \
+	checkbox-backdrop-selectionmode.png \
 	checkbox-checked@2.png \
+	checkbox-checked-active@2.png \
+	checkbox-checked-active-dark@2.png \
+	checkbox-checked-active-dark.png \
+	checkbox-checked-active.png \
+	checkbox-checked-active-selectionmode@2.png \
+	checkbox-checked-active-selectionmode-dark@2.png \
+	checkbox-checked-active-selectionmode-dark.png \
+	checkbox-checked-active-selectionmode.png \
 	checkbox-checked-backdrop@2.png \
 	checkbox-checked-backdrop-dark@2.png \
 	checkbox-checked-backdrop-dark.png \
@@ -14,14 +30,38 @@ theme_DATA = \
 	checkbox-checked-backdrop-insensitive-dark.png \
 	checkbox-checked-backdrop-insensitive.png \
 	checkbox-checked-backdrop.png \
+	checkbox-checked-backdrop-selectionmode@2.png \
+	checkbox-checked-backdrop-selectionmode-dark@2.png \
+	checkbox-checked-backdrop-selectionmode-dark.png \
+	checkbox-checked-backdrop-selectionmode.png \
 	checkbox-checked-dark@2.png \
 	checkbox-checked-dark.png \
+	checkbox-checked-hover@2.png \
+	checkbox-checked-hover-dark@2.png \
+	checkbox-checked-hover-dark.png \
+	checkbox-checked-hover.png \
+	checkbox-checked-hover-selectionmode@2.png \
+	checkbox-checked-hover-selectionmode-dark@2.png \
+	checkbox-checked-hover-selectionmode-dark.png \
+	checkbox-checked-hover-selectionmode.png \
 	checkbox-checked-insensitive@2.png \
 	checkbox-checked-insensitive-dark@2.png \
 	checkbox-checked-insensitive-dark.png \
 	checkbox-checked-insensitive.png \
 	checkbox-checked.png \
+	checkbox-checked-selectionmode@2.png \
+	checkbox-checked-selectionmode-dark@2.png \
+	checkbox-checked-selectionmode-dark.png \
+	checkbox-checked-selectionmode.png \
+	checkbox-hover-selectionmode@2.png \
+	checkbox-hover-selectionmode-dark@2.png \
+	checkbox-hover-selectionmode-dark.png \
+	checkbox-hover-selectionmode.png \
 	checkbox-mixed@2.png \
+	checkbox-mixed-active@2.png \
+	checkbox-mixed-active-dark@2.png \
+	checkbox-mixed-active-dark.png \
+	checkbox-mixed-active.png \
 	checkbox-mixed-backdrop@2.png \
 	checkbox-mixed-backdrop-dark@2.png \
 	checkbox-mixed-backdrop-dark.png \
@@ -32,12 +72,24 @@ theme_DATA = \
 	checkbox-mixed-backdrop.png \
 	checkbox-mixed-dark@2.png \
 	checkbox-mixed-dark.png \
+	checkbox-mixed-hover@2.png \
+	checkbox-mixed-hover-dark@2.png \
+	checkbox-mixed-hover-dark.png \
+	checkbox-mixed-hover.png \
 	checkbox-mixed-insensitive@2.png \
 	checkbox-mixed-insensitive-dark@2.png \
 	checkbox-mixed-insensitive-dark.png \
 	checkbox-mixed-insensitive.png \
 	checkbox-mixed.png \
+	checkbox-selectionmode@2.png \
+	checkbox-selectionmode-dark@2.png \
+	checkbox-selectionmode-dark.png \
+	checkbox-selectionmode.png \
 	checkbox-unchecked@2.png \
+	checkbox-unchecked-active@2.png \
+	checkbox-unchecked-active-dark@2.png \
+	checkbox-unchecked-active-dark.png \
+	checkbox-unchecked-active.png \
 	checkbox-unchecked-backdrop@2.png \
 	checkbox-unchecked-backdrop-dark@2.png \
 	checkbox-unchecked-backdrop-dark.png \
@@ -48,81 +100,20 @@ theme_DATA = \
 	checkbox-unchecked-backdrop.png \
 	checkbox-unchecked-dark@2.png \
 	checkbox-unchecked-dark.png \
+	checkbox-unchecked-hover@2.png \
+	checkbox-unchecked-hover-dark@2.png \
+	checkbox-unchecked-hover-dark.png \
+	checkbox-unchecked-hover.png \
 	checkbox-unchecked-insensitive@2.png \
 	checkbox-unchecked-insensitive-dark@2.png \
 	checkbox-unchecked-insensitive-dark.png \
 	checkbox-unchecked-insensitive.png \
 	checkbox-unchecked.png \
-	delorean-backdrop-bg.png \
-	delorean-dark-bg.png \
-	delorean-dark-bg_scale100.png \
-	delorean-dark-light20-bg.png \
-	delorean-dark-light40-bg.png \
-	delorean-light-bg.png \
-	dnd-counter.svg \
-	frame-2.png \
-	frame-d.png \
-	frame.png \
-	grid-selection-checked.svg \
-	grid-selection-unchecked.svg \
-	ins-test-1.png \
-	menuitem-checkbox-checked@2.png \
-	menuitem-checkbox-checked-insensitive@2.png \
-	menuitem-checkbox-checked-insensitive.png \
-	menuitem-checkbox-checked.png \
-	menuitem-checkbox-checked-selected@2.png \
-	menuitem-checkbox-checked-selected.png \
-	menuitem-checkbox-mixed@2.png \
-	menuitem-checkbox-mixed-insensitive@2.png \
-	menuitem-checkbox-mixed-insensitive.png \
-	menuitem-checkbox-mixed.png \
-	menuitem-checkbox-mixed-selected@2.png \
-	menuitem-checkbox-mixed-selected.png \
-	menuitem-radio-checked@2.png \
-	menuitem-radio-checked-insensitive@2.png \
-	menuitem-radio-checked-insensitive.png \
-	menuitem-radio-checked.png \
-	menuitem-radio-checked-selected@2.png \
-	menuitem-radio-checked-selected.png \
-	nautilus-carrot.svg \
-	nautilus-pathbar2.svg \
-	nautilus-pathbar3-active-hover.svg \
-	nautilus-pathbar3-active.svg \
-	nautilus-pathbar3-first.svg \
-	nautilus-pathbar3-hover.svg \
-	nautilus-pathbar3.svg \
-	nautilus-pathbar4.svg \
-	nautilus-pathbar5.svg \
-	nautilus-pathbar-active-hover.svg \
-	nautilus-pathbar-active.svg \
-	nautilus-pathbar-hover.svg \
-	nautilus-pathbar-left.svg \
-	nautilus-pathbar-right.svg \
-	nautilus-pathbar-single.svg \
-	nautilus-pathbar.svg \
-	noise-texture-dark.png \
-	noise-texture-light.png \
-	notebook-tab-bottom-active.png \
-	notebook-tab-bottom-focused.png \
-	notebook-tab-bottom.png \
-	notebook-tab-left-active.png \
-	notebook-tab-left-focused.png \
-	notebook-tab-left.png \
-	notebook-tab-right-active.png \
-	notebook-tab-right-focused.png \
-	notebook-tab-right.png \
-	notebook-tab-top-active.png \
-	notebook-tab-top-focused.png \
-	notebook-tab-top.png \
-	pane-separator-grip-dark.svg \
-	pane-separator-grip-prelight-dark.svg \
-	pane-separator-grip-prelight.svg \
-	pane-separator-grip.svg \
-	pane-separator-grip-vertical-dark.svg \
-	pane-separator-grip-vertical-prelight-dark.svg \
-	pane-separator-grip-vertical-prelight.svg \
-	pane-separator-grip-vertical.svg \
 	radio-checked@2.png \
+	radio-checked-active@2.png \
+	radio-checked-active-dark@2.png \
+	radio-checked-active-dark.png \
+	radio-checked-active.png \
 	radio-checked-backdrop@2.png \
 	radio-checked-backdrop-dark@2.png \
 	radio-checked-backdrop-dark.png \
@@ -133,12 +124,20 @@ theme_DATA = \
 	radio-checked-backdrop.png \
 	radio-checked-dark@2.png \
 	radio-checked-dark.png \
+	radio-checked-hover@2.png \
+	radio-checked-hover-dark@2.png \
+	radio-checked-hover-dark.png \
+	radio-checked-hover.png \
 	radio-checked-insensitive@2.png \
 	radio-checked-insensitive-dark@2.png \
 	radio-checked-insensitive-dark.png \
 	radio-checked-insensitive.png \
 	radio-checked.png \
 	radio-mixed@2.png \
+	radio-mixed-active@2.png \
+	radio-mixed-active-dark@2.png \
+	radio-mixed-active-dark.png \
+	radio-mixed-active.png \
 	radio-mixed-backdrop@2.png \
 	radio-mixed-backdrop-dark@2.png \
 	radio-mixed-backdrop-dark.png \
@@ -149,12 +148,20 @@ theme_DATA = \
 	radio-mixed-backdrop.png \
 	radio-mixed-dark@2.png \
 	radio-mixed-dark.png \
+	radio-mixed-hover@2.png \
+	radio-mixed-hover-dark@2.png \
+	radio-mixed-hover-dark.png \
+	radio-mixed-hover.png \
 	radio-mixed-insensitive@2.png \
 	radio-mixed-insensitive-dark@2.png \
 	radio-mixed-insensitive-dark.png \
 	radio-mixed-insensitive.png \
 	radio-mixed.png \
 	radio-unchecked@2.png \
+	radio-unchecked-active@2.png \
+	radio-unchecked-active-dark@2.png \
+	radio-unchecked-active-dark.png \
+	radio-unchecked-active.png \
 	radio-unchecked-backdrop@2.png \
 	radio-unchecked-backdrop-dark@2.png \
 	radio-unchecked-backdrop-dark.png \
@@ -165,239 +172,189 @@ theme_DATA = \
 	radio-unchecked-backdrop.png \
 	radio-unchecked-dark@2.png \
 	radio-unchecked-dark.png \
+	radio-unchecked-hover@2.png \
+	radio-unchecked-hover-dark@2.png \
+	radio-unchecked-hover-dark.png \
+	radio-unchecked-hover.png \
 	radio-unchecked-insensitive@2.png \
 	radio-unchecked-insensitive-dark@2.png \
 	radio-unchecked-insensitive-dark.png \
 	radio-unchecked-insensitive.png \
 	radio-unchecked.png \
-	resize-grip.svg \
-	scale-slider-active.svg \
-	scale-slider-down@2.png \
-	scale-slider-down-active@2.png \
-	scale-slider-down-active-dark@2.png \
-	scale-slider-down-active-dark.png \
-	scale-slider-down-active.png \
-	scale-slider-down-backdrop@2.png \
-	scale-slider-down-backdrop-dark@2.png \
-	scale-slider-down-backdrop-dark.png \
-	scale-slider-down-backdrop-insensitive@2.png \
-	scale-slider-down-backdrop-insensitive-dark@2.png \
-	scale-slider-down-backdrop-insensitive-dark.png \
-	scale-slider-down-backdrop-insensitive.png \
-	scale-slider-down-backdrop.png \
-	scale-slider-down-dark@2.png \
-	scale-slider-down-dark.png \
-	scale-slider-down-hover@2.png \
-	scale-slider-down-hover-dark@2.png \
-	scale-slider-down-hover-dark.png \
-	scale-slider-down-hover.png \
-	scale-slider-down-insensitive@2.png \
-	scale-slider-down-insensitive-dark@2.png \
-	scale-slider-down-insensitive-dark.png \
-	scale-slider-down-insensitive.png \
-	scale-slider-down.png \
-	scale-slider-horz@2.png \
-	scale-slider-horz-active@2.png \
-	scale-slider-horz-active-dark@2.png \
-	scale-slider-horz-active-dark.png \
-	scale-slider-horz-active.png \
-	scale-slider-horz-backdrop@2.png \
-	scale-slider-horz-backdrop-dark@2.png \
-	scale-slider-horz-backdrop-dark.png \
-	scale-slider-horz-backdrop-insensitive@2.png \
-	scale-slider-horz-backdrop-insensitive-dark@2.png \
-	scale-slider-horz-backdrop-insensitive-dark.png \
-	scale-slider-horz-backdrop-insensitive.png \
-	scale-slider-horz-backdrop.png \
-	scale-slider-horz-dark@2.png \
-	scale-slider-horz-dark.png \
-	scale-slider-horz-hover@2.png \
-	scale-slider-horz-hover-dark@2.png \
-	scale-slider-horz-hover-dark.png \
-	scale-slider-horz-hover.png \
-	scale-slider-horz-insensitive@2.png \
-	scale-slider-horz-insensitive-dark@2.png \
-	scale-slider-horz-insensitive-dark.png \
-	scale-slider-horz-insensitive.png \
-	scale-slider-horz.png \
-	scale-slider-hover.svg \
-	scale-slider-insensitive.svg \
-	scale-slider-left@2.png \
-	scale-slider-left-active@2.png \
-	scale-slider-left-active-dark@2.png \
-	scale-slider-left-active-dark.png \
-	scale-slider-left-active.png \
-	scale-slider-left-backdrop@2.png \
-	scale-slider-left-backdrop-dark@2.png \
-	scale-slider-left-backdrop-dark.png \
-	scale-slider-left-backdrop-insensitive@2.png \
-	scale-slider-left-backdrop-insensitive-dark@2.png \
-	scale-slider-left-backdrop-insensitive-dark.png \
-	scale-slider-left-backdrop-insensitive.png \
-	scale-slider-left-backdrop.png \
-	scale-slider-left-dark@2.png \
-	scale-slider-left-dark.png \
-	scale-slider-left-hover@2.png \
-	scale-slider-left-hover-dark@2.png \
-	scale-slider-left-hover-dark.png \
-	scale-slider-left-hover.png \
-	scale-slider-left-insensitive@2.png \
-	scale-slider-left-insensitive-dark@2.png \
-	scale-slider-left-insensitive-dark.png \
-	scale-slider-left-insensitive.png \
-	scale-slider-left.png \
-	scale-slider-right@2.png \
-	scale-slider-right-active@2.png \
-	scale-slider-right-active-dark@2.png \
-	scale-slider-right-active-dark.png \
-	scale-slider-right-active.png \
-	scale-slider-right-backdrop@2.png \
-	scale-slider-right-backdrop-dark@2.png \
-	scale-slider-right-backdrop-dark.png \
-	scale-slider-right-backdrop-insensitive@2.png \
-	scale-slider-right-backdrop-insensitive-dark@2.png \
-	scale-slider-right-backdrop-insensitive-dark.png \
-	scale-slider-right-backdrop-insensitive.png \
-	scale-slider-right-backdrop.png \
-	scale-slider-right-dark@2.png \
-	scale-slider-right-dark.png \
-	scale-slider-right-hover@2.png \
-	scale-slider-right-hover-dark@2.png \
-	scale-slider-right-hover-dark.png \
-	scale-slider-right-hover.png \
-	scale-slider-right-insensitive@2.png \
-	scale-slider-right-insensitive-dark@2.png \
-	scale-slider-right-insensitive-dark.png \
-	scale-slider-right-insensitive.png \
-	scale-slider-right.png \
-	scale-slider.svg \
-	scale-slider-up@2.png \
-	scale-slider-up-active@2.png \
-	scale-slider-up-active-dark@2.png \
-	scale-slider-up-active-dark.png \
-	scale-slider-up-active.png \
-	scale-slider-up-backdrop@2.png \
-	scale-slider-up-backdrop-dark@2.png \
-	scale-slider-up-backdrop-dark.png \
-	scale-slider-up-backdrop-insensitive@2.png \
-	scale-slider-up-backdrop-insensitive-dark@2.png \
-	scale-slider-up-backdrop-insensitive-dark.png \
-	scale-slider-up-backdrop-insensitive.png \
-	scale-slider-up-backdrop.png \
-	scale-slider-up-dark@2.png \
-	scale-slider-up-dark.png \
-	scale-slider-up-hover@2.png \
-	scale-slider-up-hover-dark@2.png \
-	scale-slider-up-hover-dark.png \
-	scale-slider-up-hover.png \
-	scale-slider-up-insensitive@2.png \
-	scale-slider-up-insensitive-dark@2.png \
-	scale-slider-up-insensitive-dark.png \
-	scale-slider-up-insensitive.png \
-	scale-slider-up.png \
-	scale-slider-v-active.svg \
-	scale-slider-vert@2.png \
-	scale-slider-vert-active@2.png \
-	scale-slider-vert-active-dark@2.png \
-	scale-slider-vert-active-dark.png \
-	scale-slider-vert-active.png \
-	scale-slider-vert-backdrop@2.png \
-	scale-slider-vert-backdrop-dark@2.png \
-	scale-slider-vert-backdrop-dark.png \
-	scale-slider-vert-backdrop-insensitive@2.png \
-	scale-slider-vert-backdrop-insensitive-dark@2.png \
-	scale-slider-vert-backdrop-insensitive-dark.png \
-	scale-slider-vert-backdrop-insensitive.png \
-	scale-slider-vert-backdrop.png \
-	scale-slider-vert-dark@2.png \
-	scale-slider-vert-dark.png \
-	scale-slider-vert-hover@2.png \
-	scale-slider-vert-hover-dark@2.png \
-	scale-slider-vert-hover-dark.png \
-	scale-slider-vert-hover.png \
-	scale-slider-vert-insensitive@2.png \
-	scale-slider-vert-insensitive-dark@2.png \
-	scale-slider-vert-insensitive-dark.png \
-	scale-slider-vert-insensitive.png \
-	scale-slider-vert.png \
-	scale-slider-v-hover.svg \
-	scale-slider-v-insensitive.svg \
-	scale-slider-v.svg \
-	sidebar-radio-checked-dark.svg \
-	sidebar-radio-checked.svg \
-	sidebar-radio-prelight.svg \
-	sidebar-radio-selected-dark.svg \
-	sidebar-radio-selected-prelight.svg \
-	sidebar-radio-selected.svg \
-	switch-slider-grip-dark.svg \
-	switch-slider-grip.svg \
-	tab-active-backdrop-first.svg \
-	tab-active-backdrop-last.svg \
-	tab-active-backdrop.svg \
-	tab-active-first.svg \
-	tab-active-last.svg \
-	tab-active-only.svg \
-	tab-active-rev.png \
-	tab-active.svg \
-	tab-backdrop.svg \
-	tab-bottom-4-backdrop.svg \
-	tab-bottom-4.svg \
-	tab-bottom-active-4-backdrop.svg \
-	tab-bottom-active-4.svg \
-	tab-bottom-backdrop.svg \
-	tab-bottom-first-backdrop.svg \
-	tab-bottom-first.svg \
-	tab-bottom-last-backdrop.svg \
-	tab-bottom-last.svg \
-	tab-bottom.svg \
-	tab-first-backdrop.svg \
-	tab-first.svg \
-	tab-hover-rev.png \
-	tab-last-backdrop.svg \
-	tab-last.svg \
-	tab-left-4-backdrop.svg \
-	tab-left-4.svg \
-	tab-left-active-4-backdrop.svg \
-	tab-left-active-4.svg \
-	tab-left.svg \
-	tab-right-4-backdrop.svg \
-	tab-right-4.svg \
-	tab-right-active-4-backdrop.svg \
-	tab-right-active-4.svg \
-	tab.svg \
-	tab-test.svg \
-	tab-top-4-backdrop.svg \
-	tab-top-4.svg \
-	tab-top-active-4-backdrop.svg \
-	tab-top-active-4.svg \
-	tab-top-active-backdrop-4.svg \
-	tab-top-active-terminal.svg \
-	tab-top-backdrop-4.svg \
-	tab-upsidedown-1.svg \
-	tab-upsidedown-active-2.svg \
-	tab-upsidedown-active-3.svg \
-	tab-upsidedown-active-backdrop.svg \
-	tab-upsidedown-active-first.svg \
-	tab-upsidedown-active-last-2.svg \
-	tab-upsidedown-active-last.svg \
-	tab-upsidedown-active.svg \
-	tab-upsidedown-first-1.svg \
-	tab-upsidedown-first.svg \
-	tab-upsidedown-last.svg \
-	tab-upsidedown-outline.svg \
-	tab-upsidedown-right.svg \
-	tab-upsidedown.svg \
-	thumbnail-frame.png \
-	Toolbar2.png \
-	Toolbar-backdrop.png \
-	Toolbar-op80.png \
-	Toolbar.png
+	selected-checkbox-checked@2.png \
+	selected-checkbox-checked-active@2.png \
+	selected-checkbox-checked-active.png \
+	selected-checkbox-checked-backdrop@2.png \
+	selected-checkbox-checked-backdrop-insensitive@2.png \
+	selected-checkbox-checked-backdrop-insensitive.png \
+	selected-checkbox-checked-backdrop.png \
+	selected-checkbox-checked-hover@2.png \
+	selected-checkbox-checked-hover.png \
+	selected-checkbox-checked-insensitive@2.png \
+	selected-checkbox-checked-insensitive.png \
+	selected-checkbox-checked.png \
+	selected-checkbox-mixed@2.png \
+	selected-checkbox-mixed-active@2.png \
+	selected-checkbox-mixed-active.png \
+	selected-checkbox-mixed-backdrop@2.png \
+	selected-checkbox-mixed-backdrop-insensitive@2.png \
+	selected-checkbox-mixed-backdrop-insensitive.png \
+	selected-checkbox-mixed-backdrop.png \
+	selected-checkbox-mixed-hover@2.png \
+	selected-checkbox-mixed-hover.png \
+	selected-checkbox-mixed-insensitive@2.png \
+	selected-checkbox-mixed-insensitive.png \
+	selected-checkbox-mixed.png \
+	selected-checkbox-unchecked@2.png \
+	selected-checkbox-unchecked-active@2.png \
+	selected-checkbox-unchecked-active.png \
+	selected-checkbox-unchecked-backdrop@2.png \
+	selected-checkbox-unchecked-backdrop-insensitive@2.png \
+	selected-checkbox-unchecked-backdrop-insensitive.png \
+	selected-checkbox-unchecked-backdrop.png \
+	selected-checkbox-unchecked-hover@2.png \
+	selected-checkbox-unchecked-hover.png \
+	selected-checkbox-unchecked-insensitive@2.png \
+	selected-checkbox-unchecked-insensitive.png \
+	selected-checkbox-unchecked.png \
+	selected-radio-checked@2.png \
+	selected-radio-checked-active@2.png \
+	selected-radio-checked-active.png \
+	selected-radio-checked-backdrop@2.png \
+	selected-radio-checked-backdrop-insensitive@2.png \
+	selected-radio-checked-backdrop-insensitive.png \
+	selected-radio-checked-backdrop.png \
+	selected-radio-checked-hover@2.png \
+	selected-radio-checked-hover.png \
+	selected-radio-checked-insensitive@2.png \
+	selected-radio-checked-insensitive.png \
+	selected-radio-checked.png \
+	selected-radio-mixed@2.png \
+	selected-radio-mixed-active@2.png \
+	selected-radio-mixed-active.png \
+	selected-radio-mixed-backdrop@2.png \
+	selected-radio-mixed-backdrop-insensitive@2.png \
+	selected-radio-mixed-backdrop-insensitive.png \
+	selected-radio-mixed-backdrop.png \
+	selected-radio-mixed-hover@2.png \
+	selected-radio-mixed-hover.png \
+	selected-radio-mixed-insensitive@2.png \
+	selected-radio-mixed-insensitive.png \
+	selected-radio-mixed.png \
+	selected-radio-unchecked@2.png \
+	selected-radio-unchecked-active@2.png \
+	selected-radio-unchecked-active.png \
+	selected-radio-unchecked-backdrop@2.png \
+	selected-radio-unchecked-backdrop-insensitive@2.png \
+	selected-radio-unchecked-backdrop-insensitive.png \
+	selected-radio-unchecked-backdrop.png \
+	selected-radio-unchecked-hover@2.png \
+	selected-radio-unchecked-hover.png \
+	selected-radio-unchecked-insensitive@2.png \
+	selected-radio-unchecked-insensitive.png \
+	selected-radio-unchecked.png \
+	slider-horz-scale-has-marks-above@2.png \
+	slider-horz-scale-has-marks-above-active@2.png \
+	slider-horz-scale-has-marks-above-active-dark@2.png \
+	slider-horz-scale-has-marks-above-active-dark.png \
+	slider-horz-scale-has-marks-above-active.png \
+	slider-horz-scale-has-marks-above-backdrop@2.png \
+	slider-horz-scale-has-marks-above-backdrop-dark@2.png \
+	slider-horz-scale-has-marks-above-backdrop-dark.png \
+	slider-horz-scale-has-marks-above-backdrop-insensitive@2.png \
+	slider-horz-scale-has-marks-above-backdrop-insensitive-dark@2.png \
+	slider-horz-scale-has-marks-above-backdrop-insensitive-dark.png \
+	slider-horz-scale-has-marks-above-backdrop-insensitive.png \
+	slider-horz-scale-has-marks-above-backdrop.png \
+	slider-horz-scale-has-marks-above-dark@2.png \
+	slider-horz-scale-has-marks-above-dark.png \
+	slider-horz-scale-has-marks-above-hover@2.png \
+	slider-horz-scale-has-marks-above-hover-dark@2.png \
+	slider-horz-scale-has-marks-above-hover-dark.png \
+	slider-horz-scale-has-marks-above-hover.png \
+	slider-horz-scale-has-marks-above-insensitive@2.png \
+	slider-horz-scale-has-marks-above-insensitive-dark@2.png \
+	slider-horz-scale-has-marks-above-insensitive-dark.png \
+	slider-horz-scale-has-marks-above-insensitive.png \
+	slider-horz-scale-has-marks-above.png \
+	slider-horz-scale-has-marks-below@2.png \
+	slider-horz-scale-has-marks-below-active@2.png \
+	slider-horz-scale-has-marks-below-active-dark@2.png \
+	slider-horz-scale-has-marks-below-active-dark.png \
+	slider-horz-scale-has-marks-below-active.png \
+	slider-horz-scale-has-marks-below-backdrop@2.png \
+	slider-horz-scale-has-marks-below-backdrop-dark@2.png \
+	slider-horz-scale-has-marks-below-backdrop-dark.png \
+	slider-horz-scale-has-marks-below-backdrop-insensitive@2.png \
+	slider-horz-scale-has-marks-below-backdrop-insensitive-dark@2.png \
+	slider-horz-scale-has-marks-below-backdrop-insensitive-dark.png \
+	slider-horz-scale-has-marks-below-backdrop-insensitive.png \
+	slider-horz-scale-has-marks-below-backdrop.png \
+	slider-horz-scale-has-marks-below-dark@2.png \
+	slider-horz-scale-has-marks-below-dark.png \
+	slider-horz-scale-has-marks-below-hover@2.png \
+	slider-horz-scale-has-marks-below-hover-dark@2.png \
+	slider-horz-scale-has-marks-below-hover-dark.png \
+	slider-horz-scale-has-marks-below-hover.png \
+	slider-horz-scale-has-marks-below-insensitive@2.png \
+	slider-horz-scale-has-marks-below-insensitive-dark@2.png \
+	slider-horz-scale-has-marks-below-insensitive-dark.png \
+	slider-horz-scale-has-marks-below-insensitive.png \
+	slider-horz-scale-has-marks-below.png \
+	slider-vert-scale-has-marks-above@2.png \
+	slider-vert-scale-has-marks-above-active@2.png \
+	slider-vert-scale-has-marks-above-active-dark@2.png \
+	slider-vert-scale-has-marks-above-active-dark.png \
+	slider-vert-scale-has-marks-above-active.png \
+	slider-vert-scale-has-marks-above-backdrop@2.png \
+	slider-vert-scale-has-marks-above-backdrop-dark@2.png \
+	slider-vert-scale-has-marks-above-backdrop-dark.png \
+	slider-vert-scale-has-marks-above-backdrop-insensitive@2.png \
+	slider-vert-scale-has-marks-above-backdrop-insensitive-dark@2.png \
+	slider-vert-scale-has-marks-above-backdrop-insensitive-dark.png \
+	slider-vert-scale-has-marks-above-backdrop-insensitive.png \
+	slider-vert-scale-has-marks-above-backdrop.png \
+	slider-vert-scale-has-marks-above-dark@2.png \
+	slider-vert-scale-has-marks-above-dark.png \
+	slider-vert-scale-has-marks-above-hover@2.png \
+	slider-vert-scale-has-marks-above-hover-dark@2.png \
+	slider-vert-scale-has-marks-above-hover-dark.png \
+	slider-vert-scale-has-marks-above-hover.png \
+	slider-vert-scale-has-marks-above-insensitive@2.png \
+	slider-vert-scale-has-marks-above-insensitive-dark@2.png \
+	slider-vert-scale-has-marks-above-insensitive-dark.png \
+	slider-vert-scale-has-marks-above-insensitive.png \
+	slider-vert-scale-has-marks-above.png \
+	slider-vert-scale-has-marks-below@2.png \
+	slider-vert-scale-has-marks-below-active@2.png \
+	slider-vert-scale-has-marks-below-active-dark@2.png \
+	slider-vert-scale-has-marks-below-active-dark.png \
+	slider-vert-scale-has-marks-below-active.png \
+	slider-vert-scale-has-marks-below-backdrop@2.png \
+	slider-vert-scale-has-marks-below-backdrop-dark@2.png \
+	slider-vert-scale-has-marks-below-backdrop-dark.png \
+	slider-vert-scale-has-marks-below-backdrop-insensitive@2.png \
+	slider-vert-scale-has-marks-below-backdrop-insensitive-dark@2.png \
+	slider-vert-scale-has-marks-below-backdrop-insensitive-dark.png \
+	slider-vert-scale-has-marks-below-backdrop-insensitive.png \
+	slider-vert-scale-has-marks-below-backdrop.png \
+	slider-vert-scale-has-marks-below-dark@2.png \
+	slider-vert-scale-has-marks-below-dark.png \
+	slider-vert-scale-has-marks-below-hover@2.png \
+	slider-vert-scale-has-marks-below-hover-dark@2.png \
+	slider-vert-scale-has-marks-below-hover-dark.png \
+	slider-vert-scale-has-marks-below-hover.png \
+	slider-vert-scale-has-marks-below-insensitive@2.png \
+	slider-vert-scale-has-marks-below-insensitive-dark@2.png \
+	slider-vert-scale-has-marks-below-insensitive-dark.png \
+	slider-vert-scale-has-marks-below-insensitive.png \
+	slider-vert-scale-has-marks-below.png
 	
 EXTRA_DIST = $(theme_DATA)
 
 SUBDIRS =	\
-	check-radio
+	SVGs
 
 DIST_SUBDIRS =	\
-	check-radio
+	SVGs
 
