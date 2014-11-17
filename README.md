@@ -11,8 +11,6 @@ Themes:
 
 --clearlooks-phenix
 
---Cologne
-
 --delorean-dark
 
 --Faience

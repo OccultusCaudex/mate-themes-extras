@@ -1,5 +1,12 @@
 3.8.1
 
+  * Blue-Submarine: re-write of GTK2 theme
+  * Green-Submarine: re-write of GTK2 theme
+  * Smoothly-Black GTK3: latest changes from upstream from 2014-10-02
+  * Smoothly GTK3: latest changes from upstream from 2014-10-02
+  * much improvements for GTK2/3, see git log
+  * drop cupertino themes, they don't work witk with GTK3-3.8
+
 3.8.0
   * pre-bump version to reflect GTK3 version
   * update faince themes to GTK3-3.10 (works with GTK3-3.8)
