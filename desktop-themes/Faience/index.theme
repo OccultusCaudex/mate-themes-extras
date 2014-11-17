@@ -1,4 +1,3 @@
-
 [Desktop Entry]
 Type=X-GNOME-Metatheme
 Name=Faience
@@ -8,6 +7,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Faience
 MetacityTheme=Faience
-IconTheme=Faience
+IconTheme=Faience-Azur
 CursorTheme=mate
 ButtonLayout=close,minimize,maximize:menu
