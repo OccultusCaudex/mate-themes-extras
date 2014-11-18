@@ -522,6 +522,13 @@ GtkLevelBar.vertical {
 					  shade(@theme_bg_color, 1.2));
 }
 
+/*******
+ * CSD *
+ *******/
+.titlebar {
+    border-radius: 0px;
+}
+
 /*************
  * Notebooks *
  *************/
