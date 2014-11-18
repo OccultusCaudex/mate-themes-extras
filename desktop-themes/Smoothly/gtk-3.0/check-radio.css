@@ -72,7 +72,7 @@
                                      from (shade (@glow_color, 0.70)),
                                      color-stop (1.00, shade (@glow_color, 1.60)),
                                      color-stop (0.00, shade (@glow_color, 1.70)),
-                                     color-stop (0.50, @glow_color),
+                                     color-stop (0.50, @glow_color), */
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@glow_color, 0.70)),
                                      color-stop (1.00, shade (@glow_color, 1.70)),
