@@ -1210,6 +1210,7 @@ DbusmenuGtkMenu .menu,
 	background-image: -gtk-gradient (linear, left top, left bottom,
 		from (shade (@theme_selected_bg_color, 1.0)),
 		to (shade (@theme_selected_bg_color, 0.85)));
+	border-color: shade (@theme_selected_bg_color, 0.85);
 	border-width: 1px;
 	border-style: solid;
 	-unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
@@ -1476,6 +1477,122 @@ DbusmenuGtkMenu .menuitem .accelerator:insensitive,
 
 .notebook .button {
 	padding: 3px;
+}
+
+/***************
+ * Header bars *
+ ***************/
+
+.header-bar {
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: shade(@borders, 0.90);
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: inset 0 -1px shade(@borders, 1.30);
+    background-color: @theme_bg_color;
+    padding: 6px 6px 5px 6px;
+}
+.header-bar:backdrop {
+    border-image: linear-gradient(to top,
+                                  @unfocused_borders,
+                                  @unfocused_borders 1px,
+                                  @theme_unfocused_bg_color 1px) 0 0 2;
+    box-shadow: none;
+    background-color: @theme_bg_color;
+}
+
+.header-bar .button,
+.header-bar .button:last-child,
+.header-bar .button:first-child,
+.header-bar .button:only-child {
+    color: @theme_text_color;
+    background-image: none;
+    border-bottom-width: 1px;
+    box-shadow: inset  0px  1px shade(@theme_bg_color, 1.05),
+                inset  1px  0px shade(@theme_bg_color, 0.97),
+                inset  0px -1px shade(@theme_bg_color, 0.93),
+                inset -1px  0px shade(@theme_bg_color, 0.93);
+    text-shadow: none;
+    icon-shadow: none;
+}
+
+.header-bar:backdrop .button {
+    color: @theme_text_color;
+    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+                     from (shade(@theme_unfocused_bg_color, 1.05)),
+                     to   (shade(@theme_unfocused_bg_color, 0.85)));
+}
+
+.header-bar .button:active:last-child,
+.header-bar .button:hover:last-child,
+.header-bar .button:active:hover:last-child {
+    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+                     from (shade(@button_raised_gradient_color_b, 0.90)),
+                     to   (shade(@button_raised_gradient_color_a, 0.80)));
+    border: 1px solid @theme_fg_color;
+    border-top-color: shade(@button_raised_gradient_color_a, 0.50);
+    box-shadow:	inset  0px  1px shade(@selected_bg_color, 1.05),
+                inset  1px  0px shade(@selected_bg_color, 0.97),
+                inset  0px -1px shade(@selected_bg_color, 0.93),
+                inset -1px  0px shade(@selected_bg_color, 0.93);
+}
+
+.header-bar .button:active,
+.header-bar .button:active:hover {
+    background-image: -gtk-gradient (linear,
+				     left top, left bottom,
+                     from (shade(@button_raised_gradient_color_b, 0.90)),
+                     to   (shade(@button_raised_gradient_color_a, 0.80)));
+    border: 1px solid @theme_fg_color;
+    border-top-color: shade(@button_raised_gradient_color_a, 0.50);
+    box-shadow: inset  0px  1px alpha(#000, 0.05),
+                inset  1px  1px alpha(#000, 0.05);
+}
+
+.header-bar .button:insensitive, .header-bar .button:insensitive:last-child, .header-bar .button:insensitive:first-child {
+    color: @theme_text_color;
+    background-image: none;
+    background-color: @theme_bg_color;
+    border-color: @theme_fg_color;
+    border-bottom-width: 1px;
+    box-shadow: none;
+    text-shadow: none;
+    icon-shadow: none;
+}
+
+.header-bar .button *:insensitive {
+    background-color: transparent;
+    text-shadow: none;
+    icon-shadow: none;
+}
+
+.header-bar .button.text-button {
+    padding: 2px 16px;
+}
+
+.header-bar .button.image-button {
+    padding: 5px 4px 5px 5px;
+}
+
+.header-bar .title {
+    font: Bold 11;
+    color: @theme_text_color;
+}
+
+.header-bar .subtitle {
+    font: 9;
+    color: @theme_text_color;
+}
+
+.header-bar GtkSeparatorToolItem,
+.header-bar .separator,
+.header-bar .separator:insensitive,
+.header-bar .pane-separator {
+    border-color: 		 alpha (shade(@theme_bg_color, 0.2), 0.24);
+    border-bottom-color: @theme_bg_color;
+    border-right-color:  @theme_bg_color;
 }
 
 /******************
@@ -2447,4 +2564,447 @@ GtkViewport.frame {
 GtkViewport,
 GtkIconView {
 	background-color: @theme_base_color;
+}
+
+/*******
+ * OSD *
+ *******/
+
+GtkWindow.osd {
+    color: @osd_fg;
+    background-color: @osd_bg;
+}
+
+GtkWindow.osd:backdrop {
+    background-color: @osd_bg_backdrop;
+}
+
+GtkOverlay.osd {
+    background-color: transparent;
+}
+
+.osd .button,
+.osd .button:active {
+    border-width: 1px;
+    border-style: solid;
+    border-image: none;
+    border-color: @osd_button_border;
+    border-radius: 5px;
+}
+
+.osd .button {
+    padding: 4px;
+    background-image: linear-gradient(to bottom,
+                                      @osd_button_bg_a,
+                                      @osd_button_bg_b 68%,
+                                      @osd_button_bg_c);
+    color: @osd_button_fg;
+    text-shadow: 0 -1px @osd_button_shadow;
+    icon-shadow: 0 -1px @osd_button_shadow;
+}
+
+.osd .button,
+.osd .button:prelight,
+.osd .button:active,
+.osd .button:active:hover  {
+    background-color: transparent;
+    border-top-color: 		@osd_button_border;
+    border-left-color: 		@osd_button_border;
+    border-right-color: 	@osd_button_border;
+    border-bottom-color: 	@osd_button_border;
+}
+
+.osd .button:insensitive {
+    background-image: none;
+    background-color: @osd_button_bg_insensitive;
+}
+
+.osd .button:active:insensitive {
+    background-image: none;
+    background-color: @osd_button_bg_insensitive_active;
+}
+
+.osd .button:backdrop {
+    background-image: none;
+    background-color: @osd_button_bg_backdrop;
+}
+
+.osd .button:backdrop:hover,
+.osd .button:backdrop:active:hover {
+    background-image: none;
+    background-color: @osd_button_bg_backdrop_hover;
+}
+
+.osd .button:backdrop:active {
+    background-image: none;
+    background-color: @osd_button_bg_backdrop_active;
+}
+
+.osd .button:backdrop:insensitive,
+.osd .button:backdrop:insensitive:active {
+    background-image: none;
+    background-color: @osd_button_bg_backdrop_insensitive;
+}
+
+.osd .button *:hover {
+    color: @osd_button_fg_hover;
+}
+
+.osd .button *:active,
+.osd .button *:hover:active {
+    color: @osd_button_fg_active;
+}
+
+.osd .button *:insensitive,
+.osd .button *:insensitive:active {
+    color: @osd_button_fg_insensitive;
+}
+
+.osd .button *:backdrop,
+.osd .button *:backdrop:insensitive,
+.osd .button *:backdrop:insensitive:active {
+    color: @osd_button_fg_backdrop;
+}
+
+.osd .button *:backdrop:active {
+    color: @osd_button_fg_backdrop_active;
+}
+
+.osd .button:hover {
+    background-image: linear-gradient(to bottom,
+                                      @osd_button_bg_hover_a,
+                                      @osd_button_bg_hover_b 68%,
+                                      @osd_button_bg_hover_c);
+}
+
+.osd .button:active,
+.osd .button:active:hover,
+.osd GtkMenuButton.button:active {
+    background-image: linear-gradient(to bottom,
+                                      @osd_button_bg_active_a,
+                                      @osd_button_bg_active_b 68%,
+                                      @osd_button_bg_active_c);
+}
+
+.osd GtkMenuButton.button:active {
+    background-color: transparent;
+    border-color: @osd_button_border;
+}
+
+.osd GtkMenuButton.button *:active {
+    color: @osd_button_fg_active;
+    text-shadow: 0 -1px @osd_button_shadow;
+}
+
+.osd.toolbar {
+    color: @osd_fg;
+    text-shadow: 0 1px @osd_text_shadow;
+    padding: 10px;
+    border-style: none;
+    border-radius: 7px;
+    background-image: linear-gradient(to bottom,
+                                      @osd_toolbar_bg_a,
+                                      @osd_toolbar_bg_b 63%,
+                                      @osd_toolbar_bg_c);
+    background-color: transparent;
+    -GtkToolbar-button-relief: normal;
+}
+
+.osd.toolbar:backdrop {
+    background-image: none;
+    background-color: @osd_bg_backdrop;
+}
+
+.osd.toolbar .button {
+    padding: 4px;
+    border-width: 1px 0;
+    border-radius: 0;
+    box-shadow: inset -1px 0 @osd_button_inset;
+}
+
+.osd.toolbar .button:first-child {
+    border-radius: 5px 0 0 5px;
+    border-width: 1px 0 1px 1px;
+    box-shadow: inset -1px 0 @osd_button_inset;
+}
+
+.osd.toolbar .button:last-child {
+    box-shadow: none;
+    border-radius: 0 5px 5px 0;
+    border-width: 1px 1px 1px 0;
+}
+
+.osd.toolbar .button:only-child,
+.osd.toolbar GtkToolButton .button,
+.osd.toolbar GtkToolButton:only-child .button,
+.osd.toolbar GtkToolButton:last-child .button,
+.osd.toolbar GtkToolButton:first-child .button {
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: none;
+}
+
+.osd.toolbar .separator {
+    color: shade(@osd_lowlight, 0.80);
+}
+
+/* used by gnome-settings-daemon's media-keys OSD */
+.osd.trough {
+    background-color: @osd_trough_bg;
+}
+
+.osd.progressbar {
+    background-color: @osd_fg;
+}
+
+.osd .scale.trough {
+    border-color: @osd_button_border;
+    background-image: linear-gradient(to bottom,
+                                      shade(@osd_button_border, 0.70),
+                                      shade(@osd_button_border, 0.90));
+    background-color: transparent;
+}
+
+.osd GtkProgressBar {
+    padding: 0;
+    -GtkProgressBar-xspacing: 0;
+    -GtkProgressBar-yspacing: 3px;
+    -GtkProgressBar-min-horizontal-bar-height: 3px;
+}
+
+.osd GtkProgressBar.trough {
+    padding: 0;
+    border-image: none;
+    border-style: none;
+    border-width: 0;
+    background-image: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.osd GtkProgressBar.progressbar {
+    border-style: none;
+    background-color: @theme_selected_bg_color;
+    background-image: none;
+    border-radius: 0;
+}
+
+/*******
+ * CSD *
+ *******/
+.titlebar {
+    text-shadow: 0 1px @wm_title_shadow;
+/*    background-image: linear-gradient(to bottom,
+                                      @wm_bg_a,
+                                      @wm_bg_b);*/
+    border-radius: 0px 0px 0px 0px;
+}
+
+.tiled .titlebar {
+    border-radius: 0;
+}
+
+.maximized .titlebar {
+    border-radius: 0;
+}
+
+/* this is the default titlebar that is added by GTK
+ * when client-side decorations are in use and the application
+ * did not set a custom titlebar.
+ */
+
+.titlebar.default-decoration {
+    border: none;
+    box-shadow: none;
+}
+
+.titlebar .title {
+    font: Bold 10;
+    background: none;
+    color: @theme_text_color;
+}
+
+ /* Colour when unfocused? */
+.titlebar:backdrop {
+    text-shadow: none;
+    background-image: none;
+    background-color: @theme_bg_color;
+}
+
+.titlebar .titlebutton {
+    icon-shadow: 0px 1px @theme_shadow_color;
+    color: @wm_title;
+    background: none;
+    padding: 5px 5px 6px 5px;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: none;
+}
+
+.titlebar .titlebutton:hover {
+    background-image: linear-gradient(to bottom,
+                                      @button_hover_gradient_color_a,
+                                      @button_hover_gradient_color_b);
+/*    box-shadow: inset  0px  1px shade(@selected_bg_color, 1.05),
+                inset  1px  0px shade(@selected_bg_color, 0.97),
+                inset  0px -1px shade(@selected_bg_color, 0.93),
+                inset -1px  0px shade(@selected_bg_color, 0.93);*/
+}
+
+.titlebar .titlebutton:active {
+    background-image: linear-gradient(to bottom,
+                                      @borders,
+                                      shade(@bg_dark_color, 0.95));
+    color: @theme_selected_fg_color;
+    icon-shadow: none;
+}
+
+.titlebar .right .titlebutton:first-child {
+    /*border-left: 1px solid @menu_separator;*/
+}
+
+.titlebar .right .titlebutton:last-child {
+}
+
+.titlebar .left .titlebutton:last-child {
+    /*border-right: 1px solid @menu_separator;*/
+}
+
+.titlebar .left .titlebutton:first-child {
+}
+
+.titlebar .titlebutton:backdrop {
+    background: none;
+    color: @theme_text_color;
+    border-image: none;
+    icon-shadow: none;
+}
+
+/* Middle titlebar-button */
+.titlebar .linked .button,
+.titlebar .linked .button:hover,
+.titlebar .button.raised.linked,
+.titlebar .raised.linked .button,
+.titlebar .linked .button:active,
+.titlebar .linked .button:active:hover,
+.titlebar .button.raised.linked:active,
+.titlebar .button.raised.linked:active:hover,
+.titlebar .raised.linked .button:active,
+.titlebar .raised.linked .button:active:hover,
+.titlebar .linked .button:insensitive,
+.titlebar .button.raised.linked:insensitive,
+.titlebar .raised.linked .button:insensitive {
+    color: @theme_fg_color;
+}
+
+.titlebar .linked .button:hover,
+.titlebar .linked .button:active,
+.titlebar .linked .button:active:hover,
+.titlebar .button.raised.linked:active,
+.titlebar .button.raised.linked:active:hover,
+.titlebar .raised.linked .button:active,
+.titlebar .raised.linked .button:active:hover {
+    box-shadow:	inset  0px  1px shade(@selected_bg_color, 1.05),
+                inset  1px  0px shade(@selected_bg_color, 0.97),
+                inset  0px -1px shade(@selected_bg_color, 0.93),
+                inset -1px  0px shade(@selected_bg_color, 0.93);
+}
+
+/* Leftmost titlebar-button */
+.titlebar .linked .button:first-child,
+.titlebar .linked .button:hover:first-child,
+.titlebar .button.raised.linked:first-child,
+.titlebar .raised.linked .button:first-child,
+.titlebar .linked .button:active:first-child,
+.titlebar .linked .button:active:hover:first-child,
+.titlebar .button.raised.linked:active:first-child,
+.titlebar .button.raised.linked:active:hover:first-child,
+.titlebar .raised.linked .button:active:first-child,
+.titlebar .raised.linked .button:active:hover:first-child,
+.titlebar .linked .button:insensitive:first-child,
+.titlebar .button.raised.linked:insensitive:first-child,
+.titlebar .raised.linked .button:insensitive:first-child {
+    color: @theme_fg_color;
+}
+
+.titlebar .linked .button:hover:first-child,
+.titlebar .linked .button:active:hover:first-child,
+.titlebar .button.raised.linked:active:hover:first-child,
+.titlebar .raised.linked .button:active:hover:first-child {
+    box-shadow:	inset  0px  1px shade(@selected_bg_color, 1.05),
+                inset  1px  0px shade(@selected_bg_color, 0.97),
+                inset  0px -1px shade(@selected_bg_color, 0.93),
+                inset -1px  0px shade(@selected_bg_color, 0.93);
+}
+
+/* rightmost titlebar-button */
+.titlebar .linked .button:last-child,
+.titlebar .linked .button:hover:last-child,
+.titlebar .button.raised.linked:last-child,
+.titlebar .raised.linked .button:last-child,
+.titlebar .linked .button:active:last-child,
+.titlebar .linked .button:active:hover:last-child,
+.titlebar .button.raised.linked:active:last-child,
+.titlebar .button.raised.linked:active:hover:last-child,
+.titlebar .raised.linked .button:active:last-child,
+.titlebar .raised.linked .button:active:hover:last-child,
+.titlebar .linked .button:insensitive:last-child,
+.titlebar .button.raised.linked:insensitive:last-child,
+.titlebar .raised.linked .button:insensitive:last-child {
+    color: @theme_fg_color;
+}
+
+.titlebar .linked .button:hover:last-child,
+.titlebar .linked .button:active:hover:last-child,
+.titlebar .button.raised.linked:active:hover:last-child,
+.titlebar .raised.linked .button:active:hover:last-child {
+    box-shadow:	inset  0px  1px shade(@selected_bg_color, 1.05),
+                inset  1px  0px shade(@selected_bg_color, 0.97),
+                inset  0px -1px shade(@selected_bg_color, 0.93),
+                inset -1px  0px shade(@selected_bg_color, 0.93);
+}
+
+/* Linked single titlebar-button */
+.titlebar .linked .button:only-child,
+.titlebar .linked .button:hover:only-child,
+.titlebar .button.raised.linked:only-child,
+.titlebar .raised.linked .button:only-child,
+.titlebar .linked .button:active:only-child,
+.titlebar .linked .button:active:hover:only-child,
+.titlebar .button.raised.linked:active:only-child,
+.titlebar .button.raised.linked:active:hover:only-child,
+.titlebar .raised.linked .button:active:only-child,
+.titlebar .raised.linked .button:active:hover:only-child,
+.titlebar .linked .button:insensitive:only-child,
+.titlebar .button.raised.linked:insensitive:only-child,
+.titlebar .raised.linked .button:insensitive:only-child {
+    color: @theme_fg_color;
+}
+
+.titlebar .linked .button:hover:only-child,
+.titlebar .linked .button:active:hover:only-child,
+.titlebar .button.raised.linked:active:hover:only-child,
+.titlebar .raised.linked .button:active:hover:only-child {
+    box-shadow:	inset  0px  1px shade(@selected_bg_color, 1.05),
+                inset  1px  0px shade(@selected_bg_color, 0.97),
+                inset  0px -1px shade(@selected_bg_color, 0.93),
+                inset -1px  0px shade(@selected_bg_color, 0.93);
+}
+
+.window-frame {
+    border-color: darker(@theme_bg_color);
+    border-radius: 9px 9px 0 0;
+    border-width: 1px;
+    border-style: solid;
+    background-color: @theme_bg_color;
+    box-shadow: 0 0 0 2px @theme_shadow_color, 0 2px 8px 3px @theme_shadow_color;
+    /* this is used for the resize cursor area */
+    margin: 10px;
+}
+
+.window-frame:backdrop {
+    box-shadow: 0 0 0 2px @theme_shadow_color, 0 2px 5px 1px @theme_shadow_color;
 }
