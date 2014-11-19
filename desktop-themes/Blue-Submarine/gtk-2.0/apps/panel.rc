@@ -22,7 +22,27 @@ style "theme-panel"
 	text[PRELIGHT]		= "#ffffff"
 	text[INSENSITIVE]	= shade (0.75, @text_color_dark)
 	text[ACTIVE]		= "#f5f5f5"
-	
+
+	engine "murrine" {
+
+	}
+}
+
+style "theme-panel-light"
+{
+	xthickness = 1
+	ythickness = 0
+
+	fg[NORMAL] = @fg_color
+
+	engine "murrine" {
+		textstyle = 0
+		roundness = 0
+	}
+}
+
+style "theme-panel-buttons"
+{
 	engine "pixmap" {
 		image {
 			function	= BOX
@@ -84,19 +104,6 @@ style "theme-panel"
 	}
 }
 
-style "theme-panel-light"
-{
-	xthickness = 1
-	ythickness = 0
-
-	fg[NORMAL] = @fg_color
-
-	engine "murrine" {
-		textstyle = 0
-		roundness = 0
-	}
-}
-
 style "theme-panel-text"
 {
 	bg[NORMAL]			= @menu_color
@@ -138,47 +145,6 @@ style "theme-panel-handle"
 # syncronize panel menus
 style "applet"
 {
-	engine "pixmap" {
-		image {
-			function	= BOX
-			recolorable	= TRUE
-			state		= NORMAL
-		}
-		image {
-			function	= BOX
-			recolorable	= TRUE
-			state		= PRELIGHT
-			file		= "Panel/panel-button-hover.png"
-			border		= { 4, 4, 1, 1 }
-			stretch		= TRUE
-		}
-		image {
-			function	= BOX
-			recolorable	= TRUE
-			state		= ACTIVE
-			file		= "Panel/panel-button-active.png"
-			border		= { 4, 4, 1, 1 }
-			stretch		= TRUE
-		}
-		image {
-			function	= BOX
-			recolorable	= TRUE
-			state		= SELECTED
-			file		= "Panel/panel-button-active.png"
-			border		= { 4, 4, 1, 1 }
-			stretch		= TRUE
-		}
-		image {
-			function	= BOX
-			recolorable	= TRUE
-			state		= INSENSITIVE
-		}
-		image {
-			function	= ARROW
-			recolorable	= TRUE
-			arrow_direction	= DOWN
-		}
-	}
 }
 
 widget "*PanelWidget*"			style "theme-panel"
@@ -208,6 +174,14 @@ widget_class "*Notif*Brasero*"	style "theme-panel-light"
 # XFCE panel theming.
 widget "*Xfce*Panel*"	style "theme-panel"
 class "*Xfce*Panel*"	style "theme-panel"
+
+# Panel buttons
+widget_class "*Panel*GtkToggleButton"	style:highest "theme-panel-buttons"
+#widget_class "*Panel*GtkButton"		style:highest "theme-panel-buttons"
+
+# XFCE panel buttons
+widget "*Xfce*Panel*Button*"		style:highest "theme-panel-buttons"
+class "*Xfce*Panel*Button*"		style:highest "theme-panel-buttons"
 
 # lxpanel and fbpanel
 widget "*.tclock.*"		style "theme-panel"
@@ -247,3 +221,10 @@ engine "pixmap" {
 }
 
 widget_class "*PanelToplevel*" style "panel-arrow-remove"
+
+# Fix xfce-notifyd button
+style "xfce-notifyd-button" {
+	fg[NORMAL]	= @text_color
+	fg[PRELIGHT]	= @text_color
+	fg[ACTIVE]	= @text_color
+}
