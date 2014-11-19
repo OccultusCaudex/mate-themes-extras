@@ -8,7 +8,6 @@ theme_DATA = \
 	handle-v.png \
 	panel-bg.png \
 	panel-button-active.png \
-	panel-button-active-transparancy.png \
 	panel-button-hover.png \
 	panel-button-inactive.png
 
