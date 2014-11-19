@@ -73,24 +73,6 @@ style "theme-panel-buttons"
 			border		= { 4, 4, 1, 1 }
 			stretch		= TRUE
 		}
-# workaround for transparancy panels
-# remove comment outs and comment out the entrys with panel-button-active.png
-#		image {
-#			function	= BOX
-#			recolorable	= TRUE
-#			state		= ACTIVE
-#			file		= "Panel/panel-button-active-transparancy.png"
-#			border		= { 4, 4, 1, 1 }
-#			stretch		= TRUE
-#		}
-#		image {
-#			function	= BOX
-#			recolorable	= TRUE
-#			state		= SELECTED
-#			file		= "Panel/panel-button-active-transparancy.png"
-#			border		= { 4, 4, 1, 1 }
-#			stretch		= TRUE
-#		}
 		image {
 			function	= BOX
 			recolorable	= TRUE
