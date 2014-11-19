@@ -88,13 +88,14 @@ NautilusNotebook .frame {
 NautilusToolbar .button {
 	icon-shadow: 0 1px @button_text_shadow;
 }
+*/
 
 NautilusToolbar .toolbar {
 	background-image: linear-gradient(to bottom,
 		@theme_bg_color,
 		shade (@theme_bg_color, 0.94));
 }
-*/
+
 NautilusToolbar .button *:active {
 	icon-shadow: 0 1px @button_active_text_shadow;
 }
