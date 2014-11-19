@@ -24,7 +24,7 @@
 @define-color button_bg_color shade (@theme_bg_color, 1.06);
 @define-color button_insensitive_bg_color shade (@theme_bg_color, 0.95);
 @define-color dark_bg_color #212121;
-@define-color dark_fg_color #E6E6E6;
+@define-color dark_fg_color #E4E5E6;
 @define-color transparent rgba (0, 0, 0, 0);
 
 @define-color backdrop_selected_bg_color shade (@theme_selected_bg_color, 1.12);
