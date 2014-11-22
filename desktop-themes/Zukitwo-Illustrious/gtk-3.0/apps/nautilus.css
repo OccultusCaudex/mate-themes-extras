@@ -91,12 +91,12 @@ NautilusSearchBar .entry {
 
 .nautilus-cluebar-label {
 	font: normal;
-	text-shadow: 0 1px shade (@cluebar_color, 1.06);
+	text-shadow: 0px 1px shade (@cluebar_color, 1.06);
 }
 
 .nautilus-cluebar-label:backdrop {
 	color: mix (@theme_fg_color, @cluebar_color, 0.2);
-	text-shadow: 0 1px shade (@cluebar_color, 1.02);
+	text-shadow: 0px 1px shade (@cluebar_color, 1.02);
 }
 
 #nautilus-search-button *:active,
@@ -125,12 +125,12 @@ NautilusWindow .sidebar .view {
 	background-color: @theme_bg_color;
 
 	color: @theme_fg_color;
-	text-shadow: 0 1px shade (shade (@theme_bg_color, 0.95), 1.04);  
+	text-shadow: 0px 1px shade (shade (@theme_bg_color, 0.95), 1.04);
 }
 
 NautilusWindow .sidebar row:selected {
 	color: @theme_selected_fg_color;
-	text-shadow: 0 -1px shade (@theme_selected_bg_color, 0.8); 
+	text-shadow: 0px -1px shade (@theme_selected_bg_color, 0.8);
 }
 
 NautilusWindow .sidebar row:backdrop:selected {
@@ -166,3 +166,70 @@ NautilusWindow .primary-toolbar .button:hover {
 		to (shade (@theme_bg_color, 0.6)));
 }
 
+NautilusWindow .button {
+	background-color: @transparent;
+	background-image: none;
+	border-radius: 2px;
+	border-width: 1px;
+	border-color: @transparent;
+
+	color: @theme_fg_color;
+	text-shadow: 0px 1px alpha (shade (@button_bg_color, 1.25), 0.4);
+
+	-unico-focus-border-radius: 2;
+	-unico-focus-border-color: alpha (@theme_selected_bg_color, 0.5);
+	-unico-focus-fill-color: alpha (@theme_selected_bg_color, 0.2);
+	-unico-focus-outer-stroke-color: @transparent;
+
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+}
+
+NautilusWindow .button:hover,
+NautilusWindow .button:active:active,
+NautilusWindow .button:active:active:hover {
+	background-color: @transparent;
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@button_bg_color, 1.2)),
+		to (shade (@button_bg_color, 1.04)));
+	border-radius: 2px;
+	border-width: 1px;
+	border-color: @transparent;
+
+	color: @theme_fg_color;
+	text-shadow: 0px 1px alpha (shade (@button_bg_color, 1.25), 0.4);
+
+	-unico-focus-border-radius: 2;
+	-unico-focus-border-color: alpha (@theme_selected_bg_color, 0.5);
+	-unico-focus-fill-color: alpha (@theme_selected_bg_color, 0.2);
+	-unico-focus-outer-stroke-color: @transparent;
+
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+    box-shadow:	inset  0px  1px shade(@selected_bg_color, 1.05),
+                inset  1px  0px shade(@selected_bg_color, 0.97),
+                inset  0px -1px shade(@selected_bg_color, 0.93),
+                inset -1px  0px shade(@selected_bg_color, 0.93);
+}
+
+NautilusWindow .button:active:active {
+	background-color: @transparent;
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@theme_bg_color, 0.9)),
+		to (shade (@theme_bg_color, 0.85)));
+	border-radius: 2px;
+	border-width: 1px;
+	border-color: @transparent;
+
+	color: @theme_fg_color;
+	text-shadow: 0px 1px alpha (shade (@button_bg_color, 1.25), 0.4);
+
+	-unico-focus-border-radius: 2;
+	-unico-focus-border-color: alpha (@theme_selected_bg_color, 0.5);
+	-unico-focus-fill-color: alpha (@theme_selected_bg_color, 0.2);
+	-unico-focus-outer-stroke-color: @transparent;
+
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+
+}
