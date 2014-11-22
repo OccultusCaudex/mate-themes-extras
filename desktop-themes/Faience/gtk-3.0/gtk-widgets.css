@@ -2538,7 +2538,7 @@ GtkBubbleWindow .toolbar {
 		@toolbar_gradient_start,
 		@toolbar_gradient_end);
 	padding: 12px 6px;
-	border-radius: 6px 6px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
 	border-top: solid 1px shade (@toolbar_gradient_start, 1.1);
 	border-left: solid 1px @toolbar_gradient_start;
 	border-right: solid 1px @toolbar_gradient_start;
