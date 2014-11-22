@@ -5664,7 +5664,7 @@ GtkBubbleWindow .toolbar {
                       url("assets/delorean-dark-bg.png");
     background-repeat: repeat;
     background-position: bottom left;
-    border-radius: 7px 7px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
 	border-width: 0 0 1px;
     border-style: solid;
     border-color: lighter(@theme_bg_color);
