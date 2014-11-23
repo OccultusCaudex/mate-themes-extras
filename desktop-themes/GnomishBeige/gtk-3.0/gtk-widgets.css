@@ -1705,7 +1705,7 @@ GtkProgressBar.osd.progressbar {
                                       shade (@theme_bg_color, 1.50),
                                       shade (@theme_bg_color, 1.0));
 
-    border-radius: 7px 7px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .tiled .titlebar {
