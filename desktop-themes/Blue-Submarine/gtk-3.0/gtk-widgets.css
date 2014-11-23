@@ -1790,6 +1790,7 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(last) {
     box-shadow: 1 0 inset shade(@frame_color, 1.50);
 }
 
+
 .primary-toolbar GtkComboBox.combobox-entry .button:active:nth-child(first),
 .primary-toolbar GtkComboBox.combobox-entry .button:hover:active:nth-child(first),
 GtkComboBox.combobox-entry .button:active:nth-child(first),
@@ -2806,7 +2807,6 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
     background-image: none;
     background-color: @theme_bg_dark_color;
     border-color: @theme_button_border_dark;
-    border-bottom-width: 1px;
     box-shadow: none;
     text-shadow: none;
     icon-shadow: none;
