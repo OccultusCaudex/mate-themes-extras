@@ -794,6 +794,7 @@ GtkScrolledWindow.frame {
     border-left-color: 		alpha(@focused_entry_outer, 0.75);
     border-bottom-color: 	alpha(@focused_entry_outer, 0.80);
 
+
     box-shadow: inset  0px  2px alpha(#fff, 0.11),
                 inset  2px  0px alpha(#fff, 0.09),
                 inset -2px  0px alpha(#fff, 0.09),
@@ -1392,6 +1393,7 @@ GtkScrolledWindow.frame {
 .inline-toolbar.toolbar .button:active,
 .inline-toolbar.toolbar GtkToolButton > .button:active {
     box-shadow: inset  0px  1px alpha(#000, 0.05),
+
                 inset  2px  0px alpha(#000, 0.03),
                 inset  1px  0px shade(@button_border, 0.80),
                 inset -1px  0px alpha(#000, 0.03),
@@ -3393,7 +3395,7 @@ GtkModelButton.button:selected {
     background-image: linear-gradient(to bottom,
                                       @wm_bg_a,
                                       @wm_bg_b);
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .tiled .titlebar {
