@@ -7,7 +7,7 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Zukitwo
 MetacityTheme=Zukitwo
-IconTheme=gnome-colors-brave
+IconTheme=gnome
 CursorTheme=mate
 ButtonLayout=:minimize,maximize,close
 
