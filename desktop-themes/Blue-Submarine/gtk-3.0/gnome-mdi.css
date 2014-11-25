@@ -14,13 +14,12 @@ EphyWindow {
                                      to   (shade(@theme_bg_dark_color, 0.92)));
 }
 
-/* FIXME fg color is wrong
+/* FIXME fg color need to change too
 GeditWindow GtkPaned {
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@theme_bg_dark_color, 0.95)),
                                      to   (shade(@theme_bg_dark_color, 0.90)));
-
 	box-shadow:	inset  0px  2px shade(@theme_highlight_color, 1.00),
                 inset  0px  1px @theme_mdi_border_color;
 
@@ -105,7 +104,7 @@ TerminalWindow .notebook tab {
                                      left top, left bottom,
                                      from (shade(@theme_bg_dark_color, 1.00)),
                                      to   (shade(@theme_bg_dark_color, 0.97)));
-	border-top-color: shade(@theme_mdi_border_color, 1.05);
+	border-top-color: 		shade(@theme_mdi_border_color, 1.05);
 }
 
 TerminalWindow .notebook tab,
@@ -220,6 +219,10 @@ TerminalScreen {
     color: @selected_fg_color;
 }
 
+/*MathWindow * {
+    background-color: transparent;
+}*/
+
 MathWindow {
     color: @theme_fg_dark_color;    
     background-image: -gtk-gradient (linear,
@@ -276,7 +279,6 @@ Buttons set in buttons raised
 
 MathWindow .button:hover,
 MathWindow .button {
-
     background-image: -gtk-gradient (linear,
 						left top, left bottom,
 						from (@button_raised_gradient_color_a),
@@ -460,6 +462,7 @@ NemoSearchBar GtkLabel {
     color: @toolbar_fg_color;
    	text-shadow: 0 1px @toolbar_shadow_color;
 }
+
 NautilusTrashBar GtkLabel {
     color: shade(@theme_fg_color, 1.00);
 	text-shadow: 0 1px @theme_shadow_color;
@@ -677,7 +680,6 @@ NemoWindow .primary-toolbar.toolbar NemoPathbarButton {
     border-radius: 0px;
     border-width: 0px;
 	border-color: transparent;
-
 }
 
 NemoWindow .primary-toolbar.toolbar NemoPathbarButton {
@@ -731,49 +733,6 @@ NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:hover:checked {
 	text-shadow: 1px 1px @theme_shadow_dark_color;
 }
 
-NemoWindow .primary-toolbar.toolbar .button:active,
-NemoWindow .primary-toolbar.toolbar .button:hover:active,
-NemoWindow .primary-toolbar.toolbar .button:checked,
-NemoWindow .primary-toolbar.toolbar .button:hover:checked {
-    background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-                     from (shade(@button_raised_gradient_color_b, 0.90)),
-                     to   (shade(@button_raised_gradient_color_a, 0.80)));
-    border-width: 1px;
-    border-style: solid; 
-    border-radius: 5px;
-	border-image: 			none;
-    border-top-color: 		transparent;
-    border-left-color: 		alpha (#fff, 0.01);
-    border-right-color: 	alpha (#fff, 0.01);
-    border-bottom-color: 	alpha (#fff, 0.05);
-	border-width: 1px;
-	border-radius: 3px;
-	border-style: solid;
-	box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 2.3),
-                inset  1px  0px shade (@theme_selected_bg_color, 2.3),
-                inset -1px  0px shade (@theme_selected_bg_color, 2.3),
-                inset  0px -1px shade (@theme_selected_bg_color, 2.3);
-}
-
-NautilusWindow .primary-toolbar .toolbar .button:hover,
-NautilusWindow .primary-toolbar.toolbar .button:hover,
-NemoWindow .primary-toolbar .toolbar .button:hover,
-NemoWindow .primary-toolbar.toolbar .button:hover {
-    background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-				     from (alpha (shade (@theme_bg_dark_color, 1.00), 0.0)),
-			         color-stop (0.50, shade (@theme_bg_dark_color, 0.83) ),
-				     to   (alpha (shade (@theme_bg_dark_color, 0.91), 0.0))); 
-	border-width: 1px;
-	border-radius: 3px;
-	border-style: solid;
-	box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 2.3),
-                inset  1px  0px shade (@theme_selected_bg_color, 2.3),
-                inset -1px  0px shade (@theme_selected_bg_color, 2.3),
-                inset  0px -1px shade (@theme_selected_bg_color, 2.3);
-}
-
 NemoWindow .primary-toolbar .toolbar {
     background-color: @theme_bg_color;
 }
@@ -797,7 +756,6 @@ NemoWindow .toolbar .button GtkImage {
     color: @theme_fg_color;
 }
 
-NemoWindow .toolbar .button:hover,
 NemoWindow .toolbar .button:hover,
 NemoWindow .toolbar .button:active,
 NemoWindow .toolbar .button:hover:active,
@@ -859,6 +817,21 @@ NautilusWindow .notebook {
 	border-right-color: @transparent;
     box-shadow: none;
 }
+
+/*
+NemoWindow .notebook {
+	-GtkNotebook-initial-gap: 0;
+    border-width: 1px 0px 0px 0px;
+	border-radius: 0px;
+	border-image: none;
+
+	border-top-color: shade(@sidebar_background, 0.75);
+	border-left-color: @transparent;
+	border-bottom-color: @transparent;
+	border-right-color: @transparent;
+
+}
+*/
 
 NemoWindow .notebook tab,
 NautilusWindow .notebook tab {
@@ -953,6 +926,25 @@ NemoWindow .notebook tab .button GtkImage:active:hover {
                   alpha(black, 0.13); 
 }
 
+/*
+.baobab-toolbar.toolbar {
+    border-color: shade (@bg_color, 0.9);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+}
+
+.cell.baobab-level-cell,
+.cell.baobab-level-cell:hover,
+.cell.baobab-level-cell:selected,
+.cell.baobab-level-cell:selected:hover {
+    border-color: alpha (black, 0.06);
+    border-width: 1px;
+    border-style: solid;
+    background-color: @theme_base_color;
+}
+*/
+
 ApDocView, /* Abiword */
 EogScrollView, /* Eog */
 CheeseThumbView /* Cheese */
@@ -968,31 +960,31 @@ CheeseThumbView /* Cheese */
 }
 
 /* desktop mode */
-.nemo-desktop.nautilus-canvas-item,
+.nemo-desktop.nemo-canvas-item,
 .nautilus-desktop.nautilus-canvas-item {
     color: white;
     text-shadow: 1px 1px black;
 }
 
-.nemo-desktop.nautilus-canvas-item:active,
+.nemo-desktop.nemo-canvas-item:active,
 .nautilus-desktop.nautilus-canvas-item:active,
-.nemo-desktop.nautilus-canvas-item:checked,
+.nemo-desktop.nemo-canvas-item:checked,
 .nautilus-desktop.nautilus-canvas-item:checked {
     background-image: none;
     color: @theme_text_color;
 }
 
-.nemo-desktop.nautilus-canvas-item:selected,
+.nemo-desktop.nemo-canvas-item:selected,
 .nautilus-desktop.nautilus-canvas-item:selected {
     color: @theme_selected_fg_color;
 }
 
-.nemo-desktop.nautilus-canvas-item:active,
-.nemo-desktop.nautilus-canvas-item:checked,
-.nemo-desktop.nautilus-canvas-item:prelight,
-.nemo-desktop.nautilus-canvas-item:selected,
+.nemo-desktop.nemo-canvas-item:active,
+.nemo-desktop.nemo-canvas-item:checked,
+.nemo-desktop.nemo-canvas-item:prelight,
+.nemo-desktop.nemo-canvas-item:selected,
 .nautilus-desktop.nautilus-canvas-item:active,
-.nautilus-desktop.nautilus-canvas-item:checked,
+.nemo-desktop.nemo-canvas-item:checked,
 .nautilus-desktop.nautilus-canvas-item:prelight,
 .nautilus-desktop.nautilus-canvas-item:selected {
     text-shadow: none;
