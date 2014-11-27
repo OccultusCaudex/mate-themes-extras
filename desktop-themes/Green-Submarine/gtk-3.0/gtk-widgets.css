@@ -412,13 +412,11 @@ This is the background color of mate-control-center 'too' */
                                       alpha (#000, 0.00) 50%,
                                       alpha (#000, 0.00) 98%,
                                       alpha (#004, 0.12) 98%,
-                                      alpha (#004, 0.12)
-                                      ),
-                       linear-gradient(to bottom,
+                                      alpha (#004, 0.12)),
+                      linear-gradient(to bottom,
                                       alpha (#000, 0.20),
                                       alpha (#000, 0.05) 50%,
-                                      alpha (#000, 0.00)
-                                      ),
+                                      alpha (#000, 0.00)),
                       linear-gradient(to right,
                                       @progressbar_fill_a,
                                       @progressbar_fill_b);
@@ -448,13 +446,11 @@ This is the background color of mate-control-center 'too' */
                                       alpha (#000, 0.00) 50%,
                                       alpha (#000, 0.00) 98%,
                                       alpha (#004, 0.12) 98%,
-                                      alpha (#004, 0.12)
-                                      ),
-                       linear-gradient(to right,
+                                      alpha (#004, 0.12)),
+                      linear-gradient(to right,
                                       alpha (#000, 0.20),
                                       alpha (#000, 0.05) 50%,
-                                      alpha (#000, 0.00)
-                                      ),
+                                      alpha (#000, 0.00)),
                       linear-gradient(to top,
                                       @progressbar_fill_a,
                                       @progressbar_fill_b);
@@ -499,7 +495,7 @@ GtkProgressBar,
     border-radius: 3px;
     box-shadow: inset  1px  1px alpha(#000, 0.15),
                 inset -1px -1px alpha(#000, 0.15);
-	text-shadow:	none;
+	text-shadow: none;
 }
 
 .trough.vertical {
@@ -509,7 +505,7 @@ GtkProgressBar,
                                      color-stop (0.20, alpha (#000, 0.14)),
 			                         to (alpha (#000, 0.04)));
     border-radius: 3px;
-	text-shadow:	none;
+	text-shadow: none;
 }
 
 .trough row:selected,
@@ -551,7 +547,6 @@ GtkLevelBar.vertical {
     padding: 2px;
     border-radius: 2px;
 }
-
 
 .level-bar.indicator-discrete.fill-block.horizontal {
     margin: 0 1px;
@@ -1754,7 +1749,6 @@ GtkComboBox .button *:prelight {
     color: @theme_text_color;
 }
 
-
 .toolbar GtkComboBox .cell {
 	/* color combobox read-only */
     color: 			shade(@toolbar_fg_color, 0.94);
@@ -1865,7 +1859,6 @@ GtkComboBox.combobox-entry .button *:prelight {
 }
 
 /* Makes the button of the combobox entry that has the same gradient text boxes
-
 .primary-toolbar GtkComboBox.combobox-entry .button:active,
 .primary-toolbar GtkComboBox.combobox-entry .button:hover:active,
 GtkComboBox.combobox-entry .button:active,
@@ -2615,7 +2608,6 @@ GtkCalendar.header .stack-switcher > .titlebutton.button {
 	border-style: solid;
 	border-color: @borders;
 	border-top: 0px;
-
 	background-color: shade (@theme_bg_color, 1.1);
 	-GtkNotebook-initial-gap: 0;
 	-GtkNotebook-arrow-spacing: 5;
@@ -2958,8 +2950,7 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
 .header-bar GtkSeparatorToolItem,
 .header-bar .separator,
 .header-bar .separator:insensitive,
-.header-bar .pane-separator
- {
+.header-bar .pane-separator {
     border-color: 		 alpha (shade(@theme_bg_dark_color, 0.2), 0.24);
     border-bottom-color: @theme_bg_dark_color;
     border-right-color:  @theme_bg_dark_color; 
@@ -3222,7 +3213,6 @@ row:selected:focused {
 	/* take the same background in .view to avoid mouse-over lists */
 	/*background-color: @theme_base_color;*/
     background-color: alpha(@theme_base_color, 0.0);
-
 }
 
 .expander,
@@ -3239,7 +3229,6 @@ row:selected:focused {
 .expander row:selected:focused {
     border-style: solid;
     border-width: 1px;
-
     border-color: @expander_row_selected_color;
     color: @expander_row_selected_color;
     background-color: @theme_selected_bg_color;
@@ -3289,7 +3278,6 @@ GtkCalendar.button {
     border-style: solid;
     border-width: 0px;
     padding: 0px;
-
     color: @theme_base_color;
 }
 
@@ -3309,6 +3297,7 @@ GtkCalendar.highlight {
 /**************
  * GtkInfoBar *
  **************/
+
 GtkInfoBar {
 	border-width: 0;
 	border-style: none;
@@ -3648,6 +3637,7 @@ GtkOverlay.osd {
 /*************
  * Popovers *
  *************/
+
 .popover {
 	border-radius: 5px;
 	background-clip: border-box;
@@ -3772,6 +3762,7 @@ GtkModelButton.button:selected {
 /*******
  * CSD *
  *******/
+
 .titlebar {
     text-shadow: 0 1px @wm_title_shadow;
     background-image: linear-gradient(to bottom,
