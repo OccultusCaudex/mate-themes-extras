@@ -5,7 +5,7 @@
  ***************************************************************/
  
 * {
-	-GtkArrow-arrow-scaling: 0.7;
+	-GtkArrow-arrow-scaling: 0.95;
 	-GtkButton-child-displacement-x: 1;
 	-GtkButton-child-displacement-y: 1;
 	-GtkButton-default-border: 0;
@@ -803,7 +803,7 @@ GtkScrolledWindow.frame {
 }
 
 .button:active,
-.button:hover:active,
+.button:active:hover,
 .button:focus:active,
 .button:checked,
 .button:hover:checked,
@@ -850,7 +850,7 @@ GtkScrolledWindow.frame {
 }
 
 .button *:active,
-.button *:hover:active,
+.button *:active:hover,
 .button *:checked,
 .button *:hover:checked {
 	color: @theme_selected_fg_color;
@@ -879,7 +879,6 @@ GtkScrolledWindow.frame {
 /***************************/
 
 /* Middle toolbar-button */
-
 .toolbar.menubar .linked .button,
 .toolbar.menubar .linked .button:hover,
 .toolbar .button.raised.linked,
@@ -925,7 +924,6 @@ GtkScrolledWindow.frame {
 }
 
 /* Middle toolbar-button normal */
-
 .toolbar.menubar .linked .button,
 .toolbar .button.raised.linked,
 .toolbar .raised.linked .button,
@@ -942,17 +940,15 @@ GtkScrolledWindow.frame {
 }
 
 /* Middle toolbar-button hover */
-
 .toolbar.menubar .linked .button:hover,
 .toolbar .raised.linked .button:hover {
-	box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 /* Middle toolbar-button active */
-
 .toolbar.menubar .linked .button:active,
 .toolbar.menubar .linked .button:active:hover,
 .toolbar.menubar .linked .button:active:active,
@@ -974,14 +970,13 @@ GtkScrolledWindow.frame {
 .primary-toolbar .linked .button:checked:hover,
 .primary-toolbar .linked .button:checked:checked {
 	/* Remove right border */
-	box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 /* Middle toolbar-button insensitive */
-
 .toolbar.menubar .linked .button:insensitive,
 .toolbar .button.raised.linked:insensitive,
 .toolbar .raised.linked .button:insensitive,
@@ -996,7 +991,6 @@ GtkScrolledWindow.frame {
 }
 
 /* Leftmost toolbars-button */
-
 .toolbar.menubar .linked .button:first-child,
 .toolbar.menubar .linked .button:hover:first-child,
 .toolbar .button.raised.linked:first-child,
@@ -1043,7 +1037,6 @@ GtkScrolledWindow.frame {
 }
 
 /* Leftmost toolbars-button normal */
-
 .toolbar.menubar .linked .button:first-child,
 .toolbar.menubar .linked .button:hover:first-child,
 .toolbar .button.raised.linked:first-child,
@@ -1060,17 +1053,15 @@ GtkScrolledWindow.frame {
 }
 
 /* Leftmost toolbars-button hover */
-
 .toolbar.menubar .linked .button:hover:first-child,
 .toolbar .raised.linked .button:hover:first-child {
-	box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 /* Leftmost toolbars-button active */
-
 .toolbar.menubar .linked .button:active:first-child,
 .toolbar.menubar .linked .button:active:hover:first-child,
 .toolbar.menubar .linked .button:active:active:first-child,
@@ -1096,14 +1087,13 @@ GtkScrolledWindow.frame {
 .primary-toolbar .linked .button:checked:hover:first-child,
 .primary-toolbar .linked .button:checked:checked:first-child {
 	/* Remove right border */
-	box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 /* Leftmost toolbars-button insensitive */
-
 .toolbar.menubar .linked .button:insensitive:first-child,
 .toolbar .button.raised.linked:insensitive:first-child,
 .toolbar .raised.linked .button:insensitive:first-child,
@@ -1118,7 +1108,6 @@ GtkScrolledWindow.frame {
 }
 
 /* Rightmost toolbar-button */
-
 .toolbar.menubar .linked .button:last-child,
 .toolbar.menubar .linked .button:hover:last-child,
 .toolbar .button.raised.linked:last-child,
@@ -1165,7 +1154,6 @@ GtkScrolledWindow.frame {
 }
 
 /* Rightmost toolbar-button normal */
-
 .toolbar.menubar .linked .button:last-child,
 .toolbar .button.raised.linked:last-child,
 .toolbar .raised.linked .button:last-child,
@@ -1182,17 +1170,15 @@ GtkScrolledWindow.frame {
 }
 
 /* Rightmost toolbars-button hover */
-
 .toolbar.menubar .linked .button:hover:last-child,
 .toolbar .raised.linked .button:hover:last-child {
-	box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 /* Rightmost toolbar-button active */
-
 .toolbar.menubar .linked .button:active:last-child,
 .toolbar.menubar .linked .button:active:hover:last-child,
 .toolbar.menubar .linked .button:active:active:last-child,
@@ -1213,14 +1199,13 @@ GtkScrolledWindow.frame {
 .toolbar .raised.linked .button:checked:hover:last-child,
 .primary-toolbar .linked .button:checked:last-child,
 .primary-toolbar .linked .button:checked:hover:last-child {
-	box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 /* Rightmost toolbar-button insensitive */
-
 .toolbar.menubar .linked .button:insensitive:last-child,
 .toolbar .button.raised.linked:insensitive:last-child,
 .toolbar .raised.linked .button:insensitive:last-child,
@@ -1234,7 +1219,6 @@ GtkScrolledWindow.frame {
 }
 
 /* Linked single toolbar-button */
-
 .toolbar.menubar .linked .button:only-child,
 .toolbar.menubar .linked .button:hover:only-child,
 .toolbar .button.raised.linked:only-child,
@@ -1278,7 +1262,6 @@ GtkScrolledWindow.frame {
 }
 
 /* Linked single toolbar-button normal */
-
 .toolbar.menubar .linked .button:only-child,
 .toolbar .button.raised.linked:only-child,
 .toolbar .raised.linked .button:only-child,
@@ -1295,17 +1278,15 @@ GtkScrolledWindow.frame {
 }
 
 /* Linked single toolbar-button hover */
-
 .toolbar .raised.linked .button:hover:only-child,
 .toolbar.menubar .linked .button:hover:only-child {
-	box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 /* Linked single toolbar-button active */
-
 .toolbar.menubar .linked .button:active:only-child,
 .toolbar.menubar .linked .button:active:hover:only-child,
 .toolbar.menubar .linked .button:active:active:only-child,
@@ -1330,14 +1311,13 @@ GtkScrolledWindow.frame {
 .primary-toolbar .linked .button:checked:only-child,
 .primary-toolbar .linked .button:checked:hover:only-child,
 .primary-toolbar .linked .button:checked:checked:only-child {
-	box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 /* Linked single toolbar-button insensitive */
-
 .toolbar.menubar .linked .button:insensitive:only-child,
 .toolbar .button.raised.linked:insensitive:only-child,
 .toolbar .raised.linked .button:insensitive:only-child,
@@ -1351,7 +1331,6 @@ GtkScrolledWindow.frame {
 }
 
 /* nth-child for linked areas */
-
 .toolbar .raised.linked.button,
 .toolbar .raised.linked.button:active,
 .toolbar .raised.linked.button:active:hover,
@@ -1391,6 +1370,7 @@ GtkScrolledWindow.frame {
 /***************************/
 /* Linked standard buttons */
 /***************************/
+
 .linked .button {
     padding-left:  5px;
     padding-right: 5px;
@@ -1784,7 +1764,8 @@ GtkComboBox .button *:prelight {
     border-bottom-color: 	alpha (#000, 0.25);
 }
 
-.toolbar GtkComboBox.combobox-entry .button:active {
+.toolbar GtkComboBox.combobox-entry .button:active,
+.toolbar GtkComboBox.combobox-entry .button:checked {
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (alpha(#000, 0.20)),
@@ -1805,11 +1786,13 @@ GtkComboBox .button *:prelight {
 .toolbar GtkComboBox.combobox-entry .button,
 .toolbar GtkComboBox.combobox-entry .button:hover,
 .toolbar GtkComboBox.combobox-entry .button:active,
+.toolbar GtkComboBox.combobox-entry .button:checked,
 .toolbar GtkComboBox.combobox-entry .button:insensitive,
 .toolbar GtkComboBox.combobox-entry .button:nth-child(last),
 .primary-toolbar GtkComboBox.combobox-entry .button,
 .primary-toolbar GtkComboBox.combobox-entry .button:hover,
 .primary-toolbar GtkComboBox.combobox-entry .button:active,
+.primary-toolbar GtkComboBox.combobox-entry .button:checked,
 .primary-toolbar GtkComboBox.combobox-entry .button:insensitive,
 .primary-toolbar GtkComboBox.combobox-entry .button:nth-child(last) {
     border-top-left-radius: 0px;
@@ -1823,6 +1806,7 @@ GtkComboBox .button *:prelight {
 GtkComboBox.combobox-entry .button,
 GtkComboBox.combobox-entry .button:hover,
 GtkComboBox.combobox-entry .button:active,
+GtkComboBox.combobox-entry .button:checked,
 GtkComboBox.combobox-entry .button:insensitive,
 GtkComboBox.combobox-entry .button:nth-child(last) {
     border-top-left-radius: 0px;
@@ -1844,28 +1828,30 @@ GtkComboBox.combobox-entry .button:nth-child(first) {
     border-radius: 4px 0px 0px 4px;
 }
 
-
 GtkComboBox.combobox-entry .button *:active,
+GtkComboBox.combobox-entry .button *:checked,
 GtkComboBox.combobox-entry .button *:prelight {
     color: @internal_element_prelight;
 }
 
 .toolbar GtkComboBox.combobox-entry .button *:active,
+.toolbar GtkComboBox.combobox-entry .button *:checked,
 .toolbar GtkComboBox.combobox-entry .button *:prelight,
 .primary-toolbar GtkComboBox.combobox-entry .button *:active,
+.primary-toolbar GtkComboBox.combobox-entry .button *:checked,
 .primary-toolbar GtkComboBox.combobox-entry .button *:prelight {
     color: @theme_text_dark_color;
 }
 
 /* Makes the button of the combobox entry that has the same gradient text boxes
 .primary-toolbar GtkComboBox.combobox-entry .button:active,
-.primary-toolbar GtkComboBox.combobox-entry .button:hover:active,
+.primary-toolbar GtkComboBox.combobox-entry .button:active:hover,
 GtkComboBox.combobox-entry .button:active,
-GtkComboBox.combobox-entry .button:hover:active,
+GtkComboBox.combobox-entry .button:active:hover,
 .primary-toolbar GtkComboBox.combobox-entry .button:active:nth-child(last),
-.primary-toolbar GtkComboBox.combobox-entry .button:hover:active:nth-child(last),
+.primary-toolbar GtkComboBox.combobox-entry .button:active:hover:nth-child(last),
 GtkComboBox.combobox-entry .button:active:nth-child(last),
-GtkComboBox.combobox-entry .button:hover:active:nth-child(last) {
+GtkComboBox.combobox-entry .button:active:hover:nth-child(last) {
     background-image: -gtk-gradient(linear,
                                     left top, left bottom,
                                     from       (shade(@theme_base_color, 0.81)),
@@ -1876,9 +1862,9 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(last) {
 }
 
 .primary-toolbar GtkComboBox.combobox-entry .button:active:nth-child(first),
-.primary-toolbar GtkComboBox.combobox-entry .button:hover:active:nth-child(first),
+.primary-toolbar GtkComboBox.combobox-entry .button:active:hover:nth-child(first),
 GtkComboBox.combobox-entry .button:active:nth-child(first),
-GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
+GtkComboBox.combobox-entry .button:active:hover:nth-child(first) {
     box-shadow: -1 0 inset shade(@frame_color, 1.50);
 }
 */
@@ -2028,10 +2014,10 @@ GtkHandleBox,
                                      left top, left bottom,
                                      from (alpha(#fff, 0.03)),
                                      to   (alpha(#000, 0.08)));
-    border-top-color: 		alpha (#000, 0.15);
-    border-left-color: 		alpha (#000, 0.20);
-    border-right-color: 	alpha (#000, 0.20);
-    border-bottom-color: 	alpha (#000, 0.25);
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+                inset  1px  0px shade (@theme_selected_bg_color, 1.3),
+                inset -1px  0px shade (@theme_selected_bg_color, 1.3),
+                inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 .primary-toolbar .toolbar .button:hover,
@@ -2270,23 +2256,19 @@ GtkHandleBox,
     border-right-color: 	alpha (#fff, 0.02);
     border-bottom-color: 	@theme_highlight_color;
 	/* border and inset */
-    box-shadow: inset  0px  2px alpha(#fff, 0.09),
-                inset  2px  0px alpha(#fff, 0.06),
-                inset -2px  0px alpha(#fff, 0.06),
-                inset  0px -2px alpha(#fff, 0.06),
-				inset  0px  1px shade(@theme_button_border_dark, 1.00),
-                inset  1px  0px shade(@theme_button_border_dark, 0.94),
-                inset -1px  0px shade(@theme_button_border_dark, 0.94),
-                inset  0px -1px shade(@theme_button_border_dark, 0.88);
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+                inset  1px  0px shade (@theme_selected_bg_color, 1.3),
+                inset -1px  0px shade (@theme_selected_bg_color, 1.3),
+                inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 NemoWindow .primary-toolbar.toolbar .button:active,
-NemoWindow .primary-toolbar.toolbar .button:hover:active,
+NemoWindow .primary-toolbar.toolbar .button:active:hover,
 .toolbar NautilusPathBar .button:active,
 .toolbar.menubar .button:active,
 .toolbar .raised .button:active,
-.toolbar .raised .button:hover:active,
-.toolbar .raised.button:hover:active,
+.toolbar .raised .button:active:hover,
+.toolbar .raised.button:active:hover,
 .toolbar .raised.button:active,
 NemoWindow .primary-toolbar.toolbar .button:checked,
 NemoWindow .primary-toolbar.toolbar .button:hover:checked,
@@ -2494,21 +2476,16 @@ NemoWindow .primary-toolbar.toolbar .button:hover:checked,
     border-width: 0px;
     border-radius: 0 0 4px 4px;
     border-style: none;
-    box-shadow: inset  0px  1px alpha(#fff, 0.09),
-                inset  2px  0px alpha(#fff, 0.07),
-                inset -2px  0px alpha(#fff, 0.07),
-                inset  0px -2px alpha(#fff, 0.05),
-                inset  1px  0px shade(@button_border, 1.00),
-                inset -1px  0px shade(@button_border, 1.00),
-                inset  0px -1px shade(@button_border, 1.00);
-    box-shadow: none;
-	color:       @theme_fg_color;
+    box-shadow:  none;
+    color:       @theme_fg_color;
     text-shadow: 0 1px @theme_shadow_color;
     icon-shadow: 1px 1px @theme_shadow_color;
 }
 
 .inline-toolbar.toolbar .button:active,
-.inline-toolbar.toolbar .button:active:hover {
+.inline-toolbar.toolbar .button:active:hover,
+.inline-toolbar.toolbar .button:checked,
+.inline-toolbar.toolbar .button:checked:hover {
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@button_base, 0.50)),
@@ -2550,7 +2527,8 @@ NemoWindow .primary-toolbar.toolbar .button:hover:checked,
     icon-shadow: 1px 1px @theme_shadow_color;
 }
 
-.inline-toolbar.toolbar .button *:active {
+.inline-toolbar.toolbar .button *:active,
+.inline-toolbar.toolbar .button *:checked {
 	color: @theme_selected_fg_color;
     text-shadow: 0 1px @theme_selected_shadow_color;
     icon-shadow: 1px 1px @theme_selected_shadow_color;
@@ -2874,26 +2852,36 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
 }
 
 .header-bar .button:active:first-child,
-.header-bar .button:checked:first-child,
 .header-bar .button:hover:first-child,
 .header-bar .button:active:hover:first-child,
-.header-bar .button:checked:hover:first-child,
+.header-bar .button:active:active:first-child,
 .header-bar .button:active:last-child,
-.header-bar .button:checked:last-child,
 .header-bar .button:hover:last-child,
 .header-bar .button:active:hover:last-child,
-.header-bar .button:checked:hover:last-child,
+.header-bar .button:active:active:last-child,
 .header-bar .button:active:only-child,
-.header-bar .button:checked:only-child,
 .header-bar .button:hover:only-child,
-.header-bar .button:active:hover:only-child,
-.header-bar .button:checked:hover:only-child {
+.header-bar .button:active:hover:last-child,
+.header-bar .button:active:active:last-child,
+.header-bar .button:checked:first-child,
+.header-bar .button:checked:hover:first-child,
+.header-bar .button:checked:checked:first-child,
+.header-bar .button:checked:last-child,
+.header-bar .button:checked:hover:last-child,
+.header-bar .button:checked:checked:last-child,
+.header-bar .button:checked:only-child,
+.header-bar .button:checked:hover:only-child,
+.header-bar .button:checked:checked:only-child {
     border-width: 1px;
     border-radius: 5px;
     background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-                     from (shade(@button_raised_gradient_color_b, 0.90)),
-                     to   (shade(@button_raised_gradient_color_a, 0.80)));
+                                     left top, left bottom,
+                                     from (shade(@button_raised_gradient_color_b, 0.90)),
+                                     to (shade(@button_raised_gradient_color_a, 0.80)));
+    border-top-color: shade(@button_raised_gradient_color_a, 0.50);
+    border-bottom-color: shade(@button_raised_gradient_color_a, 0.50);
+    border-right-color: shade(@button_raised_gradient_color_a, 0.50);
+    border-left-color: shade(@button_raised_gradient_color_a, 0.50);
     box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
@@ -2912,7 +2900,9 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
     border-radius: 5px;
 }
 
-.header-bar .button:insensitive, .header-bar .button:insensitive:last-child, .header-bar .button:insensitive:first-child {
+.header-bar .button:insensitive,
+.header-bar .button:insensitive:last-child,
+.header-bar .button:insensitive:first-child {
     color: @theme_text_dark_color;
     background-image: none;
     background-color: @theme_bg_dark_color;
@@ -3075,16 +3065,18 @@ GtkIconView.view.cell:selected:focused {
 .view:selected:focused,
 .view *:selected:focused {
     background-color: shade(@theme_selected_bg_color, 1.10);
-	background-image: -gtk-gradient (linear,
+    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@theme_selected_bg_color, 1.0)),
                                      to (shade(@theme_selected_bg_color, 1.1))); 
     color: @theme_selected_fg_color;
-	text-shadow: 0px 1px @theme_selected_shadow_color;
+    text-shadow: 0px 1px @theme_selected_shadow_color;
 }
 
 .view:active, 
-.view *:active {
+.view *:active,
+.view:checked,
+.view *:checked {
     background-color: shade(@theme_bg_color, 0.915);
     color: @theme_text_color;
 	text-shadow: 0px 1px @theme_shadow_color;
@@ -3117,8 +3109,10 @@ column-header {
 }
 
 column-header .button:active,
-column-header .button:active:hover {
-	background-image: -gtk-gradient (linear,
+column-header .button:active:hover,
+column-header .button:checked,
+column-header .button:checked:hover {
+    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade (@theme_bg_color, 1.20)),
                                      color-stop (0.50, shade (@theme_bg_color, 1.00)),
@@ -3216,6 +3210,7 @@ row:selected:focused {
 
 .expander,
 .expander:active,
+.expander:checked,
 .expander:prelight {
     border-style: solid;
     border-width: 1px;
@@ -3484,7 +3479,7 @@ GtkOverlay.osd {
 }
 
 .osd .button *:active,
-.osd .button *:hover:active,
+.osd .button *:active:hover,
 .osd .button *:checked,
 .osd .button *:hover:checked {
     color: @osd_button_fg_active;
@@ -3667,39 +3662,40 @@ GtkOverlay.osd {
 .popover > .inline-toolbar .popover.osd > .location-bar,
 .popover > .search-bar .popover.osd > .location-bar,
 .popover > .location-bar .popover.osd > .location-bar {
-	border-style: none;
-	background-color: transparent;
+    border-style: none;
+    background-color: transparent;
 }
 
 .popover.osd {
-	background-color: @osd_popover_bg;
-	border-color: @theme_bg_color;
-	box-shadow: 0 2px 8px 3px alpha(@wm_shadow, 0.4);
-	color: darker(white);
+    background-color: @osd_popover_bg;
+    border-color: @theme_bg_color;
+    box-shadow: 0 2px 8px 3px alpha(@wm_shadow, 0.4);
+    color: darker(white);
 }
 
 .popover.osd .toolbar {
-	background-image: none;
-	background-color: transparent;
-	border: none;
-	box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
 }
+
 .popover.osd .button {
-	text-shadow: 0 -1px @osd_text_shadow;
-	icon-shadow: 0 -1px @osd_text_shadow;
+    text-shadow: 0 -1px @osd_text_shadow;
+    icon-shadow: 0 -1px @osd_text_shadow;
 }
 
 .popover.osd .button:active,
 .popover.osd .button:checked {
-        box-shadow: none;
+    box-shadow: none;
 }
 
 .popover.osd .button:insensitive {
-	color: alpha(@theme_selected_fg_color, 0.4);
+    color: alpha(@theme_selected_fg_color, 0.4);
 }
 
 .popover .list {
-	background-color: @theme_base_color;
+    background-color: @theme_base_color;
 }
 
 GtkModelButton.button {
@@ -3787,7 +3783,7 @@ GtkModelButton.button:selected {
     border: none;
     box-shadow: none;
 }
- 
+
 .titlebar .title {
     font: Bold 10;
     background: none;
@@ -3800,40 +3796,57 @@ GtkModelButton.button:selected {
     background-image: none;
     background-color: @theme_bg_dark_color;
 }
- 
+
+.titlebar .button {
+    icon-shadow: 0px 1px @theme_shadow_dark_color;
+    color: @wm_title;
+    background: none;
+    padding: 5px 5px 6px 5px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: none;
+    box-shadow: inset  0px  1px shade(@theme_bg_dark_color, 1.05),
+                inset  1px  0px shade(@theme_bg_dark_color, 0.97),
+                inset  0px -1px shade(@theme_bg_dark_color, 0.93),
+                inset -1px  0px shade(@theme_bg_dark_color, 0.93);
+}
+
 .titlebar .titlebutton {
     icon-shadow: 0px 1px @theme_shadow_dark_color;
     color: @wm_title;
     padding: 5px 5px 6px 5px;
     border-style: solid;
     border-image: none;
-	border-radius: 5px;
-	border-width: 1px;
-	border-color: @transparent;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: @transparent;
     background: none;
-	background-color: @transparent;
-    box-shadow:	inset  0px  1px shade(@insensitive_bg_color, 0.65),
-                inset  1px  0px shade(@insensitive_bg_color, 0.57),
-                inset  0px -1px shade(@insensitive_bg_color, 0.53),
-                inset -1px  0px shade(@insensitive_bg_color, 0.53);
+    background-color: @transparent;
 }
- 
+
+.titlebar .button:hover,
+.titlebar .button:active,
+.titlebar .button:active:active,
 .titlebar .titlebutton:hover,
 .titlebar .titlebutton:active:active,
+.titlebar .button:checked,
+.titlebar .button:checked:checked,
 .titlebar .titlebutton:checked:checked {
     background-image: linear-gradient(to bottom,
                                       @button_hover_gradient_color_a,
                                       @button_hover_gradient_color_b);
-	background-color: @transparent;
-	border-radius: 5px;
-	border-width: 1px;
-	border-color: @transparent;
+    background-color: @transparent;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: @transparent;
     box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
- 
+
 .titlebar .titlebutton:active {
     background-image: linear-gradient(to bottom,
                                       @borders,
@@ -3841,21 +3854,21 @@ GtkModelButton.button:selected {
     color: @theme_selected_fg_color;
     icon-shadow: none;
 }
- 
+
 .titlebar .right .titlebutton:first-child {
     /*border-left: 1px solid @menu_separator;*/
 }
- 
+
 .titlebar .right .titlebutton:last-child {
 }
- 
+
 .titlebar .left .titlebutton:last-child {
     /*border-right: 1px solid @menu_separator;*/
 }
- 
+
 .titlebar .left .titlebutton:first-child {
 }
- 
+
 .titlebar .titlebutton:backdrop {
     background: none;
     color: @theme_text_dark_color;
@@ -3896,15 +3909,6 @@ GtkModelButton.button:selected {
     padding-right: 4px;
 }
 
-.titlebar .linked .button,
-.titlebar .button.raised.linked,
-.titlebar .raised.linked .button {
-    box-shadow:	inset  0px  1px shade(@insensitive_bg_color, 0.65),
-                inset  1px  0px shade(@insensitive_bg_color, 0.57),
-                inset  0px -1px shade(@insensitive_bg_color, 0.53),
-                inset -1px  0px shade(@insensitive_bg_color, 0.53);
-}
-
 .titlebar .linked .button:hover,
 .titlebar .linked .button:active:hover,
 .titlebar .button.raised.linked:active:hover,
@@ -3925,16 +3929,6 @@ GtkModelButton.button:selected {
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
-}
-
-.titlebar .linked .button:insensitive,
-.titlebar .linked .button:insensitive,
-.titlebar .button.raised.linked:insensitive,
-.titlebar .raised.linked .button:insensitive {
-    box-shadow:	inset  0px  1px shade(@insensitive_bg_color, 0.45),
-                inset  1px  0px shade(@insensitive_bg_color, 0.37),
-                inset  0px -1px shade(@insensitive_bg_color, 0.33),
-                inset -1px  0px shade(@insensitive_bg_color, 0.33);
 }
 
 /* Leftmost titlebar-button */
@@ -3971,15 +3965,6 @@ GtkModelButton.button:selected {
     padding-right: 4px;
 }
 
-.titlebar .linked .button:first-child,
-.titlebar .button.raised.linked:first-child,
-.titlebar .raised.linked .button:first-child {
-    box-shadow:	inset  0px  1px shade(@insensitive_bg_color, 0.65),
-                inset  1px  0px shade(@insensitive_bg_color, 0.57),
-                inset  0px -1px shade(@insensitive_bg_color, 0.53),
-                inset -1px  0px shade(@insensitive_bg_color, 0.53);
-}
-
 .titlebar .linked .button:hover:first-child,
 .titlebar .linked .button:active:hover:first-child,
 .titlebar .button.raised.linked:active:hover:first-child,
@@ -4000,16 +3985,6 @@ GtkModelButton.button:selected {
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
-}
-
-.titlebar .linked .button:insensitive:first-child,
-.titlebar .linked .button:insensitive:first-child,
-.titlebar .button.raised.linked:insensitive:first-child,
-.titlebar .raised.linked .button:insensitive:first-child {
-    box-shadow:	inset  0px  1px shade(@insensitive_bg_color, 0.45),
-                inset  1px  0px shade(@insensitive_bg_color, 0.37),
-                inset  0px -1px shade(@insensitive_bg_color, 0.33),
-                inset -1px  0px shade(@insensitive_bg_color, 0.33);
 }
 
 /* rightmost titlebar-button */
@@ -4046,15 +4021,6 @@ GtkModelButton.button:selected {
     padding-right: 4px;
 }
 
-.titlebar .linked .button:last-child,
-.titlebar .button.raised.linked:last-child,
-.titlebar .raised.linked .button:last-child {
-    box-shadow:	inset  0px  1px shade(@insensitive_bg_color, 0.65),
-                inset  1px  0px shade(@insensitive_bg_color, 0.57),
-                inset  0px -1px shade(@insensitive_bg_color, 0.53),
-                inset -1px  0px shade(@insensitive_bg_color, 0.53);
-}
-
 .titlebar .linked .button:hover:last-child,
 .titlebar .linked .button:active:hover:last-child,
 .titlebar .button.raised.linked:active:hover:last-child,
@@ -4075,16 +4041,6 @@ GtkModelButton.button:selected {
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
-}
-
-.titlebar .linked .button:insensitive:last-child,
-.titlebar .linked .button:insensitive:last-child,
-.titlebar .button.raised.linked:insensitive:last-child,
-.titlebar .raised.linked .button:insensitive:last-child {
-    box-shadow:	inset  0px  1px shade(@insensitive_bg_color, 0.45),
-                inset  1px  0px shade(@insensitive_bg_color, 0.37),
-                inset  0px -1px shade(@insensitive_bg_color, 0.33),
-                inset -1px  0px shade(@insensitive_bg_color, 0.33);
 }
 
 /* Linked single titlebar-button */
@@ -4118,15 +4074,6 @@ GtkModelButton.button:selected {
     padding-right: 4px;
 }
 
-.titlebar .linked .button:only-child,
-.titlebar .button.raised.linked:only-child,
-.titlebar .raised.linked .button:only-child {
-    box-shadow:	inset  0px  1px shade(@insensitive_bg_color, 0.65),
-                inset  1px  0px shade(@insensitive_bg_color, 0.57),
-                inset  0px -1px shade(@insensitive_bg_color, 0.53),
-                inset -1px  0px shade(@insensitive_bg_color, 0.53);
-}
-
 .titlebar .linked .button:hover:only-child,
 .titlebar .linked .button:active:hover:only-child,
 .titlebar .button.raised.linked:active:hover:only-child,
@@ -4147,16 +4094,6 @@ GtkModelButton.button:selected {
                 inset  1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset -1px  0px shade (@theme_selected_bg_color, 1.3),
                 inset  0px -1px shade (@theme_selected_bg_color, 1.3);
-}
-
-.titlebar .linked .button:insensitive:only-child,
-.titlebar .linked .button:insensitive:only-child,
-.titlebar .button.raised.linked:insensitive:only-child,
-.titlebar .raised.linked .button:insensitive:only-child {
-    box-shadow:	inset  0px  1px shade(@insensitive_bg_color, 0.45),
-                inset  1px  0px shade(@insensitive_bg_color, 0.37),
-                inset  0px -1px shade(@insensitive_bg_color, 0.33),
-                inset -1px  0px shade(@insensitive_bg_color, 0.33);
 }
 
 .window-frame {
