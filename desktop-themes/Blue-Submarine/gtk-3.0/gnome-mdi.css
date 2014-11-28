@@ -129,7 +129,10 @@ EphyNotebook.notebook tab.top {
 
 TerminalWindow .notebook tab:active,
 GeditWindow .notebook tab:active,
-EphyNotebook.notebook tab:active {
+EphyNotebook.notebook tab:active,
+TerminalWindow .notebook tab:checked,
+GeditWindow .notebook tab:checked,
+EphyNotebook.notebook tab:checked {
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@theme_mdi_bg_color, 0.90)),
@@ -161,7 +164,10 @@ EphyNotebook.notebook tab:first-child,
 GeditWindow .notebook tab:first-child:active,
 EphyNotebook.notebook tab:first-child:active,
 TerminalWindow .notebook tab:first-child,
-TerminalWindow .notebook tab:first-child:active {
+TerminalWindow .notebook tab:first-child:active,
+GeditWindow .notebook tab:first-child:checked,
+EphyNotebook.notebook tab:first-child:checked,
+TerminalWindow .notebook tab:first-child:checked {
 	border-left-width: 0px;
     border-radius: 0px;
 }
@@ -188,9 +194,37 @@ EphyNotebook.notebook tab:first-child:active,
 TerminalWindow .notebook tab:first-child:active,
 GeditWindow .notebook tab:last-child:active,
 EphyNotebook.notebook tab:last-child:active,
-TerminalWindow .notebook tab:last-child:active {
+TerminalWindow .notebook tab:last-child:active,
+GeditWindow .notebook tab:first-child:checked,
+EphyNotebook.notebook tab:first-child:checked,
+TerminalWindow .notebook tab:first-child:checked,
+GeditWindow .notebook tab:last-child:checked,
+EphyNotebook.notebook tab:last-child:checked,
+TerminalWindow .notebook tab:last-child:checked {
     border-left-color: 	shade(@theme_mdi_border_color, 0.88);
     border-right-color: shade(@theme_mdi_border_color, 0.88);
+}
+
+GeditWindow .notebook tab:first-child,
+EphyNotebook.notebook tab:first-child,
+GeditWindow .notebook tab:first-child:hover,
+EphyNotebook.notebook tab:first-child:hover,
+GeditWindow .notebook tab:first-child:active,
+EphyNotebook.notebook tab:first-child:active,
+GeditWindow .notebook tab:first-child:checked,
+EphyNotebook.notebook tab:first-child:checked {
+    border-radius: 0px;
+}
+
+GeditWindow .notebook tab:last-child,
+EphyNotebook.notebook tab:last-child,
+GeditWindow .notebook tab:last-child:hover,
+EphyNotebook.notebook tab:last-child:hover,
+GeditWindow .notebook tab:last-child:active,
+EphyNotebook.notebook tab:last-child:active,
+GeditWindow .notebook tab:last-child:checked,
+EphyNotebook.notebook tab:last-child:checked {
+    border-radius: 0px;
 }
 
 TerminalWindow .notebook tab:only-child {
@@ -199,8 +233,10 @@ TerminalWindow .notebook tab:only-child {
 
 GeditWindow .notebook tab:only-child,
 GeditWindow .notebook tab:only-child:active,
+GeditWindow .notebook tab:only-child:hover,
+GeditWindow .notebook tab:only-child:checked,
 EphyNotebook.notebook tab:only-child {
-    border-radius: 0px 4px 0px 0px;
+    border-radius: 0px;
 }
 
 TerminalWindow .notebook tab GtkLabel,
@@ -307,9 +343,9 @@ MathWindow .button {
 }
 
 MathWindow .button:active,
-MathWindow .button:hover:active,
+MathWindow .button:active:hover,
 MathWindow .button:checked,
-MathWindow .button:hover:checked {
+MathWindow .button:checked:hover {
     background-image: -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade(@button_raised_gradient_color_b, 0.90)),
@@ -501,18 +537,18 @@ NautilusTrashBar .button:hover {
 }
 
 .question .button:active,
-.question .button:hover:active,
+.question .button:active:hover,
 NemoTrashBar .button:active,
-NemoTrashBar .button:hover:active,
+NemoTrashBar .button:active:hover,
 NautilusTrashBar .button:active,
-NautilusTrashBar .button:hover:active,
+NautilusTrashBar .button:active:hover,
 .question .button:checked,
-.question .button:hover:checked,
+.question .button:checked:hover,
 NemoTrashBar .button:checked,
-NemoTrashBar .button:hover:checked,
+NemoTrashBar .button:checked:hover,
 NautilusTrashBar .button:checked,
-NautilusTrashBar .button:hover:checked {
-/* .button:hover:active */
+NautilusTrashBar .button:checked:hover {
+/* .button:active:hover */
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@nautilus_cluebar_color, 1.00)),
@@ -535,17 +571,17 @@ NautilusTrashBar .button:hover:checked {
 }
 
 .question .button *:active,
-.question .button *:hover:active,
+.question .button *:active:hover,
 NemoTrashBar .button *:active,
-NemoTrashBar .button *:hover:active,
+NemoTrashBar .button *:active:hover,
 NautilusTrashBar .button *:active,
-NautilusTrashBar .button *:hover:active,
+NautilusTrashBar .button *:active:hover,
 .question .button *:checked,
-.question .button *:hover:checked,
+.question .button *:checked:hover,
 NemoTrashBar .button *:checked,
-NemoTrashBar .button *:hover:checked,
+NemoTrashBar .button *:checked:hover,
 NautilusTrashBar .button *:checked,
-NautilusTrashBar .button *:hover:checked {
+NautilusTrashBar .button *:checked:hover {
 	color: shade(@theme_text_color, 1.00);
 	text-shadow: 0px 1px @theme_shadow_color;
 }
@@ -553,7 +589,7 @@ NautilusTrashBar .button *:hover:checked {
 .question .button:insensitive,
 NemoTrashBar .button:insensitive,
 NautilusTrashBar .button:insensitive {
-/* .button:hover:active */
+/* .button:active:hover */
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@nautilus_cluebar_color, 0.95)),
@@ -664,32 +700,32 @@ NemoWindow .primary-toolbar.toolbar .button,
 NemoWindow .primary-toolbar.toolbar .button:active,
 NemoWindow .primary-toolbar.toolbar .button:checked,
 NemoWindow .primary-toolbar.toolbar .button:hover,
-NemoWindow .primary-toolbar.toolbar .button:hover:active,
-NemoWindow .primary-toolbar.toolbar .button:hover:checked {
-	padding: 0px 4px;
+NemoWindow .primary-toolbar.toolbar .button:active:hover,
+NemoWindow .primary-toolbar.toolbar .button:checked:hover {
+    padding: 0px 4px;
     border-image: none;
     border-width: 1px;
     border-radius: 5px;
-	border-color: transparent;
+    border-color: transparent;
 }
 
 NemoWindow .primary-toolbar.toolbar NemoPathbarButton {
-	padding: 0px 0px 0px 3px;
+    padding: 0px 0px 0px 3px;
     border-image: 	none;
-	border-style: solid;
+    border-style: solid;
     border-radius: 0px;
     border-width: 0px;
-	border-color: transparent;
+    border-color: transparent;
 }
 
 NemoWindow .primary-toolbar.toolbar NemoPathbarButton {
     background-image: -gtk-gradient (linear,
-						left top, left bottom,
-						from (@button_raised_gradient_color_a),
-						to   (@button_raised_gradient_color_b));
+                                     left top, left bottom,
+                                     from (@button_raised_gradient_color_a),
+                                     to (@button_raised_gradient_color_b));
     border-width: 0px;
-  	border-color: shade(@theme_button_border_dark, 1.00); 
-	/* inset */
+    border-color: shade(@theme_button_border_dark, 1.00);
+    /* inset */
     box-shadow: inset  0px  1px alpha(#fff, 0.09),
                 inset  1px  0px alpha(#fff, 0.06),
                 inset -1px  0px alpha(#fff, 0.06),
@@ -709,11 +745,11 @@ NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:hover {
 NemoWindow .primary-toolbar.toolbar NemoPathbarButton:active,
 NemoWindow .primary-toolbar.toolbar NemoPathbarButton:checked {
     background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-                     from (shade(@button_raised_gradient_color_b, 0.90)),
-                     to   (shade(@button_raised_gradient_color_a, 0.80)));
-	border-image: 			none;
-    border-color: 		shade(@theme_button_border_dark, 0.92);
+                                     left top, left bottom,
+                                     from (shade(@button_raised_gradient_color_b, 0.90)),
+                                     to (shade(@button_raised_gradient_color_a, 0.80)));
+    border-image: none;
+    border-color: shade(@theme_button_border_dark, 0.92);
     box-shadow: inset  0px  3px alpha(#000, 0.01),
 				inset  0px  2px alpha(#000, 0.03),
 				inset  0px  1px alpha(#000, 0.04),
@@ -725,12 +761,59 @@ NemoWindow .primary-toolbar.toolbar NemoPathbarButton:checked {
 }
 
 NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:active,
-NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:hover:active,
+NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:active:hover,
 NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:checked,
-NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:hover:checked {
+NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:checked:hover {
     font: bold;
 	color: shade(@theme_text_dark_color, 1.00);
 	text-shadow: 1px 1px @theme_shadow_dark_color;
+}
+
+NautilusWindow .primary-toolbar.toolbar .button:active,
+NautilusWindow .primary-toolbar.toolbar .button:active:hover,
+NemoWindow .primary-toolbar.toolbar .button:active,
+NemoWindow .primary-toolbar.toolbar .button:active:hover,
+NautilusWindow .primary-toolbar.toolbar .button:checked,
+NautilusWindow .primary-toolbar.toolbar .button:checked:hover,
+NemoWindow .primary-toolbar.toolbar .button:checked,
+NemoWindow .primary-toolbar.toolbar .button:checked:hover {
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@button_raised_gradient_color_b, 0.90)),
+                                     to (shade(@button_raised_gradient_color_a, 0.80)));
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-image:        none;
+    border-top-color:    transparent;
+    border-left-color:   alpha (#fff, 0.01);
+    border-right-color:  alpha (#fff, 0.01);
+    border-bottom-color: alpha (#fff, 0.05);
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+                inset  1px  0px shade (@theme_selected_bg_color, 1.3),
+                inset -1px  0px shade (@theme_selected_bg_color, 1.3),
+                inset  0px -1px shade (@theme_selected_bg_color, 1.3);
+}
+
+NautilusWindow .primary-toolbar .toolbar .button:hover,
+NautilusWindow .primary-toolbar.toolbar .button:hover,
+NemoWindow .primary-toolbar .toolbar .button:hover,
+NemoWindow .primary-toolbar.toolbar .button:hover {
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (alpha (shade (@theme_bg_dark_color, 1.00), 0.0)),
+                                     color-stop (0.50, shade (@theme_bg_dark_color, 0.83) ),
+                                     to (alpha (shade (@theme_bg_dark_color, 0.91), 0.0)));
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+                inset  1px  0px shade (@theme_selected_bg_color, 1.3),
+                inset -1px  0px shade (@theme_selected_bg_color, 1.3),
+                inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 NemoWindow .primary-toolbar .toolbar {
@@ -747,20 +830,20 @@ NemoWindow .toolbar {
 }
 
 /* small buttons statusbar nemo */
+NemoWindow .toolbar .button GtkImage,
 NemoWindow .toolbar .button GtkImage:active,
 NemoWindow .toolbar .button GtkImage:active:hover,
 NemoWindow .toolbar .button GtkImage:checked,
 NemoWindow .toolbar .button GtkImage:checked:hover,
-NemoWindow .toolbar .button GtkImage:hover,
-NemoWindow .toolbar .button GtkImage {
+NemoWindow .toolbar .button GtkImage:hover {
     color: @theme_fg_color;
 }
 
 NemoWindow .toolbar .button:hover,
 NemoWindow .toolbar .button:active,
-NemoWindow .toolbar .button:hover:active,
+NemoWindow .toolbar .button:active:hover,
 NemoWindow .toolbar .button:checked,
-NemoWindow .toolbar .button:hover:checked {
+NemoWindow .toolbar .button:checked:hover {
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@button_gradient1, 1.03)),
@@ -850,15 +933,17 @@ NautilusWindow .notebook tab {
 }
 
 NemoWindow .notebook tab:active,
-NautilusWindow .notebook tab:active {    
+NautilusWindow .notebook tab:active,
+NemoWindow .notebook tab:checked,
+NautilusWindow .notebook tab:checked {
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@theme_base_color, 0.90)),
-									 color-stop (0.15, shade(@theme_base_color, 1.00)),
+                                     color-stop (0.15, shade(@theme_base_color, 1.00)),
                                      to   (shade(@theme_base_color, 1.00)));
-	border-image: none;
-	border-left-color: 		shade(@notebook_border, 1.00);
-	border-right-color: 	shade(@notebook_border, 1.00);
+	border-image:       none;
+	border-left-color:  shade(@notebook_border, 1.00);
+	border-right-color: shade(@notebook_border, 1.00);
     box-shadow: inset  0px  1px alpha(#000, 0.08),
                 inset  1px  0px alpha(#fff, 0.04),
                 inset -1px  0px alpha(#fff, 0.04);
@@ -875,16 +960,20 @@ NemoWindow .notebook tab.top {
 
 NautilusWindow .notebook tab:first-child,
 NautilusWindow .notebook tab:first-child:active,
+NautilusWindow .notebook tab:first-child:checked,
 NemoWindow .notebook tab:first-child,
-NemoWindow .notebook tab:first-child:active {
+NemoWindow .notebook tab:first-child:active,
+NemoWindow .notebook tab:first-child:checked {
 	border-width: 0px 1px 0px 0px;
 	border-radius: 0px;
 }
 
 NautilusWindow .notebook tab:last-child,
 NautilusWindow .notebook tab:last-child:active,
+NautilusWindow .notebook tab:last-child:checked,
 NemoWindow .notebook tab:last-child,
-NemoWindow .notebook tab:last-child:active {
+NemoWindow .notebook tab:last-child:active,
+NemoWindow .notebook tab:last-child:checked {
 	border-width: 0px 0px 0px 1px;
 	border-radius: 0px;
 }
@@ -916,6 +1005,10 @@ NemoWindow .notebook tab .button GtkImage:hover {
 NautilusWindow .notebook tab  .button GtkImage:active,
 NautilusWindow .notebook tab  .button GtkImage:active:hover,
 NemoWindow .notebook tab .button GtkImage:active,
+NemoWindow .notebook tab .button GtkImage:active:hover,
+NautilusWindow .notebook tab  .button GtkImage:checked,
+NautilusWindow .notebook tab  .button GtkImage:checked:hover,
+NemoWindow .notebook tab .button GtkImage:checked,
 NemoWindow .notebook tab .button GtkImage:active:hover {
     background-color: alpha(black, 0.15); 
     color:  		  shade(@theme_fg_color, 1.00); 
