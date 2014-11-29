@@ -300,11 +300,11 @@ MathWindow .button {
 }
 
 MathWindow .button:active,
-MathWindow .button:hover:active {
+MathWindow .button:active:hover {
     background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-                     from (shade(@button_raised_gradient_color_b, 0.90)),
-                     to   (shade(@button_raised_gradient_color_a, 0.80)));
+                                     left top, left bottom,
+                                     from (shade(@button_raised_gradient_color_b, 0.90)),
+                                     to (shade(@button_raised_gradient_color_a, 0.80)));
 	color: @theme_text_dark_color;
 	text-shadow: 0px 1px @theme_shadow_dark_color;
     border-width: 1px;
@@ -489,13 +489,13 @@ NautilusTrashBar .button:hover {
 }
 
 .question .button:active,
-.question .button:hover:active,
+.question .button:active:hover,
 NemoTrashBar .button:active,
-NemoTrashBar .button:hover:active,
+NemoTrashBar .button:active:hover,
 NautilusTrashBar .button:active,
-NautilusTrashBar .button:hover:active {
-/* .button:hover:active */
-	background-image: -gtk-gradient (linear,
+NautilusTrashBar .button:active:hover {
+/* .button:active:hover */
+    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@nautilus_cluebar_color, 1.00)),
                                      color-stop (0.45, shade(@nautilus_cluebar_color, 0.95)),
@@ -517,20 +517,20 @@ NautilusTrashBar .button:hover:active {
 }
 
 .question .button *:active,
-.question .button *:hover:active,
+.question .button *:active:hover,
 NemoTrashBar .button *:active,
-NemoTrashBar .button *:hover:active,
+NemoTrashBar .button *:active:hover,
 NautilusTrashBar .button *:active,
-NautilusTrashBar .button *:hover:active {
-	color: shade(@theme_text_color, 1.00);
-	text-shadow: 0px 1px @theme_shadow_color;
+NautilusTrashBar .button *:active:hover {
+    color: shade(@theme_text_color, 1.00);
+    text-shadow: 0px 1px @theme_shadow_color;
 }
 
 .question .button:insensitive,
 NemoTrashBar .button:insensitive,
 NautilusTrashBar .button:insensitive {
-/* .button:hover:active */
-	background-image: -gtk-gradient (linear,
+/* .button:active:hover */
+    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@nautilus_cluebar_color, 0.95)),
                                      color-stop (0.45, shade(@nautilus_cluebar_color, 0.90)),
@@ -639,12 +639,12 @@ NemoWindow .primary-toolbar.toolbar .entry {
 NemoWindow .primary-toolbar.toolbar .button,
 NemoWindow .primary-toolbar.toolbar .button:active,
 NemoWindow .primary-toolbar.toolbar .button:hover,
-NemoWindow .primary-toolbar.toolbar .button:hover:active {       
-	padding: 0px 4px;
+NemoWindow .primary-toolbar.toolbar .button:active:hover {
+    padding: 0px 4px;
     border-image: none;
     border-width: 1px;
     border-radius: 5px;
-	border-color: transparent;
+    border-color: transparent;
 }
 
 NemoWindow .primary-toolbar.toolbar NemoPathbarButton {
@@ -699,10 +699,10 @@ NemoWindow .primary-toolbar.toolbar NemoPathbarButton:active {
 }
 
 NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:active,
-NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:hover:active {
+NemoWindow .primary-toolbar.toolbar NemoPathbarButton *:active:hover {
     font: bold;
-	color: shade(@theme_text_dark_color, 1.00);
-	text-shadow: 1px 1px @theme_shadow_dark_color;
+    color: shade(@theme_text_dark_color, 1.00);
+    text-shadow: 1px 1px @theme_shadow_dark_color;
 }
 
 NemoWindow .primary-toolbar .toolbar {
@@ -729,8 +729,8 @@ NemoWindow .toolbar .button GtkImage {
 NemoWindow .toolbar .button:hover,
 NemoWindow .toolbar .button:hover,
 NemoWindow .toolbar .button:active,
-NemoWindow .toolbar .button:hover:active {
-	background-image: -gtk-gradient (linear,
+NemoWindow .toolbar .button:active:hover {
+    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@button_gradient1, 1.03)),
                                      color-stop (0.48, shade(@button_gradient2, 1.03)),
@@ -895,26 +895,26 @@ CheeseThumbView /* Cheese */
 }
 
 /* desktop mode */
-.nemo-desktop.nautilus-canvas-item,
+.nemo-desktop.nemo-canvas-item,
 .nautilus-desktop.nautilus-canvas-item {
     color: white;
     text-shadow: 1px 1px black;
 }
 
 .nemo-desktop.nautilus-canvas-item:active,
-.nautilus-desktop.nautilus-canvas-item:active {
+.nautilus-desktop.nemo-canvas-item:active {
     background-image: none;
     color: @theme_text_color;
 }
 
-.nemo-desktop.nautilus-canvas-item:selected,
+.nemo-desktop.nemo-canvas-item:selected,
 .nautilus-desktop.nautilus-canvas-item:selected {
     color: @theme_selected_fg_color;
 }
 
-.nemo-desktop.nautilus-canvas-item:active,
-.nemo-desktop.nautilus-canvas-item:prelight,
-.nemo-desktop.nautilus-canvas-item:selected,
+.nemo-desktop.nemo-canvas-item:active,
+.nemo-desktop.nemo-canvas-item:prelight,
+.nemo-desktop.nemo-canvas-item:selected,
 .nautilus-desktop.nautilus-canvas-item:active,
 .nautilus-desktop.nautilus-canvas-item:prelight,
 .nautilus-desktop.nautilus-canvas-item:selected {
