@@ -1380,6 +1380,7 @@ GtkScrolledWindow.frame {
 /* Middle button */
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar .button:active,
+
 .inline-toolbar.toolbar .button:insensitive,
 .inline-toolbar.toolbar GtkToolButton > .button,
 .inline-toolbar.toolbar GtkToolButton > .button:active,
@@ -1885,13 +1886,10 @@ GtkHandleBox,
     border-left-color: 		alpha (#000, 0.31);
     border-right-color: 	alpha (#000, 0.31);
     border-bottom-color: 	alpha (#000, 0.22);
-    box-shadow: inset  0px  2px alpha(#000, 0.02),
-				inset  0px  1px alpha(#000, 0.06),
-                inset  2px  0px alpha(#000, 0.02),
-                inset  1px  0px alpha(#000, 0.04),
-                inset -2px  0px alpha(#000, 0.02),
-                inset -1px  0px alpha(#000, 0.04),
-                inset  0px -1px alpha(#fff, 0.01);
+    box-shadow: inset  0px  1px shade(@selected_bg_color, 1.05),
+                inset  1px  0px shade(@selected_bg_color, 0.97),
+                inset  0px -1px shade(@selected_bg_color, 0.93),
+                inset -1px  0px shade(@selected_bg_color, 0.93);
 }
 
 .primary-toolbar .toolbar .button:active,
