@@ -799,9 +799,9 @@ GtkScrolledWindow.frame {
 }
 
 .button:active,
-.button:hover:active,
+.button:active:hover,
 .button:focus:active {
-	background-image: -gtk-gradient (linear,
+    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade (@theme_bg_color, 1.20)),
                                      color-stop (0.50, shade (@theme_bg_color, 1.00)),
@@ -843,9 +843,9 @@ GtkScrolledWindow.frame {
 }
 
 .button *:active,
-.button *:hover:active {
-	color: @theme_selected_fg_color;
-	text-shadow: 1px 1px @theme_selected_shadow_color;
+.button *:active:hover {
+    color: @theme_selected_fg_color;
+    text-shadow: 1px 1px @theme_selected_shadow_color;
 }
 
 .button:insensitive {
@@ -1381,6 +1381,7 @@ GtkScrolledWindow.frame {
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar .button:active,
 
+
 .inline-toolbar.toolbar .button:insensitive,
 .inline-toolbar.toolbar GtkToolButton > .button,
 .inline-toolbar.toolbar GtkToolButton > .button:active,
@@ -1680,13 +1681,13 @@ GtkComboBox.combobox-entry .button *:prelight {
 
 /* Makes the button of the combobox entry that has the same gradient text boxes
 .primary-toolbar GtkComboBox.combobox-entry .button:active,
-.primary-toolbar GtkComboBox.combobox-entry .button:hover:active,
+.primary-toolbar GtkComboBox.combobox-entry .button:active:hover,
 GtkComboBox.combobox-entry .button:active,
-GtkComboBox.combobox-entry .button:hover:active,
+GtkComboBox.combobox-entry .button:active:hover,
 .primary-toolbar GtkComboBox.combobox-entry .button:active:nth-child(last),
-.primary-toolbar GtkComboBox.combobox-entry .button:hover:active:nth-child(last),
+.primary-toolbar GtkComboBox.combobox-entry .button:active:hover:nth-child(last),
 GtkComboBox.combobox-entry .button:active:nth-child(last),
-GtkComboBox.combobox-entry .button:hover:active:nth-child(last) {
+GtkComboBox.combobox-entry .button:active:hover:nth-child(last) {
     background-image: -gtk-gradient(linear,
                                     left top, left bottom,
                                     from       (shade(@theme_base_color, 0.81)),
@@ -1698,9 +1699,9 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(last) {
 }
 
 .primary-toolbar GtkComboBox.combobox-entry .button:active:nth-child(first),
-.primary-toolbar GtkComboBox.combobox-entry .button:hover:active:nth-child(first),
+.primary-toolbar GtkComboBox.combobox-entry .button:active:hover:nth-child(first),
 GtkComboBox.combobox-entry .button:active:nth-child(first),
-GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
+GtkComboBox.combobox-entry .button:active:hover:nth-child(first) {
     box-shadow: -1 0 inset shade(@frame_color, 1.50);
 }
 */
@@ -2037,9 +2038,9 @@ GtkHandleBox,
 .toolbar .raised .button:insensitive:active,
 .toolbar .raised.button:insensitive:active {
     background-image: -gtk-gradient (linear,
-						left top, left bottom,
-						from (shade(@button_raised_gradient_color_a, 0.88)),
-						to   (shade(@button_raised_gradient_color_b, 1.00)));
+                                     left top, left bottom,
+                                     from (shade(@button_raised_gradient_color_a, 0.88)),
+                                     sto (shade(@button_raised_gradient_color_b, 1.00)));
     border-top-color: 		transparent;
     border-left-color: 		alpha (#fff, 0.00);
     border-right-color: 	alpha (#fff, 0.00);
@@ -2056,9 +2057,9 @@ GtkHandleBox,
 .toolbar .raised .button:hover,
 .toolbar .raised.button:hover {
     background-image: -gtk-gradient (linear,
-						left top, left bottom,
-						from (@button_raised_gradient_color_a),
-						to   (@button_raised_gradient_color_b));
+                                     left top, left bottom,
+                                     from (@button_raised_gradient_color_a),
+                                     to (@button_raised_gradient_color_b));
     border-image: 			none;
     /* outer */
     border-top-color: 		transparent;
@@ -2073,17 +2074,17 @@ GtkHandleBox,
 }
 
 NemoWindow .primary-toolbar.toolbar .button:active,
-NemoWindow .primary-toolbar.toolbar .button:hover:active,
+NemoWindow .primary-toolbar.toolbar .button:active:hover,
 .toolbar NautilusPathBar .button:active,
 .toolbar.menubar .button:active,
 .toolbar .raised .button:active,
-.toolbar .raised .button:hover:active,
-.toolbar .raised.button:hover:active,
+.toolbar .raised .button:active:hover,
+.toolbar .raised.button:active:hover,
 .toolbar .raised.button:active {
     background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-                     from (shade(@button_raised_gradient_color_b, 0.90)),
-                     to   (shade(@button_raised_gradient_color_a, 0.80)));
+                                     left top, left bottom,
+                                     from (shade(@button_raised_gradient_color_b, 0.90)),
+                                     to (shade(@button_raised_gradient_color_a, 0.80)));
     border-width: 1px;
     border-style: solid; 
     border-radius: 5px;
@@ -3177,7 +3178,7 @@ GtkOverlay.osd {
 }
 
 .osd .button *:active,
-.osd .button *:hover:active {
+.osd .button *:active:hover {
     color: @osd_button_fg_active;
 }
 
