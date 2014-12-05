@@ -97,8 +97,8 @@ style "murrine-default" {
 
 	# The little ugly gripper at the bottom right needs to go. Loss of usability for the
 	# sake of a more good-looking theme. You can remove this if you don't use Ubuntu 11.04.
-	GtkWindow	::resize-grip-height		= 0
-	GtkWindow	::resize-grip-width		= 0
+	GtkWindow	::resize-grip-height		= 13
+	GtkWindow	::resize-grip-width		= 13
 
 	xthickness = 1
 	ythickness = 1
@@ -189,6 +189,7 @@ style "murrine-dark" {
 	text[SELECTED]		= @text_color_dark
 	text[INSENSITIVE]	= darker (@bg_color_dark)
 }
+
 
 
 style "murrine-thin"		= "murrine-default"	{ xthickness = 0 ythickness = 0 }
@@ -485,6 +486,7 @@ class "*HandleBox"          style "murrine-toolbar"
 widget_class "*HandleBox"   style "murrine-toolbar"
 
 class "GtkSpinButton"	style "murrine-spinbutton"
+
 class "GtkScale"	style "murrine-scale"
 class "GtkVScale"	style "murrine-scale"
 class "GtkHScale"	style "murrine-scale"
