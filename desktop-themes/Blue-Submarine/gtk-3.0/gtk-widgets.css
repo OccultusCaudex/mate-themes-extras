@@ -806,7 +806,7 @@ GtkScrolledWindow.frame {
 .button:active:hover,
 .button:focus:active,
 .button:checked,
-.button:hover:checked,
+.button:checked:hover,
 .button:focus:checked {
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
@@ -852,7 +852,7 @@ GtkScrolledWindow.frame {
 .button *:active,
 .button *:active:hover,
 .button *:checked,
-.button *:hover:checked {
+.button *:checked:hover {
 	color: @theme_selected_fg_color;
 	text-shadow: 1px 1px @theme_selected_shadow_color;
 }
@@ -2271,12 +2271,12 @@ NemoWindow .primary-toolbar.toolbar .button:active:hover,
 .toolbar .raised.button:active:hover,
 .toolbar .raised.button:active,
 NemoWindow .primary-toolbar.toolbar .button:checked,
-NemoWindow .primary-toolbar.toolbar .button:hover:checked,
+NemoWindow .primary-toolbar.toolbar .button:checked:hover,
 .toolbar NautilusPathBar .button:checked,
 .toolbar.menubar .button:checked,
 .toolbar .raised .button:checked,
-.toolbar .raised .button:hover:checked,
-.toolbar .raised.button:hover:checked,
+.toolbar .raised .button:checked:hover,
+.toolbar .raised.button:checked:hover,
 .toolbar .raised.button:checked {
     background-image: -gtk-gradient (linear,
 				     left top, left bottom,
@@ -3481,7 +3481,7 @@ GtkOverlay.osd {
 .osd .button *:active,
 .osd .button *:active:hover,
 .osd .button *:checked,
-.osd .button *:hover:checked {
+.osd .button *:checked:hover {
     color: @osd_button_fg_active;
 }
 
