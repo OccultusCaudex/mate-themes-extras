@@ -3013,7 +3013,8 @@ GtkIconView {
 	/* view icons gnome-control-center */
 	border-width: 0px;
     border-style: none;
-    padding: 10px;	
+    /* avoid resizing theme thumbnails in mate-appearance-properties */
+    /*padding: 10px;*/	
 	/* background view mate-appearance-properties */ 
 	background-color: @base_color;
 }
