@@ -5,7 +5,6 @@
  ***************************************************************/
  
 * {
-	-GtkArrow-arrow-scaling: 0.95;
 	-GtkButton-child-displacement-x: 1;
 	-GtkButton-child-displacement-y: 1;
 	-GtkButton-default-border: 0;
@@ -249,6 +248,7 @@ GtkStatusbar {
     padding: 5px;
     color: @theme_fg_color;
     -GtkStatusbar-shadow-type: none;
+    font-size: smaller;
 }
 
 .dnd {
@@ -752,8 +752,7 @@ GtkScrolledWindow.frame {
 
 .button {
     -GtkWidget-focus-line-width: 0; 
-
-	background-image: -gtk-gradient (linear,
+    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (@button_gradient1),
                                      color-stop (0.48, @button_gradient2),
@@ -3010,20 +3009,20 @@ GtkIconView.content-view.check:active {
 }
 
 GtkIconView {
-	/* view icons gnome-control-center */
-	border-width: 0px;
+    /* view icons gnome-control-center */
+    border-width: 0px;
     border-style: none;
     /* avoid resizing theme thumbnails in mate-appearance-properties */
-    /*padding: 10px;*/	
-	/* background view mate-appearance-properties */ 
-	background-color: @base_color;
+    /*padding: 10px;*/
+    /* background view mate-appearance-properties */
+    background-color: @base_color;
 }
 
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focused {
-	/* eg. Configuration center */
+    /* eg. Configuration center */
     background-color: alpha(@theme_selected_bg_color, 0.90);    
-	background-image: -gtk-gradient (linear,
+    background-image: -gtk-gradient (linear,
                                      0.40 top, 0.60 bottom,
                                      from (shade (@button_bg_active, 1.14)),
                                      color-stop (0.45, shade (@button_bg_active, 1.00)),
@@ -3032,11 +3031,11 @@ GtkIconView.view.cell:selected:focused {
     border-width: 1px;
     border-style: solid;
     border-radius: 4px;
-    border-top-color: 		shade(@button_bg_active, 1.04);
-    border-left-color: 		shade(@button_bg_active, 0.92);
-    border-right-color: 	shade(@button_bg_active, 0.92);
-    border-bottom-color: 	shade(@button_bg_active, 0.80);
-	border-image: none;
+    border-top-color:    shade(@button_bg_active, 1.04);
+    border-left-color:   shade(@button_bg_active, 0.92);
+    border-right-color:  shade(@button_bg_active, 0.92);
+    border-bottom-color: shade(@button_bg_active, 0.80);
+    border-image: none;
     box-shadow: inset  0px  1px alpha(#fff, 0.08),
                 inset  1px  0px alpha(#fff, 0.07),
                 inset -1px  0px alpha(#fff, 0.07),
