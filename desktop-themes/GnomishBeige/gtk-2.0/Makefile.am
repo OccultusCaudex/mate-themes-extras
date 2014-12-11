@@ -2,8 +2,10 @@ THEME_NAME=GnomishBeige
 
 themedir = $(datadir)/themes/$(THEME_NAME)/gtk-2.0
 
-theme_DATA = gtkrc \
-			bg.png
+theme_DATA = \
+	gtkrc \
+	bg.png \
+	resize-grip.png
 
 EXTRA_DIST = $(theme_DATA)
 

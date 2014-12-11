@@ -22,6 +22,7 @@ theme_DATA = \
 	entry-border-normal.svg \
 	grid-selection-checked.svg \
 	grid-selection-unchecked.svg \
+	resize-grip.svg \
 	menu-border.svg \
 	pane-separator-grip-hover.svg \
 	pane-separator-grip.svg \

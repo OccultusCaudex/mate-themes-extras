@@ -54,6 +54,10 @@ style "murrine-default"
 	# GtkScrollbar   ::has-secondary-forward-stepper = 1
 	# GtkScrollbar   ::has-secondary-backward-stepper = 1
 
+	# The little usefull gripper at the bottom right.
+	GtkWindow   ::resize-grip-height = 13
+	GtkWindow   ::resize-grip-width  = 13
+
 	xthickness = 1
 	ythickness = 1
 
@@ -254,6 +258,21 @@ style "murrine-progressbar"
         	roundness = 12
 		#animation = TRUE
     	}
+}
+
+style "murrine-statusbar" {
+	xthickness = 0
+	engine "pixmap"
+	{
+	    image
+	    {
+		function		= RESIZE_GRIP
+		recolorable		= TRUE
+		state			= NORMAL
+		detail			= "statusbar"
+		overlay_file	= "resize-grip.png"
+	    }
+	}
 }
 
 style "murrine-scale"
