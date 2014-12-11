@@ -598,8 +598,6 @@ style "murrine-statusbar" = "murrine-wide" {
 		state           = NORMAL
 		detail          = "statusbar"
 		file            = "assets/resize-grip.png"
-		overlay_border	= {0,0,0,0 }
-		overlay_stretch	= FALSE
 		}
 	}
 }
