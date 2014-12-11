@@ -1177,7 +1177,8 @@ DbusmenuGtkMenu .menu,
 }
 
 /* FIXME - Could use a separate file for the mess in Epiphany. Why did they use buttons in the menubar in the first place? -.- */
-.menubar.button,
+/* disable for nautilus - raveit65 */
+/*.menubar.button,
 .menubar .button {
 	-unico-focus-border-color: @transparent;
 	-unico-border-gradient: none;
@@ -1187,6 +1188,7 @@ DbusmenuGtkMenu .menu,
 	color: @dark_fg_color;
 	text-shadow: none;
 }
+*/
 
 .menubar.button:hover,
 .menubar .button:hover {
@@ -2559,6 +2561,13 @@ GtkViewport.frame {
 	-unico-inner-stroke-width: 0;
 }
 
+/* Makes some applications look strange (gnome-tweak-tool for example.) */
+/* But since the default Adwaita theme has it I'll add it here too to avoid dark gray backgrounds. */
+GtkViewport,
+GtkIconView {
+	background-color: @theme_base_color;
+}
+
 /***************
  * Resize grip *
  ***************/
@@ -2566,13 +2575,6 @@ GtkViewport.frame {
 .grip {
 	background-color: transparent;
 	background-image: url("resize-grip.svg");
-}
-
-/* Makes some applications look strange (gnome-tweak-tool for example.) */
-/* But since the default Adwaita theme has it I'll add it here too to avoid dark gray backgrounds. */
-GtkViewport,
-GtkIconView {
-	background-color: @theme_base_color;
 }
 
 /*******

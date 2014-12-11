@@ -1177,7 +1177,8 @@ DbusmenuGtkMenu .menu,
 }
 
 /* FIXME - Could use a separate file for the mess in Epiphany. Why did they use buttons in the menubar in the first place? -.- */
-.menubar.button,
+/* disable for nautilus - raveit65 */
+/*.menubar.button,
 .menubar .button {
 	-unico-focus-border-color: @transparent;
 	-unico-border-gradient: none;
@@ -1187,6 +1188,7 @@ DbusmenuGtkMenu .menu,
 	color: @dark_fg_color;
 	text-shadow: none;
 }
+*/
 
 .menubar.button:hover,
 .menubar .button:hover {
