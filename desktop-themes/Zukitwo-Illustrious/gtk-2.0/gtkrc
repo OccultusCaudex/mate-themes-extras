@@ -102,9 +102,9 @@ style "murrine-default" {
 	GtkMenuBar	::window-dragging		= 1
 	GtkToolbar	::window-dragging		= 1
 
-	# The little ugly gripper at the bottom right needs to go.
-	GtkWindow	::resize-grip-height		= 0
-	GtkWindow	::resize-grip-width		= 0
+	# The little usefull gripper at the bottom right needs to stay.
+	GtkWindow   ::resize-grip-height = 13
+	GtkWindow   ::resize-grip-width  = 13
 
 	xthickness = 1
 	ythickness = 1

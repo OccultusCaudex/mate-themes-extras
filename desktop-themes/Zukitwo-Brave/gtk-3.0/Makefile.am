@@ -4,7 +4,8 @@ theme_DATA = \
 	settings.ini \
 	gtk.css \
 	gtk-widgets.css \
-	gtk-dark.css
+	gtk-dark.css \
+	resize-grip.svg
 
 EXTRA_DIST = $(theme_DATA)
 

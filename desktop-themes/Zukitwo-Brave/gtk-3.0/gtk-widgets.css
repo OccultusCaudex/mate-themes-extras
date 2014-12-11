@@ -49,9 +49,9 @@
 	-GtkWidget-focus-line-width: 0px;
 	-GtkWidget-link-color: @link_color;
 	-GtkWidget-visited-link-color: @link_color;
-	-GtkWindow-resize-grip-default: false;
-	-GtkWindow-resize-grip-width: 0;
-	-GtkWindow-resize-grip-height: 0;
+	-GtkWindow-resize-grip-default: true;
+	-GtkWindow-resize-grip-width: 13;
+	-GtkWindow-resize-grip-height: 13;
 	-WnckTasklist-fade-overlay-rect: 0;
 
 	border-width: 1px;
@@ -2564,6 +2564,15 @@ GtkViewport.frame {
 GtkViewport,
 GtkIconView {
 	background-color: @theme_base_color;
+}
+
+/***************
+ * Resize grip *
+ ***************/
+
+.grip {
+	background-color: transparent;
+	background-image: url("resize-grip.svg");
 }
 
 /*******
