@@ -69,16 +69,14 @@ make install (as root)
 
 
 
-Anther way to install is simple copy the theme folders to ~/themes
+Another way to install is simple copy the theme folders to ~/themes
 
 
-Needed gtk-engines:
+Necessary gtk-engines:
 
 Blue-Submarine, Green-Submarine: gtk-murrine-engine, gtk-unico-engine
 
 clearlook-phenix: gtk2-engines (clearlooks)
-
-Cologne: gtk-xfce-engine
 
 DeLorean-Dark : gtk-murrine-engine
 
