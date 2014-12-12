@@ -33,6 +33,15 @@ AC_ARG_ENABLE([clearlooks-phenix],
 AM_CONDITIONAL(BUILD_CLEARLOOKS_PHENIX, test "x$enable_clearlooks_phenix" = "xyes")
 
 dnl ***************************************************************************
+dnl *** Delorean specific checks                   	        	    ***
+dnl ***************************************************************************
+AC_ARG_ENABLE([DeLorean],
+    AC_HELP_STRING([--enable-DeLorean], [Install the Delorean desktop theme.]),
+    enable_delorean=$enableval,
+    enable_delorean=no)
+AM_CONDITIONAL(BUILD_DELOREAN, test "x$enable_delorean" = "xyes")
+
+dnl ***************************************************************************
 dnl *** Delorean-Dark specific checks                   	        	    ***
 dnl ***************************************************************************
 AC_ARG_ENABLE([DeLorean-Dark],
@@ -136,6 +145,41 @@ desktop-themes/clearlooks-phenix/openbox-3/Makefile
 desktop-themes/clearlooks-phenix/wallpapers/Makefile
 desktop-themes/clearlooks-phenix/xfwm4/Makefile
 desktop-themes/clearlooks-phenix/xfwm4/png/Makefile
+desktop-themes/DeLorean/Makefile
+desktop-themes/DeLorean/cinnamon/Makefile
+desktop-themes/DeLorean/firefox/Makefile
+desktop-themes/DeLorean/firefox/chrome/Makefile
+desktop-themes/DeLorean/firefox/chrome/images/Makefile
+desktop-themes/DeLorean/firefox/chrome/images/tabbrowser/Makefile
+desktop-themes/DeLorean/gnome-shell/Makefile
+desktop-themes/DeLorean/gtk-2.0/Makefile
+desktop-themes/DeLorean/gtk-2.0/Arrows/Makefile
+desktop-themes/DeLorean/gtk-2.0/Buttons/Makefile
+desktop-themes/DeLorean/gtk-2.0/Check-Radio/Makefile
+desktop-themes/DeLorean/gtk-2.0/Entry/Makefile
+desktop-themes/DeLorean/gtk-2.0/Expanders/Makefile
+desktop-themes/DeLorean/gtk-2.0/Handles/Makefile
+desktop-themes/DeLorean/gtk-2.0/Lines/Makefile
+desktop-themes/DeLorean/gtk-2.0/Menu-Menubar/Makefile
+desktop-themes/DeLorean/gtk-2.0/Others/Makefile
+desktop-themes/DeLorean/gtk-2.0/ProgressBar/Makefile
+desktop-themes/DeLorean/gtk-2.0/Range/Makefile
+desktop-themes/DeLorean/gtk-2.0/Scrollbars/Makefile
+desktop-themes/DeLorean/gtk-2.0/Shadows/Makefile
+desktop-themes/DeLorean/gtk-2.0/Spin/Makefile
+desktop-themes/DeLorean/gtk-2.0/Tabs/Makefile
+desktop-themes/DeLorean/gtk-2.0/Toolbar/Makefile
+desktop-themes/DeLorean/gtk-3.0/Makefile
+desktop-themes/DeLorean/gtk-3.0/assets/Makefile
+desktop-themes/DeLorean/gtk-3.0/assets/SVGs/Makefile
+desktop-themes/DeLorean/metacity-1/Makefile
+desktop-themes/DeLorean/openbox-3/Makefile
+desktop-themes/DeLorean/thunderbird/Makefile
+desktop-themes/DeLorean/thunderbird/chrome/Makefile
+desktop-themes/DeLorean/thunderbird/chrome/images/Makefile
+desktop-themes/DeLorean/xfce-notify-4.0/Makefile
+desktop-themes/DeLorean/xfce-notify-4.0/buttons/Makefile
+desktop-themes/DeLorean/xfwm4/Makefile
 desktop-themes/DeLorean-Dark/Makefile
 desktop-themes/DeLorean-Dark/chrome/Makefile
 desktop-themes/DeLorean-Dark/chrome/images/Makefile
@@ -271,6 +315,7 @@ echo "
 	Building desktop themes:
 		Install Blue-Submarine:             ${enable_blue_submarine}
 		Install Clearlooks-Phenix:          ${enable_clearlooks_phenix}
+		Install DeLorean:                   ${enable_delorean}
 		Install DeLorean-Dark:              ${enable_delorean_dark}
 		Install Faience:              	    ${enable_faience}
 		Install Faience-Ocre:               ${enable_faience_ocre}

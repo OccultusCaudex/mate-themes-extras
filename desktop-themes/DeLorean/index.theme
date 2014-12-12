@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=DeLorean
+Comment=Celebrate the lighter side within you
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=DeLorean
+Type=X-GNOME-Metatheme
+Comment=Celebrate the lighter side within you
+Encoding=UTF-8
+GtkTheme=DeLorean
+MetacityTheme=DeLorean
+IconTheme=Adwaita
+CursorTheme=mate
+CursorSize=24
