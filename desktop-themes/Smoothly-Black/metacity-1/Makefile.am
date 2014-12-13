@@ -15,7 +15,7 @@ theme_DATA = \
 	maximize_unfocused_prelight.png \
 	menu.png \
 	menu_prelight.png \
-	metacity-theme-1.xml
+	metacity-theme-1.xml \
 	minimize_focused_normal.png \
 	minimize_focused_prelight.png \
 	minimize_focused_pressed.png \
