@@ -12,6 +12,7 @@ theme_DATA = \
 	gtkswitch-dark.css \
 	gtk-widgets-dark.css \
 	header-cell-dark.css \
+	mate-applications.css \
 	menu-dark.css \
 	notebooks-dark.css \
 	progressbar-dark.css \
