@@ -4744,3 +4744,4 @@ GdMainListView.view.songs-list.content-view:backdrop {
 @define-color content_view_bg #ffffff;
 
 @import url("nautilus-fix.css");
+@import url("mate-applications.css");

@@ -19,6 +19,7 @@ theme_DATA = \
 	gtk-widgets-dark.css \
 	header-cell.css \
 	header-cell-dark.css \
+	mate-applications.css \
 	menu.css \
 	menu-dark.css \
 	notebooks.css \
