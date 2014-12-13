@@ -11,9 +11,9 @@
 
 <!-- General window layout -->
 <frame_geometry name="frame_geometry_normal" title_scale="medium" rounded_top_left="true" rounded_top_right="true"  rounded_bottom_left="false" rounded_bottom_right="false">
- 	<distance name="left_width" value="1"/>
-	<distance name="right_width" value="1"/>
-	<distance name="bottom_height" value="1"/>
+	<distance name="left_width" value="2"/>
+	<distance name="right_width" value="2"/>
+	<distance name="bottom_height" value="2"/>
 	<distance name="left_titlebar_edge" value="6"/>
 	<distance name="right_titlebar_edge" value="6"/>
 	<distance name="button_width" value="22"/>
@@ -36,17 +36,17 @@
  	<border name="button_border" left="0" right="0" top="2" bottom="2"/>
 </frame_geometry>
 
-<frame_geometry name="border" has_title="false">
-  	<distance name="left_width" value="1"/>
-  	<distance name="right_width" value="1"/>
-  	<distance name="bottom_height" value="1"/>
+<frame_geometry name="border" has_title="false" rounded_top_left="true" rounded_top_right="true"  rounded_bottom_left="false" rounded_bottom_right="false">
+	<distance name="left_width" value="2"/>
+	<distance name="right_width" value="2"/>
+	<distance name="bottom_height" value="2"/>
   	<distance name="left_titlebar_edge" value="0"/>
   	<distance name="right_titlebar_edge" value="0"/>
   	<distance name="button_width" value="0"/>
   	<distance name="button_height" value="0"/>
-  	<distance name="title_vertical_pad" value="3"/>
+	<distance name="title_vertical_pad" value="0"/>
   	<border name="title_border" left="0" right="0" top="0" bottom="0"/>
-  	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
+	<border name="button_border" left="0" right="0" top="8" bottom="0"/>
 </frame_geometry>
 
 <!-- Window Title -->
@@ -376,12 +376,12 @@
 <frame_style_set name="border">
 	<frame focus="yes" state="normal" resize="both" style="border"/>
 	<frame focus="no" state="normal" resize="both" style="border"/>
-	<frame focus="yes" state="maximized" style="maximized_focused"/>
-	<frame focus="no" state="maximized" style="normal_focused"/>
-	<frame focus="yes" state="shaded" style="normal_focused"/><!-- todo -->
-	<frame focus="no" state="shaded" style="normal_unfocused"/><!-- todo -->
-	<frame focus="yes" state="maximized_and_shaded" style="maximized_focused"/><!-- todo -->
-	<frame focus="no" state="maximized_and_shaded" style="maximized_unfocused"/><!-- todo -->
+	<frame focus="yes" state="maximized" style="border"/>
+	<frame focus="no" state="maximized" style="border"/>
+	<frame focus="yes" state="shaded" style="border"/>
+	<frame focus="no" state="shaded" style="border"/>
+	<frame focus="yes" state="maximized_and_shaded" style="border"/>
+	<frame focus="no" state="maximized_and_shaded" style="border"/>
 </frame_style_set>
 
 <!-- WINDOW -->

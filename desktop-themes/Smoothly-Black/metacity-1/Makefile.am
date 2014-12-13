@@ -3,16 +3,30 @@ THEME_NAME=Smoothly-Black
 themedir = $(datadir)/themes/$(THEME_NAME)/metacity-1
 
 theme_DATA = \
-	button-close.png \
-	button-inactive.png \
-	button-max.png \
-	button-min.png \
-	frame.png \
-	metacity-theme-1.xml \
-	titlebar-left.png \
-	titlebar-mid.png \
-	titlebar-right-maximized.png \
-	titlebar-right.png
+	close_focused_normal.png \
+	close_focused_prelight.png \
+	close_focused_pressed.png \
+	close_unfocused.png \
+	close_unfocused_prelight.png \
+	maximize_focused_normal.png \
+	maximize_focused_prelight.png \
+	maximize_focused_pressed.png \
+	maximize_unfocused.png \
+	maximize_unfocused_prelight.png \
+	menu.png \
+	menu_prelight.png \
+	metacity-theme-1.xml
+	minimize_focused_normal.png \
+	minimize_focused_prelight.png \
+	minimize_focused_pressed.png \
+	minimize_unfocused.png \
+	minimize_unfocused_prelight.png \
+	sources.svg \
+	unmaximize_focused_normal.png \
+	unmaximize_focused_prelight.png \
+	unmaximize_focused_pressed.png \
+	unmaximize_unfocused.png \
+	unmaximize_unfocused_prelight.png
 
 EXTRA_DIST = $(theme_DATA)
 
