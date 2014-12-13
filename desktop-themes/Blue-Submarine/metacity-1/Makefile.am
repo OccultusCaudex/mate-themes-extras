@@ -10,7 +10,6 @@ theme_DATA = \
 	icon_minimize_u.png \
 	icon_restore.png \
 	icon_restore_u.png \
-	Makefile.am \
 	metacity-theme-1.xml \
 	stripes.png
 
