@@ -1,6 +1,6 @@
 THEME_NAME=DeLorean-Dark
  
-themedir = $(datadir)/themes/$(THEME_NAME)/chrome/images/tabbrowser
+themedir = $(datadir)/themes/$(THEME_NAME)/firefox/chrome/images/tabbrowser
 
 theme_DATA = \
 	all-tabs.png \

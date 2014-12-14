@@ -751,7 +751,7 @@ style "menubar"
 	      state		= PRELIGHT
 	      file		= "Menu-Menubar/menubar-button.svg"
 
-	      border		= { 1,1,1,1 }
+	      border		= { 0,0,0,10 }
 	      stretch		= TRUE
 	  }
 	}
@@ -774,7 +774,7 @@ style "menu"
 	{
 	  function			= HLINE
 	  file				= "Lines/separator-menu.svg"
-	  border			= { 1,1,1,1 }
+	  border			= { 21,0,0,0 }
 	  stretch			= TRUE
 	}
     }
@@ -792,7 +792,7 @@ style "menu_separator"
 		function		= BOX
 	 	recolorable		= TRUE
 	 	file			= "Lines/separator-menu.svg"
-		border			= {0,0, 1,1 }
+		border			= {21,0,0,0 }
 		stretch			= TRUE
         orientation     = HORIZONTAL		
 	}

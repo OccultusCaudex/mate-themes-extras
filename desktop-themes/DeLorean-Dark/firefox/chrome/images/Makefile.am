@@ -1,6 +1,6 @@
 THEME_NAME=DeLorean-Dark
  
-themedir = $(datadir)/themes/$(THEME_NAME)/chrome/images
+themedir = $(datadir)/themes/$(THEME_NAME)/firefox/chrome/images
 
 theme_DATA = \
 	appmenu-hover-private.svg \
@@ -16,7 +16,7 @@ theme_DATA = \
 	arrow-up-dis.gif \
 	arrow-up.gif \
 	arrow-up-hov.gif \
-	background-dark.png \
+	background.png \
 	close.png \
 	connecting.png \
 	contacts-stripes.png \
