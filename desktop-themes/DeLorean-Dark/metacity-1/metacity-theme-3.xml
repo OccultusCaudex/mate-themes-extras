@@ -208,6 +208,9 @@
 	<include name="hilight" />
 </draw_ops>
 
+<draw_ops name="max_titlebar_focused">
+</draw_ops>
+
 <draw_ops name="rounded_titlebar_focused">
 	<include name="titlebar_fill_focused" />
 	<include name="rounded_hilight" />
@@ -959,7 +962,7 @@
 
 <frame_style name="normal_max_focused" geometry="max">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="titlebar" draw_ops="titlebar_focused" />
+	<piece position="titlebar" draw_ops="max_titlebar_focused" />
 	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal" draw_ops="close_focused" />
 	<button function="close" state="pressed" draw_ops="close_focused_pressed" />
@@ -998,7 +1001,7 @@
 
 <frame_style name="normal_max_unfocused" geometry="max">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="titlebar" draw_ops="titlebar_unfocused" />
+	<piece position="titlebar" draw_ops="max_titlebar_focused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
 	<button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>

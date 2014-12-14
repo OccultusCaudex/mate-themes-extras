@@ -1,16 +1,15 @@
 THEME_NAME=DeLorean-Dark
  
-themedir = $(datadir)/themes/$(THEME_NAME)/chrome
+themedir = $(datadir)/themes/$(THEME_NAME)/thunderbird
 
 theme_DATA = \
-	userChrome.css \
-	userContent.css
+	README
 
 EXTRA_DIST = $(theme_DATA)
 
 SUBDIRS =	\
-	images
+	chrome
 
 DIST_SUBDIRS =	\
-	images
+	chrome
 

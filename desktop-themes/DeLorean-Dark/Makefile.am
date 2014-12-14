@@ -10,22 +10,26 @@ theme_DATA = \
 EXTRA_DIST = $(theme_DATA)
 
 SUBDIRS =		\
-	chrome		\
 	cinnamon	\
+	firefox		\
+	gnome-shell \
 	gtk-2.0		\
 	gtk-3.0		\
 	metacity-1	\
 	openbox-3	\
+	thunderbird \
 	xfce-notify-4.0 \
 	xfwm4
 
-DIST_SUBDIRS =	\
-	chrome		\
+DIST_SUBDIRS =		\
 	cinnamon	\
+	firefox		\
+	gnome-shell \
 	gtk-2.0		\
 	gtk-3.0		\
 	metacity-1	\
 	openbox-3	\
+	thunderbird \
 	xfce-notify-4.0 \
 	xfwm4
 
