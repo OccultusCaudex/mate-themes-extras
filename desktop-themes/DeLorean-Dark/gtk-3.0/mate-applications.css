@@ -617,11 +617,17 @@ MatePanelApplet .button:checked,
 WnckTasklist .button:checked:hover,
 WnckTasklist .button:checked {
     -gtk-image-effect: highlight;
-    background-image: linear-gradient(to bottom, #a5a5a5, #969696 40%, #878787);
+    color: @theme_fg_color;
+    outline-color: alpha(@theme_selected_bg_color, 0.3);
+    border-top-color: #161616;
 	border-color: @theme_selected_bg_color;
+    background-image: linear-gradient(to bottom, #5c5c5c, #464646 40%, #404040);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.97976);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.97976);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px alpha(white, 0.20);
+    -gtk-image-effect: highlight;
 	border-radius: 5px;
 	border-width: 1px 1px 1px 1px;
-	color: @theme_fg_color;
 	text-shadow: none;
 	padding: 2px;
 }
@@ -641,7 +647,6 @@ WnckTasklist .button:hover {
     -gtk-image-effect: highlight;
 	border-radius: 5px;
 	border-width: 1px 1px 1px 1px;
-	color: shade (@theme_selected_bg_color, 1.00);
 	text-shadow: none;
 	padding: 2px;
 }
