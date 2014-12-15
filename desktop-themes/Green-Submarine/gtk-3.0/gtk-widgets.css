@@ -783,6 +783,7 @@ GtkScrolledWindow.frame {
 /* box-shadow: [ inset ] horizontal_offset vertical_offset [ blur_radius ] [ spread ] color */
     color: 			@theme_fg_color;
 	text-shadow: 0px 1px @theme_shadow_color;
+    transition: all 200ms ease-out;
 }
 
 .button:hover {

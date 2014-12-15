@@ -756,6 +756,7 @@ GtkScrolledWindow.frame {
 }
 
 .button {
+    transition: all 200ms ease-out;
     -GtkWidget-focus-line-width: 0; 
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
