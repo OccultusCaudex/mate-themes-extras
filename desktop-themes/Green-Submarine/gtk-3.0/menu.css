@@ -99,6 +99,7 @@ GtkMenuItem:insensitive {
  * menubaritem *
  ***************/
 .menubar.menuitem  {
+    transition: all 200ms ease-out;
     border-radius: 0px;
     border-width: 0px;
 }
@@ -143,6 +144,7 @@ DbusmenuGtkMenu .menuitem,
 .primary-toolbar .button .menuitem,
 .menu .menuitem, 
 .menuitem {
+    transition: all 200ms ease-out;
     -GtkMenuItem-arrow-scaling: 0.7;
 
     padding: 2px 4px;
