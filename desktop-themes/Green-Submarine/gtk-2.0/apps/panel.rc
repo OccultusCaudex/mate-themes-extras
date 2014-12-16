@@ -124,6 +124,12 @@ style "theme-panel-handle"
 	}
 }
 
+style "workspace-switcher"
+{
+	bg[SELECTED] = shade (1.0, @selected_bg_color)
+	bg[PRELIGHT] = shade (1.2, @selected_bg_color)
+}
+
 # syncronize panel menus
 style "applet"
 {
@@ -148,6 +154,8 @@ widget_class "*Applet*Netstatus*"	style "theme-panel"
 # Panel buttons
 widget_class "*Panel*GtkToggleButton"   style:highest "theme-panel-buttons"
 #widget_class "*Panel*GtkButton"        style:highest "theme-panel-buttons"
+
+widget "*WnckPager*"	    	    style "workspace-switcher"
 
 # syncronize panel menus
 widget_class "*MatePanelAppletFrameDBus*" style "applet"
