@@ -2055,7 +2055,7 @@ GtkHandleBox,
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@button_raised_gradient_color_a, 0.88)),
-                                     sto (shade(@button_raised_gradient_color_b, 1.00)));
+                                     to (shade(@button_raised_gradient_color_b, 1.00)));
     border-top-color: 		transparent;
     border-left-color: 		alpha (#fff, 0.00);
     border-right-color: 	alpha (#fff, 0.00);
