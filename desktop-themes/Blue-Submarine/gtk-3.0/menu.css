@@ -18,12 +18,10 @@
                                      left top, left bottom,
                                      from (shade(@menu_bg_dark_color, 1.03)),
                                      to   (shade(@menu_bg_dark_color, 0.97)));
-	
     padding: 5px 0px;
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 0px;
-
 	border-color: shade(@menu_bg_dark_color, 0.97);
 	border-image: 	none;
 }
@@ -36,7 +34,6 @@ GtkMenuItem,
 GtkMenuItem:insensitive {
 	background-color: @menu_bg_dark_color;
 }
-
 
 .menubar .menu.button:hover,
 .menubar .menu.button:active,
@@ -56,7 +53,6 @@ GtkMenuItem:insensitive {
     border-radius: 0;
     border-style: none;
     border-width: 1px;
-
     border-image: none;
 
 }
@@ -90,7 +86,6 @@ GtkMenuItem:insensitive {
     border-style: solid;
     border-radius: 0px;
     border-bottom-color:  shade(@theme_highlight_color, 1.00);
-
     background-color: shade (@theme_bg_dark_color, 1.00);
     color: @menu_fg_dark_color;
 }
@@ -114,6 +109,7 @@ GtkMenuItem:insensitive {
  * menuitem *
  ************/
 .menubar .menuitem {
+    transition: all 200ms ease-out;
     color: @theme_fg_dark_color;
     text-shadow: 1px 1px @theme_shadow_dark_color;
 }
@@ -143,12 +139,10 @@ DbusmenuGtkMenu .menuitem,
 .primary-toolbar .button .menuitem,
 .menu .menuitem, 
 .menuitem {
+    transition: all 200ms ease-out;
     -GtkMenuItem-arrow-scaling: 0.7;
-
     padding: 2px 4px;
 	border-radius: 0px;
-
-
     color: @menu_fg_dark_color;
     text-shadow: 1px 1px @menu_shadow_dark_color;
 }
@@ -161,12 +155,10 @@ DbusmenuGtkMenu .menuitem,
 .primary-toolbar .button .menuitem GtkLabel {
     color: @menu_fg_dark_color;
     text-shadow: 1px 1px @menu_shadow_dark_color;
-
 }
 
 GtkTreeMenu.menu {
     background-color: @menu_bg_dark_color;
-
 }
 
 GtkTreeMenu .menuitem {
@@ -183,18 +175,17 @@ GtkComboBox .menuitem * {
 
 GtkComboBox .menuitem *:hover {
     color: @theme_selected_fg_color;
-   	text-shadow: 0px 1px @theme_selected_shadow_color;
+    text-shadow: 0px 1px @theme_selected_shadow_color;
 }
 
 .menuitem:hover,
 .menu .menuitem:hover {
-	/* contextual menu item-selected */
+    /* contextual menu item-selected */
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@theme_selected_bg_color, 0.9)),
                                      to   (shade (@theme_selected_bg_color, 1.0)));
-
     color: @theme_selected_fg_color;
-	text-shadow: 0px 1px @theme_selected_shadow_color;
+    text-shadow: 0px 1px @theme_selected_shadow_color;
     border-radius: 0;
     border-image: none;
 }
@@ -239,9 +230,8 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem.check:inconsistent:insensitive,
 .menuitem.radio:inconsistent:insensitive {
     border-width: 0px;
-	border-style: none;
+    border-style: none;
     background-image: none;
-	
 }
 
 .toolbar .raised .button .menuitem.check:inconsistent,
@@ -253,10 +243,10 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem.check:active,
 .menuitem.radio:active {
     border-width: 0px;
-	border-style: none;
+    border-style: none;
     background-image: none;
-	background-color: @menu_bg_dark_color;
-	/* contextual menu check */
+    background-color: @menu_bg_dark_color;
+    /* contextual menu check */
     color: @menu_fg_dark_color;
 }
 
@@ -282,7 +272,6 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem.radio:inconsistent:insensitive {
     color: mix (@menu_fg_dark_color, @menu_bg_dark_color, 0.6);
     text-shadow: none;
-
 }
 
 .menubar .menuitem GtkCalendar,
@@ -299,7 +288,6 @@ GtkTreeMenu .menuitem *:prelight,
     border-style: solid;
     border-width: 0;
     padding: 0;
-
     color: @menu_fg_dark_color;
 }
 
@@ -317,15 +305,12 @@ GtkTreeMenu .menuitem *:prelight,
 			         from (shade(@menu_bg_dark_color, 0.80)),
                      color-stop (0.20, shade(@menu_bg_dark_color, 0.85)),
 			         to   (shade(@menu_bg_dark_color, 0.96)));
-
     border-style: none;
     border-width: 0px;
     border-radius: 8px;
     box-shadow: inset  1px  1px alpha(#000, 0.08),
                 inset -1px -1px alpha(#000, 0.08);
-
 }
-
 
 Genericmenuitem .menuitem .accelerator,
 DbusmenuGtkMenu .menuitem .accelerator,
@@ -352,32 +337,28 @@ DbusmenuGtkMenu .menuitem .accelerator:insensitive,
 .menuitem.separator {
     -GtkMenuItem-horizontal-padding: 0;
 	-GtkWidget-separator-height: 1;
-
 	/* border-color: shade (@menu_bg_dark_color, 0.90);
     -unico-inner-stroke-color: alpha (shade (@menu_bg_dark_color, 1.18), 0.6); */
-
     border-image: -gtk-gradient (linear,
 							left top, right top,
 							from (alpha (#000, 0.00)),	
 							color-stop (0.25, alpha (#000, 0.03)),
 							color-stop (0.85, alpha (#000, 0.03)),
 							to (alpha (#000, 0.00))) 1;
-
 }
 
 /***************
  * Menu Button *
  ***************/
+
 .button.menuitem.menubar:active,
 .button.menuitem.menubar *:active {
     color: @menu_fg_dark_color;
     background-image: none;
     background-color: @menu_bg_dark_color;
-
     border-radius: 5px 5px 0px 0px;
     border-image: none;
     border-width: 1px 1px 0px 1px;
     border-color: shade(@button_border, 1.30);
     border-style: solid;
 }
-
