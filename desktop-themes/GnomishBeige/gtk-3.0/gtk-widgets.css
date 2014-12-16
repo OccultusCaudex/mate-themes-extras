@@ -863,6 +863,7 @@ GtkTreeMenu .menuitem * {
  * Buttons *
  ***********/
 .button {
+    transition: all 200ms ease-out;
 	/* Due to a bug somewhere in gtk or cairo,
 	   a padding of zero (or even one) doesn't work always! */
 	padding: 2px;
@@ -1164,10 +1165,12 @@ GtkTreeMenu .menuitem * {
 }
 
 .menubar .menuitem {
+    transition: all 200ms ease-out;
 	padding: 3px 7px;
 }
 
 .menu .menuitem {
+    transition: all 200ms ease-out;
 	padding: 3px 4px;
 }
 

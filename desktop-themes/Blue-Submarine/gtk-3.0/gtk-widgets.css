@@ -708,6 +708,20 @@ GtkLevelBar.vertical {
                 inset -1px -1px alpha(#000, 0.02);
 }
 
+/*********
+ * Menus *
+ *********/
+
+.menubar .menuitem {
+    transition: all 200ms ease-out;
+	padding: 3px 7px;
+}
+
+.menu .menuitem {
+    transition: all 200ms ease-out;
+	padding: 3px 4px;
+}
+
 /**********
  * Frames *
  **********/
@@ -748,6 +762,7 @@ GtkScrolledWindow.frame {
 }
 
 .button {
+    transition: all 200ms ease-out;
     -GtkWidget-focus-line-width: 0; 
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
