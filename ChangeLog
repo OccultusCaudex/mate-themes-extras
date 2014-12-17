@@ -1,4 +1,13 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Tue Dec 17 2014
+release 3.14.4
+
+- add Delorean light theme
+- update Delorean-Dark to upstream version 17
+- improvements for csd applications
+- improvements for other themes, see git history
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Sun Nov 30 2014
 release 3.14.3
 
