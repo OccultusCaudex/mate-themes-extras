@@ -11,9 +11,9 @@
 
 <!-- General window layout -->
 <frame_geometry name="frame_geometry_normal" title_scale="medium" rounded_top_left="true" rounded_top_right="true"  rounded_bottom_left="false" rounded_bottom_right="false">
- 	<distance name="left_width" value="1"/>
-	<distance name="right_width" value="1"/>
-	<distance name="bottom_height" value="1"/>
+	<distance name="left_width" value="2"/>
+	<distance name="right_width" value="2"/>
+	<distance name="bottom_height" value="2"/>
 	<distance name="left_titlebar_edge" value="6"/>
 	<distance name="right_titlebar_edge" value="6"/>
 	<distance name="button_width" value="22"/>
@@ -36,29 +36,29 @@
  	<border name="button_border" left="0" right="0" top="2" bottom="2"/>
 </frame_geometry>
 
-<frame_geometry name="border" has_title="false">
-  	<distance name="left_width" value="1"/>
-  	<distance name="right_width" value="1"/>
-  	<distance name="bottom_height" value="1"/>
+<frame_geometry name="border" has_title="false" rounded_top_left="true" rounded_top_right="true"  rounded_bottom_left="false" rounded_bottom_right="false">
+	<distance name="left_width" value="2"/>
+	<distance name="right_width" value="2"/>
+	<distance name="bottom_height" value="2"/>
   	<distance name="left_titlebar_edge" value="0"/>
   	<distance name="right_titlebar_edge" value="0"/>
   	<distance name="button_width" value="0"/>
   	<distance name="button_height" value="0"/>
-  	<distance name="title_vertical_pad" value="3"/>
+	<distance name="title_vertical_pad" value="0"/>
   	<border name="title_border" left="0" right="0" top="0" bottom="0"/>
-  	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
+	<border name="button_border" left="0" right="0" top="8" bottom="0"/>
 </frame_geometry>
 
 <!-- Window Title -->
 
 <draw_ops name="draw_title_text_normal">
-	<title color="#eeeeee" x="0" y="1 `max` ((height-title_height)/2)+1"/>
-	<title color="blend/gtk:fg[NORMAL]/#cccccc/0.1" x="0" y="0 `max` ((height-title_height)/2)"/>
+	<title color="#E4E4EE" x="0" y="1 `max` ((height-title_height)/2)+1"/>
+	<title color="blend/gtk:fg[NORMAL]/#C3C3CC/0.1" x="0" y="0 `max` ((height-title_height)/2)"/>
 </draw_ops>
 
 <draw_ops name="draw_title_text_inactive">
 	<title color="#f4f4f4" x="0" y="1 `max` ((height-title_height)/2)+1"/>
-	<title color="blend/gtk:text[NORMAL]/#cccccc/0.7" x="0" y="0 `max` ((height-title_height)/2)"/>
+	<title color="blend/gtk:text[NORMAL]/#C3C3CC/0.7" x="0" y="0 `max` ((height-title_height)/2)"/>
 </draw_ops>
 
 <draw_ops name="draw_title">
@@ -73,13 +73,13 @@
 
 	<!-- Topmost lines -->
 	<line color="shade/gtk:bg[NORMAL]/0.6" x1="0" x2="width" y1="0" y2="0"/>
-	<line color="#eeeeee" x1="5" y1="1" x2="width-6" y2="1"/>
+	<line color="#E4E4EE" x1="5" y1="1" x2="width-6" y2="1"/>
 
 	<!-- Highlighting of the left arch -->
-	<line color="blend/#cccccc/#eeeeee/0.8" x1="1" x2="5" y1="1" y2="1"/>
-	<line color="blend/#cccccc/#eeeeee/0.5" x1="1" x2="3" y1="2" y2="2"/>
-	<line color="blend/#cccccc/#eeeeee/0.5" x1="1" x2="2" y1="3" y2="3"/>
-	<line color="blend/#cccccc/#eeeeee/0.2" x1="1" x2="2" y1="4" y2="4"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.8" x1="1" x2="5" y1="1" y2="1"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.5" x1="1" x2="3" y1="2" y2="2"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.5" x1="1" x2="2" y1="3" y2="3"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.2" x1="1" x2="2" y1="4" y2="4"/>
 	
 	<!-- Darkening of the left arch -->
 	<line color="shade/gtk:bg[NORMAL]/0.60" x1="0" x2="4" y1="1" y2="1"/>
@@ -88,10 +88,10 @@
 	<line color="shade/gtk:bg[NORMAL]/0.55" x1="0" x2="1" y1="4" y2="4"/>
 	
 	<!-- Highlighting of the right arch -->
-	<line color="blend/#cccccc/#eeeeee/0.8" x1="width-6" x2="width-1" y1="1" y2="1"/>
-	<line color="blend/#cccccc/#eeeeee/0.5" x1="width-4" x2="width-1" y1="2" y2="2"/>
-	<line color="blend/#cccccc/#eeeeee/0.5" x1="width-3" x2="width-1" y1="3" y2="3"/>
-	<line color="blend/#cccccc/#eeeeee/0.2" x1="width-3" x2="width-1" y1="4" y2="4"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.8" x1="width-6" x2="width-1" y1="1" y2="1"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.5" x1="width-4" x2="width-1" y1="2" y2="2"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.5" x1="width-3" x2="width-1" y1="3" y2="3"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.2" x1="width-3" x2="width-1" y1="4" y2="4"/>
 
 	<!-- Darkening of the right arch -->
 	<line color="shade/gtk:bg[NORMAL]/0.60" x1="width-5" x2="width" y1="1" y2="1"/>
@@ -170,7 +170,7 @@
 <!-- Window Frames -->
 
 <draw_ops name="draw_frame">
-	<rectangle color="shade/gtk:bg[NORMAL]/0.5" x="0" y="0" width="width" height="height" filled="true"/>
+	<rectangle color="shade/gtk:bg[NORMAL]/0.85" x="0" y="0" width="width" height="height" filled="true"/>
 </draw_ops>
 
 <!-- bottom border -->
@@ -376,12 +376,12 @@
 <frame_style_set name="border">
 	<frame focus="yes" state="normal" resize="both" style="border"/>
 	<frame focus="no" state="normal" resize="both" style="border"/>
-	<frame focus="yes" state="maximized" style="maximized_focused"/>
-	<frame focus="no" state="maximized" style="normal_focused"/>
-	<frame focus="yes" state="shaded" style="normal_focused"/><!-- todo -->
-	<frame focus="no" state="shaded" style="normal_unfocused"/><!-- todo -->
-	<frame focus="yes" state="maximized_and_shaded" style="maximized_focused"/><!-- todo -->
-	<frame focus="no" state="maximized_and_shaded" style="maximized_unfocused"/><!-- todo -->
+	<frame focus="yes" state="maximized" style="border"/>
+	<frame focus="no" state="maximized" style="border"/>
+	<frame focus="yes" state="shaded" style="border"/>
+	<frame focus="no" state="shaded" style="border"/>
+	<frame focus="yes" state="maximized_and_shaded" style="border"/>
+	<frame focus="no" state="maximized_and_shaded" style="border"/>
 </frame_style_set>
 
 <!-- WINDOW -->
