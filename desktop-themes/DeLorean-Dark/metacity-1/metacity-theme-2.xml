@@ -1553,12 +1553,12 @@
 <frame_style_set name="border_style_set">
 	<frame focus="yes" state="normal" resize="both" style="border_focused"/>
 	<frame focus="no" state="normal" resize="both" style="border_unfocused"/>
-	<frame focus="yes" state="maximized" style="blank"/>
-	<frame focus="no" state="maximized" style="blank"/>
-	<frame focus="yes" state="shaded" style="blank"/>
-	<frame focus="no" state="shaded" style="blank"/>
-	<frame focus="yes" state="maximized_and_shaded" style="blank"/>
-	<frame focus="no" state="maximized_and_shaded" style="blank"/>
+	<frame focus="yes" state="maximized" style="border_focused"/>
+	<frame focus="no" state="maximized" style="border_unfocused"/>
+	<frame focus="yes" state="shaded" style="border_focused"/>
+	<frame focus="no" state="shaded" style="border_unfocused"/>
+	<frame focus="yes" state="maximized_and_shaded" style="border_focused"/>
+	<frame focus="no" state="maximized_and_shaded" style="border_unfocused"/>
 </frame_style_set>
 
 
