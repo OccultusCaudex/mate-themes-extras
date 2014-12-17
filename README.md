@@ -11,6 +11,8 @@ Themes:
 
 --clearlooks-phenix
 
+--delorean
+
 --delorean-dark
 
 --GnomishBeige
