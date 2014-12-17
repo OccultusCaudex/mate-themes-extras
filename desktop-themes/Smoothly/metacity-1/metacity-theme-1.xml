@@ -52,13 +52,13 @@
 <!-- Window Title -->
 
 <draw_ops name="draw_title_text_normal">
-	<title color="#eeeeee" x="0" y="1 `max` ((height-title_height)/2)+1"/>
-	<title color="blend/gtk:fg[NORMAL]/#cccccc/0.1" x="0" y="0 `max` ((height-title_height)/2)"/>
+	<title color="#E4E4EE" x="0" y="1 `max` ((height-title_height)/2)+1"/>
+	<title color="blend/gtk:fg[NORMAL]/#C3C3CC/0.1" x="0" y="0 `max` ((height-title_height)/2)"/>
 </draw_ops>
 
 <draw_ops name="draw_title_text_inactive">
 	<title color="#f4f4f4" x="0" y="1 `max` ((height-title_height)/2)+1"/>
-	<title color="blend/gtk:text[NORMAL]/#cccccc/0.7" x="0" y="0 `max` ((height-title_height)/2)"/>
+	<title color="blend/gtk:text[NORMAL]/#C3C3CC/0.7" x="0" y="0 `max` ((height-title_height)/2)"/>
 </draw_ops>
 
 <draw_ops name="draw_title">
@@ -73,13 +73,13 @@
 
 	<!-- Topmost lines -->
 	<line color="shade/gtk:bg[NORMAL]/0.6" x1="0" x2="width" y1="0" y2="0"/>
-	<line color="#eeeeee" x1="5" y1="1" x2="width-6" y2="1"/>
+	<line color="#E4E4EE" x1="5" y1="1" x2="width-6" y2="1"/>
 
 	<!-- Highlighting of the left arch -->
-	<line color="blend/#cccccc/#eeeeee/0.8" x1="1" x2="5" y1="1" y2="1"/>
-	<line color="blend/#cccccc/#eeeeee/0.5" x1="1" x2="3" y1="2" y2="2"/>
-	<line color="blend/#cccccc/#eeeeee/0.5" x1="1" x2="2" y1="3" y2="3"/>
-	<line color="blend/#cccccc/#eeeeee/0.2" x1="1" x2="2" y1="4" y2="4"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.8" x1="1" x2="5" y1="1" y2="1"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.5" x1="1" x2="3" y1="2" y2="2"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.5" x1="1" x2="2" y1="3" y2="3"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.2" x1="1" x2="2" y1="4" y2="4"/>
 	
 	<!-- Darkening of the left arch -->
 	<line color="shade/gtk:bg[NORMAL]/0.60" x1="0" x2="4" y1="1" y2="1"/>
@@ -88,10 +88,10 @@
 	<line color="shade/gtk:bg[NORMAL]/0.55" x1="0" x2="1" y1="4" y2="4"/>
 	
 	<!-- Highlighting of the right arch -->
-	<line color="blend/#cccccc/#eeeeee/0.8" x1="width-6" x2="width-1" y1="1" y2="1"/>
-	<line color="blend/#cccccc/#eeeeee/0.5" x1="width-4" x2="width-1" y1="2" y2="2"/>
-	<line color="blend/#cccccc/#eeeeee/0.5" x1="width-3" x2="width-1" y1="3" y2="3"/>
-	<line color="blend/#cccccc/#eeeeee/0.2" x1="width-3" x2="width-1" y1="4" y2="4"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.8" x1="width-6" x2="width-1" y1="1" y2="1"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.5" x1="width-4" x2="width-1" y1="2" y2="2"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.5" x1="width-3" x2="width-1" y1="3" y2="3"/>
+	<line color="blend/#C3C3CC/#E4E4EE/0.2" x1="width-3" x2="width-1" y1="4" y2="4"/>
 
 	<!-- Darkening of the right arch -->
 	<line color="shade/gtk:bg[NORMAL]/0.60" x1="width-5" x2="width" y1="1" y2="1"/>
@@ -170,7 +170,7 @@
 <!-- Window Frames -->
 
 <draw_ops name="draw_frame">
-	<rectangle color="shade/gtk:bg[NORMAL]/0.5" x="0" y="0" width="width" height="height" filled="true"/>
+	<rectangle color="shade/gtk:bg[NORMAL]/0.85" x="0" y="0" width="width" height="height" filled="true"/>
 </draw_ops>
 
 <!-- bottom border -->
