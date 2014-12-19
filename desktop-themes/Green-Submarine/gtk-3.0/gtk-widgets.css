@@ -230,11 +230,11 @@ GtkAssistant .sidebar {
  * button *
  **********/
 .button {
-	padding: 3px;
-
-	-unico-focus-border-color: alpha (@theme_selected_bg_color, 0.7);
-	-unico-focus-fill-color: @transparent;
-	-unico-focus-outer-stroke-color: alpha (@theme_selected_bg_color, 0.2);
+    padding: 3px;
+    transition: all 200ms ease-out;
+    -unico-focus-border-color: alpha (@theme_selected_bg_color, 0.7);
+    -unico-focus-fill-color: @transparent;
+    -unico-focus-outer-stroke-color: alpha (@theme_selected_bg_color, 0.2);
 }
 
 GtkComboBox,
@@ -1253,12 +1253,14 @@ DbusmenuGtkMenu .menu,
 Genericmenuitem .menuitem,
 DbusmenuGtkMenu .menuitem,
 .menubar .menuitem,
+.menu .menuitem,
 .primary-toolbar .menuitem {
-	color: @dark_fg_color;
-/* menu color fix for GTK3-8 */
-	background-image: -gtk-gradient (linear,left top,left bottom,
-		from (@menubar_color),
-		to (shade (@menubar_color, 0.85)));
+    transition: all 200ms ease-out;
+    color: @dark_fg_color;
+    /* menu color fix for GTK3-8 */
+    background-image: -gtk-gradient (linear,left top,left bottom,
+                                     from (@menubar_color),
+                                     to (shade (@menubar_color, 0.85)));
 }
 
 /* Workaround for lp:949368 */
