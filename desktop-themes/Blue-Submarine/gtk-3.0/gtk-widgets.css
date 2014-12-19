@@ -1256,9 +1256,8 @@ DbusmenuGtkMenu .menuitem,
     transition: all 200ms ease-out;
     color: @dark_fg_color;
     /* menu color fix for GTK3-8 */
-    background-image: -gtk-gradient (linear,left top,left bottom,
-                                     from (@menubar_color),
-                                     to (shade (@menubar_color, 0.85)));
+    background-image: none;
+    background-color: @menubar_color;
 }
 
 /* Workaround for lp:949368 */
