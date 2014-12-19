@@ -5,6 +5,11 @@ style "caja-window-base" { bg[NORMAL] = @base_color }
 style "caja-sidebar" = "murrine-sidebar" {
 	GtkTreeView::horizontal_separator = 15
 	GtkTreeView::vertical_separator = 2
+	text[NORMAL] = @fg_color
+	base[NORMAL] = "#D4DAE1"
+
+	GtkTreeView::odd_row_color = "#D4DAE1"
+	GtkTreeView::even_row_color = "#D4DAE1"
 }
 
 style "caja-view" {
