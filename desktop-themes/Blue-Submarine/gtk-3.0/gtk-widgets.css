@@ -3095,19 +3095,42 @@ GtkTreeView {
     -GtkWidget-focus-padding: 1;
 }
 
-.notebook GtkContainer GtkTreeView row:hover {
+.notebook GtkContainer GtkTreeView row:selected {
 	background-color: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
 }
 
-GtkTreeView row:nth-child(odd),
-GtkTreeView row:nth-child(odd):hover {
+.notebook GtkContainer GtkTreeView row:hover {
+	background-color: shade (@theme_selected_bg_color, 1.15);
+	color: shade (@theme_selected_fg_color, 0.90);
+	text-shadow: none;
+}
+
+GtkTreeView row:nth-child(odd) {
 	background-color: shade(@theme_base_color, 0.95);
 }
 
-GtkTreeView row:nth-child(even),
-GtkTreeView row:nth-child(even):hover  {	
+GtkTreeView row:nth-child(even) {
     background-color: shade(@theme_base_color, 1.00);
+}
+
+GtkTreeView row:nth-child(odd):hover {
+	background-color: shade (@theme_selected_bg_color, 1.15);
+	color: shade (@theme_selected_fg_color, 0.90);
+	text-shadow: none;
+}
+
+GtkTreeView row:nth-child(even):hover {
+	background-color: shade (@theme_selected_bg_color, 1.15);
+	color: shade (@theme_selected_fg_color, 0.90);
+	text-shadow: none;
+}
+
+/* ie. nemo sidebar */
+.sidebar GtkTreeView row:hover {
+	background-color: shade (@theme_selected_bg_color, 1.15);
+	color: shade (@theme_selected_fg_color, 0.90);
+	text-shadow: none;
 }
 
 column-header {
