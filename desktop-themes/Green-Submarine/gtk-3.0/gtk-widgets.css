@@ -1948,7 +1948,9 @@ DbusmenuGtkMenu .menuitem.separator,
 }
 
 .sidebar row:hover {
-	background-color: alpha (@theme_bg_color, 0.0);
+	background-color: shade (@theme_selected_bg_color, 1.15);
+	color: shade (@theme_fg_color, 0.90);
+	text-shadow: none;
 }
 
 .sidebar .frame {
@@ -2452,20 +2454,44 @@ GtkTreeView .entry {
 	-unico-inner-stroke-width: 1px;
 }
 
-.notebook GtkContainer GtkTreeView row:hover {
+.notebook GtkContainer GtkTreeView row:selected {
 	background-color: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
 }
 
-GtkTreeView row:nth-child(even),
-GtkTreeView row:nth-child(even):hover {
+.notebook GtkContainer GtkTreeView row:hover {
+	background-color: shade (@theme_selected_bg_color, 1.15);
+	color: shade (@theme_fg_color, 0.90);
+	text-shadow: none;
+}
+
+GtkTreeView row:nth-child(even) {
 	background-color: shade (@theme_base_color, 0.97);
 }
 
-GtkTreeView row:nth-child(odd),
-GtkTreeView row:nth-child(odd):hover {
+GtkTreeView row:nth-child(odd) {
 	background-color: shade (@theme_base_color, 1.0);
 }
+
+GtkTreeView row:nth-child(even):hover {
+	background-color: shade (@theme_selected_bg_color, 1.15);
+	color: shade (@theme_fg_color, 0.90);
+	text-shadow: none;
+}
+
+GtkTreeView row:nth-child(odd):hover {
+	background-color: shade (@theme_selected_bg_color, 1.15);
+	color: shade (@theme_fg_color, 0.90);
+	text-shadow: none;
+}
+
+/* ie. nemo sidebar */
+.sidebar GtkTreeView row:hover {
+	background-color: shade (@theme_selected_bg_color, 1.15);
+	color: shade (@theme_fg_color, 0.90);
+	text-shadow: none;
+}
+
 
 /************
  * viewport *
@@ -2501,3 +2527,4 @@ GtkIconView {
 .cursor-handle.top {
 	background-image: url("assets/slider.png");
 }
+
