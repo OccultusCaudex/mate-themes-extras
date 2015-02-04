@@ -1,16 +1,16 @@
 /* caja */
 
 /* Look out !
-This is the background color of caja view */
+FIXME This is the background color of caja view */
 
 CajaView .entry {
-    background-color: @notebook_color;
+    background-color: @theme_base_color;
 }
 
 /*FIXME normaly this isn't the right entry for adjusting
 the sidebar background color*/
 CajaWindow .view {
-	background-color: shade (@theme_bg_color, 1.0);
+	background-color: #AEAEAE;
 }
 
 .caja-canvas-item {
@@ -88,57 +88,6 @@ CajaWindow > GtkGrid > .pane-separator:hover:backdrop {
     border-color: @unfocused_borders;
     background-color: transparent;
 }
-/*
-CajaNotebook.notebook {
-	border-top-width: 1px;
-    border-right-width: 0;
-    border-left-width: 1px;
-    border-bottom-width: 0;
-    border-top-color: shade( @notebook_color, 1.36);
-    border-left-color: shade( @notebook_color, 1.30);
-    border-image: none;
-}
-
-CajaNotebook.notebook:backdrop {
-	border-top-width: 1px;
-    border-right-width: 0;
-    border-left-width: 1px;
-    border-bottom-width: 0;
-    border-top-color: shade( @notebook_color, 1.16);
-    border-left-color: shade( @notebook_color, 1.10);
-    border-image: none;
-}
-
-CajaNotebook.notebook tab {
-    border-color: shade( @notebook_tab_bg, 0.74);
-    box-shadow: inset 0 1px alpha(white, 0.12);
-    background-color: @notebook_tab_bg;
-    background-image: linear-gradient(to bottom,
-                                      alpha(white, 0.08),
-                                      alpha(white, 0.02) 39%,
-                                      alpha(black, 0.05) 41%,
-                                      alpha(black, 0.00)
-                                      );
-}
-
-CajaNotebook.notebook tab:backdrop {
-    border-color: shade( @notebook_tab_bg, 0.65);
-    box-shadow: inset 0 1px alpha(white, 0.06);
-    background-color: shade(@notebook_tab_bg, 0.8);
-    background-image: linear-gradient(to bottom,
-                                      alpha(white, 0.08),
-                                      alpha(white, 0.02) 39%,
-                                      alpha(black, 0.05) 41%,
-                                      alpha(black, 0.00)
-                                      );
-}*/
-
-CajaWindow .titlebar,
-CajaWindow .titlebar:backdrop {
-	border-width: 0;
-	border-style: none;
-	box-shadow: 0 1px #525252 inset;
-}
 
 CajaNotebook .frame,
 CajaNotebook .frame:backdrop {
@@ -149,44 +98,6 @@ CajaNotebook.notebook .view,
 CajaNotebook.notebook .view:backdrop {
 background-color: @notebook_color;
 }
-
-/**** FIXES FOR NAUTILUS VIEW AND DESKTOP ***/
-/* Fixes issue with Caja drawing the .background image inside the view after closing a tab */
-
-CajaWindow CajaView,
-CajaWindow CajaView .view {
-	background-color: @theme_bg_color;
-}
-
-CajaWindow CajaView:backdrop,
-CajaWindow CajaView .view:backdrop {
-	background-color: shade(@notebook_color, 0.8);
-}
-
-/* Fixes issue with Caja drawing the above view color on the desktop */
-CajaDesktopWindow CajaView,
-CajaDesktopWindow CajaView .view {
-	background-color: transparent;
-}
-
-CajaDesktopWindow CajaView:backdrop,
-CajaDesktopWindow CajaView .view:backdrop {
-	background-color: transparent;
-}
-
-/* Fixes issue with Caja drawing the .background image on the desktop */
-CajaDesktopWindow.background {
-	background-image: none;
-	background-color: @theme_bg_color;
-}
-
-
-CajaDesktopWindow.background:backdrop {
-	background-image: none;
-	background-color: shade(@theme_bg_color,0.8);
-}
-
-/***   ***/
 
 CajaWindow CajaView.frame,
 CajaWindow CajaView .view.frame {
