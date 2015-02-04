@@ -473,6 +473,8 @@ MatePanelApplet > GtkMenuBar.menubar,
 PanelToplevel,
 PanelWidget,
 PanelAppletFrame,
+MatePanelAppletFrameDBus,
+MatePanelAppletContainer,
 MatePanelApplet {
 	background-image: none;
 	background-color: @theme_bg_dark_color;
