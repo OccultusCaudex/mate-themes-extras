@@ -1,16 +1,15 @@
 /* caja */
 
 /* Look out !
-This is the background color of caja view */
-
+FIXME This is the background color of caja view */
 CajaView .entry {
-    background-color: @notebook_color;
+    background-color: @theme_base_color;
 }
 
 /*FIXME normaly this isn't the right entry for adjusting
 the sidebar background color*/
 CajaWindow .view {
-	background-color: shade (@theme_bg_color, 1.0);
+	background-color: #303030;
 }
 
 .caja-canvas-item {
