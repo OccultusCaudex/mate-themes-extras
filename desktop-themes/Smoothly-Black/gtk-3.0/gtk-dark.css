@@ -44,5 +44,11 @@
 @define-color error_bg_color-b #B20000;
 @define-color question_bg_color-b #5297D5;
 
+@define-color wm_a shade(@bg_color, 1.3);
+@define-color wm_b @bg_color;
+@define-color wm_util shade(@bg_color, 1.2);
+@define-color wm_unfocus shade(@bg_color, 1.05);
+@define-color wm_shadow alpha(black, 0.5);
+@define-color wm_border alpha(black,0.18);
 
 @import url("gtk-widgets-dark.css");
