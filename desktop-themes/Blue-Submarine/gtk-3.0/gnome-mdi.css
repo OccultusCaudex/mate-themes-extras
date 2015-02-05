@@ -650,9 +650,9 @@ NemoWindow .sidebar .scrollbar.trough.vertical {
 }
 
 /* the small line between sidebar and view */
-NautilusWindow,
+NautilusWindow *,
 NemoWindow * {
-	-GtkPaned-handle-size: 0;
+	-GtkPaned-handle-size: 3px;
 }
 
 NautilusWindow .sidebar .frame,
@@ -661,6 +661,14 @@ NemoWindow .sidebar .frame {
     border-style: none;
     border-top-width: 0;
     border-bottom-width: 0;	
+}
+
+/* disable shadow and radius for nemo, looks strange */
+NemoWindow .sidebar .view row:hover,
+NemoWindow .sidebar .view row:selected,
+NemoWindow .sidebar .view row:selected:hover {
+	border-radius: 0px;
+	box-shadow: none;
 }
 
 /* disabled, looks uggly
