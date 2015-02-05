@@ -379,7 +379,6 @@ This is 'also' the background color of mate-control-center */
 }
 
 .spinbutton .button:active,
-.spinbutton .button:checked,
 .spinbutton .button:hover {
     border-radius: 0px 0px 0px 0px;
     box-shadow: none;
@@ -392,16 +391,14 @@ This is 'also' the background color of mate-control-center */
 
 .spinbutton .button:first-child,
 .spinbutton .button:first-child:hover,
-.spinbutton .button:first-child:active,
-.spinbutton .button:first-child:checked {
+.spinbutton .button:first-child:active {
     border-radius: 3px 0 0 3px;
     box-shadow: none;
 }
 
 .spinbutton .button:last-child,
 .spinbutton .button:last-child:hover,
-.spinbutton .button:last-child:active,
-.spinbutton .button:last-child:checked {
+.spinbutton .button:last-child:active {
     border-radius: 0 3px 3px 0;
 }
 
@@ -410,21 +407,18 @@ This is 'also' the background color of mate-control-center */
 }
 
 /* Add back the glowy effect from the entry covered by the pushed button background*/
-.spinbutton .button:active,
-.spinbutton .button:checked {
+.spinbutton .button:active {
     box-shadow: inset 1px 0 @inset_dark_color,
                 inset 0 1px alpha(@theme_selected_bg_color, 0.2),
                 inset 0 -1px alpha(@theme_selected_bg_color, 0.2);
 }
 
-.spinbutton .button:first-child:active,
-.spinbutton .button:first-child:checked {
+.spinbutton .button:first-child:active {
     box-shadow: inset 1px 1px alpha(@theme_selected_bg_color, 0.2),
                 inset 0 -1px alpha(@theme_selected_bg_color, 0.2);
 }
 
-.spinbutton .button:last-child:active,
-.spinbutton .button:last-child:checked {
+.spinbutton .button:last-child:active {
     box-shadow: inset 1px 0 @inset_dark_color,
                 inset 0 1px alpha(@theme_selected_bg_color, 0.2),
                 inset -1px -1px alpha(@theme_selected_bg_color, 0.2);
@@ -445,8 +439,7 @@ This is 'also' the background color of mate-control-center */
     color: @insensitive_fg_color;
 }
 
-.spinbutton.vertical .button:active,
-.spinbutton.vertical .button:checked {
+.spinbutton.vertical .button:active {
     color: @theme_fg_color;
     icon-shadow: 0 1px @button_active_text_shadow;
 }
@@ -460,8 +453,7 @@ This is 'also' the background color of mate-control-center */
 .spinbutton.vertical .button,
 /* :active:active to override the dark overriden style for
    normal spinbutton buttons, yeah we lack !important */
-.spinbutton.vertical .button:active:active,
-.spinbutton.vertical .button:checked:checked {
+.spinbutton.vertical .button:active:active {
     box-shadow: none;
 }
 
