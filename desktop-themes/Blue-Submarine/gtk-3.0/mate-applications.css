@@ -451,7 +451,10 @@ CajaWindow .primary-toolbar.toolbar .button GtkImage {
 MatePanelApplet > GtkMenuBar.menubar,
 PanelToplevel,
 PanelWidget,
+PanelFrame,
 PanelAppletFrame,
+MatePanelAppletFrameDBus,
+MatePanelAppletContainer,
 MatePanelApplet {
 	background-image: none;
 	background-color: @theme_bg_dark_color;
