@@ -1,4 +1,14 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Thu Feb 05 2014
+release 3.14.5
+
+- change menu item style in submarine themes
+- adjustments for csd apps and popovers
+- add support for popovers and stack switcher in GnomishBeige
+- sync file-manger view in Delorean themes
+- other chnges see gitlog
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Tue Dec 17 2014
 release 3.14.4
 
