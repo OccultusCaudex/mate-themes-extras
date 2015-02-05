@@ -1639,7 +1639,7 @@ GtkScrolledWindow.frame {
  **************/
 
 GtkComboBox {
-    padding: 0px 4px;
+    padding: 0px;
     -GtkWidget-focus-padding: 0;
     -GtkWidget-focus-line-width: 1;
     -GtkComboBox-arrow-scaling: 0.5;
@@ -2934,7 +2934,7 @@ GtkIconView.view.cell:selected:focused {
 }
 
 GtkTreeView {	
-	/* Error Epiphany cuando:
+    /* Error Epiphany cuando:
     -GtkWidget-focus-line-width: 0; */
     -GtkWidget-focus-line-width: 1;
     -GtkWidget-focus-padding: 1;
@@ -3097,6 +3097,54 @@ row:selected:focused {
     border-color: @expander_row_selected_color;
     color: @expander_row_selected_color;
     background-color: @theme_selected_bg_color;
+}
+
+/**************
+ * List boxes *
+ **************/
+
+.list {
+	background-color: @list_box_bg;
+}
+
+.list-row:hover {
+	background-color: shade (@content_view_bg, 1.08);
+}
+
+.list-row:selected,
+.list-row:selected:hover {
+	border-width: 0;
+	border-style: solid;
+	border-color: shade (@theme_selected_bg_color, 0.85);
+	background-image: linear-gradient(to bottom,
+		shade (@theme_selected_bg_color, 1.0),
+		shade (@theme_selected_bg_color, 1.0));
+	box-shadow: none;
+	color: @theme_selected_fg_color;
+}
+
+.list-row:selected:backdrop,
+.list-row:selected:backdrop:hover {
+	border-width: 0;
+	border-style: solid;
+	border-color: shade (@theme_bg_color, 0.85);
+	background-image: linear-gradient(to bottom,
+		shade (@theme_bg_color, 0.94),
+		shade (@theme_bg_color, 0.94));
+	color: @theme_fg_color;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+.list-row.button {
+	border-color: transparent;
+	background-image: none;
+	box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(255, 255, 255, 0);
+	text-shadow: none;
+	icon-shadow: none;
+	border-image: none;
+	border-radius: 0;
+	border: none;
 }
 
 /* Calendars */
