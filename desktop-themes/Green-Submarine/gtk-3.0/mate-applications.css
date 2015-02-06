@@ -5,7 +5,7 @@
 /**** View ***/
 
 /* Look out !
-This is the background color of caja view */
+FIXME This is the background color of caja view */
 
 CajaView .entry {
     background-color: shade(@base_color, 1.0);
@@ -43,7 +43,7 @@ CajaWindow .view {
 
 /* the small line between sidebar and view */
 CajaWindow * {
-	-GtkPaned-handle-size: -1px;
+    -GtkPaned-handle-size: 2px;
 }
 
 /* disabled, looks uggly
@@ -98,6 +98,52 @@ CajaWindow .sidebar .scrollbar.trough.vertical {
 	-unico-inner-stroke-width: 0;
 }
 
+/* selected item in sidebar */
+/* FIXME caja ingnore .sidebar calls */
+CajaWindow .view row:selected,
+CajaWindow .view row:selected:hover {
+    background-image: -gtk-gradient (linear,
+                                     left top,
+                                     left bottom,
+                                     from (shade(@sidebar_selected_bg, 0.90)),
+                                     color-stop (0.40, shade (@sidebar_selected_bg, 0.98)),
+                                     to (shade(@sidebar_selected_bg, 1.05)));
+    color:  @theme_selected_fg_color;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: shade (@sidebar_selected_bg, 0.90) #bbb shade (@sidebar_selected_bg, 1.05);
+    text-shadow: none;
+}
+
+/* mouse hover item in sidebar */
+/* FIXME caja ingnore .sidebar calls */
+CajaWindow .view row:hover {
+    background-image: -gtk-gradient (linear,
+                                     left top,
+                                     left bottom,
+                                     from (shade(@theme_bg_color, 1.05)),
+                                     color-stop (0.40, shade (@theme_bg_color, 1.13)),
+                                     to (shade(@theme_bg_color, 1.10)));
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.0),
+                inset  1px  0px shade (@theme_selected_bg_color, 1.0),
+                inset -1px  0px shade (@theme_selected_bg_color, 1.0),
+                inset  0px -1px shade (@theme_selected_bg_color, 1.0);
+    color: shade (@theme_fg_color, 0.90);
+    border-radius: 6px;
+    text-shadow: none;
+}
+
+/* shadows and borders looks strange in list view */
+CajaWindow GtkTreeView row:nth-child(odd):hover,
+CajaWindow GtkTreeView row:nth-child(even):hover,
+CajaWindow GtkTreeView row:nth-child(odd):selected,
+CajaWindow GtkTreeView row:nth-child(even):selected,
+CajaWindow GtkTreeView row:nth-child(odd):selected:hover,
+CajaWindow GtkTreeView row:nth-child(even):selected:hover {
+    box-shadow:none;
+    border-radius: 0px;
+}
 
 CajaSearchBar.info {
     background-image: -gtk-gradient (linear,
