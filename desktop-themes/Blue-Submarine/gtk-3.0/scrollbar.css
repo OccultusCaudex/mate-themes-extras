@@ -16,7 +16,16 @@
 	-GtkScrollbar-activate-slider: 1;
     -GtkScrollbar-min-slider-length: 31;
 	-GtkScrolledWindow-scrollbar-spacing: 0;
-	-GtkScrolledWindow-scrollbars-within-bevel: 1;	
+	-GtkScrolledWindow-scrollbars-within-bevel: 1;
+}
+
+.scrollbars-junction { /* the small square between scrollbars!!! */
+	background-image: none;
+	background-color: @theme_bg_color;
+	border-width: 0;
+	border-radius: 0;
+	border-image: none;
+	box-shadow: none;
 }
 
 .scrollbar.trough,
@@ -24,36 +33,26 @@
 	background-image: -gtk-gradient (linear, left top, left bottom,
 		from (shade (@theme_bg_color, 0.98)),
 		to (shade (@theme_bg_color, 1.06)));
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
 	border-radius: 0;
 	border-width: 0 0 0 0;
-	border-style: solid;
-	border-right-color: shade (@theme_bg_color, 0.96);
-	-unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@theme_bg_dark_color, 0.96)),
-		to (shade (@theme_bg_dark_color, 0.96)));
-	-unico-inner-stroke-width: 0;
-	border-left-color: shade (@theme_bg_color, 0.96);
-	-unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@theme_bg_dark_color, 0.96)),
-		to (shade (@theme_bg_dark_color, 0.96)));
-	-unico-inner-stroke-width: 0;
+	border-style: none;
 }
 
 .scrollbar.trough.horizontal {
 	background-image: -gtk-gradient (linear, left top, right top,
 		from (shade (@theme_bg_color, 0.98)),
 		to (shade (@theme_bg_color, 1.06)));
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
 	border-radius: 0;
 	border-width: 0 0 0 0;
-	border-style: solid;
-	border-top-color: shade (@theme_bg_color, 0.96);
-	-unico-border-gradient: -gtk-gradient (linear, left top, right top,
-		from (shade (@theme_bg_dark_color, 0.96)),
-		to (shade (@theme_bg_dark_color, 0.96)));
-	border-bottom-color: shade (@theme_bg_color, 0.96);
-	-unico-border-gradient: -gtk-gradient (linear, left top, right top,
-		from (shade (@theme_bg_dark_color, 0.96)),
-		to (shade (@theme_bg_dark_color, 0.96)));
+	border-style: none;
 }
 
 /* Sliders and buttons */
@@ -101,25 +100,53 @@
 	background-color: shade (@theme_bg_color, 1.06);
 }
 
-/* Fixes a bug in Opera */
+.scrollbar.button,
+.scrollbar.button:active,
+.scrollbar.button:active:hover,
+.scrollbar.button:insensitive {
+	box-shadow: inset 0 -1px mix(@scrollbar_slider, @scrollbar_trough, 0.8);
+	border-style: none;
+	border-image: none;
+	border-radius: 0;
+	background-image: none;
+	background-color: transparent;
+}
+
+.scrollbar.button:active,
+.scrollbar.button:active:hover {
+	background-color: alpha(shade(@scrollbar_trough, 0.8), 0.5);
+}
+
+.scrollbar.button.top:hover {
+	box-shadow: inset 0 -1px mix(@scrollbar_slider, @scrollbar_trough, 0.8);
+}
+
+.scrollbar.button.bottom:hover {
+	box-shadow: inset 0 1px mix(@scrollbar_slider, @scrollbar_trough, 0.8);
+}
+
+.scrollbar.button.right:hover {
+	box-shadow: inset 1px 0 mix(@scrollbar_slider, @scrollbar_trough, 0.8);
+}
+
+.scrollbar.button.left:hover {
+	box-shadow: inset -1px 0 mix(@scrollbar_slider, @scrollbar_trough, 0.8);
+}
+
 .scrollbar.button {
-	background-image: -gtk-gradient (linear, left top, left bottom,
-		from (@transparent),
-		to (@transparent));
-	background-color: @transparent;
-	-unico-outer-stroke-width: 0;
-	-unico-outer-stroke-color: @transparent;
-	-unico-inner-stroke-width: 0;
-	-unico-inner-stroke-color: @transparent;
-	-unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-		from (@transparent),
-		to (@transparent));
-	-unico-outer-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-		from (@transparent),
-		to (@transparent));
-	-unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-		from (@transparent),
-		to (@transparent));
+	color: @theme_fg_color;
+}
+
+.scrollbar.button:hover {
+	color: @theme_fg_color;
+}
+
+.scrollbar.button:insensitive {
+	color: @insensitive_fg_color;
+}
+
+.scrollbar.button:active {
+	color: @theme_fg_color;
 }
 
 /* overlay scrollbar */
