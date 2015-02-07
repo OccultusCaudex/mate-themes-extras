@@ -5,6 +5,7 @@
  ***************************************************************/
  
 * {
+	padding: 0;
 	-GtkArrow-arrow-scaling: 0.7;
 	-GtkButton-child-displacement-x: 1;
 	-GtkButton-child-displacement-y: 1;
@@ -864,6 +865,7 @@ GtkScrolledWindow.frame {
  ***********/
 
 .button * {
+    transition: all 400ms ease-out;
     padding: 0px;
 }
 
@@ -873,7 +875,7 @@ GtkScrolledWindow.frame {
 }
 
 .button {
-    transition: all 200ms ease-out;
+    transition: all 400ms ease-out;
     -GtkWidget-focus-line-width: 0; 
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
@@ -893,7 +895,7 @@ GtkScrolledWindow.frame {
                 inset  2px  0px alpha(#fff, 0.09),
                 inset -2px  0px alpha(#fff, 0.09),
                 inset  0px -2px alpha(#fff, 0.07),
-				inset  0px  1px alpha(shade(@button_border, 1.00), 0.70),
+                inset  0px  1px alpha(shade(@button_border, 1.00), 0.70),
                 inset  1px  0px alpha(shade(@button_border, 0.94), 0.80),
                 inset -1px  0px alpha(shade(@button_border, 0.94), 0.80),
                 inset  0px -1px alpha(shade(@button_border, 0.88), 0.90);
@@ -901,6 +903,25 @@ GtkScrolledWindow.frame {
     /* box-shadow: [ inset ] horizontal_offset vertical_offset [ blur_radius ] [ spread ] color */
     color: 			@theme_fg_color;
     text-shadow: 0px 1px @theme_shadow_color;
+}
+
+.button.default {
+    transition: all 400ms ease-out;
+    text-shadow: none;
+    color: @theme_fg_color;
+}
+
+/* ie. mate-control-center */
+.button.flat {
+    transition: all 400ms ease-out;
+    padding: 2px;
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255,255,255,0), 0 1px rgba(255,255,255,0);
+    text-shadow: none;
+    icon-shadow: none;
+    border-image: none;
 }
 
 .button:hover {
