@@ -99,8 +99,8 @@ CajaWindow .notebook .rubberband {
 
 /* Caja places bar */
 CajaWindow .button.flat {
-    border-style: solid;
-    border-color: shade(@button_border, 1.1);
+    border-style: none;
+    border-image: url("assets/toolbar-button-border.svg") 3 / 3px stretch;
     border-radius: 3px;
 }
 
@@ -441,8 +441,8 @@ TerminalWindow .entry {
 
 /* Pluma status bar */
 PlumaWindow .button.flat {
-    border-style: solid;
-    border-color: shade(@button_border, 1.1);
+    border-style: none;
+    border-image: url("assets/toolbar-button-border.svg") 3 / 3px stretch;
     border-radius: 5px;
 }
 
