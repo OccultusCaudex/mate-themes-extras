@@ -102,10 +102,12 @@ CajaWindow .button.flat {
     border-style: none;
     border-image: url("assets/toolbar-button-border.svg") 3 / 3px stretch;
     border-radius: 3px;
+    padding: 2px 5px;
 }
 
 CajaWindow .button.flat:hover {
     border-radius: 3px;
+    padding: 2px 5px;
 }
 
 /* FIXME, Why this doesn't work with caja? */
