@@ -1,6 +1,6 @@
 AC_PREREQ(2.53)
 
-AC_INIT([mate-themes-extras], [3.14.5], [http://www.raveit.de])
+AC_INIT([mate-themes-extras], [3.14.6], [http://www.raveit.de])
 
 AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz tar-ustar check-news])
 
