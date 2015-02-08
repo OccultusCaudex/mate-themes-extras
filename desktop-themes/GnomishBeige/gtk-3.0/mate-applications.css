@@ -102,10 +102,12 @@ CajaWindow .button.flat {
     border-style: solid;
     border-color: shade(@button_border, 1.1);
     border-radius: 3px;
+    padding: 2px 5px;
 }
 
 CajaWindow .button.flat:hover {
     border-radius: 3px;
+    padding: 2px 5px;
 }
 
 /* FIXME, Why this doesn't work with caja? */
