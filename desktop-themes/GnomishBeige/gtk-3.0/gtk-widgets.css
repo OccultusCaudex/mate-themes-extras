@@ -467,6 +467,28 @@ GtkCalendar {
 	padding: 2px;
 }
 
+.frame.flat {
+	border-style: none;
+}
+
+.frame.action-bar {
+	padding: 6px;
+	border-width: 1px 0 0;
+}
+
+GtkScrolledWindow.frame {
+	border-style: solid;
+	border-color: @borders;
+	border-width: 1px;
+	border-radius: 2px;
+	padding: 0;
+}
+
+/* no double frames */
+GtkScrolledWindow GtkViewport.frame {
+	border-style: none;
+}
+
 /***************
  * GtkLevelBar *
  ***************/
@@ -1404,17 +1426,6 @@ GtkTreeMenu .menuitem * {
 	background-color: transparent;
 }
 
-.toolbar .button:hover,
-.primary-toolbar .button:hover,
-.primary-toolbar .toolbar .button:hover,
-.primary-toolbar.toolbar .button:hover {
-	border-style: solid;
-	border-color: shade(@theme_main_color, 0.8);
-	border-radius: 3px;
-	background-image: none;
-	background-color: @theme_bg_color;
-}
-
 .toolbar .button:active,
 .primary-toolbar .button:active,
 .primary-toolbar .toolbar .button:active,
@@ -1431,6 +1442,10 @@ GtkTreeMenu .menuitem * {
 	/*border-image is defined in gtk-widgets-assets.css*/
 }
 
+.toolbar .button:hover,
+.primary-toolbar .button:hover,
+.primary-toolbar .toolbar .button:hover,
+.primary-toolbar.toolbar .button:hover,
 .toolbar .button:active:hover,
 .primary-toolbar .button:active:hover,
 .primary-toolbar .toolbar .button:active:hover,
@@ -2348,7 +2363,9 @@ GtkLabel {
 }
 
 /* ie. pluma open dialog */
-.sidebar GtkTreeView row:hover {
+.sidebar GtkTreeView row:hover,
+.sidebar GtkTreeView row:active:hover,
+.sidebar GtkTreeView row:selected:hover {
 	background-image:  linear-gradient(to bottom,
 	                                  @theme_bg_color,
 	                                  shade(@theme_bg_color, 0.80));
