@@ -694,6 +694,12 @@ NemoWindow .primary-toolbar.toolbar .button * {
     padding: 0px;
 }
 
+/* Nemo arrow/button in pathbar */
+.toolbar .raised.linked .button:first-child {
+    padding-left:  4px;
+    padding-right: 1px;
+}
+
 NemoSearchBar .entry {
     padding: 2px 8px;
     border-width: 0px;
