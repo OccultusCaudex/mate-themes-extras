@@ -19,6 +19,7 @@ theme_DATA = \
 	gtk-widgets-borders-dark.css \
 	gtk-widgets.css \
 	gtk-widgets-dark-overrides.css \
+	mate-applications.css \
 	overlay-scrollbar.css \
 	settings.ini \
 	ubuntu-pathbar.css \
