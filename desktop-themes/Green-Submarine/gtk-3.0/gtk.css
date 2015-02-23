@@ -139,6 +139,21 @@
 @define-color expander_row_selected_color #FFF;
 @define-color test #f00;
 
+/**************
+ * List boxes *
+ **************/
+
+@define-color content_view_bg #C7DBF0;
+@define-color list_box_bg #fafafa;
+
+/*****************
+ * GtkSpinButton *
+ *****************/
+
+@define-color inset_light_color alpha(white, 0.45);
+@define-color inset_dark_color alpha(black, 0.07);
+@define-color inset_link_dark_color alpha(green, 0.37);
+
 /*******
  * OSD *
  *******/
