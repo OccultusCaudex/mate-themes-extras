@@ -153,6 +153,11 @@ ClockBox,
     font: bold;
 }
 
+/* set normal menubar menuitem */
+PanelMenuBar.menubar .menu .menuitem {
+    padding: 6px;
+}
+
 .mate-panel-menu-bar .menuitem:prelight {
 }
 
