@@ -59,6 +59,8 @@ theme_DATA = \
 	sidebar-radio-prelight.svg \
 	sidebar-radio-selected-prelight.svg \
 	sidebar-radio-selected.svg \
+    slider_fine_horizontal.svg \
+	slider_fine_vertical.svg \
 	slider-horizontal.png \
 	slider-vertical.png \
 	switch-dark-off-disabled.svg \
