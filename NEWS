@@ -1,5 +1,8 @@
 3.14.6
 
+  * re-work of submarine themes GTK3
+  * disable spinner animation to avoid high cpu load , all themes
+  * some improvements for GnomishBeige
 
 3.14.5
 
