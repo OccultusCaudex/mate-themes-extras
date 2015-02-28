@@ -445,7 +445,7 @@ MatePanelApplet:hover {
 }
 
 /* Classic icon style */
-/.mate-panel-menu-bar {
+.mate-panel-menu-bar {
 	-PanelMenuBar-icon-visible: true;
 }
 
