@@ -1,5 +1,13 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
-Date:   Thu Feb 05 2014
+Date:   Sat Feb 28 2015
+release 3.14.6
+
+- re-work of submarine themes GTK3
+- disable spinner animation to avoid high cpu load , all themes
+- some improvements for GnomishBeige
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Thu Feb 05 2015
 release 3.14.5
 
 - change menu item style in submarine themes
