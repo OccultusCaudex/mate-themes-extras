@@ -267,6 +267,12 @@ PanelMenuBar.menubar .menuitem:hover {
     text-shadow: none;
 }
 
+/* set normal menubar menuitem */
+PanelMenuBar.menubar .menu .menuitem {
+    padding: 6px 6px;
+    transition: all 300ms ease-out;
+}
+
 /* set selected menubar menuitem */
 PanelMenuBar.menubar .menu .menuitem:active:hover,
 PanelMenuBar.menubar .menu .menuitem:hover {
@@ -431,7 +437,7 @@ WnckPager {
 }
 
 /* prelight of WnckPager */
-MatePanelApplet *:hover {
+MatePanelApplet:hover {
     background-image: linear-gradient(to bottom,
                                       shade (@theme_selected_bg_color, 2.86),
                                       shade (@theme_selected_bg_color, 1.0));
@@ -439,9 +445,9 @@ MatePanelApplet *:hover {
 }
 
 /* Classic icon style */
-/*.mate-panel-menu-bar {
+/.mate-panel-menu-bar {
 	-PanelMenuBar-icon-visible: true;
-}*/
+}
 
 NaTrayApplet {
     background-image: none;
@@ -513,3 +519,4 @@ ShellWindow GtkScrolledWindow .button.flat:hover {
 GtkDialog GtkScrolledWindow .view {
     background-color: @theme_main_color;
 }
+
