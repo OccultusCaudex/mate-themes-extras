@@ -2944,11 +2944,14 @@ GtkLinkButton.button.flat:hover {
     -GtkWidget-focus-line-width: 0;
 }
 
+/* looks ugly with GTK3-3.16 */
+/*
 .notebook :hover {
     -gtk-image-effect: highlight;
     background-color: shade(@theme_bg_color, 1.13);
     color: @theme_fg_color;
 }
+*/
 
 .notebook.frame {
     border-width: 1px;
@@ -5191,6 +5194,11 @@ GtkModelButton.button:selected,
 /*****************
  * Miscellaneous *
  *****************/
+
+/* displays at end of mouse scrolling */
+.overshoot {
+	background-color: alpha (@theme_selected_bg_color, 0.15);
+}
 
 .floating-bar {
     background-image: linear-gradient(to bottom, 
