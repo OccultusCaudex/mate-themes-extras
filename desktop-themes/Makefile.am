@@ -34,14 +34,6 @@ if BUILD_GREEN_SUBMARINE
 green_submarine_SUBDIR = Green-Submarine
 endif
 
-if BUILD_SMOOTLY
-smootly_SUBDIR = Smoothly
-endif
-
-if BUILD_SMOOTLY_BLACK
-smootly_black_SUBDIR = Smoothly-Black
-endif
-
 if BUILD_ZUKITWO
 zukitwo_SUBDIR = Zukitwo
 endif
@@ -56,8 +48,6 @@ SUBDIRS = \
 	$(gnome_cupertino_SUBDIR) \
 	$(gnomishbeige_SUBDIR) \
 	$(green_submarine_SUBDIR) \
-	$(smootly_SUBDIR) \
-	$(smootly_black_SUBDIR) \
 	$(zukitwo_SUBDIR)
 
 DIST_SUBDIRS = \
@@ -70,7 +60,5 @@ DIST_SUBDIRS = \
 	Gnome-Cupertino \
 	GnomishBeige \
 	Green-Submarine \
-	Smoothly \
-	Smoothly-Black \
 	Zukitwo
 
