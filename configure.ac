@@ -1,6 +1,6 @@
 AC_PREREQ(2.53)
 
-AC_INIT([mate-themes-extras], [3.14.6], [http://www.raveit.de])
+AC_INIT([mate-themes-extras], [3.16.0], [http://www.raveit.de])
 
 AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz tar-ustar check-news])
 
@@ -94,24 +94,6 @@ AC_ARG_ENABLE([Green-Submarine],
     enable_green_submarine=$enableval,
     enable_green_submarine=no)
 AM_CONDITIONAL(BUILD_GREEN_SUBMARINE, test "x$enable_green_submarine" = "xyes")
-
-dnl ***************************************************************************
-dnl *** Smoothly checks							    						***
-dnl ***************************************************************************
-AC_ARG_ENABLE([Smoothly],
-    AC_HELP_STRING([--enable-Smoothly], [Install the Smoothly desktop theme.]),
-    enable_smootly=$enableval,
-    enable_smootly=no)
-AM_CONDITIONAL(BUILD_SMOOTLY, test "x$enable_smootly" = "xyes")
-
-dnl ***************************************************************************
-dnl *** Smoothly-Black checks							    				***
-dnl ***************************************************************************
-AC_ARG_ENABLE([Smoothly-Black],
-    AC_HELP_STRING([--enable-Smoothly-Black], [Install the Smoothly-Black desktop theme.]),
-    enable_smootly_black=$enableval,
-    enable_smootly_black=no)
-AM_CONDITIONAL(BUILD_SMOOTLY_BLACK, test "x$enable_smootly_black" = "xyes")
 
 dnl ***************************************************************************
 dnl *** Zukitwo checks							    						***
@@ -275,18 +257,6 @@ desktop-themes/Green-Submarine/gtk-2.0/assets/Makefile
 desktop-themes/Green-Submarine/gtk-3.0/Makefile
 desktop-themes/Green-Submarine/gtk-3.0/assets/Makefile
 desktop-themes/Green-Submarine/metacity-1/Makefile
-desktop-themes/Smoothly/Makefile
-desktop-themes/Smoothly/gtk-2.0/Makefile
-desktop-themes/Smoothly/gtk-2.0/assets/Makefile
-desktop-themes/Smoothly/gtk-3.0/Makefile
-desktop-themes/Smoothly/gtk-3.0/assets/Makefile
-desktop-themes/Smoothly/metacity-1/Makefile
-desktop-themes/Smoothly-Black/Makefile
-desktop-themes/Smoothly-Black/gtk-2.0/Makefile
-desktop-themes/Smoothly-Black/gtk-2.0/assets/Makefile
-desktop-themes/Smoothly-Black/gtk-3.0/Makefile
-desktop-themes/Smoothly-Black/gtk-3.0/assets/Makefile
-desktop-themes/Smoothly-Black/metacity-1/Makefile
 desktop-themes/Zukitwo/Makefile
 desktop-themes/Zukitwo/gtk-2.0/Makefile
 desktop-themes/Zukitwo/gtk-2.0/apps/Makefile
@@ -327,9 +297,6 @@ echo "
 		Install Gnome-Cupertino:            ${enable_gnome_cupertino}
 		Install Green-Submarine:            ${enable_green_submarine}
 		Install GnomishBeige:               ${enable_gnomishbeige}
-		Install Smoothly:                   ${enable_smootly}
-		Install Smoothly-Black:             ${enable_smootly_black}
-		Install Zukitwo:                    ${enable_zukitwo}
 
 	configuration successfully :)  now type make
 "
