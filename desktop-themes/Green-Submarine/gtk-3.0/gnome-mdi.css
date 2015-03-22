@@ -959,7 +959,7 @@ RemminaConnectionWindow .toolbar {
 }
 
 /* dconf editor sidebar */
-DConfDirView .view {
+DConfDirView.view {
     background-color: shade (@theme_bg_color, 1.08);
 }
 
