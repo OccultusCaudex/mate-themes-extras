@@ -1130,3 +1130,8 @@ RemminaConnectionWindow .toolbar {
     border-image: none;
 }
 
+/* dconf editor sidebar */
+DConfDirView .view {
+    background-color: shade (@theme_bg_color, 1.08);
+}
+
