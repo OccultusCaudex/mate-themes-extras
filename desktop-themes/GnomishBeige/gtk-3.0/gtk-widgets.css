@@ -2690,13 +2690,13 @@ GtkIconView.content-view.check:selected {
 .app-notification,
 .app-notification.frame {
 	border-style: solid;
-	border-color: rgba(112, 129, 106, 0.9);
+	border-color: rgba(129, 117, 106, 0.9);
 	border-width: 0 1px 1px 1px;
 	border-radius: 0 0 5px 5px;
 	padding: 8px;
-    background-color: rgba(112, 129, 106, 0.3);
+    background-color: rgba(129, 117, 106, 0.3);
     background-image: linear-gradient(to bottom,
-                                      rgba(112, 129, 106, 0.2),
+                                      rgba(129, 117, 106, 0.2),
                                       transparent 2px);
     background-clip: padding-box;
 	color: @theme_fg_color;
@@ -2716,10 +2716,10 @@ GtkIconView.content-view.check:selected {
 GtkCalendar.header .app-notification .button.titlebutton,
 .app-notification.frame .button {
     color: @theme_selected_fg_color;
-    border-color: rgba(112, 129, 106, 0.9);
+    border-color: rgba(129, 117, 106, 0.9);
     border-image: none;
     background-image: linear-gradient(to bottom,
-                                      rgba(177, 204, 168, 0.9));
+                                      rgba(129, 117, 106, 0.9));
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
     text-shadow: none;
@@ -2751,11 +2751,11 @@ GtkCalendar.header .app-notification.frame .titlebutton.button {
 .app-notification .button:hover,
 .app-notification.frame .button:hover {
     color: @theme_selected_fg_color;
-    border-color: rgba(112, 129, 106, 0.7);
+    border-color: rgba(129, 117, 106, 0.7);
     border-image: none;
     background-color: transparent;
     background-image: linear-gradient(to bottom,
-                                      rgba(177, 204, 168, 0.1));
+                                      rgba(129, 117, 106, 0.2));
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
     text-shadow: none;
@@ -2775,10 +2775,10 @@ GtkCalendar.header .app-notification.frame .titlebutton.button {
 .app-notification.frame .button:backdrop:active,
 .app-notification.frame .button:backdrop:checked {
     color: white;
-    border-color: rgba(112, 129, 106, 0.7);
+    border-color: rgba(129, 117, 106, 0.7);
     background-color: transparent;
     background-image: linear-gradient(to bottom,
-                                      rgba(170, 196, 161, 0.9));
+                                      rgba(129, 117, 106, 0.4));
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -2792,9 +2792,9 @@ GtkCalendar.header .app-notification.frame .titlebutton.button {
 .app-notification.frame .button:insensitive,
 .app-notification.frame .button:backdrop:insensitive {
     color: #878989;
-    border-color: rgba(112, 129, 106, 0.7);
+    border-color: rgba(129, 117, 106, 0.7);
     background-image: linear-gradient(to bottom,
-                                      rgba(198, 207, 181, 0.5));
+                                      rgba(129, 117, 106, 0.5));
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -2806,9 +2806,9 @@ GtkCalendar.header .app-notification.frame .titlebutton.button {
 .app-notification .button:backdrop,
 .app-notification.frame .button:backdrop {
     color: #eeeeec;
-    border-color: rgba(112, 129, 106, 0.7);
+    border-color: rgba(129, 117, 106, 0.7);
     background-image: linear-gradient(to bottom,
-                                      rgba(172, 205, 138, 0.7));
+                                      rgba(129, 117, 106, 0.7));
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
