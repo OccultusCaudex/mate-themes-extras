@@ -91,15 +91,7 @@ CajaWindow CajaEmblemSidebar .scrollbar.trough.vertical {
     border-width: 0 0 0 0;
     border-style: solid;
     border-right-color: shade (@theme_bg_color, 0.96);
-    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-                                           from (shade (@theme_bg_color, 0.96)),
-                                           to (shade (@theme_bg_color, 0.96)));
-    -unico-inner-stroke-width: 0;
     border-left-color: shade (@theme_bg_color, 0.96);
-    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-                                           from (shade (@theme_bg_color, 0.96)),
-                                           to (shade (@theme_bg_dark_color, 0.96)));
-    -unico-inner-stroke-width: 0;
 }
 
 /* selected item in sidebar */
