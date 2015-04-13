@@ -179,8 +179,4 @@ GtkScrolledWindow.frame {
 	border-left-color: shade (@theme_bg_color, 0.76);
 	border-radius: 0;
 	border-style: solid;
-
-	-unico-border-gradient: none;
-	-unico-inner-stroke-width: 0;
-	-unico-outer-stroke-width: 0;
 }
