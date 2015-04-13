@@ -61,11 +61,7 @@
 	-WnckTasklist-fade-overlay-rect: 0;
 	border-width: 1px;
 	border-color: shade (@theme_bg_color, 0.8);
-	/* Highlight drag-drop destination */
-	engine: unico;
-	-unico-focus-border-color: alpha(@theme_selected_bg_color, 0.25);
-    -unico-focus-border-radius: 3;
-    -unico-focus-fill-color: alpha(@theme_selected_bg_color, 0.1);
+	engine: none;
 }
 
 /***************
@@ -2652,6 +2648,7 @@ NemoWindow .primary-toolbar.toolbar .button:active:hover,
 	background-image: linear-gradient(to bottom,
 		alpha(@theme_base_color, 0.0),
 		alpha(@theme_base_color, 0.3));
+
 	border-radius: 0;
 	box-shadow: inset 1px 0 alpha(@borders, 0.6), inset -1px 0 alpha(@borders, 0.6);
 	border-style: none;
