@@ -337,8 +337,7 @@ DbusmenuGtkMenu .menuitem .accelerator:insensitive,
 .menuitem.separator {
     -GtkMenuItem-horizontal-padding: 0;
 	-GtkWidget-separator-height: 1;
-	/* border-color: shade (@menu_bg_dark_color, 0.90);
-    -unico-inner-stroke-color: alpha (shade (@menu_bg_dark_color, 1.18), 0.6); */
+	/* border-color: shade (@menu_bg_dark_color, 0.90) */
     border-image: -gtk-gradient (linear,
 							left top, right top,
 							from (alpha (#000, 0.00)),	

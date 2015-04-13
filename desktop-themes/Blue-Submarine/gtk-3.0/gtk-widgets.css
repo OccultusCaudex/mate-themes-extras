@@ -60,11 +60,7 @@
 	-WnckTasklist-fade-overlay-rect: 0;
 	border-width: 1px;
 	border-color: shade (@theme_bg_color, 0.8);
-	/* Highlight drag-drop destination */
-	engine: unico;
-	-unico-focus-border-color: alpha(@theme_selected_bg_color, 0.25);
-    -unico-focus-border-radius: 3;
-    -unico-focus-fill-color: alpha(@theme_selected_bg_color, 0.1);
+	engine: none;
 }
 
 /***************
