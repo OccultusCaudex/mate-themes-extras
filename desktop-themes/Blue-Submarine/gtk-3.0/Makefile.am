@@ -9,8 +9,7 @@ theme_DATA = \
 	menu.css \
 	scrollbar.css \
 	settings.ini \
-	sidebar.css \
-	tabs.css
+	sidebar.css
 
 EXTRA_DIST = $(theme_DATA)
 
