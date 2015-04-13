@@ -63,10 +63,7 @@
     -GtkWidget-wide-separators: true;
     -WnckTasklist-fade-overlay-rect: 0;
     /* Highlight drag-drop destination */
-    engine: unico;
-    -unico-focus-border-color: alpha(@theme_selected_bg_color, 0.25);
-    -unico-focus-border-radius: 3;
-    -unico-focus-fill-color: alpha(@theme_selected_bg_color, 0.1);
+    engine: none;
     outline-color: alpha(@theme_selected_bg_color, 0.3);
     outline-style: dashed;
     outline-offset: -3px; /* 2px */
