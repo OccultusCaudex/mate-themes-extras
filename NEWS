@@ -1,5 +1,10 @@
 3.16.1
 
+  * fix tooltips for firefox GTK3
+  * rework of GnomishBeige GTK3
+  * improvements for submarine themes GTK3
+  * more adjustments for GTK+-3.16
+
 3.16.0
 
   * first adjustments for gtk+-3.16
