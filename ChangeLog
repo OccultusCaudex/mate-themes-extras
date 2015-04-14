@@ -1,4 +1,19 @@
 Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Tue Apr 14 2015
+release 3.16.1
+
+- fix tooltips for firefox GTK3
+- rework of GnomishBeige GTK3
+- improvements for submarine themes GTK3
+- more adjustments for GTK+-3.16
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:   Mon Mar 02 2015
+release 3.16.0
+
+- first adjustments for gtk+-3.16
+
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
 Date:   Sat Feb 28 2015
 release 3.14.6
 
