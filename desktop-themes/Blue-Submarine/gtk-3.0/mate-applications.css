@@ -1011,6 +1011,11 @@ PlumaWindow .notebook tab .button.flat:hover {
     border-image: none;
 }
 
+PlumaWindow .notebook.frame.top,
+PlumaWindow .notebook.header.top {
+    border-width: 0px 0px 0px 0px;
+}
+
 /***********************
  * Mate-Control-Center *
  ***********************/
