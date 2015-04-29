@@ -2569,7 +2569,6 @@ NemoWindow .primary-toolbar.toolbar .button:checked:hover,
 .inline-toolbar.toolbar .button:active:hover,
 .inline-toolbar.toolbar .button:checked,
 .inline-toolbar.toolbar .button:checked:hover {
-
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@button_base, 0.50)),
@@ -3245,7 +3244,7 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
     border-width: 0 0 1px;
     border-style: solid;
     border-color: shade(@borders, 0.90);
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
     box-shadow: inset 0 -1px shade(@wm_bg_b, 0.95);
     background-color: @theme_bg_dark_color;
     padding: 6px 6px 5px 6px;
@@ -4929,7 +4928,7 @@ GtkModelButton.button:selected,
     background-image: linear-gradient(to bottom,
                                       @wm_bg_a,
                                       @wm_bg_b);
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
 }
 
 .tiled .titlebar {
@@ -5276,23 +5275,35 @@ GtkModelButton.button:selected,
 
 .window-frame {
     border-color: darker(@theme_bg_dark_color);
-    border-radius: 6px 6px 0 0;
+    border-radius: 7px 7px 0 0;
     border-width: 1px;
     border-style: solid;
     background-color: @theme_bg_color;
-    box-shadow: 0 0 0 @wm_shadow;
+    box-shadow: 0 0 0 1px @wm_border, 0 2px 8px 3px @wm_shadow;
     /* this is used for the resize cursor area */
-    margin: 2px;
+    margin: 10px;
 }
  
 .window-frame:backdrop {
     background-color: @theme_bg_dark_color;
-    box-shadow: 0 0 0 @wm_shadow;
+    box-shadow: 0 0 0 1px shade(@wm_border,1.1), 0 2px 5px 1px @wm_shadow;
 }
 
 .window-frame.tiled {
     border-radius: 0;
     background-color: @theme_bg_color;
+}
+
+.window-frame.ssd {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.23);
+}
+
+.window-frame.solid-csd {
+    border-radius: 0;
+    margin: 1px;
+    background-color: @wm_bg_a;
+    border: solid 1px @wm_csd_solid_border_color;
+    box-shadow: none;
 }
 
 .window-frame.csd.popup {
@@ -5303,13 +5314,13 @@ GtkModelButton.button:selected,
 .window-frame.csd.tooltip {
     border-radius: 3px;
     box-shadow: 0 1px 5px shade (@theme_selected_bg_color, 1.3);
+    padding: 4px 4px;
 }
 
 .window-frame.csd.message-dialog {
     border-radius: 7px;
     box-shadow: 0 1px 5px shade (@theme_selected_bg_color, 1.3);
 }
-
 /*********************
  * Spinner Animation *
  *********************/
