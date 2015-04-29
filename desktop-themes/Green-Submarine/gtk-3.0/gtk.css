@@ -260,6 +260,9 @@
 /* terminal view color*/
 @define-color terminal_background_color #343B27;
 
+/* csd border */
+@define-color wm_csd_solid_border_color shade (#3c3c3c, 1.2);
+
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");
 @import url("menu.css");
