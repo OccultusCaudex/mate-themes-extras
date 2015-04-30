@@ -3103,7 +3103,7 @@ GtkLinkButton.button.flat:hover {
 }
 
 .notebook.header.left {
-    border-width: 0px 1px 1px 0px;
+    border-width: 1px 1px 0px 0px;
 }
 
 .notebook.header.right {
