@@ -4700,7 +4700,8 @@ GtkOverlay.osd {
 	-GtkToolbar-button-relief: normal;
 }
 
-.osd.toolbar .button {
+.osd.toolbar .button,
+.osd.toolbar .linked .button {
 	padding: 4px;
 	border-width: 1px;
 	border-radius: 5px;
