@@ -5461,7 +5461,7 @@ GtkModelButton.button:selected,
 
 .window-frame.csd.popup {
     border-radius: 0;
-    box-shadow: 0 0px 0px @theme_shadow_color;
+    box-shadow: 0 1px 5px @theme_shadow_color;
 }
 
 .window-frame.csd.tooltip {
