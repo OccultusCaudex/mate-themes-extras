@@ -4390,6 +4390,10 @@ GtkInfoBar {
     border-color: darker(@info_bg_color);
 }
 
+.warning {
+    color: @warning_fg_color;
+}
+
 .info .button.close,
 .warning .button.close,
 .question .button.close,
@@ -4450,6 +4454,29 @@ GtkInfoBar {
     border-color: darker(@info_bg_color);
     border-style: solid;
     border-width: 1px;
+}
+
+/* Warning Bar */
+GtkInfoBar.horizontal.error {
+    background-color: @error_bg_color;
+    color: @error_fg_color;
+    border-color: darker(@error_bg_color);
+    border-width: 1px ;
+    border-style: solid;
+}
+
+/* Question Bar */
+GtkInfoBar.horizontal.info .horizontal {
+    background-color: @question_bg_color;
+    color: @question_fg_color;
+}
+
+GtkInfoBar.horizontal.info .horizontal .button.flat.raised.close,
+GtkInfoBar.horizontal.info .horizontal .button.flat.raised.close:hover,
+GtkInfoBar.horizontal.info .horizontal .button.flat.raised.close:active ,
+GtkInfoBar.horizontal.info .horizontal .button.flat.raised.close:checked {
+    border-radius: 3px;
+    box-shadow: none;
 }
 
 /***************
