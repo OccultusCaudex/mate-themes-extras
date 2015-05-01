@@ -177,7 +177,7 @@ GtkLabel:insensitive {
     background-clip: padding-box;
     box-shadow: 0 1px 5px shade (@theme_selected_bg_color, 1.3);
 }
-
+ 
 .tooltip * {
     background-color: transparent;
     padding: 4px 4px;
@@ -2568,7 +2568,6 @@ NemoWindow .primary-toolbar.toolbar .button:checked:hover,
 .inline-toolbar.toolbar .button:active:hover,
 .inline-toolbar.toolbar .button:checked,
 .inline-toolbar.toolbar .button:checked:hover {
-
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@button_base, 0.50)),
@@ -2969,7 +2968,7 @@ GtkLinkButton.button.flat:hover {
 }
 
 .notebook.header.left {
-    border-width: 0px 1px 1px 0px;
+    border-width: 0px 1px 0px 0px;
 }
 
 .notebook.header.right {
@@ -3018,7 +3017,7 @@ GtkLinkButton.button.flat:hover {
 
 .notebook tab.top,
 .notebook tab.bottom {
-    padding: 8px 20px 6px;
+    padding: 8px 22px 6px;
 }
 
 .notebook tab.top {
@@ -3210,7 +3209,6 @@ GtkLinkButton.button.flat:hover {
 .notebook.arrow:backdrop:insensitive {
     color: #c7c7c7;
 }
-
 
 /*************************
  * Check and Radio items *
@@ -4914,7 +4912,6 @@ GtkModelButton.button:selected,
 }
 
 .titlebar .button:hover,
-
 .titlebar .button:hover:first-child,
 .titlebar .button:hover:last-child,
 .titlebar .button:hover:only-child {
@@ -5233,7 +5230,7 @@ GtkModelButton.button:selected,
 }
 
 .window-frame.csd.tooltip {
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 1px 5px shade (@theme_selected_bg_color, 1.3);
 }
 
