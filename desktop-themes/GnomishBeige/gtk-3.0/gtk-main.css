@@ -101,6 +101,12 @@
 @define-color wm_b @theme_bg_color;
 @define-color wm_util shade(@theme_bg_color, 1.2);
 @define-color wm_unfocus shade(@theme_bg_color, 1.05);
+@define-color wm_shadow alpha(black, 0.5);
+
+/* csd border */
+@define-color wm_csd_solid_bg shade(@theme_bg_color, 1.03);
+@define-color wm_csd_border_color shade (@selected_bg_color, 1.95);
+@define-color wm_csd_solid_border_color shade (@selected_bg_color, 2.02);
 
 /************************
  * overshoot/undershoot *
