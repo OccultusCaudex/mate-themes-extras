@@ -70,6 +70,10 @@ GtkScale.scale-has-marks-above.slider.vertical:insensitive {
 	border-image: url("assets/button-border.svg") 3 / 3px stretch;
 }
 
+.button.image-button.circular-button {
+    border-image: none;
+}
+
 .button:hover,
 .button:active,
 .button:hover:active,
@@ -143,12 +147,35 @@ GtkScale.scale-has-marks-above.slider.vertical:insensitive {
 }
 
 /* overrride for osd */
-.osd.toolbar .button:hover {
+.osd.toolbar .button:hover,
+.osd.toolbar .button:active,
+.osd.toolbar .button:hover:first-child,
+.osd.toolbar .button:active:first-child,
+.osd.toolbar .button:hover:last-child,
+.osd.toolbar .button:active:last-child {
 	border-image: none;
 }
 
 GtkSwitch.trough:active {
 	border-image: url("assets/switch-trough-border-active.svg") 3 / 3px stretch;
+}
+
+.popover.scale-popup .flat.button.image-button:insensitive {
+   background-image: none;
+   background-color: transparent;
+   border-image: none;
+   border-color: transparent;
+}
+
+.popover.scale-popup .flat.button.image-button {
+   background-image: none;
+   border-image: url("assets/button-border.svg") 3 / 3px stretch;
+}
+
+.popover.scale-popup .flat.button.image-button:hover {
+   background-image: none;
+   border-image: url("assets/button-active-border.svg") 3 / 3px stretch;
+	-gtk-image-effect: highlight;
 }
 
 /*************************
