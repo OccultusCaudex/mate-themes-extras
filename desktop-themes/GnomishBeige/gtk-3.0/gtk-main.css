@@ -57,6 +57,7 @@
 
 @define-color highlighted_border #8f8f8f;
 @define-color internal_element_color #8a8a8a;
+@define-color internal_element_prelight @theme_text_color;
 
 @define-color notebook_border alpha(@frame_color, 0.6); /*#aeaaa6;*/
 @define-color notebook_active_tab_border alpha(@frame_color, 0.6); /*#a6a29e; #9b9b9b;*/
@@ -107,6 +108,16 @@
 
 @define-color overshoot_bg_color alpha (@theme_selected_bg_color, 0.15);
 @define-color overshoot_backdrop_bg_color #D9C5B2;
+
+/*****************
+ * GtkSpinButton *
+ *****************/
+
+@define-color inset_light_color alpha(white, 0.45);
+@define-color inset_dark_color alpha(black, 0.07);
+@define-color inset_link_dark_color alpha(green, 0.37);
+@define-color button_raised_linked_shadow alpha(@theme_base_color, 0.70);
+@define-color button_active_raised_linked_shadow alpha(@theme_base_color, 0.50);
 
 @import url("gtk-main-common.css");
 @import url("gtk-widgets.css");
