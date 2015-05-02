@@ -1164,6 +1164,7 @@ GtkTreeMenu .menuitem * {
 .spinbutton .button:checked,
 .spinbutton .button:insensitive {
     border-radius: 0px 0 0 0px;
+    border-image: none;
     padding: 6px 3px;
 }
 
@@ -1173,6 +1174,7 @@ GtkTreeMenu .menuitem * {
 .spinbutton .button:first-child:checked,
 .spinbutton .button:first-child:insensitive {
     border-radius: 3px 0 0 3px;
+    border-image: none;
     padding: 6px 3px;
 }
 
@@ -1182,6 +1184,7 @@ GtkTreeMenu .menuitem * {
 .spinbutton .button:last-child:checked,
 .spinbutton .button:last-child:insensitive {
     border-radius: 0 3px 3px 0;
+    border-image: none;
     padding: 6px 3px;
 }
 
