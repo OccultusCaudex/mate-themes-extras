@@ -2661,16 +2661,16 @@ GtkCalendar.header .stack-switcher > .titlebutton.button {
  * GtkSpinButton *
  *****************/
 
+.horizontal.entry.spinbutton {
+   padding: 6px 5px;
+}
+
 .spinbutton .button {
     color: @internal_element_color;
-    padding: 2px 6px;
     border-width: 0;
     border-radius: 0;
     border-style: none;
     border-image: none;
-}
-
-.spinbutton .button {
     background-color: transparent;
     background-image: none;
 }
@@ -2692,19 +2692,29 @@ GtkCalendar.header .stack-switcher > .titlebutton.button {
 }
 
 .spinbutton .button,
+.spinbutton .button:hover,
+.spinbutton .button:focus,
 .spinbutton .button:active,
-.spinbutton .button:checked,
-.spinbutton .button:hover {
+.spinbutton .button:checked {
     border-radius: 0px 0px 0px 0px;
     color: @internal_element_prelight;
+    box-shadow: none;
     box-shadow: inset  0px  1px shade(@selected_bg_color, 1.05),
                 inset  1px  0px shade(@selected_bg_color, 0.97),
-                inset -1px  0px shade(@selected_bg_color, 0.93),
                 inset  0px -1px shade(@selected_bg_color, 0.93);
 }
 
 .spinbutton .button:hover {
-    border-radius: 0px 0px 0px 0px;
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@button_gradient1, 1.03)),
+                                     color-stop (0.48, shade(@button_gradient2, 1.03)),
+                                     color-stop (0.52, shade(@button_gradient3, 1.03)),
+                                     to   (shade(@button_gradient4, 1.01)));
+}
+
+.spinbutton .button:active,
+.spinbutton .button:checked {
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade (@theme_bg_color, 1.20)),
@@ -2718,7 +2728,6 @@ GtkCalendar.header .stack-switcher > .titlebutton.button {
 .spinbutton .button:first-child:active,
 .spinbutton .button:first-child:checked {
     border-radius: 3px 0 0 3px;
-    box-shadow: none;
 }
 
 .spinbutton .button:last-child,
@@ -2726,7 +2735,16 @@ GtkCalendar.header .stack-switcher > .titlebutton.button {
 .spinbutton .button:last-child:active,
 .spinbutton .button:last-child:checked {
     border-radius: 0 3px 3px 0;
-    color: @internal_element_prelight;
+}
+
+.spinbutton .button:first-child,
+.spinbutton .button:first-child:hover,
+.spinbutton .button:first-child:active,
+.spinbutton .button:first-child:checked,
+.spinbutton .button:last-child,
+.spinbutton .button:last-child:hover,
+.spinbutton .button:last-child:active,
+.spinbutton .button:last-child:checked {
     box-shadow: inset  0px  1px shade(@selected_bg_color, 1.05),
                 inset  1px  0px shade(@selected_bg_color, 0.97),
                 inset -1px  0px shade(@selected_bg_color, 0.93),
@@ -2735,27 +2753,6 @@ GtkCalendar.header .stack-switcher > .titlebutton.button {
 
 .spinbutton .button:dir(rtl) {
     box-shadow: inset -1px 0 @inset_dark_color;
-}
-
-/* Add back the glowy effect from the entry covered by the pushed button background*/
-.spinbutton .button:active,
-.spinbutton .button:checked {
-    box-shadow: inset 1px 0 @inset_dark_color,
-                inset 0 1px alpha(@theme_selected_bg_color, 0.2),
-                inset 0 -1px alpha(@theme_selected_bg_color, 0.2);
-}
-
-.spinbutton .button:first-child:active,
-.spinbutton .button:first-child:checked {
-    box-shadow: inset 1px 1px alpha(@theme_selected_bg_color, 0.2),
-                inset 0 -1px alpha(@theme_selected_bg_color, 0.2);
-}
-
-.spinbutton .button:last-child:active,
-.spinbutton .button:last-child:checked {
-    box-shadow: inset 1px 0 @inset_dark_color,
-                inset 0 1px alpha(@theme_selected_bg_color, 0.2),
-                inset -1px -1px alpha(@theme_selected_bg_color, 0.2);
 }
 
 .spinbutton.vertical .button {
@@ -5269,15 +5266,10 @@ GtkModelButton.button:selected,
 /*********************
  * Spinner Animation *
  *********************/
-/* This is CPU-intensive, no animation */
-/*
-@keyframes spin {
-    to { -gtk-icon-transform: rotate(1turn); }
-}
-*/
+/* This is could be CPU-intensive */
 
 @keyframes spin {
-    to { -gtk-icon-transform: rotate(0turn); }
+    to { -gtk-icon-transform: rotate(1turn); }
 }
 
 .spinner {
@@ -5289,7 +5281,9 @@ GtkModelButton.button:selected,
 
 .spinner:active {
     opacity: 1;
-    animation: spin 1s linear infinite; }
+    animation: spin 1s linear infinite;
+}
+
 .spinner:active:insensitive {
     opacity: 0.5;
 }
