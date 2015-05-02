@@ -1554,11 +1554,26 @@ GtkVolumeButton.flat.button {
 	-GtkRange-trough-under-steppers: 0;
 }
 
-.scrollbar.trough {
-	background-color: transparent;
+.scrollbar.trough.vertical {
+	background-color: shade(@theme_bg_color, 0.95);
 	background-image: none;
-	border-style: none;
-	border-width: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-top: 0px;
+	border-bottom: 0px;
+    border-color: shade(@theme_bg_color, 0.75);
+	border-radius: 0px;
+}
+
+.scrollbar.trough.horizontal {
+	background-color: shade(@theme_bg_color, 0.95);
+	background-image: none;
+	border-style: solid;
+	border-width: 1px;
+	border-left: 0px;
+	border-right: 0px;
+    border-color: shade(@theme_bg_color, 0.75);
+	border-radius: 0px;
 }
 
 .scrollbar.slider {
@@ -1644,23 +1659,38 @@ GtkVolumeButton.flat.button {
 }
 
 .scrollbar.button,
-.scrollbar.button.horizontal,
 .scrollbar.button.vertical {
 	color: @theme_fg_color; /*@internal_element_color*/
 	border-image: none;
-	border-style: none;
-	border-width: 0px;
+	border-style: solid;
+    border-color: shade(@theme_bg_color, 0.75);
+	border-radius: 0px;
+	border-width: 1px;
+	border-top: 0px;
+	border-bottom: 0px;
 	background-image: none;
-	background-color: transparent;
+	background-color: shade(@theme_bg_color, 0.9);
+}
+
+.scrollbar.button.horizontal {
+	color: @theme_fg_color; /*@internal_element_color*/
+	border-image: none;
+	border-style: solid;
+    border-color: shade(@theme_bg_color, 0.75);
+	border-radius: 0px;
+	border-width: 1px;
+	border-left: 0px;
+	border-right: 0px;
+	background-image: none;
+	background-color: shade(@theme_bg_color, 0.9);
 }
 
 .scrollbar.button:hover,
 .scrollbar.button.horizontal:hover,
 .scrollbar.button.vertical:hover {
 	background-image: none;
-	background-color: @theme_main_color;
-	/*border-color: shade(@highlighted_border, 1.1);*/
-	color: shade(@highlighted_border, 0.8);
+	background-color: shade(@theme_bg_color, 0.95);
+	color: @theme_fg_color;
 }
 
 .scrollbar.button:hover:active,
@@ -1668,7 +1698,6 @@ GtkVolumeButton.flat.button {
 	background-image: linear-gradient(to top,
 	                                  shade(@theme_bg_color, 1.6),
 	                                  shade(@toolbar_gradient_base, 0.88));
-	/*border-color: shade(@highlighted_border, 1.1);*/
 	border-image: none;
 	color: @theme_fg_color;
 	border-image: none;
@@ -1684,12 +1713,10 @@ GtkVolumeButton.flat.button {
 
 .scrollbar.button:insensitive {
 	background-image: none;
-	background-color: @theme_bg_color;
-	color: transparent;
-	/*border-color: alpha(@internal_element_color, 0.3);*/
-	/* does Nautilus need these? */
-	/*border-radius: 4px;
-	border-width: 1px;*/
+	background-color: @insensitive_bg_color;
+	color: @insensitive_fg_color;
+	border-radius: 0px;
+	border-width: 0px;
 }
 
 .scrollbar.slider:insensitive {
