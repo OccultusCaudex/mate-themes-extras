@@ -101,6 +101,13 @@
 @define-color wm_util shade(@theme_bg_color, 1.2);
 @define-color wm_unfocus shade(@theme_bg_color, 1.05);
 
+/************************
+ * overshoot/undershoot *
+ ************************/
+
+@define-color overshoot_bg_color alpha (@theme_selected_bg_color, 0.15);
+@define-color overshoot_backdrop_bg_color #D9C5B2;
+
 @import url("gtk-main-common.css");
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");
