@@ -461,7 +461,7 @@ GtkTreeView .separator,
 	border-width: 1px;
 	border-style: none;
 	border-radius: 3px;
-	padding: 4px 4px;
+	padding: 6px 4px;
 	color: @theme_text_color;
 }
 
@@ -1126,8 +1126,12 @@ GtkComboBox .button {
 	padding: 3px;
 }
 
+GtkComboBox.combobox-entry .entry{
+    padding: 6px;
+}
+
 GtkComboBox.combobox-entry .button {
-    padding: 0px;
+    padding: 2px;
 }
 
 /*GtkComboBox .menu *,*/
@@ -1154,7 +1158,41 @@ GtkTreeMenu .menuitem * {
     transition: all 400ms ease-out;
 }
 
-.button.image-button,
+.button.text-button,
+GtkFileChooserButton.horizontal .button {
+    padding: 4px;
+}
+
+GtkFontButton.button {
+    padding: 5px 4px;
+}
+
+GtkColorButton.button {
+    padding: 6px 4px;
+}
+
+GtkScaleButton.flat.button,
+GtkVolumeButton.flat.button {
+    padding: 4px 3px;
+    border-radius: 3px;
+    background-color: transparent;
+    box-shadow: inset 0 1px rgba(255,255,255,0), 0 1px rgba(255,255,255,0);
+}
+
+.button.image-button {
+    padding: 6px 5px;
+}
+
+.button.image-button.circular-button {
+    border-image: none;
+    border-color: @button_border;
+}
+
+.button.image-button.circular-button:hover {
+    border-image: none;
+    border-color: @keyboard_focus_border;
+}
+
 .primary-toolbar.toolbar .button.image-button {
     padding: 3px 4px 4px;
 }
@@ -1283,7 +1321,7 @@ GtkTreeMenu .menuitem * {
  * GtkSpinButton *
  *****************/
 
-.horizontal.entry.spinbutton {
+.entry.horizontal.spinbutton {
    padding: 4px 5px;
 }
 
@@ -2008,7 +2046,7 @@ GtkCalendar.header .stack-switcher > .button.titlebutton > GtkImage {
 .stack-switcher > .button.image-button, .header-bar .stack-switcher > .titlebutton.button,
 .titlebar .stack-switcher > .titlebutton.button,
 GtkCalendar.header .stack-switcher > .titlebutton.button {
-	padding: 5px 2px;
+	padding: 4px 1px;
 }
 .stack-switcher > .button.needs-attention > GtkLabel, .stack-switcher > .button.needs-attention > GtkImage {
 	animation: needs_attention 150ms ease-in;
@@ -2232,6 +2270,10 @@ GtkOverlay.osd {
 	border-style: solid;
 
 	box-shadow: none;
+}
+
+.osd.toolbar .flat.button.image-button {
+    box-shadow: none;
 }
 
 .osd.toolbar .separator {
