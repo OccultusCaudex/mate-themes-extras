@@ -1171,6 +1171,10 @@ GtkColorButton.button {
     padding: 6px 4px;
 }
 
+.button.list-row GtkLabel{
+   color: @theme_fg_color;
+}
+
 GtkScaleButton.flat.button,
 GtkVolumeButton.flat.button {
     padding: 4px 3px;
@@ -1529,7 +1533,7 @@ GtkVolumeButton.flat.button {
     padding: 5px 1px 5px 1px;
     border-color: alpha(@borders, 0.1);
     box-shadow: inset 1px  0px alpha(@borders, 0.4),
-                         inset -1px 0px alpha(@borders, 0.4);
+                inset -1px 0px alpha(@borders, 0.4);
 }
 
 .spinbutton.vertical.entry:focus {
