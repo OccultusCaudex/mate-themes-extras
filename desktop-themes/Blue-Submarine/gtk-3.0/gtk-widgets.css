@@ -637,6 +637,11 @@ GtkLevelBar.vertical {
     border-style: none;
 }
 
+.scale:insensitive,
+.vertical.scale:insensitive {
+    background-color: transparent;
+}
+
 .scale.mark {
     color: mix(@theme_bg_color, @theme_text_color, 0.56);
 }
