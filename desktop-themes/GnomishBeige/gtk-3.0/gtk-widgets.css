@@ -34,7 +34,7 @@
 	outline-style: dashed;
 	outline-offset: 2px;
 	outline-width: 0px; /* disable ugly focus-line */
-	-gtk-icon-style: regular; /* no symbolic icons */
+	/*-gtk-icon-style: regular; *//* no symbolic icons */
 }
 
 /***************
@@ -130,6 +130,10 @@
 /*****************
  * Miscellaneous *
  *****************/
+
+GtkExpander {
+   -gtk-icon-style: regular;
+}
 
 .content-view.view.rubberband,
 .view.rubberband,
@@ -525,6 +529,7 @@ GtkCalendar {
 }
 
 GtkScrolledWindow.frame {
+	-gtk-icon-style: regular;
 	border-style: solid;
 	border-color: @borders;
 	border-width: 1px;
@@ -960,6 +965,7 @@ GtkTreeMenu .menuitem * {
  * Buttons *
  ***********/
 .button {
+    -gtk-icon-style: regular;
     /* Due to a bug somewhere in gtk or cairo,
     a padding of zero (or even one) doesn't work always! */
     padding: 2px;
@@ -2155,18 +2161,27 @@ GtkPopover .separator {
 	/* Due to a bug somewhere in gtk or cairo,
 	   a padding of zero (or even one) doesn't work always!!! */
 	padding: 4px 4px 4px 4px;
-
 	border-radius: 3px;
 	border-width: 1px;
 	border-style: solid;
 	text-shadow: 0 -1px black;
-
 	color: #D9D9D9;
 	background-image: -gtk-gradient (radial,
 					0.5 -2.0, 2.0,
 					0.5 -2.0, 3.0,
 					from (shade(@button_gradient_color_a, 1.5)),
 					to (shade(@button_gradient_color_b, 1.1)));
+}
+
+.titlebar .titlebutton {
+    /* fake request for hardcoded icons,
+     to avoid usage of regular window-close button*/
+    -gtk-icon-style: requested;
+    border-width: 0px;
+    border-style: none;
+    border-image-source: none;
+    background-image: none;
+    padding: 4px 0px 4px 0px;
 }
  
 .titlebar .titlebutton:hover,
@@ -2179,7 +2194,21 @@ GtkPopover .separator {
 	                                  @button_hover_gradient_color_a,
 	                                  @button_hover_gradient_color_b);
 }
- 
+
+.titlebar .titlebutton:hover {
+    border-width: 0px;
+    border-style: none;
+    border-image-source: none;
+    border-color: transparent;
+    background-image: none;
+    background-color: transparent;
+}
+
+/* avoid double displaying of window controls */
+.titlebar .button.titlebutton GtkImage {
+    color: transparent;
+}
+
 .titlebar .titlebutton:active,
 .titlebar .titlebutton:active:hover,
 .header-bar.frame.titlebar:active,
@@ -2898,6 +2927,15 @@ GtkInfoBar {
 .dim-label:selected:focus {
 	color: mix (@theme_selected_fg_color, @theme_base_color, 0.50);
 	text-shadow: none;
+}
+
+/***********
+ * Sidebar *
+ ***********/
+.sidebar,
+GtkPlacesSidebar.sidebar .view {
+    -gtk-icon-style: regular;
+    background-color: shade(@theme_bg_color, 1.03);
 }
 
 .sidebar.separator,
