@@ -4,17 +4,16 @@
 
 /**** View ***/
 
-/* Look out !
-FIXME This is the background color of caja view */
-/*background of icon view */
-CajaView .entry {
-    background-color: shade(@base_color, 1.0);
-}
-
-/*background of list view */
-CajaWindow .view {
+/* background of all views */
+CajaNavigationWindow .view {
     background-color: shade (@base_color, 1.0);
     color: @theme_fg_color;
+}
+
+/* do not flash the desktop with a color during theme switching */
+CajaDesktopWindow FMDesktopIconView .view {
+    background-color: transparent;
+    background-image: none;
 }
 
 .caja-inactive-pane .view {
