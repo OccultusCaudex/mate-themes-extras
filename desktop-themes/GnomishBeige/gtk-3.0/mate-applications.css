@@ -4,7 +4,20 @@
 
 /* background of all views */
 CajaWindow .view {
-    background-color: shade(@base_color, 1.05)
+    background-color: shade(@base_color, 1.05);
+}
+
+CajaNotebook .vertical FMIconView.frame,
+CajaNotebook .vertical FMListView.frame {
+    border-color: alpha(@frame_color, 0.6);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+}
+
+CajaWindow FMIconView.frame {
+    border-color: alpha(@frame_color, 0.6);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
 }
 
 /* FIXME, doesn't work */
@@ -44,8 +57,94 @@ CajaView .view .entry:focus {
 }*/
 
 /* the small line between sidebar and view */
-CajaWindow * {
-	-GtkPaned-handle-size: 2px;
+CajaWindow GtkPaned.horizontal {
+    background-color: shade(@theme_bg_color, 0.96);
+    -GtkPaned-handle-size: 4px;
+}
+
+CajaWindow FMTreeView .scrollbar.trough.vertical,
+CajaWindow CajaNotesViewer .scrollbar.trough.vertical,
+CajaWindow CajaPlacesSidebar .scrollbar.trough.vertical,
+CajaWindow CajaHistorySidebar .scrollbar.trough.vertical,
+CajaWindow CajaEmblemSidebar .scrollbar.trough.vertical {
+	border-top: 0px;
+	border-bottom: 0px;
+	border-right: 0px;
+}
+
+CajaWindow FMTreeView .scrollbar.trough.horizontal,
+CajaWindow CajaNotesViewer .scrollbar.trough.horizontal {
+	border-bottom: 0px;
+	border-right: 0px;
+	border-left: 0px;
+}
+
+CajaWindow FMTreeView .scrollbar.button.vertical.top,
+CajaWindow FMTreeView .scrollbar.button.vertical.top:hover,
+CajaWindow FMTreeView .scrollbar.button.vertical.top:active,
+CajaWindow FMTreeView .scrollbar.button.vertical.top:insensitive,
+CajaWindow CajaNotesViewer .scrollbar.button.vertical.top,
+CajaWindow CajaNotesViewer .scrollbar.button.vertical.top:hover,
+CajaWindow CajaNotesViewer .scrollbar.button.vertical.top:active,
+CajaWindow CajaNotesViewer .scrollbar.button.vertical.top:insensitive,
+CajaWindow CajaPlacesSidebar .scrollbar.button.vertical.top,
+CajaWindow CajaPlacesSidebar .scrollbar.button.vertical.top:hover,
+CajaWindow CajaPlacesSidebar .scrollbar.button.vertical.top:active,
+CajaWindow CajaPlacesSidebar .scrollbar.button.vertical.top:insensitive,
+CajaWindow CajaHistorySidebar .scrollbar.button.vertical.top,
+CajaWindow CajaHistorySidebar .scrollbar.button.vertical.top:hover,
+CajaWindow CajaHistorySidebar .scrollbar.button.vertical.top:active,
+CajaWindow CajaHistorySidebar .scrollbar.button.vertical.top:insensitive,
+CajaWindow CajaEmblemSidebar .scrollbar.button.vertical.top,
+CajaWindow CajaEmblemSidebar .scrollbar.button.vertical.top:hover,
+CajaWindow CajaEmblemSidebar .scrollbar.button.vertical.top:active,
+CajaWindow CajaEmblemSidebar .scrollbar.button.vertical.top:insensitive {
+	border-width: 0px 0px 0px 1px;
+}
+
+CajaWindow FMTreeView .scrollbar.button.vertical.bottom,
+CajaWindow FMTreeView .scrollbar.button.vertical.bottom:hover,
+CajaWindow FMTreeView .scrollbar.button.vertical.bottom:active,
+CajaWindow FMTreeView .scrollbar.button.vertical.bottom:insensitive,
+CajaWindow CajaNotesViewer .scrollbar.button.vertical.bottom,
+CajaWindow CajaNotesViewer .scrollbar.button.vertical.bottom:hover,
+CajaWindow CajaNotesViewer .scrollbar.button.vertical.bottom:active,
+CajaWindow CajaNotesViewer .scrollbar.button.vertical.bottom:insensitive,
+CajaWindow CajaPlacesSidebar .scrollbar.button.vertical.bottom,
+CajaWindow CajaPlacesSidebar .scrollbar.button.vertical.bottom:hover,
+CajaWindow CajaPlacesSidebar .scrollbar.button.vertical.bottom:active,
+CajaWindow CajaPlacesSidebar .scrollbar.button.vertical.bottom:insensitive,
+CajaWindow CajaHistorySidebar .scrollbar.button.vertical.bottom,
+CajaWindow CajaHistorySidebar .scrollbar.button.vertical.bottom:hover,
+CajaWindow CajaHistorySidebar .scrollbar.button.vertical.bottom:active,
+CajaWindow CajaHistorySidebar .scrollbar.button.vertical.bottom:insensitive,
+CajaWindow CajaEmblemSidebar .scrollbar.button.vertical.bottom,
+CajaWindow CajaEmblemSidebar .scrollbar.button.vertical.bottom:hover,
+CajaWindow CajaEmblemSidebar .scrollbar.button.vertical.bottom:active,
+CajaWindow CajaEmblemSidebar .scrollbar.button.vertical.bottom:insensitive {
+	border-width: 0px 0px 0px 1px;
+}
+
+CajaWindow FMTreeView .scrollbar.button.horizontal.left,
+CajaWindow FMTreeView .scrollbar.button.horizontal.left:hover,
+CajaWindow FMTreeView .scrollbar.button.horizontal.left:active,
+CajaWindow FMTreeView .scrollbar.button.horizontal.left:insensitive,
+CajaWindow CajaNotesViewer .scrollbar.button.horizontal.left,
+CajaWindow CajaNotesViewer .scrollbar.button.horizontal.left:hover,
+CajaWindow CajaNotesViewer .scrollbar.button.horizontal.left:active,
+CajaWindow CajaNotesViewer .scrollbar.button.horizontal.left:insensitive {
+	border-width: 1px 0px 0px 0px;
+}
+
+CajaWindow FMTreeView .scrollbar.button.horizontal.right,
+CajaWindow FMTreeView .scrollbar.button.horizontal.right:hover,
+CajaWindow FMTreeView .scrollbar.button.horizontal.right:active,
+CajaWindow FMTreeView .scrollbar.button.horizontal.right:insensitive,
+CajaWindow CajaNotesViewer .scrollbar.button.horizontal.left,
+CajaWindow CajaNotesViewer .scrollbar.button.horizontal.left:hover,
+CajaWindow CajaNotesViewer .scrollbar.button.horizontal.left:active,
+CajaWindow CajaNotesViewer .scrollbar.button.horizontal.left:insensitive {
+	border-width: 1px 0px 0px 0px;
 }
 
 CajaWindow GtkScrolledWindow.frame {
@@ -105,37 +204,40 @@ CajaWindow .button.flat:hover {
 
 /* caja sidebar */
 CajaWindow FMTreeView .view,
-CajaWindow CajaNotesViewer .view,
 CajaWindow CajaPlacesSidebar .view,
 CajaWindow CajaHistorySidebar .view,
-CajaWindow CajaInformationPanel GtkVBox,
+CajaWindow CajaInformationPanel GtkVBox {
+    background-color: shade(@theme_bg_color, 0.92);
+    border-width: 0px;
+}
+
+CajaWindow CajaNotesViewer .view {
+    background-color: shade(@theme_bg_color, 1.05);
+    border-width: 0px;
+}
+
 CajaWindow CajaEmblemSidebar GtkViewport {
     background-color: shade(@theme_bg_color, 0.96);
     border-width: 0px;
 }
 
-CajaWindow FMTreeView .frame,
-CajaWindow CajaNotesViewer .frame,
-CajaWindow CajaPlacesSidebar .frame,
-CajaWindow CajaHistorySidebar .frame,
-CajaWindow CajaEmblemSidebar .frame {
-    border-width: 0px;
+CajaWindow FMTreeView.frame,
+CajaWindow CajaNotesViewer.frame,
+CajaWindow CajaPlacesSidebar.frame,
+CajaWindow CajaHistorySidebar.frame,
+CajaWindow CajaEmblemSidebar GtkViewport.frame,
+CajaWindow CajaInformationPanel .vertical {
+    border-color: alpha(@frame_color, 0.6);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
 }
 
-CajaWindow FMTreeView .scrollbar.button,
-CajaWindow CajaNotesViewer .scrollbar.button,
-CajaWindow CajaEmblemSidebar .scrollbar.button,
-CajaWindow CajaPlacesSidebar .scrollbar.button,
-CajaWindow CajaHistorySidebar .scrollbar.button {
-    color: transparent;
+CajaWindow CajaInformationPanel .vertical CajaSidebarTitle {
+    border-width: 0px 1px 0px 1px;
 }
 
-CajaWindow FMTreeView .scrollbar.button:hover,
-CajaWindow CajaNotesViewer .scrollbar.button:hover,
-CajaWindow CajaEmblemSidebar .scrollbar.button:hover,
-CajaWindow CajaPlacesSidebar .scrollbar.button:hover,
-CajaWindow CajaHistorySidebar .scrollbar.button:hover {
-    color: @theme_fg_color;
+CajaWindow CajaInformationPanel .vertical .horizontal .vertical {
+     border-width: 0px 0px 0px 0px;
 }
 
 CajaWindow FMTreeView .cell:selected,
