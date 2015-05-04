@@ -1,5 +1,10 @@
 3.16.2
 
+  * more adjustments for gtk+-3.16
+  * enable shadows for csd windows
+  * re-work of GnomishBeige theme
+  * adjustments for Submarine themes
+
 3.16.1
 
   * fix tooltips for firefox GTK3
