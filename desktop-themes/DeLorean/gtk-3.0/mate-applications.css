@@ -1,16 +1,14 @@
 /* caja */
 
-/* Look out !
-FIXME This is the background color of caja view */
-
-CajaView .entry {
-    background-color: @theme_base_color;
+/* background of all views */
+CajaNavigationWindow .view {
+	background-color: #AEAEAE;
 }
 
-/*FIXME normaly this isn't the right entry for adjusting
-the sidebar background color*/
-CajaWindow .view {
-	background-color: #AEAEAE;
+/* do not flash the desktop with a color during theme switching */
+CajaDesktopWindow FMDesktopIconView .view {
+    background-color: transparent;
+    background-image: none;
 }
 
 .caja-canvas-item {
