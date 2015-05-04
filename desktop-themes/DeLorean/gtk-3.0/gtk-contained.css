@@ -4555,11 +4555,11 @@ GtkCalendar.header GtkVolumeButton.button.titlebutton {
 .window-frame {
   border-radius: 7px 7px 0 0;
   border-width: 0px;
-  box-shadow: 0 0 0 @wm_shadow;
+  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.23);
   /* this is used for the resize cursor area */
   margin: 2px; }
   .window-frame:backdrop {
-    box-shadow: 0 0 0 @wm_shadow; }
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.18); }
   .window-frame.tiled {
     border-radius: 0; }
   .window-frame.csd.popup {
@@ -4571,6 +4571,23 @@ GtkCalendar.header GtkVolumeButton.button.titlebutton {
   .window-frame.csd.message-dialog {
     border-radius: 7px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
+
+.window-frame.ssd {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.23);
+}
+
+.window-frame.solid-csd {
+    border-radius: 0;
+    margin: 2px;
+    background-color: @wm_bg_c;
+    border: solid 1px @wm_csd_solid_border_color;
+    box-shadow: none;
+}
+
+.window-frame.csd.popup {
+    border-radius: 0;
+    box-shadow: 0 1px 5px @wm_shadow;
+}
 
 .maximized .titlebar,
 .maximized .header-bar {
@@ -4741,6 +4758,7 @@ GdMainListView.view.songs-list.content-view:backdrop {
 @define-color wm_background_dark_overlay #aaaaaa;
 @define-color wm_bg_a shade(#ededed, 1.2);
 @define-color wm_bg_b #ededed;
+@define-color wm_bg_c @theme_bg_color;
 @define-color wm_shadow alpha(black, 0.35);
 @define-color wm_border alpha(black, 0.18);
 @define-color wm_button_hover_color_a #a7a7a7;
@@ -4748,6 +4766,7 @@ GdMainListView.view.songs-list.content-view:backdrop {
 @define-color wm_button_active_color_a #6a6a6a;
 @define-color wm_button_active_color_b #6c6c6c;
 @define-color wm_button_active_color_c #777777;
+@define-color wm_csd_solid_border_color @theme_bg_color;
 @define-color content_view_bg #ffffff;
 
 @import url("nautilus-fix.css");
