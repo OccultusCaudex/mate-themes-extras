@@ -20,6 +20,7 @@ theme_DATA = \
 	dnd-counter.svg \
 	grid-selection-checked.svg \
 	grid-selection-unchecked.svg \
+	panel-grid.svg \
 	radio-menuitem-checked-insensitive.svg \
 	radio-menuitem-checked-prelight.svg \
 	radio-menuitem-checked.svg \

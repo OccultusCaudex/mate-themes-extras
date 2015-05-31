@@ -617,25 +617,45 @@ CajaPathBar .button:checked:hover {
  ****************/
 
 /* the panel bar itself */
-.mate-panel-menu-bar,
-MatePanelApplet > GtkMenuBar.menubar,
-PanelToplevel,
-PanelWidget,
-PanelAppletFrame,
-MatePanelAppletFrameDBus,
-MatePanelAppletContainer,
-MatePanelApplet {
-    background-image: none;
+.mate-panel-menu-bar {
     background-color: @theme_bg_dark_color;
-    padding: 0;
-    color: @theme_fg_color;
+    background-image: none;
+    /* normal panel */
+    color: @menu_fg_dark_color;
+    /* transparent panel light desktop background*/
+/*    color: @theme_fg_color; */
     text-shadow: none;
+}
+
+/* first make all transparent */
+WnckSelector.menubar,
+PanelMenuBar.menubar,
+WnckSelector GtkMenuItem,
+PanelMenuBar GtkMenuItem,
+MatePanelApplet GtkToggleButton.button {
+    border-image: none;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* dictionary applet */
+GdictApplet .entry {
+    /* normal panel */
+    color: @menu_fg_dark_color;
+    /* transparent panel light desktop background */
+/*    color: @theme_fg_color; */
+    background-image: none;
+    background-color: transparent;
+    border-width: 1px;
+    padding: 3px 4px;
 }
 
 MatePanelApplet {
     border-width: 0;
 }
 
+MatePanelAppletFrameDBus PanelSeparator,
 PanelSeparator {
     border-width: 0;
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -643,6 +663,14 @@ PanelSeparator {
                                      to (shade (@theme_bg_dark_color, 0.95)));
     color: shade (@theme_fg_dark_color, 0.45);
     text-shadow: none;
+}
+
+/* the grid left from wnckpager and wncktasklist */
+MatePanelAppletFrameDBus {
+    background-image: -gtk-scaled(url("assets/panel-grid.svg"));
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 /* set normal menubar button */
@@ -678,7 +706,7 @@ PanelMenuBar.menubar .menu .menuitem {
 PanelMenuBar.menubar .menu .menuitem:checked:hover,
 PanelMenuBar.menubar .menu .menuitem:active:hover,
 PanelMenuBar.menubar .menu .menuitem:hover {
-    padding: 6px 6px;
+    padding: 6px;
     background-color: shade (@theme_bg_dark_color, 1.2);
     background-image: none;
     border-radius: 6px;
@@ -695,19 +723,16 @@ PanelMenuBar.menubar .menu .menuitem:hover {
 
 /* Mate menu button normal */
 /* makes the arrow visible, nothing more works */
-PanelMenuButton.button,
-.mate-panel-menu-bar .menubutton .button {
+PanelMenuButton.button {
     background-image: none;
     background-color: transparent;
     color: shade (@menu_fg_color, 1.00);
 }
 
-/* Mate menu button hover */
-PanelMenuButton.button:hover,
-.mate-panel-menu-bar .menubutton .button:hover {
-    background-color: transparent;
-    color: shade (@selected_bg_color, 1.60);
-    -gtk-icon-source: url("assets/mate-icon.png");
+/* Mate menu menuitem */
+PanelMenuButton .menu .menuitem,
+PanelMenuButton .menu .menuitem:hover {
+    padding: 6px;
 }
 
 /* desktop-applet, clockapplet, drivemount, character-map,
@@ -716,22 +741,16 @@ dictionary */
 MatePanelApplet .button,
 MatePanelApplet .button.flat {
     background-image: none;
-    background-color: @theme_bg_dark_color;
-    border-color: shade (@theme_selected_bg_color, 1.30);
+    background-color: transparent;
+/*    border-color: shade (@theme_selected_bg_color, 1.30); */
     border-radius: 5px;
-    border-width: 0 0 0 0;
-    color: shade (@theme_text_dark_color, 0.65);
+    border-width: 0px;
+    /* normal panel */
+    color: @menu_fg_dark_color;
+    /* transparent panel light desktop background*/
+/*    color: @theme_fg_color; */
     text-shadow: none;
-    padding: 2px;
-/* needed to override general button settings */
-    box-shadow: inset  0px  2px @theme_bg_dark_color,
-                inset  2px  0px @theme_bg_dark_color,
-                inset -2px  0px @theme_bg_dark_color,
-                inset  0px -2px @theme_bg_dark_color,
-                inset  0px  1px @theme_bg_dark_color,
-                inset  1px  0px @theme_bg_dark_color,
-                inset -1px  0px @theme_bg_dark_color,
-                inset  0px -1px @theme_bg_dark_color;
+    padding: 6px;
 }
 
 MatePanelApplet .button:active:hover,
@@ -746,65 +765,47 @@ MatePanelApplet .button.flat:checked {
     border-color: @selected_bg_color;
     background-color: shade (@selected_bg_color, 0.70);
     border-radius: 5px;
-    border-width: 0 0 0 0;
+    border-width: 0px;
     color: shade (@theme_text_dark_color, 0.90);
     text-shadow: none;
-    padding: 2px;
-/* needed to override general button settings */
-    box-shadow: inset  0px  2px @theme_bg_dark_color,
-                inset  2px  0px @theme_bg_dark_color,
-                inset -2px  0px @theme_bg_dark_color,
-                inset  0px -2px @theme_bg_dark_color,
-                inset  0px  1px shade (@theme_selected_bg_color, 0.90),
-                inset  1px  0px shade (@theme_selected_bg_color, 0.90),
-                inset -1px  0px shade (@theme_selected_bg_color, 0.90),
-                inset  0px -1px shade (@theme_selected_bg_color, 0.90);
+    padding: 6px;
 }
 
-.mate-panel-menu-bar .actionbutton .button:hover,
-MatePanelApplet > PanelActionButton .button:hover,
 MatePanelApplet .button:hover,
 MatePanelApplet .button.flat:hover {
     background-image: none;
     border-color: @selected_bg_color;
     background-color: shade (@selected_bg_color, 1.10);
     border-radius: 5px;
-    border-width: 0 0 0 0;
-    color: @tooltip_fg_color;
+    border-width: 0px;
+    color: @selected_fg_color;
     text-shadow: none;
-    padding: 2px;
-/* needed to override general button settings */
-    box-shadow: inset  0px  2px @theme_bg_dark_color,
-                inset  2px  0px @theme_bg_dark_color,
-                inset -2px  0px @theme_bg_dark_color,
-                inset  0px -2px @theme_bg_dark_color,
-                inset  0px  1px shade (@theme_selected_bg_color, 1.30),
-                inset  1px  0px shade (@theme_selected_bg_color, 1.30),
-                inset -1px  0px shade (@theme_selected_bg_color, 1.30),
-                inset  0px -1px shade (@theme_selected_bg_color, 1.30);
+    padding: 6px;
+}
+
+/* drivemount */
+DriveList .button,
+DriveList .button.flat,
+DriveList .button:hover,
+DriveList .button.flat:hover,
+DriveList .button:active,
+DriveList .button.flat:active {
+    padding: 4px;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: none;
 }
 
 /*Wncklist */
-
 WnckTasklist .button,
 WnckTasklist .button.flat {
     background-image: none;
-    background-color: @theme_bg_dark_color;
-    border-color: @theme_bg_dark_color;
-    border-radius: 0;
-    border-width: 0 0 0 0;
+    background-color: transparent;
+    border-radius: 5px;
+    border-width: 1px;
     color: shade (@theme_text_dark_color, 0.65);
     text-shadow: none;
     padding: 2px;
-/* needed to override general button settings */
-    box-shadow: inset  0px  2px @theme_bg_dark_color,
-                inset  2px  0px @theme_bg_dark_color,
-                inset -2px  0px @theme_bg_dark_color,
-                inset  0px -2px @theme_bg_dark_color,
-                inset  0px  1px @theme_bg_dark_color,
-                inset  1px  0px @theme_bg_dark_color,
-                inset -1px  0px @theme_bg_dark_color,
-                inset  0px -1px @theme_bg_dark_color;
 }
 
 WnckTasklist .button:active:hover,
@@ -819,19 +820,10 @@ WnckTasklist .button.flat:checked {
     border-color: @selected_bg_color;
     background-color: shade (@selected_bg_color, 0.70);
     border-radius: 5px;
-    border-width: 0 0 0 0;
+    border-width: 1px;
     color: shade (@theme_text_dark_color, 0.90);
     text-shadow: none;
     padding: 2px;
-/* needed to override general button settings */
-    box-shadow: inset  0px  2px @theme_bg_dark_color,
-                inset  2px  0px @theme_bg_dark_color,
-                inset -2px  0px @theme_bg_dark_color,
-                inset  0px -2px @theme_bg_dark_color,
-                inset  0px  1px shade (@theme_selected_bg_color, 0.90),
-                inset  1px  0px shade (@theme_selected_bg_color, 0.90),
-                inset -1px  0px shade (@theme_selected_bg_color, 0.90),
-                inset  0px -1px shade (@theme_selected_bg_color, 0.90);
 }
 
 WnckTasklist .button:hover,
@@ -840,55 +832,34 @@ WnckTasklist .button.flat:hover {
     border-color: @selected_bg_color;
     background-color: shade (@selected_bg_color, 1.10);
     border-radius: 5px;
-    border-width: 0 0 0 0;
-    color: @tooltip_fg_color;
+    border-width: 1px;
+    color: @theme_fg_color;
     text-shadow: none;
     padding: 2px;
-/* needed to override general button settings */
-    box-shadow: inset  0px  2px @theme_bg_dark_color,
-                inset  2px  0px @theme_bg_dark_color,
-                inset -2px  0px @theme_bg_dark_color,
-                inset  0px -2px @theme_bg_dark_color,
-                inset  0px  1px shade (@theme_selected_bg_color, 1.30),
-                inset  1px  0px shade (@theme_selected_bg_color, 1.30),
-                inset -1px  0px shade (@theme_selected_bg_color, 1.30),
-                inset  0px -1px shade (@theme_selected_bg_color, 1.30);
 }
 
 /* set normal button WnckSelector */
-.mate-panel-window-menu-menu-bar .menuitem,
-MatePanelApplet > WnckSelector.menubar .menuitem {
+WnckSelector.menubar .menuitem {
     background-image: none;
-    background-color: @theme_bg_dark_color;
-    border-style: solid;
-    border-width: 0px;
+    background-color: transparent;
+    border-style: none;
+    border-width: 1px;
     border-radius: 5px;
 }
 
 /* set selected button WnckSelector */
-.mate-panel-window-menu-menu-bar .menuitem:hover,
-MatePanelApplet > WnckSelector.menubar .menuitem:hover {
+WnckSelector.menubar .menuitem:hover {
     background-image: none;
     border-color: @selected_bg_color;
     background-color: shade (@selected_bg_color, 0.70);
     border-radius: 5px;
-    border-width: 0 0 0 0;
+    border-width: 1px;
     color: shade (@theme_text_dark_color, 0.90);
     text-shadow: none;
-/* needed to override general button settings */
-    box-shadow: inset  0px  2px @theme_bg_dark_color,
-                inset  2px  0px @theme_bg_dark_color,
-                inset -2px  0px @theme_bg_dark_color,
-                inset  0px -2px @theme_bg_dark_color,
-                inset  0px  1px shade (@theme_selected_bg_color, 0.90),
-                inset  1px  0px shade (@theme_selected_bg_color, 0.90),
-                inset -1px  0px shade (@theme_selected_bg_color, 0.90),
-                inset  0px -1px shade (@theme_selected_bg_color, 0.90);
 }
 
 /* set WnckSelector selected menuitem */
-.mate-panel-window-menu-menu-bar .menu .menuitem:hover,
-MatePanelApplet > WnckSelector.menubar .menu .menuitem:hover {
+WnckSelector.menubar .menu .menuitem:hover {
     background-color: shade (@theme_bg_dark_color, 1.2);
     color: shade (@theme_selected_bg_color, 1.3);
     background-image: none;
@@ -917,20 +888,17 @@ WnckPager:hover {
     background-image: linear-gradient(to bottom,
                                       @theme_bg_color,
                                       shade (@theme_selected_bg_color, 0.86));
-    background-color: @theme_base_color;
+}
+
+NaTrayApplet {
+    -NaTrayApplet-icon-padding: 12px;
+    -NaTrayApplet-icon-size: 16;
 }
 
 /* Classic icon style */
 .mate-panel-menu-bar {
     -PanelMenuBar-icon-visible: true;
 }
-
-/* Makes the text color on the light panel black */
-/*.mate-panel-menu-bar .menuitem {
-    color: @theme_fg_color;
-    text-shadow: none;
-}*/
-
 
 /****************
  * Mate-terminal *
