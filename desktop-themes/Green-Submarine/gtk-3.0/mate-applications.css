@@ -1221,3 +1221,31 @@ FrWindow .toolbar.primary-toolbar {
     border-width: 0 0 1px 0;
 }
 
+/*********
+ * Atril *
+ *********/
+
+EvWindow .vertical.primary-toolbar .horizontal.toolbar {
+    padding: 1px 4px;
+}
+
+/* size of page entry */
+EvPageActionWidget .entry {
+    padding: 4px;
+}
+
+EvWindow .toolbar .button,
+EvWindow .toolbar .button.flat {
+    padding: 0px 4px;
+}
+
+EvWindow .vertical.primary-toolbar .horizontal.toolbar EphyZoomControl GtkToggleButton:prelight.button {
+    padding: 4px;
+    border-radius: 4px;
+}
+
+EvSidebar .flat.button {
+    border-radius: 4px;
+    padding: 4px;
+}
+
