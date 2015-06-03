@@ -4933,6 +4933,7 @@ GtkProgressBar.osd.progressbar {
 	background-color: @osd_scrollbar_slider_active;
 }
 
+
 .osd GtkIconView.cell:selected,
 .osd GtkIconView.cell:selected:focus {
 	background-color: transparent;
@@ -5963,6 +5964,74 @@ GtkStack .linked.vertical GtkSpinButton.horizontal.entry.spinbutton .button:chec
                                      color-stop (0.50, shade (@theme_bg_color, 1.00)),
                                      color-stop (0.50, shade (@theme_bg_color, 0.95)),
                                      to (shade (@theme_bg_color, 0.80)));
+}
+
+/****************
+ * print dialog *
+ ****************/
+
+GtkPrintUnixDialog.background .vertical.view.dialog-vbox {
+    background-color: shade (@theme_bg_color, 1.0);
+}
+
+GtkPrintUnixDialog.background .notebook {
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+GtkPrintUnixDialog.background .notebook.header {
+    border-radius: 0px;
+}
+
+GtkPrintUnixDialog.background .notebook tab GtkLabel {
+    color: mix (@theme_fg_color, @theme_bg_color, 0.40);
+    font-weight: normal;
+}
+
+GtkPrintUnixDialog.background .notebook .prelight-page,
+GtkPrintUnixDialog.background .notebook .prelight-page GtkLabel {
+    color: mix (@theme_fg_color, @theme_bg_color, 0.15);
+}
+
+GtkPrintUnixDialog.background .notebook .active-page,
+.notebook tab .active-page GtkLabel {
+    color: @theme_fg_color;
+}
+
+GtkPrintUnixDialog.background .notebook tab.top:active,
+GtkPrintUnixDialog.background .notebook tab.top:active:hover {
+    background-image: linear-gradient(to bottom,
+                                      shade(@theme_bg_color, 1.18),
+                                      shade(@theme_bg_color, 1.1));
+    border-radius: 4px 4px 0 0;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: @borders;
+    box-shadow: none;
+}
+
+GtkPrintUnixDialog.background .notebook tab.top:hover {
+    background-image: linear-gradient(to bottom,
+                                      alpha(@theme_base_color, 0.0),
+                                      alpha(@theme_base_color, 0.3));
+    border-radius: 4px 4px 0 0;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: @borders;
+    box-shadow: none;
+}
+
+GtkPrintUnixDialog.background .notebook tab.top:active {
+    border-bottom-color: @notebook_active_tab_border;
+}
+
+GtkPrintUnixDialog.background .notebook .text-button {
+    background-color: transparent;
+}
+
+GtkPrintUnixDialog.background .vertical.view.dialog-vbox .notebook GtkToggleButton.button {
+    padding: 4px;
+    border-radius: 4px;
 }
 
 /*****************
