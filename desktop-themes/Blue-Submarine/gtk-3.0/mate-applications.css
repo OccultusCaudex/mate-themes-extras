@@ -246,6 +246,15 @@ CajaWindow .primary-toolbar .button.flat:last-child {
     box-shadow: none;
 }
 
+/* eventbars, ie. searchbar */
+CajaNotebook .frame GtkEventBox {
+    background-color: shade (@theme_bg_color, 1.05);
+    border-color: @notebook_border;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+}
+
 CajaSearchBar.info {
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
@@ -410,19 +419,41 @@ CajaWindow .sidebar .frame {
 }
 
 CajaSearchBar,
-CajaSearchBar *,
 CajaWindow .primary-toolbar.toolbar .button * {
     padding: 2px 4px;
 }
 
 CajaSearchBar .entry {
-    padding: 2px 8px;
-    border-width: 0px;
-    border-radius: 4px;
+    padding: 4px 6px;
+    border-style: none;
+    box-shadow: inset  0px  1px shade (@theme_bg_color, 0.80),
+                inset  1px  0px shade (@theme_bg_color, 0.80),
+                inset -1px  0px shade (@theme_bg_color, 0.80),
+                inset  0px -1px shade (@theme_bg_color, 0.80);
 }
 
-CajaQueryEditor .button * {
-    padding: 4px 2px;
+CajaSearchBar .entry:focus {
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
+                inset  1px  0px shade (@theme_selected_bg_color, 1.3),
+                inset -1px  0px shade (@theme_selected_bg_color, 1.3),
+                inset  0px -1px shade (@theme_selected_bg_color, 1.3);
+}
+
+CajaQueryEditor.vertical .vertical .horizontal .button,
+CajaQueryEditor.vertical .vertical .horizontal .button:hover {
+    padding: 4px 6px;
+}
+
+
+CajaQueryEditor.vertical .vertical .horizontal .text-button,
+CajaQueryEditor.vertical .vertical .horizontal .text-button:hover {
+    padding: 6px;
+}
+
+CajaQueryEditor.vertical .vertical .horizontal .button.flat,
+CajaQueryEditor.vertical .vertical .horizontal .button.flat:hover {
+    border-radius: 5px;
+    padding: 0px 6px;
 }
 
 CajaWindow .primary-toolbar.toolbar .entry {
