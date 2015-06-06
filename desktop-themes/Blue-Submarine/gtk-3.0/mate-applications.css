@@ -1293,3 +1293,22 @@ EvSidebar .flat.button {
     padding: 4px;
 }
 
+/**************
+ * mate-media *
+ **************/
+
+GvcMixerDialog .frame.flat {
+    border-style: none;
+}
+
+GvcMixerDialog .vertical.dialog-vbox .notebook GtkScrolledWindow.frame {
+    border-style: none;
+    border-radius: 0px 0px 4px 4px;
+}
+
+GvcMixerDialog .vertical.dialog-vbox .notebook .frame.flat GtkScrolledWindow.frame {
+    border-width: 1px;
+    border-radius: 0px;
+    border-style: solid;
+}
+
