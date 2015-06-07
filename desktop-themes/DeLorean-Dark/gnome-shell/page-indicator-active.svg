@@ -13,7 +13,7 @@
    height="18"
    id="svg4703"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="page-indicator-active.svg">
   <defs
      id="defs4705" />
@@ -25,17 +25,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="31.392433"
-     inkscape:cx="-4.629698"
-     inkscape:cy="13.3715"
+     inkscape:cx="-4.0085292"
+     inkscape:cy="10.759406"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="773"
-     inkscape:window-height="435"
-     inkscape:window-x="2154"
-     inkscape:window-y="110"
-     inkscape:window-maximized="0">
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid6140" />
@@ -57,15 +57,26 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      transform="translate(0,2)">
+    <circle
+       r="8"
+       cy="7"
+       cx="9"
+       id="path4711-8"
+       style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.2" />
     <path
        transform="matrix(0.54617904,0,0,0.62523128,-1131.9904,-392.39214)"
-       d="m 2099.9808,638.83099 a 10.985409,9.5964489 0 1 1 -21.9708,0 10.985409,9.5964489 0 1 1 21.9708,0 z"
+       d="m 2099.9808,638.83099 a 10.985409,9.5964489 0 0 1 -10.9854,9.59645 10.985409,9.5964489 0 0 1 -10.9854,-9.59645 10.985409,9.5964489 0 0 1 10.9854,-9.59645 10.985409,9.5964489 0 0 1 10.9854,9.59645 z"
        sodipodi:ry="9.5964489"
        sodipodi:rx="10.985409"
        sodipodi:cy="638.83099"
        sodipodi:cx="2088.9954"
        id="path4711"
-       style="fill:#fdffff;fill-opacity:1;stroke:none"
+       style="fill:#009bf7;fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;opacity:0.1"
+       d="m 8.932,0.8580465 a 6,6 0 0 0 -6,5.9999999 A 6,6 0 0 0 2.957391,7.356093 6,6 0 0 1 8.932,1.8580464 6,6 0 0 1 14.90661,7.36 6,6 0 0 0 14.932,6.8580464 a 6,6 0 0 0 -6,-5.9999999 z"
+       id="path4711-3"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

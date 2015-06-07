@@ -14,10 +14,21 @@
    height="7"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="progressbar.svg">
   <defs
      id="defs33224">
+    <linearGradient
+       id="linearGradient4246">
+      <stop
+         id="stop4248"
+         offset="0"
+         style="stop-color:#005181;stop-opacity:1" />
+      <stop
+         id="stop4250"
+         offset="1"
+         style="stop-color:#005282;stop-opacity:1" />
+    </linearGradient>
     <linearGradient
        id="linearGradient3812">
       <stop
@@ -869,12 +880,12 @@
     <linearGradient
        y2="-13"
        x2="14"
-       y1="-16"
+       y1="-15.75014"
        x1="14"
        gradientTransform="matrix(0.99000931,0,0,2.1533967,-1.8240039,43.224253)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient3972"
-       xlink:href="#linearGradient3949"
+       xlink:href="#linearGradient4246"
        inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
@@ -884,17 +895,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.299746"
-     inkscape:cx="31.32767"
-     inkscape:cy="11.463515"
+     inkscape:zoom="13.03"
+     inkscape:cx="18.315256"
+     inkscape:cy="-4.2201391"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1866"
-     inkscape:window-height="1041"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
@@ -923,7 +934,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -933,6 +944,15 @@
      inkscape:groupmode="layer"
      transform="translate(0,-9)">
     <rect
+       ry="2.7672262"
+       rx="2.6198862"
+       y="9.9061327"
+       x="0.85794121"
+       height="5.5344524"
+       width="62.250671"
+       id="rect17861-8"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:none;stroke:#ffffff;stroke-width:1.29727054;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.2;marker:none;enable-background:accumulate" />
+    <rect
        ry="2.5154171"
        rx="2.6997221"
        y="9.4845829"
@@ -940,6 +960,17 @@
        height="5.0308342"
        width="63.030834"
        id="rect17861-6"
-       style="color:#000000;fill:url(#linearGradient3972);fill-opacity:1;stroke:#004065;stroke-width:0.96916598;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;fill:url(#linearGradient3972);fill-opacity:1;stroke:#001b2b;stroke-width:0.96916598;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.00162828;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.1;marker:none;enable-background:accumulate"
+       d="M 1.6877369,10.987627 C 2.1696488,10.654679 2.9031154,10.442824 3.727423,10.442824 l 0,0 56.187695,0 c 1.458179,0 2.584744,0.426209 2.632092,1.486435 0.01967,0.440384 -0.2417,0.977687 -0.778023,1.249433"
+       id="path4281"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccssc" />
+    <path
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;fill-opacity:1;stroke:#004065;stroke-width:0.96916598;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
+       d="M 61.614124 -12.654079 C 61.136599 -12.254889 60.504552 -12.012638 59.809546 -12.012638 L 2.1781558 -12.012638 C 0.68250976 -12.012638 -0.52156627 -13.134514 -0.52156627 -14.528055 C -0.52156627 -15.133829 -0.29403819 -15.688267 0.0860618 -16.121531 "
+       id="rect17861-6-7"
+       transform="translate(0,9)" />
   </g>
 </svg>

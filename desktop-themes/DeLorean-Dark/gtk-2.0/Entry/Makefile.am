@@ -28,7 +28,9 @@ theme_DATA = \
 	entry-bg-insensitive.svg \
 	entry-bg.svg \
 	entry-border-active-bg-solid.png \
+	entry-border-active-bg-solid-spin.png \
 	entry-border-bg-solid.png \
+	entry-border-bg-solid-spin.png \
 	entry-border-fill-plain.png \
 	entry-border-fill-solid.png \
 	entry-focus.svg \
@@ -36,9 +38,6 @@ theme_DATA = \
 	entry-notebook-focus.svg \
 	entry-notebook-insensitive.svg \
 	entry-notebook.svg \
-	entry.svg \
-	gimp-combo-entry-border-rtl.svg \
-	gimp-combo-entry-border.svg \
-	gimp-entry-bg.svg
+	entry.svg
 
 EXTRA_DIST = $(theme_DATA)

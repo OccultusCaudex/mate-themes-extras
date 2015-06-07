@@ -13,7 +13,7 @@
    height="16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.2 r9819"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="calendar-arrow-right.svg">
   <defs
      id="defs4" />
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="30"
-     inkscape:cx="1.6333333"
-     inkscape:cy="8"
+     inkscape:zoom="1"
+     inkscape:cx="-152.26339"
+     inkscape:cy="6.4536271"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -34,8 +34,8 @@
      inkscape:showpageshadow="false"
      inkscape:window-width="930"
      inkscape:window-height="681"
-     inkscape:window-x="987"
-     inkscape:window-y="243"
+     inkscape:window-x="1920"
+     inkscape:window-y="272"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
@@ -64,7 +64,7 @@
      transform="translate(0,-1036.3622)">
     <path
        sodipodi:type="star"
-       style="fill:#cccccc;fill-opacity:1;stroke:#cccccc;stroke-width:0.43015847000000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       style="fill:#dbdbdb;fill-opacity:1;stroke:#dbdbdb;stroke-width:0.43015847;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;opacity:0.88"
        id="path18028"
        sodipodi:sides="3"
        sodipodi:cx="84.5"
@@ -76,7 +76,7 @@
        inkscape:flatsided="true"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="M 88.830127,340 80.169873,340 84.5,332.5 z"
+       d="M 88.830127,340 80.169873,340 84.5,332.5 Z"
        transform="matrix(0,1.3621708,-0.99186247,0,342.48324,929.32667)" />
   </g>
 </svg>

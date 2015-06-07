@@ -13,29 +13,29 @@
    height="21"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="separator-vertical.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
      id="base"
-     pagecolor="#000000"
+     pagecolor="#a4a4a4"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="14.769912"
-     inkscape:cx="-10.23234"
-     inkscape:cy="7.5475929"
+     inkscape:zoom="48.059021"
+     inkscape:cx="-13.519964"
+     inkscape:cy="7.4121825"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1866"
-     inkscape:window-height="1041"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      guidetolerance="10000"
      objecttolerance="10000">
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -65,7 +65,7 @@
      id="layer1"
      transform="translate(0,11)">
     <rect
-       style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:none"
+       style="opacity:0.12;fill:#000000;fill-opacity:1;stroke:none"
        id="rect2986"
        width="21"
        height="1"

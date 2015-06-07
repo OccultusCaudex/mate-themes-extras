@@ -3,14 +3,29 @@ THEME_NAME=DeLorean-Dark
 themedir = $(datadir)/themes/$(THEME_NAME)/gnome-shell
 
 theme_DATA = \
+	app-control-left-active.svg \
+	app-control-left-hover.svg \
+	app-control-left.svg \
+	app-control-right-active.svg \
+	app-control-right-hover.svg \
+	app-control-right.svg \
+	app-folder-active.svg \
+	app-folder-focus.svg \
+	app-folder-hover.svg \
+	app-folder.svg \
 	background.png \
-	button-active-hover.svg \
 	button-active.svg \
+	button-focus-hover.svg \
+	button-focus.svg \
 	button-insensitive.svg \
+	button-notify-focus.svg \
+	button-notify-hover.svg \
+	button-notify.svg \
 	button-prelight.svg \
 	button.svg \
 	calendar-arrow-left.svg \
 	calendar-arrow-right.svg \
+	calendar-not-today.svg \
 	calendar-today.svg \
 	checkbox-focused.svg \
 	checkbox-off-focused.svg \
@@ -22,18 +37,47 @@ theme_DATA = \
 	classic-toggle-on-intl.svg \
 	classic-toggle-on-us.svg \
 	close.svg \
+	close-window-active.svg \
+	close-window-hover.svg \
 	close-window.svg \
-	corner-ripple-ltr.png \
-	corner-ripple-rtl.png \
+	dash-bottom.svg \
+	dash-button-active-bottom.svg \
+	dash-button-active-right.svg \
+	dash-button-active.svg \
+	dash-button-active-top.svg \
+	dash-button-horizontal.svg \
+	dash-button-hover-bottom.svg \
+	dash-button-hover-right.svg \
+	dash-button-hover.svg \
+	dash-button-hover-top.svg \
+	dash-button.svg \
 	dash-placeholder.svg \
+	dash-right.svg \
+	dash.svg \
+	dash-top.svg \
+	entry-focus.svg \
+	entry-insensitive.svg \
+	entry.svg \
 	filter-selected-ltr.svg \
 	filter-selected-rtl.svg \
-	gnome-classic.css \
-	gnome-shell.css \
+	gnome-classic.css
+	gnome-shell.css
+	lg.svg \
 	logged-in-indicator.svg \
+	menu-hover.svg \
+	menu-separator.svg \
+	message-hover.svg \
+	message-list-close-active.svg \
+	message-list-close-hover.svg \
+	message-list-close.svg \
+	message.svg \
 	message-tray-background.png \
+	modal.svg \
 	more-results.svg \
+	no-events.svg \
 	noise-texture.png \
+	no-notifications.svg \
+	notification.svg \
 	page-indicator-active.svg \
 	page-indicator-checked.svg \
 	page-indicator-hover.svg \
@@ -41,20 +85,27 @@ theme_DATA = \
 	panel-button-border.svg \
 	panel-button-highlight-narrow.svg \
 	panel-button-highlight-wide.svg \
-	panel-menu-active.svg \
-	panel-menu-hover.svg \
 	panel.png \
 	process-working.svg \
 	ripple-ltr.svg \
 	ripple-rtl.svg \
+	running-dot.svg \
 	running-indicator.svg \
+	shutdown-button-active.svg \
+	shutdown-button-prelight.svg \
+	shutdown-button.svg \
+	slider.svg \
 	source-button-border.svg \
+	submenu-open.svg \
+	submenu.svg \
 	summary-counter.svg \
 	toggle-off-intl.svg \
 	toggle-off-us.svg \
 	toggle-on-intl.svg \
 	toggle-on-us.svg \
+	workspace-thumb-bg-rtl.svg \
+	workspace-thumb-bg.svg \
 	ws-switch-arrow-down.png \
 	ws-switch-arrow-up.png
-
+	
 EXTRA_DIST = $(theme_DATA)

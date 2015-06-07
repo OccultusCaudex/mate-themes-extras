@@ -13,7 +13,7 @@
    height="16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="calendar-arrow-right.svg">
   <defs
      id="defs4" />
@@ -24,19 +24,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="12.239653"
-     inkscape:cx="-6.765436"
+     inkscape:zoom="1"
+     inkscape:cx="-152.26339"
      inkscape:cy="6.4536271"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1041"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1">
+     inkscape:window-width="930"
+     inkscape:window-height="681"
+     inkscape:window-x="1920"
+     inkscape:window-y="272"
+     inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
        id="grid17403"
@@ -64,7 +64,7 @@
      transform="translate(0,-1036.3622)">
     <path
        sodipodi:type="star"
-       style="fill:#adadad;fill-opacity:1;stroke:#adadad;stroke-width:0.43015847000000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       style="fill:#dbdbdb;fill-opacity:1;stroke:#dbdbdb;stroke-width:0.43015847;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;opacity:0.88"
        id="path18028"
        sodipodi:sides="3"
        sodipodi:cx="84.5"
@@ -76,7 +76,7 @@
        inkscape:flatsided="true"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="M 88.830127,340 80.169873,340 84.5,332.5 z"
+       d="M 88.830127,340 80.169873,340 84.5,332.5 Z"
        transform="matrix(0,1.3621708,-0.99186247,0,342.48324,929.32667)" />
   </g>
 </svg>

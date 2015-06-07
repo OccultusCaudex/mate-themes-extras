@@ -14,7 +14,7 @@
    height="45"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="slider-v-active.svg">
   <defs
      id="defs4">
@@ -344,16 +344,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.66"
-     inkscape:cx="-27.634147"
-     inkscape:cy="23.32015"
+     inkscape:zoom="11.47"
+     inkscape:cx="-40.144433"
+     inkscape:cy="22.817558"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1866"
-     inkscape:window-height="1041"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -371,7 +371,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -381,16 +381,7 @@
      id="layer1"
      transform="translate(0,-1007.3622)">
     <rect
-       style="fill:#085e8a;fill-opacity:1;stroke:#085e8a;stroke-width:1.01357590999999991;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect4020"
-       width="5.986424"
-       height="37.986423"
-       x="3.506788"
-       y="1010.869"
-       rx="2.993212"
-       ry="2.993212" />
-    <rect
-       style="fill:#006aa8;fill-opacity:1;stroke:none"
+       style="fill:#0068a6;fill-opacity:1;stroke:none"
        id="rect4020-0-3"
        width="7"
        height="39"
@@ -408,14 +399,5 @@
        rx="5.1026101"
        ry="4.1801486"
        transform="matrix(0.91926547,0,0,0.90072965,1.395234,103.75777)" />
-    <rect
-       style="fill:none;stroke:#ffffff;stroke-width:1.01357590999999991;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;opacity:0.08;fill-opacity:1"
-       id="rect4020-0"
-       width="5.986424"
-       height="37.986423"
-       x="3.506788"
-       y="1010.869"
-       rx="2.993212"
-       ry="2.993212" />
   </g>
 </svg>
