@@ -5,32 +5,32 @@ themedir = $(datadir)/themes/$(THEME_NAME)
 theme_DATA = \
 	index.theme \
 	delorean-google-chrome-dark.crx \
-	GPLv3.pdf
+	LICENSE
 
 EXTRA_DIST = $(theme_DATA)
 
 SUBDIRS =		\
+	chrome      \
 	cinnamon	\
-	firefox		\
 	gnome-shell \
 	gtk-2.0		\
 	gtk-3.0		\
 	metacity-1	\
 	openbox-3	\
-	thunderbird \
-	xfce-notify-4.0 \
+	Software-Center \
+	unity \
 	xfwm4
 
-DIST_SUBDIRS =		\
+DIST_SUBDIRS =	\
+	chrome      \
 	cinnamon	\
-	firefox		\
 	gnome-shell \
 	gtk-2.0		\
 	gtk-3.0		\
 	metacity-1	\
 	openbox-3	\
-	thunderbird \
-	xfce-notify-4.0 \
+	Software-Center \
+	unity \
 	xfwm4
 
 CLEANFILES = index.theme

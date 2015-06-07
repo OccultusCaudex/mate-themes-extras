@@ -14,7 +14,7 @@
    height="13"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="slider-h-hover.svg">
   <defs
      id="defs4">
@@ -355,16 +355,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.66"
-     inkscape:cx="-55.542215"
-     inkscape:cy="23.32015"
+     inkscape:zoom="6.14"
+     inkscape:cx="-50.834509"
+     inkscape:cy="22.848442"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1866"
-     inkscape:window-height="1041"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -382,7 +382,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -401,37 +401,15 @@
        rx="5.1026101"
        ry="4.1801486"
        transform="matrix(0.91926547,0,0,0.90072965,1.395234,103.75777)" />
-    <g
-       id="g3058"
-       transform="matrix(0,1,-1,0,1052.3622,1039.3622)"
-       style="stroke:none;stroke-opacity:1;fill:#6a6a6a;fill-opacity:1">
-      <rect
-         ry="2.993212"
-         rx="2.993212"
-         y="1010.869"
-         x="3.506788"
-         height="37.986423"
-         width="5.986424"
-         id="rect4020"
-         style="fill:#6a6a6a;fill-opacity:1;stroke:none;stroke-width:1.01357590999999991;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-      <rect
-         ry="2.9932122"
-         rx="2.993212"
-         y="1010.3622"
-         x="3"
-         height="39"
-         width="7"
-         id="rect4020-0-3"
-         style="fill:#6a6a6a;fill-opacity:1;stroke:none;stroke-opacity:1" />
-      <rect
-         ry="2.993212"
-         rx="2.993212"
-         y="1010.869"
-         x="3.506788"
-         height="37.986423"
-         width="5.986424"
-         id="rect4020-0"
-         style="opacity:0.06000001000000000;fill:#6a6a6a;stroke:none;stroke-width:1.01357590999999991;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1" />
-    </g>
+    <rect
+       style="fill:#dbdbdb;fill-opacity:0.65098041;stroke:none;stroke-opacity:1"
+       id="rect4020-0-3"
+       width="7"
+       height="39"
+       x="1042.3622"
+       y="-42"
+       rx="2.993212"
+       ry="2.9932122"
+       transform="matrix(0,1,-1,0,0,0)" />
   </g>
 </svg>

@@ -6,13 +6,13 @@ theme_DATA = \
 	notebook-gap-horiz.png \
 	notebook-gap-vert.png \
 	notebook.png \
-	tab-bottom-active.png \
+	tab-bottom-active.svg \
 	tab-bottom.png \
-	tab-left-active.png \
+	tab-left-active.svg \
 	tab-left.png \
-	tab-right-active.png \
+	tab-right-active.svg \
 	tab-right.png \
-	tab-top-active.png \
+	tab-top-active.svg \
 	tab-top.png
 
 EXTRA_DIST = $(theme_DATA)

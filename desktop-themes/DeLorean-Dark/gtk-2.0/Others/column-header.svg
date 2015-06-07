@@ -14,7 +14,7 @@
    height="16px"
    id="svg3776"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="column-header.svg">
   <defs
      id="defs3778">
@@ -207,17 +207,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.197802"
-     inkscape:cx="3.7553158"
-     inkscape:cy="9.293261"
+     inkscape:zoom="36.16"
+     inkscape:cx="7.6879832"
+     inkscape:cy="9.1300626"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1866"
-     inkscape:window-height="1041"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata3781">
@@ -227,7 +227,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -243,7 +243,7 @@
        x="0"
        y="0" />
     <rect
-       style="fill:#353535;fill-opacity:1;stroke:none;opacity:1"
+       style="fill:#161616;fill-opacity:1;stroke:none;opacity:1"
        id="rect3776"
        width="1"
        height="15"
@@ -251,14 +251,14 @@
        y="0"
        ry="0" />
     <rect
-       style="fill:#292929;fill-opacity:1;stroke:none"
+       style="fill:#363636;fill-opacity:1;stroke:none"
        id="rect4316-5"
        width="15"
        height="15"
        x="0"
        y="0" />
     <rect
-       style="opacity:1;fill:#353535;fill-opacity:1;stroke:none"
+       style="opacity:1;fill:#161616;fill-opacity:1;stroke:none"
        id="rect3776-9"
        width="1"
        height="16"
