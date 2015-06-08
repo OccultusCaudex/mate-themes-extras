@@ -2569,16 +2569,12 @@ GtkHandleBox,
     color: shade(@theme_fg_dark_color, 1.00);
 }
 
-NemoWindow .primary-toolbar.toolbar .button:active,
-NemoWindow .primary-toolbar.toolbar .button:active:hover,
 .toolbar NautilusPathBar .button:active,
 .toolbar.menubar .button:active,
 .toolbar .raised .button:active,
 .toolbar .raised .button:active:hover,
 .toolbar .raised.button:active:hover,
 .toolbar .raised.button:active,
-NemoWindow .primary-toolbar.toolbar .button:checked,
-NemoWindow .primary-toolbar.toolbar .button:checked:hover,
 .toolbar NautilusPathBar .button:checked,
 .toolbar.menubar .button:checked,
 .toolbar .raised .button:checked,
@@ -4932,7 +4928,6 @@ GtkProgressBar.osd.progressbar {
 .osd .scrollbar.slider:active {
 	background-color: @osd_scrollbar_slider_active;
 }
-
 
 .osd GtkIconView.cell:selected,
 .osd GtkIconView.cell:selected:focus {
