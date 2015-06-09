@@ -606,12 +606,6 @@ NautilusWindow .pane-separator {
     border-image: none;
 }*/
 
-/* arrow/button in pathbar */
-.toolbar .raised.linked .button:first-child {
-    padding-left:  4px;
-    padding-right: 1px;
-}
-
 NautilusWindow .primary-toolbar.toolbar .button:active,
 NautilusWindow .primary-toolbar.toolbar .button:active:hover,
 NautilusWindow .primary-toolbar.toolbar .button:checked,
