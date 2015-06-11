@@ -1,0 +1,13 @@
+
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Faience-Ocre
+Comment=Faience-Ocre GTK2 / GTK3 theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Faience-Ocre
+MetacityTheme=Faience-Ocre
+IconTheme=Faience-Ocre
+CursorTheme=mate
+ButtonLayout=close,minimize,maximize:menu
