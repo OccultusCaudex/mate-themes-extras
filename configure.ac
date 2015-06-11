@@ -128,11 +128,10 @@ desktop-themes/clearlooks-phenix/wallpapers/Makefile
 desktop-themes/clearlooks-phenix/xfwm4/Makefile
 desktop-themes/clearlooks-phenix/xfwm4/png/Makefile
 desktop-themes/DeLorean/Makefile
+desktop-themes/DeLorean/chrome/Makefile
+desktop-themes/DeLorean/chrome/images/Makefile
+desktop-themes/DeLorean/chrome/images/tabbrowser/Makefile
 desktop-themes/DeLorean/cinnamon/Makefile
-desktop-themes/DeLorean/firefox/Makefile
-desktop-themes/DeLorean/firefox/chrome/Makefile
-desktop-themes/DeLorean/firefox/chrome/images/Makefile
-desktop-themes/DeLorean/firefox/chrome/images/tabbrowser/Makefile
 desktop-themes/DeLorean/gnome-shell/Makefile
 desktop-themes/DeLorean/gtk-2.0/Makefile
 desktop-themes/DeLorean/gtk-2.0/Arrows/Makefile
@@ -156,11 +155,6 @@ desktop-themes/DeLorean/gtk-3.0/assets/Makefile
 desktop-themes/DeLorean/gtk-3.0/assets/SVGs/Makefile
 desktop-themes/DeLorean/metacity-1/Makefile
 desktop-themes/DeLorean/openbox-3/Makefile
-desktop-themes/DeLorean/thunderbird/Makefile
-desktop-themes/DeLorean/thunderbird/chrome/Makefile
-desktop-themes/DeLorean/thunderbird/chrome/images/Makefile
-desktop-themes/DeLorean/xfce-notify-4.0/Makefile
-desktop-themes/DeLorean/xfce-notify-4.0/buttons/Makefile
 desktop-themes/DeLorean/xfwm4/Makefile
 desktop-themes/DeLorean-Dark/Makefile
 desktop-themes/DeLorean-Dark/chrome/Makefile

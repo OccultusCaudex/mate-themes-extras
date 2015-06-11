@@ -14,7 +14,7 @@
    height="64"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="trough-v.svg">
   <defs
      id="defs4">
@@ -536,7 +536,8 @@
        y1="1020.3622"
        x2="2"
        y2="1020.3622"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-29.876543,2.7160494)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -545,16 +546,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.54"
-     inkscape:cx="-37.642189"
-     inkscape:cy="30.320876"
+     inkscape:zoom="8.1"
+     inkscape:cx="-44.449069"
+     inkscape:cy="30.055624"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1866"
-     inkscape:window-height="1041"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -574,7 +575,7 @@
      id="layer1"
      transform="translate(0,-988.36218)">
     <rect
-       style="fill:#7d7d7d;fill-opacity:1;stroke:#7c7c7c;stroke-width:1.02183723000000004;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#ffffff;fill-opacity:0.34;stroke:#565656;stroke-width:1.02183723;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.60000002"
        id="rect3753-8-7-4-3-7"
        width="12.978163"
        height="62.978165"
@@ -586,11 +587,11 @@
        inkscape:export-xdpi="93.567406"
        inkscape:export-ydpi="93.567406" />
     <rect
-       style="opacity:0.24;fill:url(#linearGradient3850);fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="opacity:0.23999999;fill:url(#linearGradient3850);fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3841"
        width="2"
        height="64"
-       x="0"
-       y="988.36218" />
+       x="-29.876543"
+       y="991.07819" />
   </g>
 </svg>

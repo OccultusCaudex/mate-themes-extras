@@ -13,8 +13,8 @@
    height="18"
    id="svg4703"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="page-indicator-checked.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="page-indicator-active.svg">
   <defs
      id="defs4705" />
   <sodipodi:namedview
@@ -25,16 +25,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.197802"
-     inkscape:cx="-5.8439985"
+     inkscape:cx="2.1522887"
      inkscape:cy="16.782904"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1866"
-     inkscape:window-height="1041"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata4708">
@@ -61,7 +61,7 @@
        sodipodi:cy="638.83099"
        sodipodi:cx="2088.9954"
        id="path4711"
-       style="fill:#006aa8;fill-opacity:0.94117647;stroke:none"
+       style="fill:#fdffff;fill-opacity:0.94117647;stroke:none"
        sodipodi:type="arc" />
   </g>
 </svg>

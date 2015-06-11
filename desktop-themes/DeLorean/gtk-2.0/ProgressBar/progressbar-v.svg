@@ -14,10 +14,21 @@
    height="64"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="progressbar-v.svg">
   <defs
      id="defs33224">
+    <linearGradient
+       id="linearGradient4246">
+      <stop
+         id="stop4248"
+         offset="0"
+         style="stop-color:#005a8f;stop-opacity:1" />
+      <stop
+         id="stop4250"
+         offset="1"
+         style="stop-color:#006aa8;stop-opacity:1" />
+    </linearGradient>
     <linearGradient
        id="linearGradient3812">
       <stop
@@ -871,10 +882,10 @@
        x2="14"
        y1="-16"
        x1="14"
-       gradientTransform="matrix(0.99000931,0,0,2.1533968,-17.824007,34.224255)"
+       gradientTransform="matrix(0.97761987,0,0,2.1557733,-16.91528,34.258713)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient3972"
-       xlink:href="#linearGradient3949"
+       xlink:href="#linearGradient4246"
        inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
@@ -884,17 +895,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.299746"
-     inkscape:cx="31.32767"
-     inkscape:cy="29.163028"
+     inkscape:zoom="11.33"
+     inkscape:cx="26.785632"
+     inkscape:cy="28.986033"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1866"
-     inkscape:window-height="1041"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
@@ -923,7 +934,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -933,14 +944,30 @@
      inkscape:groupmode="layer"
      transform="translate(0,48)">
     <rect
-       ry="2.5154171"
-       rx="2.6997221"
-       y="0.48458302"
-       x="-15.515417"
-       height="5.0308342"
-       width="63.030834"
+       ry="2.5142674"
+       rx="2.6665404"
+       y="-5.5654583"
+       x="-47.673721"
+       height="5.0285349"
+       width="63.359215"
+       id="rect17861-8"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.4;fill:none;stroke:#ffffff;stroke-width:0.97146529;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <rect
+       ry="2.5181932"
+       rx="2.6659365"
+       y="0.48180696"
+       x="-14.63558"
+       height="5.0363865"
+       width="62.242035"
        id="rect17861-6"
-       style="color:#000000;fill:url(#linearGradient3972);fill-opacity:1;stroke:#004065;stroke-width:0.96916604;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#linearGradient3972);fill-opacity:1;stroke:#004065;stroke-width:0.96361393;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
        transform="matrix(0,-1,1,0,0,0)" />
+    <path
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.99659461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.1;marker:none;enable-background:accumulate"
+       d="M 1.927351,13.566286 C 1.5938912,13.089938 1.3817106,12.36494 1.3817106,11.550149 l 0,0 0,-55.538999 c 0,-1.441344 0.4268641,-2.554902 1.4887199,-2.601704 0.441061,-0.01944 0.9791899,0.23891 1.2513536,0.769041"
+       id="path4281"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccssc" />
   </g>
 </svg>

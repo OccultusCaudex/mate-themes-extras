@@ -4,14 +4,12 @@ themedir = $(datadir)/themes/$(THEME_NAME)/gtk-3.0/assets
 
 theme_DATA = \
 	background-dark.png \
+	background-dark-transparent.png \
 	background.png \
+	background-transparent.png \
 	checkbox-active-selectionmode@2.png \
-	checkbox-active-selectionmode-dark@2.png \
-	checkbox-active-selectionmode-dark.png \
 	checkbox-active-selectionmode.png \
 	checkbox-backdrop-selectionmode@2.png \
-	checkbox-backdrop-selectionmode-dark@2.png \
-	checkbox-backdrop-selectionmode-dark.png \
 	checkbox-backdrop-selectionmode.png \
 	checkbox-checked@2.png \
 	checkbox-checked-active@2.png \
@@ -19,8 +17,6 @@ theme_DATA = \
 	checkbox-checked-active-dark.png \
 	checkbox-checked-active.png \
 	checkbox-checked-active-selectionmode@2.png \
-	checkbox-checked-active-selectionmode-dark@2.png \
-	checkbox-checked-active-selectionmode-dark.png \
 	checkbox-checked-active-selectionmode.png \
 	checkbox-checked-backdrop@2.png \
 	checkbox-checked-backdrop-dark@2.png \
@@ -31,8 +27,6 @@ theme_DATA = \
 	checkbox-checked-backdrop-insensitive.png \
 	checkbox-checked-backdrop.png \
 	checkbox-checked-backdrop-selectionmode@2.png \
-	checkbox-checked-backdrop-selectionmode-dark@2.png \
-	checkbox-checked-backdrop-selectionmode-dark.png \
 	checkbox-checked-backdrop-selectionmode.png \
 	checkbox-checked-dark@2.png \
 	checkbox-checked-dark.png \
@@ -41,8 +35,6 @@ theme_DATA = \
 	checkbox-checked-hover-dark.png \
 	checkbox-checked-hover.png \
 	checkbox-checked-hover-selectionmode@2.png \
-	checkbox-checked-hover-selectionmode-dark@2.png \
-	checkbox-checked-hover-selectionmode-dark.png \
 	checkbox-checked-hover-selectionmode.png \
 	checkbox-checked-insensitive@2.png \
 	checkbox-checked-insensitive-dark@2.png \
@@ -50,12 +42,8 @@ theme_DATA = \
 	checkbox-checked-insensitive.png \
 	checkbox-checked.png \
 	checkbox-checked-selectionmode@2.png \
-	checkbox-checked-selectionmode-dark@2.png \
-	checkbox-checked-selectionmode-dark.png \
 	checkbox-checked-selectionmode.png \
 	checkbox-hover-selectionmode@2.png \
-	checkbox-hover-selectionmode-dark@2.png \
-	checkbox-hover-selectionmode-dark.png \
 	checkbox-hover-selectionmode.png \
 	checkbox-mixed@2.png \
 	checkbox-mixed-active@2.png \
@@ -82,8 +70,6 @@ theme_DATA = \
 	checkbox-mixed-insensitive.png \
 	checkbox-mixed.png \
 	checkbox-selectionmode@2.png \
-	checkbox-selectionmode-dark@2.png \
-	checkbox-selectionmode-dark.png \
 	checkbox-selectionmode.png \
 	checkbox-unchecked@2.png \
 	checkbox-unchecked-active@2.png \
@@ -109,6 +95,19 @@ theme_DATA = \
 	checkbox-unchecked-insensitive-dark.png \
 	checkbox-unchecked-insensitive.png \
 	checkbox-unchecked.png \
+	delorean-circular.png \
+	delorean-circular-transparent.png \
+	delorean-dark-circular.png \
+	delorean-dark-circular-transparent.png \
+	delorean-dark-dialog.png \
+	delorean-dark-dialog-transparent.png \
+	delorean-dark-new.png \
+	delorean-new.png \
+	dialog-button.png \
+	dialog-button-transparent.png \
+	menu-hover.svg \
+	menu.png \
+	path3853.png \
 	radio-checked@2.png \
 	radio-checked-active@2.png \
 	radio-checked-active-dark@2.png \
@@ -277,6 +276,7 @@ theme_DATA = \
 	slider-horz-scale-has-marks-above-insensitive-dark.png \
 	slider-horz-scale-has-marks-above-insensitive.png \
 	slider-horz-scale-has-marks-above.png \
+	slider-horz-scale-has-marks-above.svg \
 	slider-horz-scale-has-marks-below@2.png \
 	slider-horz-scale-has-marks-below-active@2.png \
 	slider-horz-scale-has-marks-below-active-dark@2.png \
@@ -338,6 +338,7 @@ theme_DATA = \
 	slider-vert-scale-has-marks-below-backdrop-insensitive-dark.png \
 	slider-vert-scale-has-marks-below-backdrop-insensitive.png \
 	slider-vert-scale-has-marks-below-backdrop.png \
+	slider-vert-scale-has-marks-below-backdrop.svg \
 	slider-vert-scale-has-marks-below-dark@2.png \
 	slider-vert-scale-has-marks-below-dark.png \
 	slider-vert-scale-has-marks-below-hover@2.png \
@@ -349,7 +350,7 @@ theme_DATA = \
 	slider-vert-scale-has-marks-below-insensitive-dark.png \
 	slider-vert-scale-has-marks-below-insensitive.png \
 	slider-vert-scale-has-marks-below.png
-	
+
 EXTRA_DIST = $(theme_DATA)
 
 SUBDIRS =	\

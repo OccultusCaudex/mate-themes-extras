@@ -22,13 +22,14 @@ theme_DATA = \
 	combo-entry-notebook-focus-border-rtl.svg \
 	combo-entry-notebook-focus-border.svg \
 	combo-entry-notebook-insensitive-border-rtl.svg \
-	combo-entry-notebook-insensitive-border-.svg \
 	combo-entry-notebook-insensitive-border.svg \
 	entry-bg-focus.svg \
 	entry-bg-insensitive.svg \
 	entry-bg.svg \
 	entry-border-active-bg-solid.png \
+	entry-border-active-bg-solid-spin.png \
 	entry-border-bg-solid.png \
+	entry-border-bg-solid-spin.png \
 	entry-border-fill-plain.png \
 	entry-border-fill-solid.png \
 	entry-focus.svg \
