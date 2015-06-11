@@ -2,12 +2,28 @@ if BUILD_BLUE_SUBMARINE
 blue_submarine_SUBDIR = Blue-Submarine
 endif
 
+if BUILD_CLEARLOOKS_PHENIX
+clearlooks_phenix_SUBDIR = clearlooks-phenix
+endif
+
 if BUILD_DELOREAN
 delorean_SUBDIR = DeLorean
 endif
 
 if BUILD_DELOREAN_DARK
 delorean_dark_SUBDIR = DeLorean-Dark
+endif
+
+if BUILD_FAIENCE
+faience_SUBDIR = Faience
+endif
+
+if BUILD_FAIENCE_OCRE
+faience_ocre_SUBDIR = Faience-Ocre
+endif
+
+if BUILD_GNOME_CUPERTINO
+gnome_cupertino_SUBDIR = Gnome-Cupertino
 endif
 
 if BUILD_GNOMISHBEIGE
@@ -18,17 +34,31 @@ if BUILD_GREEN_SUBMARINE
 green_submarine_SUBDIR = Green-Submarine
 endif
 
+if BUILD_ZUKITWO
+zukitwo_SUBDIR = Zukitwo
+endif
+
 SUBDIRS = \
 	$(blue_submarine_SUBDIR) \
+	$(clearlooks_phenix_SUBDIR) \
 	$(delorean_SUBDIR) \
 	$(delorean_dark_SUBDIR) \
+	$(faience_SUBDIR) \
+	$(faience_ocre_SUBDIR) \
+	$(gnome_cupertino_SUBDIR) \
 	$(gnomishbeige_SUBDIR) \
-	$(green_submarine_SUBDIR)
+	$(green_submarine_SUBDIR) \
+	$(zukitwo_SUBDIR)
 
 DIST_SUBDIRS = \
 	Blue-Submarine \
+	clearlooks-phenix \
 	DeLorean \
 	DeLorean-Dark \
+	Faience \
+	Faience-Ocre \
+	Gnome-Cupertino \
 	GnomishBeige \
-	Green-Submarine
+	Green-Submarine \
+	Zukitwo
 
