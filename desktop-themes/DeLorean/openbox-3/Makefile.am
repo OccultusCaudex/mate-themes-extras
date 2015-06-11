@@ -3,17 +3,17 @@ THEME_NAME=DeLorean
 themedir = $(datadir)/themes/$(THEME_NAME)/openbox-3
 
 theme_DATA = \
-	bullet_small.xbm \
-	bullet-small.xbm \
-	bullet.xbm \
-	close_hover.xbm \
-	desk_toggled_pressed.xbm \
-	desk_toggled.xbm \
+	close.xbm \
+	close_pressed.xbm \
 	desk.xbm \
-	max_disabled.xbm \
+	desk_toggled.xbm \
+	iconify.xbm \
+	iconify_pressed.xbm \
+	max.xbm \
 	max_pressed.xbm \
 	max_toggled.xbm \
-	max.xbm \
+	shade.xbm \
+	shade_pressed.xbm \
 	themerc
 
 EXTRA_DIST = $(theme_DATA)

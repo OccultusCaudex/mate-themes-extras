@@ -7,8 +7,7 @@ theme_DATA = \
 	gtk-contained.css \
 	gtk-contained-dark.css \
 	gtk-dark.css \
-	mate-applications.css \
-	nautilus-fix.css
+	mate-applications.css
 
 EXTRA_DIST = $(theme_DATA)
 

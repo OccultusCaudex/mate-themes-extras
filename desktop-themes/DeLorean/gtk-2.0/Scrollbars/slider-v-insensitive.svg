@@ -14,7 +14,7 @@
    height="45"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="slider-v-insensitive.svg">
   <defs
      id="defs4">
@@ -267,16 +267,6 @@
          id="stop4078-8" />
     </linearGradient>
     <linearGradient
-       y2="1049.3413"
-       x2="6.5417767"
-       y1="1008.9974"
-       x1="6.5417767"
-       gradientTransform="matrix(1.2587921,0,0,1.054939,-1.7493015,-55.516299)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient4097"
-       xlink:href="#linearGradient4074-7"
-       inkscape:collect="always" />
-    <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4022-24"
        id="linearGradient4028-3"
@@ -304,18 +294,6 @@
          offset="1"
          id="stop4026-2" />
     </linearGradient>
-    <filter
-       inkscape:collect="always"
-       id="filter3868"
-       x="-0.15096281"
-       width="1.3019256"
-       y="-0.036411878"
-       height="1.0728238">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.64192029"
-         id="feGaussianBlur3870" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4074"
@@ -354,16 +332,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.66"
-     inkscape:cx="-27.634147"
-     inkscape:cy="23.32015"
+     inkscape:zoom="10.68"
+     inkscape:cx="-32.44877"
+     inkscape:cy="23.132533"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1866"
-     inkscape:window-height="1041"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -381,7 +359,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -389,34 +367,5 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-1007.3622)">
-    <rect
-       style="fill:#757575;fill-opacity:1;stroke:#757575;stroke-width:1.01357590999999991;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect4020"
-       width="5.986424"
-       height="37.986423"
-       x="3.506788"
-       y="1010.869"
-       rx="2.993212"
-       ry="2.993212" />
-    <rect
-       style="fill:none;stroke:url(#linearGradient4097);stroke-width:1.02888811000000002;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3868);opacity:0"
-       id="rect4020-6-5"
-       width="10.20522"
-       height="42.310608"
-       x="1.3302395"
-       y="1009.7705"
-       rx="5.1026101"
-       ry="4.1801486"
-       transform="matrix(0.91926547,0,0,0.90072965,1.395234,103.75777)" />
-    <rect
-       style="fill:none;stroke:#ffffff;stroke-width:1.01357590999999991;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;opacity:0.04;fill-opacity:1"
-       id="rect4020-0"
-       width="5.986424"
-       height="37.986423"
-       x="3.506788"
-       y="1010.869"
-       rx="2.993212"
-       ry="2.993212" />
-  </g>
+     transform="translate(0,-1007.3622)" />
 </svg>

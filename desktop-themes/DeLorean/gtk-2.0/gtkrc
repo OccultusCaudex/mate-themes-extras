@@ -1,6 +1,6 @@
 # Bridge | ScionicSpectre
 
-gtk-color-scheme	= "base_color:#c3c3c3\nfg_color:#131313\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#006aa8\nselected_fg_color:#FFFFFF\ntext_color:#131313\nbg_color:#7b7b7b\ninsensitive_bg_color:#757575\ntooltip_bg_color:#343434"
+gtk-color-scheme	= "base_color:#c3c3c3\nfg_color:#131313\ntooltip_fg_color:#eaeaea\nselected_bg_color:#006aa8\nselected_fg_color:#FFFFFF\ntext_color:#131313\nbg_color:#7b7b7b\ninsensitive_bg_color:#757575\ntooltip_bg_color:#00070b"
 
 gtk-auto-mnemonics              = 1
 gtk-primary-button-warps-slider = 1
@@ -48,9 +48,9 @@ style "default"
 	GtkScrolledWindow::scrollbars-within-bevel	= 1
 
 	GtkVScale::slider_length 	= 16
-	GtkVScale::slider_width 	= 17
+	GtkVScale::slider_width 	= 16
 	GtkHScale::slider_length 	= 16
-	GtkHScale::slider_width 	= 17
+	GtkHScale::slider_width 	= 16
 
 	GtkStatusbar::shadow_type	= GTK_SHADOW_NONE
 	GtkSpinButton::shadow_type 	= GTK_SHADOW_NONE
@@ -725,9 +725,35 @@ style "scrollbar"
   }
 }
 
+style "emacs-scrollbar" = "scrollbar"
+{
+  engine "pixmap" 
+  {
+    image 
+    {
+      function			= BOX
+      detail			= "trough"
+      file			= "Scrollbars/emacs-trough-h.svg"
+      border			= { 7,7,3,3 }
+      stretch			= TRUE
+      orientation		= HORIZONTAL
+    }
+    image 
+    {
+      function			= BOX
+      detail			= "trough"
+      file			= "Scrollbars/emacs-trough-v.svg"
+      border			= { 3,3,7,7 }
+      stretch			= TRUE
+      orientation		= VERTICAL
+    }
+  }
+}
+
 style "menubar"
 {
-	bg[PRELIGHT]	= "#FFF"
+    bg_pixmap[NORMAL] = "Others/background.png"
+	bg[PRELIGHT]	= "#eaeaea"
 	fg[SELECTED]	= @text_color
 
 	xthickness	= 0
@@ -735,15 +761,6 @@ style "menubar"
 
 	engine "pixmap"
 	{
-          image
-	{
-		function	= BOX
-		recolorable	= TRUE
-		state		= NORMAL
-		file		= "Others/background.png"
-		border		= { 0 ,0 , 0 ,0}
-		stretch		= TRUE
-	}
 	  image
           {
 	      function		= BOX
@@ -751,7 +768,7 @@ style "menubar"
 	      state		= PRELIGHT
 	      file		= "Menu-Menubar/menubar-button.svg"
 
-	      border		= { 0,0,0,10 }
+	      border		= {0,0,13,0 }
 	      stretch		= TRUE
 	  }
 	}
@@ -763,22 +780,18 @@ style "menu"
 	ythickness	= 0
 
 	GtkMenuItem::arrow-scaling	= 0.4
-
-	bg[NORMAL]	= "#929292"
+	    bg[NORMAL]      = "#00131F"
         bg[INSENSITIVE] = @base_color
         bg[PRELIGHT]    = @base_color
-
-	engine "pixmap"	# For menus that use horizontal lines rather than gtkseparator
-	{
-	image
-	{
-	  function			= HLINE
-	  file				= "Lines/separator-menu.svg"
-	  border			= { 21, 0, 0, 0 }
-	  stretch			= TRUE
+        fg[NORMAL]      = "#eaeaea"
+        fg[SELECTED]    = "#ffffff"
+engine "murrine"
+ 	{
+		text_shade = 0.4
+		textstyle = 1
 	}
-    }
 }
+	
 
 style "menu_separator"
 {
@@ -792,7 +805,7 @@ style "menu_separator"
 		function		= BOX
 	 	recolorable		= TRUE
 	 	file			= "Lines/separator-menu.svg"
-		border			= {21,0, 0,0 }
+		border			= {0,0, 1,0 }
 		stretch			= TRUE
         orientation     = HORIZONTAL		
 	}
@@ -1010,7 +1023,7 @@ style "menubar_item"
 
 style "button"
 {
-  xthickness	= 4
+  xthickness	= 3
   ythickness	= 3
 
   engine "pixmap"
@@ -1052,8 +1065,8 @@ style "button"
 
 style "button_nohilight"
 {
-  xthickness	= 4
-  ythickness	= 3
+  xthickness	= 3
+  ythickness	= 4
 
   engine "pixmap"
   {
@@ -1117,11 +1130,12 @@ style "entry"
 	xthickness	= 3
 	ythickness   	= 4
 
-        base[NORMAL] = "#dbdbdb" #Non Gtk apps like Spotify and Opera use this as the entry text-input color. So its better to color the entry background colors#
+        base[NORMAL] = "#2a2a2a" #Non Gtk apps like Spotify and Opera use this as the entry text-input color. So its better to color the entry background colors#
         base[INSENSITIVE]       = @insensitive_bg_color
-        text[SELECTED]  	= "#fff"
-        text[NORMAL] 		= "#131313"
-        text[INSENSITIVE]	= "#4e5051"
+        text[SELECTED]  	= @text_color
+        text[NORMAL] 		= "#eaeaea"
+        fg[NORMAL]			= "#131313"
+        text[INSENSITIVE]	= "#858585"
 
 	engine "pixmap"
 	{
@@ -1227,7 +1241,7 @@ style "notebook_tab_label"
 
 style "combobox_entry"
 {
-	xthickness	= 3
+	xthickness	= 2
 	ythickness   	= 4
 
 	engine "pixmap"
@@ -1466,7 +1480,7 @@ style "spinbutton"
 {
   bg[NORMAL] = @bg_color
 
-  xthickness	= 3
+  xthickness	= 4
   ythickness	= 4
 
   engine "pixmap"
@@ -1773,7 +1787,7 @@ style "libreoffice_entry"
                 function                = FLAT_BOX
                 detail                  = "entry_bg"
                 state                   = NORMAL
-                overlay_file		= "Entry/entry-bg.svg"
+                overlay_file		= "Entry/entry-border-fill-solid.png"
 	        overlay_border		= { 0, 0, 0, 0 }
                 overlay_stretch         = TRUE
         }
@@ -1782,7 +1796,7 @@ style "libreoffice_entry"
                 function                = FLAT_BOX
                 detail                  = "entry_bg"
                 state                   = ACTIVE
-                overlay_file		= "Entry/entry-bg-focus.svg"
+                overlay_file		= "Entry/entry-border-fill-solid.png"
 	        overlay_border		= { 0, 0, 0, 0 }
                 overlay_stretch         = TRUE
         }
@@ -1792,7 +1806,7 @@ style "libreoffice_entry"
 		detail			= "entry"
                 state                   = NORMAL
 		shadow			= IN
-		file			= "Entry/entry.svg"
+		file			= "Entry/entry-border-bg-solid.png"
 		border			= { 4, 4, 4, 4 }
 		stretch			= TRUE
 	}
@@ -1801,26 +1815,73 @@ style "libreoffice_entry"
 		function		= SHADOW
 		detail			= "entry"
                 state                   = ACTIVE
-		file			= "Entry/entry-focus.svg"
+		file			= "Entry/entry-border-active-bg-solid.png"
 		border			= { 4, 4, 4, 4 }
 		stretch			= TRUE
         }
         }
 }
 
-style "standalone_entry"
+style "libreoffice_spinbutton_entry"
 {
         engine "pixmap"
         {
-        image
-        {
-                function                = FLAT_BOX
-                detail                  = "entry_bg"
-                state                   = NORMAL
-                file                    = "Entry/entry-border-fill-plain.png"
-                stretch                 = TRUE
-                border                  = { 0, 0, 0, 0 }
+	image
+	{
+		function		= SHADOW
+		detail			= "entry"
+	        state                   = NORMAL
+		shadow			= IN
+		file			= "Entry/entry-border-bg-solid-spin.png"
+		border			= { 4, 4, 4, 4 }
+		stretch			= TRUE
+	}
+	image
+	{
+		function		= SHADOW
+		detail			= "entry"
+	        state                   = ACTIVE
+		file			= "Entry/entry-border-active-bg-solid-spin.png"
+		border			= { 4, 4, 4, 4 }
+		stretch			= TRUE
+	}
+	image
+	{
+	        function                = FLAT_BOX
+	        detail                  = "entry_bg"
+	        state                   = NORMAL
+	        overlay_file		= "Entry/entry-border-fill-solid.png"
+		overlay_border		= { 0, 0, 0, 0 }
+	        overlay_stretch         = TRUE
+	}
+	image
+	{
+	        function                = FLAT_BOX
+	        detail                  = "entry_bg"
+	        state                   = ACTIVE
+	        overlay_file		= "Entry/entry-border-fill-solid.png"
+		overlay_border		= { 0, 0, 0, 0 }
+	        overlay_stretch         = TRUE
+	}
         }
+}
+
+style "standalone_entry"
+{
+	
+	fg[NORMAL]		= @text_color
+	fg[PRELIGHT]		= @fg_color
+	fg[SELECTED]		= @fg_color
+	fg[INSENSITIVE]		= "#4e5051"
+	fg[ACTIVE]		= @fg_color
+
+	text[NORMAL]		= @text_color
+	text[PRELIGHT]		= @text_color
+	text[SELECTED]		= @text_color
+	text[INSENSITIVE]	= "#4e5051"
+	text[ACTIVE]		= @text_color
+        engine "pixmap"
+        {
         image
         {
                 function                = FLAT_BOX
@@ -1848,7 +1909,16 @@ style "standalone_entry"
 		file			= "Entry/entry-border-active-bg-solid.png"
 		border			= { 4, 4, 4, 4 }
 		stretch			= TRUE
-        }
+	}
+	image
+	{
+	        function                = FLAT_BOX
+	        detail                  = "entry_bg"
+	        state                   = NORMAL
+	        file                    = "Entry/entry-border-fill-plain.png"
+	        stretch                 = TRUE
+	        border                  = { 0, 0, 0, 0 }
+	}
         }
 }
 
@@ -1865,7 +1935,7 @@ style "notebook"
         function		= EXTENSION
 	state			= ACTIVE
 	file			= "Tabs/tab-bottom.png"
-	border			= { 3,3,3,5 }
+	border			= { 3,3,3,3 }
 	stretch			= TRUE
 	gap_side		= TOP
     }
@@ -1874,7 +1944,7 @@ style "notebook"
         function		= EXTENSION
 	state			= ACTIVE
 	file			= "Tabs/tab-top.png"
-	border			= { 3,3,5,3 }
+	border			= { 3,3,3,3 }
 	stretch			= TRUE
 	gap_side		= BOTTOM
     }
@@ -1899,32 +1969,32 @@ style "notebook"
     image 
     {
         function		= EXTENSION
-	file			= "Tabs/tab-top-active.png"
-	border			= { 3,3,3,3 }
+	file			= "Tabs/tab-top-active.svg"
+	border			= { 4,4,4,0 }
 	stretch			= TRUE
 	gap_side		= BOTTOM
     }
     image 
     {
         function		= EXTENSION
-	file			= "Tabs/tab-bottom-active.png"
-	border			= { 3,3,3,3 }
+	file			= "Tabs/tab-bottom-active.svg"
+	border			= { 4,4,0,4 }
 	stretch			= TRUE
 	gap_side		= TOP
     }
     image 
     {
         function		= EXTENSION
-	file			= "Tabs/tab-left-active.png"
-	border			= {  3,3,3,3 }
+	file			= "Tabs/tab-left-active.svg"
+	border			= {  4,0,4,4 }
 	stretch			= TRUE
 	gap_side		= RIGHT
     }
     image
     {
         function		= EXTENSION
-	file			= "Tabs/tab-right-active.png"
-	border			= {  3,3,3,3 }
+	file			= "Tabs/tab-right-active.svg"
+	border			= {  0,4,4,4 }
 	stretch			= TRUE
 	gap_side		= LEFT
     }
@@ -1991,8 +2061,8 @@ style "handlebox"
     image
     {
       function                  = BOX
-      file			= "Others/background.png"
-      border			= { 0,0,0,0 }
+      file			= "Others/null.png"
+      border			= { 4, 4, 4, 4 }
       stretch			= TRUE
       detail                    = "handlebox_bin"
       shadow                    = IN
@@ -2000,8 +2070,8 @@ style "handlebox"
     image
     {
       function                  = BOX
-      file			= "Others/background.png"
-      border			= { 0,0,0,0 }
+      file			= "Others/null.png"
+      border			= { 4, 4, 4, 4 }
       stretch			= TRUE
       detail                    = "handlebox_bin"
       shadow                    = OUT
@@ -2189,7 +2259,7 @@ style "separator_menu_item"
       	{
                 function		= BOX
 		file        		= "Lines/separator.svg"
-		border      		= { 0, 0, 0,0 }
+		border      		= { 0, 0, 1,0 }
 		stretch         	= TRUE
       	}
     }
@@ -2230,8 +2300,8 @@ style "treeview_header"
 {
         ythickness = 1
 
-        fg[NORMAL] = "#bebebe"
-        fg[PRELIGHT] = "#d2d2d2"
+        fg[NORMAL] = "#747678"
+        fg[PRELIGHT] = "#47494A"
         font_name = "Bold"
 
 	engine "pixmap"
@@ -2366,18 +2436,7 @@ style "gimp_toolbox_frame"
 
 style "toolbar"
 {
-        engine "pixmap"
-{
-
-	image
-	{
-		function			= BOX
-		file				= "Others/background.png"
-		border				= { 0,0,0,0 }
-		stretch				= TRUE
-		detail              = "toolbar"
-	}
-        }
+bg_pixmap[NORMAL] = "Others/background.png"
 }
 
 style "inline_toolbar"
@@ -2436,7 +2495,7 @@ style "menu-text"
 
 engine "murrine"
  	{
-		text_shade = 0.9
+		text_shade = 1.7
 		textstyle = 1
 	}
 }
@@ -2463,8 +2522,15 @@ style "chrome-gtk-frame"
 style "chrome_menu_item"
 {
         bg[SELECTED] = @selected_bg_color
+        fg[NORMAL]	= "#131313"
+        text[NORMAL]	="#131313"
 }
-
+style "chrome_menu"
+{
+	bg[NORMAL]	= "#7a7a7a"
+	base[NORMAL] = "#7a7a7a"
+	}
+	
 style "null"
 {
 	engine "pixmap"
@@ -2627,6 +2693,8 @@ widget "gtk-tooltip*"  			style "tooltips"
 # Xchat special cases
 widget "*xchat-inputbox"                                     style "entry"
 
+widget_class "*macs*<GtkScrollbar>"  style "emacs-scrollbar"
+
 # GIMP
 # Disable gradients completely for GimpSpinScale
 class "GimpSpinScale"                   style "gimp_spin_scale"
@@ -2637,7 +2705,7 @@ widget_class "*<GimpToolbox>*<GtkFrame>" style "gimp_toolbox_frame"
 class "ChromeGtkFrame" 			             style "chrome-gtk-frame"
 widget_class "*Chrom*Button*"		             style "button"
 widget_class "*<GtkCustomMenu>*<GtkCustomMenuItem>*" style "chrome_menu_item"
-
+widget_class "*<GtkCustomMenu>*" style "chrome_menu"
 # We use this weird selector to target an offscreen entry as created
 # by Chrome/Chromium to derive the style for its toolbar
 widget_class "<GtkEntry>"                            style "standalone_entry"
@@ -2662,8 +2730,8 @@ widget_class "*<GtkMenuItem>*<GtkTextView>"			style "menu-text"
 class "GtkWindow"                             style "toplevel_hack"
 widget "*openoffice-toplevel*"                style "ooo_stepper_hack"
 widget "*openoffice-toplevel*GtkEntry"        style "libreoffice_entry"
-widget "*openoffice-toplevel*GtkSpinButton"   style "libreoffice_entry"
+widget "*openoffice-toplevel*GtkSpinButton"   style "libreoffice_spinbutton_entry"
 widget "*libreoffice-toplevel*GtkEntry"       style "libreoffice_entry"
-widget "*libreoffice-toplevel*GtkSpinButton"  style "libreoffice_entry"
+widget "*libreoffice-toplevel*GtkSpinButton"  style "libreoffice_spinbutton_entry"
 
 include "sidebarrc"

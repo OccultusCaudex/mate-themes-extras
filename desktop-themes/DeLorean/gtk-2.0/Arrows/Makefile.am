@@ -15,8 +15,8 @@ theme_DATA = \
 	arrow-up-insensitive.svg \
 	arrow-up-prelight.svg \
 	arrow-up.svg \
-	menu-arrow-prelight.png \
 	menu-arrow.png \
+	menu-arrow-prelight.png \
 	small-arrow-down-insensitive.svg \
 	small-arrow-down-prelight.svg \
 	small-arrow-down.svg \
