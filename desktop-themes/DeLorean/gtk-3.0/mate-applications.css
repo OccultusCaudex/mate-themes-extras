@@ -6,6 +6,7 @@ CajaNavigationWindow .view {
 }
 
 /* do not flash the desktop with a color during theme switching */
+CajaWindow,
 CajaDesktopWindow FMDesktopIconView .view {
     background-color: transparent;
     background-image: none;

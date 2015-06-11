@@ -2,10 +2,11 @@
 
 /* background of all views */
 CajaNavigationWindow .view {
-	background-color: #303030;
+	background-color: shade (@theme_bg_color, 1.8);
 }
 
 /* do not flash the desktop with a color during theme switching */
+CajaWindow,
 CajaDesktopWindow FMDesktopIconView .view {
     background-color: transparent;
     background-image: none;
@@ -51,6 +52,18 @@ CajaWindow .sidebar GtkScrolledWindow:backdrop {
 	background-color: transparent;
 	background-image: none;
 }
+
+/* caja sidebar */
+CajaWindow FMTreeView .view,
+CajaWindow CajaNotesViewer .view,
+CajaWindow CajaPlacesSidebar .view,
+CajaWindow CajaHistorySidebar .view,
+CajaWindow CajaInformationPanel GtkVBox,
+CajaWindow CajaEmblemSidebar GtkViewport {
+    background-color: transparent;
+    border-width: 0px;
+}
+
 /*
 CajaWindow .sidebar .cell:selected:selected,
 CajaWindow .sidebar .cell:selected:selected:backdrop {
@@ -148,11 +161,6 @@ background-color: @notebook_color;
 
 /**** FIXES FOR NAUTILUS VIEW AND DESKTOP ***/
 /* Fixes issue with Caja drawing the .background image inside the view after closing a tab */
-
-CajaWindow CajaView,
-CajaWindow CajaView .view {
-	background-color: @theme_bg_color;
-}
 
 CajaWindow CajaView:backdrop,
 CajaWindow CajaView .view:backdrop {
