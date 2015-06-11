@@ -1,4 +1,7 @@
 3.16.3
+  * Submarine themes GTK3: re-work mate-panel
+  * Submarine themes: change button style for toolbars and menuitem
+  * update delorean themes to gtk+-3.16
 
 3.16.2
 
