@@ -5380,6 +5380,8 @@ these are pretty self explicative */
 @define-color wm_button_active_color_c #303030;
 @define-color content_view_bg #292929;
 
+@import url("mate-applications.css");
+
 /*Ubuntu Styles*/
 
 /*import@url("unity_dark.css")
