@@ -9,6 +9,8 @@ Branches:
 
 master - development
 
+GTK3-3.16
+
 GTK3-3.14
 
 GTK3-3.12
@@ -26,6 +28,8 @@ GTK3-3.2
 Releases:
 
 https://github.com/NiceandGently/mate-themes-extras/releases
+
+3.16.x for GTK3-3.16
 
 3.14.x for GTK3-3.14
 
