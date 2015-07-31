@@ -7,6 +7,9 @@ You can use several branches or release packages for download.
 
 Branches:
 
+This repo is obsolete for > gtk+-3.16
+========================================
+
 master - development
 
 GTK3-3.16
